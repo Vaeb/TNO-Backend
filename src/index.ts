@@ -8,7 +8,7 @@ import * as initialData from './data/initialData';
 
 const app = express();
 
-// app.use(cors);
+app.use(cors());
 app.use(express.json());
 
 app.get('/test', (req, res) => {
