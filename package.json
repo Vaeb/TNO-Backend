@@ -9,7 +9,8 @@
     "scripts": {
         "start": "node --trace-deprecation --experimental-specifier-resolution=node dist/index.js",
         "dev": "nodemon --trace-deprecation --experimental-specifier-resolution=node dist/index.js",
-        "watch": "tsc -w"
+        "watch": "tsc -w",
+        "hook": "node --trace-deprecation --experimental-specifier-resolution=node src/webhooks.js"
     },
     "dependencies": {
         "cors": "^2.8.5",
