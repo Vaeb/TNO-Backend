@@ -16,7 +16,7 @@ app.get('/test', (req, res) => {
     return res.send('test');
 });
 
-app.get('/initital_data', (req, res) => {
+app.get('/initial_data', (req, res) => {
     log('Handling request for /initial_data');
     return res.send(initialData);
 });
