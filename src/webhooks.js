@@ -1,3 +1,8 @@
+/*
+    package.json/scripts/hook
+    tree-kill
+*/
+
 import cp from 'child_process';
 import path from 'path';
 // import fs from 'fs';
@@ -156,8 +161,8 @@ app.get('/restart', (req, res) => {
     });
 });
 
-app.listen(process.env.PORT || 81);
-log('Running on', process.env.PORT || 81);
+app.listen(process.env.PORT || 82);
+log('Running on', process.env.PORT || 82);
 
 kill().then(update).then(start).then(() => {
     log('OK');
