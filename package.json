@@ -1,0 +1,35 @@
+{
+    "name": "tno-backend",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "https://github.com/Vaeb/TNO-Backend.git",
+    "author": "Adam Johnson <vaeb@hey.com>",
+    "license": "MIT",
+    "type": "module",
+    "scripts": {
+        "start": "node --trace-deprecation --experimental-specifier-resolution=node dist/index.js",
+        "dev": "nodemon --trace-deprecation --experimental-specifier-resolution=node dist/index.js",
+        "watch": "tsc -w"
+    },
+    "dependencies": {
+        "cors": "^2.8.5",
+        "dotenv": "^10.0.0",
+        "express": "^4.17.1"
+    },
+    "devDependencies": {
+        "@types/cors": "^2.8.10",
+        "@types/express": "^4.17.12",
+        "@types/node": "^15.6.1",
+        "@typescript-eslint/eslint-plugin": "^4.26.0",
+        "@typescript-eslint/parser": "^4.26.0",
+        "eslint": "^7.27.0",
+        "eslint-config-airbnb-base": "^14.2.1",
+        "eslint-config-airbnb-typescript": "^12.3.1",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-import": "^2.23.4",
+        "eslint-plugin-prettier": "^3.4.0",
+        "prettier": "^2.3.0",
+        "ts-node": "^10.0.0",
+        "typescript": "^4.3.2"
+    }
+}

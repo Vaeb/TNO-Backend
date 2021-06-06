@@ -1,0 +1,39 @@
+{
+    "compilerOptions": {
+        "allowSyntheticDefaultImports": true,
+        "baseUrl": ".",
+        "emitDecoratorMetadata": true,
+        "esModuleInterop": true,
+        "experimentalDecorators": true,
+        "lib": [
+            "dom",
+            "es2020",
+            "es6",
+            "esnext.asynciterable"
+        ],
+        "module": "esnext",
+        "moduleResolution": "node",
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitAny": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": false,
+        "outDir": "./dist",
+        "removeComments": true,
+        "resolveJsonModule": true,
+        "sourceMap": true,
+        "strictFunctionTypes": true,
+        "strictNullChecks": true,
+        "target": "es2020"
+    },
+    "exclude": [
+        "node_modules",
+        "./src/events/commands/eval2.ts"
+    ],
+    "include": [
+        ".eslintrc.cjs",
+        "./src/**/*.ts",
+        "./src/**/*.tsx"
+    ]
+}
