@@ -1781,9 +1781,10 @@ export const npCharacters: NpCharacters = {
         { name: 'Jenn Bordeaux', nicknames: ['Frenchie', 'French'] },
     ],
     theLGX: [
-        { name: 'Bryce Miller', nicknames: ['BDawg'] },
+        { name: 'Bryce Miller', nicknames: ['BDawg'], assumeServer: 'whitelist' },
         { name: 'Diego Marquez' },
-        { name: 'Roland Nelson' },
+        { name: 'Roland Nelson', assumeServer: 'whitelist' },
+        { name: '[Officer] Roland Nelson', faction: 'Police', assumeServer: 'public' },
     ],
     Timmac: [
         { name: '[Deputy] T.J. Mack', faction: 'Police', assumeServer: 'whitelist' },
