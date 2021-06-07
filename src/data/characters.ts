@@ -1,3 +1,5 @@
+/* eslint-disable object-curly-newline */
+
 export const npCharacters = {
     '0Reed': [
         { name: 'Reed Dankleaf', faction: 'Lost MC' },

@@ -29,3 +29,15 @@ export const makeLogMessage = (...messages: any[]): string => {
 export const log = (...messages: any[]): void => {
     console.log(makeLogMessage(...messages));
 };
+
+export const mergeRegex = (regexArr: RegExp[]): RegExp => {
+    let flags = '';
+    const sourceStr = regexArr.reduce((acc: string, reg: RegExp) => {
+        flags += reg.flags;
+        return `${acc}${reg.source}`;
+    }, '');
+
+    log(new RegExp(sourceStr, flags.split('').sort().join('').replace(/(.)(?=.*\1)/g, '')));
+
+    return new RegExp(sourceStr, flags.split('').sort().join('').replace(/(.)(?=.*\1)/g, ''));
+};
