@@ -27,7 +27,7 @@ export const npFactionsRegex = {
     police: mergeRegex([
         /(?<!then\b.*|!|\bformer\b[\s\w]+)/,
         /(?:\bcop\b|chief of police|officer|deputy|\bd-\d|investigation|sergeant|lieutenant|corporal|sheriff|trooper|cadet|\b(?:ranger|dt|sgt|lt(?![^|!]*\bjones\b)|cpl|lspd|sasp|bcso|cid|police[\s\-_]*academy)\b)/,
-    ]),
+    ]).source,
     medical: /(?<!then\b.*|!)(?:doctor|\b(?:dr|ems|emt)\b)/.source,
 };
 
