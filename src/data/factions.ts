@@ -1,28 +1,34 @@
+/* eslint-disable no-useless-escape */
+/* eslint-disable max-len */
+
+import { mergeRegex } from '../utils';
+
 export const npFactionsRegex = {
-    lostmc: 'lost\\s*mc|the\\s*lost\\b',
-    changgang: 'chang\\s*gang|\\bcga?\\b',
-    vagos: 'vagos|yellow[\\s\\-]*gang|\\besv\\b',
-    gsf: 'grove|\\bgsf\\b',
-    ssb: 'balla|\\bssb\\b(?![\\s\\-]+(?:wo?rld|later))|\\besb\\b',
-    marabunta: '\\bmarabunta',
-    hoa: '\\bhoa\\b|hogs\\s*of\\s*anarchy|home[\\s\\-]*owners[\\s\\-]*association',
-    doj: '\\bdoj\\b|department\\s*of\\s*justice|judge\\b(?![\\s]*me)|\\ba?\\.?d\\.?a\\b|lawyer|para[\\s\\-]*legal',
-    asrr: '\\balta[\\s\\-]*street|\\bblock(?:\\b|[\\s\\-]*party|[\\s\\-]*athon)',
-    angels: '\\bangels\\b',
-    nbc: '\\bnbc\\b',
-    burgershot: 'burger[\\s\\-]*shot|\\bburgers\\b',
-    development: '\\bdevelop|\\bdev\\b',
-    doc: '\\bdoc\\b|\\bcorrection',
-    prison: '\\blifer|\\bprison|\\blife\\W+sentence',
-    mechanic: '\\bmechanic\\b',
-    harmony: '\\bharmony\\b',
-    quickfix: '\\bquick[\\s\\-]*fix',
-    tunershop: '\\btuner[\\s\\-]*shop\\b',
-    larpers: '\\blarp\\b|\\blarper|the\\s*guild',
-    police: '(?<!then\\b.*|!|\\bformer\\b[\\s\\w]+)'
-    + '(?:\\bcop\\b|chief of police|officer|deputy|\\bd-\\d|investigation|sergeant|lieutenant|corporal|sheriff|trooper|cadet'
-    + '|\\b(?:ranger|dt|sgt|lt(?![^|!]*\\bjones\\b)|cpl|lspd|sasp|bcso|cid|police[\\s\\-_]*academy)\\b)',
-    medical: '(?<!then\\b.*|!)(?:doctor|\\b(?:dr|ems|emt)\\b)',
+    lostmc: /lost\s*mc|the\s*lost\b/.source,
+    changgang: /chang\s*gang|\bcga?\b/.source,
+    vagos: /vagos|yellow[\s\-]*gang|\besv\b/.source,
+    gsf: /grove|\bgsf\b/.source,
+    ssb: /balla|\bssb\b(?![\s\-]+(?:wo?rld|later))|\besb\b/.source,
+    marabunta: /\bmarabunta/.source,
+    hoa: /\bhoa\b|hogs\s*of\s*anarchy|home[\s\-]*owners[\s\-]*association/.source,
+    doj: /\bdoj\b|department\s*of\s*justice|judge\b(?![\s]*me)|\ba?\.?d\.?a\b|lawyer|para[\s\-]*legal/.source,
+    asrr: /\balta[\s\-]*street|\bblock(?:\b|[\s\-]*party|[\s\-]*athon)/.source,
+    angels: /\bangels\b/.source,
+    nbc: /\bnbc\b/.source,
+    burgershot: /burger[\s\-]*shot|\bburgers\b/.source,
+    development: /\bdevelop|\bdev\b/.source,
+    doc: /\bdoc\b|\bcorrection/.source,
+    prison: /\blifer|\bprison|\blife\W+sentence/.source,
+    mechanic: /\bmechanic\b/.source,
+    harmony: /\bharmony\b/.source,
+    quickfix: /\bquick[\s\-]*fix/.source,
+    tunershop: /\btuner[\s\-]*shop\b/.source,
+    larpers: /\blarp\b|\blarper|the\s*guild/.source,
+    police: mergeRegex([
+        /(?<!then\b.*|!|\bformer\b[\s\w]+)/,
+        /(?:\bcop\b|chief of police|officer|deputy|\bd-\d|investigation|sergeant|lieutenant|corporal|sheriff|trooper|cadet|\b(?:ranger|dt|sgt|lt(?![^|!]*\bjones\b)|cpl|lspd|sasp|bcso|cid|police[\s\-_]*academy)\b)/,
+    ]),
+    medical: /(?<!then\b.*|!)(?:doctor|\b(?:dr|ems|emt)\b)/.source,
 };
 
 export const useColorsDark = {

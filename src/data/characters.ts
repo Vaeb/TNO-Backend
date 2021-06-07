@@ -198,8 +198,8 @@ export const npCharacters = {
         { name: 'Jose Pincha' },
     ],
     BennniStreams: [
-        { name: 'Santiago "Santi" Madrid', faction: 'Vagos', nicknames: ['/\\bSanti/'] },
-        { name: 'Antonio Reyes', nicknames: ['/\\bAntonio/'] },
+        { name: 'Santiago "Santi" Madrid', faction: 'Vagos', nicknames: [/\bSanti/.source] },
+        { name: 'Antonio Reyes', nicknames: [/\bAntonio/.source] },
         { name: 'Pablo Madrid', faction: 'Vagos', nicknames: ['Diablo'] },
     ],
     BFLY: [
@@ -404,7 +404,7 @@ export const npCharacters = {
         { name: 'Joe Caine', displayName: 0 },
         { name: "Khan Di'Sendo", displayName: 0 },
         { name: 'Uchiha Jones', faction: 'Chang Gang' },
-        { name: 'Fred Hurst', nicknames: ['/Lim.\\s?Bizkif/'] },
+        { name: 'Fred Hurst', nicknames: [/Lim.\s?Bizkif/.source] },
     ],
     Dadulio: [
         { name: '[Deputy] Franky Dulio', faction: 'Police' },
@@ -457,7 +457,7 @@ export const npCharacters = {
         { name: 'Preston Landor' },
     ],
     Dogbert: [
-        { name: '[Deputy] Rocko Colombo', faction: 'Police', nicknames: ['/\\bcol.mb./'] },
+        { name: '[Deputy] Rocko Colombo', faction: 'Police', nicknames: [/\bcol.mb./.source] },
         { name: 'Luther Caine', faction: 'HOA' },
     ],
     Dorken: [
@@ -555,7 +555,7 @@ export const npCharacters = {
         { name: 'Alberto Weaselton', faction: 'Lost MC' },
     ],
     Fiendota: [
-        { name: 'Jonathan "Magnum" Humes', nicknames: ['\\bP\\.?\\s*I\\b'] },
+        { name: 'Jonathan "Magnum" Humes', nicknames: [/\bP\.?\s*I\b/.source] },
     ],
     Five0AnthO: [
         { name: '[Trooper] Tony Andrews', faction: 'Police', highCommand: true, leader: true },
@@ -652,7 +652,7 @@ export const npCharacters = {
         { name: 'Harry Brown', faction: 'Pegasus' },
     ],
     HasanAbi: [
-        { name: 'Humberto Antonio Donato Pecorino', nicknames: ['Don', 'Donnie', "/\\bOva[h']? here\\b/"], displayName: 5, faction: 'Cleanbois' },
+        { name: 'Humberto Antonio Donato Pecorino', nicknames: ['Don', 'Donnie', /\bOva[h']? here\b/.source], displayName: 5, faction: 'Cleanbois' },
     ],
     Hedisaurus: [
         { name: '[EMS] Hedi Saurus', faction: 'Medical', assume: 'assumeNpNoOther' },
@@ -793,7 +793,7 @@ export const npCharacters = {
         { name: '[Dispatch] Louise Campbell', faction: 'Police' },
     ],
     jimmytulip: [
-        { name: 'Wayne Biggaz', faction: 'Chang Gang', nicknames: ['/\\bwe+y+n/'] },
+        { name: 'Wayne Biggaz', faction: 'Chang Gang', nicknames: [/\bwe+y+n/.source] },
     ],
     JJLake: [
         { name: 'Jay Jarvis', faction: 'Pegasus' },
@@ -837,7 +837,7 @@ export const npCharacters = {
         { name: 'Reverend I.M. Voland', faction: 'Dark Web' },
     ],
     Juggs: [
-        { name: 'Lenny Large', faction: 'Burger Shot', nicknames: ['/\\blenny/'], displayName: 0 },
+        { name: 'Lenny Large', faction: 'Burger Shot', nicknames: [/\blenny/.source], displayName: 0 },
         { name: 'Traevon Williams', nicknames: ['The Barber'], displayName: 3 },
     ],
     JukeBoxEM: [
@@ -932,7 +932,7 @@ export const npCharacters = {
         { name: '[Deputy] Lauren Forcer', faction: 'Police' },
         { name: 'Mia Mersion', faction: 'Pegasus' },
         { name: 'Evita "Mother" Nimm', faction: 'Dark Web' },
-        { name: 'Ava Ridge', nicknames: ['Silence', '/darkness/'] },
+        { name: 'Ava Ridge', nicknames: ['Silence', /darkness/.source] },
         { name: 'Marta Volkov' },
     ],
     KL33Si: [
@@ -987,7 +987,7 @@ export const npCharacters = {
         { name: 'Jaed Smith' },
     ],
     LAGTVMaximusBlack: [
-        { name: 'Outto-Tune "OTT" Tyrone', faction: 'SSB', nicknames: ['/\\bO\\S?TT/'] },
+        { name: 'Outto-Tune "OTT" Tyrone', faction: 'SSB', nicknames: [/\bO\S?TT/.source] },
     ],
     Lairdo_: [
         { name: 'Henry King' },
@@ -1040,7 +1040,7 @@ export const npCharacters = {
         { name: '[Dr.] Serge Cross', faction: 'Medical', displayName: 2 },
     ],
     Lucky_RP: [
-        { name: 'Marlo Stanfield', faction: 'GSF', nicknames: ['/ma?rlo/'] },
+        { name: 'Marlo Stanfield', faction: 'GSF', nicknames: [/ma?rlo/.source] },
     ],
     LuckyxMoon: [
         { name: '[Judge] ? Devereaux', faction: 'DoJ' },
@@ -1259,7 +1259,7 @@ export const npCharacters = {
         { name: '[Officer] Cody Sharp', faction: 'Police' },
     ],
     NikkisARiot: [
-        { name: '[Deputy] Jenny Hall', faction: 'Police', nicknames: ['/\\bje\\S{1,3}y/'] },
+        { name: '[Deputy] Jenny Hall', faction: 'Police', nicknames: [/\bje\S{1,3}y/.source] },
     ],
     Nmplol: [
         { name: 'Buddy Black' },
@@ -1275,8 +1275,8 @@ export const npCharacters = {
         { name: 'Chips Ahoy' },
     ],
     Nottics: [
-        { name: 'Raymundo Ortiz', faction: 'Vagos', nicknames: ['/\\br+ay/'] },
-        { name: 'Raul Rodriguez', nicknames: ['/\\br+au+l/'] },
+        { name: 'Raymundo Ortiz', faction: 'Vagos', nicknames: [/\br+ay/.source] },
+        { name: 'Raul Rodriguez', nicknames: [/\br+au+l/.source] },
     ],
     NovalokHD: [
         { name: '[Officer] Ben Casanova', faction: 'Police' },
@@ -1409,7 +1409,7 @@ export const npCharacters = {
         { name: '[Trooper] AJ Hunter', faction: 'Police' },
     ],
     Ray__C: [
-        { name: 'Raymond "Ray" Romanov', faction: 'Cleanbois', nicknames: ['Ray', '/\\brussia/'] },
+        { name: 'Raymond "Ray" Romanov', faction: 'Cleanbois', nicknames: ['Ray', /\brussia/.source] },
     ],
     ray308win: [
         { name: '[FIB Agent] Lyonel Winchester', faction: 'Police' },
@@ -1542,10 +1542,10 @@ export const npCharacters = {
         { name: '[Officer] Joel Garcia', faction: 'Police' },
     ],
     SilentSentry: [
-        { name: 'Ron Otterman', faction: 'News Media', nicknames: ['/🎥/'], displayName: 0 },
+        { name: 'Ron Otterman', faction: 'News Media', nicknames: [/🎥/.source], displayName: 0 },
         { name: 'Michael Michaels Jr.', nicknames: ['MMJR'], displayName: 0 },
         { name: 'Iroquois "Snake" Plisken', displayName: 0 },
-        { name: 'Ziggy Flint', nicknames: ['/🌿/'], displayName: 0 },
+        { name: 'Ziggy Flint', nicknames: [/🌿/.source], displayName: 0 },
     ],
     SimpleD88: [
         { name: '[A.D.A.] Blake Specter', faction: 'DoJ' },
