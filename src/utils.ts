@@ -37,7 +37,5 @@ export const mergeRegex = (regexArr: RegExp[]): RegExp => {
         return `${acc}${reg.source}`;
     }, '');
 
-    log(new RegExp(sourceStr, flags.split('').sort().join('').replace(/(.)(?=.*\1)/g, '')));
-
     return new RegExp(sourceStr, flags.split('').sort().join('').replace(/(.)(?=.*\1)/g, ''));
 };
