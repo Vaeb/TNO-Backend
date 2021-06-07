@@ -7,6 +7,7 @@ export const minViewers = 1;
 export const stopOnMin = true;
 export const checkOther = true;
 export const intervalSeconds = 0.7;
+
 export const regNp = /(?<!not\s)(?:no[\s\-_.]*pixel|\bn[\s\-_.]*p\b)(?![\s\-]+inspired)/.source;
 export const regNpPublic = mergeRegex([
     /(?:no[\s\-_.]*pixel|\bn[\s\-_.]*p\b)(?:[\s\-_.]*(?:rp|\d+\.?\d*))?[\W_]*pub\w*\b(?!\W+(?:later|after))/,
