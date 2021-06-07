@@ -8,7 +8,7 @@ export const regNp = '(?<!not\\s)(?:no[\\s\\-_.]*pixel|\\bn[\\s\\-_.]*p\\b)(?![\
 export const regNpPublic =
     '(?:no[\\s\\-_.]*pixel|\\bn[\\s\\-_.]*p\\b)(?:[\\s\\-_.]*(?:rp|\\d+\\.?\\d*))?[\\W_]*pub\\w*\\b(?!\\W+(?:later|after))' +
     '|\\bpub\\w*[\\W_]*(?:no[\\s\\-_.]*pixel|\\bn[\\s\\-_.]*p\\b)' +
-    '|\\bpub\\w*[\\W_]*(?:server|queue)|\\[pub\\w*\\]';
+    '|\\bpub\\w*[\\W_]*(?:server|queue|for\\b)|\\[pub\\w*\\]';
 export const regNpWhitelist = '\\bwhitelist|\\bwl\\b|\\bmain\\b|\\bprivate\\b(?![\\s\\-]+(?:detective|investigat\\w+))';
 export const regOther = 'the\\s*family|\\btf\\s?rp|family\\s*rp|twitchrp|\\bt\\W*rp|\\bnon[\\s\\-]*stop|\\bns\\s?rp';
 export const regOthers = [
