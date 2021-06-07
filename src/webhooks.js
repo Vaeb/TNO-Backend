@@ -15,7 +15,6 @@ import treeKill from 'tree-kill';
 // }
 
 const backCwd = path.resolve('.');
-const log = (...args) => console.log(`> ${new Date().toISOString().replace(/T|\.\w+$/g, ' ').trim()} |`, ...args);
 
 const ukDate = new Date(new Date().toLocaleString('en-US', { timeZone: 'Europe/London' }));
 const initialDate = new Date();
