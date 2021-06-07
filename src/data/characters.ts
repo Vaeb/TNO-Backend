@@ -16,6 +16,8 @@ interface Character {
 
 type NpCharacters = { [key: string]: Character[] };
 
+const reg = (r: RegExp): string => `/${r.source}/`;
+
 export const npCharacters: NpCharacters = {
     '0Reed': [
         { name: 'Reed Dankleaf', faction: 'Lost MC' },
@@ -1004,7 +1006,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Jaed Smith' },
     ],
     LAGTVMaximusBlack: [
-        { name: 'Outto-Tune "OTT" Tyrone', faction: 'SSB', nicknames: [/\bO\S?TT/.source] },
+        { name: 'Outto-Tune "OTT" Tyrone', faction: 'SSB', nicknames: [/\b[O0]\S?TT/.source] },
     ],
     Lairdo_: [
         { name: 'Henry King' },
