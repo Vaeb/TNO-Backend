@@ -30,9 +30,10 @@ export const log = (...messages: any[]): void => {
     console.log(makeLogMessage(...messages));
 };
 
-export const mergeRegex = (regexArr: RegExp[]): RegExp => {
+export const mergeRegex = (regexArr: Array<RegExp | string>): RegExp => {
     let flags = '';
-    const sourceStr = regexArr.reduce((acc: string, reg: RegExp) => {
+    const sourceStr = regexArr.reduce((acc: string, reg: RegExp | string) => {
+        if (typeof reg === 'string') return `${acc}${reg}`;
         flags += reg.flags;
         return `${acc}${reg.source}`;
     }, '');
