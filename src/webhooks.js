@@ -17,6 +17,36 @@ import treeKill from 'tree-kill';
 const backCwd = path.resolve('.');
 const log = (...args) => console.log(`> ${new Date().toISOString().replace(/T|\.\w+$/g, ' ').trim()} |`, ...args);
 
+const ukDate = new Date(new Date().toLocaleString('en-US', { timeZone: 'Europe/London' }));
+const initialDate = new Date();
+
+export const tzOffset = (ukDate.getHours() - initialDate.getUTCHours()) * 1000 * 60 * 60;
+
+export const getDateUk = (date = new Date()) => new Date(date.getTime() + tzOffset);
+
+export const getDateString = (date = new Date()) => {
+    const iso = getDateUk(date).toISOString();
+    return `${iso.substr(0, 10)} ${iso.substr(11, 8)}`;
+};
+
+export const makeLogMessage = (...messages) => {
+    let logMessage = messages.map(msg => util.format(msg)).join(' ');
+
+    const dateString = getDateString();
+    if (logMessage[0] === '\n') {
+        const startingLines = (logMessage.match(/^\n+/) || [])[0];
+        logMessage = `${startingLines}> ${dateString} | ${logMessage.substring(startingLines.length)}`;
+    } else {
+        logMessage = `> ${dateString} | ${logMessage}`;
+    }
+
+    return logMessage;
+};
+
+export const log = (...messages) => {
+    console.log(makeLogMessage(...messages));
+};
+
 const app = express();
 
 app.use(express.json());

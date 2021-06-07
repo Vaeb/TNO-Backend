@@ -1,8 +1,9 @@
 import util from 'util';
 
+const ukDate = new Date(new Date().toLocaleString('en-US', { timeZone: 'Europe/London' }));
 const initialDate = new Date();
 
-export const tzOffset = (initialDate.getHours() - initialDate.getUTCHours()) * 1000 * 60 * 60;
+export const tzOffset = (ukDate.getHours() - initialDate.getUTCHours()) * 1000 * 60 * 60;
 
 export const getDateUk = (date = new Date()): Date => new Date(date.getTime() + tzOffset);
 
