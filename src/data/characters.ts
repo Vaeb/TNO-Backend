@@ -1,8 +1,10 @@
 /* eslint-disable object-curly-newline */
 
+import { FactionFull } from './meta';
+
 interface Character {
     name: string;
-    faction?: string;
+    faction?: FactionFull;
     displayName?: number;
     nicknames?: string[];
     leader?: boolean;
