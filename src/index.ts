@@ -22,6 +22,10 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+app.enable('trust proxy');
+
+app.use((req, res, next) => (req.secure ? next() : res.redirect(`https://${req.headers.host}${req.url}`)));
+
 app.get('/test', (req, res) => {
     log('/test');
     return res.send('test');
