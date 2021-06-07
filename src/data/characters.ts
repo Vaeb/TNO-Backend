@@ -1395,6 +1395,9 @@ export const npCharacters: NpCharacters = {
     Primal: [
         { name: '[Officer] Kareem Lyon', faction: 'Police', displayName: 1 },
     ],
+    PsiSyn: [
+        { name: '[Officer] Lucio Panini', faction: 'Police', assumeServer: 'public' },
+    ],
     Pssychotic: [
         { name: 'Jason Paul', faction: 'Lost MC', nicknames: ['JP'] },
         { name: 'Hades', nicknames: ['Dog'] },
