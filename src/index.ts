@@ -29,11 +29,9 @@ app.use(express.json());
 
 app.use((req, res, next) => {
     if (req.secure) {
-        log('secure, next');
         next();
     } else {
         const newUrl = `https://${req.headers.host?.replace(`:${HTTP_PORT}`, `:${HTTPS_PORT}`)}${req.url}`;
-        log('not secure, redirect', newUrl);
         res.redirect(newUrl);
     }
 });

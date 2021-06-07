@@ -24,6 +24,7 @@ export const npFactionsRegex = {
     + '|\\b(?:ranger|dt|sgt|lt(?![^|!]*\\bjones\\b)|cpl|lspd|sasp|bcso|cid|police[\\s\\-_]*academy)\\b)',
     medical: '(?<!then\\b.*|!)(?:doctor|\\b(?:dr|ems|emt)\\b)',
 };
+
 export const useColorsDark = {
     cleanbois: '#e74c3c',
     lostmc: '#ab5179',
@@ -55,6 +56,7 @@ export const useColorsDark = {
     publicnp: '#81ecec',
     other: '#81ecec',
 };
+
 export const useColorsLight = {
     cleanbois: '#c74c3c',
     lostmc: '#ab5179',

@@ -1,4 +1,4 @@
-export const characters = {
+export const npCharacters = {
     '0Reed': [
         { name: 'Reed Dankleaf', faction: 'Lost MC' },
     ],
