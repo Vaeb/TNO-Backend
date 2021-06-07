@@ -10,7 +10,7 @@ import * as initialData from './data/initialData';
 const domain = 'vaeb.io';
 const key = fs.readFileSync(`/etc/letsencrypt/live/${domain}/privkey.pem`, 'utf8');
 const cert = fs.readFileSync(`/etc/letsencrypt/live/${domain}/cert.pem`, 'utf8');
-const chain = fs.readFileSync(`/etc/letsencrypt/live/${domain}/cert.pe`, 'utf8');
+const chain = fs.readFileSync(`/etc/letsencrypt/live/${domain}/chain.pem`, 'utf8');
 const httpsOptions = {
     key,
     cert,
