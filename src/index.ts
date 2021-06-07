@@ -8,6 +8,8 @@ import https from 'https';
 import { log } from './utils';
 import * as initialData from './data/initialData';
 
+const { HTTP_PORT, HTTPS_PORT } = process.env;
+
 const domain = 'vaeb.io';
 const key = fs.readFileSync(`/etc/letsencrypt/live/${domain}/privkey.pem`, 'utf8');
 const cert = fs.readFileSync(`/etc/letsencrypt/live/${domain}/cert.pem`, 'utf8');
@@ -30,8 +32,9 @@ app.use((req, res, next) => {
         log('secure, next');
         next();
     } else {
-        log('not secure, redirect', `https://${req.headers.host}${req.url}`);
-        res.redirect(`https://${req.headers.host}${req.url}`);
+        const newUrl = `https://${req.headers.host?.replace(`:${HTTP_PORT}`, `:${HTTPS_PORT}`)}${req.url}`;
+        log('not secure, redirect', newUrl);
+        res.redirect(newUrl);
     }
 });
 
@@ -57,9 +60,9 @@ const httpServer = http.createServer(app);
 const httpsServer = https.createServer(httpsOptions, app);
 
 httpServer.listen(process.env.HTTP_PORT, () => {
-    log(`Server running on port ${process.env.HTTP_PORT}`);
+    log(`HTTP server running on port ${process.env.HTTP_PORT}`);
 });
 
 httpsServer.listen(process.env.HTTPS_PORT, () => {
-    log(`Server running on port ${process.env.HTTPS_PORT}`);
+    log(`HTTPS server running on port ${process.env.HTTPS_PORT}`);
 });
