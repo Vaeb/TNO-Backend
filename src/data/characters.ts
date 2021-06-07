@@ -1,6 +1,20 @@
 /* eslint-disable object-curly-newline */
 
-export const npCharacters = {
+interface Character {
+    name: string;
+    faction?: string;
+    displayName?: number;
+    nicknames?: string[];
+    leader?: boolean;
+    highCommand?: boolean;
+    affiliate?: boolean;
+    assume?: 'assumeNpNoOther' | 'assumeNp' | 'assumeOther' | 'someOther';
+    assumeServer?: 'whitelist' | 'public';
+}
+
+type NpCharacters = { [key: string]: Character[] };
+
+export const npCharacters: NpCharacters = {
     '0Reed': [
         { name: 'Reed Dankleaf', faction: 'Lost MC' },
     ],
@@ -83,7 +97,7 @@ export const npCharacters = {
         { name: 'Timoteo "TT" Bushnell', nicknames: ['Rasta'] },
     ],
     aleks: [
-        { name: '[Chief of Police] Bobby Smith', faction: 'Police', leader: 1, nicknames: ['Bob', 'Chief'], displayName: 1 },
+        { name: '[Chief of Police] Bobby Smith', faction: 'Police', leader: true, nicknames: ['Bob', 'Chief'], displayName: 1 },
         { name: '[FIB Agent] Heath Mercer', faction: 'Police' },
         { name: 'Vasily "V" Sazkaljovich', faction: 'Pegasus' },
     ],
@@ -505,7 +519,8 @@ export const npCharacters = {
         { name: '[Deputy] John Dorian', faction: 'Police' },
     ],
     Evee: [
-        { name: '[Judge] Antigone Weston', faction: 'DoJ' },
+        { name: '[Judge] Antigone Weston', faction: 'DoJ', assumeServer: 'whitelist' },
+        { name: '[Officer] Antigone Weston', faction: 'Police', assumeServer: 'public' },
         { name: '[Judge] Whitney Crawford', faction: 'DoJ' },
         { name: 'Adrienne West' },
         { name: 'Meggie "Megan" Right' },
@@ -1567,7 +1582,7 @@ export const npCharacters = {
         { name: 'John Riggs' },
     ],
     skippypoppin: [
-        { name: 'Kevin Whipaloo', faction: 'Burger Shot', leader: 1, displayName: 0 },
+        { name: 'Kevin Whipaloo', faction: 'Burger Shot', leader: true, displayName: 0 },
     ],
     Skitx0: [
         { name: 'Smino "Hitta" Brown', faction: 'GSF', assume: 'assumeNpNoOther' },
@@ -1594,7 +1609,7 @@ export const npCharacters = {
         { name: 'Chell Phish', displayName: 0 },
     ],
     sodapoppin: [
-        { name: 'Kevin Whipaloo', faction: 'Burger Shot', leader: 1, displayName: 0 },
+        { name: 'Kevin Whipaloo', faction: 'Burger Shot', leader: true, displayName: 0 },
         { name: 'Tappy "Cat" Nippers', nicknames: ['Cat'], displayName: 0 },
     ],
     Sp00nerism: [
