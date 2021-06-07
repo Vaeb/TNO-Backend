@@ -24,7 +24,15 @@ const app = express();
 
 app.enable('trust proxy');
 
-app.use((req, res, next) => (req.secure ? next() : res.redirect(`https://${req.headers.host}${req.url}`)));
+app.use((req, res, next) => {
+    if (req.secure) {
+        log('secure, next');
+        next();
+    } else {
+        log('not secure, redirect', `https://${req.headers.host}${req.url}`);
+        res.redirect(`https://${req.headers.host}${req.url}`);
+    }
+});
 
 app.get('/test', (req, res) => {
     log('/test');
@@ -45,11 +53,11 @@ app.get('/streams/:faction', (req, res) => {
 app.use((_req, res) => res.send({ error: 'This is not a valid API endpoint.' }));
 
 // app.listen(process.env.PORT, () => {
-//     console.log(`Server running on port ${process.env.PORT}`);
+//     log(`Server running on port ${process.env.PORT}`);
 // });
 
 const server = https.createServer(httpsOptions, app);
 
 server.listen(process.env.PORT, () => {
-    console.log(`server starting on port : ${process.env.PORT}`);
+    log(`Server running on port ${process.env.PORT}`);
 });
