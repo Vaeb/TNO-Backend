@@ -18,6 +18,8 @@ type NpCharacters = { [key: string]: Character[] };
 
 const reg = (r: RegExp): string => `/${r.source}/`;
 
+// Make character map
+
 export const npCharacters: NpCharacters = {
     '0Reed': [
         { name: 'Reed Dankleaf', faction: 'Lost MC' },
@@ -1669,8 +1671,8 @@ export const npCharacters: NpCharacters = {
         { name: 'Jack "Sully" Sullivan' },
     ],
     summit1g: [
-        { name: 'Charles "Chawa" Johnson', faction: 'Chang Gang' },
         { name: '[Deputy] John Charleston', faction: 'Police' },
+        { name: 'Charles "Chawa" Johnson', faction: 'Chang Gang' },
     ],
     Sunni: [
         { name: 'Hilda Bulking', faction: 'Vagos' },
