@@ -2,6 +2,7 @@ import 'dotenv/config';
 import fs from 'fs';
 import express from 'express';
 import cors from 'cors';
+import http from 'http';
 import https from 'https';
 
 import { log } from './utils';
@@ -19,10 +20,10 @@ const httpsOptions = {
 
 const app = express();
 
-// app.use(cors());
-// app.use(express.json());
-
 app.enable('trust proxy');
+
+app.use(cors());
+app.use(express.json());
 
 app.use((req, res, next) => {
     if (req.secure) {
@@ -52,12 +53,13 @@ app.get('/streams/:faction', (req, res) => {
 
 app.use((_req, res) => res.send({ error: 'This is not a valid API endpoint.' }));
 
-// app.listen(process.env.PORT, () => {
-//     log(`Server running on port ${process.env.PORT}`);
-// });
+const httpServer = http.createServer(app);
+const httpsServer = https.createServer(httpsOptions, app);
 
-const server = https.createServer(httpsOptions, app);
+httpServer.listen(process.env.HTTP_PORT, () => {
+    log(`Server running on port ${process.env.HTTP_PORT}`);
+});
 
-server.listen(process.env.PORT, () => {
-    log(`Server running on port ${process.env.PORT}`);
+httpsServer.listen(process.env.HTTPS_PORT, () => {
+    log(`Server running on port ${process.env.HTTPS_PORT}`);
 });
