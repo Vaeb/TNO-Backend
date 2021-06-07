@@ -1770,6 +1770,7 @@ export const npCharacters: NpCharacters = {
     ],
     Timmac: [
         { name: '[Deputy] T.J. Mack', faction: 'Police' },
+        { name: 'Trooper Gomer', nicknames: ['Colton'] },
         { name: 'Gomer Colton', nicknames: ['Gomey'] },
     ],
     Timmy2: [
