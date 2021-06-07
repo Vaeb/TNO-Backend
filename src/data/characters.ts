@@ -30,6 +30,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Fidel Guevara', nicknames: ['Don', 'Cabron'] },
         { name: 'Carmine "The Mouse" Costello' },
     ],
+    aaron_rp: [
+        { name: 'Aaron Alexander', faction: 'BSK', displayName: 0 },
+    ],
     AaronOnAir: [
         { name: '[Officer] Dan Faily', faction: 'Police', nicknames: ['485'] },
         { name: 'Sal T. Block', faction: 'ASRR', displayName: 0 },
@@ -544,6 +547,9 @@ export const npCharacters: NpCharacters = {
     extralivia: [
         { name: 'Jess ?', faction: 'SSB' },
     ],
+    F3ARzZ: [
+        { name: 'Ranjit Raventish', faction: 'BSK' },
+    ],
     Fairlight_Excalibur: [
         { name: 'Raja Bahadur', faction: 'QuickFix', leader: true },
         { name: '[Officer] Alexander "Fox" Fawkes', faction: 'Police' },
@@ -977,6 +983,9 @@ export const npCharacters: NpCharacters = {
     KristoferYee: [
         { name: 'Jay Que', displayName: 0 },
     ],
+    Kunaives: [
+        { name: 'Wally Veloce', faction: 'BSK' },
+    ],
     KuroKunoichi13: [
         { name: 'Natalia Omar' },
     ],
@@ -1006,7 +1015,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Jaed Smith' },
     ],
     LAGTVMaximusBlack: [
-        { name: 'Outto-Tune "OTT" Tyrone', faction: 'SSB', nicknames: [reg(/\b[O0]\S?TT/)] },
+        { name: 'Outto-Tune "OTT" Tyrone', faction: 'BSK', nicknames: [reg(/\b[O0]\S?TT/)] },
     ],
     Lairdo_: [
         { name: 'Henry King' },
@@ -1284,8 +1293,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Buddy Black' },
     ],
     NoElusionz: [
-        { name: 'Bobby Schmiguel', nicknames: ['Bobby Beats'] },
-        { name: 'Bobby Schmegal' },
+        { name: 'Bobby Schmiguel', faction: 'BSK', nicknames: ['Bobby Beats'] },
     ],
     noKingu: [
         { name: '[Deputy] Henri King', faction: 'Police' },

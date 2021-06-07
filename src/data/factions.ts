@@ -2,8 +2,9 @@
 /* eslint-disable max-len */
 
 import { mergeRegex } from '../utils';
+import { FactionMini } from './meta';
 
-export const npFactionsRegex = {
+export const npFactionsRegex: { [key in FactionMini]?: string } = {
     lostmc: /lost\s*mc|the\s*lost\b/.source,
     changgang: /chang\s*gang|\bcga?\b/.source,
     vagos: /vagos|yellow[\s\-]*gang|\besv\b/.source,
@@ -31,13 +32,14 @@ export const npFactionsRegex = {
     medical: /(?<!then\b.*|!)(?:doctor|\b(?:dr|ems|emt)\b)/.source,
 };
 
-export const useColorsDark = {
+export const useColorsDark: { [key in FactionMini]?: string } = {
     cleanbois: '#e74c3c',
     lostmc: '#ab5179',
     changgang: '#686de0',
     vagos: '#f1c40f',
     gsf: '#006422',
     ssb: '#9b59b6',
+    bsk: '#8854d0',
     pegasus: '#A87C2D',
     hoa: '#a6033a',
     doj: '#00a032',
@@ -63,14 +65,14 @@ export const useColorsDark = {
     other: '#81ecec',
 };
 
-export const useColorsLight = {
+export const useColorsLight: { [key in FactionMini]?: string } = {
     cleanbois: '#c74c3c',
     lostmc: '#ab5179',
     changgang: '#686de0',
     vagos: '#e3ba16',
     gsf: '#006422',
     ssb: '#9b59b6',
-    esb: '#8854d0',
+    bsk: '#8854d0',
     pegasus: '#A87C2D',
     hoa: '#a6033a',
     doj: '#00a032',

@@ -23,6 +23,10 @@ const npFactions = {
     larpers: 'LARPers',
     police: 'Police',
     medical: 'Medical',
+    otherfaction: 'Other Faction',
+    independent: 'Independent',
+    publicnp: 'PublicNP',
+    other: 'Other',
     darkweb: 'Dark Web',
     newsmedia: 'News Media',
     russians: 'Russians',
@@ -31,6 +35,7 @@ const npFactions = {
     lunatix: 'Lunatix',
     othernp: 'OtherNP',
     marabunta: 'Marabunta',
+    bsk: 'BSK',
 } as const;
 
 type NpFactions = typeof npFactions;
