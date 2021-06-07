@@ -11,13 +11,10 @@ import * as initialData from './data/initialData';
 const { HTTP_PORT, HTTPS_PORT } = process.env;
 
 const domain = 'vaeb.io';
-const key = fs.readFileSync(`/etc/letsencrypt/live/${domain}/privkey.pem`, 'utf8');
-const cert = fs.readFileSync(`/etc/letsencrypt/live/${domain}/cert.pem`, 'utf8');
-const chain = fs.readFileSync(`/etc/letsencrypt/live/${domain}/chain.pem`, 'utf8');
 const httpsOptions = {
-    key,
-    cert,
-    ca: chain,
+    key: fs.readFileSync(`/etc/letsencrypt/live/${domain}/privkey.pem`, 'utf8'),
+    cert: fs.readFileSync(`/etc/letsencrypt/live/${domain}/cert.pem`, 'utf8'),
+    ca: fs.readFileSync(`/etc/letsencrypt/live/${domain}/chain.pem`, 'utf8'),
 };
 
 const app = express();
@@ -44,6 +41,17 @@ app.get('/test', (req, res) => {
 app.get('/initial_data', (req, res) => {
     log('Handling request for /initial_data');
     return res.send(initialData);
+});
+
+app.get('/data', (req, res) => {
+    log('Handling request for /data');
+    const showData: any = {};
+    for (const [key, value] of Object.entries(initialData)) {
+        if (!['number', 'boolean'].includes(typeof value)) {
+            showData[key] = value;
+        }
+    }
+    return res.send(showData);
 });
 
 app.get('/streams/:faction', (req, res) => {
