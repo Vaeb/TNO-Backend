@@ -706,7 +706,7 @@ export const npCharacters: NpCharacters = {
     HonathanTV: [
         { name: '[Deputy] Honathan Yolo', faction: 'Police' },
     ],
-    Hossworth: [
+    Hoss: [
         { name: 'Chip Wheeler', faction: 'BBMC', displayName: 0 },
     ],
     Hotted89: [
