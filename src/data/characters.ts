@@ -71,9 +71,10 @@ export const npCharacters: NpCharacters = {
         { name: 'Jolene Mushkin', nicknames: ['Little Red'] },
     ],
     adeptthebest: [
-        { name: 'Hannah Hiltop' },
+        { name: 'Mari Posa', displayName: 0, assumeServer: 'whitelist' },
         { name: '[Officer] Selena Mendoza', faction: 'Police' },
-        { name: 'Mari Posa', displayName: 0 },
+        { name: 'Hannah Hiltop' },
+        { name: 'Maria Poser', displayName: 0, assumeServer: 'public' },
     ],
     adnormaltv: [
         { name: 'Ivan Gorbahtjov' },
