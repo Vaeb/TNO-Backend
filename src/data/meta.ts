@@ -34,6 +34,7 @@ export const npFactionsReal = {
     lunatix: 'Lunatix',
     marabunta: 'Marabunta',
     bsk: 'BSK',
+    gulaggang: 'Gulag Gang',
     podcast: 'Podcast',
 } as const;
 
@@ -49,7 +50,7 @@ type NpFactionsMeta = typeof npFactionsMeta;
 
 export const npFactions: NpFactionsReal & NpFactionsMeta = { ...npFactionsReal, ...npFactionsMeta } as const;
 
-type NpFactions = typeof npFactions;
+export type NpFactions = typeof npFactions;
 
 export type FactionRealMini = keyof NpFactionsReal;
 export type FactionRealFull = (NpFactionsReal)[FactionRealMini];

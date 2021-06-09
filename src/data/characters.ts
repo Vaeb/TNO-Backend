@@ -74,7 +74,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Mari Posa', displayName: 0, assumeServer: 'whitelist' },
         { name: '[Officer] Selena Mendoza', faction: 'Police' },
         { name: 'Hannah Hiltop' },
-        { name: 'Maria Poser', displayName: 0, assumeServer: 'public' },
+        { name: 'Maria Poser', faction: 'Gulag Gang', displayName: 0, assumeServer: 'public' },
     ],
     adnormaltv: [
         { name: 'Ivan Gorbahtjov' },
@@ -416,7 +416,8 @@ export const npCharacters: NpCharacters = {
         { name: 'Amie Rush' },
     ],
     CurtisRyan: [
-        { name: 'Curtis Swoleroid', nicknames: ['"Demon" of Lean Street', 'Curt'] },
+        { name: 'Curtis Swoleroid', nicknames: ['"Demon" of Lean Street', 'Curt'], assumeServer: 'whitelist' },
+        { name: 'Curtis Swoleroid', nicknames: ['"Demon" of Lean Street', 'Curt'], faction: 'Gulag Gang', assumeServer: 'public' },
         { name: '[Officer] Stephen McClane', faction: 'Police' },
         { name: 'Cornelius "Cornbread" Scott', faction: 'GSF' },
     ],
@@ -1202,7 +1203,7 @@ export const npCharacters: NpCharacters = {
         { name: 'William "Bill Ding" Ding', nicknames: ['Bill'] },
     ],
     Ming: [
-        { name: 'Ming Jingtai', assume: 'assumeNp', assumeServer: 'public' },
+        { name: 'Ming Jingtai', faction: 'Gulag Gang', assume: 'assumeNp', assumeServer: 'public' },
     ],
     miniminter: [
         { name: 'Peter Shufflebottom', displayName: 0 },
@@ -1342,7 +1343,8 @@ export const npCharacters: NpCharacters = {
         { name: 'Big O', displayName: 0 },
     ],
     OfficialTaco: [
-        { name: 'Charles "Taco" Prince', faction: 'Chang Gang' },
+        { name: 'Charles "Taco" Prince', faction: 'Chang Gang', assumeServer: 'whitelist' },
+        { name: 'Charles "Taco" Prince', faction: 'Gulag Gang', assumeServer: 'public' },
     ],
     OG_Tyger: [
         { name: '[Officer] Peter Frost', faction: 'Police' },
@@ -1444,7 +1446,7 @@ export const npCharacters: NpCharacters = {
     ],
     RatedEpicz: [
         { name: 'Randy Bullet', faction: 'Chang Gang', nicknames: ['Lazy-Eye Bullet'], assumeServer: 'whitelist' },
-        { name: 'Roundy Buffet', faction: 'Chang Gang', nicknames: ['Lazy-Eye Bullet'], assumeServer: 'public' },
+        { name: 'Roundy Buffet', faction: 'Gulag Gang', nicknames: ['Lazy-Eye Bullet'], assumeServer: 'public' },
         { name: '[Trooper] AJ Hunter', faction: 'Police' },
     ],
     Ray__C: [
@@ -1930,7 +1932,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Le Wang', faction: 'Vagos', displayName: 0 },
     ],
     xQcOW: [
-        { name: 'Jean "X" Paul', nicknames: ['Ghost Rider', 'Rider'], displayName: 0, assumeServer: 'public' },
+        { name: 'Jean "X" Paul', nicknames: ['Ghost Rider', 'Rider'], faction: 'Gulag Gang', displayName: 0, assumeServer: 'public' },
         { name: '[Deputy] Pierre "PP" Paul', faction: 'Police', displayName: 0 },
         { name: 'Jean Pierre', displayName: 0 },
     ],
