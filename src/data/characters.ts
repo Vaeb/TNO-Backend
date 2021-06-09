@@ -1202,7 +1202,7 @@ export const npCharacters: NpCharacters = {
         { name: 'William "Bill Ding" Ding', nicknames: ['Bill'] },
     ],
     Ming: [
-        { name: 'Ming Jingtai', assume: 'assumeNp' },
+        { name: 'Ming Jingtai', assume: 'assumeNp', assumeServer: 'public' },
     ],
     miniminter: [
         { name: 'Peter Shufflebottom', displayName: 0 },
