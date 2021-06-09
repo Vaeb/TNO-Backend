@@ -1930,7 +1930,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Le Wang', faction: 'Vagos', displayName: 0 },
     ],
     xQcOW: [
-        { name: 'Jean "X" Paul', nicknames: ['Ghost Rider', 'Rider'], displayName: 0 },
+        { name: 'Jean "X" Paul', nicknames: ['Ghost Rider', 'Rider'], displayName: 0, assumeServer: 'public' },
         { name: '[Deputy] Pierre "PP" Paul', faction: 'Police', displayName: 0 },
         { name: 'Jean Pierre', displayName: 0 },
     ],
