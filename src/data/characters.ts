@@ -1,20 +1,24 @@
 /* eslint-disable object-curly-newline */
 
-import { FactionFull } from './meta';
+import { FactionRealFull } from './meta';
 
-interface Character {
+export type AssumeOther = 'assumeNpNoOther' | 'assumeNp' | 'assumeOther' | 'someOther';
+
+export type AssumeServer = 'whitelist' | 'public';
+
+export interface Character {
     name: string;
-    faction?: FactionFull;
+    faction?: FactionRealFull;
     displayName?: number;
     nicknames?: string[];
     leader?: boolean;
     highCommand?: boolean;
     affiliate?: boolean;
-    assume?: 'assumeNpNoOther' | 'assumeNp' | 'assumeOther' | 'someOther';
-    assumeServer?: 'whitelist' | 'public';
+    assume?: AssumeOther;
+    assumeServer?: AssumeServer;
 }
 
-type NpCharacters = { [key: string]: Character[] };
+export type NpCharacters = { [key: string]: Character[] };
 
 const reg = (r: RegExp): string => `/${r.source}/`;
 
@@ -171,7 +175,7 @@ export const npCharacters: NpCharacters = {
         { name: '[EMS] Boba Stone', faction: 'Medical' },
     ],
     AuriEllis: [
-        { name: 'Ursula Leichenberg', faction: 'News Media' },
+        { name: 'Ursula Leichenberg', faction: 'News' },
     ],
     aurvinR: [
         { name: '[ADA] John Doe', faction: 'DoJ' },
@@ -1437,7 +1441,8 @@ export const npCharacters: NpCharacters = {
         { name: 'Mary Livingston', displayName: 0 },
     ],
     RatedEpicz: [
-        { name: 'Randy Bullet', faction: 'Chang Gang', nicknames: ['Lazy-Eye Bullet'] },
+        { name: 'Randy Bullet', faction: 'Chang Gang', nicknames: ['Lazy-Eye Bullet'], assumeServer: 'whitelist' },
+        { name: 'Roundy Buffet', faction: 'Chang Gang', nicknames: ['Lazy-Eye Bullet'], assumeServer: 'public' },
         { name: '[Trooper] AJ Hunter', faction: 'Police' },
     ],
     Ray__C: [
@@ -1499,7 +1504,7 @@ export const npCharacters: NpCharacters = {
     ],
     Saiiren: [
         { name: 'Ai "Betch" Musori', nicknames: ['Bitch'], displayName: 0 },
-        { name: '"~Podcast~"', nicknames: ['Podcast'], faction: 'OtherNP' },
+        { name: '"~Podcast~"', nicknames: ['Podcast'], faction: 'Podcast' },
     ],
     Sal_Rosenberg: [
         { name: 'Sal Rosenberg' },
@@ -1574,7 +1579,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Joel Garcia', faction: 'Police' },
     ],
     SilentSentry: [
-        { name: 'Ron Otterman', faction: 'News Media', nicknames: [reg(/🎥/)], displayName: 0 },
+        { name: 'Ron Otterman', faction: 'News', nicknames: [reg(/🎥/)], displayName: 0 },
         { name: 'Michael Michaels Jr.', nicknames: ['MMJR'], displayName: 0 },
         { name: 'Iroquois "Snake" Plisken', displayName: 0 },
         { name: 'Ziggy Flint', nicknames: [reg(/🌿/)], displayName: 0 },
