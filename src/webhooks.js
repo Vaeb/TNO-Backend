@@ -122,7 +122,8 @@ async function start() {
 }
 
 async function updateBackend() {
-    // log('-> [Backend] Installing dependencies...');
+    log('-> [Backend] Installing dependencies...');
+    await spawnSync('backend', 'yarn', ['install']);
     // await spawnSync('backend', 'node', ['./scripts/install.js']);
     try {
         log('-> [Backend] Building ts...');
