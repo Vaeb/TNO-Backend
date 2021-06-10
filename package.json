@@ -16,7 +16,9 @@
         "cors": "^2.8.5",
         "dotenv": "^10.0.0",
         "express": "^4.17.1",
-        "tree-kill": "^1.2.2"
+        "tree-kill": "^1.2.2",
+        "twitch": "^4.5.5",
+        "twitch-auth": "^4.5.5"
     },
     "devDependencies": {
         "@types/cors": "^2.8.10",

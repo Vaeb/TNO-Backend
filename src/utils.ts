@@ -1,34 +1,4 @@
-import util from 'util';
-
-const ukDate = new Date(new Date().toLocaleString('en-US', { timeZone: 'Europe/London' }));
-const initialDate = new Date();
-
-export const tzOffset = (ukDate.getHours() - initialDate.getUTCHours()) * 1000 * 60 * 60;
-
-export const getDateUk = (date = new Date()): Date => new Date(date.getTime() + tzOffset);
-
-export const getDateString = (date = new Date()): string => {
-    const iso = getDateUk(date).toISOString();
-    return `${iso.substr(0, 10)} ${iso.substr(11, 8)}`;
-};
-
-export const makeLogMessage = (...messages: any[]): string => {
-    let logMessage = messages.map(msg => util.format(msg)).join(' ');
-
-    const dateString = getDateString();
-    if (logMessage[0] === '\n') {
-        const startingLines = (logMessage.match(/^\n+/) || [])[0];
-        logMessage = `${startingLines}[${dateString}] ${logMessage.substring(startingLines.length)}`;
-    } else {
-        logMessage = `[${dateString}] ${logMessage}`;
-    }
-
-    return logMessage;
-};
-
-export const log = (...messages: any[]): void => {
-    console.log(makeLogMessage(...messages));
-};
+export * from './utilsEarly';
 
 export const mergeRegex = (regexArr: Array<RegExp | string>): RegExp => {
     let flags = '';
@@ -38,5 +8,53 @@ export const mergeRegex = (regexArr: Array<RegExp | string>): RegExp => {
         return `${acc}${reg.source}`;
     }, '');
 
-    return new RegExp(sourceStr, flags.split('').sort().join('').replace(/(.)(?=.*\1)/g, ''));
+    return new RegExp(
+        sourceStr,
+        flags
+            .split('')
+            .sort()
+            .join('')
+            .replace(/(.)(?=.*\1)/g, '')
+    );
+};
+
+export const filterObj = (obj: any, callback: (v: any, k: string) => boolean): any =>
+    Object.keys(obj)
+        .filter(key => callback(obj[key], key))
+        .reduce((newObj: any, key) => {
+            newObj[key] = obj[key];
+            return newObj;
+        }, {});
+
+export type ValueOf<T> = T[keyof T];
+export type RecordGen = Record<string, unknown>;
+
+export const mapObj = <OldObject extends RecordGen, NewValue>(
+    obj: OldObject,
+    fn: (v: ValueOf<OldObject>, k: keyof OldObject, i: number) => NewValue
+): Record<keyof OldObject, NewValue> =>
+    Object.fromEntries(Object.entries(obj).map(([k, v], i) => [k, fn(v as ValueOf<OldObject>, k as keyof OldObject, i)])) as Record<
+    keyof OldObject,
+    NewValue
+    >;
+
+export const mapObjKeys = <OldObject extends RecordGen, NewKey extends string>(
+    obj: OldObject,
+    fn: (v: ValueOf<OldObject>, k: keyof OldObject, i: number) => NewKey
+): Record<NewKey, OldObject[keyof OldObject]> =>
+    Object.fromEntries(Object.entries(obj).map(([k, v], i) => [fn(v as ValueOf<OldObject>, k as keyof OldObject, i), v])) as Record<
+    NewKey,
+    OldObject[keyof OldObject]
+    >;
+
+export const cloneDeepJson = <T, U>(obj: T): U => JSON.parse(JSON.stringify(obj));
+
+export const paramBoolean = (param: string): boolean => !!param && param !== 'false' && param !== '0';
+
+export const parseParam = (value: string): any => {
+    if (!value) return undefined;
+    if (value === 'true') return true;
+    if (value === 'false') return false;
+    if (/^-?\d*(\.\d+)?$/.test(value)) return parseFloat(value);
+    return value;
 };

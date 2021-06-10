@@ -43,6 +43,7 @@ module.exports = {
         ],
         // 'func-names': 'off',
         'global-require': 'off',
+        'implicit-arrow-linebreak': 'off', // for prettier to handle
         'import/extensions': 'off',
         'import/no-dynamic-require': 'off',
         'import/prefer-default-export': 'off',
@@ -69,11 +70,13 @@ module.exports = {
         // 'no-multi-spaces': 'off',
         '@typescript-eslint/naming-convention': 'off',
         'no-new': 'off',
+        '@typescript-eslint/no-non-null-assertion': 'off',
         'no-param-reassign': 'off',
         'no-plusplus': 'off',
         'no-prototype-builtins': 'off',
         'no-restricted-syntax': 'off',
         'no-underscore-dangle': 'off',
+        'no-useless-escape': 'off',
         // '@typescript-eslint/no-unused-vars': [
         //     'warn',
         //     { vars: 'all', args: 'after-used', ignoreRestSiblings: true },
