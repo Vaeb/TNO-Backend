@@ -585,6 +585,9 @@ export const npCharacters: NpCharacters = {
     FeliciaDay: [
         { name: 'Cherryclarie Dinwittie', nicknames: ['CherryClaire'], displayName: 3 },
     ],
+    FelixLeLoup: [
+        { name: 'Felix Volk', faction: 'News' },
+    ],
     FerretRP: [
         { name: 'Alberto Weaselton', faction: 'Lost MC' },
     ],
