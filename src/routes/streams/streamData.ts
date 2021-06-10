@@ -389,7 +389,7 @@ export const getNpStreams = async (options: GetNpStreams = {}): Promise<StreamDa
                     ...baseStreamData,
                     rpServer: serverName,
                     characterName: '',
-                    faction: undefined,
+                    faction: 'other',
                     tagText: serverName.length > 0 ? `::${serverName}::` : '',
                     tagFaction: 'other',
                     keepCase: true,
