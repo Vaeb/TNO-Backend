@@ -52,7 +52,8 @@ const language = 'en' as const;
 const streamType = HelixStreamType.Live;
 const bigLimit = 100 as const;
 // const maxPages = 5 as const;
-const searchNumDefault = 500;
+const searchNumDefault = 1000;
+const searchNumMax = 5000;
 const updateCacheMs = 1000 * 60;
 
 const toFactionMini = (faction: string) => faction.toLowerCase().replace(' ', '');
@@ -192,7 +193,7 @@ const npFactionsRegexEntries = Object.entries(npFactionsRegex) as [NpFactionsReg
 const knownPfps: { [key: string]: string } = {};
 
 export const getStreams = async (searchNum = searchNumDefault): Promise<HelixStream[]> => {
-    searchNum = Math.min(searchNum, 5000);
+    searchNum = Math.min(searchNum, searchNumMax);
     // const gtaGame = await apiClient.helix.games.getGameById(game);
     let gtaStreams: HelixStream[] = [];
     let after;
@@ -218,7 +219,6 @@ export const getStreams = async (searchNum = searchNumDefault): Promise<HelixStr
 
         if (lookupStreams.length > 0) {
             log(`Looking up pfp for ${lookupStreams.length} users...`);
-            if (lookupStreams.length < 5) log(lookupStreams);
             const foundUsers = await apiClient.helix.users.getUsersByIds(lookupStreams);
             for (const helixUser of foundUsers) {
                 knownPfps[helixUser.id] = helixUser.profilePictureUrl.replace('-300x300.', '-50x50.');
@@ -262,6 +262,8 @@ interface StreamData extends BaseStreamData {
 const cachedResults: { [key: string]: StreamData[] | undefined } = {};
 
 export const getNpStreams = async (options: GetNpStreams = {}): Promise<StreamData[]> => {
+    log(options);
+
     options = {
         factionName: 'allnopixel',
         filterEnabled: true,
@@ -291,7 +293,6 @@ export const getNpStreams = async (options: GetNpStreams = {}): Promise<StreamDa
     const gtaStreams = await getStreams(searchNum);
 
     // log(gtaStreams.length);
-    log(options);
 
     // const useTextColor = '#000';
     // const useColors = darkMode ? useColorsDark : useColorsLight;
