@@ -523,6 +523,7 @@ export const getNpStreams = async (options: GetNpStreams = {}): Promise<StreamDa
         .filter((stream): stream is StreamData => stream !== undefined);
 
     cachedResults[optionsStr] = npStreams;
+    log('Done fetching streams data!');
 
     return npStreams;
 };
