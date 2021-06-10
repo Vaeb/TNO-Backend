@@ -781,7 +781,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Tyrone "Big T" Thompson', faction: 'SSB' },
     ],
     ItsSlikeR: [
-        { name: 'Abe Moe', nicknames: ['Don', 'Baldy', 'Bald'], displayName: 0 },
+        { name: 'Abe Moe', nicknames: ['Don', 'Baldy', 'Bald'], displayName: 0, assumeServer: 'public' },
         { name: 'Abraham Mohammed' },
     ],
     JaboodyShow: [
