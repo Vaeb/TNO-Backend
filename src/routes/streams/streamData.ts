@@ -250,9 +250,9 @@ interface BaseStreamData {
 }
 
 interface StreamData extends BaseStreamData {
-    rpServer?: string;
+    rpServer: string | null;
     characterName: string;
-    faction?: FactionMini;
+    faction: FactionMini | null;
     tagText: string;
     tagFaction: FactionColorsMini;
     tagFactionSecondary?: FactionColorsMini;
@@ -387,7 +387,7 @@ export const getNpStreams = async (options: GetNpStreams = {}): Promise<StreamDa
 
                 const streamData: StreamData = {
                     ...baseStreamData,
-                    rpServer: serverName,
+                    rpServer: serverName.length ? serverName : null,
                     characterName: '',
                     faction: 'other',
                     tagText: serverName.length > 0 ? `::${serverName}::` : '',
@@ -482,7 +482,7 @@ export const getNpStreams = async (options: GetNpStreams = {}): Promise<StreamDa
                 return undefined;
             }
 
-            let activeFaction: FactionMini | undefined;
+            let activeFaction: FactionMini | null;
             let keepCase = false;
             let tagFaction: FactionColorsMini;
             let tagText;
@@ -500,7 +500,7 @@ export const getNpStreams = async (options: GetNpStreams = {}): Promise<StreamDa
                 tagFaction = characters[0].factionUse;
                 tagText = `? ${characters[0].displayName} ?`;
             } else {
-                activeFaction = undefined;
+                activeFaction = null;
                 keepCase = true;
                 activeFaction = 'othernp';
                 tagFaction = 'othernp';
