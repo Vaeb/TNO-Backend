@@ -1556,7 +1556,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Joey Keys', faction: 'Police' },
     ],
     shiny: [
-        { name: '[Dispatch] Honey Buns', faction: 'Police', nicknames: ['D-21'] },
+        { name: '[Officer] Honey Buns', faction: 'Police', nicknames: ['D-21'] },
         { name: 'Pebbles ?', nicknames: ['Dog'] },
         { name: '[Archdruid /] Clyde "Meowfurryon" Eastside', faction: 'LARPers', nicknames: ['Druid', 'Archdruid', 'Malfurryon'] },
     ],
