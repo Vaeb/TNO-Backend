@@ -244,7 +244,7 @@ export interface GetNpStreams {
 interface BaseStreamData {
     channelName: string;
     title: string;
-    tagIds: string[];
+    // tagIds: string[];
     viewers: number;
     profileUrl: string;
 }
@@ -309,7 +309,7 @@ export const getNpStreams = async (options: GetNpStreams = {}): Promise<StreamDa
             const baseStreamData: BaseStreamData = {
                 channelName,
                 title,
-                tagIds: helixStream.tagIds,
+                // tagIds: helixStream.tagIds,
                 viewers,
                 profileUrl: knownPfps[helixStream.userId],
             }; // rpServer, characterName, faction, tagText, tagFaction
