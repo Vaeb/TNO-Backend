@@ -155,7 +155,7 @@ for (const [streamer, characters] of Object.entries(npCharacters)) {
         char.displayName = char.displayName.trim();
 
         nameRegAll.push(`\\b(?:${parsedNames.join('|')})\\b`);
-        char.nameReg = new RegExp(nameRegAll.join('|'), nameRegAll.length > 1 ? 'i' : undefined);
+        char.nameReg = new RegExp(nameRegAll.join('|'), nameRegAll.length > 1 ? 'ig' : 'g');
 
         if (char.faction != null) {
             char.factionUse = isFactionColor(char.faction) ? char.faction : 'otherfaction';
@@ -361,10 +361,7 @@ export const getNpStreams = async (options: GetNpStreams = {}, override = false)
                         let streamState; // remove, mark-np, mark-other
                         if (nowFilterEnabled) {
                             // If filtering streams is enabled
-                            if (
-                                (allowOthers && (onOtherIncluded || onMainOther || (npStreamer && onOther)))
-                                || (npStreamer && !mainsOther && !keepNp && onOther)
-                            ) {
+                            if ((allowOthers && (onOtherIncluded || onMainOther || (npStreamer && onOther))) || (npStreamer && !mainsOther && !keepNp && onOther)) {
                                 // If is-including-others and streamer on another server, or it's an NP streamer playing another server
                                 streamState = FSTATES.other;
                             } else if (npStreamer && !onMainOther && !onOther) {
@@ -409,14 +406,24 @@ export const getNpStreams = async (options: GetNpStreams = {}, override = false)
                         let nowCharacter;
 
                         let assumeServer: AssumeServer = 'whitelist';
+                        let onServer: AssumeServer = 'whitelist';
 
                         if (characters && characters.length) {
                             let lowestPos = Infinity;
+                            let maxResults = -1;
                             ({ assumeServer } = characters);
+                            if (assumeServer === 'whitelist') {
+                                onServer = regNpPublic.test(title) ? 'public' : 'whitelist';
+                            } else {
+                                onServer = regNpWhitelist.test(title) ? 'whitelist' : 'public';
+                            }
                             for (const char of characters) {
-                                const matchPos = titleParsed.indexOfRegex(char.nameReg);
-                                if (matchPos > -1 && matchPos < lowestPos) {
-                                    lowestPos = matchPos;
+                                const matchPositions = [...titleParsed.matchAll(char.nameReg)];
+                                const numResults = matchPositions.length;
+                                const lowIndex = numResults ? matchPositions[0].index! + (char.assumeServer !== onServer ? 1e4 : 0) : -1;
+                                if (lowIndex > -1 && (lowIndex < lowestPos || (lowIndex === lowestPos && numResults > maxResults))) {
+                                    lowestPos = lowIndex;
+                                    maxResults = numResults;
                                     nowCharacter = char;
                                 }
                             }
@@ -457,8 +464,16 @@ export const getNpStreams = async (options: GetNpStreams = {}, override = false)
                         const hasFactions = factionNames.length;
                         const hasCharacters = characters && characters.length;
 
-                        if (nowCharacter) ({ assumeServer } = nowCharacter);
-                        const onNpPublic = assumeServer === 'whitelist' ? regNpPublic.test(title) : !regNpWhitelist.test(title);
+                        if (nowCharacter) {
+                            ({ assumeServer } = nowCharacter);
+                            if (assumeServer === 'whitelist') {
+                                onServer = regNpPublic.test(title) ? 'public' : 'whitelist';
+                            } else {
+                                onServer = regNpWhitelist.test(title) ? 'whitelist' : 'public';
+                            }
+                        }
+
+                        const onNpPublic = onServer === 'public';
 
                         // log(nowCharacter);
 
