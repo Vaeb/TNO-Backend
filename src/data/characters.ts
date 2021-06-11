@@ -1583,7 +1583,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Anton Belov', faction: 'Russians' },
     ],
     Silent: [
-        { name: 'Juan Carlos "Flippy" Hernandez', leader: true, nicknames: ['FLIPPPPY', 'FLIPPPY', 'FLIPPPPPY'] },
+        { name: 'Juan Carlos "Flippy" Hernandez', leader: true, nicknames: [reg(/\bflip/)] },
         { name: '[Officer] Joel Garcia', faction: 'Police' },
     ],
     SilentSentry: [
