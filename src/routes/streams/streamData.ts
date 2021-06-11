@@ -260,6 +260,7 @@ interface StreamData extends BaseStreamData {
 }
 
 const cachedResults: { [key: string]: StreamData[] | undefined } = {};
+let npStreamsPromise: Promise<StreamData[]> | null = null;
 
 export const getNpStreams = async (options: GetNpStreams = {}, override = false): Promise<StreamData[]> => {
     log(options);
@@ -283,250 +284,270 @@ export const getNpStreams = async (options: GetNpStreams = {}, override = false)
     const optionsStr = JSON.stringify(options);
 
     if (!override && cachedResults[optionsStr] !== undefined) {
-        log('Returning cached results...');
+        log('Returning cached results.');
         return cachedResults[optionsStr]!;
     }
 
-    const {
-        factionName, filterEnabled, allowPublic, allowOthers, searchNum,
-    } = options;
-    const gtaStreams = await getStreams(searchNum);
+    if (npStreamsPromise == null || override) {
+        npStreamsPromise = new Promise<StreamData[]>(async (resolve, reject) => {
+            try {
+                log('Fetching streams data...');
 
-    // log(gtaStreams.length);
+                const {
+                    factionName, filterEnabled, allowPublic, allowOthers, searchNum,
+                } = options;
+                const gtaStreams = await getStreams(searchNum);
 
-    // const useTextColor = '#000';
-    // const useColors = darkMode ? useColorsDark : useColorsLight;
-    const metaFactions: FactionMini[] = ['allnopixel', 'alltwitch'];
-    // const npMetaFactions: FactionMini[] = ['allnopixel', 'alltwitch', 'othernp', 'publicnp'];
-    const isMetaFaction = factionName !== undefined ? metaFactions.includes(factionName) : false;
-    // const isNpMetaFaction = factionName !== undefined ? npMetaFactions.includes(factionName) : false;
-    // const minViewersUse = isNpMetaFaction ? minViewers : 3;
+                // log(gtaStreams.length);
 
-    const npStreams = gtaStreams
-        .map((helixStream) => {
-            const { userDisplayName: channelName, title, viewers } = helixStream;
+                // const useTextColor = '#000';
+                // const useColors = darkMode ? useColorsDark : useColorsLight;
+                const metaFactions: FactionMini[] = ['allnopixel', 'alltwitch'];
+                // const npMetaFactions: FactionMini[] = ['allnopixel', 'alltwitch', 'othernp', 'publicnp'];
+                const isMetaFaction = factionName !== undefined ? metaFactions.includes(factionName) : false;
+                // const isNpMetaFaction = factionName !== undefined ? npMetaFactions.includes(factionName) : false;
+                // const minViewersUse = isNpMetaFaction ? minViewers : 3;
 
-            const baseStreamData: BaseStreamData = {
-                channelName,
-                title,
-                // tagIds: helixStream.tagIds,
-                viewers,
-                profileUrl: knownPfps[helixStream.userId],
-            }; // rpServer, characterName, faction, tagText, tagFaction
+                const npStreams = gtaStreams
+                    .map((helixStream) => {
+                        const { userDisplayName: channelName, title, viewers } = helixStream;
 
-            const titleParsed = title.toLowerCase().replace(/\./g, ' ');
-            const channelNameLower = channelName.toLowerCase();
+                        const baseStreamData: BaseStreamData = {
+                            channelName,
+                            title,
+                            // tagIds: helixStream.tagIds,
+                            viewers,
+                            profileUrl: knownPfps[helixStream.userId],
+                        }; // rpServer, characterName, faction, tagText, tagFaction
 
-            let onOther = false;
-            let onOtherPos = -1;
-            let onOtherIncluded = false;
-            let serverName = '';
+                        const titleParsed = title.toLowerCase().replace(/\./g, ' ');
+                        const channelNameLower = channelName.toLowerCase();
 
-            // log(channelName, '>>>', titleParsed);
+                        let onOther = false;
+                        let onOtherPos = -1;
+                        let onOtherIncluded = false;
+                        let serverName = '';
 
-            for (let i = 0; i < regOthers.length; i++) {
-                const regOther = regOthers[i];
-                onOtherPos = title.indexOfRegex(regOther.reg);
-                if (onOtherPos > -1) {
-                    onOther = true;
-                    serverName = regOther.name;
-                    if (regOther.include) onOtherIncluded = true;
-                    break;
-                }
-            }
+                        // log(channelName, '>>>', titleParsed);
 
-            let onNp = false;
-            const onNpPos = title.indexOfRegex(regNp);
-            if (onNpPos > -1 && (onOther === false || onNpPos < onOtherPos)) {
-                onNp = true;
-                onOther = false;
-                onOtherIncluded = false;
-            }
-            const characters = npCharacters[channelNameLower];
-            const mainsOther = characters && characters.assumeOther == ASTATES.assumeOther;
-            const keepNp = characters && characters.assumeOther == ASTATES.assumeNpNoOther;
-            const onMainOther = !onNp && mainsOther;
-            const npStreamer = onNp || characters;
+                        for (let i = 0; i < regOthers.length; i++) {
+                            const regOther = regOthers[i];
+                            onOtherPos = title.indexOfRegex(regOther.reg);
+                            if (onOtherPos > -1) {
+                                onOther = true;
+                                serverName = regOther.name;
+                                if (regOther.include) onOtherIncluded = true;
+                                break;
+                            }
+                        }
 
-            const nowFilterEnabled = filterEnabled && factionName !== 'alltwitch';
+                        let onNp = false;
+                        const onNpPos = title.indexOfRegex(regNp);
+                        if (onNpPos > -1 && (onOther === false || onNpPos < onOtherPos)) {
+                            onNp = true;
+                            onOther = false;
+                            onOtherIncluded = false;
+                        }
+                        const characters = npCharacters[channelNameLower];
+                        const mainsOther = characters && characters.assumeOther == ASTATES.assumeOther;
+                        const keepNp = characters && characters.assumeOther == ASTATES.assumeNpNoOther;
+                        const onMainOther = !onNp && mainsOther;
+                        const npStreamer = onNp || characters;
 
-            // log(title, '>>>', onNp);
+                        const nowFilterEnabled = filterEnabled && factionName !== 'alltwitch';
 
-            let streamState; // remove, mark-np, mark-other
-            if (nowFilterEnabled) {
-                // If filtering streams is enabled
-                if (
-                    (allowOthers && (onOtherIncluded || onMainOther || (npStreamer && onOther)))
-                    || (npStreamer && !mainsOther && !keepNp && onOther)
-                ) {
-                    // If is-including-others and streamer on another server, or it's an NP streamer playing another server
-                    streamState = FSTATES.other;
-                } else if (npStreamer && !onMainOther && !onOther) {
-                    // If NoPixel streamer that isn't on another server
-                    streamState = FSTATES.nopixel;
-                    serverName = 'NP';
-                } else {
-                    return undefined;
-                }
-            } else if (npStreamer && !onMainOther && !onOther) {
-                // If NoPixel streamer that isn't on another server
-                streamState = FSTATES.nopixel;
-                serverName = 'NP';
-            } else {
-                streamState = FSTATES.other;
-            }
+                        // log(title, '>>>', onNp);
 
-            // log(streamState);
+                        let streamState; // remove, mark-np, mark-other
+                        if (nowFilterEnabled) {
+                            // If filtering streams is enabled
+                            if (
+                                (allowOthers && (onOtherIncluded || onMainOther || (npStreamer && onOther)))
+                                || (npStreamer && !mainsOther && !keepNp && onOther)
+                            ) {
+                                // If is-including-others and streamer on another server, or it's an NP streamer playing another server
+                                streamState = FSTATES.other;
+                            } else if (npStreamer && !onMainOther && !onOther) {
+                                // If NoPixel streamer that isn't on another server
+                                streamState = FSTATES.nopixel;
+                                serverName = 'NP';
+                            } else {
+                                return undefined;
+                            }
+                        } else if (npStreamer && !onMainOther && !onOther) {
+                            // If NoPixel streamer that isn't on another server
+                            streamState = FSTATES.nopixel;
+                            serverName = 'NP';
+                        } else {
+                            streamState = FSTATES.other;
+                        }
 
-            if (streamState === FSTATES.other) {
-                // Other included RP servers
-                const allowStream = isMetaFaction;
-                if (allowStream === false) {
-                    return undefined;
-                }
+                        // log(streamState);
 
-                const streamData: StreamData = {
-                    ...baseStreamData,
-                    rpServer: serverName.length ? serverName : null,
-                    characterName: '',
-                    faction: 'other',
-                    tagText: serverName.length > 0 ? `::${serverName}::` : '',
-                    tagFaction: 'other',
-                    keepCase: true,
-                };
+                        if (streamState === FSTATES.other) {
+                            // Other included RP servers
+                            const allowStream = isMetaFaction;
+                            if (allowStream === false) {
+                                return undefined;
+                            }
 
-                return streamData;
-            }
+                            const streamData: StreamData = {
+                                ...baseStreamData,
+                                rpServer: serverName.length ? serverName : null,
+                                characterName: '',
+                                faction: 'other',
+                                tagText: serverName.length > 0 ? `::${serverName}::` : '',
+                                tagFaction: 'other',
+                                keepCase: true,
+                            };
 
-            // streamState === FSTATES.nopixel
+                            return streamData;
+                        }
 
-            let nowCharacter;
+                        // streamState === FSTATES.nopixel
 
-            let assumeServer: AssumeServer = 'whitelist';
+                        let nowCharacter;
 
-            if (characters && characters.length) {
-                let lowestPos = Infinity;
-                ({ assumeServer } = characters);
-                for (const char of characters) {
-                    const matchPos = titleParsed.indexOfRegex(char.nameReg);
-                    if (matchPos > -1 && matchPos < lowestPos) {
-                        lowestPos = matchPos;
-                        nowCharacter = char;
-                    }
-                }
-            }
+                        let assumeServer: AssumeServer = 'whitelist';
 
-            let factionNames: NpFactionsRegexMini[] = [];
+                        if (characters && characters.length) {
+                            let lowestPos = Infinity;
+                            ({ assumeServer } = characters);
+                            for (const char of characters) {
+                                const matchPos = titleParsed.indexOfRegex(char.nameReg);
+                                if (matchPos > -1 && matchPos < lowestPos) {
+                                    lowestPos = matchPos;
+                                    nowCharacter = char;
+                                }
+                            }
+                        }
 
-            if (nowCharacter === undefined) {
-                interface FactionObj {
-                    name: NpFactionsRegexKeys;
-                    index: number;
-                    character?: Character;
-                    rank: number;
-                }
-                const factionObjects: FactionObj[] = [];
+                        let factionNames: NpFactionsRegexMini[] = [];
 
-                for (const [faction, regex] of npFactionsRegexEntries) {
-                    const matchPos = title.indexOfRegex(regex);
-                    if (matchPos > -1) {
-                        const factionCharacter = characters && characters.find(char => char.faction === faction);
-                        const factionObj: FactionObj = {
-                            name: faction,
-                            index: matchPos,
-                            character: factionCharacter,
-                            rank: factionCharacter ? 0 : 1, // ?????
+                        if (nowCharacter === undefined) {
+                            interface FactionObj {
+                                name: NpFactionsRegexKeys;
+                                index: number;
+                                character?: Character;
+                                rank: number;
+                            }
+                            const factionObjects: FactionObj[] = [];
+
+                            for (const [faction, regex] of npFactionsRegexEntries) {
+                                const matchPos = title.indexOfRegex(regex);
+                                if (matchPos > -1) {
+                                    const factionCharacter = characters && characters.find(char => char.faction === faction);
+                                    const factionObj: FactionObj = {
+                                        name: faction,
+                                        index: matchPos,
+                                        character: factionCharacter,
+                                        rank: factionCharacter ? 0 : 1, // ?????
+                                    };
+                                    factionObjects.push(factionObj);
+                                }
+                            }
+
+                            if (factionObjects.length) {
+                                factionObjects.sort((a, b) => a.rank - b.rank || a.index - b.index);
+                                if (factionObjects[0].character) nowCharacter = factionObjects[0].character;
+                                factionNames = factionObjects.map(f => f.name);
+                            }
+                        }
+
+                        const hasFactions = factionNames.length;
+                        const hasCharacters = characters && characters.length;
+
+                        if (nowCharacter) ({ assumeServer } = nowCharacter);
+                        const onNpPublic = assumeServer === 'whitelist' ? regNpPublic.test(title) : !regNpWhitelist.test(title);
+
+                        // log(nowCharacter);
+
+                        let allowStream = isMetaFaction;
+                        if (allowStream === false) {
+                            if (factionName === 'othernp') {
+                                allowStream = !nowCharacter && !hasFactions && !hasCharacters;
+                            } else if (factionName === 'publicnp') {
+                                allowStream = onNpPublic;
+                            } else {
+                                let nowFaction;
+                                if (nowCharacter) {
+                                    // use condition below
+                                    nowFaction = nowCharacter.factionUse;
+                                } else if (hasFactions) {
+                                    nowFaction = factionNames[0];
+                                } else if (hasCharacters) {
+                                    nowFaction = characters[0].factionUse;
+                                }
+                                allowStream = nowFaction === factionName;
+                            }
+                        }
+
+                        // log(allowStream === false, (onNpPublic && factionName !== 'publicnp' && allowPublic == false));
+
+                        if (allowStream === false || (onNpPublic && factionName !== 'publicnp' && allowPublic == false)) {
+                            return undefined;
+                        }
+
+                        let activeFaction: FactionMini | null;
+                        let keepCase = false;
+                        let tagFaction: FactionColorsMini;
+                        let tagText;
+
+                        if (nowCharacter) {
+                            activeFaction = nowCharacter.faction;
+                            tagFaction = nowCharacter.factionUse;
+                            tagText = `${nowCharacter.leader ? '♛ ' : ''}${nowCharacter.displayName}`;
+                        } else if (hasFactions) {
+                            activeFaction = factionNames[0];
+                            tagFaction = isFactionColor(factionNames[0]) ? factionNames[0] : 'independent';
+                            tagText = `< ${fullFactionMap[factionNames[0]] || factionNames[0]} >`;
+                        } else if (hasCharacters) {
+                            activeFaction = characters[0].factionUse;
+                            tagFaction = characters[0].factionUse;
+                            tagText = `? ${characters[0].displayName} ?`;
+                        } else {
+                            activeFaction = null;
+                            keepCase = true;
+                            activeFaction = 'othernp';
+                            tagFaction = 'othernp';
+                            tagText = `${serverName}`;
+                        }
+
+                        const streamData: StreamData = {
+                            ...baseStreamData,
+                            rpServer: serverName,
+                            characterName: nowCharacter?.name ?? '',
+                            faction: activeFaction,
+                            tagText,
+                            tagFaction,
+                            tagFactionSecondary: onNpPublic ? 'publicnp' : undefined,
+                            keepCase,
                         };
-                        factionObjects.push(factionObj);
-                    }
-                }
 
-                if (factionObjects.length) {
-                    factionObjects.sort((a, b) => a.rank - b.rank || a.index - b.index);
-                    if (factionObjects[0].character) nowCharacter = factionObjects[0].character;
-                    factionNames = factionObjects.map(f => f.name);
-                }
+                        return streamData;
+                    })
+                    .filter((stream): stream is StreamData => stream !== undefined);
+
+                cachedResults[optionsStr] = npStreams;
+                log('Done fetching streams data!');
+                resolve(npStreams);
+            } catch (err) {
+                log('Failed to fetch streams data:', err);
+                reject(err);
             }
+        });
+    } else {
+        log('Waiting for npStreamsPromise...');
+    }
 
-            const hasFactions = factionNames.length;
-            const hasCharacters = characters && characters.length;
+    const npStreams = await npStreamsPromise;
 
-            if (nowCharacter) ({ assumeServer } = nowCharacter);
-            const onNpPublic = assumeServer === 'whitelist' ? regNpPublic.test(title) : !regNpWhitelist.test(title);
-
-            // log(nowCharacter);
-
-            let allowStream = isMetaFaction;
-            if (allowStream === false) {
-                if (factionName === 'othernp') {
-                    allowStream = !nowCharacter && !hasFactions && !hasCharacters;
-                } else if (factionName === 'publicnp') {
-                    allowStream = onNpPublic;
-                } else {
-                    let nowFaction;
-                    if (nowCharacter) {
-                        // use condition below
-                        nowFaction = nowCharacter.factionUse;
-                    } else if (hasFactions) {
-                        nowFaction = factionNames[0];
-                    } else if (hasCharacters) {
-                        nowFaction = characters[0].factionUse;
-                    }
-                    allowStream = nowFaction === factionName;
-                }
-            }
-
-            // log(allowStream === false, (onNpPublic && factionName !== 'publicnp' && allowPublic == false));
-
-            if (allowStream === false || (onNpPublic && factionName !== 'publicnp' && allowPublic == false)) {
-                return undefined;
-            }
-
-            let activeFaction: FactionMini | null;
-            let keepCase = false;
-            let tagFaction: FactionColorsMini;
-            let tagText;
-
-            if (nowCharacter) {
-                activeFaction = nowCharacter.faction;
-                tagFaction = nowCharacter.factionUse;
-                tagText = `${nowCharacter.leader ? '♛ ' : ''}${nowCharacter.displayName}`;
-            } else if (hasFactions) {
-                activeFaction = factionNames[0];
-                tagFaction = isFactionColor(factionNames[0]) ? factionNames[0] : 'independent';
-                tagText = `< ${fullFactionMap[factionNames[0]] || factionNames[0]} >`;
-            } else if (hasCharacters) {
-                activeFaction = characters[0].factionUse;
-                tagFaction = characters[0].factionUse;
-                tagText = `? ${characters[0].displayName} ?`;
-            } else {
-                activeFaction = null;
-                keepCase = true;
-                activeFaction = 'othernp';
-                tagFaction = 'othernp';
-                tagText = `${serverName}`;
-            }
-
-            const streamData: StreamData = {
-                ...baseStreamData,
-                rpServer: serverName,
-                characterName: nowCharacter?.name ?? '',
-                faction: activeFaction,
-                tagText,
-                tagFaction,
-                tagFactionSecondary: onNpPublic ? 'publicnp' : undefined,
-                keepCase,
-            };
-
-            return streamData;
-        })
-        .filter((stream): stream is StreamData => stream !== undefined);
-
-    cachedResults[optionsStr] = npStreams;
-    log('Done fetching streams data!');
+    log('Got data!');
 
     return npStreams;
 };
+
+getNpStreams({ allowOthers: true });
 
 setInterval(() => {
     const cachedResultsKeys = Object.keys(cachedResults);
