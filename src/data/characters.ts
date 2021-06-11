@@ -522,6 +522,9 @@ export const npCharacters: NpCharacters = {
     Dyrus: [
         { name: 'Louis Hill', displayName: 0 },
     ],
+    EagleAye: [
+        { name: 'Eve Summers' },
+    ],
     eebern: [
         { name: 'Huck Guthrie', faction: 'HOA' },
     ],
