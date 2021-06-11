@@ -718,8 +718,8 @@ export const npCharacters: NpCharacters = {
         { name: 'Olga Sazkaljovich', faction: 'Pegasus', nicknames: ['Olgaa', 'Olgaaa', 'Olgaaaa'] },
     ],
     hobbittrash: [
-        { name: '[Justice] Katya Zamalodchikova', faction: 'DoJ', displayName: 1 },
         { name: '[Officer] Tracy Martell', faction: 'Police', nicknames: ['Cop'] },
+        { name: '[Justice] Katya Zamalodchikova', faction: 'DoJ', displayName: 1 },
         { name: 'Jane Obama', displayName: 0 },
         { name: 'Jane Souls', displayName: 0 },
         { name: 'Rounda Block', faction: 'ASRR', displayName: 0 },
