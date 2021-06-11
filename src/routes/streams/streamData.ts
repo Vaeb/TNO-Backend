@@ -260,7 +260,7 @@ interface StreamData extends BaseStreamData {
 }
 
 const cachedResults: { [key: string]: StreamData[] | undefined } = {};
-let npStreamsPromise: Promise<StreamData[]> | null = null;
+const npStreamsPromise: { [key: string]: Promise<StreamData[]> | undefined } = {};
 
 export const getNpStreams = async (options: GetNpStreams = {}, override = false): Promise<StreamData[]> => {
     log(options);
@@ -288,8 +288,8 @@ export const getNpStreams = async (options: GetNpStreams = {}, override = false)
         return cachedResults[optionsStr]!;
     }
 
-    if (npStreamsPromise == null || override) {
-        npStreamsPromise = new Promise<StreamData[]>(async (resolve, reject) => {
+    if (npStreamsPromise[optionsStr] === undefined || override) {
+        npStreamsPromise[optionsStr] = new Promise<StreamData[]>(async (resolve, reject) => {
             try {
                 log('Fetching streams data...');
 
@@ -412,11 +412,6 @@ export const getNpStreams = async (options: GetNpStreams = {}, override = false)
                             let lowestPos = Infinity;
                             let maxResults = -1;
                             ({ assumeServer } = characters);
-                            if (assumeServer === 'whitelist') {
-                                onServer = regNpPublic.test(title) ? 'public' : 'whitelist';
-                            } else {
-                                onServer = regNpWhitelist.test(title) ? 'whitelist' : 'public';
-                            }
                             for (const char of characters) {
                                 const matchPositions = [...titleParsed.matchAll(char.nameReg)];
                                 const numResults = matchPositions.length;
@@ -427,6 +422,12 @@ export const getNpStreams = async (options: GetNpStreams = {}, override = false)
                                     nowCharacter = char;
                                 }
                             }
+                        }
+
+                        if (assumeServer === 'whitelist') {
+                            onServer = regNpPublic.test(title) ? 'public' : 'whitelist';
+                        } else {
+                            onServer = regNpWhitelist.test(title) ? 'whitelist' : 'public';
                         }
 
                         let factionNames: NpFactionsRegexMini[] = [];
@@ -555,7 +556,7 @@ export const getNpStreams = async (options: GetNpStreams = {}, override = false)
         log('Waiting for npStreamsPromise...');
     }
 
-    const npStreams = await npStreamsPromise;
+    const npStreams = await npStreamsPromise[optionsStr]!;
 
     log('Got data!');
 
