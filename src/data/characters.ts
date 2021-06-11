@@ -650,6 +650,9 @@ export const npCharacters: NpCharacters = {
     Gavbin_: [
         { name: '[Judge] Gavin Holliday', faction: 'DoJ' },
     ],
+    geenelly: [
+        { name: 'Misty Bloom', displayName: 0 },
+    ],
     GeneralEmu: [
         { name: '[Officer] Lance Malton', faction: 'Police' },
     ],
