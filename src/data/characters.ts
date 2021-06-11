@@ -721,6 +721,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Justice] Katya Zamalodchikova', faction: 'DoJ', displayName: 1 },
         { name: '[Officer] Tracy Martell', faction: 'Police', nicknames: ['Cop'] },
         { name: 'Jane Obama', displayName: 0 },
+        { name: 'Jane Souls', displayName: 0 },
         { name: 'Rounda Block', faction: 'ASRR', displayName: 0 },
         { name: "Kayden Dell'Anno" },
     ],
@@ -1201,7 +1202,8 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Michael Rodgers', faction: 'Police' },
     ],
     MiltonTPike1: [
-        { name: 'Kiki Chanel' },
+        { name: 'Kiki Chanel', assumeServer: 'whitelist' },
+        { name: '[Officer] Kiki Chanel', faction: 'Police', assumeServer: 'public' },
         { name: 'Dob Darker', nicknames: ['Dice is Right', 'Right Dice'], displayName: 0 },
         { name: 'Giovanni Atello', displayName: 1 },
         { name: 'Hazel Nutte' },
