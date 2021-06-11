@@ -403,15 +403,25 @@ export const getNpStreams = async (options: GetNpStreams = {}, override = false)
 
                         // streamState === FSTATES.nopixel
 
+                        const hasCharacters = characters && characters.length;
                         let nowCharacter;
 
                         let assumeServer: AssumeServer = 'whitelist';
                         let onServer: AssumeServer = 'whitelist';
 
-                        if (characters && characters.length) {
+                        if (hasCharacters) {
+                            ({ assumeServer } = characters);
+                        }
+
+                        if (assumeServer === 'whitelist') {
+                            onServer = regNpPublic.test(title) ? 'public' : 'whitelist';
+                        } else {
+                            onServer = regNpWhitelist.test(title) ? 'whitelist' : 'public';
+                        }
+
+                        if (hasCharacters) {
                             let lowestPos = Infinity;
                             let maxResults = -1;
-                            ({ assumeServer } = characters);
                             for (const char of characters) {
                                 const matchPositions = [...titleParsed.matchAll(char.nameReg)];
                                 const numResults = matchPositions.length;
@@ -422,12 +432,6 @@ export const getNpStreams = async (options: GetNpStreams = {}, override = false)
                                     nowCharacter = char;
                                 }
                             }
-                        }
-
-                        if (assumeServer === 'whitelist') {
-                            onServer = regNpPublic.test(title) ? 'public' : 'whitelist';
-                        } else {
-                            onServer = regNpWhitelist.test(title) ? 'whitelist' : 'public';
                         }
 
                         let factionNames: NpFactionsRegexMini[] = [];
@@ -463,7 +467,6 @@ export const getNpStreams = async (options: GetNpStreams = {}, override = false)
                         }
 
                         const hasFactions = factionNames.length;
-                        const hasCharacters = characters && characters.length;
 
                         if (nowCharacter) {
                             ({ assumeServer } = nowCharacter);
