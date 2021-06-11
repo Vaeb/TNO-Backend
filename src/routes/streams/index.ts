@@ -16,8 +16,7 @@ const router = Router();
 // console.log(streams.length, streams);
 
 router.get('/', async (req, res) => {
-    const faction = (req.query.faction || undefined) as FactionMini | undefined;
-    log('Handling request for /streams', faction);
+    log('Handling request for /streams');
     const streams = await getNpStreams(
         mapObjKeys(req.query as RecordGen, ((v, k) => {
             if (k === 'faction') return 'factionName';
