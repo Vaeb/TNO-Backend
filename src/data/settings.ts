@@ -10,8 +10,8 @@ export const intervalSeconds = 0.7;
 
 export const regNp = /(?<!not\s)(?:no[\s\-_.]*pixel|\bn[\s\-_.]*p\b)(?![\s\-]+inspired)/i;
 export const regNpPublic = mergeRegex([
-    /(?:no[\s\-_.]*pixel|\bn[\s\-_.]*p\b)(?:[\s\-_.]*(?:rp|\d+\.?\d*))?[\W_]*pub\w*\b(?!\W+(?:later|after))/i,
-    /|(\bpub\w*[\W_]*(?:no[\s\-_.]*pixel|\bn[\s\-_.]*p\b))/i,
+    /(?:no[\s\-_.]*pixel|\bn[\s\-_.]*p(?=\b|\d))(?:[\s\-_.]*(?:rp|\d+\.?\d*))?[\W_]*pub\w*\b(?!\W+(?:later|after))/i,
+    /|(\bpub\w*[\W_]*(?:no[\s\-_.]*pixel|\bn[\s\-_.]*p(?=\b|\d)))/i,
     /|(?<=(?:on|playing)\W+)(?:pub|public)/i,
     /|\bpub\w*[\W_]*(?:server|queue|for\b)/i,
     /|\[pub\w*\]/i,
