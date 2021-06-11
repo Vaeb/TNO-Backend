@@ -261,7 +261,7 @@ interface StreamData extends BaseStreamData {
 
 const cachedResults: { [key: string]: StreamData[] | undefined } = {};
 
-export const getNpStreams = async (options: GetNpStreams = {}): Promise<StreamData[]> => {
+export const getNpStreams = async (options: GetNpStreams = {}, override = false): Promise<StreamData[]> => {
     log(options);
 
     options = {
@@ -282,7 +282,7 @@ export const getNpStreams = async (options: GetNpStreams = {}): Promise<StreamDa
 
     const optionsStr = JSON.stringify(options);
 
-    if (cachedResults[optionsStr] !== undefined) {
+    if (!override && cachedResults[optionsStr] !== undefined) {
         log('Returning cached results...');
         return cachedResults[optionsStr]!;
     }
@@ -535,7 +535,6 @@ setInterval(() => {
     for (const optionsStr of cachedResultsKeys) {
         log('Refreshing optionStr');
         const optionsObj = JSON.parse(optionsStr);
-        cachedResults[optionsStr] = undefined;
-        getNpStreams(optionsObj);
+        getNpStreams(optionsObj, true);
     }
 }, updateCacheMs);
