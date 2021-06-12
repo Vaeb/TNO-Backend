@@ -961,6 +961,7 @@ export const npCharacters: NpCharacters = {
     ],
     KinkyHobo_: [
         { name: '[Lawyer /] Gill Schultz', faction: 'DoJ', displayName: 1 },
+        { name: 'Max Muller', displayName: 0 },
     ],
     Kitboga: [
         { name: 'Edna Moose' },
