@@ -1240,6 +1240,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Ro Block', faction: 'ASRR', displayName: 0 },
         { name: 'Yung Dab', nicknames: ['The "Gnome"'] },
     ],
+    Moose_Taffy: [
+        { name: 'Patar Bellosh', faction: 'NBC', assume: 'assumeOther' },
+    ],
     mrborealislive: [
         { name: 'Rudolph ?', faction: 'Burger Shot' },
     ],
