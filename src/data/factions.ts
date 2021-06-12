@@ -24,7 +24,7 @@ export const npFactionsRegex = {
     angels: /\bangels\b/i,
     nbc: /\bnbc\b/i,
     burgershot: /burger[\s\-]*shot|\bburgers\b/i,
-    development: /\bdevelop|\bdev\b/i,
+    development: /\bdevelop|\bdev\b|\bcoding/i,
     doc: /\bdoc\b|\bcorrection/i,
     prison: /\blifer|\bprison|\blife\W+sentence/i,
     mechanic: /\bmechanic\b/i,
