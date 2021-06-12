@@ -670,7 +670,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Mick Flair', displayName: 0 },
     ],
     Greekgodx: [
-        { name: '"Tay Tay" Tyrone', nicknames: ['TayTay'] },
+        { name: '"Tay Tay" Tyrone', nicknames: ['TayTay'], assumeServer: 'public' },
         { name: 'Tea Tea', faction: 'Police', displayName: 0 },
     ],
     GreenishMonkey: [
