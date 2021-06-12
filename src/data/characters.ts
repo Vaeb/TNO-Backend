@@ -211,6 +211,7 @@ export const npCharacters: NpCharacters = {
     BananaDuck: [
         { name: 'Billy Sprinkle', displayName: 0 },
         { name: 'Jimmy Limbs', displayName: 0 },
+        { name: 'Dick Fillet', displayName: 0 },
         { name: 'Ravi Ravson', displayName: 0 },
     ],
     barryscottlive: [
@@ -1903,9 +1904,10 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Peter Rogers', faction: 'Police' },
     ],
     Wayward: [
-        { name: '[Judge] Wayne Ardson', faction: 'DoJ' },
+        { name: '[Judge] Wayne Ardson', faction: 'DoJ', assumeServer: 'whitelist' },
         { name: 'Angelo "Leo Nardo" Nardo', nicknames: ['Leo'] },
         { name: 'Jack "The Joker" Knaves', nicknames: ['The "Joker"'] },
+        { name: '[Deputy] Michael Colt', faction: 'Police', assumeServer: 'public' },
         { name: 'Bowser' },
     ],
     WeCameAsBecca: [
