@@ -1606,8 +1606,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Ziggy Flint', nicknames: [reg(/🌿/)], displayName: 0 },
     ],
     SimpleD88: [
-        { name: '[A.D.A.] Blake Specter', faction: 'DoJ' },
+        { name: '[A.D.A.] Blake Specter', faction: 'DoJ', assumeServer: 'whitelist' },
         { name: '[Lawyer /] Reggie Might', faction: 'DoJ' },
+        { name: '[Officer] Reggie Might', faction: 'Police', assumeServer: 'public' },
     ],
     Simplyje2ns: [
         { name: 'Jean Steele', displayName: 0 },
