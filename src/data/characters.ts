@@ -857,7 +857,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Lawyer /] Maggie Kayden', faction: 'DoJ' },
     ],
     Jonthebroski: [
-        { name: 'Denzel Williams', faction: 'Cleanbois', nicknames: ['The "Cleaner"'] },
+        { name: '[Mayor] Denzel Williams', faction: 'Cleanbois', nicknames: ['The "Cleaner"'] },
         { name: 'Dio Ivanov', faction: 'Russians' },
         { name: 'Holden D. Block', faction: 'ASRR', displayName: 0 },
         { name: '[Officer] Johnny Divine', faction: 'Police', displayName: 0 },
@@ -971,7 +971,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Rusty Johnson' },
     ],
     Kiva: [
-        { name: '[Mayor] Andi Jones', faction: 'HOA', nicknames: ['Ant'], displayName: 3 },
+        { name: 'Andi Jones', faction: 'HOA', nicknames: ['Ant'], displayName: 3 },
         { name: 'Navi Gates' },
     ],
     Kiwo: [
