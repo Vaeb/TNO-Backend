@@ -58,8 +58,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Khrystal Vibez' },
     ],
     AbdulHD: [
-        { name: 'Abdul AlRahim' },
+        { name: 'Abdul AlRahim', assumeServer: 'whitelist' },
         { name: '[Judge] Ali Habibi', faction: 'DoJ' },
+        { name: '[Officer] Basha Habibi', faction: 'Police', assumeServer: 'public' },
         { name: 'Mustafa Habibi' },
         { name: 'Fahad AlArabi', faction: 'DoC' },
     ],
