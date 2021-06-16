@@ -1175,7 +1175,7 @@ export const npCharacters: NpCharacters = {
     MEKABEAR: [
         { name: 'Erin Cox' },
         { name: 'Ari Tistu', displayName: 0 },
-        { name: '[Deputy] Amber Gold', faction: 'Police', displayName: 0 },
+        { name: '[Deputy] Amber Gold', faction: 'Police' },
     ],
     MeMayoi: [
         { name: 'Yoi Tsukita' },
@@ -1209,7 +1209,7 @@ export const npCharacters: NpCharacters = {
     ],
     MiltonTPike1: [
         { name: 'Kiki Chanel', assumeServer: 'whitelist' },
-        { name: '[Officer] Kiki Chanel', faction: 'Police', assumeServer: 'public' },
+        { name: '[Officer] Kiki Chanel', faction: 'Police', displayName: 1, assumeServer: 'public' },
         { name: 'Dob Darker', nicknames: ['Dice is Right', 'Right Dice'], displayName: 0 },
         { name: 'Giovanni Atello', displayName: 1 },
         { name: 'Hazel Nutte' },
