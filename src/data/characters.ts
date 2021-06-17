@@ -1164,7 +1164,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Dr.] Mikhail Keehl', faction: 'DoC', displayName: 2 },
     ],
     MattRP: [
-        { name: '[Officer] Jack Ripley', faction: 'Police' },
+        { name: '[Trooper] Jack Ripley', faction: 'Police' },
     ],
     McconnellRet: [
         { name: '? "Bench Guy" ?' },
