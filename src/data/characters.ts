@@ -283,7 +283,8 @@ export const npCharacters: NpCharacters = {
         { name: 'Kodak Bodega' },
     ],
     buddha: [
-        { name: 'Lang Buddha', faction: 'Cleanbois', leader: true, nicknames: ['Circle Andy'] },
+        { name: 'Lang Buddha', faction: 'Cleanbois', leader: true, nicknames: ['Circle Andy'], assumeServer: 'whitelist' },
+        { name: '[Ranger] Lang Buddha', faction: 'Police', displayName: 1, assumeServer: 'public' },
         { name: '[Deputy] Kevin Kona', faction: 'Police' },
         { name: 'Esteban Julio Ricardo Montoya De La Rosa Ramirez' },
     ],
@@ -1732,7 +1733,8 @@ export const npCharacters: NpCharacters = {
         { name: 'Miguel Almerion' },
     ],
     Sykkuno: [
-        { name: 'Yuno Sykk', faction: 'Cleanbois', displayName: 1 },
+        { name: 'Yuno Sykk', faction: 'Cleanbois', displayName: 1, assumeServer: 'whitelist' },
+        { name: '[Ranger] Yuno Sykk', faction: 'Police', displayName: 1, assumeServer: 'public' },
     ],
     SynthHunter: [
         { name: 'Hunter "Wingman" Skye', faction: 'ASRR' },
