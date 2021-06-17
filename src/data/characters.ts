@@ -701,8 +701,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Humberto Antonio Donato Pecorino', nicknames: ['Don', 'Donnie', reg(/\bOva[h']? here\b/)], displayName: 5, faction: 'Cleanbois' },
     ],
     Hedisaurus: [
-        { name: '[EMS] Hedi Saurus', faction: 'Medical', assume: 'assumeNpNoOther' },
+        { name: '[EMS] Hedi Saurus', faction: 'Medical', assume: 'assumeNpNoOther', assumeServer: 'whitelist' },
         { name: '[Dispatch] Ramona Celeste', faction: 'Police', displayName: 1 },
+        { name: '[Ranger] Ramona Celeste', faction: 'Police', displayName: 1, assumeServer: 'public' },
     ],
     HexagonistLIVE: [
         { name: '[Deputy] Vincent Glass', faction: 'Police', displayName: 2 },
@@ -977,7 +978,8 @@ export const npCharacters: NpCharacters = {
         { name: 'Navi Gates' },
     ],
     Kiwo: [
-        { name: '[Deputy] Lauren Forcer', faction: 'Police' },
+        { name: '[Deputy] Lauren Forcer', faction: 'Police', assumeServer: 'whitelist' },
+        { name: '[Officer] Maisy Graves', faction: 'Police', assumeServer: 'public' },
         { name: 'Mia Mersion', faction: 'Pegasus' },
         { name: 'Evita "Mother" Nimm', faction: 'Dark Web' },
         { name: 'Ava Ridge', nicknames: ['Silence', reg(/darkness/)] },
@@ -1942,6 +1944,7 @@ export const npCharacters: NpCharacters = {
     ],
     Wolfabelle: [
         { name: 'Bianca Walters' },
+        { name: '[Ride Along] Candice Defitt', faction: 'Police' },
     ],
     WTFGameNation: [
         { name: '[Dr.] Noah Drake', faction: 'Medical' },
