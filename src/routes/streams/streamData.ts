@@ -407,11 +407,12 @@ export const getNpStreams = async (options: GetNpStreams = {}, override = false)
                         let nowCharacter;
 
                         let assumeServer: AssumeServer = 'whitelist';
-                        let onServer: AssumeServer = 'whitelist';
 
                         if (hasCharacters) {
                             ({ assumeServer } = characters);
                         }
+
+                        let onServer: AssumeServer = assumeServer;
 
                         if (assumeServer === 'whitelist') {
                             onServer = regNpPublic.test(title) ? 'public' : 'whitelist';
@@ -419,13 +420,15 @@ export const getNpStreams = async (options: GetNpStreams = {}, override = false)
                             onServer = regNpWhitelist.test(title) ? 'whitelist' : 'public';
                         }
 
+                        const onServerDetected = onServer !== assumeServer;
+
                         if (hasCharacters) {
                             let lowestPos = Infinity;
                             let maxResults = -1;
                             for (const char of characters) {
                                 const matchPositions = [...titleParsed.matchAll(char.nameReg)];
                                 const numResults = matchPositions.length;
-                                const lowIndex = numResults ? matchPositions[0].index! + (char.assumeServer !== onServer ? 1e4 : 0) : -1;
+                                const lowIndex = numResults ? matchPositions[0].index! + (onServerDetected && char.assumeServer !== onServer ? 1e4 : 0) : -1;
                                 if (lowIndex > -1 && (lowIndex < lowestPos || (lowIndex === lowestPos && numResults > maxResults))) {
                                     lowestPos = lowIndex;
                                     maxResults = numResults;
