@@ -995,10 +995,10 @@ export const npCharacters: NpCharacters = {
     koil: [
         { name: '[Trooper] Kael Soze', faction: 'Police', highCommand: true, leader: true, nicknames: ['are illegal'] },
         { name: '[Officer] Francis Francer', faction: 'Police', displayName: 1 },
+        { name: 'Otto Delmar', nicknames: ['race', 'racing'] },
         { name: '[Development /] Koil', faction: 'Development', nicknames: ['Code'] },
         { name: 'Saint Jospeh', nicknames: ['Jesus', 'Joseph', 'XUJIA', 'EMC'], displayName: 0 },
         { name: 'Ray Ray', faction: 'ASRR', displayName: 0 },
-        { name: 'Otto Delmar' },
     ],
     Kongfue: [
         { name: 'Karl "KJ" Johnny', faction: 'Vagos' },
