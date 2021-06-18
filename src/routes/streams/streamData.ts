@@ -541,10 +541,13 @@ export const getNpStreams = async (options: GetNpStreams = {}, override = false)
                             tagText = `${serverName}`;
                         }
 
+                        let useCharacter: Character | undefined = nowCharacter;
+                        if (!useCharacter) useCharacter = hasCharacters ? characters[0] : undefined;
+
                         const streamData: StreamData = {
                             ...baseStreamData,
                             rpServer: serverName,
-                            characterName: nowCharacter?.name ?? '',
+                            characterName: useCharacter?.name ?? '',
                             faction: activeFaction,
                             tagText,
                             tagFaction,
