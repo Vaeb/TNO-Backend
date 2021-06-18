@@ -1500,7 +1500,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Nikita Reznikov', faction: 'Pegasus' },
     ],
     rlly: [
-        { name: 'Shelly Targaryen', faction: 'Burger Shot', nicknames: ['Shelleh'] },
+        { name: 'Shelly Targaryen', faction: 'Burger Shot', nicknames: ['Shelleh', 'Queen'] },
         { name: 'Kelly Smith' },
     ],
     RobotNinjaPants: [
