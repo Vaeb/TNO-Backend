@@ -22,7 +22,7 @@ interface Character extends Omit<CharacterOld, 'faction' | 'displayName' | 'assu
     assumeServer: AssumeServer;
 }
 
-type NpCharacters = { [key: string]: Character[] & { assumeOther: number; assumeServer: AssumeServer } };
+type NpCharacters = { [key: string]: Character[] & { assumeOther: number; assumeServer: AssumeServer; assumeChar?: Character; } };
 
 const npCharacters = cloneDeepJson<NpCharactersOld, NpCharacters>(npCharactersOld);
 
@@ -167,6 +167,8 @@ for (const [streamer, characters] of Object.entries(npCharacters)) {
 
         if (!characters.assumeServer) characters.assumeServer = char.assumeServer || 'whitelist';
         if (!char.assumeServer) char.assumeServer = characters.assumeServer;
+
+        if (char.assumeChar && !characters.assumeChar) characters.assumeChar = char;
     });
 
     if (foundOthers.assumeNp && foundOthers.assumeOther) {
@@ -502,6 +504,10 @@ export const getNpStreams = async (options: GetNpStreams = {}, override = false)
                                 }
                                 allowStream = nowFaction === factionName;
                             }
+                        }
+
+                        if (!nowCharacter && !hasFactions && hasCharacters && characters.assumeChar) {
+                            nowCharacter = characters.assumeChar;
                         }
 
                         // log(allowStream === false, (onNpPublic && factionName !== 'publicnp' && allowPublic == false));

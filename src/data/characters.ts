@@ -16,6 +16,7 @@ export interface Character {
     affiliate?: boolean;
     assume?: AssumeOther;
     assumeServer?: AssumeServer;
+    assumeChar?: boolean;
 }
 
 export type NpCharacters = { [key: string]: Character[] };
@@ -957,7 +958,7 @@ export const npCharacters: NpCharacters = {
         { name: 'April Thompson', faction: 'Pegasus' },
     ],
     Kinamazing: [
-        { name: '[Officer] Emma Dupont', faction: 'Police', nicknames: ['Dupog'] },
+        { name: '[Officer] Emma Dupont', faction: 'Police', nicknames: ['Dupog'], assumeChar: true },
     ],
     King_1455: [
         { name: 'Cooch Cassidy', faction: 'Lost MC' },
