@@ -1383,7 +1383,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Evee Poppins' },
     ],
     omie: [
-        { name: 'Marty Shanks', faction: 'Burger Shot', assumeServer: 'public' },
+        { name: 'Marty Shanks', faction: 'Gulag Gang', assumeServer: 'public' },
     ],
     OwenSeven: [
         { name: '[Officer] Owen Svensen', faction: 'Police' },
