@@ -463,7 +463,7 @@ export const npCharacters: NpCharacters = {
     ],
     Deansocool: [
         { name: 'Dean Quincy', faction: 'NBC', displayName: 0, assume: 'assumeNpNoOther' },
-        { name: '[Ride Along] Den Shiesty', faction: 'Police' },
+        { name: '[Ride Along] Den Shiesty', faction: 'Police', displayName: 0 },
     ],
     Denior13: [
         { name: 'Keith "Bulldog" Dooger', faction: 'Lost MC' },
