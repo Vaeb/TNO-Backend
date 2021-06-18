@@ -250,7 +250,7 @@ export const npCharacters: NpCharacters = {
     ],
     Blaustoise: [
         { name: 'Mickey S', faction: 'Chang Gang', nicknames: ['Downbad'], assumeServer: 'whitelist' },
-        { name: 'Michael S.', faction: 'Chang Gang', nicknames: ['Upgood'], assumeServer: 'public' },
+        { name: 'Michael S.', faction: 'Gulag Gang', nicknames: ['Upgood'], assumeServer: 'public' },
     ],
     bldrs: [
         { name: 'Kaleb "Kleb" Rush', faction: 'HOA' },
@@ -1278,7 +1278,8 @@ export const npCharacters: NpCharacters = {
         { name: 'Mike Rosoftsam', faction: 'Cleanbois', affiliate: true },
     ],
     Nakkida: [
-        { name: '[Ranger] Tessa Lamb', faction: 'Police', displayName: 1 },
+        { name: '[Ranger] Tessa Lamb', faction: 'Police', displayName: 1, assumeServer: 'whitelist' },
+        { name: 'Tessa Lamb', faction: 'Gulag Gang', assumeServer: 'public' },
         { name: 'Taylor "Onyx" White', faction: 'Police' },
         { name: 'Rachel Parker' },
     ],
@@ -1467,8 +1468,8 @@ export const npCharacters: NpCharacters = {
         { name: 'Mary Livingston', displayName: 0 },
     ],
     RatedEpicz: [
-        { name: 'Randy Bullet', faction: 'Chang Gang', nicknames: ['Lazy-Eye Bullet'], assumeServer: 'whitelist' },
-        { name: 'Roundy Buffet', faction: 'Gulag Gang', nicknames: ['Lazy-Eye Bullet'], assumeServer: 'public' },
+        { name: 'Randy Bullet', faction: 'Chang Gang', nicknames: ['Lazy-Eye'], assumeServer: 'whitelist' },
+        { name: 'Roundy Buffet', faction: 'Gulag Gang', nicknames: ['Randy', 'Bullet'], assumeServer: 'public' },
         { name: '[Trooper] AJ Hunter', faction: 'Police' },
     ],
     Ray__C: [
@@ -1586,7 +1587,8 @@ export const npCharacters: NpCharacters = {
         { name: 'Eddie Delish', faction: 'Cleanbois' },
     ],
     Shotz: [
-        { name: 'Vinny Pistone', faction: 'Chang Gang' },
+        { name: 'Vinny Pistone', faction: 'Chang Gang', assumeServer: 'whitelist' },
+        { name: 'Vinny Pistone', faction: 'Gulag Gang', assumeServer: 'public' },
         { name: 'Mr J', faction: 'Chang Gang', displayName: 0 },
         { name: '[Officer] John Mineo', faction: 'Police' },
     ],
