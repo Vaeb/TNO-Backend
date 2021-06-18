@@ -506,8 +506,14 @@ export const getNpStreams = async (options: GetNpStreams = {}, override = false)
                             }
                         }
 
-                        if (!nowCharacter && !hasFactions && hasCharacters && characters.assumeChar) {
-                            nowCharacter = characters.assumeChar;
+                        let possibleCharacter = nowCharacter;
+                        if (!nowCharacter && !hasFactions && hasCharacters) {
+                            if (characters.assumeChar) {
+                                nowCharacter = characters.assumeChar;
+                                possibleCharacter = nowCharacter;
+                            } else {
+                                possibleCharacter = characters[0];
+                            }
                         }
 
                         // log(allowStream === false, (onNpPublic && factionName !== 'publicnp' && allowPublic == false));
@@ -529,10 +535,10 @@ export const getNpStreams = async (options: GetNpStreams = {}, override = false)
                             activeFaction = factionNames[0];
                             tagFaction = isFactionColor(factionNames[0]) ? factionNames[0] : 'independent';
                             tagText = `< ${fullFactionMap[factionNames[0]] || factionNames[0]} >`;
-                        } else if (hasCharacters) {
-                            activeFaction = characters[0].factionUse;
-                            tagFaction = characters[0].factionUse;
-                            tagText = `? ${characters[0].displayName} ?`;
+                        } else if (possibleCharacter) {
+                            activeFaction = possibleCharacter.factionUse;
+                            tagFaction = possibleCharacter.factionUse;
+                            tagText = `? ${possibleCharacter.displayName} ?`;
                         } else {
                             activeFaction = null;
                             keepCase = true;
@@ -541,13 +547,10 @@ export const getNpStreams = async (options: GetNpStreams = {}, override = false)
                             tagText = `${serverName}`;
                         }
 
-                        let useCharacter: Character | undefined = nowCharacter;
-                        if (!useCharacter) useCharacter = hasCharacters ? characters[0] : undefined;
-
                         const streamData: StreamData = {
                             ...baseStreamData,
                             rpServer: serverName,
-                            characterName: useCharacter?.name ?? '',
+                            characterName: possibleCharacter?.name ?? '',
                             faction: activeFaction,
                             tagText,
                             tagFaction,
