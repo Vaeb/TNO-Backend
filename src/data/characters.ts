@@ -249,7 +249,7 @@ export const npCharacters: NpCharacters = {
     ],
     Blaustoise: [
         { name: 'Mickey S', faction: 'Chang Gang', nicknames: ['Downbad'], assumeServer: 'whitelist' },
-        { name: 'Michael S.', faction: 'Chang Gang', assumeServer: 'public' },
+        { name: 'Michael S.', faction: 'Chang Gang', nicknames: ['Upgood'], assumeServer: 'public' },
     ],
     bldrs: [
         { name: 'Kaleb "Kleb" Rush', faction: 'HOA' },
