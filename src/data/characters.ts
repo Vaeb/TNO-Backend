@@ -1373,8 +1373,8 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Peter Frost', faction: 'Police' },
     ],
     ogWiked: [
-        { name: 'Dwayne Flores' },
-        { name: 'Truth Flores' },
+        { name: 'Dwayne Flores', displayName: 0 },
+        { name: 'Truth Flores', displayName: 0 },
     ],
     OhMadOne: [
         { name: '[Lawyer /] Ginzu Okada', faction: 'DoJ' },
@@ -1991,7 +1991,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Tommy Tate', displayName: 0 },
     ],
     Ziggy: [
-        { name: '[Ranger] Ziggy Buggs', faction: 'Police', displayName: 1 },
+        { name: '[Ranger] Ziggy Buggs', faction: 'Police', displayName: 1, assumeChar: true },
         { name: '[Lawyer /] Norman Bones', faction: 'DoJ', displayName: 0 },
     ],
     zirnrp: [
