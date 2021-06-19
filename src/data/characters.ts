@@ -1532,7 +1532,7 @@ export const npCharacters: NpCharacters = {
     ],
     Saiiren: [
         { name: 'Ai "Betch" Musori', nicknames: ['Bitch'], displayName: 0 },
-        { name: '[Ride Along] Yuu Gondai', faction: 'Police', nicknames: ['Yu', 'Yoo', 'Gon Die'] },
+        { name: '[Deputy] Yuu Gondai', faction: 'Police', nicknames: ['Yu', 'Yoo', 'Gon Die'] },
         { name: '"~Podcast~"', nicknames: ['Podcast'], faction: 'Podcast' },
     ],
     Sal_Rosenberg: [
