@@ -358,7 +358,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Baada Ka', faction: 'HOA', nicknames: ['Chief'], displayName: 3, assume: 'assumeNpNoOther' },
     ],
     Choi: [
-        { name: '[Dr.] Choi Zhangsun', faction: 'Medical', leader: true },
+        { name: '[Dr.] Choi Zhangsun', faction: 'Medical', assume: 'assumeOther' },
     ],
     ChrisTombstone: [
         { name: 'Flop Dugong' },
