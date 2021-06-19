@@ -1763,6 +1763,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Tuesday Phillips' },
         { name: 'Milena' },
     ],
+    TastyMintsNA: [
+        { name: '[Officer] Eric Wong', faction: 'Police', assumeServer: 'public' },
+    ],
     Tehrani: [
         { name: 'Boris Ivanov', faction: 'Russians', leader: true },
         { name: 'Hector Guzman', faction: 'Vagos' },
