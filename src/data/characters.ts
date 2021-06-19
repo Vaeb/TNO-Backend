@@ -179,6 +179,7 @@ export const npCharacters: NpCharacters = {
     ],
     AuriEllis: [
         { name: 'Ursula Leichenberg', faction: 'News' },
+        { name: 'Gracie ?' },
     ],
     aurvinR: [
         { name: '[ADA] John Doe', faction: 'DoJ' },
