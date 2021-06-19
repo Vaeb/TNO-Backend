@@ -25,6 +25,7 @@ export const regOthers = [
     { name: 'NonStopRP', reg: /\bnon[\s\-]*stop|\bns\s?rp/i, include: 1 },
     { name: 'Project Homecoming', reg: /project[\s\-_.]*(?:homecoming\d*|\bhc\d*\b)|\bph\d*\b/i, include: 1 },
     { name: 'LegacyRP', reg: /\blegacy[\s\-_.]*(?:rp\b|roleplay)/i, include: 1 },
+    { name: 'New Day RP', reg: /\bnewday(?:rp|roleplay)?\b|\bnew\s+day\s*(?:rp|roleplay)\b/i, include: 1 },
     { name: 'SVRP', reg: /\bsvrp\b|subversion/i, include: 0 },
     { name: 'SSB WRLD', reg: /\bssb\b|ssb[\s:-]*(?:wo?rld|rp)|ssb\s+(?:later|after)/i, include: 0 },
     { name: 'FrenzyRP', reg: /\bfrenzy\s*rp/i, include: 0 },
