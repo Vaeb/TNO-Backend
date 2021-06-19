@@ -52,7 +52,7 @@ const language = 'en' as const;
 const streamType = HelixStreamType.Live;
 const bigLimit = 100 as const;
 // const maxPages = 5 as const;
-const searchNumDefault = 1000;
+const searchNumDefault = 1500;
 const searchNumMax = 5000;
 const updateCacheMs = 1000 * 60;
 
