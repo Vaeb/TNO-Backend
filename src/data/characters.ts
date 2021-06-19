@@ -161,7 +161,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Milton Pointdexter' },
     ],
     Ash_on_LoL: [
-        { name: 'Ash Ketchup', faction: 'Burger Shot' },
+        { name: 'Ash Ketchup', faction: 'Burger Shot', assumeChar: true },
     ],
     Ashi: [
         { name: 'Fiona Stewart', nicknames: ['Fi-ho-na'] },
@@ -1960,7 +1960,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Le Wang', faction: 'Vagos', displayName: 0 },
     ],
     xQcOW: [
-        { name: 'Jean "X" Paul', nicknames: ['Ghost Rider', 'Rider'], faction: 'Gulag Gang', displayName: 0, assumeServer: 'public' },
+        { name: 'Jean "X" Paul', nicknames: ['Ghost Rider', 'Rider'], faction: 'Gulag Gang', displayName: 0, assumeServer: 'public', assumeChar: true },
         { name: '[Deputy] Pierre "PP" Paul', faction: 'Police', displayName: 0 },
         { name: 'Jean Pierre', displayName: 0 },
     ],
