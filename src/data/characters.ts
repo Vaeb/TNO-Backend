@@ -573,7 +573,8 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Alexander "Fox" Fawkes', faction: 'Police' },
     ],
     Fairzz91: [
-        { name: 'Huxley Johnson', faction: 'DoC' },
+        { name: 'Huxley Johnson', faction: 'DoC', assumeServer: 'whitelist' },
+        { name: '[Deputy] Huxley Johnson', faction: 'Police', assumeServer: 'public' },
         { name: 'Paddy Patrickson', faction: 'Lost MC' },
     ],
     FalconryGal: [
