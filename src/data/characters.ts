@@ -359,7 +359,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Georgina "Windsong" Williams' },
     ],
     Chief: [
-        { name: 'Baada Ka', factions: ['HOA'], nicknames: ['Chief'], displayName: 3, assume: 'assumeNpNoOther' },
+        { name: 'Baada Ka', factions: ['HOA', 'Rooster'], nicknames: ['Chief'], displayName: 3, assume: 'assumeNpNoOther' },
     ],
     Choi: [
         { name: '[Dr.] Choi Zhangsun', factions: ['Medical'], assume: 'assumeOther' },
@@ -1401,6 +1401,9 @@ export const npCharacters: NpCharacters = {
     OwenSeven: [
         { name: '[Officer] Owen Svensen', factions: ['Police'] },
     ],
+    PacifistV: [
+        { name: 'Merry Achi', factions: ['Rooster'], displayName: 0 },
+    ],
     PapaChip: [
         { name: 'Channing "Chain" Turner', factions: ['BBMC'] },
     ],
@@ -1683,8 +1686,11 @@ export const npCharacters: NpCharacters = {
         { name: 'Kevin Whipaloo', factions: ['Burger Shot'], leader: true, displayName: 0 },
         { name: 'Tappy "Cat" Nippers', nicknames: ['Cat'], displayName: 0 },
     ],
+    SoMuchOregano: [
+        { name: 'Vincent Genovese', factions: ['Rooster'], displayName: 0 },
+    ],
     Sp00nerism: [
-        { name: 'Harry Phartz' },
+        { name: 'Harry Phartz', displayName: 0 },
     ],
     Spaceboy: [
         { name: 'Melbert "Mel" Rickenbacker' },
