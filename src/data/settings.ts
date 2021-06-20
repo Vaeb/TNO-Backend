@@ -14,7 +14,7 @@ export const regNpPublic = mergeRegex([
     /|(\bpub\w*[\W_]*(?:no[\s\-_.]*pixel|\bn[\s\-_.]*p(?=\b|\d)))/i,
     /|(?<=(?:on|playing)\W+)(?:pub|public)/i,
     /|\bpub\w*[\W_]*(?:server|queue|for\b)/i,
-    /|\[pub\w*\]/i,
+    /|[\[<(]pub\w*[)>\]]/i,
     /|\b(?:pub|public)$/i,
 ]);
 export const regNpWhitelist = /(?:\bwhitelist|\bwl\b|\bmain\b|\bprivate\b(?![\s\-]+(?:detective|investigat\w+)))\b(?!\W+(?:later|after))/i;
