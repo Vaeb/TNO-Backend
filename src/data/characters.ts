@@ -1744,7 +1744,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Miguel Almerion' },
     ],
     Sykkuno: [
-        { name: 'Yuno Sykk', faction: 'Cleanbois', displayName: 1, assumeServer: 'whitelist' },
+        { name: 'Yuno Sykk', faction: 'Cleanbois', displayName: 1, assumeServer: 'whitelist', assumeChar: true },
         { name: '[Ranger] Yuno Sykk', faction: 'Police', displayName: 1, assumeServer: 'public' },
     ],
     SynthHunter: [
