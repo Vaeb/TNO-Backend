@@ -23,6 +23,7 @@ export const npFactionsRegex = {
     asrr: /\balta[\s\-]*street|\bblock(?:\b|[\s\-]*party|[\s\-]*athon)/i,
     angels: /\bangels\b/i,
     nbc: /\bnbc\b/i,
+    news: /\bnews\b|\blsbn\b|weazel[\s\-_.]*news/i,
     burgershot: /(?<!(?:everyone|people)\s+at\s+)burger[\s\-]*shot|\bburgers\b/i,
     development: /\bdevelop|\bdev\b|\bcoding/i,
     doc: /\bdoc\b|\bcorrection/i,
