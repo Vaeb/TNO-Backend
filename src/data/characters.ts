@@ -847,6 +847,7 @@ export const npCharacters: NpCharacters = {
     ],
     jennylouise1997: [
         { name: '[Dispatch] Louise Campbell', factions: ['Police'] },
+        { name: 'Jenny Smith', displayName: 0 },
     ],
     jimmytulip: [
         { name: 'Wayne Biggaz', factions: ['Chang Gang'], nicknames: [reg(/\bwe+y+n/), reg(/\bwayne/)] },
