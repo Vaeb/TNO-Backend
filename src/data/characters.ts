@@ -1299,7 +1299,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Carlos "Carlitos" Loco', factions: ['Vagos'] },
     ],
     Natsumiii: [
-        { name: 'Natalie Sumi' },
+        { name: 'Natalie Sumi', factions: ['Rooster'] },
     ],
     Navajo: [
         { name: 'Clarence Carter' },
@@ -1430,6 +1430,9 @@ export const npCharacters: NpCharacters = {
     PmsProxy: [
         { name: '[Officer] Kira Light', factions: ['Police'] },
         { name: 'Ella Stone' },
+    ],
+    pochesVides: [
+        { name: 'Bruno LeMons', factions: ['Rooster'] },
     ],
     pokelawls: [
         { name: 'Bogg Dann' },
@@ -1812,6 +1815,9 @@ export const npCharacters: NpCharacters = {
     Thadrius: [
         { name: '[Deputy] Jonathan Dazzler', factions: ['Police'], nicknames: ['Johnny'], displayName: 2 },
         { name: 'Slappy McGaffey' },
+    ],
+    ThatEmoPunk: [
+        { name: 'Ezreal Kay-Hoss', factions: ['Rooster'], nicknames: ['EZ', 'E.Z'] },
     ],
     the_halfhand: [
         { name: 'Jack "Sully" Sullivan', factions: ['Rooster'] },
