@@ -7,7 +7,6 @@ import { getNpStreams } from './streamData';
 
 import type { RecordGen } from '../../utils';
 import type { FactionMini } from '../../data/meta';
-import type { GetNpStreams } from './streamData';
 
 const router = Router();
 
@@ -21,7 +20,7 @@ router.get('/', async (req, res) => {
         mapObjKeys(req.query as RecordGen, ((v, k) => {
             if (k === 'faction') return 'factionName';
             return k;
-        })) as GetNpStreams
+        }))
     );
     // log('streams', streams);
     return res.send(streams);

@@ -3,7 +3,7 @@ import { Router } from 'express';
 import { log, filterObj } from '../utils';
 
 import settingsParsed from '../data/settingsParsed';
-import * as characters from '../data/characters';
+import characters from '../data/charactersParsed';
 import factions from '../data/factionsParsed';
 
 const filterDataCb = (v: any) => !['number', 'boolean'].includes(typeof v);

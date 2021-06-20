@@ -8,7 +8,7 @@ export type AssumeServer = 'whitelist' | 'public';
 
 export interface Character {
     name: string;
-    faction?: FactionRealFull;
+    factions?: FactionRealFull[];
     displayName?: number;
     nicknames?: string[];
     leader?: boolean;
@@ -23,32 +23,34 @@ export type NpCharacters = { [key: string]: Character[] };
 
 const reg = (r: RegExp): string => `/${r.source}/`;
 
+export const qq = 123;
+
 // Make character map
 
 export const npCharacters: NpCharacters = {
     '0Reed': [
-        { name: 'Reed Dankleaf', faction: 'Lost MC' },
+        { name: 'Reed Dankleaf', factions: ['Lost MC'] },
     ],
     '80bsaget': [
         { name: 'Tim Lee', displayName: 0 },
-        { name: '[Officer] Bexar McCree', faction: 'Police' },
+        { name: '[Officer] Bexar McCree', factions: ['Police'] },
     ],
     '52chains': [
         { name: 'Fidel Guevara', nicknames: ['Don', 'Cabron'] },
         { name: 'Carmine "The Mouse" Costello' },
     ],
     aaron_rp: [
-        { name: 'Aaron Alexander', faction: 'BSK', displayName: 0 },
+        { name: 'Aaron Alexander', factions: ['BSK'], displayName: 0 },
     ],
     AaronOnAir: [
-        { name: '[Officer] Dan Faily', faction: 'Police', nicknames: ['485'] },
-        { name: 'Sal T. Block', faction: 'ASRR', displayName: 0 },
+        { name: '[Officer] Dan Faily', factions: ['Police'], nicknames: ['485'] },
+        { name: 'Sal T. Block', factions: ['ASRR'], displayName: 0 },
     ],
     abbay: [
         { name: 'Olivia Harvey' },
     ],
     abbbz: [
-        { name: 'Sanjay Patel', faction: 'Burger Shot' },
+        { name: 'Sanjay Patel', factions: ['Burger Shot'] },
     ],
     abby: [
         { name: 'Big Bertha', displayName: 0 },
@@ -60,65 +62,65 @@ export const npCharacters: NpCharacters = {
     ],
     AbdulHD: [
         { name: 'Abdul AlRahim', assumeServer: 'whitelist' },
-        { name: '[Judge] Ali Habibi', faction: 'DoJ' },
-        { name: '[Officer] Basha Habibi', faction: 'Police', assumeServer: 'public' },
+        { name: '[Judge] Ali Habibi', factions: ['DoJ'] },
+        { name: '[Officer] Basha Habibi', factions: ['Police'], assumeServer: 'public' },
         { name: 'Mustafa Habibi' },
-        { name: 'Fahad AlArabi', faction: 'DoC' },
+        { name: 'Fahad AlArabi', factions: ['DoC'] },
     ],
     Abou_: [
-        { name: 'Modi Janta', faction: 'NBC' },
+        { name: 'Modi Janta', factions: ['NBC'] },
     ],
     Acaibear: [
-        { name: '[Officer] Emily Reinhart', faction: 'Police' },
+        { name: '[Officer] Emily Reinhart', factions: ['Police'] },
         { name: 'Jolene Mushkin', nicknames: ['Little Red'] },
     ],
     adeptthebest: [
         { name: 'Mari Posa', displayName: 0, assumeServer: 'whitelist' },
-        { name: '[Officer] Selena Mendoza', faction: 'Police' },
+        { name: '[Officer] Selena Mendoza', factions: ['Police'] },
         { name: 'Hannah Hiltop' },
-        { name: 'Maria Poser', faction: 'Gulag Gang', displayName: 0, assumeServer: 'public' },
+        { name: 'Maria Poser', factions: ['Gulag Gang'], displayName: 0, assumeServer: 'public' },
     ],
     adnormaltv: [
         { name: 'Ivan Gorbahtjov' },
     ],
     Adzzstarr: [
-        { name: '[Dr.] Valentine', faction: 'Medical' },
+        { name: '[Dr.] Valentine', factions: ['Medical'] },
     ],
     AfriicanSnowball: [
-        { name: '[Justice] Buck Stanton', faction: 'DoJ' },
-        { name: '[Deputy] Dwayne Carter IV', faction: 'Police', displayName: 2 },
-        { name: 'Leland "LJ" Jones', faction: 'Pegasus' },
+        { name: '[Justice] Buck Stanton', factions: ['DoJ'] },
+        { name: '[Deputy] Dwayne Carter IV', factions: ['Police'], displayName: 2 },
+        { name: 'Leland "LJ" Jones', factions: ['Pegasus'] },
     ],
     Afro: [
-        { name: 'Dexx Martin', faction: 'GSF', leader: true },
-        { name: 'Jacob Harth', faction: 'Dark Web', leader: true },
+        { name: 'Dexx Martin', factions: ['GSF'], leader: true },
+        { name: 'Jacob Harth', factions: ['Dark Web'], leader: true },
         { name: 'Chris "CP" Porter' },
         { name: 'Sayid Mitra', nicknames: ['Sayeet'], displayName: 0 },
         { name: 'David "The Mime" Wonders', nicknames: ['"Concrete" Man'] },
         { name: 'Gordon Parks', nicknames: ['DoorLord'] },
     ],
     AidenNortha: [
-        { name: '[Deputy] Kevin Keyte', faction: 'Police', displayName: 1 },
+        { name: '[Deputy] Kevin Keyte', factions: ['Police'], displayName: 1 },
     ],
     aintitadam: [
-        { name: 'Scruffy Doodle', faction: 'Burger Shot' },
+        { name: 'Scruffy Doodle', factions: ['Burger Shot'] },
     ],
     Airborne: [
-        { name: '[Judge] Dennis LaBarre', faction: 'DoJ' },
+        { name: '[Judge] Dennis LaBarre', factions: ['DoJ'] },
         { name: 'Unity', nicknames: ['Cat'] },
     ],
     akaMONKEY: [
-        { name: 'Arturo Ortiz', faction: 'Vagos' },
-        { name: 'CamRon "Peanut" Giles', faction: 'SSB' },
+        { name: 'Arturo Ortiz', factions: ['Vagos'] },
+        { name: 'CamRon "Peanut" Giles', factions: ['SSB'] },
         { name: 'Timoteo "TT" Bushnell', nicknames: ['Rasta'] },
     ],
     aleks: [
-        { name: '[Chief of Police] Bobby Smith', faction: 'Police', leader: true, nicknames: ['Bob', 'Chief'], displayName: 1 },
-        { name: '[FIB Agent] Heath Mercer', faction: 'Police' },
-        { name: 'Vasily "V" Sazkaljovich', faction: 'Pegasus' },
+        { name: '[Chief of Police] Bobby Smith', factions: ['Police'], leader: true, nicknames: ['Bob', 'Chief'], displayName: 1 },
+        { name: '[FIB Agent] Heath Mercer', factions: ['Police'] },
+        { name: 'Vasily "V" Sazkaljovich', factions: ['Pegasus'] },
     ],
     alexten0909: [
-        { name: 'Alexander Campbell', faction: 'Angels', nicknames: ['Alex'], displayName: 3 },
+        { name: 'Alexander Campbell', factions: ['Angels'], nicknames: ['Alex'], displayName: 3 },
     ],
     Alisha: [
         { name: 'Alisha Wuornos' },
@@ -127,14 +129,14 @@ export const npCharacters: NpCharacters = {
         { name: 'April Fooze', nicknames: ['first time'] },
     ],
     AlyPlayNinja: [
-        { name: '[Officer] Amelia Frost', faction: 'Police' },
+        { name: '[Officer] Amelia Frost', factions: ['Police'] },
     ],
     AndyMilonakis: [
         { name: 'Lil Erf', displayName: 0 },
         { name: 'Carmen Amuso' },
     ],
     AnimatedJF: [
-        { name: 'Cameron Dupres', faction: 'DoJ' },
+        { name: 'Cameron Dupres', factions: ['DoJ'] },
     ],
     AnneMunition: [
         { name: 'Sequoia Springs' },
@@ -144,14 +146,14 @@ export const npCharacters: NpCharacters = {
         { name: 'Larry Papidopoulos', nicknames: ['Papi'] },
     ],
     AnthonyZ: [
-        { name: 'Tony Corleone', faction: 'Cleanbois' },
-        { name: '[Officer] Anthony Copleone', faction: 'Police' },
+        { name: 'Tony Corleone', factions: ['Cleanbois'] },
+        { name: '[Officer] Anthony Copleone', factions: ['Police'] },
     ],
     Apitoxin11: [
-        { name: 'Trigger Freebird', faction: 'Harmony' },
+        { name: 'Trigger Freebird', factions: ['Harmony'] },
     ],
     APPLESHAMPOO: [
-        { name: '[Dispatch] Nancy Ree', faction: 'Police', displayName: 1 },
+        { name: '[Dispatch] Nancy Ree', factions: ['Police'], displayName: 1 },
         { name: 'Gioconda "Gio" Coppola' },
     ],
     Arcadum: [
@@ -161,32 +163,32 @@ export const npCharacters: NpCharacters = {
         { name: 'Milton Pointdexter' },
     ],
     Ash_on_LoL: [
-        { name: 'Ash Ketchup', faction: 'Burger Shot', assumeChar: true },
+        { name: 'Ash Ketchup', factions: ['Burger Shot'], assumeChar: true },
     ],
     Ashi: [
         { name: 'Fiona Stewart', nicknames: ['Fi-ho-na'] },
         { name: 'Annie May', displayName: 0 },
     ],
     ashlynn: [
-        { name: 'Cassie Cupcakes', faction: 'Angels' },
-        { name: '[Officer] Brenda Pancake', faction: 'Police', displayName: 1, nicknames: ['Pancakes'] },
+        { name: 'Cassie Cupcakes', factions: ['Angels'] },
+        { name: '[Officer] Brenda Pancake', factions: ['Police'], displayName: 1, nicknames: ['Pancakes'] },
     ],
     Asteroba: [
-        { name: '[D.A.] Larry Hallow', faction: 'DoJ' },
-        { name: '[Deputy] Aaron Byson', faction: 'Police' },
-        { name: 'Kermy Fulker', faction: 'HOA' },
-        { name: '[EMS] Boba Stone', faction: 'Medical' },
+        { name: '[D.A.] Larry Hallow', factions: ['DoJ'] },
+        { name: '[Deputy] Aaron Byson', factions: ['Police'] },
+        { name: 'Kermy Fulker', factions: ['HOA'] },
+        { name: '[EMS] Boba Stone', factions: ['Medical'] },
     ],
     AuriEllis: [
-        { name: 'Ursula Leichenberg', faction: 'News' },
+        { name: 'Ursula Leichenberg', factions: ['News'] },
         { name: 'Gracie ?' },
     ],
     aurvinR: [
-        { name: '[ADA] John Doe', faction: 'DoJ' },
+        { name: '[ADA] John Doe', factions: ['DoJ'] },
     ],
     Aus24: [
-        { name: 'Jordan Walker', faction: 'Harmony' },
-        { name: '[Officer] Jack Davenport', faction: 'Police' },
+        { name: 'Jordan Walker', factions: ['Harmony'] },
+        { name: '[Officer] Jack Davenport', factions: ['Police'] },
     ],
     AustinCreed: [
         { name: 'Austin Creed', displayName: 0 },
@@ -195,10 +197,10 @@ export const npCharacters: NpCharacters = {
         { name: 'Autumn Rhodes' },
     ],
     Auxidental: [
-        { name: 'Trey Romano', faction: 'Pegasus' },
+        { name: 'Trey Romano', factions: ['Pegasus'] },
     ],
     AvaGG: [
-        { name: 'Karen Dahmer', faction: 'Chang Gang', affiliate: true, nicknames: ['Kawen'] },
+        { name: 'Karen Dahmer', factions: ['Chang Gang'], affiliate: true, nicknames: ['Kawen'] },
     ],
     aXed_U: [
         { name: 'Hans Snitzel' },
@@ -207,9 +209,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Yoshimoto Nakanishi' },
     ],
     bananabrea: [
-        { name: 'Claire Seducer', faction: 'Angels' },
+        { name: 'Claire Seducer', factions: ['Angels'] },
         { name: 'Becky Hopper', displayName: 0 },
-        { name: '[Officer] Tyme Reducer', faction: 'Police' },
+        { name: '[Officer] Tyme Reducer', factions: ['Police'] },
     ],
     BananaDuck: [
         { name: 'Billy Sprinkle', displayName: 0 },
@@ -221,7 +223,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Barry Scott' },
     ],
     BazzaGazza: [
-        { name: 'Barry Benson', faction: 'BBMC', displayName: 0 },
+        { name: 'Barry Benson', factions: ['BBMC'], displayName: 0 },
     ],
     BCBeastly: [
         { name: 'Herbert The Pervert' },
@@ -230,44 +232,44 @@ export const npCharacters: NpCharacters = {
         { name: 'Jose Pincha' },
     ],
     BennniStreams: [
-        { name: 'Santiago "Santi" Madrid', faction: 'Vagos', nicknames: [reg(/\bSanti/)] },
+        { name: 'Santiago "Santi" Madrid', factions: ['Vagos'], nicknames: [reg(/\bSanti/)] },
         { name: 'Antonio Reyes', nicknames: [reg(/\bAntonio/)] },
-        { name: 'Pablo Madrid', faction: 'Vagos', nicknames: ['Diablo'] },
+        { name: 'Pablo Madrid', factions: ['Vagos'], nicknames: ['Diablo'] },
     ],
     BFLY: [
-        { name: '[Dr.] Torah Andrews', faction: 'Medical' },
+        { name: '[Dr.] Torah Andrews', factions: ['Medical'] },
     ],
     biggieferreira: [
-        { name: 'Shevy Santanna', faction: 'Vagos' },
+        { name: 'Shevy Santanna', factions: ['Vagos'] },
     ],
     BikeMan: [
         { name: 'Chet Summerset', assume: 'assumeNpNoOther' },
     ],
     Biotoxz_: [
-        { name: '[Barbarian /] Bjorn', faction: 'LARPers' },
+        { name: '[Barbarian /] Bjorn', factions: ['LARPers'] },
     ],
     BJPofficial: [
-        { name: '[Lawyer /] Buford J. Preston', faction: 'DoJ' },
+        { name: '[Lawyer /] Buford J. Preston', factions: ['DoJ'] },
     ],
     Blaustoise: [
-        { name: 'Mickey S', faction: 'Chang Gang', nicknames: ['Downbad'], assumeServer: 'whitelist' },
-        { name: 'Michael S.', faction: 'Gulag Gang', nicknames: ['Upgood'], assumeServer: 'public' },
+        { name: 'Mickey S', factions: ['Chang Gang'], nicknames: ['Downbad'], assumeServer: 'whitelist' },
+        { name: 'Michael S.', factions: ['Gulag Gang'], nicknames: ['Upgood'], assumeServer: 'public' },
     ],
     bldrs: [
-        { name: 'Kaleb "Kleb" Rush', faction: 'HOA' },
-        { name: '[Officer] Ryan Wright', faction: 'Police' },
+        { name: 'Kaleb "Kleb" Rush', factions: ['HOA'] },
+        { name: '[Officer] Ryan Wright', factions: ['Police'] },
     ],
     bLuE622: [
-        { name: 'Boe Jangles', faction: 'Chang Gang', affiliate: true },
+        { name: 'Boe Jangles', factions: ['Chang Gang'], affiliate: true },
     ],
     bmcloughlin22: [
-        { name: '[ADA] Lachlan Pike', faction: 'DoJ' },
+        { name: '[ADA] Lachlan Pike', factions: ['DoJ'] },
     ],
     Bomaah: [
         { name: 'Viper Rodriguez', assume: 'assumeOther' },
     ],
     BoschMerchant: [
-        { name: 'Anto Murphy', faction: 'Chang Gang' },
+        { name: 'Anto Murphy', factions: ['Chang Gang'] },
     ],
     boxbox: [
         { name: 'Bo Xbox' },
@@ -276,7 +278,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Jeff Arnold' },
     ],
     breakyx: [
-        { name: 'Dris Peters', faction: 'SSB' },
+        { name: 'Dris Peters', factions: ['SSB'] },
     ],
     BRIT: [
         { name: 'Tori Corleone', nicknames: ['Bologna'] },
@@ -285,9 +287,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Kodak Bodega' },
     ],
     buddha: [
-        { name: 'Lang Buddha', faction: 'Cleanbois', leader: true, nicknames: ['Circle Andy'], assumeServer: 'whitelist' },
-        { name: '[Ranger] Lang Buddha', faction: 'Police', displayName: 1, assumeServer: 'public' },
-        { name: '[Deputy] Kevin Kona', faction: 'Police' },
+        { name: 'Lang Buddha', factions: ['Cleanbois'], leader: true, nicknames: ['Circle Andy'], assumeServer: 'whitelist' },
+        { name: '[Ranger] Lang Buddha', factions: ['Police'], displayName: 1, assumeServer: 'public' },
+        { name: '[Deputy] Kevin Kona', factions: ['Police'] },
         { name: 'Esteban Julio Ricardo Montoya De La Rosa Ramirez' },
     ],
     Burn: [
@@ -295,7 +297,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Asmon Bronze', displayName: 0, nicknames: ['AsmonBronze', 'Transmog'] },
         { name: 'Norman "Norm" Yoder' },
         { name: 'Moe Nopoli', displayName: 0 },
-        { name: 'Mentle Block', faction: 'ASRR' },
+        { name: 'Mentle Block', factions: ['ASRR'] },
         { name: 'Sasuke Johnson' },
         { name: 'Chi "Chi-ku" Ku' },
         { name: 'Plankton ?' },
@@ -310,17 +312,17 @@ export const npCharacters: NpCharacters = {
         { name: '? "Brother Mehof" ?' },
     ],
     bythybeard: [
-        { name: 'Wade Willson', faction: 'Lost MC' },
-        { name: '[Officer] Sexton Hardcastle', faction: 'Police', displayName: 1 },
+        { name: 'Wade Willson', factions: ['Lost MC'] },
+        { name: '[Officer] Sexton Hardcastle', factions: ['Police'], displayName: 1 },
     ],
     CallMeGrub: [
-        { name: '[Deputy] Isaac Richardson', faction: 'Police' },
+        { name: '[Deputy] Isaac Richardson', factions: ['Police'] },
     ],
     CallMeKevin: [
         { name: 'Grognak The Destroyer', assume: 'assumeNpNoOther' },
     ],
     capsure: [
-        { name: 'Dimitri Nekola', faction: 'Pegasus' },
+        { name: 'Dimitri Nekola', factions: ['Pegasus'] },
     ],
     Carmen: [
         { name: 'Carmella Corset' },
@@ -329,25 +331,25 @@ export const npCharacters: NpCharacters = {
         { name: 'Spencer Smith', nicknames: ['Mormon'] },
     ],
     casek_: [
-        { name: 'Cesar Conchas', faction: 'Vagos', displayName: 0 },
+        { name: 'Cesar Conchas', factions: ['Vagos'], displayName: 0 },
     ],
     CathFawr: [
-        { name: 'Summer Mersion', faction: 'GSF', displayName: 0 },
-        { name: 'Natya Block', faction: 'ASRR', displayName: 0 },
-        { name: "[Lawyer /] Shannon O'Banion", faction: 'DoJ', displayName: 0 },
-        { name: '[Officer] Lydia Vale', faction: 'Police' },
+        { name: 'Summer Mersion', factions: ['GSF'], displayName: 0 },
+        { name: 'Natya Block', factions: ['ASRR'], displayName: 0 },
+        { name: "[Lawyer /] Shannon O'Banion", factions: ['DoJ'], displayName: 0 },
+        { name: '[Officer] Lydia Vale', factions: ['Police'] },
     ],
     Cathie: [
-        { name: '[Deputy] Anita Cox', faction: 'Police' },
-        { name: 'Ninacska Mihkala', faction: 'Russians', nicknames: ['Nina'], displayName: 3 },
-        { name: 'Kaelyn "Kae" East', faction: 'SSB' },
+        { name: '[Deputy] Anita Cox', factions: ['Police'] },
+        { name: 'Ninacska Mihkala', factions: ['Russians'], nicknames: ['Nina'], displayName: 3 },
+        { name: 'Kaelyn "Kae" East', factions: ['SSB'] },
     ],
     CaussiePreacher: [
-        { name: '[EMS] Jack Preacher', faction: 'Medical' },
+        { name: '[EMS] Jack Preacher', factions: ['Medical'] },
     ],
     Chalupa_Pants: [
-        { name: 'Julio Thomas', faction: 'HOA' },
-        { name: '[Deputy] Marco Holiday', faction: 'Police' },
+        { name: 'Julio Thomas', factions: ['HOA'] },
+        { name: '[Deputy] Marco Holiday', factions: ['Police'] },
     ],
     Chap: [
         { name: 'Bryan Chapman', displayName: 0 },
@@ -356,10 +358,10 @@ export const npCharacters: NpCharacters = {
         { name: 'Georgina "Windsong" Williams' },
     ],
     Chief: [
-        { name: 'Baada Ka', faction: 'HOA', nicknames: ['Chief'], displayName: 3, assume: 'assumeNpNoOther' },
+        { name: 'Baada Ka', factions: ['HOA'], nicknames: ['Chief'], displayName: 3, assume: 'assumeNpNoOther' },
     ],
     Choi: [
-        { name: '[Dr.] Choi Zhangsun', faction: 'Medical', assume: 'assumeOther' },
+        { name: '[Dr.] Choi Zhangsun', factions: ['Medical'], assume: 'assumeOther' },
     ],
     ChrisTombstone: [
         { name: 'Flop Dugong' },
@@ -372,14 +374,14 @@ export const npCharacters: NpCharacters = {
         { name: 'Carl Crimes' },
     ],
     Chaseman7GG: [
-        { name: 'Miguel Guerrero', faction: 'Vagos' },
+        { name: 'Miguel Guerrero', factions: ['Vagos'] },
     ],
     ChelbM: [
-        { name: 'Alan Kyles', faction: 'NBC', displayName: 0 },
+        { name: 'Alan Kyles', factions: ['NBC'], displayName: 0 },
     ],
     ClassyPax: [
         { name: 'Madam Ming', displayName: 0 },
-        { name: '[Dr.] Ethan Maw', faction: 'Medical', displayName: 2 },
+        { name: '[Dr.] Ethan Maw', factions: ['Medical'], displayName: 2 },
     ],
     CoconutB: [
         { name: '? ?' },
@@ -388,113 +390,113 @@ export const npCharacters: NpCharacters = {
         { name: 'Code Psyko', displayName: 0 },
     ],
     ConfusedDevil: [
-        { name: '[Deputy] Travis Tribble', faction: 'Police' },
+        { name: '[Deputy] Travis Tribble', factions: ['Police'] },
     ],
     ConnorCronus: [
-        { name: '[Dr.] Isaac Smith', faction: 'Medical' },
+        { name: '[Dr.] Isaac Smith', factions: ['Medical'] },
         { name: 'Roman "Mask" Sionis', nicknames: ['Black Mask'] },
     ],
     Coolio: [
-        { name: 'Dequarius "Big D" Johnson', faction: 'Chang Gang' },
-        { name: '[Deputy] Adam Hopping', faction: 'Police' },
+        { name: 'Dequarius "Big D" Johnson', factions: ['Chang Gang'] },
+        { name: '[Deputy] Adam Hopping', factions: ['Police'] },
     ],
     CptCheeto: [
-        { name: '[Officer] Scott Ridley', faction: 'Police' },
+        { name: '[Officer] Scott Ridley', factions: ['Police'] },
     ],
     CrayonPonyfish: [
         { name: 'Sadie Thistle' },
-        { name: 'Wynona Fontaine', faction: 'DoC', displayName: 2 },
+        { name: 'Wynona Fontaine', factions: ['DoC'], displayName: 2 },
         { name: 'Wilhelmina Copperpot', displayName: 2 },
     ],
     crimsonswordsman: [
-        { name: 'Raphael Kristof', faction: 'HOA' },
+        { name: 'Raphael Kristof', factions: ['HOA'] },
     ],
     Crunchy: [
-        { name: '[Dr.] Agnes Ranbough', faction: 'Medical' },
+        { name: '[Dr.] Agnes Ranbough', factions: ['Medical'] },
         { name: 'Grimoire "Gremlin" Hauttogs' },
     ],
     CrystalMushroom: [
         { name: 'Regina Bunny' },
     ],
     Crystalst: [
-        { name: 'Four "4T" Tee', faction: 'ASRR', displayName: 0 },
+        { name: 'Four "4T" Tee', factions: ['ASRR'], displayName: 0 },
         { name: 'Amie Rush' },
     ],
     CurtisRyan: [
         { name: 'Curtis Swoleroid', nicknames: ['"Demon" of Lean Street', 'Curt'], assumeServer: 'whitelist' },
-        { name: 'Curtis Swoleroid', nicknames: ['"Demon" of Lean Street', 'Curt'], faction: 'Gulag Gang', assumeServer: 'public' },
-        { name: '[Officer] Stephen McClane', faction: 'Police' },
-        { name: 'Cornelius "Cornbread" Scott', faction: 'GSF' },
+        { name: 'Curtis Swoleroid', nicknames: ['"Demon" of Lean Street', 'Curt'], factions: ['Gulag Gang'], assumeServer: 'public' },
+        { name: '[Officer] Stephen McClane', factions: ['Police'] },
+        { name: 'Cornelius "Cornbread" Scott', factions: ['GSF'] },
     ],
     curvyelephant: [
-        { name: '[Deputy] Matt Rhodes', faction: 'Police' },
-        { name: 'Ryan Parker', faction: 'Lost MC' },
-        { name: '[Lawyer /] Kevin Shaw', faction: 'DoJ' },
+        { name: '[Deputy] Matt Rhodes', factions: ['Police'] },
+        { name: 'Ryan Parker', factions: ['Lost MC'] },
+        { name: '[Lawyer /] Kevin Shaw', factions: ['DoJ'] },
     ],
     Curvyllama: [
-        { name: '[Deputy] Lorenzo L', faction: 'Police', displayName: 1 },
+        { name: '[Deputy] Lorenzo L', factions: ['Police'], displayName: 1 },
         { name: 'Freya Manning' },
     ],
     cyr: [
         { name: 'Joe Caine', displayName: 0 },
         { name: "Khan Di'Sendo", displayName: 0 },
-        { name: 'Uchiha Jones', faction: 'Chang Gang' },
+        { name: 'Uchiha Jones', factions: ['Chang Gang'] },
         { name: 'Fred Hurst', nicknames: [reg(/Lim.\s?Bizkif/)] },
     ],
     Dadulio: [
-        { name: '[Deputy] Franky Dulio', faction: 'Police' },
+        { name: '[Deputy] Franky Dulio', factions: ['Police'] },
     ],
     DanGheesling: [
         { name: 'Tanner Buttermaker', displayName: 1 },
     ],
     DanHawk1ns: [
-        { name: 'Benny Gomez', faction: 'Burger Shot' },
+        { name: 'Benny Gomez', factions: ['Burger Shot'] },
     ],
     Darthbobo77: [
-        { name: 'Rudi Rinsen', faction: 'Lost MC', leader: true },
+        { name: 'Rudi Rinsen', factions: ['Lost MC'], leader: true },
     ],
     dasMEHDI: [
-        { name: 'Nino Chavez', faction: 'Cleanbois' },
-        { name: '[Officer] Brian Knight', faction: 'Police', nicknames: ['495'] },
-        { name: 'Ryan Kindle', faction: 'HOA' },
+        { name: 'Nino Chavez', factions: ['Cleanbois'] },
+        { name: '[Officer] Brian Knight', factions: ['Police'], nicknames: ['495'] },
+        { name: 'Ryan Kindle', factions: ['HOA'] },
         { name: 'Reema', nicknames: ['The "Whorelord"'] },
     ],
     DavidB_NP: [
-        { name: 'Vladimir "Vlad" Ivanov', faction: 'Russians' },
+        { name: 'Vladimir "Vlad" Ivanov', factions: ['Russians'] },
     ],
     Deansocool: [
-        { name: 'Dean Quincy', faction: 'NBC', displayName: 0, assume: 'assumeNpNoOther' },
-        { name: '[Ride Along] Den Shiesty', faction: 'Police', displayName: 0 },
+        { name: 'Dean Quincy', factions: ['NBC'], displayName: 0, assume: 'assumeNpNoOther' },
+        { name: '[Ride Along] Den Shiesty', factions: ['Police'], displayName: 0 },
     ],
     Denior13: [
-        { name: 'Keith "Bulldog" Dooger', faction: 'Lost MC' },
+        { name: 'Keith "Bulldog" Dooger', factions: ['Lost MC'] },
     ],
     Denis3D: [
-        { name: '[Development /] Denis3D', faction: 'Development', nicknames: ['3D'] },
+        { name: '[Development /] Denis3D', factions: ['Development'], nicknames: ['3D'] },
     ],
     devolore: [
-        { name: '[Officer] Cassius Kennedy', faction: 'Police', nicknames: ['Cash'] },
+        { name: '[Officer] Cassius Kennedy', factions: ['Police'], nicknames: ['Cash'] },
     ],
     dibitybopty: [
-        { name: '[Officer] Gus Gorman', faction: 'Police' },
+        { name: '[Officer] Gus Gorman', factions: ['Police'] },
     ],
     DigiiTsuna: [
-        { name: '[Dr.] Kai King', faction: 'Medical', displayName: 2 },
+        { name: '[Dr.] Kai King', factions: ['Medical'], displayName: 2 },
     ],
     DisbeArex: [
-        { name: 'Oki Doki', faction: 'Burger Shot', displayName: 0 },
+        { name: 'Oki Doki', factions: ['Burger Shot'], displayName: 0 },
     ],
     DKane: [
         { name: 'Cletus McCoy' },
     ],
     DocWizard: [
-        { name: '[Judge] John Bailey', faction: 'DoJ' },
-        { name: '[Officer] TJ Walker', faction: 'Police' },
+        { name: '[Judge] John Bailey', factions: ['DoJ'] },
+        { name: '[Officer] TJ Walker', factions: ['Police'] },
         { name: 'Preston Landor' },
     ],
     Dogbert: [
-        { name: '[Deputy] Rocko Colombo', faction: 'Police', nicknames: [reg(/\bcol.mb./)] },
-        { name: 'Luther Caine', faction: 'HOA' },
+        { name: '[Deputy] Rocko Colombo', factions: ['Police'], nicknames: [reg(/\bcol.mb./)] },
+        { name: 'Luther Caine', factions: ['HOA'] },
     ],
     Dorken: [
         { name: 'Valentina' },
@@ -508,22 +510,22 @@ export const npCharacters: NpCharacters = {
         { name: 'Jason Sharpe', displayName: 0 },
     ],
     Dr_Knope: [
-        { name: 'Patrit "Mete" Metemahaan', faction: 'HOA' },
+        { name: 'Patrit "Mete" Metemahaan', factions: ['HOA'] },
     ],
     DROwSeph420: [
-        { name: 'John "Geno" Collins', faction: 'GSF' },
+        { name: 'John "Geno" Collins', factions: ['GSF'] },
     ],
     Dunrunnin12: [
         { name: 'Thomas Dwayne', nicknames: ['The Narrator'], displayName: 0 },
         { name: 'Nay "Delamain" Rater' },
     ],
     durptastic: [
-        { name: 'Otis Goody', faction: 'Burger Shot' },
+        { name: 'Otis Goody', factions: ['Burger Shot'] },
     ],
     dwjft: [
         { name: 'Dean Watson', leader: true },
-        { name: '[Officer] Derby West Bromwich', faction: 'Police', displayName: 3 },
-        { name: '[Development /] DW', faction: 'Development', nicknames: ['tinkering'] },
+        { name: '[Officer] Derby West Bromwich', factions: ['Police'], displayName: 3 },
+        { name: '[Development /] DW', factions: ['Development'], nicknames: ['tinkering'] },
     ],
     Dyrus: [
         { name: 'Louis Hill', displayName: 0 },
@@ -532,7 +534,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Eve Summers' },
     ],
     eebern: [
-        { name: 'Huck Guthrie', faction: 'HOA' },
+        { name: 'Huck Guthrie', factions: ['HOA'] },
     ],
     either: [
         { name: 'Jaden Christopher' },
@@ -541,12 +543,12 @@ export const npCharacters: NpCharacters = {
         { name: 'Tao Chen' },
     ],
     ElvisRP: [
-        { name: '[Deputy] John Dorian', faction: 'Police' },
+        { name: '[Deputy] John Dorian', factions: ['Police'] },
     ],
     Evee: [
-        { name: '[Judge] Antigone Weston', faction: 'DoJ', assumeServer: 'whitelist' },
-        { name: '[Officer] Antigone Weston', faction: 'Police', assumeServer: 'public' },
-        { name: '[Judge] Whitney Crawford', faction: 'DoJ' },
+        { name: '[Judge] Antigone Weston', factions: ['DoJ'], assumeServer: 'whitelist' },
+        { name: '[Officer] Antigone Weston', factions: ['Police'], assumeServer: 'public' },
+        { name: '[Judge] Whitney Crawford', factions: ['DoJ'] },
         { name: 'Adrienne West' },
         { name: 'Meggie "Megan" Right' },
         { name: 'Bree Matthews' },
@@ -556,81 +558,81 @@ export const npCharacters: NpCharacters = {
         { name: 'Anna Swallows', displayName: 0 },
     ],
     EsfandTV: [
-        { name: '[Deputy] Cletus Cornwood', faction: 'Police' },
+        { name: '[Deputy] Cletus Cornwood', factions: ['Police'] },
         { name: 'Ali Farmand', displayName: 0 },
     ],
     explodicy: [
         { name: 'Ted Kindly' },
     ],
     extralivia: [
-        { name: 'Jess ?', faction: 'SSB' },
+        { name: 'Jess ?', factions: ['SSB'] },
     ],
     F3ARzZ: [
-        { name: 'Ranjit Raventish', faction: 'BSK' },
+        { name: 'Ranjit Raventish', factions: ['BSK'] },
     ],
     Fairlight_Excalibur: [
-        { name: 'Raja Bahadur', faction: 'QuickFix', leader: true },
-        { name: '[Officer] Alexander "Fox" Fawkes', faction: 'Police' },
+        { name: 'Raja Bahadur', factions: ['QuickFix'], leader: true },
+        { name: '[Officer] Alexander "Fox" Fawkes', factions: ['Police'] },
     ],
     Fairzz91: [
-        { name: 'Huxley Johnson', faction: 'DoC', assumeServer: 'whitelist' },
-        { name: '[Deputy] Huxley Johnson', faction: 'Police', assumeServer: 'public' },
-        { name: 'Paddy Patrickson', faction: 'Lost MC' },
+        { name: 'Huxley Johnson', factions: ['DoC'], assumeServer: 'whitelist' },
+        { name: '[Deputy] Huxley Johnson', factions: ['Police'], assumeServer: 'public' },
+        { name: 'Paddy Patrickson', factions: ['Lost MC'] },
     ],
     FalconryGal: [
         { name: 'Jenna Tuttle', displayName: 2 },
     ],
     FalloftheSeason: [
-        { name: '[EMS] Orianna "Ori" Frost', faction: 'Medical', nicknames: ['Olive'] },
+        { name: '[EMS] Orianna "Ori" Frost', factions: ['Medical'], nicknames: ['Olive'] },
         { name: 'Ophelia Quinn' },
     ],
     Familybanter: [
-        { name: '[Dr.]  Jayce Petra', faction: 'Medical', displayName: 0 },
-        { name: 'Taran Raid', faction: 'Lost MC', displayName: 0 },
+        { name: '[Dr.]  Jayce Petra', factions: ['Medical'], displayName: 0 },
+        { name: 'Taran Raid', factions: ['Lost MC'], displayName: 0 },
     ],
     Farmhouse78: [
         { name: 'Jane Farmer' },
-        { name: 'Steven Hayes', faction: 'Burger Shot', displayName: 0 },
+        { name: 'Steven Hayes', factions: ['Burger Shot'], displayName: 0 },
     ],
     FeliciaDay: [
         { name: 'Cherryclarie Dinwittie', nicknames: ['CherryClaire'], displayName: 3 },
     ],
     FelixLeLoup: [
-        { name: 'Felix Volk', faction: 'News' },
+        { name: 'Felix Volk', factions: ['News'] },
     ],
     FerretRP: [
-        { name: 'Alberto Weaselton', faction: 'Lost MC' },
+        { name: 'Alberto Weaselton', factions: ['Lost MC'] },
     ],
     Fiendota: [
         { name: 'Jonathan "Magnum" Humes', nicknames: [reg(/\bP\.?\s*I\b/)] },
     ],
     Five0AnthO: [
-        { name: '[Trooper] Tony Andrews', faction: 'Police', highCommand: true, leader: true },
-        { name: 'Rhode Block', faction: 'ASRR', displayName: 0 },
+        { name: '[Trooper] Tony Andrews', factions: ['Police'], highCommand: true, leader: true },
+        { name: 'Rhode Block', factions: ['ASRR'], displayName: 0 },
     ],
     FloMcNasty_TV: [
-        { name: 'Richard Chiclets', faction: 'Burger Shot', displayName: 0 },
+        { name: 'Richard Chiclets', factions: ['Burger Shot'], displayName: 0 },
     ],
     Forlorn79: [
-        { name: '[EMS] Amoris Pax', faction: 'Medical' },
+        { name: '[EMS] Amoris Pax', factions: ['Medical'] },
     ],
     forsen: [
-        { name: 'Sven Snusberg', faction: 'Cleanbois' },
+        { name: 'Sven Snusberg', factions: ['Cleanbois'] },
         { name: 'Mason Foorhees' },
     ],
     FortyOne: [
         { name: 'Jose Martin Perez', nicknames: ['JMP'] },
-        { name: '[Deputy] John Archer', faction: 'Police' },
+        { name: '[Deputy] John Archer', factions: ['Police'] },
         { name: 'Lucas Ortiz', displayName: 0 },
         { name: 'Don Russo', displayName: 0 },
         { name: 'Jacob "Funny Man" Storm' },
         { name: 'Arious "Breezy" Campbell' },
     ],
     FourMilli: [
-        { name: 'Brad Bett', faction: 'NBC' },
+        { name: 'Brad Bett', factions: ['NBC'] },
     ],
     FragZone: [
-        { name: 'Derek Bogart', faction: 'Condemned MC' },
+        { name: 'Derek Bogart', factions: ['Condemned MC'] },
     ],
     frogbound: [
         { name: 'Edward Nygma' },
@@ -638,35 +640,35 @@ export const npCharacters: NpCharacters = {
     ],
     fuslie: [
         { name: 'April Fooze', nicknames: ['first time'], displayName: 0, assumeServer: 'whitelist' },
-        { name: 'Connie Clark', faction: 'Police', displayName: 0, assumeServer: 'public' },
+        { name: 'Connie Clark', factions: ['Police'], displayName: 0, assumeServer: 'public' },
     ],
     Fyzicul: [
-        { name: '[Shaman /] Keith "Lando" Wanderlust', faction: 'LARPers', nicknames: ['Stormborn', 'Shaman', 'Mountain Kingdom'], displayName: 0 },
+        { name: '[Shaman /] Keith "Lando" Wanderlust', factions: ['LARPers'], nicknames: ['Stormborn', 'Shaman', 'Mountain Kingdom'], displayName: 0 },
     ],
     Gabz: [
-        { name: '[Development /] Gabz', faction: 'Development', nicknames: ['3D'] },
+        { name: '[Development /] Gabz', factions: ['Development'], nicknames: ['3D'] },
     ],
     GameDemented: [
-        { name: '[Deputy] Peter Johnson', faction: 'Police' },
+        { name: '[Deputy] Peter Johnson', factions: ['Police'] },
     ],
     Garek: [
-        { name: '[Cleric /] Burt "Gloryon" Beans', faction: 'LARPers', nicknames: ['Cleric'] },
+        { name: '[Cleric /] Burt "Gloryon" Beans', factions: ['LARPers'], nicknames: ['Cleric'] },
     ],
     GattisTV: [
-        { name: 'Carlos Guzman', faction: 'Vagos', displayName: 0 },
+        { name: 'Carlos Guzman', factions: ['Vagos'], displayName: 0 },
     ],
     Gavbin_: [
-        { name: '[Judge] Gavin Holliday', faction: 'DoJ' },
+        { name: '[Judge] Gavin Holliday', factions: ['DoJ'] },
     ],
     geenelly: [
         { name: 'Misty Bloom', displayName: 0 },
     ],
     GeneralEmu: [
-        { name: '[Officer] Lance Malton', faction: 'Police' },
+        { name: '[Officer] Lance Malton', factions: ['Police'] },
     ],
     ggqf: [
-        { name: '[Paladin /] Stagdancer', faction: 'LARPers', nicknames: ['Gea'] },
-        { name: '[Officer] Bennett Calhoun', faction: 'Police' },
+        { name: '[Paladin /] Stagdancer', factions: ['LARPers'], nicknames: ['Gea'] },
+        { name: '[Officer] Bennett Calhoun', factions: ['Police'] },
     ],
     goldelena: [
         { name: 'August Vakarian' },
@@ -679,95 +681,95 @@ export const npCharacters: NpCharacters = {
     ],
     Greekgodx: [
         { name: '"Tay Tay" Tyrone', nicknames: ['TayTay'], assumeServer: 'public' },
-        { name: 'Tea Tea', faction: 'Police', displayName: 0 },
+        { name: 'Tea Tea', factions: ['Police'], displayName: 0 },
     ],
     GreenishMonkey: [
-        { name: 'Bobby Brown', faction: 'Chang Gang' },
-        { name: 'James Brown', faction: 'Police', displayName: 0 },
+        { name: 'Bobby Brown', factions: ['Chang Gang'] },
+        { name: 'James Brown', factions: ['Police'], displayName: 0 },
     ],
     GTAWiseGuy: [
-        { name: 'Eddie Marshall', faction: 'Tuner Shop' },
-        { name: '[Officer] Jim Underwood', faction: 'Police', nicknames: ['437'] },
-        { name: '[Development /] GTAWiseGuy', faction: 'Development', nicknames: ['Handling', 'Fixes', 'Fixing'] },
+        { name: 'Eddie Marshall', factions: ['Tuner Shop'] },
+        { name: '[Officer] Jim Underwood', factions: ['Police'], nicknames: ['437'] },
+        { name: '[Development /] GTAWiseGuy', factions: ['Development'], nicknames: ['Handling', 'Fixes', 'Fixing'] },
         { name: 'Igor Skovacic' },
         { name: 'RayRay' },
-        { name: 'Maury Mersion', faction: 'Mersions' },
+        { name: 'Maury Mersion', factions: ['Mersions'] },
     ],
     GutturalSteve: [
-        { name: 'Tomathy Steampipe', faction: 'Burger Shot' },
+        { name: 'Tomathy Steampipe', factions: ['Burger Shot'] },
     ],
     HARMSwahy: [
-        { name: 'Blaine Burke', faction: 'Angels' },
+        { name: 'Blaine Burke', factions: ['Angels'] },
     ],
     Harry: [
-        { name: 'Harry Brown', faction: 'Pegasus' },
+        { name: 'Harry Brown', factions: ['Pegasus'] },
     ],
     HasanAbi: [
-        { name: 'Humberto Antonio Donato Pecorino', nicknames: ['Don', 'Donnie', reg(/\bOva[h']? here\b/)], displayName: 5, faction: 'Cleanbois' },
+        { name: 'Humberto Antonio Donato Pecorino', nicknames: ['Don', 'Donnie', reg(/\bOva[h']? here\b/)], displayName: 5, factions: ['Cleanbois'] },
     ],
     Hedisaurus: [
-        { name: '[EMS] Hedi Saurus', faction: 'Medical', assume: 'assumeNpNoOther', assumeServer: 'whitelist' },
-        { name: '[Dispatch] Ramona Celeste', faction: 'Police', displayName: 1 },
-        { name: '[Ranger] Ramona Celeste', faction: 'Police', displayName: 1, assumeServer: 'public' },
+        { name: '[EMS] Hedi Saurus', factions: ['Medical'], assume: 'assumeNpNoOther', assumeServer: 'whitelist' },
+        { name: '[Dispatch] Ramona Celeste', factions: ['Police'], displayName: 1 },
+        { name: '[Ranger] Ramona Celeste', factions: ['Police'], displayName: 1, assumeServer: 'public' },
     ],
     HexagonistLIVE: [
-        { name: '[Deputy] Vincent Glass', faction: 'Police', displayName: 2 },
+        { name: '[Deputy] Vincent Glass', factions: ['Police'], displayName: 2 },
     ],
     HeyOrbz: [
-        { name: '[Officer] Casey Valentine', faction: 'Police' },
-        { name: 'Richie Mersion', faction: 'Mersions', displayName: 0 },
+        { name: '[Officer] Casey Valentine', factions: ['Police'] },
+        { name: 'Richie Mersion', factions: ['Mersions'], displayName: 0 },
     ],
     HiredGunRP: [
-        { name: '[Deputy] Colt Shepherd', faction: 'Police' },
+        { name: '[Deputy] Colt Shepherd', factions: ['Police'] },
     ],
     Hirona: [
-        { name: '[Trooper] Olivia Copper', faction: 'Police' },
-        { name: 'Emily Maw', faction: 'Harmony' },
+        { name: '[Trooper] Olivia Copper', factions: ['Police'] },
+        { name: 'Emily Maw', factions: ['Harmony'] },
         { name: 'Jenny Hawk', displayName: 0 },
-        { name: 'Onya Block', faction: 'ASRR', displayName: 0 },
+        { name: 'Onya Block', factions: ['ASRR'], displayName: 0 },
         { name: 'Debbie Hopper', displayName: 0 },
-        { name: 'Griselda "Zelda" Harth', faction: 'HOA' },
-        { name: 'Olga Sazkaljovich', faction: 'Pegasus', nicknames: ['Olgaa', 'Olgaaa', 'Olgaaaa'] },
+        { name: 'Griselda "Zelda" Harth', factions: ['HOA'] },
+        { name: 'Olga Sazkaljovich', factions: ['Pegasus'], nicknames: ['Olgaa', 'Olgaaa', 'Olgaaaa'] },
     ],
     hobbittrash: [
-        { name: '[Officer] Tracy Martell', faction: 'Police', nicknames: ['Cop'] },
-        { name: '[Justice] Katya Zamalodchikova', faction: 'DoJ', displayName: 1 },
+        { name: '[Officer] Tracy Martell', factions: ['Police'], nicknames: ['Cop'] },
+        { name: '[Justice] Katya Zamalodchikova', factions: ['DoJ'], displayName: 1 },
         { name: 'Jane Obama', displayName: 0 },
         { name: 'Jane Souls', displayName: 0 },
-        { name: 'Rounda Block', faction: 'ASRR', displayName: 0 },
+        { name: 'Rounda Block', factions: ['ASRR'], displayName: 0 },
         { name: "Kayden Dell'Anno" },
     ],
     HonathanTV: [
-        { name: '[Deputy] Honathan Yolo', faction: 'Police' },
+        { name: '[Deputy] Honathan Yolo', factions: ['Police'] },
     ],
     Hoss: [
-        { name: 'Chip Wheeler', faction: 'BBMC', displayName: 0 },
+        { name: 'Chip Wheeler', factions: ['BBMC'], displayName: 0 },
     ],
     Hotted89: [
-        { name: '[Deputy] Matthew Espinoz', faction: 'Police', nicknames: ['Airspinoz', 'Air 1 Andy'] },
-        { name: 'Joaquin "JJ" Jimenes', faction: 'Vagos' },
-        { name: 'Allen Widemann', faction: 'Chang Gang' },
+        { name: '[Deputy] Matthew Espinoz', factions: ['Police'], nicknames: ['Airspinoz', 'Air 1 Andy'] },
+        { name: 'Joaquin "JJ" Jimenes', factions: ['Vagos'] },
+        { name: 'Allen Widemann', factions: ['Chang Gang'] },
     ],
     huddy_nz: [
-        { name: 'Ash Huddy Hudson', faction: 'Lunatix' },
+        { name: 'Ash Huddy Hudson', factions: ['Lunatix'] },
     ],
     HutchMF: [
         { name: 'Hutch Hutcherson' },
         { name: 'Drew "Dead Eye Drew"', nicknames: ['DeadEye'] },
-        { name: '[Deputy] Jaryd Peak', faction: 'Police' },
+        { name: '[Deputy] Jaryd Peak', factions: ['Police'] },
         { name: 'Hutch Hendrickson' },
     ],
     IAmSoul_RP: [
         { name: 'Johnathen Riker' },
     ],
     ikittyyyy: [
-        { name: 'Kitty Dream', faction: 'Burger Shot' },
+        { name: 'Kitty Dream', factions: ['Burger Shot'] },
     ],
     ilenol: [
-        { name: 'Max Larson', faction: 'Pegasus', displayName: 0 },
+        { name: 'Max Larson', factions: ['Pegasus'], displayName: 0 },
     ],
     ImClammy: [
-        { name: 'AK', faction: 'SSB' },
+        { name: 'AK', factions: ['SSB'] },
         { name: 'Derek Monroe' },
     ],
     INFLUXPictures: [
@@ -777,27 +779,27 @@ export const npCharacters: NpCharacters = {
         { name: 'Mortimer Scottsfold', nicknames: ['Yung Fierro'], displayName: 3 },
     ],
     Intelleqt: [
-        { name: 'Donovan "DK" King', faction: 'GSF' },
+        { name: 'Donovan "DK" King', factions: ['GSF'] },
     ],
     ironmonkeytv: [
-        { name: 'Winston Bolt', faction: 'Pegasus' },
+        { name: 'Winston Bolt', factions: ['Pegasus'] },
         { name: 'Dragon' },
     ],
     itmeJP: [
         { name: 'Wilbur Higgins' },
     ],
     ItsJustJosh: [
-        { name: 'Levi Dawson', faction: 'SSB' },
+        { name: 'Levi Dawson', factions: ['SSB'] },
     ],
     ItsLeslie: [
-        { name: '[Wizard /] KyrinChan "Leyla" WeuhBou', faction: 'LARPers', nicknames: ['Nightingale', 'Wizard', 'Embervale'] },
+        { name: '[Wizard /] KyrinChan "Leyla" WeuhBou', factions: ['LARPers'], nicknames: ['Nightingale', 'Wizard', 'Embervale'] },
     ],
     ItsLSG: [
-        { name: '[Officer] Jack Miller', faction: 'Police' },
+        { name: '[Officer] Jack Miller', factions: ['Police'] },
     ],
     ItsSammyP: [
-        { name: 'Mando Thompson', faction: 'SSB' },
-        { name: 'Tyrone "Big T" Thompson', faction: 'SSB' },
+        { name: 'Mando Thompson', factions: ['SSB'] },
+        { name: 'Tyrone "Big T" Thompson', factions: ['SSB'] },
     ],
     ItsSlikeR: [
         { name: 'Abe Moe', nicknames: ['Don', 'Baldy', 'Bald'], displayName: 0, assumeServer: 'public' },
@@ -808,7 +810,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Vincent' },
     ],
     Jack: [
-        { name: 'Jack Cortair', faction: 'NBC' },
+        { name: 'Jack Cortair', factions: ['NBC'] },
     ],
     jacobpibbtv: [
         { name: 'Jacob Pibb' },
@@ -827,85 +829,85 @@ export const npCharacters: NpCharacters = {
         { name: 'Lil Cap', displayName: 0 },
     ],
     Jayce: [
-        { name: 'Lil Loco', faction: 'Vagos', displayName: 0 },
+        { name: 'Lil Loco', factions: ['Vagos'], displayName: 0 },
         { name: 'Riley Johnson' },
         { name: 'Pepe Roni', displayName: 0 },
         { name: 'Molly Minaj', displayName: 0 },
         { name: 'Robert "Mr. Rodgers" Rodgers' },
     ],
     JdotField: [
-        { name: 'Miles Landon', faction: 'Pegasus' },
+        { name: 'Miles Landon', factions: ['Pegasus'] },
         { name: 'Jake LaMotta', displayName: 0 },
-        { name: 'Drew Jackson', faction: 'GSF' },
+        { name: 'Drew Jackson', factions: ['GSF'] },
     ],
     Jellypeanut: [
         { name: 'Rai "Juuls" Cumberwoood' },
         { name: '[Prince] Habib Khalid' },
     ],
     jennylouise1997: [
-        { name: '[Dispatch] Louise Campbell', faction: 'Police' },
+        { name: '[Dispatch] Louise Campbell', factions: ['Police'] },
     ],
     jimmytulip: [
-        { name: 'Wayne Biggaz', faction: 'Chang Gang', nicknames: [reg(/\bwe+y+n/), reg(/\bwayne/)] },
+        { name: 'Wayne Biggaz', factions: ['Chang Gang'], nicknames: [reg(/\bwe+y+n/), reg(/\bwayne/)] },
     ],
     JJLake: [
-        { name: 'Jay Jarvis', faction: 'Pegasus' },
+        { name: 'Jay Jarvis', factions: ['Pegasus'] },
     ],
     JoblessGarrett: [
-        { name: 'Garrett Jobless', faction: 'Chang Gang' },
-        { name: '[Officer] Garry Berry', faction: 'Police' },
+        { name: 'Garrett Jobless', factions: ['Chang Gang'] },
+        { name: '[Officer] Garry Berry', factions: ['Police'] },
     ],
     JoeSmitty123: [
-        { name: '[Officer] Michael Murphy', faction: 'Police' },
+        { name: '[Officer] Michael Murphy', factions: ['Police'] },
     ],
     jogiejoey: [
         { name: 'Jessie Jugg' },
         { name: 'Eva Wall' },
-        { name: '[Dr.] Emma Gaine', faction: 'Medical' },
-        { name: '[Lawyer /] Maggie Kayden', faction: 'DoJ' },
+        { name: '[Dr.] Emma Gaine', factions: ['Medical'] },
+        { name: '[Lawyer /] Maggie Kayden', factions: ['DoJ'] },
     ],
     Jonthebroski: [
-        { name: '[Mayor] Denzel Williams', faction: 'Cleanbois', nicknames: ['The "Cleaner"', 'Presidente'] },
-        { name: 'Dio Ivanov', faction: 'Russians' },
-        { name: 'Holden D. Block', faction: 'ASRR', displayName: 0 },
-        { name: '[Officer] Johnny Divine', faction: 'Police', displayName: 0 },
+        { name: '[Mayor] Denzel Williams', factions: ['Cleanbois'], nicknames: ['The "Cleaner"', 'Presidente'] },
+        { name: 'Dio Ivanov', factions: ['Russians'] },
+        { name: 'Holden D. Block', factions: ['ASRR'], displayName: 0 },
+        { name: '[Officer] Johnny Divine', factions: ['Police'], displayName: 0 },
     ],
     JoshOG: [
-        { name: 'Mario Le-Pipe', faction: 'Chang Gang', affiliate: true, displayName: 0 },
+        { name: 'Mario Le-Pipe', factions: ['Chang Gang'], affiliate: true, displayName: 0 },
     ],
     JOVIAN: [
-        { name: '[Deputy] Billiam Williams', faction: 'Police', displayName: 1 },
+        { name: '[Deputy] Billiam Williams', factions: ['Police'], displayName: 1 },
     ],
     JPKMoto: [
-        { name: '[ADA] Odessa Pearson', faction: 'DoJ' },
+        { name: '[ADA] Odessa Pearson', factions: ['DoJ'] },
         { name: 'Nora Dupres' },
         { name: 'Zee Nanakaze Mathers' },
     ],
     Jubby: [
-        { name: 'Ricardo Perez', faction: 'Burger Shot', displayName: 1 },
+        { name: 'Ricardo Perez', factions: ['Burger Shot'], displayName: 1 },
     ],
     Judd: [
-        { name: '[Chief Justice] Coyote Russell', faction: 'DoJ', displayName: 1 },
+        { name: '[Chief Justice] Coyote Russell', factions: ['DoJ'], displayName: 1 },
         { name: 'Judd Lincoln' },
-        { name: 'Reverend I.M. Voland', faction: 'Dark Web' },
+        { name: 'Reverend I.M. Voland', factions: ['Dark Web'] },
     ],
     Juggs: [
-        { name: 'Lenny Large', faction: 'Burger Shot', nicknames: [reg(/\blenny/)], displayName: 0 },
+        { name: 'Lenny Large', factions: ['Burger Shot'], nicknames: [reg(/\blenny/)], displayName: 0 },
         { name: 'Traevon Williams', nicknames: ['The Barber'], displayName: 3 },
     ],
     JukeBoxEM: [
         { name: 'Tony Foster' },
-        { name: 'Shane Jones', faction: 'DoC' },
+        { name: 'Shane Jones', factions: ['DoC'] },
     ],
     JustaMinx: [
         { name: 'Mercy Peggers' },
     ],
     JustJamie: [
-        { name: 'Tommy Cruizer', faction: 'Tuner Shop' },
+        { name: 'Tommy Cruizer', factions: ['Tuner Shop'] },
     ],
     Jyeahlisa: [
-        { name: '[Therapist] Thalia Hayes', faction: 'Medical' },
-        { name: '[Lawyer /] Lees Grey', faction: 'DoJ' },
+        { name: '[Therapist] Thalia Hayes', factions: ['Medical'] },
+        { name: '[Lawyer /] Lees Grey', factions: ['DoJ'] },
     ],
     Kaceytron: [
         { name: 'Bobbi Jo', displayName: 0 },
@@ -914,34 +916,34 @@ export const npCharacters: NpCharacters = {
         { name: 'Risto Suolamies' },
     ],
     KaoruHare: [
-        { name: '[Therapist] Kizzy Neveah', faction: 'Medical' },
+        { name: '[Therapist] Kizzy Neveah', factions: ['Medical'] },
     ],
     KaoticaXD: [
-        { name: 'Victoria "Vivi" Veine', faction: 'HOA' },
+        { name: 'Victoria "Vivi" Veine', factions: ['HOA'] },
     ],
     Kari: [
-        { name: '[Deputy] Mina Price', faction: 'Police' },
-        { name: '[EMS] Khloe Brooks', faction: 'Medical' },
+        { name: '[Deputy] Mina Price', factions: ['Police'] },
+        { name: '[EMS] Khloe Brooks', factions: ['Medical'] },
     ],
     Karma: [
         { name: 'Bobby Johnson', displayName: 0 },
     ],
     karnt1: [
-        { name: 'Arush', faction: 'GSF' },
+        { name: 'Arush', factions: ['GSF'] },
     ],
     Kate: [
         { name: 'Nancy Drew' },
     ],
     KatFires: [
-        { name: 'Novah Walker', faction: 'Chang Gang' },
-        { name: '[Officer] Ensley Alton', faction: 'Police', nicknames: ['521'], displayName: 1 },
+        { name: 'Novah Walker', factions: ['Chang Gang'] },
+        { name: '[Officer] Ensley Alton', factions: ['Police'], nicknames: ['521'], displayName: 1 },
     ],
     KattValkyrie: [
-        { name: '[EMS] Valkyrie Sunshot', faction: 'Medical' },
+        { name: '[EMS] Valkyrie Sunshot', factions: ['Medical'] },
         { name: 'Katt Vincent' },
     ],
     kClient: [
-        { name: 'Daquan "Peanut" Dumas', faction: 'NBC' },
+        { name: 'Daquan "Peanut" Dumas', factions: ['NBC'] },
     ],
     Keeno: [
         { name: 'Kyle Brovloski' },
@@ -950,71 +952,71 @@ export const npCharacters: NpCharacters = {
         { name: 'Susie Carmichael' },
     ],
     KezieEve: [
-        { name: 'Ghost Storm', faction: 'GSF' },
+        { name: 'Ghost Storm', factions: ['GSF'] },
     ],
     KillrBeauty: [
-        { name: 'Catherine Scratch', faction: 'Lost MC', nicknames: ['Cat'], displayName: 3 },
+        { name: 'Catherine Scratch', factions: ['Lost MC'], nicknames: ['Cat'], displayName: 3 },
     ],
     Kimchi: [
         { name: 'Sun Moon' },
     ],
     Kimmykix: [
-        { name: 'April Thompson', faction: 'Pegasus' },
+        { name: 'April Thompson', factions: ['Pegasus'] },
     ],
     Kinamazing: [
-        { name: '[Officer] Emma Dupont', faction: 'Police', nicknames: ['Dupog'], assumeChar: true },
+        { name: '[Officer] Emma Dupont', factions: ['Police'], nicknames: ['Dupog'], assumeChar: true },
     ],
     King_1455: [
-        { name: 'Cooch Cassidy', faction: 'Lost MC' },
+        { name: 'Cooch Cassidy', factions: ['Lost MC'] },
     ],
     KinkyHobo_: [
-        { name: '[Lawyer /] Gill Schultz', faction: 'DoJ', displayName: 1 },
+        { name: '[Lawyer /] Gill Schultz', factions: ['DoJ'], displayName: 1 },
         { name: 'Max Muller', displayName: 0 },
     ],
     Kitboga: [
         { name: 'Edna Moose' },
-        { name: '[Deputy] Claire Annette Reed', faction: 'Police' },
+        { name: '[Deputy] Claire Annette Reed', factions: ['Police'] },
     ],
     Kite61: [
         { name: 'Rusty Johnson' },
     ],
     Kiva: [
-        { name: 'Andi Jones', faction: 'HOA', nicknames: ['Ant'], displayName: 3 },
+        { name: 'Andi Jones', factions: ['HOA'], nicknames: ['Ant'], displayName: 3 },
         { name: 'Navi Gates' },
     ],
     Kiwo: [
-        { name: '[Deputy] Lauren Forcer', faction: 'Police', assumeServer: 'whitelist' },
-        { name: '[Officer] Maisy Graves', faction: 'Police', assumeServer: 'public' },
-        { name: 'Mia Mersion', faction: 'Pegasus' },
-        { name: 'Evita "Mother" Nimm', faction: 'Dark Web' },
+        { name: '[Deputy] Lauren Forcer', factions: ['Police'], assumeServer: 'whitelist' },
+        { name: '[Officer] Maisy Graves', factions: ['Police'], assumeServer: 'public' },
+        { name: 'Mia Mersion', factions: ['Pegasus'] },
+        { name: 'Evita "Mother" Nimm', factions: ['Dark Web'] },
         { name: 'Ava Ridge', nicknames: ['Silence', reg(/darkness/)] },
         { name: 'Marta Volkov' },
     ],
     KL33Si: [
-        { name: '[Dr.] Emily Ducksworth', faction: 'Medical', displayName: 0 },
+        { name: '[Dr.] Emily Ducksworth', factions: ['Medical'], displayName: 0 },
     ],
     Knotty: [
-        { name: 'Guy Jones', faction: 'NBC', displayName: 0 },
+        { name: 'Guy Jones', factions: ['NBC'], displayName: 0 },
     ],
     Knut: [
         { name: 'Bjorn Eiriksson' },
     ],
     koil: [
-        { name: '[Trooper] Kael Soze', faction: 'Police', highCommand: true, leader: true, nicknames: ['are illegal'] },
-        { name: '[Officer] Francis Francer', faction: 'Police', displayName: 1 },
+        { name: '[Trooper] Kael Soze', factions: ['Police'], highCommand: true, leader: true, nicknames: ['are illegal'] },
+        { name: '[Officer] Francis Francer', factions: ['Police'], displayName: 1 },
         { name: 'Otto Delmar', nicknames: ['race', 'racing'] },
-        { name: '[Development /] Koil', faction: 'Development', nicknames: ['Code'] },
+        { name: '[Development /] Koil', factions: ['Development'], nicknames: ['Code'] },
         { name: 'Saint Jospeh', nicknames: ['Jesus', 'Joseph', 'XUJIA', 'EMC'], displayName: 0 },
-        { name: 'Ray Ray', faction: 'ASRR', displayName: 0 },
+        { name: 'Ray Ray', factions: ['ASRR'], displayName: 0 },
     ],
     Kongfue: [
-        { name: 'Karl "KJ" Johnny', faction: 'Vagos' },
+        { name: 'Karl "KJ" Johnny', factions: ['Vagos'] },
     ],
     KristoferYee: [
         { name: 'Jay Que', displayName: 0 },
     ],
     Kunaives: [
-        { name: 'Wally Veloce', faction: 'BSK' },
+        { name: 'Wally Veloce', factions: ['BSK'] },
     ],
     KuroKunoichi13: [
         { name: 'Natalia Omar' },
@@ -1022,14 +1024,14 @@ export const npCharacters: NpCharacters = {
     Kyle: [
         { name: 'Alabaster Slim', nicknames: ['Pimp'], displayName: 2 },
         { name: 'Hampton Brandon', nicknames: ['TTD', 'Ten Toes Down'] },
-        { name: '[Sheriff] Kyle Pred', faction: 'Police', leader: true },
+        { name: '[Sheriff] Kyle Pred', factions: ['Police'], leader: true },
         { name: 'Brett Biggledoinks' },
-        { name: "[Lawyer /] Rory O'Banion", faction: 'DoJ', displayName: 0 },
-        { name: 'Wyatt Derp', faction: 'Lost MC' },
+        { name: "[Lawyer /] Rory O'Banion", factions: ['DoJ'], displayName: 0 },
+        { name: 'Wyatt Derp', factions: ['Lost MC'] },
         { name: 'Pal Gore' },
     ],
     kyliebitkin: [
-        { name: '[Deputy] Brittany Angel', faction: 'Police' },
+        { name: '[Deputy] Brittany Angel', factions: ['Police'] },
         { name: 'Mary Mushkin', displayName: 0 },
     ],
     Jackhuddo: [
@@ -1037,27 +1039,27 @@ export const npCharacters: NpCharacters = {
         { name: 'Hubbo Samson' },
     ],
     LadyHope: [
-        { name: '[Officer] Lily Pond', faction: 'Police' },
-        { name: 'Isabella "Izzy" Carrington', faction: 'Harmony' },
+        { name: '[Officer] Lily Pond', factions: ['Police'] },
+        { name: 'Isabella "Izzy" Carrington', factions: ['Harmony'] },
     ],
     LadyLynxx: [
-        { name: '[EMS] Saphira Sinclair', faction: 'Medical' },
+        { name: '[EMS] Saphira Sinclair', factions: ['Medical'] },
         { name: 'Jaed Smith' },
     ],
     LAGTVMaximusBlack: [
-        { name: 'Outto-Tune "OTT" Tyrone', faction: 'BSK', nicknames: [reg(/\b[O0]\S?TT/)] },
+        { name: 'Outto-Tune "OTT" Tyrone', factions: ['BSK'], nicknames: [reg(/\b[O0]\S?TT/)] },
     ],
     Lairdo_: [
         { name: 'Henry King' },
     ],
     LarryX7: [
-        { name: 'Jose "Cousin" Luis Santana', faction: 'Vagos' },
+        { name: 'Jose "Cousin" Luis Santana', factions: ['Vagos'] },
     ],
     LaS_: [
         { name: 'Jesse "Baby Joker" Morales', assume: 'assumeOther' },
     ],
     LeWolfy: [
-        { name: '[Deputy] Dante Wolf', faction: 'Police' },
+        { name: '[Deputy] Dante Wolf', factions: ['Police'] },
     ],
     lilypichu: [
         { name: 'Tulip Peach' },
@@ -1066,50 +1068,50 @@ export const npCharacters: NpCharacters = {
         { name: 'Linkle Jones', displayName: 1 },
     ],
     LIRIK: [
-        { name: 'Clayvon Barksdale', faction: 'Cleanbois' },
-        { name: '[Officer] Bayvon Barksdale', faction: 'Police', nicknames: ['555'], displayName: 2 },
+        { name: 'Clayvon Barksdale', factions: ['Cleanbois'] },
+        { name: '[Officer] Bayvon Barksdale', factions: ['Police'], nicknames: ['555'], displayName: 2 },
         { name: 'Abe Vaughn', displayName: 0 },
-        { name: 'Avon Barksdale', faction: 'Cleanbois', leader: true },
+        { name: 'Avon Barksdale', factions: ['Cleanbois'], leader: true },
     ],
     Lisilsanya: [
-        { name: '[EMS] Lei Sanya', faction: 'Medical', nicknames: ['Lasagna'], displayName: 0 },
+        { name: '[EMS] Lei Sanya', factions: ['Medical'], nicknames: ['Lasagna'], displayName: 0 },
     ],
     Lord_Kebun: [
-        { name: 'Mr. K', faction: 'Chang Gang', leader: true, displayName: 0, nicknames: ['Chang', 'The "Dragon"'] },
-        { name: '[Deputy] Richard Richardson', faction: 'Police', nicknames: ['585'] },
+        { name: 'Mr. K', factions: ['Chang Gang'], leader: true, displayName: 0, nicknames: ['Chang', 'The "Dragon"'] },
+        { name: '[Deputy] Richard Richardson', factions: ['Police'], nicknames: ['585'] },
     ],
     LordJasta: [
         { name: 'Chris McGrawl' },
     ],
     Loserfruit: [
-        { name: '[EMS] Lizzie Bien', faction: 'Medical' },
+        { name: '[EMS] Lizzie Bien', factions: ['Medical'] },
     ],
     loveANG3L: [
-        { name: 'Kendra Davis', faction: 'Vagos' },
+        { name: 'Kendra Davis', factions: ['Vagos'] },
     ],
     Lovinurstyle: [
         { name: 'Rose Edwards' },
         { name: 'Leah Strong' },
     ],
     Lt_Raven: [
-        { name: '[Officer] Vladimir Raven', faction: 'Police', highCommand: true },
+        { name: '[Officer] Vladimir Raven', factions: ['Police'], highCommand: true },
     ],
     LtSerge: [
-        { name: '[Dr.] Serge Cross', faction: 'Medical', displayName: 2 },
+        { name: '[Dr.] Serge Cross', factions: ['Medical'], displayName: 2 },
     ],
     Lucky_RP: [
-        { name: 'Marlo Stanfield', faction: 'GSF', nicknames: [reg(/ma?rlo/)] },
+        { name: 'Marlo Stanfield', factions: ['GSF'], nicknames: [reg(/ma?rlo/)] },
     ],
     LuckyxMoon: [
-        { name: '[Judge] ? Devereaux', faction: 'DoJ' },
-        { name: '[Judge] Jessica Wesker', faction: 'DoJ' },
+        { name: '[Judge] ? Devereaux', factions: ['DoJ'] },
+        { name: '[Judge] Jessica Wesker', factions: ['DoJ'] },
     ],
     ludwig: [
         { name: 'Klevin Ballsworth' },
     ],
     luka_aus: [
-        { name: '[Officer] Luka Kozlov', faction: 'Police' },
-        { name: 'Gazza Maloo', faction: 'Lost MC' },
+        { name: '[Officer] Luka Kozlov', factions: ['Police'] },
+        { name: 'Gazza Maloo', factions: ['Lost MC'] },
     ],
     Lullichiiqa: [
         { name: 'Liv Lassen' },
@@ -1119,39 +1121,39 @@ export const npCharacters: NpCharacters = {
         { name: 'Barbie Chan' },
     ],
     LunaOni: [
-        { name: '[Officer] Claire Everly', faction: 'Police' },
+        { name: '[Officer] Claire Everly', factions: ['Police'] },
         { name: 'Mayumi Himura' },
     ],
     Lyndi: [
-        { name: 'Violet Van Housen', faction: 'Angels' },
-        { name: 'Willow Wolfhart', faction: 'DoC' },
+        { name: 'Violet Van Housen', factions: ['Angels'] },
+        { name: 'Willow Wolfhart', factions: ['DoC'] },
     ],
     Lysium: [
-        { name: 'Benji Ramos', faction: 'Vagos', nicknames: ['B'] },
-        { name: 'Dean Duncan', faction: 'DoC' },
+        { name: 'Benji Ramos', factions: ['Vagos'], nicknames: ['B'] },
+        { name: 'Dean Duncan', factions: ['DoC'] },
     ],
     Macaiyla: [
         { name: 'Jolene Grace', nicknames: ['Savannah'] },
     ],
     MacL0ven: [
-        { name: 'Negan Graham', faction: 'Lost MC' },
+        { name: 'Negan Graham', factions: ['Lost MC'] },
     ],
     Madmoiselle: [
-        { name: '[Therapist] Pixie Plum', faction: 'Medical' },
+        { name: '[Therapist] Pixie Plum', factions: ['Medical'] },
     ],
     Madoreline: [
-        { name: '[Officer] Elizabeth Reed', faction: 'Police' },
+        { name: '[Officer] Elizabeth Reed', factions: ['Police'] },
     ],
     Maggna: [
-        { name: '[EMS] Mari Jones', faction: 'Medical', nicknames: ['MJ'], displayName: 3 },
+        { name: '[EMS] Mari Jones', factions: ['Medical'], nicknames: ['MJ'], displayName: 3 },
     ],
     malikouthere: [
-        { name: 'Tito Conchas', faction: 'Vagos' },
+        { name: 'Tito Conchas', factions: ['Vagos'] },
     ],
     mantistobagan: [
-        { name: '[Officer] Domenic Toretti', faction: 'Police' },
-        { name: 'Ike Block', faction: 'ASRR', displayName: 0 },
-        { name: '[Lawyer /] Jerry Callow', faction: 'DoJ', displayName: 1 },
+        { name: '[Officer] Domenic Toretti', factions: ['Police'] },
+        { name: 'Ike Block', factions: ['ASRR'], displayName: 0 },
+        { name: '[Lawyer /] Jerry Callow', factions: ['DoJ'], displayName: 1 },
         { name: 'Pepe Silvia' },
     ],
     Markiplier: [
@@ -1161,16 +1163,16 @@ export const npCharacters: NpCharacters = {
         { name: 'Bertha Clark' },
     ],
     MasterMisuri: [
-        { name: 'Jesus Antonio Lopez Contreras', faction: 'HOA' },
+        { name: 'Jesus Antonio Lopez Contreras', factions: ['HOA'] },
     ],
     MatchaSmash: [
-        { name: '[EMS] Rowan Hunter', faction: 'Medical' },
+        { name: '[EMS] Rowan Hunter', factions: ['Medical'] },
     ],
     Mattie: [
-        { name: '[Dr.] Mikhail Keehl', faction: 'DoC', displayName: 2 },
+        { name: '[Dr.] Mikhail Keehl', factions: ['DoC'], displayName: 2 },
     ],
     MattRP: [
-        { name: '[Trooper] Jack Ripley', faction: 'Police' },
+        { name: '[Trooper] Jack Ripley', factions: ['Police'] },
     ],
     McconnellRet: [
         { name: '? "Bench Guy" ?' },
@@ -1179,12 +1181,12 @@ export const npCharacters: NpCharacters = {
         { name: 'Chad "Chodie" Brodie' },
     ],
     meeka_a: [
-        { name: '[EMS] William "Middy" Haze', faction: 'Medical' },
+        { name: '[EMS] William "Middy" Haze', factions: ['Medical'] },
     ],
     MEKABEAR: [
         { name: 'Erin Cox' },
         { name: 'Ari Tistu', displayName: 0 },
-        { name: '[Deputy] Amber Gold', faction: 'Police' },
+        { name: '[Deputy] Amber Gold', factions: ['Police'] },
     ],
     MeMayoi: [
         { name: 'Yoi Tsukita' },
@@ -1193,7 +1195,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Mervin Potts' },
     ],
     Mexi: [
-        { name: '[Deputy] Clarence Williams', faction: 'Police', displayName: 1 },
+        { name: '[Deputy] Clarence Williams', factions: ['Police'], displayName: 1 },
     ],
     michaelreeves: [
         { name: 'NoPixel ?' },
@@ -1206,19 +1208,19 @@ export const npCharacters: NpCharacters = {
     ],
     Miggitymaan: [
         { name: 'Jayce Wyatt' },
-        { name: '[Officer] Damien Alexander', faction: 'Police' },
-        { name: '[Deputy] Kurt Leonard', faction: 'Police', assume: 'assumeOther' },
+        { name: '[Officer] Damien Alexander', factions: ['Police'] },
+        { name: '[Deputy] Kurt Leonard', factions: ['Police'], assume: 'assumeOther' },
     ],
     MikeTheBard: [
         { name: 'Hubcap Jones', displayName: 0 },
         { name: 'Jack Nova', displayName: 0 },
     ],
     mikezout14: [
-        { name: '[Deputy] Michael Rodgers', faction: 'Police' },
+        { name: '[Deputy] Michael Rodgers', factions: ['Police'] },
     ],
     MiltonTPike1: [
         { name: 'Kiki Chanel', assumeServer: 'whitelist' },
-        { name: '[Officer] Kiki Chanel', faction: 'Police', displayName: 1, assumeServer: 'public' },
+        { name: '[Officer] Kiki Chanel', factions: ['Police'], displayName: 1, assumeServer: 'public' },
         { name: 'Dob Darker', nicknames: ['Dice is Right', 'Right Dice'], displayName: 0 },
         { name: 'Giovanni Atello', displayName: 1 },
         { name: 'Hazel Nutte' },
@@ -1226,36 +1228,36 @@ export const npCharacters: NpCharacters = {
         { name: 'William "Bill Ding" Ding', nicknames: ['Bill'] },
     ],
     Ming: [
-        { name: 'Ming Jingtai', faction: 'Gulag Gang', assume: 'assumeNp', assumeServer: 'public' },
+        { name: 'Ming Jingtai', factions: ['Gulag Gang'], assume: 'assumeNp', assumeServer: 'public' },
     ],
     miniminter: [
         { name: 'Peter Shufflebottom', displayName: 0 },
     ],
     MinusFive: [
-        { name: '[Officer] Jason Bidwell', faction: 'Police' },
+        { name: '[Officer] Jason Bidwell', factions: ['Police'] },
     ],
     MIQQA: [
-        { name: '[EMS] Janus Lee', faction: 'Medical' },
+        { name: '[EMS] Janus Lee', factions: ['Medical'] },
     ],
     Moboking: [
-        { name: '[Ranger] Ellis Pinzon', faction: 'Police', nicknames: ['Ronaldo'] },
-        { name: 'Aleksander Bogorov', faction: 'Angels', nicknames: ['Aleks'], displayName: 3 },
-        { name: 'Elijiah "Middle E" Parks', faction: 'SSB' },
+        { name: '[Ranger] Ellis Pinzon', factions: ['Police'], nicknames: ['Ronaldo'] },
+        { name: 'Aleksander Bogorov', factions: ['Angels'], nicknames: ['Aleks'], displayName: 3 },
+        { name: 'Elijiah "Middle E" Parks', factions: ['SSB'] },
     ],
     moistcr1tikal: [
         { name: 'Charles White', displayName: 0 },
     ],
     MOONMOON: [
-        { name: '[Deputy] Lenny Hawk', faction: 'Police', nicknames: ['Renegade'], displayName: 0, assume: 'assumeNp' },
-        { name: '[Shadowlord /] Bernice Caldershot', faction: 'LARPers' },
-        { name: 'Ro Block', faction: 'ASRR', displayName: 0 },
+        { name: '[Deputy] Lenny Hawk', factions: ['Police'], nicknames: ['Renegade'], displayName: 0, assume: 'assumeNp' },
+        { name: '[Shadowlord /] Bernice Caldershot', factions: ['LARPers'] },
+        { name: 'Ro Block', factions: ['ASRR'], displayName: 0 },
         { name: 'Yung Dab', nicknames: ['The "Gnome"'] },
     ],
     Moose_Taffy: [
-        { name: 'Patar Bellosh', faction: 'NBC', assume: 'assumeOther' },
+        { name: 'Patar Bellosh', factions: ['NBC'], assume: 'assumeOther' },
     ],
     mrborealislive: [
-        { name: 'Rudolph ?', faction: 'Burger Shot' },
+        { name: 'Rudolph ?', factions: ['Burger Shot'] },
     ],
     MrMoonsHouse: [
         { name: 'Freddy Price', displayName: 0 },
@@ -1265,30 +1267,30 @@ export const npCharacters: NpCharacters = {
         { name: 'Han Pandler' },
     ],
     MsTeamKK: [
-        { name: 'Riley Carter', faction: 'BBMC' },
+        { name: 'Riley Carter', factions: ['BBMC'] },
     ],
     MurderCrumpet: [
         { name: 'Cindy Lou' },
     ],
     MurphyBraun: [
-        { name: '[Justice] Holden', faction: 'DoJ' },
+        { name: '[Justice] Holden', factions: ['DoJ'] },
         { name: 'Marvin Peanut', nicknames: ['Marv'] },
-        { name: '[Lawyer /] Murphy Braun', faction: 'DoJ', displayName: 0 },
+        { name: '[Lawyer /] Murphy Braun', factions: ['DoJ'], displayName: 0 },
     ],
     Myladyballs: [
-        { name: 'Veronica Garcia', faction: 'Vagos' },
+        { name: 'Veronica Garcia', factions: ['Vagos'] },
     ],
     Mythematic: [
-        { name: 'Mike Rosoftsam', faction: 'Cleanbois', affiliate: true },
+        { name: 'Mike Rosoftsam', factions: ['Cleanbois'], affiliate: true },
     ],
     Nakkida: [
-        { name: '[Ranger] Tessa Lamb', faction: 'Police', displayName: 1, assumeServer: 'whitelist' },
-        { name: 'Tessa Lamb', faction: 'Gulag Gang', assumeServer: 'public' },
-        { name: 'Taylor "Onyx" White', faction: 'Police' },
+        { name: '[Ranger] Tessa Lamb', factions: ['Police'], displayName: 1, assumeServer: 'whitelist' },
+        { name: 'Tessa Lamb', factions: ['Gulag Gang'], assumeServer: 'public' },
+        { name: 'Taylor "Onyx" White', factions: ['Police'] },
         { name: 'Rachel Parker' },
     ],
     Natettvrp: [
-        { name: 'Carlos "Carlitos" Loco', faction: 'Vagos' },
+        { name: 'Carlos "Carlitos" Loco', factions: ['Vagos'] },
     ],
     Natsumiii: [
         { name: 'Natalie Sumi' },
@@ -1297,19 +1299,19 @@ export const npCharacters: NpCharacters = {
         { name: 'Clarence Carter' },
     ],
     NefariousCharm: [
-        { name: '[EMS] Maya Jane', faction: 'Medical' },
+        { name: '[EMS] Maya Jane', factions: ['Medical'] },
     ],
     Nerdandi: [
         { name: 'Petunia Susan Brookshire' },
     ],
     netsirk: [
-        { name: '[EMS] Nettie Machete', faction: 'Medical' },
+        { name: '[EMS] Nettie Machete', factions: ['Medical'] },
     ],
     neutreN: [
         { name: 'Octane "Goofy" ?', nicknames: ['Hypergoof'] },
     ],
     NeveRossa: [
-        { name: 'Dawn Hearte', faction: 'Medical' },
+        { name: 'Dawn Hearte', factions: ['Medical'] },
     ],
     NewFaceSuper: [
         { name: 'Davey Doherty' },
@@ -1318,94 +1320,94 @@ export const npCharacters: NpCharacters = {
         { name: 'Leslie Ling', displayName: 0, nicknames: ['Lingberg'] },
     ],
     Nikez: [
-        { name: '[Development /] Nikez', faction: 'Development' },
+        { name: '[Development /] Nikez', factions: ['Development'] },
         { name: 'Nick Simone', displayName: 0 },
-        { name: '[Officer] Cody Sharp', faction: 'Police' },
+        { name: '[Officer] Cody Sharp', factions: ['Police'] },
     ],
     NikkisARiot: [
-        { name: '[Deputy] Jenny Hall', faction: 'Police', nicknames: [reg(/\bje\S{1,3}y/)] },
+        { name: '[Deputy] Jenny Hall', factions: ['Police'], nicknames: [reg(/\bje\S{1,3}y/)] },
     ],
     Nmplol: [
         { name: 'Buddy Black' },
     ],
     NoElusionz: [
-        { name: 'Bobby Schmiguel', faction: 'BSK', nicknames: ['Bobby Beats'] },
+        { name: 'Bobby Schmiguel', factions: ['BSK'], nicknames: ['Bobby Beats'] },
     ],
     noKingu: [
-        { name: '[Deputy] Henri King', faction: 'Police' },
+        { name: '[Deputy] Henri King', factions: ['Police'] },
     ],
     NotoriousNorman: [
         { name: 'Chips Ahoy' },
     ],
     Nottics: [
-        { name: 'Raymundo Ortiz', faction: 'Vagos', nicknames: [reg(/\br+ay/)] },
+        { name: 'Raymundo Ortiz', factions: ['Vagos'], nicknames: [reg(/\br+ay/)] },
         { name: 'Raul Rodriguez', nicknames: [reg(/\br+au+l/)] },
     ],
     NovalokHD: [
-        { name: '[Officer] Ben Casanova', faction: 'Police' },
+        { name: '[Officer] Ben Casanova', factions: ['Police'] },
     ],
     Ntviiper: [
-        { name: 'Kian Mercer', faction: 'HOA' },
+        { name: 'Kian Mercer', factions: ['HOA'] },
     ],
     nxsiah: [
-        { name: 'Zelaya Fernando', faction: 'Prison', nicknames: ['Z', 'Laya'] },
+        { name: 'Zelaya Fernando', factions: ['Prison'], nicknames: ['Z', 'Laya'] },
     ],
     NymN: [
         { name: 'Frank Fritugo' },
     ],
     o_Oakleyz_o: [
-        { name: '[Deputy] Samuel Holtz', faction: 'Police' },
+        { name: '[Deputy] Samuel Holtz', factions: ['Police'] },
     ],
     OccamsSabre: [
-        { name: '[Lawyer /] Benjamin Crane', faction: 'DoJ' },
-        { name: '[Justice] Ray Montag', faction: 'DoJ' },
-        { name: 'Busta Block', faction: 'ASRR', displayName: 0 },
-        { name: '[Officer] Jeffrey Bundy', faction: 'Police' },
+        { name: '[Lawyer /] Benjamin Crane', factions: ['DoJ'] },
+        { name: '[Justice] Ray Montag', factions: ['DoJ'] },
+        { name: 'Busta Block', factions: ['ASRR'], displayName: 0 },
+        { name: '[Officer] Jeffrey Bundy', factions: ['Police'] },
     ],
     Octopimp: [
-        { name: '[Sorceror /] Chut McMillan', faction: 'LARPers', nicknames: ['Chut The Magnificent', 'Sorcerer'] },
+        { name: '[Sorceror /] Chut McMillan', factions: ['LARPers'], nicknames: ['Chut The Magnificent', 'Sorcerer'] },
     ],
     Odablock: [
         { name: 'Lil Baldy', displayName: 0, assume: 'assumeOther' },
         { name: 'Big O', displayName: 0 },
     ],
     OfficialTaco: [
-        { name: 'Charles "Taco" Prince', faction: 'Chang Gang', assumeServer: 'whitelist' },
-        { name: 'Charles "Taco" Prince', faction: 'Gulag Gang', assumeServer: 'public' },
+        { name: 'Charles "Taco" Prince', factions: ['Chang Gang'], assumeServer: 'whitelist' },
+        { name: 'Charles "Taco" Prince', factions: ['Gulag Gang'], assumeServer: 'public' },
     ],
     OG_Tyger: [
-        { name: '[Officer] Peter Frost', faction: 'Police' },
+        { name: '[Officer] Peter Frost', factions: ['Police'] },
     ],
     ogWiked: [
         { name: 'Dwayne Flores', displayName: 0 },
         { name: 'Truth Flores', displayName: 0 },
     ],
     OhMadOne: [
-        { name: '[Lawyer /] Ginzu Okada', faction: 'DoJ' },
+        { name: '[Lawyer /] Ginzu Okada', factions: ['DoJ'] },
     ],
     OllyPop: [
         { name: 'Ivy Poppins' },
         { name: 'Evee Poppins' },
     ],
     omie: [
-        { name: 'Marty Shanks', faction: 'Gulag Gang', nicknames: [reg(/\bburger/)], assumeServer: 'public' },
+        { name: 'Marty Shanks', factions: ['Gulag Gang'], nicknames: [reg(/\bburger/)], assumeServer: 'public' },
     ],
     OwenSeven: [
-        { name: '[Officer] Owen Svensen', faction: 'Police' },
+        { name: '[Officer] Owen Svensen', factions: ['Police'] },
     ],
     PapaChip: [
-        { name: 'Channing "Chain" Turner', faction: 'BBMC' },
+        { name: 'Channing "Chain" Turner', factions: ['BBMC'] },
     ],
     Pengwin: [
-        { name: '[Deputy] Jerry Perkins', faction: 'Police' },
+        { name: '[Deputy] Jerry Perkins', factions: ['Police'] },
         { name: 'Dustin "Dark Shadow" Manson' },
-        { name: 'Kenneth "Ken-sama" Foreman', faction: 'Burger Shot' },
+        { name: 'Kenneth "Ken-sama" Foreman', factions: ['Burger Shot'] },
     ],
     PENTA: [
-        { name: '[Deputy] Randy Wrangler', faction: 'Police', nicknames: [reg(/\bwrang/), 'Court'] },
+        { name: '[Deputy] Randy Wrangler', factions: ['Police'], nicknames: [reg(/\bwrang/), 'Court'] },
         { name: 'Jordan Steele', displayName: 0, nicknames: ['"Parking" God', 'Phoenix Messiah'] },
-        { name: 'Ricky Robins', faction: 'Cleanbois' },
-        { name: 'Mike Block', faction: 'ASRR', leader: true, displayName: 0 },
+        { name: 'Ricky Robins', factions: ['Cleanbois'] },
+        { name: 'Mike Block', factions: ['ASRR'], leader: true, displayName: 0 },
         { name: 'Chase Clouter' },
         { name: 'Jane Obama', displayName: 0 },
     ],
@@ -1413,14 +1415,14 @@ export const npCharacters: NpCharacters = {
         { name: 'Peener Pogue' },
     ],
     Pez_Br0: [
-        { name: 'Pez Speedwagon', faction: 'BBMC' },
+        { name: 'Pez Speedwagon', factions: ['BBMC'] },
         { name: 'Pezzy Pee' },
     ],
     PlasticLittle: [
-        { name: 'Parson "Frosty" Brown', faction: 'Lost MC' },
+        { name: 'Parson "Frosty" Brown', factions: ['Lost MC'] },
     ],
     PmsProxy: [
-        { name: '[Officer] Kira Light', faction: 'Police' },
+        { name: '[Officer] Kira Light', factions: ['Police'] },
         { name: 'Ella Stone' },
     ],
     pokelawls: [
@@ -1431,123 +1433,123 @@ export const npCharacters: NpCharacters = {
         { name: 'Celine LaCroix' },
     ],
     Pons: [
-        { name: '[Officer] Chet Manley', faction: 'Police' },
-        { name: '[Officer] Bodean Tucker', faction: 'Police', nicknames: ['Bo'] },
+        { name: '[Officer] Chet Manley', factions: ['Police'] },
+        { name: '[Officer] Bodean Tucker', factions: ['Police'], nicknames: ['Bo'] },
     ],
     PriddyFresh: [
         { name: 'Tupac Shakur' },
     ],
     Primal: [
-        { name: '[Officer] Kareem Lyon', faction: 'Police', displayName: 1 },
+        { name: '[Officer] Kareem Lyon', factions: ['Police'], displayName: 1 },
     ],
     PsiSyn: [
-        { name: '[Officer] Lucio Panini', faction: 'Police', assumeServer: 'public' },
+        { name: '[Officer] Lucio Panini', factions: ['Police'], assumeServer: 'public' },
     ],
     Pssychotic: [
-        { name: 'Jason Paul', faction: 'Lost MC', nicknames: ['JP'] },
+        { name: 'Jason Paul', factions: ['Lost MC'], nicknames: ['JP'] },
         { name: 'Hades', nicknames: ['Dog'] },
     ],
     Purge9090: [
-        { name: 'Jack Frent', faction: 'DoC', displayName: 0 },
+        { name: 'Jack Frent', factions: ['DoC'], displayName: 0 },
     ],
     qMARIOx: [
         { name: 'Fernando "Mario" Reyes', nicknames: ['"Mario" from the Barrio'] },
     ],
     qurquru: [
-        { name: '[Officer] Vladimir Reznik', faction: 'Police' },
+        { name: '[Officer] Vladimir Reznik', factions: ['Police'] },
     ],
     Ragonath: [
         { name: 'Maxwell Devitt', displayName: 0 },
     ],
     Raided: [
-        { name: '[Officer] Gage Draider', faction: 'Police' },
-        { name: '[Development /] Raided', faction: 'Development' },
+        { name: '[Officer] Gage Draider', factions: ['Police'] },
+        { name: '[Development /] Raided', factions: ['Development'] },
     ],
     Ramee: [
-        { name: 'Ramee El-Rahman', faction: 'Chang Gang', nicknames: ['The "Warlord"', 'The "Vulture"', 'SBS Patient-0'] },
-        { name: '[Ranger] Conan Clarkson', faction: 'Police' },
+        { name: 'Ramee El-Rahman', factions: ['Chang Gang'], nicknames: ['The "Warlord"', 'The "Vulture"', 'SBS Patient-0'] },
+        { name: '[Ranger] Conan Clarkson', factions: ['Police'] },
     ],
     Rasta: [
         { name: 'Dunn Robinson', assume: 'assumeNpNoOther' },
         { name: 'Mary Livingston', displayName: 0 },
     ],
     RatedEpicz: [
-        { name: 'Randy Bullet', faction: 'Chang Gang', nicknames: ['Lazy-Eye'], assumeServer: 'whitelist' },
-        { name: 'Roundy Buffet', faction: 'Gulag Gang', nicknames: ['Randy', 'Bullet'], assumeServer: 'public' },
-        { name: '[Trooper] AJ Hunter', faction: 'Police' },
+        { name: 'Randy Bullet', factions: ['Chang Gang'], nicknames: ['Lazy-Eye'], assumeServer: 'whitelist' },
+        { name: 'Roundy Buffet', factions: ['Gulag Gang'], nicknames: ['Randy', 'Bullet'], assumeServer: 'public' },
+        { name: '[Trooper] AJ Hunter', factions: ['Police'] },
     ],
     Ray__C: [
-        { name: 'Raymond "Ray" Romanov', faction: 'Cleanbois', nicknames: ['Ray', reg(/\brussia/)], assumeServer: 'whitelist' },
-        { name: '[Officer] Raycardo Flick', faction: 'Police', assumeServer: 'public' },
+        { name: 'Raymond "Ray" Romanov', factions: ['Cleanbois'], nicknames: ['Ray', reg(/\brussia/)], assumeServer: 'whitelist' },
+        { name: '[Officer] Raycardo Flick', factions: ['Police'], assumeServer: 'public' },
     ],
     ray308win: [
-        { name: '[FIB Agent] Lyonel Winchester', faction: 'Police' },
+        { name: '[FIB Agent] Lyonel Winchester', factions: ['Police'] },
     ],
     Realzman: [
-        { name: '[EMS] Connor', faction: 'Medical' },
+        { name: '[EMS] Connor', factions: ['Medical'] },
         { name: 'Malakai' },
     ],
     ReinaRP: [
         { name: 'Mona Sanchez' },
     ],
     RemiTheSiren: [
-        { name: '[Dr.] Lily Harte', faction: 'Medical', displayName: 2 },
-        { name: 'Wednesday Mushkin', faction: 'HOA' },
+        { name: '[Dr.] Lily Harte', factions: ['Medical'], displayName: 2 },
+        { name: 'Wednesday Mushkin', factions: ['HOA'] },
     ],
     reno_raines: [
-        { name: 'Manny McDaniels', faction: 'HOA' },
+        { name: 'Manny McDaniels', factions: ['HOA'] },
     ],
     RevRoach: [
         { name: "Happy D'Klown" },
     ],
     RickMongoLIVE: [
-        { name: '[D.A.] Rick Mongo', faction: 'DoJ', assume: 'assumeNpNoOther' },
+        { name: '[D.A.] Rick Mongo', factions: ['DoJ'], assume: 'assumeNpNoOther' },
     ],
     RiZRP: [
-        { name: 'Nikita Reznikov', faction: 'Pegasus' },
+        { name: 'Nikita Reznikov', factions: ['Pegasus'] },
     ],
     rlly: [
-        { name: 'Shelly Targaryen', faction: 'Burger Shot', nicknames: ['Shelleh', 'Queen'] },
+        { name: 'Shelly Targaryen', factions: ['Burger Shot'], nicknames: ['Shelleh', 'Queen'] },
         { name: 'Kelly Smith' },
     ],
     RobotNinjaPants: [
-        { name: '[ADA] Jacob Slate', faction: 'DoJ' },
+        { name: '[ADA] Jacob Slate', factions: ['DoJ'] },
     ],
     roflgator: [
         { name: 'Robert Spowylamywanowski', nicknames: ['Rob', 'Polish', 'Night Manager'], displayName: 3 },
     ],
     Rose: [
-        { name: '[Deputy] Maggie Dean', faction: 'Police' },
+        { name: '[Deputy] Maggie Dean', factions: ['Police'] },
     ],
     Roxmiral: [
         { name: 'Ruby Morris' },
-        { name: 'Nikki Drools', faction: 'DoC' },
-        { name: 'Sherry Paie', faction: 'Burger Shot', displayName: 1 },
+        { name: 'Nikki Drools', factions: ['DoC'] },
+        { name: 'Sherry Paie', factions: ['Burger Shot'], displayName: 1 },
         { name: 'Sherry Lee' },
     ],
     RudeNoodleNPC: [
-        { name: 'Tee Veeman', faction: 'Burger Shot' },
+        { name: 'Tee Veeman', factions: ['Burger Shot'] },
     ],
     s0upes: [
         { name: 'James "Apples" Apeller' },
-        { name: '[Officer] Silas Grimmer', faction: 'Police' },
-        { name: 'Ryder S. Block', faction: 'ASRR', displayName: 0 },
+        { name: '[Officer] Silas Grimmer', factions: ['Police'] },
+        { name: 'Ryder S. Block', factions: ['ASRR'], displayName: 0 },
         { name: 'Ezekiel "Zero" Rogaine' },
     ],
     Saiiren: [
         { name: 'Ai "Betch" Musori', nicknames: ['Bitch'], displayName: 0 },
-        { name: '[Deputy] Yuu Gondai', faction: 'Police', nicknames: ['Yu', 'Yoo', 'Gon Die'] },
-        { name: '"~Podcast~"', nicknames: ['Podcast'], faction: 'Podcast' },
+        { name: '[Deputy] Yuu Gondai', factions: ['Police'], nicknames: ['Yu', 'Yoo', 'Gon Die'] },
+        { name: '"~Podcast~"', nicknames: ['Podcast'], factions: ['Podcast'] },
     ],
     Sal_Rosenberg: [
         { name: 'Sal Rosenberg' },
     ],
     Sams: [
-        { name: 'Dimitri Barkov', faction: 'HOA' },
+        { name: 'Dimitri Barkov', factions: ['HOA'] },
     ],
     Sareff: [
-        { name: 'Violet Noreguarde', faction: 'Vagos' },
-        { name: '[D.A.] Paige Green', faction: 'DoJ' },
+        { name: 'Violet Noreguarde', factions: ['Vagos'] },
+        { name: '[D.A.] Paige Green', factions: ['DoJ'] },
         { name: 'Chasity Dawes' },
     ],
     SAVx: [
@@ -1557,12 +1559,12 @@ export const npCharacters: NpCharacters = {
         { name: 'Enza Zissou' },
     ],
     Sax850: [
-        { name: 'Motya Satovksy', faction: 'Russians' },
-        { name: '[Officer] Olof Gunnarsson', faction: 'Police' },
+        { name: 'Motya Satovksy', factions: ['Russians'] },
+        { name: '[Officer] Olof Gunnarsson', factions: ['Police'] },
     ],
     SayeedBlack: [
-        { name: 'Arush Patel "Speedy" Santana', faction: 'Vagos', leader: true, nicknames: ['El Jefe'] },
-        { name: 'Sayeed White', faction: 'DoC', nicknames: ['Mr. White'], displayName: 3 },
+        { name: 'Arush Patel "Speedy" Santana', factions: ['Vagos'], leader: true, nicknames: ['El Jefe'] },
+        { name: 'Sayeed White', factions: ['DoC'], nicknames: ['Mr. White'], displayName: 3 },
     ],
     ScarletSpace: [
         { name: 'Penny Farthing' },
@@ -1572,33 +1574,33 @@ export const npCharacters: NpCharacters = {
     ],
     Selvek: [
         { name: 'Jeffrey Price', displayName: 0 },
-        { name: '[Officer] Jack Sawyer', faction: 'Police' },
+        { name: '[Officer] Jack Sawyer', factions: ['Police'] },
     ],
     SgtApollo: [
         { name: 'Salem Barghouthi' },
     ],
     shaggy_steve: [
-        { name: '[Deputy] Jimmy Gordon', faction: 'Police' },
+        { name: '[Deputy] Jimmy Gordon', factions: ['Police'] },
     ],
     Shindur: [
-        { name: '[Deputy] Joey Keys', faction: 'Police' },
+        { name: '[Deputy] Joey Keys', factions: ['Police'] },
     ],
     shiny: [
-        { name: '[Officer] Honey Buns', faction: 'Police', nicknames: ['D-21'] },
+        { name: '[Officer] Honey Buns', factions: ['Police'], nicknames: ['D-21'] },
         { name: 'Pebbles ?', nicknames: ['Dog'] },
-        { name: '[Archdruid /] Clyde "Meowfurryon" Eastside', faction: 'LARPers', nicknames: ['Druid', 'Archdruid', 'Malfurryon'] },
+        { name: '[Archdruid /] Clyde "Meowfurryon" Eastside', factions: ['LARPers'], nicknames: ['Druid', 'Archdruid', 'Malfurryon'] },
     ],
     Shortyyguy: [
-        { name: 'Eddie Delish', faction: 'Cleanbois' },
+        { name: 'Eddie Delish', factions: ['Cleanbois'] },
     ],
     Shotz: [
-        { name: 'Vinny Pistone', faction: 'Chang Gang', assumeServer: 'whitelist' },
-        { name: 'Vinny Pistone', faction: 'Gulag Gang', assumeServer: 'public' },
-        { name: 'Mr J', faction: 'Chang Gang', displayName: 0 },
-        { name: '[Officer] John Mineo', faction: 'Police' },
+        { name: 'Vinny Pistone', factions: ['Chang Gang'], assumeServer: 'whitelist' },
+        { name: 'Vinny Pistone', factions: ['Gulag Gang'], assumeServer: 'public' },
+        { name: 'Mr J', factions: ['Chang Gang'], displayName: 0 },
+        { name: '[Officer] John Mineo', factions: ['Police'] },
     ],
     Shrimp_: [
-        { name: 'Bradley Kickass', faction: 'Burger Shot', displayName: 0 },
+        { name: 'Bradley Kickass', factions: ['Burger Shot'], displayName: 0 },
         { name: 'Jimmy Bending', displayName: 0 },
         { name: '[Mr.] Watt Son', displayName: 0 },
     ],
@@ -1606,22 +1608,22 @@ export const npCharacters: NpCharacters = {
         { name: 'Richard Hard' },
     ],
     SiirToast: [
-        { name: 'Anton Belov', faction: 'Russians' },
+        { name: 'Anton Belov', factions: ['Russians'] },
     ],
     Silent: [
         { name: 'Juan Carlos "Flippy" Hernandez', nicknames: [reg(/\bflip/)] },
-        { name: '[Officer] Joel Garcia', faction: 'Police' },
+        { name: '[Officer] Joel Garcia', factions: ['Police'] },
     ],
     SilentSentry: [
-        { name: 'Ron Otterman', faction: 'News', nicknames: [reg(/🎥/)], displayName: 0 },
+        { name: 'Ron Otterman', factions: ['News'], nicknames: [reg(/🎥/)], displayName: 0 },
         { name: 'Michael Michaels Jr.', nicknames: ['MMJR'], displayName: 0 },
         { name: 'Iroquois "Snake" Plisken', displayName: 0 },
         { name: 'Ziggy Flint', nicknames: [reg(/🌿/)], displayName: 0 },
     ],
     SimpleD88: [
-        { name: '[A.D.A.] Blake Specter', faction: 'DoJ', assumeServer: 'whitelist' },
-        { name: '[Lawyer /] Reggie Might', faction: 'DoJ' },
-        { name: '[Officer] Reggie Might', faction: 'Police', assumeServer: 'public' },
+        { name: '[A.D.A.] Blake Specter', factions: ['DoJ'], assumeServer: 'whitelist' },
+        { name: '[Lawyer /] Reggie Might', factions: ['DoJ'] },
+        { name: '[Officer] Reggie Might', factions: ['Police'], assumeServer: 'public' },
     ],
     Simplyje2ns: [
         { name: 'Jean Steele', displayName: 0 },
@@ -1630,7 +1632,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Tito Higgins' },
     ],
     SirPink: [
-        { name: 'Reginald "Reggie" Bigglesby', faction: 'Burger Shot' },
+        { name: 'Reginald "Reggie" Bigglesby', factions: ['Burger Shot'] },
     ],
     Skannerz_: [
         { name: 'Wayne Kerr' },
@@ -1639,34 +1641,34 @@ export const npCharacters: NpCharacters = {
         { name: 'John Riggs' },
     ],
     skippypoppin: [
-        { name: 'Kevin Whipaloo', faction: 'Burger Shot', leader: true, displayName: 0 },
+        { name: 'Kevin Whipaloo', factions: ['Burger Shot'], leader: true, displayName: 0 },
     ],
     Skitx0: [
-        { name: 'Smino "Hitta" Brown', faction: 'GSF', assume: 'assumeNpNoOther' },
+        { name: 'Smino "Hitta" Brown', factions: ['GSF'], assume: 'assumeNpNoOther' },
     ],
     Slasher2099: [
-        { name: '[Officer] Darrel McCormik', faction: 'Police' },
-        { name: '[K9 Trooper] Fenton', faction: 'Police', nicknames: ['Fentons'] },
+        { name: '[Officer] Darrel McCormik', factions: ['Police'] },
+        { name: '[K9 Trooper] Fenton', factions: ['Police'], nicknames: ['Fentons'] },
     ],
     Smaczny: [
         { name: 'Conrad Gross' },
     ],
     smo_och: [
-        { name: 'Mike Smoore', faction: 'Vagos', displayName: 0 },
+        { name: 'Mike Smoore', factions: ['Vagos'], displayName: 0 },
     ],
     SmokySloth: [
-        { name: 'Bovice Wilkinson', faction: 'Prison' },
-        { name: 'Tayvadius "Chef" Jamarcus Livingston III', faction: 'GSF' },
+        { name: 'Bovice Wilkinson', factions: ['Prison'] },
+        { name: 'Tayvadius "Chef" Jamarcus Livingston III', factions: ['GSF'] },
     ],
     sock22: [
-        { name: '[Deputy] Richard Dark', faction: 'Police' },
+        { name: '[Deputy] Richard Dark', factions: ['Police'] },
     ],
     SodaKite: [
-        { name: 'Ellie Dono', faction: 'Cleanbois' },
+        { name: 'Ellie Dono', factions: ['Cleanbois'] },
         { name: 'Chell Phish', displayName: 0 },
     ],
     sodapoppin: [
-        { name: 'Kevin Whipaloo', faction: 'Burger Shot', leader: true, displayName: 0 },
+        { name: 'Kevin Whipaloo', factions: ['Burger Shot'], leader: true, displayName: 0 },
         { name: 'Tappy "Cat" Nippers', nicknames: ['Cat'], displayName: 0 },
     ],
     Sp00nerism: [
@@ -1674,35 +1676,35 @@ export const npCharacters: NpCharacters = {
     ],
     Spaceboy: [
         { name: 'Melbert "Mel" Rickenbacker' },
-        { name: 'Adrian Block', faction: 'ASRR', displayName: 0 },
-        { name: '[Deputy] Pat Downing', faction: 'Police' },
+        { name: 'Adrian Block', factions: ['ASRR'], displayName: 0 },
+        { name: '[Deputy] Pat Downing', factions: ['Police'] },
         { name: 'Casey Boyd', nicknames: ['Caseboy', 'L8PD'], displayName: 0 },
     ],
     Spekel: [
         { name: 'Sonya Summers', nicknames: ['Black Betty'] },
         { name: 'Chloe Lesterol' },
-        { name: '[Officer] Scarlett Winters', faction: 'Police' },
+        { name: '[Officer] Scarlett Winters', factions: ['Police'] },
     ],
     spicybackpain: [
-        { name: 'Kray-Tor Skullfondler', faction: 'HOA' },
+        { name: 'Kray-Tor Skullfondler', factions: ['HOA'] },
     ],
     Ssaab: [
-        { name: 'Al Saab', faction: 'HOA', displayName: 2 },
-        { name: '[Deputy] Sam Baas', faction: 'Police', nicknames: ['Samir', 'Baasem'], displayName: 2 },
+        { name: 'Al Saab', factions: ['HOA'], displayName: 2 },
+        { name: '[Deputy] Sam Baas', factions: ['Police'], nicknames: ['Samir', 'Baasem'], displayName: 2 },
     ],
     steamcharlie: [
-        { name: '[Deputy] Sydney Bearmont', faction: 'Police', displayName: 1 },
+        { name: '[Deputy] Sydney Bearmont', factions: ['Police'], displayName: 1 },
     ],
     ster: [
         { name: 'Guy Dance' },
         { name: 'Gerald Wagner', displayName: 0 },
     ],
     stitchybird: [
-        { name: 'Daphne Tillamuck Valentino', faction: 'Lunatix' },
+        { name: 'Daphne Tillamuck Valentino', factions: ['Lunatix'] },
         { name: 'Abigail "Abi" Sharp' },
     ],
     Stoner_Minded: [
-        { name: '[Officer] Frank Williams', faction: 'Police', displayName: 1 },
+        { name: '[Officer] Frank Williams', factions: ['Police'], displayName: 1 },
     ],
     Striking_Fast: [
         { name: 'Gerard "Dewey" Hawthorne', nicknames: ['Dewie'] },
@@ -1711,22 +1713,22 @@ export const npCharacters: NpCharacters = {
         { name: 'Jack "Sully" Sullivan' },
     ],
     summit1g: [
-        { name: '[Deputy] John Charleston', faction: 'Police' },
-        { name: 'Charles "Chawa" Johnson', faction: 'Chang Gang' },
+        { name: '[Deputy] John Charleston', factions: ['Police'] },
+        { name: 'Charles "Chawa" Johnson', factions: ['Chang Gang'] },
     ],
     Sunni: [
-        { name: 'Hilda Bulking', faction: 'Vagos' },
+        { name: 'Hilda Bulking', factions: ['Vagos'] },
     ],
     SuperBunneh: [
-        { name: '[EMS] Mila Smoak', faction: 'Medical' },
-        { name: 'Madison "Maddy" Fox', faction: 'GSF' },
+        { name: '[EMS] Mila Smoak', factions: ['Medical'] },
+        { name: 'Madison "Maddy" Fox', factions: ['GSF'] },
     ],
     Sur_Lee: [
         { name: 'Mitch "Dumbass" Bader' },
     ],
     Surefour: [
-        { name: '[Officer] Kenny Hawk', faction: 'Police', nicknames: ['Powice'], displayName: 0 },
-        { name: '[Ranger /] Clarence Trueshot', faction: 'LARPers', nicknames: ['Ranger'], displayName: 0 },
+        { name: '[Officer] Kenny Hawk', factions: ['Police'], nicknames: ['Powice'], displayName: 0 },
+        { name: '[Ranger /] Clarence Trueshot', factions: ['LARPers'], nicknames: ['Ranger'], displayName: 0 },
     ],
     Suspect: [
         { name: 'Marcos Da Silva' },
@@ -1735,7 +1737,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Dreah Johnson' },
     ],
     Svennoss: [
-        { name: 'Barry Svensson', faction: 'Pegasus' },
+        { name: 'Barry Svensson', factions: ['Pegasus'] },
     ],
     Sweet_Anita: [
         { name: 'Marylin Hilton' },
@@ -1744,8 +1746,8 @@ export const npCharacters: NpCharacters = {
         { name: 'Miguel Almerion' },
     ],
     Sykkuno: [
-        { name: 'Yuno Sykk', faction: 'Cleanbois', displayName: 1, assumeServer: 'whitelist', assumeChar: true },
-        { name: '[Ranger] Yuno Sykk', faction: 'Police', displayName: 1, assumeServer: 'public' },
+        { name: 'Yuno Sykk', factions: ['Cleanbois'], displayName: 1, assumeServer: 'whitelist', assumeChar: true },
+        { name: '[Ranger] Yuno Sykk', factions: ['Police'], displayName: 1, assumeServer: 'public' },
     ],
     SynthHunter: [
         { name: 'Hunter "Wingman" Skye' },
@@ -1755,62 +1757,62 @@ export const npCharacters: NpCharacters = {
         { name: 'Emilia Salvatore' },
     ],
     t3r0: [
-        { name: '[Dr.] Andrew Ducksworth', faction: 'Medical', displayName: 2 },
+        { name: '[Dr.] Andrew Ducksworth', factions: ['Medical'], displayName: 2 },
     ],
     TaliaMar: [
         { name: 'Mya ?' },
     ],
     tara_: [
-        { name: '[EMS] Sarah Ableton', faction: 'Medical' },
+        { name: '[EMS] Sarah Ableton', factions: ['Medical'] },
     ],
     Tasara22: [
         { name: 'Tuesday Phillips' },
         { name: 'Milena' },
     ],
     TastyMintsNA: [
-        { name: '[Officer] Eric Wong', faction: 'Police', assumeServer: 'public' },
+        { name: '[Officer] Eric Wong', factions: ['Police'], assumeServer: 'public' },
     ],
     Tehrani: [
-        { name: 'Boris Ivanov', faction: 'Russians', leader: true },
-        { name: 'Hector Guzman', faction: 'Vagos' },
+        { name: 'Boris Ivanov', factions: ['Russians'], leader: true },
+        { name: 'Hector Guzman', factions: ['Vagos'] },
     ],
     TenguOP: [
         { name: 'Wally Veloce' },
     ],
     TerribleJamie: [
-        { name: 'Lavante "L" Lamano', faction: 'GSF' },
+        { name: 'Lavante "L" Lamano', factions: ['GSF'] },
     ],
     Test: [
         { name: 'Test6' },
     ],
     TezMate: [
-        { name: '[Deputy] Nicholas Riggs', faction: 'Police' },
+        { name: '[Deputy] Nicholas Riggs', factions: ['Police'] },
     ],
     TFNeraZe: [
-        { name: '[Deputy] Michael Dunning', faction: 'Police' },
+        { name: '[Deputy] Michael Dunning', factions: ['Police'] },
     ],
     Tfue: [
-        { name: 'Tucker Johnson', faction: 'Chang Gang' },
+        { name: 'Tucker Johnson', factions: ['Chang Gang'] },
     ],
     thaCOOP: [
-        { name: '[Officer] Luke Holliday', faction: 'Police' },
-        { name: '[Judge] Coop Holliday', faction: 'DoJ', displayName: 1 },
+        { name: '[Officer] Luke Holliday', factions: ['Police'] },
+        { name: '[Judge] Coop Holliday', factions: ['DoJ'], displayName: 1 },
         { name: 'Matthew Payne', displayName: 2 },
         { name: 'Remee El-Rahman' },
     ],
     Thadrius: [
-        { name: '[Deputy] Jonathan Dazzler', faction: 'Police', nicknames: ['Johnny'], displayName: 2 },
+        { name: '[Deputy] Jonathan Dazzler', factions: ['Police'], nicknames: ['Johnny'], displayName: 2 },
         { name: 'Slappy McGaffey' },
     ],
     the_halfhand: [
         { name: 'Jack "Sully" Sullivan' },
-        { name: '[Officer] Oscar Fitzpatrick', faction: 'Police', nicknames: ['Fitz', 'Patrick'] },
+        { name: '[Officer] Oscar Fitzpatrick', factions: ['Police'], nicknames: ['Fitz', 'Patrick'] },
     ],
     TheAaronShaq: [
-        { name: '? "Glue Guy" ?', faction: 'Burger Shot' },
+        { name: '? "Glue Guy" ?', factions: ['Burger Shot'] },
     ],
     TheBigMeech: [
-        { name: 'Pilbis Shonly', faction: 'NBC' },
+        { name: 'Pilbis Shonly', factions: ['NBC'] },
         { name: 'Tyler Kwando', displayName: 0 },
     ],
     TheChief1114: [
@@ -1818,7 +1820,7 @@ export const npCharacters: NpCharacters = {
     ],
     TheDondi: [
         { name: 'Arthur Hammond', nicknames: ['The "Doctor"'] },
-        { name: '[Officer] Delaney', faction: 'Police' },
+        { name: '[Officer] Delaney', factions: ['Police'] },
     ],
     TheGeekEntry: [
         { name: 'Stacey Doyle' },
@@ -1828,33 +1830,33 @@ export const npCharacters: NpCharacters = {
         { name: 'Bryce Miller', nicknames: ['BDawg'], assumeServer: 'whitelist' },
         { name: 'Diego Marquez' },
         { name: 'Roland Nelson', assumeServer: 'whitelist' },
-        { name: '[Officer] Roland Nelson', faction: 'Police', assumeServer: 'public' },
+        { name: '[Officer] Roland Nelson', factions: ['Police'], assumeServer: 'public' },
     ],
     Timmac: [
-        { name: '[Deputy] T.J. Mack', faction: 'Police', assumeServer: 'whitelist' },
+        { name: '[Deputy] T.J. Mack', factions: ['Police'], assumeServer: 'whitelist' },
         { name: 'Gomer Colton', nicknames: ['Gomey'], assumeServer: 'whitelist' },
-        { name: '[Trooper] T.J. Mack', faction: 'Police', assumeServer: 'public' },
+        { name: '[Trooper] T.J. Mack', factions: ['Police'], assumeServer: 'public' },
     ],
     Timmy2: [
-        { name: 'Orlando Jones', faction: 'SSB', nicknames: ['OJ'] },
-        { name: 'Chino G', faction: 'Vagos' },
-        { name: 'Cardell "CJ" Jones', faction: 'SSB' },
+        { name: 'Orlando Jones', factions: ['SSB'], nicknames: ['OJ'] },
+        { name: 'Chino G', factions: ['Vagos'] },
+        { name: 'Cardell "CJ" Jones', factions: ['SSB'] },
     ],
     Tinker: [
-        { name: '[Deputy] Theodore Tinker', faction: 'Police' },
-        { name: 'Sean Tinker', faction: 'Pegasus', displayName: 0 },
+        { name: '[Deputy] Theodore Tinker', factions: ['Police'] },
+        { name: 'Sean Tinker', factions: ['Pegasus'], displayName: 0 },
     ],
     TinySpark: [
-        { name: '[Deputy] Daisy Dukakis', faction: 'Police' },
+        { name: '[Deputy] Daisy Dukakis', factions: ['Police'] },
     ],
     TinyStunt: [
-        { name: '[EMS] Bailey Jade', faction: 'Medical' },
+        { name: '[EMS] Bailey Jade', factions: ['Medical'] },
     ],
     ToastRP: [
         { name: 'Paulie' },
     ],
     Tobiii: [
-        { name: '[Development /] Tobiii', faction: 'Development' },
+        { name: '[Development /] Tobiii', factions: ['Development'] },
     ],
     Trainwreckstv: [
         { name: 'Douglas "Doug Buck" Buck', displayName: 0 },
@@ -1863,88 +1865,88 @@ export const npCharacters: NpCharacters = {
         { name: 'Edward Thatch', nicknames: ['Captain Moosebeard'], displayName: 3 },
     ],
     travpiper: [
-        { name: 'Carlos "Cheddar" Sanchez', faction: 'HOA' },
-        { name: '[Deputy] William Gunner', faction: 'Police', nicknames: ['Willy'] },
+        { name: 'Carlos "Cheddar" Sanchez', factions: ['HOA'] },
+        { name: '[Deputy] William Gunner', factions: ['Police'], nicknames: ['Willy'] },
         { name: 'Warren Wallace' },
         { name: 'Charlie Colcord' },
         { name: 'Hazard' },
     ],
     traycee: [
-        { name: 'Lexi Law', faction: 'Angels' },
+        { name: 'Lexi Law', factions: ['Angels'] },
     ],
     TwistedBones: [
         { name: 'Mark White', displayName: 0 },
         { name: 'Hank Marston', displayName: 0 },
-        { name: 'Marcus Black', faction: 'GSF', displayName: 0 },
+        { name: 'Marcus Black', factions: ['GSF'], displayName: 0 },
     ],
     TwistedManifest: [
-        { name: 'Jack Valentino', faction: 'Lunatix' },
+        { name: 'Jack Valentino', factions: ['Lunatix'] },
     ],
     UberHaxorNova: [
-        { name: 'Siz Fulker', faction: 'HOA', leader: true, nicknames: ['uhnSuffer'] },
+        { name: 'Siz Fulker', factions: ['HOA'], leader: true, nicknames: ['uhnSuffer'] },
         { name: 'Toh Biggles Fitzcharles', displayName: 0, nicknames: ['Yaes'] },
-        { name: '[Deputy] Barry Briddle', faction: 'Police' },
+        { name: '[Deputy] Barry Briddle', factions: ['Police'] },
     ],
     uhSnow: [
-        { name: '[Trooper] Jackie Snow', faction: 'Police' },
+        { name: '[Trooper] Jackie Snow', factions: ['Police'] },
         { name: 'Mikey Mersion' },
     ],
     Umadbrahlive: [
-        { name: 'Leonel Martinez', faction: 'Vagos', nicknames: ['lion'], displayName: 2 },
-        { name: 'Sergio Lopez', faction: 'Marabunta', leader: true },
-        { name: 'Big E', faction: 'SSB', leader: true, nicknames: ['Big L'], displayName: 0 },
+        { name: 'Leonel Martinez', factions: ['Vagos'], nicknames: ['lion'], displayName: 2 },
+        { name: 'Sergio Lopez', factions: ['Marabunta'], leader: true },
+        { name: 'Big E', factions: ['SSB'], leader: true, nicknames: ['Big L'], displayName: 0 },
     ],
     Vader: [
-        { name: 'Eugene Zuckerberg', faction: 'Cleanbois', nicknames: ['Old Man'] },
-        { name: 'Nacho Block', faction: 'ASRR', displayName: 0 },
-        { name: '[Deputy] Rob Banks', faction: 'Police' },
+        { name: 'Eugene Zuckerberg', factions: ['Cleanbois'], nicknames: ['Old Man'] },
+        { name: 'Nacho Block', factions: ['ASRR'], displayName: 0 },
+        { name: '[Deputy] Rob Banks', factions: ['Police'] },
         { name: 'Tuong Ru Kim' },
     ],
     VADIKUS007: [
         { name: 'Yuri Grozniy', displayName: 0 },
     ],
     Vaerinis: [
-        { name: '[Officer] Thomas Metzger', faction: 'Police' },
+        { name: '[Officer] Thomas Metzger', factions: ['Police'] },
     ],
     VaguePWNage: [
-        { name: 'Ramsay', faction: 'SSB' },
+        { name: 'Ramsay', factions: ['SSB'] },
     ],
     ValorWasTaken: [
-        { name: 'Esteban Julio-Cruz-Perez-Rodriguez', faction: 'Marabunta' },
+        { name: 'Esteban Julio-Cruz-Perez-Rodriguez', factions: ['Marabunta'] },
     ],
     Vigors: [
-        { name: '[Warlock /] Kayn "Yager Demonblood" Larp', faction: 'LARPers', nicknames: ['Warlock', 'Fighter', 'Yager', 'Demonblood'], displayName: 0 },
+        { name: '[Warlock /] Kayn "Yager Demonblood" Larp', factions: ['LARPers'], nicknames: ['Warlock', 'Fighter', 'Yager', 'Demonblood'], displayName: 0 },
     ],
     Viviana: [
         { name: 'Griselda Ambrose', nicknames: ['Granny'] },
         { name: 'Lana Valentine' },
     ],
     VTechas: [
-        { name: 'Daryl Dixon', faction: 'HOA' },
+        { name: 'Daryl Dixon', factions: ['HOA'] },
     ],
     w00ter: [
-        { name: '[Deputy] Peter Rogers', faction: 'Police' },
+        { name: '[Deputy] Peter Rogers', factions: ['Police'] },
     ],
     Wayward: [
-        { name: '[Judge] Wayne Ardson', faction: 'DoJ', assumeServer: 'whitelist' },
+        { name: '[Judge] Wayne Ardson', factions: ['DoJ'], assumeServer: 'whitelist' },
         { name: 'Angelo "Leo Nardo" Nardo', nicknames: ['Leo'] },
         { name: 'Jack "The Joker" Knaves', nicknames: ['The "Joker"'] },
-        { name: '[Deputy] Michael Colt', faction: 'Police', assumeServer: 'public' },
+        { name: '[Deputy] Michael Colt', factions: ['Police'], assumeServer: 'public' },
         { name: 'Bowser' },
     ],
     WeCameAsBecca: [
-        { name: '[Dr.] Kennedy Adams', faction: 'Medical' },
+        { name: '[Dr.] Kennedy Adams', factions: ['Medical'] },
     ],
     Wehtuns: [
-        { name: '[Lawyer /] Lawrence Splainer', faction: 'DoJ', displayName: 2 },
+        { name: '[Lawyer /] Lawrence Splainer', factions: ['DoJ'], displayName: 2 },
     ],
     Whippy: [
-        { name: 'Irwin Dundee', faction: 'BBMC', displayName: 2 },
-        { name: '[Officer] Crocodile "Croc" Steve', faction: 'Police', nicknames: ['Cop'] },
+        { name: 'Irwin Dundee', factions: ['BBMC'], displayName: 2 },
+        { name: '[Officer] Crocodile "Croc" Steve', factions: ['Police'], nicknames: ['Cop'] },
         { name: 'James Tinklebottom' },
     ],
     WhiteyRP: [
-        { name: '[Officer] Alex Casterman', faction: 'Police' },
+        { name: '[Officer] Alex Casterman', factions: ['Police'] },
         { name: 'Finlay' },
     ],
     WillerZ: [
@@ -1956,51 +1958,51 @@ export const npCharacters: NpCharacters = {
     ],
     Wolfabelle: [
         { name: 'Bianca Walters' },
-        { name: '[Ride Along] Candice Defitt', faction: 'Police' },
+        { name: '[Ride Along] Candice Defitt', factions: ['Police'] },
     ],
     WTFGameNation: [
-        { name: '[Dr.] Noah Drake', faction: 'Medical' },
+        { name: '[Dr.] Noah Drake', factions: ['Medical'] },
     ],
     WuPingNOTEggRoll: [
         { name: 'Wu "Egg Roll" Ping' },
     ],
     wvngie: [
-        { name: 'Le Wang', faction: 'Vagos', displayName: 0 },
+        { name: 'Le Wang', factions: ['Vagos'], displayName: 0 },
     ],
     xQcOW: [
-        { name: 'Jean "X" Paul', nicknames: ['Ghost Rider', 'Rider'], faction: 'Gulag Gang', displayName: 0, assumeServer: 'public', assumeChar: true },
-        { name: '[Deputy] Pierre "PP" Paul', faction: 'Police', displayName: 0 },
+        { name: 'Jean "X" Paul', nicknames: ['Ghost Rider', 'Rider'], factions: ['Gulag Gang'], displayName: 0, assumeServer: 'public', assumeChar: true },
+        { name: '[Deputy] Pierre "PP" Paul', factions: ['Police'], displayName: 0 },
         { name: 'Jean Pierre', displayName: 0 },
     ],
     Xiceman: [
-        { name: 'Mike Wadum', faction: 'Vagos', nicknames: ['El Gringo'] },
-        { name: '[Deputy] Mike Bayo', faction: 'Police' },
+        { name: 'Mike Wadum', factions: ['Vagos'], nicknames: ['El Gringo'] },
+        { name: '[Deputy] Mike Bayo', factions: ['Police'] },
     ],
     XMOTHATRUCKAX: [
         { name: 'Ronald "Red" Juggler' },
     ],
     xReklez: [
-        { name: 'AJ', faction: 'SSB' },
-        { name: 'Chico Guzman', faction: 'Vagos' },
+        { name: 'AJ', factions: ['SSB'] },
+        { name: 'Chico Guzman', factions: ['Vagos'] },
     ],
     YoinksOG: [
         { name: 'Doug Canada' },
     ],
     yooApollo: [
-        { name: 'Martin Julio-Perez-Cruz-Rodriguez', faction: 'Marabunta' },
+        { name: 'Martin Julio-Perez-Cruz-Rodriguez', factions: ['Marabunta'] },
     ],
     Zaquelle: [
-        { name: '[Officer] Mackenzie Hayes', faction: 'Police', assume: 'assumeNp' },
+        { name: '[Officer] Mackenzie Hayes', factions: ['Police'], assume: 'assumeNp' },
     ],
     ZayTyree: [
-        { name: 'Renato Ortiz', faction: 'Vagos', displayName: 0 },
+        { name: 'Renato Ortiz', factions: ['Vagos'], displayName: 0 },
     ],
     Zerkaa: [
         { name: 'Tommy Tate', displayName: 0 },
     ],
     Ziggy: [
-        { name: '[Ranger] Ziggy Buggs', faction: 'Police', displayName: 1, assumeChar: true },
-        { name: '[Lawyer /] Norman Bones', faction: 'DoJ', displayName: 0 },
+        { name: '[Ranger] Ziggy Buggs', factions: ['Police'], displayName: 1, assumeChar: true },
+        { name: '[Lawyer /] Norman Bones', factions: ['DoJ'], displayName: 0 },
     ],
     zirnrp: [
         { name: 'Solomon Seerson' },
@@ -2009,6 +2011,6 @@ export const npCharacters: NpCharacters = {
         { name: 'Skunkz Wallace' },
     ],
     Zotbot: [
-        { name: '[Physiotherapist] Leon Marks', faction: 'Medical' },
+        { name: '[Physiotherapist] Leon Marks', factions: ['Medical'] },
     ],
 };

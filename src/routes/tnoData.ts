@@ -3,7 +3,7 @@ import { Router } from 'express';
 import { log } from '../utils';
 
 import settingsParsed from '../data/settingsParsed';
-import * as characters from '../data/characters';
+import characters from '../data/charactersParsed';
 import factions from '../data/factionsParsed';
 
 const tnoData = { ...settingsParsed, ...characters, ...factions };
