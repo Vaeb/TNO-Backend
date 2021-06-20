@@ -637,7 +637,8 @@ export const npCharacters: NpCharacters = {
         { name: 'Alexander Egorov' },
     ],
     fuslie: [
-        { name: 'April Fooze', nicknames: ['first time'], displayName: 0 },
+        { name: 'April Fooze', nicknames: ['first time'], displayName: 0, assumeServer: 'whitelist' },
+        { name: 'Connie Clark', faction: 'Police', displayName: 0, assumeServer: 'public' },
     ],
     Fyzicul: [
         { name: '[Shaman /] Keith "Lando" Wanderlust', faction: 'LARPers', nicknames: ['Stormborn', 'Shaman', 'Mountain Kingdom'], displayName: 0 },
@@ -1119,6 +1120,7 @@ export const npCharacters: NpCharacters = {
     ],
     LunaOni: [
         { name: '[Officer] Claire Everly', faction: 'Police' },
+        { name: 'Mayumi Himura' },
     ],
     Lyndi: [
         { name: 'Violet Van Housen', faction: 'Angels' },
@@ -1244,7 +1246,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Charles White', displayName: 0 },
     ],
     MOONMOON: [
-        { name: '[Deputy] Lenny Hawk', faction: 'Police', displayName: 0, assume: 'assumeNp' },
+        { name: '[Deputy] Lenny Hawk', faction: 'Police', nicknames: ['Renegade'], displayName: 0, assume: 'assumeNp' },
         { name: '[Shadowlord /] Bernice Caldershot', faction: 'LARPers' },
         { name: 'Ro Block', faction: 'ASRR', displayName: 0 },
         { name: 'Yung Dab', nicknames: ['The "Gnome"'] },
