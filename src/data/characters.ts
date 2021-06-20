@@ -341,7 +341,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Lydia Vale', factions: ['Police'] },
     ],
     Cathie: [
-        { name: '[Deputy] Anita Cox', factions: ['Police'] },
+        { name: '[Deputy] Anita May', factions: ['Police'] },
         { name: 'Ninacska Mihkala', factions: ['Russians'], nicknames: ['Nina'], displayName: 3 },
         { name: 'Kaelyn "Kae" East', factions: ['SSB'] },
     ],
