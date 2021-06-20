@@ -35,7 +35,7 @@ export const npFactionsRegex = {
     larpers: /\blarp\b|\blarper|the\s*guild/i,
     police: mergeRegex([
         /(?<!then\b.*|!|\bformer\b[\s\w]+)/i,
-        /(?:\bcop\b|chief of police|officer|der?puty|\bd-\d|investigation|sergeant|lieutenant|corporal|sheriff|trooper|cadet|\b(?:ranger|dt|sgt|lt(?![^|!]*\bjones\b)|cpl|lspd|sasp|bcso|cid|police[\s\-_]*academy)\b)/i,
+        /(?:\bcop\b|chief of police|officer|der?puty|\bd-\d|ride[\s\-_.]*along|investigation|sergeant|lieutenant|corporal|sheriff|trooper|cadet|\b(?:ranger|dt|sgt|lt(?![^|!]*\bjones\b)|cpl|lspd|sasp|bcso|cid|police[\s\-_]*academy)\b)/i,
         /(?!\?)/i,
     ]),
     medical: /(?<!then\b.*|!)(?:doctor|\b(?:dr|ems|emt)\b)/i,
