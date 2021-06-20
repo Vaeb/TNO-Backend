@@ -22,7 +22,8 @@ const includedData = Object.assign(
     ...['minViewers', 'stopOnMin', 'intervalSeconds']
         .map(key => ({ [key]: (settingsParsed as any)[key] })),
     ...['useColorsDark', 'useColorsLight']
-        .map(key => ({ [key]: (factionsParsed as any)[key] }))
+        .map(key => ({ [key]: (factionsParsed as any)[key] })),
+    { npFactions }
 );
 
 interface Character extends Omit<CharacterOld, 'factions' | 'displayName' | 'assumeServer'> {
@@ -275,13 +276,15 @@ interface BaseStream {
 
 interface Stream extends BaseStream {
     rpServer: string | null;
-    characterName: string;
+    characterName: string | null;
     faction: FactionMini;
     factions: FactionMini[];
     tagText: string;
     tagFaction: FactionColorsMini;
     tagFactionSecondary?: FactionColorsMini;
-    keepCase: boolean;
+    noOthersInclude: boolean;
+    noPublicInclude: boolean; // use these props on frontend to determine whether stream should show
+    // keepCase: boolean;
 }
 
 type FactionCount = { [key in FactionMini]: number };
@@ -328,6 +331,8 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                 const {
                     factionName, filterEnabled, allowPublic, allowOthers, searchNum,
                 } = options;
+                const allowOthersNow = allowOthers || factionName === 'other';
+
                 const gtaStreams = await getStreams(searchNum);
 
                 // log(gtaStreams.length);
@@ -352,6 +357,8 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                         viewers,
                         profileUrl: knownPfps[helixStream.userId],
                     }; // rpServer, characterName, faction, tagText, tagFaction
+
+                    let noOthersInclude = true;
 
                     const titleParsed = title.toLowerCase().replace(/\./g, ' ');
                     const channelNameLower = channelName.toLowerCase();
@@ -394,9 +401,16 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                     let streamState; // remove, mark-np, mark-other
                     if (nowFilterEnabled) {
                         // If filtering streams is enabled
-                        if ((allowOthers && (onOtherIncluded || onMainOther || (npStreamer && onOther))) || (npStreamer && !mainsOther && !keepNp && onOther)) {
+                        if ((npStreamer && !mainsOther && !keepNp && onOther)) {
                             // If is-including-others and streamer on another server, or it's an NP streamer playing another server
                             streamState = FSTATES.other;
+                        } else if ((onOtherIncluded || onMainOther || (npStreamer && onOther))) {
+                            if (allowOthersNow) {
+                                streamState = FSTATES.other;
+                                noOthersInclude = false;
+                            } else {
+                                return;
+                            }
                         } else if (npStreamer && !onMainOther && !onOther) {
                             // If NoPixel streamer that isn't on another server
                             streamState = FSTATES.nopixel;
@@ -424,12 +438,14 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                         const stream: Stream = {
                             ...baseStream,
                             rpServer: serverName.length ? serverName : null,
-                            characterName: '',
+                            characterName: null,
                             faction: 'other',
                             factions: ['other'],
                             tagText: serverName.length > 0 ? `::${serverName}::` : '',
                             tagFaction: 'other',
-                            keepCase: true,
+                            noOthersInclude,
+                            noPublicInclude: true,
+                            // keepCase: true,
                         };
 
                         factionCount.other++;
@@ -582,13 +598,15 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                     const stream: Stream = {
                         ...baseStream,
                         rpServer: serverName,
-                        characterName: possibleCharacter?.name ?? '',
+                        characterName: possibleCharacter?.name ?? null,
                         faction: activeFactions[0],
                         factions: activeFactions,
                         tagText,
                         tagFaction,
                         tagFactionSecondary: onNpPublic ? 'publicnp' : undefined,
-                        keepCase,
+                        noOthersInclude,
+                        noPublicInclude: !onNpPublic,
+                        // keepCase,
                     };
 
                     for (const faction of activeFactions) factionCount[faction]++;
