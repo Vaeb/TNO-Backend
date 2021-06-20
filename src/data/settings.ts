@@ -5,7 +5,6 @@ import { mergeRegex } from '../utils';
 
 export const minViewers = 1;
 export const stopOnMin = true;
-export const checkOther = true;
 export const intervalSeconds = 0.7;
 
 export const regNp = /(?<!not\s)(?:no[\s\-_.]*pixel|\bn[\s\-_.]*p\b)(?![\s\-]*(?:inspired|ban))/i;

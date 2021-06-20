@@ -10,15 +10,15 @@ import type { RecordGen } from '../../utils';
 const router = Router();
 
 router.get('/', async (req, res) => {
-    log('Handling request for /streams');
-    const streams = await getNpLive(
+    log('Handling request for /live');
+    const live = await getNpLive(
         mapObjKeys(req.query as RecordGen, ((v, k) => {
             if (k === 'faction') return 'factionName';
             return k;
         }))
     );
-    // log('streams', streams);
-    return res.send(streams);
+    // log('live', live);
+    return res.send(live);
 });
 
 export default router;

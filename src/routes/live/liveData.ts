@@ -6,6 +6,8 @@ import {
 } from '../../utils';
 
 import { regNp, regOthers, regNpPublic, regNpWhitelist } from '../../data/settings';
+import settingsParsed from '../../data/settingsParsed';
+import factionsParsed from '../../data/factionsParsed';
 import { npFactions } from '../../data/meta';
 import { npCharacters as npCharactersOld } from '../../data/characters';
 import { isFactionColor, npFactionsRegex } from '../../data/factions';
@@ -14,6 +16,14 @@ import type { RecordGen } from '../../utils';
 import type { FactionMini, FactionFull, FactionRealMini, FactionRealFull } from '../../data/meta';
 import type { Character as CharacterOld, NpCharacters as NpCharactersOld, AssumeOther, AssumeServer } from '../../data/characters';
 import type { NpFactionsRegexMini, FactionColorsMini, FactionColorsRealMini } from '../../data/factions';
+
+const includedData = Object.assign(
+    {},
+    ...['minViewers', 'stopOnMin', 'intervalSeconds']
+        .map(key => ({ [key]: (settingsParsed as any)[key] })),
+    ...['useColorsDark', 'useColorsLight']
+        .map(key => ({ [key]: (factionsParsed as any)[key] }))
+);
 
 interface Character extends Omit<CharacterOld, 'factions' | 'displayName' | 'assumeServer'> {
     factions: FactionRealMini[];
@@ -54,7 +64,7 @@ const language = 'en' as const;
 const streamType = HelixStreamType.Live;
 const bigLimit = 100 as const;
 // const maxPages = 5 as const;
-const searchNumDefault = 1500;
+const searchNumDefault = 2000;
 const searchNumMax = 5000;
 const updateCacheMs = 1000 * 60;
 
@@ -276,15 +286,15 @@ interface Stream extends BaseStream {
 
 type FactionCount = { [key in FactionMini]: number };
 
-interface NpLive {
+interface Live {
     streams: Stream[];
     factionCount: FactionCount;
 }
 
-const cachedResults: { [key: string]: NpLive | undefined } = {};
+const cachedResults: { [key: string]: Live | undefined } = {};
 const npStreamsPromise: { [key: string]: Promise<Stream[]> | undefined } = {};
 
-export const getNpLive = async (baseOptions = {}, override = false): Promise<NpLive> => {
+export const getNpLive = async (baseOptions = {}, override = false): Promise<Live> => {
     log(baseOptions);
 
     const options: LiveOptions = {
@@ -491,7 +501,8 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<NpL
                         if (factionObjects.length) {
                             factionObjects.sort((a, b) => a.rank - b.rank || a.index - b.index);
                             if (factionObjects[0].character) nowCharacter = factionObjects[0].character; // Sorted by has-character
-                            factionNames = factionObjects[0].factions;
+                            // factionNames = factionObjects[0].factions;
+                            factionNames = factionObjects.map(factionObj => factionObj.factions).flat(1);
                         }
                     }
 
@@ -587,7 +598,7 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<NpL
                 });
 
                 factionCount.alltwitch = gtaStreams.length;
-                const result: NpLive = { factionCount, streams: npStreams };
+                const result: Live = { ...includedData, factionCount, streams: npStreams };
                 cachedResults[optionsStr] = result;
                 log('Done fetching streams data!');
                 resolve(npStreams);
@@ -608,8 +619,8 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<NpL
 };
 
 export const getNpStreams = async (baseOptions = {}, override = false): Promise<Stream[]> => {
-    const npLive = await getNpLive(baseOptions, override);
-    return npLive.streams;
+    const live = await getNpLive(baseOptions, override);
+    return live.streams;
 };
 
 getNpLive();

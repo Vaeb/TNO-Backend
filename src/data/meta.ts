@@ -12,6 +12,7 @@ export const npFactionsReal = {
     angels: 'Angels',
     nbc: 'NBC',
     bbmc: 'BBMC',
+    rooster: 'Rooster',
     burgershot: 'Burger Shot',
     development: 'Development',
     doc: 'DoC',
