@@ -2,6 +2,7 @@ export const npFactionsReal = {
     cleanbois: 'Cleanbois',
     lostmc: 'Lost MC',
     changgang: 'Chang Gang',
+    chaos: 'Chaos',
     vagos: 'Vagos',
     gsf: 'GSF',
     ssb: 'SSB',

@@ -73,7 +73,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Jolene Mushkin', nicknames: ['Little Red'] },
     ],
     adeptthebest: [
-        { name: 'Mari Posa', displayName: 0, assumeServer: 'whitelist' },
+        { name: 'Mari Posa', factions: ['Chaos'], displayName: 0, assumeServer: 'whitelist' },
         { name: '[Officer] Selena Mendoza', factions: ['Police'] },
         { name: 'Hannah Hiltop' },
         { name: 'Maria Poser', factions: ['Gulag Gang'], displayName: 0, assumeServer: 'public' },
@@ -424,7 +424,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Amie Rush' },
     ],
     CurtisRyan: [
-        { name: 'Curtis Swoleroid', nicknames: ['"Demon" of Lean Street', 'Curt'], assumeServer: 'whitelist' },
+        { name: 'Curtis Swoleroid', nicknames: ['"Demon" of Lean Street', 'Curt'], factions: ['Chaos'], assumeServer: 'whitelist' },
         { name: 'Curtis Swoleroid', nicknames: ['"Demon" of Lean Street', 'Curt'], factions: ['Gulag Gang'], assumeServer: 'public' },
         { name: '[Officer] Stephen McClane', factions: ['Police'] },
         { name: 'Cornelius "Cornbread" Scott', factions: ['GSF'] },
@@ -1458,7 +1458,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Jack Frent', factions: ['DoC'], displayName: 0 },
     ],
     qMARIOx: [
-        { name: 'Fernando "Mario" Reyes', nicknames: ['"Mario" from the Barrio'] },
+        { name: 'Fernando "Mario" Reyes', factions: ['Chaos'], nicknames: ['"Mario" from the Barrio'] },
     ],
     qurquru: [
         { name: '[Officer] Vladimir Reznik', factions: ['Police'] },
@@ -1599,7 +1599,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Eddie Delish' },
     ],
     Shotz: [
-        { name: 'Vinny Pistone', factions: ['Chang Gang'], assumeServer: 'whitelist' },
+        { name: 'Vinny Pistone', factions: ['Chang Gang', 'Chaos'], assumeServer: 'whitelist' },
         { name: 'Vinny Pistone', factions: ['Gulag Gang'], assumeServer: 'public' },
         { name: 'Mr J', factions: ['Chang Gang'], displayName: 0 },
         { name: '[Officer] John Mineo', factions: ['Police'] },
@@ -1616,7 +1616,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Anton Belov', factions: ['Russians'] },
     ],
     Silent: [
-        { name: 'Juan Carlos "Flippy" Hernandez', nicknames: [reg(/\bflip/)] },
+        { name: 'Juan Carlos "Flippy" Hernandez', factions: ['Chaos'], nicknames: [reg(/\bflip/)] },
         { name: '[Officer] Joel Garcia', factions: ['Police'] },
     ],
     SilentSentry: [
