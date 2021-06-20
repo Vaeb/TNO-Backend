@@ -1331,7 +1331,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Buddy Black' },
     ],
     NoElusionz: [
-        { name: 'Bobby Schmiguel', factions: ['BSK'], nicknames: ['Bobby Beats'] },
+        { name: 'Bobby Schmiguel', factions: ['BSK'], nicknames: ['Bobby Beats'], displayName: 3 },
     ],
     noKingu: [
         { name: '[Deputy] Henri King', factions: ['Police'] },
