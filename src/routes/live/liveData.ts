@@ -6,6 +6,7 @@ import {
 } from '../../utils';
 
 import { regNp, regOthers, regNpPublic, regNpWhitelist } from '../../data/settings';
+import { npFactions } from '../../data/meta';
 import { npCharacters as npCharactersOld } from '../../data/characters';
 import { isFactionColor, npFactionsRegex } from '../../data/factions';
 
@@ -204,7 +205,8 @@ const knownPfps: { [key: string]: string } = {};
 export const getStreams = async (searchNum = searchNumDefault): Promise<HelixStream[]> => {
     searchNum = Math.min(searchNum, searchNumMax);
     // const gtaGame = await apiClient.helix.games.getGameById(game);
-    let gtaStreams: HelixStream[] = [];
+    const gtaStreamsObj: { [key: string]: HelixStream } = {};
+    const gtaStreams: HelixStream[] = [];
     let after;
     while (searchNum > 0) {
         const limitNow = Math.min(searchNum, bigLimit);
@@ -221,8 +223,12 @@ export const getStreams = async (searchNum = searchNumDefault): Promise<HelixStr
 
         const lookupStreams = [];
         for (const helixStream of gtaStreamsNow.data) {
-            if (knownPfps[helixStream.userId] === undefined) {
-                lookupStreams.push(helixStream.userId);
+            const { userId } = helixStream;
+            if (gtaStreamsObj[userId]) continue;
+            gtaStreamsObj[userId] = helixStream;
+            gtaStreams.push(helixStream);
+            if (knownPfps[userId] === undefined) {
+                lookupStreams.push(userId);
             }
         }
 
@@ -234,14 +240,13 @@ export const getStreams = async (searchNum = searchNumDefault): Promise<HelixStr
             }
         }
 
-        gtaStreams = gtaStreams.concat(gtaStreamsNow.data);
         after = gtaStreamsNow.cursor;
     }
 
     return gtaStreams;
 };
 
-export interface GetNpStreams {
+export interface LiveOptions {
     factionName: FactionMini;
     filterEnabled: boolean;
     allowPublic: boolean;
@@ -250,7 +255,7 @@ export interface GetNpStreams {
     searchNum?: number;
 }
 
-interface BaseStreamData {
+interface BaseStream {
     channelName: string;
     title: string;
     // tagIds: string[];
@@ -258,7 +263,7 @@ interface BaseStreamData {
     profileUrl: string;
 }
 
-interface StreamData extends BaseStreamData {
+interface Stream extends BaseStream {
     rpServer: string | null;
     characterName: string;
     faction: FactionMini;
@@ -269,13 +274,20 @@ interface StreamData extends BaseStreamData {
     keepCase: boolean;
 }
 
-const cachedResults: { [key: string]: StreamData[] | undefined } = {};
-const npStreamsPromise: { [key: string]: Promise<StreamData[]> | undefined } = {};
+type FactionCount = { [key in FactionMini]: number };
 
-export const getNpStreams = async (baseOptions = {}, override = false): Promise<StreamData[]> => {
+interface NpLive {
+    streams: Stream[];
+    factionCount: FactionCount;
+}
+
+const cachedResults: { [key: string]: NpLive | undefined } = {};
+const npStreamsPromise: { [key: string]: Promise<Stream[]> | undefined } = {};
+
+export const getNpLive = async (baseOptions = {}, override = false): Promise<NpLive> => {
     log(baseOptions);
 
-    const options: GetNpStreams = {
+    const options: LiveOptions = {
         factionName: 'allnopixel',
         filterEnabled: true,
         allowPublic: true,
@@ -299,7 +311,7 @@ export const getNpStreams = async (baseOptions = {}, override = false): Promise<
     }
 
     if (npStreamsPromise[optionsStr] === undefined || override) {
-        npStreamsPromise[optionsStr] = new Promise<StreamData[]>(async (resolve, reject) => {
+        npStreamsPromise[optionsStr] = new Promise<Stream[]>(async (resolve, reject) => {
             try {
                 log('Fetching streams data...');
 
@@ -318,15 +330,12 @@ export const getNpStreams = async (baseOptions = {}, override = false): Promise<
                 // const isNpMetaFaction = npMetaFactions.includes(factionName);
                 // const minViewersUse = isNpMetaFaction ? minViewers : 3;
 
-                const foundStreams: { [key: string]: true } = {};
-                const npStreams: StreamData[] = [];
+                const npStreams: Stream[] = [];
+                const factionCount: FactionCount = mapObj(npFactions, () => 0);
                 gtaStreams.forEach((helixStream) => {
                     const { userDisplayName: channelName, title, viewers } = helixStream;
 
-                    if (foundStreams[channelName]) return;
-                    foundStreams[channelName] = true;
-
-                    const baseStreamData: BaseStreamData = {
+                    const baseStream: BaseStream = {
                         channelName,
                         title,
                         // tagIds: helixStream.tagIds,
@@ -402,8 +411,8 @@ export const getNpStreams = async (baseOptions = {}, override = false): Promise<
                             return;
                         }
 
-                        const streamData: StreamData = {
-                            ...baseStreamData,
+                        const stream: Stream = {
+                            ...baseStream,
                             rpServer: serverName.length ? serverName : null,
                             characterName: '',
                             faction: 'other',
@@ -413,7 +422,8 @@ export const getNpStreams = async (baseOptions = {}, override = false): Promise<
                             keepCase: true,
                         };
 
-                        npStreams.push(streamData);
+                        factionCount.other++;
+                        npStreams.push(stream);
                         return;
                     }
 
@@ -558,8 +568,8 @@ export const getNpStreams = async (baseOptions = {}, override = false): Promise<
                         tagText = `${serverName}`;
                     }
 
-                    const streamData: StreamData = {
-                        ...baseStreamData,
+                    const stream: Stream = {
+                        ...baseStream,
                         rpServer: serverName,
                         characterName: possibleCharacter?.name ?? '',
                         faction: activeFactions[0],
@@ -570,10 +580,15 @@ export const getNpStreams = async (baseOptions = {}, override = false): Promise<
                         keepCase,
                     };
 
-                    npStreams.push(streamData);
+                    for (const faction of activeFactions) factionCount[faction]++;
+                    factionCount.allnopixel++;
+                    if (onNpPublic) factionCount.publicnp++;
+                    npStreams.push(stream);
                 });
 
-                cachedResults[optionsStr] = npStreams;
+                factionCount.alltwitch = gtaStreams.length;
+                const result: NpLive = { factionCount, streams: npStreams };
+                cachedResults[optionsStr] = result;
                 log('Done fetching streams data!');
                 resolve(npStreams);
             } catch (err) {
@@ -585,14 +600,19 @@ export const getNpStreams = async (baseOptions = {}, override = false): Promise<
         log('Waiting for npStreamsPromise...');
     }
 
-    const npStreams = await npStreamsPromise[optionsStr]!;
+    await npStreamsPromise[optionsStr]!;
 
     log('Got data!');
 
-    return npStreams;
+    return cachedResults[optionsStr]!;
 };
 
-getNpStreams({ allowOthers: true });
+export const getNpStreams = async (baseOptions = {}, override = false): Promise<Stream[]> => {
+    const npLive = await getNpLive(baseOptions, override);
+    return npLive.streams;
+};
+
+getNpLive();
 
 setInterval(() => {
     const cachedResultsKeys = Object.keys(cachedResults);
@@ -601,6 +621,6 @@ setInterval(() => {
     for (const optionsStr of cachedResultsKeys) {
         log('Refreshing optionStr');
         const optionsObj = JSON.parse(optionsStr);
-        getNpStreams(optionsObj, true);
+        getNpLive(optionsObj, true);
     }
 }, updateCacheMs);

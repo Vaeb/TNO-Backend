@@ -1,9 +1,11 @@
 import tnoDataRouter from './tnoData';
 import dataRouter from './data';
-import streamsRouter from './streams/index';
+import liveRouter from './live/index';
+import streamsRouter from './streams';
 
 export default {
     tnoDataRouter,
     dataRouter,
+    liveRouter,
     streamsRouter,
 };

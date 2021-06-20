@@ -37,6 +37,7 @@ app.use('/tno_data', routes.tnoDataRouter);
 app.use('/initial_data', routes.tnoDataRouter);
 app.use('/data', routes.dataRouter);
 app.use('/streams', routes.streamsRouter);
+app.use('/live', routes.liveRouter);
 
 app.use((_req, res) => res.send({ error: 'This is not a valid API endpoint.' }));
 
