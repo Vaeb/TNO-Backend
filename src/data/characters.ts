@@ -124,7 +124,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Alisha Wuornos' },
     ],
     alpacagurl92: [
-        { name: 'April Fooze', nicknames: ['first time'], displayName: 0 },
+        { name: 'April Fooze', nicknames: ['first time'] },
     ],
     AlyPlayNinja: [
         { name: '[Officer] Amelia Frost', faction: 'Police' },
