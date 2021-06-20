@@ -865,7 +865,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Lawyer /] Maggie Kayden', faction: 'DoJ' },
     ],
     Jonthebroski: [
-        { name: '[Mayor] Denzel Williams', faction: 'Cleanbois', nicknames: ['The "Cleaner"'] },
+        { name: '[Mayor] Denzel Williams', faction: 'Cleanbois', nicknames: ['The "Cleaner"', 'Presidente'] },
         { name: 'Dio Ivanov', faction: 'Russians' },
         { name: 'Holden D. Block', faction: 'ASRR', displayName: 0 },
         { name: '[Officer] Johnny Divine', faction: 'Police', displayName: 0 },
