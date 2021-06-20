@@ -19,7 +19,7 @@ export const npFactionsRegex = {
     bsk: /\bbsk\b|brouge street|burger shot king/i,
     marabunta: /\bmarabunta/i,
     hoa: /\bhoa\b|hogs\s*of\s*anarchy|home[\s\-]*owners[\s\-]*association/i,
-    doj: /\bdoj\b|department\s*of\s*justice|judge\b(?![\s]*me)|\ba?\.?d\.?a\b|lawyer|para[\s\-]*legal/i,
+    doj: /\bdoj\b|department\s*of\s*justice|judge\b(?![\s]*me)|\ba?\.?d\.?a\b|(?<!\b(?:former|ex|aspiring)[\s\-]*)lawyer|para[\s\-]*legal/i,
     asrr: /\balta[\s\-]*street|\bblock(?:\b|[\s\-]*party|[\s\-]*athon)/i,
     angels: /\bangels\b/i,
     nbc: /\bnbc\b/i,
@@ -34,7 +34,7 @@ export const npFactionsRegex = {
     tunershop: /\btuner[\s\-]*shop\b/i,
     larpers: /\blarp\b|\blarper|the\s*guild/i,
     police: mergeRegex([
-        /(?<!then\b.*|!|\bformer\b[\s\w]+)/i,
+        /(?<!\bthen\b.*|!|\bformer\b[\s\w]+|\bex[\s\-]*)/i,
         /(?:\bcop\b|chief of police|officer|der?puty|\bd-\d|ride[\s\-_.]*along|investigation|sergeant|lieutenant|corporal|sheriff|trooper|cadet|\b(?:ranger|dt|sgt|lt(?![^|!]*\bjones\b)|cpl|lspd|sasp|bcso|cid|police[\s\-_]*academy)\b)/i,
         /(?!\?)/i,
     ]),
