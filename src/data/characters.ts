@@ -350,7 +350,7 @@ export const npCharacters: NpCharacters = {
     ],
     Chalupa_Pants: [
         { name: 'Julio Thomas', factions: ['HOA'] },
-        { name: '[Deputy] Marco Holiday', factions: ['Police'] },
+        { name: '[Deputy] Marco Holliday', factions: ['Police'], nicknames: ['Holiday'] },
     ],
     Chap: [
         { name: 'Bryan Chapman', displayName: 0 },
