@@ -1594,6 +1594,9 @@ export const npCharacters: NpCharacters = {
     SgtApollo: [
         { name: 'Salem Barghouthi' },
     ],
+    shadiko: [
+        { name: 'Alex Domino', factions: ['Rooster'], displayName: 0 },
+    ],
     shaggy_steve: [
         { name: '[Deputy] Jimmy Gordon', factions: ['Police'] },
     ],
