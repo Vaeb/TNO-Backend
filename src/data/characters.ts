@@ -154,8 +154,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Trigger Freebird', factions: ['Harmony'] },
     ],
     APPLESHAMPOO: [
-        { name: '[Dispatch] Nancy Ree', factions: ['Police'], displayName: 1 },
+        { name: '[Dispatch] Nancy Ree', factions: ['Police'], displayName: 1, assumeServer: 'whitelist' },
         { name: 'Gioconda "Gio" Coppola' },
+        { name: '[Officer] Gio Coppola', factions: ['Police'], nicknames: ['466'], displayName: 1, assumeServer: 'public' },
     ],
     Arcadum: [
         { name: 'Svelt Tlevs', nicknames: ['Wizard'] },
@@ -1118,8 +1119,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Kendra Davis', factions: ['Vagos'] },
     ],
     Lovinurstyle: [
+        { name: 'Leah Strong', assumeServer: 'whitelist' },
         { name: 'Rose Edwards' },
-        { name: 'Leah Strong' },
+        { name: '[Officer] Leah Strong', factions: ['Police'], displayName: 1, assumeServer: 'public' },
     ],
     Lt_Raven: [
         { name: '[Officer] Vladimir Raven', factions: ['Police'], highCommand: true },
