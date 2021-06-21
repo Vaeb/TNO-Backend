@@ -89,7 +89,7 @@ export const npCharacters: NpCharacters = {
     ],
     AfriicanSnowball: [
         { name: '[Justice] Buck Stanton', factions: ['DoJ'] },
-        { name: '[Deputy] Dwayne Carter IV', factions: ['Police'], displayName: 2 },
+        { name: '[Officer] Dwayne Carter IV', factions: ['Police'], displayName: 2 },
         { name: 'Leland "LJ" Jones', factions: ['Pegasus'] },
     ],
     Afro: [
