@@ -926,6 +926,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Mercy Peggers' },
     ],
     JustJamie: [
+        { name: '[Officer] George Lawson', factions: ['Police'] },
         { name: 'Tommy Cruizer', factions: ['Tuner Shop'] },
     ],
     Jyeahlisa: [
