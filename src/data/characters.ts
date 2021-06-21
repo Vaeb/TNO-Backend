@@ -350,7 +350,7 @@ export const npCharacters: NpCharacters = {
     ],
     Chalupa_Pants: [
         { name: 'Julio Thomas', factions: ['HOA'] },
-        { name: '[Deputy] Marco Holliday', factions: ['Police'], nicknames: ['Holiday'] },
+        { name: '[Deputy] Marco Holliday', factions: ['Police'], nicknames: ['683', 'Holiday'] },
     ],
     Chap: [
         { name: 'Bryan Chapman', displayName: 0 },
@@ -1370,7 +1370,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Lawyer /] Benjamin Crane', factions: ['DoJ'] },
         { name: '[Justice] Ray Montag', factions: ['DoJ'] },
         { name: 'Busta Block', factions: ['ASRR'], displayName: 0 },
-        { name: '[Officer] Jeffrey Bundy', factions: ['Police'] },
+        { name: '[Officer] Jeffrey Bundy', factions: ['Police'], nicknames: ['451'] },
     ],
     Octopimp: [
         { name: '[Sorceror /] Chut McMillan', factions: ['LARPers', 'Rooster'], nicknames: ['Chut The Magnificent', 'Sorcerer'] },
