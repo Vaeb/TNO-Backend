@@ -2,7 +2,7 @@ import { HelixPaginatedResult, HelixStream, HelixStreamType } from 'twitch';
 
 import { apiClient } from '../../twitchSetup';
 import {
-    log, cloneDeepJson, filterObj, mapObj, parseParam,
+    log, cloneDeepJson, filterObj, mapObj, parseParam, isObjEmpty,
 } from '../../utils';
 
 import { regNp, regOthers, regNpPublic, regNpWhitelist } from '../../data/settings';
@@ -298,7 +298,7 @@ const cachedResults: { [key: string]: Live | undefined } = {};
 const npStreamsPromise: { [key: string]: Promise<Stream[]> | undefined } = {};
 
 export const getNpLive = async (baseOptions = {}, override = false): Promise<Live> => {
-    log(baseOptions);
+    if (!isObjEmpty(baseOptions)) log(baseOptions);
 
     const options: LiveOptions = {
         factionName: 'allnopixel',

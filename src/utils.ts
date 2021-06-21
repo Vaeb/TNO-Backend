@@ -47,6 +47,12 @@ export const mapObjKeys = <OldObject extends RecordGen, NewKey extends string>(
     OldObject[keyof OldObject]
     >;
 
+export const isObjEmpty = (obj: any): boolean => {
+    // eslint-disable-next-line guard-for-in
+    for (const _ in obj) return false;
+    return true;
+};
+
 export const cloneDeepJson = <T, U>(obj: T): U => JSON.parse(JSON.stringify(obj));
 
 export const paramBoolean = (param: string): boolean => !!param && param !== 'false' && param !== '0';
