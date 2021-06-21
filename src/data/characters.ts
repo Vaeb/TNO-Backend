@@ -649,6 +649,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Edward Nygma' },
         { name: 'Alexander Egorov' },
     ],
+    Frshnesss: [
+        { name: 'Tyrell Fresh', factions: ['SSB'], displayName: 0 },
+    ],
     fuslie: [
         { name: 'April Fooze', nicknames: ['first time'], displayName: 0, assumeServer: 'whitelist' },
         { name: 'Connie Clark', factions: ['Police'], displayName: 0, assumeServer: 'public' },
@@ -703,6 +706,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Jim Underwood', factions: ['Police'], nicknames: ['437'] },
         { name: '[Development /] GTAWiseGuy', factions: ['Development'], nicknames: ['Handling', 'Fixes', 'Fixing'] },
         { name: 'Igor Skovacic' },
+        { name: 'Daequan "Double D" DeMarco', factions: ['SSB'] },
         { name: 'RayRay' },
         { name: 'Maury Mersion', factions: ['Mersions'] },
     ],
@@ -1676,6 +1680,9 @@ export const npCharacters: NpCharacters = {
     Skannerz_: [
         { name: 'Wayne Kerr' },
     ],
+    Skelasoldier: [
+        { name: 'Raymond Delprince', factions: ['SSB'], displayName: 0 },
+    ],
     SkipGently: [
         { name: 'John Riggs' },
     ],
@@ -1783,6 +1790,9 @@ export const npCharacters: NpCharacters = {
     ],
     Sweet_Anita: [
         { name: 'Marylin Hilton' },
+    ],
+    SwiftRP: [
+        { name: 'Ty Jones', factions: ['SSB'], nicknames: ['xray'], displayName: 0 },
     ],
     SwizzMB: [
         { name: 'Miguel Almerion' },
