@@ -111,7 +111,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Unity', nicknames: ['Cat'] },
     ],
     akaMONKEY: [
-        { name: 'Arturo Ortiz', factions: ['Vagos'] },
+        { name: 'Arturo Ortiz', factions: ['Vagos'], nicknames: [reg(/\bar(?:tu|2)/)] },
         { name: 'CamRon "Peanut" Giles', factions: ['SSB'] },
         { name: 'Timoteo "TT" Bushnell', nicknames: ['Rasta'] },
     ],
