@@ -10,7 +10,7 @@ import settingsParsed from '../../data/settingsParsed';
 import factionsParsed from '../../data/factionsParsed';
 import { npFactions } from '../../data/meta';
 import { npCharacters as npCharactersOld } from '../../data/characters';
-import { isFactionColor, npFactionsRegex } from '../../data/factions';
+import { isFactionColor, lesserFactions, npFactionsRegex } from '../../data/factions';
 
 import type { RecordGen } from '../../utils';
 import type { FactionMini, FactionFull, FactionRealMini, FactionRealFull } from '../../data/meta';
@@ -493,7 +493,8 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
 
                     if (nowCharacter === undefined) {
                         interface FactionObj {
-                            rank: number;
+                            rank1: number;
+                            rank2: number;
                             index: number;
                             factions: FactionRealMini[];
                             character?: Character;
@@ -505,7 +506,8 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                             if (matchPos > -1) {
                                 const factionCharacter = characters && characters.find(char => char.factionsObj[faction]);
                                 const factionObj: FactionObj = {
-                                    rank: factionCharacter ? 0 : 1,
+                                    rank1: factionCharacter ? 0 : 1,
+                                    rank2: !lesserFactions[faction] ? 0 : 1,
                                     index: matchPos,
                                     factions: factionCharacter ? factionCharacter.factions : [faction],
                                     character: factionCharacter,
@@ -515,7 +517,7 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                         }
 
                         if (factionObjects.length) {
-                            factionObjects.sort((a, b) => a.rank - b.rank || a.index - b.index);
+                            factionObjects.sort((a, b) => a.rank1 - b.rank1 || a.rank2 - b.rank2 || a.index - b.index);
                             if (factionObjects[0].character) nowCharacter = factionObjects[0].character; // Sorted by has-character
                             // factionNames = factionObjects[0].factions;
                             factionNames = factionObjects.map(factionObj => factionObj.factions).flat(1);

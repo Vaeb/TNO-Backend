@@ -57,6 +57,32 @@ export const npFactionsRegex = {
     medical: noLater(/(?<!then\b.*|!)(?:doctor|\b(?:dr|ems|emt)\b)/i),
 } as { [key in NpFactionsRegexKeys]: RegExp };
 
+// export const lesserFactions = asConst<PartialRecord<FactionRealMini, true>>()({
+//     news: true,
+//     rooster: true,
+//     burgershot: true,
+//     development: true,
+//     mechanic: true,
+//     harmony: true,
+//     quickfix: true,
+//     tunershop: true,
+// });
+
+// const validateType = <T> (obj: T) => undefined;
+
+export const lesserFactions: { [key in FactionRealMini]?: true } = {
+    news: true,
+    rooster: true,
+    burgershot: true,
+    development: true,
+    mechanic: true,
+    harmony: true,
+    quickfix: true,
+    tunershop: true,
+} as const;
+// validateType<{ [key in FactionRealMini]?: true }>(lesserFactions);
+// const checkKeys: FactionRealMini = (null!) as keyof typeof lesserFactions;
+
 export type NpFactionsRegexMini = keyof typeof npFactionsRegex;
 
 const has = <K extends string>(key: K, x: Record<string, unknown>): x is { [key in K]: unknown } => key in x;

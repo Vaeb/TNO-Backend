@@ -29,6 +29,24 @@ export const filterObj = (obj: any, callback: (v: any, k: string) => boolean): a
 export type ValueOf<T> = T[keyof T];
 export type RecordGen = Record<string, unknown>;
 
+type WithLiterals<T, L, LTuple> = T extends string | number | boolean | null | undefined
+    ? T & L
+    : {
+        [P in keyof T]: WithLiterals<T[P], L, LTuple> & (T[P] extends Array<any> ? LTuple : unknown);
+    };
+
+type DeepReadonly<T> = {
+    readonly [P in keyof T]: DeepReadonly<T[P]>;
+};
+
+export const asConst = <TInterface>() =>
+    <LTuple extends [unknown] | unknown[], L extends string | boolean | number, T extends WithLiterals<TInterface, L, LTuple>>(o: T): DeepReadonly<T> =>
+        o as any;
+
+export type PartialRecord<K extends keyof any, T> = {
+    [P in K]?: T;
+};
+
 export const mapObj = <OldObject extends RecordGen, NewValue>(
     obj: OldObject,
     fn: (v: ValueOf<OldObject>, k: keyof OldObject, i: number) => NewValue
