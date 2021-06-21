@@ -1815,7 +1815,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Mya ?' },
     ],
     tara_: [
-        { name: '[EMS] Sarah Ableton', factions: ['Medical'] },
+        { name: 'Sarah Ableton' },
     ],
     Tasara22: [
         { name: 'Tuesday Phillips' },
