@@ -257,6 +257,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Kaleb "Kleb" Rush', factions: ['HOA'] },
         { name: '[Officer] Ryan Wright', factions: ['Police'] },
     ],
+    Blown: [
+        { name: 'Taylor "Spaceman" Briggs', factions: ['Burger Shot'] },
+    ],
     bLuE622: [
         { name: 'Boe Jangles', factions: ['Chang Gang'], affiliate: true },
     ],
@@ -357,6 +360,9 @@ export const npCharacters: NpCharacters = {
     ],
     charlieblossom: [
         { name: 'Georgina "Windsong" Williams' },
+    ],
+    ChatterBox0: [
+        { name: 'Jagger "Chatterbox" Gerardy' },
     ],
     Chief: [
         { name: 'Baada Ka', factions: ['HOA', 'Rooster'], nicknames: ['Chief'], displayName: 3, assume: 'assumeNpNoOther' },
@@ -1124,6 +1130,9 @@ export const npCharacters: NpCharacters = {
     Lullichiiqa: [
         { name: 'Liv Lassen' },
     ],
+    LukeDimond: [
+        { name: 'Jackson Creed', nicknames: ['Wheelchair', 'Legs'], displayName: 0 },
+    ],
     luminariarayne: [
         { name: 'Ekaterina Alekseyevna', nicknames: ['Trina'], displayName: 1 },
         { name: 'Barbie Chan' },
@@ -1324,6 +1333,9 @@ export const npCharacters: NpCharacters = {
     ],
     NewFaceSuper: [
         { name: 'Davey Doherty' },
+    ],
+    Niccorazi: [
+        { name: 'Dougie Fresh', nicknames: ['Bobcat'] },
     ],
     Nidas: [
         { name: 'Leslie Ling', displayName: 0, nicknames: ['Lingberg'] },
