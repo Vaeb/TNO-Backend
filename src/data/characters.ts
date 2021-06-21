@@ -29,13 +29,16 @@ export const npCharacters: NpCharacters = {
     '0Reed': [
         { name: 'Reed Dankleaf', factions: ['Lost MC'] },
     ],
-    '80bsaget': [
-        { name: 'Tim Lee', displayName: 0 },
-        { name: '[Officer] Bexar McCree', factions: ['Police'] },
-    ],
     '52chains': [
         { name: 'Fidel Guevara', nicknames: ['Don', 'Cabron'] },
         { name: 'Carmine "The Mouse" Costello' },
+    ],
+    '713stew': [
+        { name: 'Junior Diaz', factions: ['Vagos'], displayName: 0 },
+    ],
+    '80bsaget': [
+        { name: 'Tim Lee', displayName: 0 },
+        { name: '[Officer] Bexar McCree', factions: ['Police'] },
     ],
     aaron_rp: [
         { name: 'Aaron Alexander', factions: ['BSK'], displayName: 0 },
@@ -760,6 +763,9 @@ export const npCharacters: NpCharacters = {
     ],
     huddy_nz: [
         { name: 'Ash Huddy Hudson', factions: ['Lunatix'] },
+    ],
+    Hurnani: [
+        { name: 'James-Kamea Brown', factions: ['Vagos'] },
     ],
     HutchMF: [
         { name: 'Hutch Hutcherson' },

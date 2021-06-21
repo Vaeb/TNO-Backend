@@ -6,7 +6,14 @@ import { npFactions, npFactionsRealMini } from './meta';
 
 import type { FactionMini, FactionRealMini } from './meta';
 
-const noAutoFaction = { independent: true, otherfaction: true, other: true, cleanbois: true, russians: true, chaos: true } as const;
+const noAutoFaction = {
+    independent: true,
+    otherfaction: true,
+    other: true,
+    cleanbois: true,
+    russians: true,
+    chaos: true,
+} as const;
 
 export type NpFactionsRegexKeys = Exclude<FactionRealMini, keyof typeof noAutoFaction>;
 
@@ -14,7 +21,7 @@ const noLater = (reg: RegExp) => mergeRegex(['(?:', reg, ')', /(?!(?:[\s-_]+(?:c
 
 const noFormer = (reg: RegExp) => mergeRegex([/(?<!(?:\b|_)(?:vs?|versus|against|e?x|former|with|for|then)[^a-z0-9]*|vs?)/i, '(?:', reg, ')']);
 
-export const npFactionsRegex = { //
+export const npFactionsRegex = {
     lostmc: noLater(noFormer(/lost\s*mc|the\s*lost\b/i)),
     changgang: noFormer(/chang\s*gang|\bcga?\b/i),
     vagos: noLater(noFormer(/vagos|\bvago\b|yellow[\s\-]*gang|\besv\b/i)),
@@ -40,18 +47,19 @@ export const npFactionsRegex = { //
     quickfix: /\bquick[\s\-]*fix/i,
     tunershop: /\btuner[\s\-]*shop\b/i,
     larpers: /\blarp\b|\blarper|the\s*guild/i,
-    police: noLater(mergeRegex([
-        /(?<!\bthen\b.*|!|\bformer\b[\s\w]+|\bex[\s\-]*)/i,
-        /(?:\bcop\b|chief of police|officer|der?puty|\bd-\d|ride[\s\-_.]*along|investigation|sergeant|lieutenant|corporal|sheriff|trooper|cadet|\b(?:ranger|dt|sgt|lt(?![^|!]*\bjones\b)|cpl|lspd|sasp|bcso|cid|police[\s\-_]*academy)\b)/i,
-        /(?!\?)/i,
-    ])),
+    police: noLater(
+        mergeRegex([
+            /(?<!\bthen\b.*|!|\bformer\b[\s\w]+|\bex[\s\-]*)/i,
+            /(?:\bcop\b|chief of police|officer|der?puty|\bd-\d|ride[\s\-_.]*along|investigation|sergeant|lieutenant|corporal|sheriff|trooper|cadet|\b(?:ranger|dt|sgt|lt(?![^|!]*\bjones\b)|cpl|lspd|sasp|bcso|cid|police[\s\-_]*academy)\b)/i,
+            /(?!\?)/i,
+        ])
+    ),
     medical: noLater(/(?<!then\b.*|!)(?:doctor|\b(?:dr|ems|emt)\b)/i),
 } as { [key in NpFactionsRegexKeys]: RegExp };
 
 export type NpFactionsRegexMini = keyof typeof npFactionsRegex;
 
-const has = <K extends string>(key: K, x: Record<string, unknown>): x is { [key in K]: unknown } =>
-    key in x;
+const has = <K extends string>(key: K, x: Record<string, unknown>): x is { [key in K]: unknown } => key in x;
 
 const keepS: { [key in FactionRealMini]?: boolean } = { pegasus: true, news: true, russians: true };
 
@@ -59,7 +67,7 @@ npFactionsRealMini.forEach((faction) => {
     const fullFaction = npFactions[faction];
     if (!has(faction, noAutoFaction) && !has(faction, npFactionsRegex) && !['doc'].includes(faction)) {
         faction = faction as NpFactionsRegexKeys;
-        let regStr = RegExp.escape((fullFaction[fullFaction.length - 1] === 's' && !keepS[faction]) ? fullFaction.slice(0, -1) : fullFaction).toLowerCase();
+        let regStr = RegExp.escape(fullFaction[fullFaction.length - 1] === 's' && !keepS[faction] ? fullFaction.slice(0, -1) : fullFaction).toLowerCase();
         if (regStr.length <= 3) {
             regStr = `\\b${regStr}\\b`;
         } else {
