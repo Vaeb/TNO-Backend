@@ -1128,7 +1128,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Dr.] Serge Cross', factions: ['Medical'], displayName: 2 },
     ],
     Lucky_RP: [
-        { name: 'Marlo Stanfield', factions: ['GSF'], nicknames: [reg(/ma?rlo/)] },
+        { name: 'Marlo Stanfield', nicknames: [reg(/ma?rlo/)] },
     ],
     LuckyxMoon: [
         { name: '[Judge] ? Devereaux', factions: ['DoJ'] },
