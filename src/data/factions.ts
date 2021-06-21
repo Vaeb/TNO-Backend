@@ -12,7 +12,7 @@ export type NpFactionsRegexKeys = Exclude<FactionRealMini, keyof typeof noAutoFa
 
 export const npFactionsRegex = {
     lostmc: /lost\s*mc|the\s*lost\b/i,
-    changgang: /(?<!(?:\b|_)vs?[^a-z0-9]*|vs?)(?:chang\s*gang|\bcga?\b)/i,
+    changgang: /(?<!(?:\b|_)(?:vs?|versus|against|x|with|for)[^a-z0-9]*|vs?)(?:chang\s*gang|\bcga?\b)/i,
     vagos: /vagos|yellow[\s\-]*gang|\besv\b/i,
     gsf: /grove|\bgsf\b/i,
     ssb: /balla|\bssb\b(?![\s\-]+(?:wo?rld|later))|\besb\b/i,
