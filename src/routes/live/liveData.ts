@@ -10,7 +10,7 @@ import settingsParsed from '../../data/settingsParsed';
 import factionsParsed from '../../data/factionsParsed';
 import { npFactions } from '../../data/meta';
 import { npCharacters as npCharactersOld } from '../../data/characters';
-import { isFactionColor, lesserFactions, npFactionsRegex } from '../../data/factions';
+import { isFactionColor, lesserFactions, npFactionsRegex, npFactionsSubRegex } from '../../data/factions';
 
 import type { RecordGen } from '../../utils';
 import type { FactionMini, FactionFull, FactionRealMini, FactionRealFull } from '../../data/meta';
@@ -557,6 +557,16 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                         }
                     }
 
+                    let hasFactionsTagText;
+                    if (!nowCharacter && hasFactions && factionNames[0] in npFactionsSubRegex) {
+                        for (const [tagText, tagReg] of npFactionsSubRegex[factionNames[0]]!) {
+                            if (tagReg.test(title)) {
+                                hasFactionsTagText = tagText;
+                                break;
+                            }
+                        }
+                    }
+
                     let possibleCharacter = nowCharacter;
                     if (!nowCharacter && !hasFactions && hasCharacters) {
                         if (characters.assumeChar) {
@@ -573,7 +583,7 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                         return;
                     }
 
-                    let keepCase = false;
+                    // let keepCase = false;
                     let activeFactions: FactionMini[];
                     let tagFaction: FactionColorsMini;
                     let tagText;
@@ -585,13 +595,13 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                     } else if (hasFactions) {
                         activeFactions = factionNames;
                         tagFaction = isFactionColor(factionNames[0]) ? factionNames[0] : 'independent';
-                        tagText = `< ${fullFactionMap[factionNames[0]] || factionNames[0]} >`;
+                        tagText = hasFactionsTagText ?? `< ${fullFactionMap[factionNames[0]] || factionNames[0]} >`;
                     } else if (possibleCharacter) {
                         activeFactions = possibleCharacter.factions;
                         tagFaction = possibleCharacter.factionUse;
                         tagText = `? ${possibleCharacter.displayName} ?`;
                     } else {
-                        keepCase = true;
+                        // keepCase = true;
                         activeFactions = ['othernp'];
                         tagFaction = 'othernp';
                         tagText = `${serverName}`;

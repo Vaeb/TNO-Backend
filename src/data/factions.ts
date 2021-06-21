@@ -50,12 +50,19 @@ export const npFactionsRegex = {
     police: noLater(
         mergeRegex([
             /(?<!\bthen\b.*|!|\bformer\b[\s\w]+|\bex[\s\-]*)/i,
-            /(?:\bcop\b|chief of police|officer|der?puty|\bd-\d|ride[\s\-_.]*along|investigation|sergeant|lieutenant|corporal|sheriff|trooper|cadet|\b(?:ranger|dt|sgt|lt(?![^|!]*\bjones\b)|cpl|lspd|sasp|bcso|cid|police[\s\-_]*academy)\b)/i,
+            /(?:\bcop\b|chief of police|officer|der?puty|\bd-\d|\bdispatch\b|ride[\s\-_.]*along|investigation|sergeant|lieutenant|corporal|sheriff|trooper|cadet|\b(?:ranger|dt|sgt|lt(?![^|!]*\bjones\b)|cpl|lspd|sasp|bcso|cid|police[\s\-_]*academy)\b)/i,
             /(?!\?)/i,
         ])
     ),
     medical: noLater(/(?<!then\b.*|!)(?:doctor|\b(?:dr|ems|emt)\b)/i),
 } as { [key in NpFactionsRegexKeys]: RegExp };
+
+export const npFactionsSubRegex: { [key in FactionRealMini]?: [string, RegExp][] } = {
+    police: [
+        ['Dispatch', /\bd-\d|\bdispatch\b/i],
+        ['Ride Along', /ride[\s\-_.]*along/i],
+    ],
+};
 
 // export const lesserFactions = asConst<PartialRecord<FactionRealMini, true>>()({
 //     news: true,
