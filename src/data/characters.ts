@@ -1218,8 +1218,9 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Kurt Leonard', factions: ['Police'], assume: 'assumeOther' },
     ],
     MikeTheBard: [
-        { name: 'Hubcap Jones', displayName: 0 },
+        { name: 'Hubcap Jones', displayName: 0, assumeServer: 'whitelist' },
         { name: 'Jack Nova', displayName: 0 },
+        { name: '[Ranger] Manny Multchbottom', factions: ['Police'], displayName: 0, assumeServer: 'public' },
     ],
     mikezout14: [
         { name: '[Deputy] Michael Rodgers', factions: ['Police'] },
