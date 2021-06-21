@@ -250,7 +250,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Lawyer /] Buford J. Preston', factions: ['DoJ'] },
     ],
     Blaustoise: [
-        { name: 'Mickey S', factions: ['Chang Gang'], nicknames: ['Downbad'], assumeServer: 'whitelist' },
+        { name: 'Mickey S', factions: ['Chang Gang'], nicknames: ['Downbad', 'Downrat'], assumeServer: 'whitelist' },
         { name: 'Michael S.', factions: ['Gulag Gang'], nicknames: ['Upgood'], assumeServer: 'public' },
     ],
     bldrs: [
@@ -838,7 +838,8 @@ export const npCharacters: NpCharacters = {
         { name: 'Robert "Mr. Rodgers" Rodgers' },
     ],
     JdotField: [
-        { name: 'Miles Landon', factions: ['Pegasus', 'Rooster'] },
+        { name: 'Miles Landon', factions: ['Pegasus', 'Rooster'], assumeServer: 'whitelist' },
+        { name: 'Miles Landon', nicknames: ['451'], assumeServer: 'public' },
         { name: 'Jake LaMotta', displayName: 0 },
         { name: 'Drew Jackson', factions: ['GSF'] },
     ],
