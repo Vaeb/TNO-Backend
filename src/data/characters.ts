@@ -1445,7 +1445,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Celine LaCroix' },
     ],
     Polen: [
-        { name: 'Adam Peterson', factions: ['Rooster'], displayName: 0 },
+        { name: 'Adam Peterson', displayName: 0 },
     ],
     Pons: [
         { name: '[Officer] Chet Manley', factions: ['Police'] },
