@@ -6,7 +6,7 @@ import { npFactions, npFactionsRealMini } from './meta';
 
 import type { FactionMini, FactionRealMini } from './meta';
 
-const noAutoFaction = { independent: true, otherfaction: true, other: true, cleanbois: true } as const;
+const noAutoFaction = { independent: true, otherfaction: true, other: true, cleanbois: true, russians: true, chaos: true } as const;
 
 export type NpFactionsRegexKeys = Exclude<FactionRealMini, keyof typeof noAutoFaction>;
 
@@ -53,13 +53,11 @@ export type NpFactionsRegexMini = keyof typeof npFactionsRegex;
 const has = <K extends string>(key: K, x: Record<string, unknown>): x is { [key in K]: unknown } =>
     key in x;
 
-const noFactionRegex: { [key: string]: true } = { russians: true, chaos: true };
-
 const keepS: { [key in FactionRealMini]?: boolean } = { pegasus: true, news: true, russians: true };
 
 npFactionsRealMini.forEach((faction) => {
     const fullFaction = npFactions[faction];
-    if (!noFactionRegex[faction] && !has(faction, noAutoFaction) && !has(faction, npFactionsRegex) && !['doc'].includes(faction)) {
+    if (!has(faction, noAutoFaction) && !has(faction, npFactionsRegex) && !['doc'].includes(faction)) {
         faction = faction as NpFactionsRegexKeys;
         let regStr = RegExp.escape((fullFaction[fullFaction.length - 1] === 's' && !keepS[faction]) ? fullFaction.slice(0, -1) : fullFaction).toLowerCase();
         if (regStr.length <= 3) {
