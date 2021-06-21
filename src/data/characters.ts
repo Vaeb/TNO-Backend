@@ -326,7 +326,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Dimitri Nekola', factions: ['Pegasus'] },
     ],
     Carmen: [
-        { name: 'Carmella Corset', factions: ['RR'] },
+        { name: 'Carmella Corset', factions: ['Rooster'] },
     ],
     Carter: [
         { name: 'Spencer Smith', nicknames: ['Mormon'] },
