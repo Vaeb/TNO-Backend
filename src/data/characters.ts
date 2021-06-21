@@ -172,8 +172,8 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Brenda Pancake', factions: ['Police'], displayName: 1, nicknames: ['Pancakes'] },
     ],
     Asteroba: [
-        { name: '[D.A.] Larry Hallow', factions: ['DoJ'] },
         { name: '[Deputy] Aaron Byson', factions: ['Police'] },
+        { name: '[D.A.] Larry Hallow', factions: ['DoJ'] },
         { name: 'Kermy Fulker', factions: ['HOA'] },
         { name: '[EMS] Boba Stone', factions: ['Medical'] },
     ],
