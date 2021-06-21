@@ -1108,6 +1108,9 @@ export const npCharacters: NpCharacters = {
     LordJasta: [
         { name: 'Chris McGrawl' },
     ],
+    LordNetloc: [
+        { name: 'Carter Banx', factions: ['SSB'], displayName: 0 },
+    ],
     Loserfruit: [
         { name: '[EMS] Lizzie Bien', factions: ['Medical'] },
     ],
