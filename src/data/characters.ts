@@ -1798,6 +1798,9 @@ export const npCharacters: NpCharacters = {
     Svennoss: [
         { name: 'Barry Svensson', factions: ['Pegasus', 'Rooster'] },
     ],
+    SwaggerSouls: [
+        { name: 'Ace Hull', displayName: 0 },
+    ],
     Sweet_Anita: [
         { name: 'Marylin Hilton' },
     ],
