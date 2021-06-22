@@ -30,7 +30,7 @@ export const npFactionsRegex = {
     bsk: noFormer(/\bbsk\b|brouge street|burger shot king/i),
     marabunta: noLater(noFormer(/\bmarabunta/i)),
     hoa: noFormer(/\bhoa\b|hogs\s*of\s*anarchy|home[\s\-]*owners[\s\-]*association/i),
-    doj: noLater(noFormer(/\bdoj\b|department\s*of\s*justice|judge\b(?![\s]*me)|\ba?\.?d\.?a\b|(?<!\b(?:former|ex|aspiring)[\s\-]*)lawyer|para[\s\-]*legal/i)),
+    doj: noLater(noFormer(/\bdoj\b|department\s*of\s*justice|judge\b(?![\s]*me)|\ba?\.?d\.?a\b|(?<!\b(?:former|ex|aspiring)[\s\-]*)(?:lawyer|attorney)|para[\s\-]*legal/i)),
     asrr: noLater(noFormer(/\balta[\s\-]*street|\bblock(?:\b|[\s\-]*party|[\s\-]*athon)/i)),
     angels: noFormer(/\bangels\b/i),
     nbc: noFormer(/\bnbc\b/i),
@@ -50,7 +50,7 @@ export const npFactionsRegex = {
     police: noLater(
         mergeRegex([
             /(?<!\bthen\b.*|!|\bformer\b[\s\w]+|\bex[\s\-]*)/i,
-            /(?:\bcop\b|chief of police|officer|der?puty|\bd-\d|\bdispatch\b|ride[\s\-_.]*along|investigation|sergeant|lieutenant|corporal|sheriff|trooper|cadet|\b(?:ranger|dt|sgt|lt(?![^|!]*\bjones\b)|cpl|lspd|sasp|bcso|cid|police[\s\-_]*academy)\b)/i,
+            /(?:\bcop\b|chief of police|officer|der?puty|\bd-\d|\bdispatch\b|ride[\s\-_.]*along|sergeant|lieutenant|corporal|sheriff|trooper|cadet|\b(?:ranger|dt|sgt|lt(?![^|!]*\bjones\b)|cpl|lspd|sasp|bcso|cid|police[\s\-_]*academy)\b)/i,
             /(?!\?)/i,
         ])
     ),
