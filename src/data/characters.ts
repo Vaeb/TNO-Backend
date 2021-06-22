@@ -104,7 +104,8 @@ export const npCharacters: NpCharacters = {
         { name: 'Gordon Parks', nicknames: ['DoorLord'] },
     ],
     AidenNortha: [
-        { name: '[Deputy] Kevin Keyte', factions: ['Police'], displayName: 1 },
+        { name: '[Deputy] Kevin Keyte', factions: ['Police'], displayName: 1, assumeServer: 'whitelist' },
+        { name: '[Officer] Melvin Graves', factions: ['Police'], displayName: 0, assumeServer: 'public' },
     ],
     aintitadam: [
         { name: 'Scruffy Doodle', factions: ['Burger Shot'] },
@@ -1770,7 +1771,8 @@ export const npCharacters: NpCharacters = {
         { name: 'Abigail "Abi" Sharp' },
     ],
     Stoner_Minded: [
-        { name: '[Officer] Frank Williams', factions: ['Police'], displayName: 1 },
+        { name: '[Officer] Frank Williams', factions: ['Police'], displayName: 1, assumeServer: 'whitelist' },
+        { name: '[Chief of Police] Frank Williams', factions: ['Police'], displayName: 1, assumeServer: 'public' },
     ],
     Striking_Fast: [
         { name: 'Gerard "Dewey" Hawthorne', nicknames: ['Dewie'], factions: ['Rooster'] },
