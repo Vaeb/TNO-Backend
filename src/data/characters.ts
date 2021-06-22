@@ -1583,6 +1583,9 @@ export const npCharacters: NpCharacters = {
     RudeNoodleNPC: [
         { name: 'Tee Veeman', factions: ['Burger Shot'] },
     ],
+    RyanRV: [
+        { name: 'Jay Jones', factions: ['Rooster'] },
+    ],
     s0upes: [
         { name: '[Officer] Silas Grimmer', factions: ['Police'] },
         { name: 'James "Apples" Apeller' },
