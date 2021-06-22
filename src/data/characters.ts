@@ -658,7 +658,7 @@ export const npCharacters: NpCharacters = {
     ],
     fuslie: [
         { name: 'April Fooze', displayName: 0, assumeServer: 'whitelist' },
-        { name: 'Connie Clark', factions: ['Police'], displayName: 0, assumeServer: 'public' },
+        { name: '[Ranger] Connie Clark', factions: ['Police'], displayName: 2, assumeServer: 'public' },
     ],
     Fyzicul: [
         { name: '[Shaman /] Keith "Lando" Wanderlust', factions: ['LARPers', 'Rooster'], nicknames: ['Stormborn', 'Shaman', 'Mountain Kingdom'], displayName: 0 },
