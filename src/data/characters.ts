@@ -979,7 +979,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Daquan "Peanut" Dumas', factions: ['NBC'] },
     ],
     Keeno: [
-        { name: 'Kyle Brovloski' },
+        { name: 'Kyle Brovloski', displayName: 0 },
     ],
     Kemony: [
         { name: 'Susie Carmichael' },
