@@ -1030,7 +1030,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Dr.] Emily Ducksworth', factions: ['Medical'], displayName: 0 },
     ],
     Knotty: [
-        { name: 'Guy Jones', factions: ['NBC'], displayName: 0 },
+        { name: 'Guy Jones', factions: ['NBC'], displayName: 0, leader: true },
     ],
     Knut: [
         { name: 'Bjorn Eiriksson' },
@@ -1081,7 +1081,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Jaed Smith' },
     ],
     LAGTVMaximusBlack: [
-        { name: 'Outto-Tune "OTT" Tyrone', factions: ['BSK'], nicknames: [reg(/\b[O0]\S?TT/)] },
+        { name: 'Outto-Tune "OTT" Tyrone', factions: ['BSK'], nicknames: [reg(/\b[O0]\S?TT/)], leader: true },
     ],
     Lairdo_: [
         { name: 'Henry King', factions: ['Rooster'] },
