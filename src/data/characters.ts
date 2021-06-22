@@ -848,6 +848,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Joseph Yorinobu', nicknames: ['Majima', 'Goro'], displayName: 3 },
         { name: 'Lillia Claurel' },
     ],
+    jay4871: [
+        { name: 'Dave Perry', displayName: 0 },
+    ],
     JayAitch5: [
         { name: 'Lil Cap', displayName: 0 },
     ],
