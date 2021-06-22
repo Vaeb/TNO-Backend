@@ -311,6 +311,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Moe Nopoli', displayName: 0 },
         { name: 'Mentle Block', factions: ['ASRR'] },
         { name: 'Sasuke Johnson' },
+        { name: 'Sanic Speedrun' },
         { name: 'Chi "Chi-ku" Ku' },
         { name: 'Plankton ?' },
         { name: 'Bruce "The Dank Knight" Strayne' },
