@@ -40,6 +40,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Tim Lee', displayName: 0 },
         { name: '[Officer] Bexar McCree', factions: ['Police'] },
     ],
+    Aaoki: [
+        { name: 'Shazza Wazza', factions: ['Rooster'] },
+    ],
     aaron_rp: [
         { name: 'Aaron Alexander', factions: ['BSK'], displayName: 0 },
     ],
