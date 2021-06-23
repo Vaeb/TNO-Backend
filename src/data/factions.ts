@@ -20,7 +20,7 @@ export type NpFactionsRegexKeys = Exclude<FactionRealMini, keyof typeof noAutoFa
 
 const noLater = (reg: RegExp) => mergeRegex(['(?:', reg, ')', /(?!(?:[\s-_]+(?:char\w*|roleplay|rp))?[^\w.;]+(?:later|after))/i]);
 
-const noFormer = (reg: RegExp) => mergeRegex([/(?<!(?:\b|_)(?:vs?|versus|against|e?x|former|with|for|then)[^a-z0-9]*|vs?)/i, '(?:', reg, ')']);
+const noFormer = (reg: RegExp) => mergeRegex([/(?<!(?:\b|_)(?:vs?|versus|against|e?x|former|with|becom\w+\s+a|for|then)[^a-z0-9]*|vs?)/i, '(?:', reg, ')']);
 
 export const npFactionsRegex = {
     lostmc: noLater(noFormer(/lost\s*mc|the\s*lost\b/i)),
@@ -47,13 +47,13 @@ export const npFactionsRegex = {
     quickfix: /\bquick[\s\-]*fix/i,
     tunershop: /\btuner[\s\-]*shop\b/i,
     larpers: /\blarp\b|\blarper|the\s*guild/i,
-    police: noLater(
+    police: noLater(noFormer(
         mergeRegex([
-            /(?<!\bthen\b.*|!|\bformer\b[\s\w]+|\bex[\s\-]*)/i,
+            /(?<!\bthen\b.*|!|\bformer\b[\s\w]+)/i,
             /(?:\bcop\b|chief of police|officer|der?puty|\bd-\d|\bdispatch\b|ride[\s\-_.]*along|sergeant|lieutenant|corporal|sheriff|trooper|cadet|\b(?:ranger|dt|sgt|lt(?![^|!]*\bjones\b)|cpl|lspd|sasp|bcso|cid|police[\s\-_]*academy)\b)/i,
             /(?!\?)/i,
         ])
-    ),
+    )),
     medical: noLater(/(?<!then\b.*|!)(?:doctor|\b(?:dr|ems|emt)\b)/i),
 } as { [key in NpFactionsRegexKeys]: RegExp };
 
