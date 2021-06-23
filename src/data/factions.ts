@@ -20,7 +20,7 @@ export type NpFactionsRegexKeys = Exclude<FactionRealMini, keyof typeof noAutoFa
 
 const noLater = (reg: RegExp) => mergeRegex(['(?:', reg, ')', /(?!(?:[\s-_]+(?:char\w*|roleplay|rp))?[^\w.;]+(?:later|after))/i]);
 
-const noFormer = (reg: RegExp) => mergeRegex([/(?<!(?:\b|_)(?:vs?|versus|against|e?x|former|with|becom\w+\s+a|for|then)[^a-z0-9]*|vs?)/i, '(?:', reg, ')']);
+const noFormer = (reg: RegExp) => mergeRegex([/(?<!(?:\b|_)(?:vs?|versus|against|e?x|former|with|becom\w+\s+a|for|then)(?:\s+the)?[^a-z0-9]*|vs?)/i, '(?:', reg, ')']);
 
 export const npFactionsRegex = {
     lostmc: noLater(noFormer(/lost\s*mc|the\s*lost\b/i)),
