@@ -1964,7 +1964,7 @@ export const npCharacters: NpCharacters = {
     ],
     UberHaxorNova: [
         { name: '[Deputy] Barry Briddle', factions: ['Police'] },
-        { name: 'Siz Fulker', factions: ['HOA'], leader: true, nicknames: ['uhnSuffer'] },
+        { name: 'Siz Fulker', factions: ['HOA'], leader: true, nicknames: ['uhnSuffer', 'mechanic'] },
         { name: 'Toh Biggles Fitzcharles', displayName: 0, nicknames: ['Yaes'] },
     ],
     uhSnow: [
