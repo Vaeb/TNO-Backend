@@ -13,6 +13,7 @@ const noAutoFaction = {
     cleanbois: true,
     russians: true,
     chaos: true,
+    mechanic: true,
 } as const;
 
 export type NpFactionsRegexKeys = Exclude<FactionRealMini, keyof typeof noAutoFaction>;
@@ -42,7 +43,6 @@ export const npFactionsRegex = {
     development: /\bdevelop|\bdev\b|\bcoding/i,
     doc: noLater(noFormer(/\bdoc\b|\bcorrection/i)),
     prison: noLater(/\blifer|\bprison|\blife\W+sentence/i),
-    mechanic: /\bmechanic\b/i,
     harmony: /\bharmony\b/i,
     quickfix: /\bquick[\s\-]*fix/i,
     tunershop: /\btuner[\s\-]*shop\b/i,
