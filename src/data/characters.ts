@@ -1364,7 +1364,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Dougie Fresh', nicknames: ['Bobcat'] },
     ],
     Nidas: [
-        { name: 'Leslie Ling', displayName: 0, nicknames: ['Lingberg'] },
+        { name: 'Leslie Lingberg', displayName: 0, nicknames: ['Ling'] },
     ],
     Nikez: [
         { name: '[Development /] Nikez', factions: ['Development'] },
