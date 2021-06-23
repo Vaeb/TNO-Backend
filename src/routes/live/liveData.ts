@@ -80,7 +80,7 @@ const toFactionMini = (faction: string) => faction.toLowerCase().replace(' ', ''
 */
 for (const [streamer, characters] of Object.entries(npCharacters)) {
     if (characters.length > 0) {
-        characters.push({ name: '~Permathon~', nicknames: ['Permathon', 'Perma?thon', '/\\bone[\s-]life[\s-]charac/'] } as Character);
+        characters.push({ name: '~Permathon~', nicknames: ['Permathon', 'Perma?thon', '/\\bone[\\s-]life[\\s-]charac/'] } as Character);
     }
 
     const foundOthers: { [key in AssumeOther]?: boolean } = {};
