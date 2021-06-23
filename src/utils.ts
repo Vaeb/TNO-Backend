@@ -51,19 +51,13 @@ export const mapObj = <OldObject extends RecordGen, NewValue>(
     obj: OldObject,
     fn: (v: ValueOf<OldObject>, k: keyof OldObject, i: number) => NewValue
 ): Record<keyof OldObject, NewValue> =>
-    Object.fromEntries(Object.entries(obj).map(([k, v], i) => [k, fn(v as ValueOf<OldObject>, k as keyof OldObject, i)])) as Record<
-    keyof OldObject,
-    NewValue
-    >;
+    Object.fromEntries(Object.entries(obj).map(([k, v], i) => [k, fn(v as ValueOf<OldObject>, k as keyof OldObject, i)])) as Record<keyof OldObject, NewValue>;
 
 export const mapObjKeys = <OldObject extends RecordGen, NewKey extends string>(
     obj: OldObject,
     fn: (v: ValueOf<OldObject>, k: keyof OldObject, i: number) => NewKey
 ): Record<NewKey, OldObject[keyof OldObject]> =>
-    Object.fromEntries(Object.entries(obj).map(([k, v], i) => [fn(v as ValueOf<OldObject>, k as keyof OldObject, i), v])) as Record<
-    NewKey,
-    OldObject[keyof OldObject]
-    >;
+    Object.fromEntries(Object.entries(obj).map(([k, v], i) => [fn(v as ValueOf<OldObject>, k as keyof OldObject, i), v])) as Record<NewKey, OldObject[keyof OldObject]>;
 
 export const isObjEmpty = (obj: any): boolean => {
     // eslint-disable-next-line guard-for-in
@@ -82,3 +76,7 @@ export const parseParam = (value: string): any => {
     if (/^-?\d*(\.\d+)?$/.test(value)) return parseFloat(value);
     return value;
 };
+
+export const escapeRegExp = (str: string): string => str.replace(/[.*+\-?^${}()|[\]\\]/g, '\\$&'); // $& means the whole matched string
+
+export const replaceAll = (str: string, find: string, replace: string): string => str.replace(new RegExp(escapeRegExp(find), 'g'), replace);

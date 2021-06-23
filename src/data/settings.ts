@@ -1,21 +1,31 @@
 /* eslint-disable no-useless-escape */
 /* eslint-disable operator-linebreak */
 
-import { mergeRegex } from '../utils';
+import { mergeRegex, replaceAll } from '../utils';
 
 export const minViewers = 1;
 export const stopOnMin = true;
 export const intervalSeconds = 0.7;
 
+const addPublicCounties = (reg: RegExp) => new RegExp(
+    replaceAll(
+        replaceAll(reg.source, 'pub\\w*', '(?:pub\\w*|orange|purple)'),
+        '(?:pub|',
+        '(?:pub|orange|purple|'
+    ),
+    reg.flags
+);
+
 export const regNp = /(?<!not\s)(?:no[\s\-_.]*pixel|\bn[\s\-_.]*p\b)(?![\s\-]*(?:inspired|based|ban|\.ins\b))/i;
-export const regNpPublic = mergeRegex([
+export const regNpPublic = addPublicCounties(mergeRegex([
     /(?:no[\s\-_.]*pixel|\bn[\s\-_.]*p(?=\b|\d))(?:[\s\-_.]*(?:rp|\d+\.?\d*))?[\W_]*pub\w*\b(?!\W+(?:later|after))/i,
     /|(\bpub\w*[\W_]*(?:no[\s\-_.]*pixel|\bn[\s\-_.]*p(?=\b|\d)))/i,
     /|(?<=(?:on|playing)\W+)(?:pub|public)/i,
-    /|\bpub\w*[\W_]*(?:server|queue|for\b)/i,
+    /|\bpub\w*[\W_]*(?:server|county|city|country|universe|timeline|queue|for\b)/i,
     /|[\[<(]pub\w*[)>\]]/i,
     /|\b(?:pub|public)$/i,
-]);
+]));
+
 export const regNpWhitelist = /(?:\bwhitelist|\bwl\b|\bmain\b|\bprivate\b(?![\s\-]+(?:detective|investigat\w+)))\b(?!\W+(?:later|after))/i;
 export const regOther = /the\s*family|\btf\s?rp|family\s*rp|twitchrp|\bt\W*rp|\bnon[\s\-]*stop|\bns\s?rp/i;
 export const regOthers = [
