@@ -1613,8 +1613,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Dimitri Barkov', factions: ['HOA'] },
     ],
     Sareff: [
-        { name: 'Violet Noreguarde', factions: ['Vagos'] },
+        { name: 'Violet Noreguarde', factions: ['Vagos'], assumeServer: 'whitelist' },
         { name: '[D.A.] Paige Green', factions: ['DoJ'] },
+        { name: '[Deputy] Paige Green', factions: ['Police'], assumeServer: 'public' },
         { name: 'Chasity Dawes' },
     ],
     SAVx: [
