@@ -776,6 +776,9 @@ export const npCharacters: NpCharacters = {
     huddy_nz: [
         { name: 'Ash Huddy Hudson', factions: ['Lunatix'] },
     ],
+    Huntag: [
+        { name: 'Freddy Fastfingers', factions: ['BBMC'], displayName: 0 },
+    ],
     Hurnani: [
         { name: 'James-Kamea Brown', factions: ['Vagos'] },
     ],
