@@ -1037,6 +1037,9 @@ export const npCharacters: NpCharacters = {
     Knotty: [
         { name: 'Guy Jones', factions: ['NBC'], displayName: 0, leader: true },
     ],
+    KnuckleheadGaming: [
+        { name: 'Marty Holiday', factions: ['Prison'], displayName: 0 },
+    ],
     Knut: [
         { name: 'Bjorn Eiriksson' },
     ],
@@ -1312,6 +1315,9 @@ export const npCharacters: NpCharacters = {
     MrMouton: [
         { name: 'Chuck Mouton', displayName: 0 },
         { name: 'Han Pandler' },
+    ],
+    mrtimeee: [
+        { name: 'Lennon "Bane" Lee', factions: ['Prison'] },
     ],
     MsTeamKK: [
         { name: 'Riley Carter', factions: ['BBMC'] },
@@ -1840,6 +1846,9 @@ export const npCharacters: NpCharacters = {
     ],
     t3r0: [
         { name: '[Dr.] Andrew Ducksworth', factions: ['Medical'], displayName: 2 },
+    ],
+    TakanoriRuki: [
+        { name: 'Allen Jones', factions: ['Prison'], displayName: 0 },
     ],
     TaliaMar: [
         { name: 'Mya ?' },
