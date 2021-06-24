@@ -441,7 +441,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Amie Rush' },
     ],
     CurtisRyan: [
-        { name: 'Curtis Swoleroid', nicknames: ['"Demon" of Lean Street', 'Curt'], factions: ['Chaos'], assumeServer: 'whitelist' },
+        { name: 'Curtis Swoleroid', nicknames: ['"Demon" of Lean Street', 'Curt'], factions: ['Chang Gang', 'Chaos'], assumeServer: 'whitelist' },
         { name: 'Curtis Swoleroid', nicknames: ['"Demon" of Lean Street', 'Curt'], factions: ['Gulag Gang'], assumeServer: 'public' },
         { name: '[Officer] Stephen McClane', factions: ['Police'] },
         { name: 'Cornelius "Cornbread" Scott', factions: ['GSF'] },
@@ -783,7 +783,7 @@ export const npCharacters: NpCharacters = {
         { name: 'James-Kamea Brown', factions: ['Vagos'] },
     ],
     HutchMF: [
-        { name: 'Hutch Hutcherson' },
+        { name: 'Hutch Hutcherson', factions: ['Chang Gang'] },
         { name: '[Deputy] Jaryd Peak', factions: ['Police'] },
         { name: 'Drew "Dead Eye Drew"', nicknames: ['DeadEye'] },
         { name: 'Hutch Hendrickson' },
@@ -1686,7 +1686,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Anton Belov', factions: ['Russians'] },
     ],
     Silent: [
-        { name: 'Juan Carlos "Flippy" Hernandez', factions: ['Chaos'], nicknames: [reg(/\bflip/)] },
+        { name: 'Juan Carlos "Flippy" Hernandez', factions: ['Chang Gang', 'Chaos'], nicknames: [reg(/\bflip/)] },
         { name: '[Officer] Joel Garcia', factions: ['Police'] },
     ],
     SilentSentry: [
