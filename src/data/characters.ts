@@ -685,6 +685,9 @@ export const npCharacters: NpCharacters = {
     geenelly: [
         { name: 'Misty Bloom', displayName: 0 },
     ],
+    gekgemu: [
+        { name: 'Serena Riven', factions: ['Rooster'] },
+    ],
     GeneralEmu: [
         { name: '[Officer] Lance Malton', factions: ['Police'] },
     ],
