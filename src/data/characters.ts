@@ -1089,7 +1089,8 @@ export const npCharacters: NpCharacters = {
         { name: 'Jaed Smith' },
     ],
     LAGTVMaximusBlack: [
-        { name: 'Outto-Tune "OTT" Tyrone', factions: ['BSK'], nicknames: [reg(/\b[O0]\S?TT/)], leader: true },
+        { name: 'Outto-Tune "OTT" Tyrone', factions: ['BSK'], nicknames: [reg(/\b[O0]\S?TT/)], leader: true, assumeServer: 'whitelist' },
+        { name: 'Outto-Tune "OTT" Tyrone', factions: ['Gulag Gang'], nicknames: [reg(/\b[O0]\S?TT/)], assumeServer: 'public' },
     ],
     Lairdo_: [
         { name: 'Henry King', factions: ['Rooster'] },
