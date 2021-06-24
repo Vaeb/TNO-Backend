@@ -780,6 +780,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Freddy Fastfingers', factions: ['BBMC'], displayName: 0 },
     ],
     Hurnani: [
+        { name: 'Borat ?' },
         { name: 'James-Kamea Brown', factions: ['Vagos'] },
     ],
     HutchMF: [
