@@ -1819,7 +1819,7 @@ export const npCharacters: NpCharacters = {
     ],
     Surefour: [
         { name: '[Officer] Kenny Hawk', factions: ['Police'], nicknames: ['Powice'], displayName: 0 },
-        { name: '[Ranger /] Clarence Trueshot', factions: ['LARPers'], nicknames: ['Ranger'], displayName: 0 },
+        { name: 'Clarence Trueshot', factions: ['LARPers'], nicknames: ['Necrolord', 'Ranger'], displayName: 3 },
     ],
     Suspect: [
         { name: 'Marcos Da Silva' },
