@@ -1411,6 +1411,9 @@ export const npCharacters: NpCharacters = {
     Ntviiper: [
         { name: 'Kian Mercer', factions: ['HOA'] },
     ],
+    NunnYaBiznezz: [
+        { name: '[Deputy] Hingle McCringleberry', factions: ['Police'], displayName: 1, assumeServer: 'public' },
+    ],
     nxsiah: [
         { name: 'Zelaya Fernando', factions: ['Prison'], nicknames: ['Z', 'Laya'] },
     ],
