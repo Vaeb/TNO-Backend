@@ -382,7 +382,8 @@ export const npCharacters: NpCharacters = {
         { name: '[Dr.] Choi Zhangsun', factions: ['Medical'], assume: 'assumeOther' },
     ],
     ChrisTombstone: [
-        { name: 'Flop Dugong' },
+        { name: 'Flop Dugong', assumeServer: 'whitelist' },
+        { name: '[Deputy] Flop Dugong', factions: ['Police'], assumeServer: 'public' },
     ],
     CinnamonToastKen: [
         { name: 'Chuck Colton' },
