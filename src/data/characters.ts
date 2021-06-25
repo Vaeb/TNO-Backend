@@ -488,6 +488,9 @@ export const npCharacters: NpCharacters = {
         { name: '[Ride Along] Den Shiesty', factions: ['Police'], displayName: 0 },
         { name: 'Dean Shiesty', factions: ['SSB'], displayName: 0, assumeServer: 'public' },
     ],
+    Deejayus: [
+        { name: 'Albert Intelligence', factions: ['Rooster'], nicknames: ['A.I.'] },
+    ],
     Denior13: [
         { name: 'Keith "Bulldog" Dooger', factions: ['Lost MC'] },
     ],
