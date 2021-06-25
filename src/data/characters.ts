@@ -152,7 +152,7 @@ export const npCharacters: NpCharacters = {
     ],
     AnthonyZ: [
         { name: 'Tony Corleone', factions: ['Cleanbois', 'Rooster'] },
-        { name: '[Officer] Anthony Copleone', factions: ['Police'] },
+        { name: '[Deputy] Anthony Copleone', factions: ['Police'] },
     ],
     Apitoxin11: [
         { name: 'Trigger Freebird', factions: ['Harmony'] },
