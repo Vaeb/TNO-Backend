@@ -159,7 +159,7 @@ export const npCharacters: NpCharacters = {
     ],
     APPLESHAMPOO: [
         { name: '[Dispatch] Nancy Ree', factions: ['Police'], displayName: 1, assumeServer: 'whitelist' },
-        { name: 'Gioconda "Gio" Coppola' },
+        { name: '[EMS] Gioconda "Gio" Coppola', factions: ['Medical'], nicknames: ['T-17'] },
         { name: '[Officer] Gio Coppola', factions: ['Police'], nicknames: ['466'], displayName: 1, assumeServer: 'public' },
     ],
     Arcadum: [
