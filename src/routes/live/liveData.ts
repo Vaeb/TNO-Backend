@@ -466,13 +466,17 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
 
                     let onServer: AssumeServer = assumeServer;
 
-                    if (assumeServer === 'whitelist') {
-                        onServer = regNpPublic.test(title) ? 'public' : 'whitelist';
-                    } else {
-                        onServer = regNpWhitelist.test(title) ? 'whitelist' : 'public';
-                    }
+                    const onPublicIndex = title.indexOfRegex(regNpPublic, 0, Infinity);
+                    const onWhitelistIndex = title.indexOfRegex(regNpWhitelist, 0, Infinity);
+                    let onServerDetected = false;
 
-                    const onServerDetected = onServer !== assumeServer;
+                    if (onPublicIndex < onWhitelistIndex) {
+                        onServer = 'public';
+                        onServerDetected = true;
+                    } else if (onWhitelistIndex < onPublicIndex) {
+                        onServer = 'whitelist';
+                        onServerDetected = true;
+                    }
 
                     if (hasCharacters) {
                         let lowestPos = Infinity;
