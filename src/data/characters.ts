@@ -1313,7 +1313,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Lenny Hawk', factions: ['Police'], nicknames: ['Renegade'], displayName: 0, assume: 'assumeNp' },
         { name: '[Shadowlord /] Bernice Caldershot', factions: ['LARPers'] },
         { name: 'Ro Block', factions: ['ASRR'], displayName: 0 },
-        { name: 'Yung Dab', nicknames: ['The "Gnome"'], displayName: 0 },
+        { name: 'Maximilian "Yung Dab" Thoroughbred', nicknames: ['The "Gnome"', 'Yung', 'Dab', 'Max'], displayName: 0 },
     ],
     Moose_Taffy: [
         { name: 'Patar Bellosh', factions: ['NBC'], assume: 'assumeOther' },
