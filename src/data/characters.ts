@@ -476,7 +476,7 @@ export const npCharacters: NpCharacters = {
     ],
     dasMEHDI: [
         { name: '[Officer] Brian Knight', factions: ['Police'], nicknames: ['495'] },
-        { name: 'Nino Chavez', factions: ['Cleanbois', 'Rooster'] },
+        { name: 'Nino Chavez', factions: ['Cleanbois', 'Pegasus', 'Rooster'] },
         { name: 'Ryan Kindle', factions: ['HOA'] },
         { name: 'Reema', nicknames: ['The "Whorelord"'] },
     ],
@@ -913,7 +913,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Lawyer /] Maggie Kayden', factions: ['DoJ'] },
     ],
     Jonthebroski: [
-        { name: '[Mayor] Denzel Williams', factions: ['Cleanbois', 'Rooster'], nicknames: ['The "Cleaner"', 'Presidente'] },
+        { name: '[Mayor] Denzel Williams', factions: ['Cleanbois', 'Pegasus', 'Rooster'], nicknames: ['The "Cleaner"', 'Presidente'] },
         { name: '[Officer] Johnny Divine', factions: ['Police'], displayName: 0 },
         { name: 'Dio Ivanov', factions: ['Russians'] },
         { name: 'Holden D. Block', factions: ['ASRR'], displayName: 0 },
