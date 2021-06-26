@@ -21,10 +21,12 @@ export const regNpPublic = addPublicCounties(mergeRegex([
     /(?:no[\s\-_.]*pixel|\bn[\s\-_.]*p(?=\b|\d))(?:[\s\-_.]*(?:rp|\d+\.?\d*))?[\W_]*pub\w*\b(?!\W+(?:later|after))/i,
     /|(\bpub\w*[\W_]*(?:no[\s\-_.]*pixel|\bn[\s\-_.]*p(?=\b|\d)))/i,
     /|(?<=(?:on|playing)\W+)(?:pub|public)/i,
-    /|\bpub\w*[\W_]*(?:server|county|city|country|universe|timeline|queue|for\b|roleplay|rp\b|stuff\b|shenanigans)/i,
+    /|\bpub\w*[\W_]*(?:pub|public|server|county|city|country|universe|timeline|queue|for\b|roleplay|rp\b|stuff\b|shenanigans)/i,
     /|[^\w\s]\s*pub\w*\s*[^\w\s]/i,
     /|\b(?:pub|public)$/i,
 ]));
+
+console.log(regNpPublic);
 
 export const regNpWhitelist = /(?:\bwhitelist|\bwl\b|\bmain\b|\bprivate\b(?![\s\-]+(?:detective|investigat\w+)))\b(?!\W+(?:later|after))/i;
 export const regOther = /the\s*family|\btf\s?rp|family\s*rp|twitchrp|\bt\W*rp|\bnon[\s\-]*stop|\bns\s?rp/i;
