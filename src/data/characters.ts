@@ -1824,8 +1824,8 @@ export const npCharacters: NpCharacters = {
         { name: 'Mitch "Dumbass" Bader' },
     ],
     Surefour: [
-        { name: '[Officer] Kenny Hawk', factions: ['Police'], nicknames: ['Powice'], displayName: 0 },
         { name: 'Clarence Trueshot', factions: ['LARPers', 'Rooster'], nicknames: ['Necrolord', 'Ranger'], displayName: 3 },
+        { name: '[Officer] Kenny Hawk', factions: ['Police'], nicknames: ['Powice'], displayName: 0 },
     ],
     Suspect: [
         { name: 'Marcos Da Silva' },
