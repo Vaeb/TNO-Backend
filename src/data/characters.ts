@@ -1571,7 +1571,7 @@ export const npCharacters: NpCharacters = {
     RatedEpicz: [
         { name: 'Randy Bullet', factions: ['Chang Gang'], nicknames: ['Lazy-Eye'], assumeServer: 'whitelist' },
         { name: 'Roundy Buffet', factions: ['Gulag Gang'], nicknames: ['Randy', 'Bullet'], assumeServer: 'public' },
-        { name: '[Trooper] AJ Hunter', factions: ['Police'] },
+        { name: '[Trooper] AJ Hunter', factions: ['Police'], nicknames: ['207'] },
     ],
     Ray__C: [
         { name: 'Raymond "Ray" Romanov', factions: ['Cleanbois', 'Rooster'], nicknames: ['Ray', reg(/\brussia/)], assumeServer: 'whitelist' },
