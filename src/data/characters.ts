@@ -1290,6 +1290,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Merlin Edmondstoune' },
         { name: 'William "Bill Ding" Ding', nicknames: ['Bill'] },
     ],
+    Minakorocket: [
+        { name: 'Mina Rocket', factions: ['Burger Shot'], displayName: 0 },
+    ],
     Ming: [
         { name: 'Ming Jingtai', factions: ['Gulag Gang'], assume: 'assumeNp', assumeServer: 'public' },
         { name: '[Officer] Jing Mingtai', factions: ['Police'], displayName: 1, assumeServer: 'public' },
