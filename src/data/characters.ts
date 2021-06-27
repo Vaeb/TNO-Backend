@@ -2103,7 +2103,7 @@ export const npCharacters: NpCharacters = {
     ],
     xReklez: [
         { name: 'AJ', factions: ['SSB'] },
-        { name: 'Chico Guzman', factions: ['Vagos'] },
+        { name: 'Chico Guzman', factions: ['Vagos', 'Burger Shot'] },
     ],
     YoinksOG: [
         { name: 'Doug Canada' },
