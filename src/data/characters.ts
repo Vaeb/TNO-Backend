@@ -1932,6 +1932,7 @@ export const npCharacters: NpCharacters = {
     ],
     TheBigMeech: [
         { name: 'Pilbis Shonly', factions: ['NBC'] },
+        { name: '[Officer] Chris Kross', factions: ['Police'] },
         { name: 'Tyler Kwando', displayName: 0 },
     ],
     TheChief1114: [
