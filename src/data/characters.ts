@@ -1062,7 +1062,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Ray Ray', factions: ['ASRR'], displayName: 0 },
     ],
     Kongfue: [
-        { name: 'Karl "KJ" Johnny', factions: ['Vagos'] },
+        { name: 'Karl "KJ" Johnny', factions: ['Vagos', 'Burger Shot'] },
     ],
     KristoferYee: [
         { name: 'Jay Que', factions: ['Rooster'], displayName: 0 },
