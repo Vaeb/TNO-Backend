@@ -949,6 +949,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Tony Foster' },
         { name: 'Shane Jones', factions: ['DoC'] },
     ],
+    Julian: [
+        { name: 'Julian Santorno', assumeServer: 'public' },
+    ],
     JustaMinx: [
         { name: 'Mercy Peggers' },
     ],
