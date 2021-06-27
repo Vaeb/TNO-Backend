@@ -1484,7 +1484,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Randy Wrangler', factions: ['Police'], nicknames: [reg(/\bwrang/), 'Court'] },
         { name: 'Jordan Steele', displayName: 0, nicknames: ['"Parking" God', 'Phoenix Messiah'] },
         { name: 'Ricky Robins' },
-        { name: 'Bob Smith', nicknames: ['B0b'], displayName: 0 },
+        { name: 'Bob Smith', factions: ['Vagos'], nicknames: ['B0b'], displayName: 0 },
         { name: 'Mike Block', factions: ['ASRR'], leader: true, displayName: 0 },
         { name: 'Chase Clouter' },
         { name: 'Jane Obama', displayName: 0 },
