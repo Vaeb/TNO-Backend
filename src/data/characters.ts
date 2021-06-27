@@ -1798,6 +1798,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Al Saab', factions: ['Cleanbois', 'HOA'], displayName: 2 },
         { name: '~Permathon~', nicknames: ['Saabathon'] },
     ],
+    stanwilis: [
+        { name: 'Trina Bergström', factions: ['Rooster'], nicknames: ['Bergstrom'], displayName: 0 },
+    ],
     steamcharlie: [
         { name: '[Deputy] Sydney Bearmont', factions: ['Police'], displayName: 1 },
     ],
@@ -1941,6 +1944,9 @@ export const npCharacters: NpCharacters = {
     TheDondi: [
         { name: 'Arthur Hammond', nicknames: ['The "Doctor"'] },
         { name: '[Officer] Delaney', factions: ['Police'] },
+    ],
+    TheEazyLife: [
+        { name: 'Brandon Valentino', factions: ['Rooster'], displayName: 0 },
     ],
     TheGeekEntry: [
         { name: 'Stacey Doyle' },

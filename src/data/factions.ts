@@ -39,7 +39,7 @@ export const npFactionsRegex = {
     gulaggang: noLater(noFormer(/\bgulag[\s\-_.]*gang/i)),
     news: noFormer(/(?<!(?:good|big|great|amazing|bad|some)\s*)\bnews\b|\blsbn\b|weazel[\s\-_.]*news/i),
     rooster: noFormer(/\brr\b|\brooster[^\w\s]?(?:s|\b)|rooster[\s\-_.]*(?:rest|ranch|reef|inn|hotel|cab)/i),
-    burgershot: noFormer(/(?<!(?:everyone|people)\s+at\s+)burger[\s\-]*shot|\bburgers\b/i),
+    burgershot: noFormer(/(?<!(?:everyone|people)\s+at\s+)burger[\s\-]*shot|\bburgers\b|\bburgersh/i),
     development: /\bdevelop|\bdev\b|\bcoding/i,
     doc: noLater(noFormer(/\bdoc\b|\bcorrection/i)),
     prison: noLater(/\blifer|\bprison|\blife\W+sentence/i),
