@@ -1792,7 +1792,8 @@ export const npCharacters: NpCharacters = {
     ],
     Ssaab: [
         { name: '[Deputy] Sam Baas', factions: ['Police'], nicknames: ['Samir', 'Baasem'], displayName: 2 },
-        { name: 'Al Saab', factions: ['Cleanbois', 'HOA'], nicknames: [reg(/\bsaab/)], displayName: 2 },
+        { name: 'Al Saab', factions: ['Cleanbois', 'HOA'], displayName: 2 },
+        { name: '~Permathon~', nicknames: ['Saabathon'] },
     ],
     steamcharlie: [
         { name: '[Deputy] Sydney Bearmont', factions: ['Police'], displayName: 1 },
