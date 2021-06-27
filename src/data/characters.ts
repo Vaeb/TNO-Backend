@@ -162,6 +162,9 @@ export const npCharacters: NpCharacters = {
         { name: '[EMS] Gioconda "Gio" Coppola', factions: ['Medical'], nicknames: ['T-17'] },
         { name: '[Officer] Gio Coppola', factions: ['Police'], nicknames: ['466'], displayName: 1, assumeServer: 'public' },
     ],
+    appyturk: [
+        { name: 'Appie Turk', factions: ['SSB'], displayName: 2, assumeServer: 'public' },
+    ],
     Arcadum: [
         { name: 'Svelt Tlevs', nicknames: ['Wizard'] },
     ],
