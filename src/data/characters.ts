@@ -589,6 +589,7 @@ export const npCharacters: NpCharacters = {
     ],
     extralivia: [
         { name: 'Jess ?', factions: ['SSB'] },
+        { name: 'Maia Berkeley' },
     ],
     F3ARzZ: [
         { name: 'Ranjit Raventish', factions: ['BSK'] },
@@ -1291,7 +1292,7 @@ export const npCharacters: NpCharacters = {
     ],
     Ming: [
         { name: 'Ming Jingtai', factions: ['Gulag Gang'], assume: 'assumeNp', assumeServer: 'public' },
-        { name: 'Jing Mingtai', factions: ['Police'], assumeServer: 'public' },
+        { name: '[Officer] Jing Mingtai', factions: ['Police'], displayName: 1, assumeServer: 'public' },
     ],
     miniminter: [
         { name: 'Peter Shufflebottom', displayName: 0 },
