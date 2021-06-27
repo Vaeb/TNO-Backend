@@ -530,13 +530,9 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
 
                     const hasFactions = factionNames.length;
 
-                    if (nowCharacter) {
+                    if (nowCharacter && onServerDetected === false) {
                         ({ assumeServer } = nowCharacter);
-                        if (assumeServer === 'whitelist') {
-                            onServer = regNpPublic.test(title) ? 'public' : 'whitelist';
-                        } else {
-                            onServer = regNpWhitelist.test(title) ? 'whitelist' : 'public';
-                        }
+                        onServer = assumeServer;
                     }
 
                     const onNpPublic = onServer === 'public';
