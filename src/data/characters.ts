@@ -736,7 +736,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Blaine Burke', factions: ['Angels'] },
     ],
     Harry: [
-        { name: 'Harry Brown', factions: ['Pegasus', 'Rooster'] },
+        { name: 'Harry Brown', factions: ['Cleanbois', 'Pegasus', 'Rooster'] },
     ],
     HasanAbi: [
         { name: 'Humberto Antonio Donato Pecorino', factions: ['Cleanbois', 'Rooster'], nicknames: ['Don', 'Donnie', reg(/\bOva[h']? here\b/)], displayName: 5 },
