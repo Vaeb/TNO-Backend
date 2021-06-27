@@ -1578,8 +1578,8 @@ export const npCharacters: NpCharacters = {
         { name: '[EMS] Connor', factions: ['Medical'] },
         { name: 'Malakai' },
     ],
-    ReinaRP: [
-        { name: 'Mona Sanchez' },
+    Reina: [
+        { name: 'Mona Sanchez', assume: 'assumeOther' },
     ],
     RemiTheSiren: [
         { name: '[Dr.] Lily Harte', factions: ['Medical'], displayName: 2 },
