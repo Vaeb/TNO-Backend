@@ -36,6 +36,7 @@ export const regOthers = [
     { name: 'LegacyRP', reg: /\blegacy[\s\-_.]*(?:rp\b|roleplay)/i, include: 1 },
     { name: 'New Day RP', reg: /\bnewday(?:rp|roleplay)?\b|\bnew\s+day\s*(?:rp|roleplay)\b/i, include: 1 },
     { name: 'SVRP', reg: /\bsvrp\b|subversion/i, include: 0 },
+    { name: 'BlueHavenRP', reg: /\bbhrp\b|blue[\s\-_.]*haven/i, include: 0 },
     { name: 'SSB WRLD', reg: /\bssb\b|ssb[\s:-]*(?:wo?rld|rp)|ssb\s+(?:later|after)/i, include: 0 },
     { name: 'FrenzyRP', reg: /\bfrenzy\s*rp/i, include: 0 },
     { name: 'Grizzley World', reg: /grizzley[\s\-]*wo?rld/i, include: 0 },
