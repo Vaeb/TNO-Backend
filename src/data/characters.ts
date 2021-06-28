@@ -1479,6 +1479,7 @@ export const npCharacters: NpCharacters = {
     ],
     omie: [
         { name: 'Marty Shanks', factions: ['Gulag Gang', 'Burger Shot'], nicknames: [reg(/\bburger/)], assumeServer: 'public' },
+        { name: 'Sharty Manks', factions: ['Police'], displayName: 0, assumeServer: 'public' },
     ],
     OneTapBingus: [
         { name: 'Bodhi Mack', factions: ['Vagos'] },
