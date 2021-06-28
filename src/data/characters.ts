@@ -212,6 +212,9 @@ export const npCharacters: NpCharacters = {
     AvaGG: [
         { name: 'Karen Dahmer', factions: ['Chang Gang'], affiliate: true, nicknames: ['Kawen'] },
     ],
+    awkwardsausesteph: [
+        { name: '[Officer] Rebecka Lovejoy', factions: ['Police'], nicknames: ['Beck', 'Becks', '521'] },
+    ],
     aXed_U: [
         { name: 'Hans Snitzel' },
     ],
