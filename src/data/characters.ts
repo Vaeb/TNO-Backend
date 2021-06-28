@@ -219,7 +219,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Hans Snitzel' },
     ],
     AyeGavMF: [
-        { name: '[Deputy] Dave Bird', factions: ['Police'], displayName: 0 },
+        { name: '[Deputy] Dave Bird', factions: ['Police'], assumeServer: 'public' },
     ],
     Baki961: [
         { name: 'Yoshimoto Nakanishi' },
