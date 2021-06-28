@@ -218,6 +218,9 @@ export const npCharacters: NpCharacters = {
     aXed_U: [
         { name: 'Hans Snitzel' },
     ],
+    AyeGavMF: [
+        { name: '[Deputy] Dave Bird', factions: ['Police'], displayName: 0 },
+    ],
     Baki961: [
         { name: 'Yoshimoto Nakanishi' },
     ],
@@ -253,6 +256,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Dr.] Torah Andrews', factions: ['Medical'] },
     ],
     biggieferreira: [
+        { name: '[Officer] Jamal Ferreira', factions: ['Police'], assumeServer: 'public' },
         { name: 'Shevy Santanna', factions: ['Vagos'] },
     ],
     BikeMan: [
