@@ -530,6 +530,7 @@ export const npCharacters: NpCharacters = {
     Dogbert: [
         { name: '[Deputy] Rocko Colombo', factions: ['Police'], nicknames: [reg(/\bcol.mb./)] },
         { name: 'Luther Caine', factions: ['HOA'] },
+        { name: 'Wyatt Mersion', factions: ['Mersions'] },
     ],
     Dorken: [
         { name: 'Valentina' },
@@ -1694,6 +1695,9 @@ export const npCharacters: NpCharacters = {
     ],
     shaggy_steve: [
         { name: '[Deputy] Jimmy Gordon', factions: ['Police'] },
+    ],
+    Sharaadrick: [
+        { name: '[Officer] Marcel King', factions: ['Police'], assumeServer: 'public' },
     ],
     Shindur: [
         { name: '[Deputy] Joey Keys', factions: ['Police'] },
