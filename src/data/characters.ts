@@ -168,6 +168,9 @@ export const npCharacters: NpCharacters = {
     Arcadum: [
         { name: 'Svelt Tlevs', nicknames: ['Wizard'] },
     ],
+    ArmandMorte: [
+        { name: 'Lucky Cox', factions: ['Condemned MC'], displayName: 0 },
+    ],
     Armeeof1: [
         { name: 'Milton Pointdexter' },
     ],
@@ -348,6 +351,9 @@ export const npCharacters: NpCharacters = {
     ],
     capsure: [
         { name: 'Dimitri Nekola', factions: ['Pegasus'] },
+    ],
+    CaptainBarb: [
+        { name: 'Mattias Nilson', factions: ['Condemned MC'], displayName: 0 },
     ],
     Carmen: [
         { name: 'Carmella Corset', factions: ['Rooster'] },
@@ -667,7 +673,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Brad Bett', factions: ['NBC'] },
     ],
     FragZone: [
-        { name: 'Derek Bogart', factions: ['Condemned MC'] },
+        { name: 'Derek Bogart', factions: ['Condemned MC'], displayName: 0 },
     ],
     frogbound: [
         { name: 'Edward Nygma' },
@@ -710,6 +716,9 @@ export const npCharacters: NpCharacters = {
     ggqf: [
         { name: '[Paladin /] Stagdancer', factions: ['LARPers', 'Rooster'], nicknames: ['Gea'] },
         { name: '[Officer] Bennett Calhoun', factions: ['Police'] },
+    ],
+    gibbs_gg: [
+        { name: 'Walter Franks', factions: ['Condemned MC'], displayName: 0 },
     ],
     goldelena: [
         { name: 'August Vakarian' },
@@ -1233,6 +1242,9 @@ export const npCharacters: NpCharacters = {
     Maggna: [
         { name: '[EMS] Mari Jones', factions: ['Medical'], nicknames: ['MJ'], displayName: 3 },
     ],
+    MalevolentReisu: [
+        { name: 'Trey Walker', factions: ['Condemned MC'], displayName: 0 },
+    ],
     malikouthere: [
         { name: 'Tito Conchas', factions: ['Vagos'] },
     ],
@@ -1497,6 +1509,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Marty Shanks', factions: ['Gulag Gang', 'Burger Shot'], nicknames: [reg(/\bburger/)], assumeServer: 'public' },
         { name: 'Sharty Manks', factions: ['Police'], displayName: 1, assumeServer: 'public' },
     ],
+    onebaw: [
+        { name: 'Arthur Morgan', factions: ['Condemned MC'], displayName: 0 },
+    ],
     OneTapBingus: [
         { name: 'Bodhi Mack', factions: ['Vagos'] },
     ],
@@ -1712,6 +1727,9 @@ export const npCharacters: NpCharacters = {
     ],
     Sharaadrick: [
         { name: '[Officer] Marcel King', factions: ['Police'], assumeServer: 'public' },
+    ],
+    ShawW0w: [
+        { name: 'Garry Roche', factions: ['Condemned MC'], displayName: 0 },
     ],
     Shindur: [
         { name: '[Deputy] Joey Keys', factions: ['Police'] },
@@ -2040,7 +2058,7 @@ export const npCharacters: NpCharacters = {
     ],
     TwistedBones: [
         { name: 'Mark White', displayName: 0 },
-        { name: 'Hank Marston', displayName: 0 },
+        { name: 'Hank Marston', factions: ['Condemned MC'], leader: true, displayName: 0 },
         { name: 'Marcus Black', factions: ['GSF'], displayName: 0 },
     ],
     TwistedManifest: [
@@ -2166,6 +2184,9 @@ export const npCharacters: NpCharacters = {
     ],
     Zerkaa: [
         { name: 'Tommy Tate', factions: ['Mandem'], displayName: 0 },
+    ],
+    Zettafrag: [
+        { name: 'Kimberly Daniels', factions: ['Condemned MC'], displayName: 0 },
     ],
     Ziggy: [
         { name: '[Ranger] Ziggy Buggs', factions: ['Police'], displayName: 1, assumeChar: true },
