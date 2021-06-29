@@ -87,6 +87,9 @@ export const npCharacters: NpCharacters = {
     adnormaltv: [
         { name: 'Ivan Gorbahtjov' },
     ],
+    adzno: [
+        { name: 'Aaron Melarky', factions: ['Condemned MC'], displayName: 0 },
+    ],
     Adzzstarr: [
         { name: '[Dr.] Valentine', factions: ['Medical'] },
     ],
