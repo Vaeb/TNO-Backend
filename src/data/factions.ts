@@ -130,7 +130,7 @@ export const useColorsDark = { // #f9002f
     asrr: '#a35231',
     angels: '#ff9ff3',
     nbc: '#789500',
-    mandem: '#e84393',
+    mandem: '#F95FAB',
     bbmc: '#3B64E6',
     burgershot: '#E99062',
     development: '#718093',
