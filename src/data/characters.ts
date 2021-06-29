@@ -1021,6 +1021,9 @@ export const npCharacters: NpCharacters = {
     KezieEve: [
         { name: 'Ghost Storm', factions: ['GSF'] },
     ],
+    KhaosAdam: [
+        { name: 'Adam Ababwa', factions: ['Mandem'], displayName: 0 },
+    ],
     KillrBeauty: [
         { name: 'Catherine Scratch', factions: ['Lost MC'], nicknames: ['Cat'], displayName: 3 },
     ],
@@ -1061,6 +1064,9 @@ export const npCharacters: NpCharacters = {
     ],
     KL33Si: [
         { name: '[Dr.] Emily Ducksworth', factions: ['Medical'], displayName: 0 },
+    ],
+    Klutch: [
+        { name: 'Eli Porter', factions: ['Mandem'], nicknames: ['Elz'], displayName: 0 },
     ],
     Knotty: [
         { name: 'Guy Jones', factions: ['NBC'], displayName: 0, leader: true },
@@ -1389,6 +1395,9 @@ export const npCharacters: NpCharacters = {
     NefariousCharm: [
         { name: '[EMS] Maya Jane', factions: ['Medical'] },
     ],
+    Neloc_: [
+        { name: 'Moses Khan', factions: ['Mandem'], displayName: 0 },
+    ],
     Nerdandi: [
         { name: 'Petunia Susan Brookshire', factions: ['Rooster'] },
     ],
@@ -1473,7 +1482,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Peter Frost', factions: ['Police'] },
     ],
     ogWiked: [
-        { name: 'Dwayne Flores', nicknames: ['Golden Boy'], displayName: 0 },
+        { name: 'Dwayne Flores', factions: ['Mandem'], nicknames: ['Golden Boy'], displayName: 0 },
         { name: 'Truth Flores', displayName: 0 },
     ],
     OhMadOne: [
@@ -1543,6 +1552,9 @@ export const npCharacters: NpCharacters = {
     Pons: [
         { name: '[Officer] Chet Manley', factions: ['Police'] },
         { name: '[Officer] Bodean Tucker', factions: ['Police'], nicknames: ['Bo'] },
+    ],
+    PotterTV: [
+        { name: 'Ali Ababwa', factions: ['Mandem'], displayName: 0 },
     ],
     PriddyFresh: [
         { name: 'Tupac Shakur' },
@@ -2100,6 +2112,9 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Alex Casterman', factions: ['Police'] },
         { name: 'Finlay' },
     ],
+    whosremz: [
+        { name: 'Remy Brown', factions: ['Mandem'], displayName: 1 },
+    ],
     WillerZ: [
         { name: 'Will Earnz', displayName: 0 },
     ],
@@ -2149,7 +2164,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Renato Ortiz', factions: ['Vagos'], displayName: 0 },
     ],
     Zerkaa: [
-        { name: 'Tommy Tate', displayName: 0 },
+        { name: 'Tommy Tate', factions: ['Mandem'], displayName: 0 },
     ],
     Ziggy: [
         { name: '[Ranger] Ziggy Buggs', factions: ['Police'], displayName: 1, assumeChar: true },

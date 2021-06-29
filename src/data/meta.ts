@@ -1,4 +1,4 @@
-export const npFactionsReal = {
+export const npFactionsReal = { // map: removed spaces + converted to lower case
     cleanbois: 'Cleanbois',
     lostmc: 'Lost MC',
     changgang: 'Chang Gang',
@@ -8,6 +8,7 @@ export const npFactionsReal = {
     ssb: 'SSB',
     pegasus: 'Pegasus',
     hoa: 'HOA',
+    mandem: 'Mandem',
     doj: 'DoJ',
     asrr: 'ASRR',
     angels: 'Angels',

@@ -35,6 +35,7 @@ export const npFactionsRegex = {
     asrr: noLater(noFormer(/\balta[\s\-]*street|\bblock(?:\b|[\s\-]*party|[\s\-]*athon)/i)),
     angels: noFormer(/\bangels\b/i),
     nbc: noFormer(/\bnbc\b/i),
+    mandem: noFormer(/\bmandem|\bmdma?\b/i),
     bbmc: noFormer(/\bbbmc\b|\bbondi/i),
     gulaggang: noLater(noFormer(/\bgulag[\s\-_.]*gang/i)),
     news: noFormer(/(?<!(?:good|big|great|amazing|bad|some)\s*)\bnews\b|\blsbn\b|weazel[\s\-_.]*news/i),
@@ -115,7 +116,7 @@ npFactionsRealMini.forEach((faction) => {
 // type FactionColorsMini = Exclude<FactionMini, NoFactionColorsMini>;
 // : { [key in FactionColorsMini]: string }
 
-export const useColorsDark = {
+export const useColorsDark = { // #f9002f
     cleanbois: '#e74c3c',
     lostmc: '#ab5179',
     changgang: '#686de0',
@@ -129,6 +130,7 @@ export const useColorsDark = {
     asrr: '#a35231',
     angels: '#ff9ff3',
     nbc: '#789500',
+    mandem: '#e84393',
     bbmc: '#3B64E6',
     burgershot: '#E99062',
     development: '#718093',
@@ -166,6 +168,7 @@ export const useColorsLight: { [key in FactionColorsMini]: string } = {
     asrr: '#a35231',
     angels: '#e192d7',
     nbc: '#789500',
+    mandem: '#e84393',
     bbmc: '#2250ff',
     burgershot: '#c77c50',
     development: '#718093',
