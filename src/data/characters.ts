@@ -959,6 +959,7 @@ export const npCharacters: NpCharacters = {
     ],
     Julian: [
         { name: 'Julian Santorno', assumeServer: 'public' },
+        { name: '[Officer] Jules Scarpetta', factions: ['Police'], nicknames: [reg(/\bscar/)], displayName: 1, assumeServer: 'public' },
     ],
     JustaMinx: [
         { name: 'Mercy Peggers' },
@@ -1472,7 +1473,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Peter Frost', factions: ['Police'] },
     ],
     ogWiked: [
-        { name: 'Dwayne Flores', displayName: 0 },
+        { name: 'Dwayne Flores', nicknames: ['Golden Boy'], displayName: 0 },
         { name: 'Truth Flores', displayName: 0 },
     ],
     OhMadOne: [
