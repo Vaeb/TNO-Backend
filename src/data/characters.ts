@@ -1311,6 +1311,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Dob Darker', nicknames: ['Dice is Right', 'Right Dice'], displayName: 0 },
         { name: 'Giovanni Atello', displayName: 1 },
         { name: 'Hazel Nutte' },
+        { name: 'Maybelle Ippi' },
         { name: 'Merlin Edmondstoune' },
         { name: 'William "Bill Ding" Ding', nicknames: ['Bill'] },
     ],
