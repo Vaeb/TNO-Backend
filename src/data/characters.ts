@@ -581,6 +581,7 @@ export const npCharacters: NpCharacters = {
     ],
     Elochai: [
         { name: 'Tao Chen', factions: ['Rooster'] },
+        { name: 'Damien Grey', factions: ['Condemned MC'], displayName: 0 },
     ],
     ElvisRP: [
         { name: '[Deputy] John Dorian', factions: ['Police'] },
