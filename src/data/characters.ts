@@ -1388,6 +1388,9 @@ export const npCharacters: NpCharacters = {
     Myladyballs: [
         { name: 'Veronica Garcia', factions: ['Vagos'] },
     ],
+    Myles_Away: [
+        { name: 'Whitley Booth', factions: ['Condemned MC'] },
+    ],
     Mythematic: [
         { name: 'Mike Rosoftsam', affiliate: true },
     ],
