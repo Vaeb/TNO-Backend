@@ -612,7 +612,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Ted Kindly' },
     ],
     extralivia: [
-        { name: 'Jess ?', factions: ['SSB'] },
+        { name: 'Jessica Bays', factions: ['SSB'] },
         { name: 'Maia Berkeley' },
     ],
     F3ARzZ: [
@@ -681,6 +681,9 @@ export const npCharacters: NpCharacters = {
     ],
     FragZone: [
         { name: 'Derek Bogart', factions: ['Condemned MC'], displayName: 0 },
+    ],
+    Frobotic: [
+        { name: 'Dizzy Bluffins', factions: ['SSB'], displayName: 1 },
     ],
     frogbound: [
         { name: 'Edward Nygma' },
@@ -1237,6 +1240,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Benji Ramos', factions: ['Vagos'], nicknames: ['B'] },
         { name: 'Dean Duncan', factions: ['DoC'] },
     ],
+    M0Dmr: [
+        { name: 'David Rusky', factions: ['SSB'] },
+    ],
     Macaiyla: [
         { name: 'Jolene Grace', nicknames: ['Savannah'] },
     ],
@@ -1509,6 +1515,7 @@ export const npCharacters: NpCharacters = {
     ],
     ogWiked: [
         { name: 'Dwayne Flores', factions: ['Mandem'], nicknames: ['Golden Boy'], displayName: 0 },
+        { name: 'Kyrus Langley', factions: ['SSB'], displayName: 1 },
         { name: 'Truth Flores', displayName: 0 },
     ],
     OhMadOne: [
@@ -2011,6 +2018,9 @@ export const npCharacters: NpCharacters = {
     ],
     TheEazyLife: [
         { name: 'Brandon Valentino', factions: ['Rooster'], displayName: 0 },
+    ],
+    theeYAIR: [
+        { name: 'Yair Lamas', factions: ['SSB'], displayName: 0 },
     ],
     TheGeekEntry: [
         { name: 'Stacey Doyle' },
