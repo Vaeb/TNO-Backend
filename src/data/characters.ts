@@ -441,6 +441,9 @@ export const npCharacters: NpCharacters = {
     CptCheeto: [
         { name: '[Officer] Scott Ridley', factions: ['Police'] },
     ],
+    craigysmith89: [
+        { name: 'Frank Junior-Smith', factions: ['Vagos'], nicknames: ['Frank Jr Smith', 'Scottish'], displayName: 3 },
+    ],
     CrayonPonyfish: [
         { name: 'Sadie Thistle' },
         { name: 'Wynona Fontaine', factions: ['DoC'], displayName: 2 },
@@ -1051,6 +1054,9 @@ export const npCharacters: NpCharacters = {
     ],
     King_1455: [
         { name: 'Cooch Cassidy', factions: ['Lost MC'] },
+    ],
+    KingsGamingUnleashed: [
+        { name: 'Pablo Loco', factions: ['Vagos'], displayName: 0 },
     ],
     KinkyHobo_: [
         { name: '[Lawyer /] Gill Schultz', factions: ['DoJ'], displayName: 1 },
@@ -2105,6 +2111,9 @@ export const npCharacters: NpCharacters = {
     ],
     Vigors: [
         { name: '[Warlock /] Kayn "Yager Demonblood" Larp', factions: ['LARPers', 'Rooster'], nicknames: ['Warlock', 'Fighter', 'Yager', 'Demonblood', 'Demon'], displayName: 0 },
+    ],
+    VinterPhoenix: [
+        { name: 'Raymond Frost', factions: ['Vagos'], displayName: 0 },
     ],
     Viviana: [
         { name: 'Griselda Ambrose', nicknames: ['Granny'] },
