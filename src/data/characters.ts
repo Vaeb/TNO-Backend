@@ -783,9 +783,6 @@ export const npCharacters: NpCharacters = {
         { name: '[Dispatch] Ramona Celeste', factions: ['Police'], displayName: 1 },
         { name: '[Ranger] Ramona Celeste', factions: ['Police'], displayName: 1, assumeServer: 'public' },
     ],
-    HexagonistLIVE: [
-        { name: '[Deputy] Vincent Glass', factions: ['Police'], displayName: 2 },
-    ],
     HeyOrbz: [
         { name: '[Officer] Casey Valentine', factions: ['Police'] },
         { name: 'Richie Mersion', factions: ['Mersions'], displayName: 0 },
@@ -2055,6 +2052,9 @@ export const npCharacters: NpCharacters = {
     TheGeekEntry: [
         { name: 'Stacey Doyle' },
         { name: 'Jenn Bordeaux', nicknames: ['Frenchie', 'French'] },
+    ],
+    TheHexagonist: [
+        { name: '[Deputy] Vincent Glass', factions: ['Police'], displayName: 2 },
     ],
     theLGX: [
         { name: 'Bryce Miller', nicknames: ['BDawg'], assumeServer: 'whitelist' },
