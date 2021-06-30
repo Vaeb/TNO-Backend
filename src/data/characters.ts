@@ -234,6 +234,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Claire Seducer', factions: ['Angels'] },
         { name: '[Officer] Tyme Reducer', factions: ['Police'] },
         { name: 'Becky Hopper', displayName: 0 },
+        { name: 'Juanita Carlita Hernandez', nicknames: ['Flippa'] },
     ],
     BananaDuck: [
         { name: 'Billy Sprinkle', displayName: 0 },
