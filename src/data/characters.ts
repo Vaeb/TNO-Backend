@@ -804,7 +804,8 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Honathan Yolo', factions: ['Police'] },
     ],
     Hoss: [
-        { name: 'Chip Wheeler', factions: ['BBMC'], displayName: 0 },
+        { name: 'Chip Wheeler', factions: ['BBMC'], displayName: 0, assumeServer: 'whitelist' },
+        { name: 'Rocky Balboner', displayName: 0, assumeServer: 'public' },
     ],
     Hotted89: [
         { name: '[Deputy] Matthew Espinoz', factions: ['Police'], nicknames: ['Airspinoz', 'Air 1 Andy'] },
