@@ -1375,7 +1375,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Charles White', displayName: 0 },
     ],
     MOONMOON: [
-        { name: '[Deputy] Lenny Hawk', factions: ['Police'], nicknames: ['Renegade'], displayName: 0, assume: 'assumeNp' },
+        { name: '[Deputy] Lenny Hawk', factions: ['Police'], nicknames: ['Renegade'], displayName: 1, assume: 'assumeNp' },
         { name: '[Shadowlord /] Bernice Caldershot', factions: ['LARPers'] },
         { name: 'Ro Block', factions: ['ASRR'], displayName: 0 },
         { name: 'Maximilian "Yung Dab" Thoroughbred', nicknames: ['The "Gnome"', 'Yung', 'Dab', 'Max'], displayName: 0 },
@@ -1919,7 +1919,7 @@ export const npCharacters: NpCharacters = {
     ],
     Surefour: [
         { name: 'Clarence Trueshot', factions: ['LARPers', 'Rooster'], nicknames: ['Necrolord', 'Ranger'], displayName: 3 },
-        { name: '[Officer] Kenny Hawk', factions: ['Police'], nicknames: ['Powice'], displayName: 0 },
+        { name: '[Officer] Kenny Hawk', factions: ['Police'], nicknames: ['Powice'], displayName: 1 },
     ],
     Suspect: [
         { name: 'Marcos Da Silva' },
