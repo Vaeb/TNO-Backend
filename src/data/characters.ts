@@ -420,6 +420,9 @@ export const npCharacters: NpCharacters = {
     ChelbM: [
         { name: 'Alan Kyles', factions: ['NBC'], displayName: 0 },
     ],
+    Citizen_Cannon: [
+        { name: 'Marco Richter', factions: ['Prison'], displayName: 0 },
+    ],
     ClassyPax: [
         { name: 'Madam Ming', displayName: 0 },
         { name: '[Dr.] Ethan Maw', factions: ['Medical'], displayName: 2 },
