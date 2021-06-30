@@ -1609,6 +1609,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Jason Paul', factions: ['Lost MC'], nicknames: ['JP'] },
         { name: 'Hades', nicknames: ['Dog'] },
     ],
+    puddledux: [
+        { name: 'Jake Rake', factions: ['Prison'], displayName: 0 },
+    ],
     Purge9090: [
         { name: 'Jack Frent', factions: ['DoC'], displayName: 0 },
     ],
