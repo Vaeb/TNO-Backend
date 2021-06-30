@@ -411,6 +411,9 @@ export const npCharacters: NpCharacters = {
     chairhandler: [
         { name: 'Carl Crimes' },
     ],
+    Chanpu: [
+        { name: 'Justin "Victor" Bridges', factions: ['Angels'] },
+    ],
     Chaseman7GG: [
         { name: 'Miguel Guerrero', factions: ['Vagos'] },
     ],
