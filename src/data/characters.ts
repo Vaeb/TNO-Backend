@@ -344,7 +344,7 @@ export const npCharacters: NpCharacters = {
         { name: '? "Brother Mehof" ?' },
     ],
     bythybeard: [
-        { name: '[Officer] Sexton Hardcastle', factions: ['Police'], displayName: 1 },
+        { name: '[Officer] Sexton Hardcastle', factions: ['Police'], displayName: 2 },
         { name: 'Wade Willson', factions: ['Lost MC'] },
     ],
     CallMeGrub: [
@@ -1249,7 +1249,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Barbie Chan' },
     ],
     LunaOni: [
-        { name: '[Officer] Claire Everly', factions: ['Police'] },
+        { name: '[Officer] Claire Everly', displayName: 1, factions: ['Police'] },
         { name: 'Mayumi Himura' },
     ],
     Lyndi: [
@@ -1619,7 +1619,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Kareem Lyon', factions: ['Police'], displayName: 1 },
     ],
     PsiSyn: [
-        { name: '[Officer] Lucio Panini', factions: ['Police'], assumeServer: 'public' },
+        { name: '[Officer] Lucio Panini', factions: ['Police'], displayName: 1, assumeServer: 'public' },
     ],
     Pssychotic: [
         { name: 'Jason Paul', factions: ['Lost MC'], nicknames: ['JP'] },
