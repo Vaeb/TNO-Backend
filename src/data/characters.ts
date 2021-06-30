@@ -1375,7 +1375,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Charles White', displayName: 0 },
     ],
     MOONMOON: [
-        { name: '[Deputy] Lenny Hawk', factions: ['Police'], nicknames: ['Renegade'], displayName: 1, assume: 'assumeNp' },
+        { name: '[Officer] Lenny Hawk', factions: ['Police'], nicknames: ['Renegade'], displayName: 1, assume: 'assumeNp' },
         { name: '[Shadowlord /] Bernice Caldershot', factions: ['LARPers'] },
         { name: 'Ro Block', factions: ['ASRR'], displayName: 0 },
         { name: 'Maximilian "Yung Dab" Thoroughbred', nicknames: ['The "Gnome"', 'Yung', 'Dab', 'Max'], displayName: 0 },
