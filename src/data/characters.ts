@@ -1721,7 +1721,6 @@ export const npCharacters: NpCharacters = {
     Saiiren: [
         { name: 'Ai "Betch" Musori', nicknames: ['Bitch'], factions: ['Rooster'], displayName: 0 },
         { name: '[Deputy] Yuu Gondai', factions: ['Police'], nicknames: ['Yu', 'Yoo', 'Gon Die'] },
-        { name: '"~Podcast~"', nicknames: ['Podcast'], factions: ['Podcast'] },
     ],
     Sal_Rosenberg: [
         { name: 'Sal Rosenberg' },
@@ -1893,7 +1892,6 @@ export const npCharacters: NpCharacters = {
     Ssaab: [
         { name: '[Deputy] Sam Baas', factions: ['Police'], nicknames: ['Samir', 'Baasem'], displayName: 2 },
         { name: 'Al Saab', factions: ['Cleanbois', 'HOA'], displayName: 2 },
-        { name: '~Permathon~', nicknames: ['Saabathon'] },
     ],
     stanwilis: [
         { name: 'Trina Bergström', factions: ['Rooster'], nicknames: ['Bergstrom'], displayName: 0 },
