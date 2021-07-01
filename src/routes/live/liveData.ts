@@ -213,8 +213,13 @@ const npFactionsRegexEntries = Object.entries(npFactionsRegex) as [NpFactionsReg
 
 const knownPfps: { [key: string]: string } = {};
 
-export const getStreams = async (searchNum = searchNumDefault): Promise<HelixStream[]> => {
+interface GetStreamsOptions { searchNum?: number; international?: boolean }
+type GetStreamsOptionsRequired = Required<GetStreamsOptions>;
+export const getStreams = async (options: GetStreamsOptions): Promise<HelixStream[]> => {
+    const optionsParsed: GetStreamsOptionsRequired = { searchNum: searchNumDefault, international: false, ...options };
+    let { searchNum } = optionsParsed;
     searchNum = Math.min(searchNum, searchNumMax);
+
     // const gtaGame = await apiClient.helix.games.getGameById(game);
     const gtaStreamsObj: { [key: string]: HelixStream } = {};
     const gtaStreams: HelixStream[] = [];
@@ -224,7 +229,7 @@ export const getStreams = async (searchNum = searchNumDefault): Promise<HelixStr
         searchNum -= limitNow;
         const gtaStreamsNow: HelixPaginatedResult<HelixStream> = await apiClient.helix.streams.getStreams({
             game,
-            language,
+            language: optionsParsed.international ? undefined : language,
             limit: String(limitNow),
             type: streamType,
             after,
@@ -263,6 +268,7 @@ export interface LiveOptions {
     allowPublic: boolean;
     allowOthers: boolean;
     darkMode: boolean;
+    international: boolean;
     searchNum?: number;
 }
 
@@ -305,6 +311,7 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
         filterEnabled: true,
         allowPublic: true,
         allowOthers: true,
+        international: false,
         darkMode: true,
         ...filterObj(
             mapObj(baseOptions as RecordGen, (v, k) => {
