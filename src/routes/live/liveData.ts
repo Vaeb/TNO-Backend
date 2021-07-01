@@ -216,7 +216,12 @@ const knownPfps: { [key: string]: string } = {};
 interface GetStreamsOptions { searchNum?: number; international?: boolean }
 type GetStreamsOptionsRequired = Required<GetStreamsOptions>;
 export const getStreams = async (options: GetStreamsOptions): Promise<HelixStream[]> => {
-    const optionsParsed: GetStreamsOptionsRequired = { searchNum: searchNumDefault, international: false, ...options };
+    const optionsParsed: GetStreamsOptionsRequired = {
+        searchNum: searchNumDefault,
+        international: false,
+        ...filterObj(options, v => v !== undefined),
+    };
+
     let { searchNum } = optionsParsed;
     searchNum = Math.min(searchNum, searchNumMax);
 
