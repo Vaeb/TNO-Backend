@@ -667,13 +667,13 @@ export const getNpStreams = async (baseOptions = {}, override = false): Promise<
 
 getNpLive();
 
-setInterval(() => {
+setInterval(async () => {
     const cachedResultsKeys = Object.keys(cachedResults);
     if (!cachedResultsKeys.length) return;
     log('Refreshing cache...');
     for (const optionsStr of cachedResultsKeys) {
         log('Refreshing optionStr');
         const optionsObj = JSON.parse(optionsStr);
-        getNpLive(optionsObj, true);
+        await getNpLive(optionsObj, true);
     }
 }, updateCacheMs);
