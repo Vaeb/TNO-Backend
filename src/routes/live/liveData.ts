@@ -336,11 +336,11 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                 log('Fetching streams data...');
 
                 const {
-                    factionName, filterEnabled, allowPublic, allowOthers, searchNum,
+                    factionName, filterEnabled, allowPublic, allowOthers, searchNum, international,
                 } = options;
                 const allowOthersNow = allowOthers || factionName === 'other';
 
-                const gtaStreams = await getStreams(searchNum);
+                const gtaStreams = await getStreams({ searchNum, international });
 
                 // log(gtaStreams.length);
 
