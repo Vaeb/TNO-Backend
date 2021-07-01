@@ -80,7 +80,7 @@ const toFactionMini = (faction: string) => faction.toLowerCase().replace(' ', ''
 */
 for (const [streamer, characters] of Object.entries(npCharacters)) {
     if (characters.length > 0) {
-        characters.push({ name: '~One Life Character~', nicknames: ['Permathon', 'Perma?thon', '/\\bone[\\s-]life/'] } as Character); // '/\\bone[\\s-]life[\\s-]charac/'
+        characters.push({ name: '? "~One Life Character~" ?', nicknames: ['Permathon', 'Perma?thon', '/\\bone[\\s-]life/'], assumeServer: 'both' } as Character); // '/\\bone[\\s-]life[\\s-]charac/'
     }
 
     const foundOthers: { [key in AssumeOther]?: boolean } = {};
@@ -484,7 +484,7 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                         for (const char of characters) {
                             const matchPositions = [...titleParsed.matchAll(char.nameReg)];
                             const numResults = matchPositions.length;
-                            const lowIndex = numResults ? matchPositions[0].index! + (onServerDetected && char.assumeServer !== onServer ? 1e4 : 0) : -1;
+                            const lowIndex = numResults ? matchPositions[0].index! + (onServerDetected && char.assumeServer !== onServer && char.assumeServer !== 'both' ? 1e4 : 0) : -1;
                             if (lowIndex > -1 && (lowIndex < lowestPos || (lowIndex === lowestPos && numResults > maxResults))) {
                                 lowestPos = lowIndex;
                                 maxResults = numResults;
