@@ -2223,6 +2223,9 @@ export const npCharacters: NpCharacters = {
     XMOTHATRUCKAX: [
         { name: 'Ronald "Red" Juggler' },
     ],
+    xNittyGritty: [
+        { name: 'Donny ?', factions: ['Rooster'] },
+    ],
     xReklez: [
         { name: 'AJ', factions: ['SSB'] },
         { name: 'Chico Guzman', factions: ['Vagos', 'Burger Shot'] },
