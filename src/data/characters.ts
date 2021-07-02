@@ -431,6 +431,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Madam Ming', displayName: 0 },
         { name: '[Dr.] Ethan Maw', factions: ['Medical'], displayName: 2 },
     ],
+    CloudyDL: [
+        { name: 'Scotty Dixon', factions: ['BSK'] },
+    ],
     CoconutB: [
         { name: '? ?' },
     ],
@@ -1938,6 +1941,9 @@ export const npCharacters: NpCharacters = {
     ],
     Suspect: [
         { name: 'Marcos Da Silva' },
+    ],
+    suzster: [
+        { name: 'Michael Kowalski', factions: ['BSK'], displayName: 0 },
     ],
     suzy_q: [
         { name: 'Dreah Johnson', factions: ['Rooster'] },
