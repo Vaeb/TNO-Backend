@@ -237,7 +237,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Juanita Carlita Hernandez', nicknames: ['Flippa'] },
     ],
     BananaDuck: [
-        { name: 'Billy Sprinkle', displayName: 0 },
+        { name: 'Billy Sprinkle', factions: ['GSF'], displayName: 0 },
         { name: 'Jimmy Limbs', displayName: 0 },
         { name: 'Dick Fillet', displayName: 0 },
         { name: 'Ravi Ravson', displayName: 0 },
