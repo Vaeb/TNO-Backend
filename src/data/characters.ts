@@ -1579,7 +1579,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Ricky Robins' },
         { name: 'Bob Smith', factions: ['Vagos'], nicknames: ['B0b Smith', 'B0b'], displayName: 3 },
         { name: 'Mike Block', factions: ['ASRR'], leader: true, displayName: 0 },
-        { name: 'Chase Clouter' },
+        { name: 'Chase Clouter', displayName: 0 },
         { name: 'Karen Karenly' },
         { name: 'Jane Obama', displayName: 0 },
     ],
