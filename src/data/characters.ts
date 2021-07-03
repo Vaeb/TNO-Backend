@@ -2259,7 +2259,7 @@ export const npCharacters: NpCharacters = {
     ],
     Ziggy: [
         { name: '[Ranger] Ziggy Buggs', factions: ['Police'], displayName: 1, assumeChar: true },
-        { name: '[Lawyer /] Norman Bones', factions: ['DoJ'], displayName: 0 },
+        { name: 'Norman Bones', displayName: 0 },
     ],
     zirnrp: [
         { name: 'Solomon Seerson' },
