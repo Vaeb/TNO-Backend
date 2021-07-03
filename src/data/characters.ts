@@ -1375,7 +1375,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Jing Mingtai', factions: ['Police'], displayName: 1, assumeServer: 'public' },
     ],
     miniminter: [
-        { name: 'Peter Shufflebottom', displayName: 0 },
+        { name: 'Peter Shufflebottom', displayName: 0, assume: 'assumeOther' },
     ],
     MinusFive: [
         { name: '[Officer] Jason Bidwell', factions: ['Police'] },
