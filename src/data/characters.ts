@@ -270,7 +270,8 @@ export const npCharacters: NpCharacters = {
         { name: 'Chet Summerset', assume: 'assumeNpNoOther' },
     ],
     Biotoxz_: [
-        { name: '[Barbarian /] Bjorn', factions: ['LARPers', 'Rooster'] },
+        { name: '[Barbarian /] Bjorn', factions: ['LARPers', 'Rooster'], assumeServer: 'whitelist' },
+        { name: '[Barbarian /] Bjorn', factions: ['Police', 'LARPers'], assumeServer: 'public' },
     ],
     BJPofficial: [
         { name: '[Lawyer /] Buford J. Preston', factions: ['DoJ'] },
@@ -1733,8 +1734,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Dimitri Barkov', factions: ['HOA'] },
     ],
     Sareff: [
+        { name: 'Paige Green' },
+        { name: 'Jocelyn Wayne' },
         { name: 'Violet Noreguarde', factions: ['Vagos'], assumeServer: 'whitelist' },
-        { name: '[D.A.] Paige Green', factions: ['DoJ'] },
         { name: '[Deputy] Paige Green', factions: ['Police'], assumeServer: 'public' },
         { name: 'Chasity Dawes' },
     ],
