@@ -1829,7 +1829,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Tito Higgins' },
     ],
     SirPink: [
-        { name: 'Reginald "Reggie" Bigglesby', factions: ['Burger Shot'] },
+        { name: 'Reginald "Reggie" Bigglesby', factions: ['Burger Shot', 'Rooster'] },
     ],
     Skannerz_: [
         { name: 'Wayne Kerr' },
