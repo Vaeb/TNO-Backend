@@ -1580,6 +1580,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Bob Smith', factions: ['Vagos'], nicknames: ['B0b Smith', 'B0b'], displayName: 3 },
         { name: 'Mike Block', factions: ['ASRR'], leader: true, displayName: 0 },
         { name: 'Chase Clouter' },
+        { name: 'Karen Karenly' },
         { name: 'Jane Obama', displayName: 0 },
     ],
     peterparkTV: [
