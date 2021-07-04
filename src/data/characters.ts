@@ -562,6 +562,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Valentina' },
         { name: 'Nicholine Quinn' },
     ],
+    DotoDoya: [
+        { name: 'Landon Campbell', displayName: 0, assume: 'assumeNpNoOther' },
+    ],
     Doug: [
         { name: 'Gazpacho Prince', nicknames: ['Pachi', 'Spachi'] },
         { name: 'William "W" Told', nicknames: ['Lil Pump'] },
