@@ -1651,6 +1651,7 @@ export const npCharacters: NpCharacters = {
     ],
     Ragonath: [
         { name: 'Maxwell Devitt', displayName: 0 },
+        { name: 'Ezekiel "Zeke" Stahl', factions: ['Prison'], displayName: 0 },
     ],
     Raided: [
         { name: '[Officer] Gage Draider', factions: ['Police'] },
