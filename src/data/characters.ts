@@ -834,6 +834,7 @@ export const npCharacters: NpCharacters = {
     ],
     Hurnani: [
         { name: 'Borat ?' },
+        { name: 'Bruno Brown', displayName: 0 },
         { name: 'James-Kamea Brown', factions: ['Vagos'] },
     ],
     HutchMF: [
