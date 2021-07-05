@@ -1002,6 +1002,9 @@ export const npCharacters: NpCharacters = {
     JustaMinx: [
         { name: 'Mercy Peggers' },
     ],
+    JustJambaa: [
+        { name: 'La Flare Davis', displayName: 0 },
+    ],
     JustJamie: [
         { name: '[Officer] George Lawson', factions: ['Police'], nicknames: ['592'] },
         { name: 'Tommy Cruizer', factions: ['Tuner Shop'] },
