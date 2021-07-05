@@ -1069,7 +1069,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Ghost Storm', factions: ['GSF'] },
     ],
     KhaosAdam: [
-        { name: 'Adam Ababwa', factions: ['Mandem'], displayName: 0 },
+        { name: 'Adam Ababwa', factions: ['Mandem'], assume: 'assumeOther', displayName: 0 },
     ],
     KillrBeauty: [
         { name: 'Catherine Scratch', factions: ['Lost MC'], nicknames: ['Cat'], displayName: 3 },
