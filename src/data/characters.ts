@@ -93,7 +93,7 @@ export const npCharacters: NpCharacters = {
     Adzzstarr: [
         { name: '[Dr.] Valentine', factions: ['Medical'] },
     ],
-    AfriicanSnowball: [
+    AfricanSnowball: [
         { name: '[Justice] Buck Stanton', factions: ['DoJ'] },
         { name: '[Officer] Dwayne Carter IV', factions: ['Police'], displayName: 2 },
         { name: 'Leland "LJ" Jones', factions: ['GSF', 'Pegasus'] },
