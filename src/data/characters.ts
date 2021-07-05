@@ -1653,6 +1653,9 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Gage Draider', factions: ['Police'] },
         { name: '[Development /] Raided', factions: ['Development'] },
     ],
+    raine: [
+        { name: 'Penny Farthing', factions: ['Rooster'] },
+    ],
     Ramee: [
         { name: 'Ramee El-Rahman', factions: ['Chang Gang'], nicknames: ['The "Warlord"', 'The "Vulture"', 'SBS Patient-0'] },
         { name: '[Ranger] Conan Clarkson', factions: ['Police'] },
@@ -1758,9 +1761,6 @@ export const npCharacters: NpCharacters = {
     SayeedBlack: [
         { name: 'Arush Patel "Speedy" Santana', factions: ['Vagos'], leader: true, nicknames: ['El Jefe'] },
         { name: 'Sayeed White', factions: ['DoC'], nicknames: ['Mr. White'], displayName: 3 },
-    ],
-    ScarletSpace: [
-        { name: 'Penny Farthing', factions: ['Rooster'] },
     ],
     SeaNanners: [
         { name: 'Ronjulio Escjulio' },
