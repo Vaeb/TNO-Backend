@@ -1717,9 +1717,10 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Maggie Dean', factions: ['Police'] },
     ],
     Roxmiral: [
+        { name: 'Sherry Paie', factions: ['Burger Shot'], displayName: 1, assumeServer: 'whitelist' },
+        { name: '[Ranger] Sherry Paie', factions: ['Police'], displayName: 1, assumeServer: 'public' },
         { name: 'Ruby Morris' },
         { name: 'Nikki Drools', factions: ['DoC'] },
-        { name: 'Sherry Paie', factions: ['Burger Shot'], displayName: 1 },
         { name: 'Sherry Lee' },
     ],
     RudeNoodleNPC: [
