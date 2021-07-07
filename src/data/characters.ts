@@ -1621,7 +1621,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Adam Peterson', displayName: 0 },
     ],
     Pons: [
-        { name: '[Officer] Chet Manley', factions: ['Police'] },
+        { name: '[Officer] Chet Manley', factions: ['Police'], displayName: 1, assume: 'assumeOther' },
         { name: '[Officer] Bodean Tucker', factions: ['Police'], nicknames: ['Bo'] },
     ],
     PotterTV: [
