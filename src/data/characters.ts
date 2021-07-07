@@ -432,6 +432,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Madam Ming', displayName: 0 },
         { name: '[Dr.] Ethan Maw', factions: ['Medical'], displayName: 2 },
     ],
+    cleaneu: [
+        { name: 'Pete Bourke', factions: ['Prison'], displayName: 0 },
+    ],
     CloudyDL: [
         { name: 'Scotty Dixon', factions: ['BSK'] },
     ],
