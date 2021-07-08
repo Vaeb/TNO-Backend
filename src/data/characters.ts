@@ -396,7 +396,7 @@ export const npCharacters: NpCharacters = {
     charlieblossom: [
         { name: 'Georgina "Windsong" Williams' },
     ],
-    ChatterBox0: [
+    Chatterbox: [
         { name: 'Jagger "Chatterbox" Gerardy' },
     ],
     Chief: [
