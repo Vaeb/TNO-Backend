@@ -585,7 +585,7 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                             nowCharacter = characters.assumeChar;
                             possibleCharacter = nowCharacter;
                         } else {
-                            possibleCharacter = characters[0];
+                            possibleCharacter = characters.find((char => char.assumeServer === onServer)) || characters[0];
                         }
                     }
 
