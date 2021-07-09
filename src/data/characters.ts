@@ -636,7 +636,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Maia Berkeley' },
     ],
     F3ARzZ: [
-        { name: 'Ranjit Raventish', factions: ['BSK'] },
+        { name: 'Ranjit Raventish' },
     ],
     Fairlight_Excalibur: [
         { name: 'Raja Bahadur', factions: ['QuickFix'], leader: true },
