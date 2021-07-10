@@ -1401,8 +1401,9 @@ export const npCharacters: NpCharacters = {
         { name: '[EMS] Janus Lee', factions: ['Medical'] },
     ],
     Moboking: [
-        { name: '[Ranger] Ellis Pinzon', factions: ['Police'], nicknames: ['Ronaldo'] },
-        { name: 'Aleksander Bogorov', factions: ['Angels'], nicknames: ['Aleks'], displayName: 3 },
+        { name: '[Ranger] Ellis Pinzon', factions: ['Police'], nicknames: ['Ronaldo'], assumeServer: 'whitelist' },
+        { name: 'Aleksander Bogorov', factions: ['Angels'], nicknames: ['Aleks'], displayName: 3, assumeServer: 'whitelist' },
+        { name: '[Officer] Aleks Sazkaljovich', factions: ['Police'], displayName: 1, assumeServer: 'public' },
         { name: 'Elijiah "Middle E" Parks', factions: ['SSB'] },
     ],
     moistcr1tikal: [
