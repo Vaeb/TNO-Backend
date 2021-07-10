@@ -1339,6 +1339,9 @@ export const npCharacters: NpCharacters = {
     MeMayoi: [
         { name: 'Yoi Tsukita', factions: ['Rooster'] },
     ],
+    Merrcy: [
+        { name: 'Cody Palmer', factions: ['Rooster'], displayName: 0 },
+    ],
     Mervin: [
         { name: 'Mervin Potts' },
     ],
