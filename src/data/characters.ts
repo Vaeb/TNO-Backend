@@ -1067,7 +1067,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Lilian "Lily" Mackenzie', factions: ['GSF'] },
     ],
     Kemony: [
-        { name: 'Susie Carmichael' },
+        { name: 'Susie Carmichael', displayName: 0 },
     ],
     Kennasofly: [
         { name: 'Jupiter Adams', displayName: 0 },
