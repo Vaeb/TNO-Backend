@@ -679,7 +679,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Rhode Block', factions: ['ASRR'], displayName: 0 },
     ],
     FloMcNasty_TV: [
-        { name: 'Richard Chiclets', factions: ['Burger Shot'], displayName: 0 },
+        { name: 'Richard Chiclets', factions: ['Burger Shot'], nicknames: ['Dick Chiclets'], displayName: 3 },
     ],
     Forlorn79: [
         { name: '[EMS] Amoris Pax', factions: ['Medical'] },
