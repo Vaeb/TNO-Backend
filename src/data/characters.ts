@@ -1728,6 +1728,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Robert Spowylamywanowski', nicknames: ['Rob', 'Polish', 'Night Manager'], displayName: 3 },
     ],
     Rose: [
+        { name: '[Deputy] Perrie Lane', factions: ['Police'] },
         { name: '[Deputy] Maggie Dean', factions: ['Police'] },
     ],
     Roxmiral: [
