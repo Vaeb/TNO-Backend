@@ -866,6 +866,9 @@ export const npCharacters: NpCharacters = {
         { name: 'AK', factions: ['SSB'] },
         { name: 'Derek Monroe' },
     ],
+    indur: [
+        { name: '[Deputy] Dea Bane', factions: ['Police'], assumeServer: 'public' },
+    ],
     INFLUXPictures: [
         { name: 'Tony Venucci', displayName: 0 },
     ],
