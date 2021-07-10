@@ -846,6 +846,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Drew "Dead Eye Drew"', nicknames: ['DeadEye'] },
         { name: 'Hutch Hendrickson' },
     ],
+    HydraPlz: [
+        { name: 'Gandalf "Stankyleg" Butters', factions: ['ASRR'] },
+    ],
     IAmSoul_RP: [
         { name: 'Johnathen Riker' },
     ],
