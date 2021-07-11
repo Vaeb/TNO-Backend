@@ -1574,6 +1574,7 @@ export const npCharacters: NpCharacters = {
     ],
     omie: [
         { name: 'Marty Shanks', factions: ['Gulag Gang', 'Burger Shot'], nicknames: [reg(/\bburger/)], assumeServer: 'public' },
+        { name: 'Marty Banks', assumeServer: 'whitelist' },
         { name: '[Officer] Sharty Manks', factions: ['Police'], displayName: 1, assumeServer: 'public' },
     ],
     onebaw: [
