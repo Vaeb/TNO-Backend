@@ -1750,6 +1750,7 @@ export const npCharacters: NpCharacters = {
     s0upes: [
         { name: '[Officer] Silas Grimmer', factions: ['Police'] },
         { name: 'James "Apples" Apeller' },
+        { name: 'Chadley ?' },
         { name: 'Ryder S. Block', factions: ['ASRR'], displayName: 0 },
         { name: 'Ezekiel "Zero" Rogaine' },
     ],
