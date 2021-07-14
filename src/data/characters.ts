@@ -292,7 +292,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Boe Jangles', factions: ['Chang Gang'], affiliate: true },
     ],
     bmcloughlin22: [
-        { name: '[ADA] Lachlan Pike', factions: ['DoJ'] },
+        { name: '[A.D.A.] Lachlan Pike', factions: ['DoJ'] },
     ],
     Bomaah: [
         { name: 'Viper Rodriguez', assume: 'assumeOther' },
@@ -988,7 +988,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Billiam Williams', factions: ['Police'], displayName: 1 },
     ],
     JPKMoto: [
-        { name: '[ADA] Odessa Pearson', factions: ['DoJ'] },
+        { name: '[A.D.A.] Odessa Pearson', factions: ['DoJ'] },
         { name: 'Nora Dupres' },
         { name: 'Zee Nanakaze Mathers' },
     ],
@@ -1728,7 +1728,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Kelly Smith' },
     ],
     RobotNinjaPants: [
-        { name: '[ADA] Jacob Slate', factions: ['DoJ'] },
+        { name: '[A.D.A.] Jacob Slate', factions: ['DoJ'] },
     ],
     roflgator: [
         { name: 'Robert Spowylamywanowski', nicknames: ['Rob', 'Polish', 'Night Manager'], displayName: 3 },
@@ -2297,6 +2297,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Norman Bones', displayName: 0 },
     ],
     zirnrp: [
+        { name: '[A.D.A.] Malcador Sigilite', factions: ['DoJ'] },
         { name: 'Solomon Seerson' },
     ],
     Zoil: [
