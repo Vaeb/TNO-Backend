@@ -6,7 +6,7 @@ import { npFactions, npFactionsRealMini } from './meta';
 
 import type { FactionMini, FactionRealMini } from './meta';
 
-const noAutoFaction = { // 1
+const noAutoFaction = {
     independent: true,
     otherfaction: true,
     other: true,
