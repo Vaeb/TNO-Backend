@@ -1761,7 +1761,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Ezekiel "Zero" Rogaine' },
     ],
     Saiiren: [
-        { name: 'Ai "Betch" Musori', nicknames: ['Bitch'], factions: ['Rooster'], displayName: 0 },
+        { name: 'Ai "Egg" Musori', nicknames: ['Bitch'], factions: ['LARPers', 'Rooster'], displayName: 0 },
         { name: '[Deputy] Yuu Gondai', factions: ['Police'], nicknames: ['Yu', 'Yoo', 'Gon Die'] },
     ],
     Sal_Rosenberg: [
