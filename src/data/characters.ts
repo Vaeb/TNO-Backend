@@ -103,7 +103,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Jacob Harth', factions: ['Dark Web'], leader: true },
         { name: 'Chris "CP" Porter' },
         { name: 'Sayid Mitra', nicknames: ['Sayeet'], displayName: 0 },
-        { name: 'David "The Mime" Wonders', nicknames: ['"Concrete" Man'] },
+        { name: 'David "The Mime" Wonders', nicknames: ['Concrete', 'Mime'], factions: ['ASRR'] },
         { name: 'Gordon Parks', nicknames: ['DoorLord'] },
     ],
     AidenNortha: [
