@@ -1525,7 +1525,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Chips Ahoy' },
     ],
     Nottics: [
-        { name: 'Raymundo Ortiz', factions: ['Vagos'], nicknames: [reg(/\br+ay/)] },
+        { name: 'Raymundo Ortiz', factions: ['Vagos'], nicknames: [reg(/\br+ay/), reg(/\bmundo/)] },
         { name: 'Raul Rodriguez', nicknames: [reg(/\br+au+l/)] },
     ],
     NovalokHD: [
