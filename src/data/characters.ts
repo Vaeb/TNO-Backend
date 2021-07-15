@@ -1443,7 +1443,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Lennon "Bane" Lee', factions: ['Prison'] },
     ],
     MsTeamKK: [
-        { name: 'Riley Carter', factions: ['BBMC'] },
+        { name: 'Riley Carter' },
     ],
     MurderCrumpet: [
         { name: 'Cindy Lou' },
