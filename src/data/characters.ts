@@ -118,7 +118,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Unity', nicknames: ['Cat'] },
     ],
     akaMONKEY: [
-        { name: 'Arturo Ortiz', factions: ['Vagos'], nicknames: [reg(/\bar(?:tu|2)/)] },
+        { name: 'Arturo Ortiz', factions: ['Vagos'], nicknames: [reg(/\bar(?:tu|2)/), reg(/\barchu+r/)] },
         { name: 'CamRon "Peanut" Giles', factions: ['SSB'] },
         { name: 'Timoteo "TT" Bushnell', nicknames: ['Rasta'] },
     ],
@@ -1081,6 +1081,9 @@ export const npCharacters: NpCharacters = {
     ],
     KezieEve: [
         { name: 'Ghost Storm', factions: ['GSF'] },
+    ],
+    KGU__: [
+        { name: 'Pablo Loco', factions: ['Vagos'], displayName: 0 },
     ],
     KhaosAdam: [
         { name: 'Adam Ababwa', factions: ['Mandem'], assume: 'assumeOther', displayName: 0 },
@@ -2252,7 +2255,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Wu "Egg Roll" Ping' },
     ],
     wvngie: [
-        { name: 'Le Wang', factions: ['Vagos'], displayName: 0 },
+        { name: 'Le Wang', factions: ['Vagos'], nicknames: [reg(/\bwang/)], displayName: 0 },
     ],
     xQcOW: [
         { name: 'Jean "X" Paul', nicknames: ['Ghost Rider', 'Rider'], factions: ['Gulag Gang', 'Burger Shot'], displayName: 0, assumeServer: 'public' },
