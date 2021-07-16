@@ -2247,7 +2247,7 @@ export const npCharacters: NpCharacters = {
     ],
     Wolfabelle: [
         { name: 'Bianca Walters' },
-        { name: '[Ride Along] Candice Defitt', factions: ['Police'], nicknames: ['interview'] },
+        { name: '[Deputy] Candice Defitt', factions: ['Police'], displayName: 1 },
     ],
     WTFGameNation: [
         { name: '[Dr.] Noah Drake', factions: ['Medical'] },
