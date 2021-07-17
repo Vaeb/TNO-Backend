@@ -41,6 +41,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Bexar McCree', factions: ['Police'] },
     ],
     Aaoki: [
+        { name: '[Deputy] Maddison Bancroft', factions: ['Police'], displayName: 1 },
         { name: 'Shazza Wazza', factions: ['Rooster'], nicknames: ['Shazzam'] },
     ],
     aaron_rp: [
@@ -1670,6 +1671,7 @@ export const npCharacters: NpCharacters = {
     ],
     qurquru: [
         { name: '[Officer] Vladimir Reznik', factions: ['Police'] },
+        { name: 'Pepe Ramos', factions: ['Vagos'], displayName: 0 },
     ],
     Ragonath: [
         { name: 'Maxwell Devitt', displayName: 0 },
