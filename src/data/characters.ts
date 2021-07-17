@@ -1567,11 +1567,6 @@ export const npCharacters: NpCharacters = {
     OG_Tyger: [
         { name: '[Officer] Peter Frost', factions: ['Police'] },
     ],
-    ogWiked: [
-        { name: 'Dwayne Flores', factions: ['Mandem'], nicknames: ['Golden Boy'], displayName: 0 },
-        { name: 'Kyrus Langley', factions: ['SSB'], displayName: 1 },
-        { name: 'Truth Flores', displayName: 0 },
-    ],
     OhMadOne: [
         { name: '[Lawyer /] Ginzu Okada', factions: ['DoJ'] },
     ],
@@ -2237,6 +2232,11 @@ export const npCharacters: NpCharacters = {
     ],
     whosremz: [
         { name: 'Remy Brown', factions: ['Mandem'], displayName: 1 },
+    ],
+    Wiked: [
+        { name: 'Dwayne Flores', factions: ['Mandem'], nicknames: ['Golden Boy'], displayName: 0 },
+        { name: 'Kyrus Langley', factions: ['SSB'], displayName: 1 },
+        { name: 'Truth Flores', displayName: 0 },
     ],
     WillerZ: [
         { name: 'Will Earnz', displayName: 0 },
