@@ -256,6 +256,9 @@ export const npCharacters: NpCharacters = {
     BeardedGuysGaming: [
         { name: 'Jose Pincha' },
     ],
+    Beast_: [
+        { name: '[Officer] Ruger Daniels', factions: ['Police'] },
+    ],
     BennniStreams: [
         { name: 'Santiago "Santi" Madrid', factions: ['Vagos'], nicknames: [reg(/\bSanti/)] },
         { name: 'Antonio Reyes', nicknames: [reg(/\bAntonio/)] },
@@ -495,7 +498,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Lawyer /] Kevin Shaw', factions: ['DoJ'] },
     ],
     Curvyllama: [
-        { name: '[Deputy] Lorenzo L', factions: ['Police'], displayName: 1 },
+        { name: '[Deputy] Lorenzo Lezar', factions: ['Police'], displayName: 1 },
         { name: 'Freya Manning' },
     ],
     cyr: [
@@ -556,7 +559,7 @@ export const npCharacters: NpCharacters = {
     ],
     DocWizard: [
         { name: '[Judge] John Bailey', factions: ['DoJ'] },
-        { name: '[Officer] TJ Walker', factions: ['Police'] },
+        { name: '[Officer] Terrance "TJ" Walker', factions: ['Police'] },
         { name: 'Preston Landor' },
     ],
     Dogbert: [
@@ -610,6 +613,9 @@ export const npCharacters: NpCharacters = {
     ],
     either: [
         { name: 'Jaden Christopher' },
+    ],
+    EliotJuun: [
+        { name: '[Officer] Douglas Fir', factions: ['Police'], displayName: 1 },
     ],
     Elochai: [
         { name: 'Tao Chen', factions: ['Rooster'] },
@@ -1350,6 +1356,9 @@ export const npCharacters: NpCharacters = {
     meeka_a: [
         { name: '[EMS] William "Middy" Haze', factions: ['Medical'] },
     ],
+    Megatruong_: [
+        { name: '[Deputy] Roy Armstrong', factions: ['Police'] },
+    ],
     MEKABEAR: [
         { name: '[Deputy] Amber Gold', factions: ['Police'] },
         { name: 'Erin Cox' },
@@ -1720,6 +1729,9 @@ export const npCharacters: NpCharacters = {
     reno_raines: [
         { name: 'Manny McDaniels', factions: ['HOA'] },
     ],
+    rerolldota: [
+        { name: '[Deputy] Lea Nova', factions: ['Police'] },
+    ],
     RevRoach: [
         { name: "Happy D'Klown" },
     ],
@@ -1924,7 +1936,7 @@ export const npCharacters: NpCharacters = {
     Spaceboy: [
         { name: 'Melbert "Mel" Rickenbacker' },
         { name: 'Adrian Block', factions: ['ASRR'], displayName: 0 },
-        { name: '[Deputy] Pat Downing', factions: ['Police'] },
+        { name: '[Deputy] Patrick Downing', factions: ['Police'], nicknames: ['Pat'] },
         { name: 'Casey Boyd', nicknames: ['Caseboy', 'L8PD'], displayName: 0 },
     ],
     Spekel: [
@@ -1944,6 +1956,9 @@ export const npCharacters: NpCharacters = {
     ],
     steamcharlie: [
         { name: '[Deputy] Sydney Bearmont', factions: ['Police'], displayName: 1 },
+    ],
+    Stephanerys: [
+        { name: '[Officer] Patricia Mayonnaise', factions: ['Police'], displayName: 1 },
     ],
     ster: [
         { name: 'Guy Dance' },
@@ -2144,7 +2159,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Douglas "Doug Buck" Buck', displayName: 0 },
     ],
     Traumz: [
-        { name: 'Edward Thatch', nicknames: ['Captain Moosebeard'], displayName: 3 },
+        { name: '[Deputy] Edward Thatch', nicknames: ['Captain Moosebeard'], factions: ['Police'], displayName: 2 },
     ],
     travpiper: [
         { name: 'Carlos "Cheddar" Sanchez', factions: ['HOA'] },
