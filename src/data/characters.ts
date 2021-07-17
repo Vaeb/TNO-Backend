@@ -2205,6 +2205,9 @@ export const npCharacters: NpCharacters = {
     Vigors: [
         { name: '[Warlock /] Kayn "Yager Demonblood" Larp', factions: ['LARPers', 'Rooster'], nicknames: ['Warlock', 'Fighter', 'Yager', 'Demonblood', 'Demon'], displayName: 0 },
     ],
+    VindiceLIVE: [
+        { name: '[Deputy] Oliver Fury', factions: ['Police'] },
+    ],
     VinterPhoenix: [
         { name: 'Raymond Frost', factions: ['Vagos'], displayName: 0 },
     ],
