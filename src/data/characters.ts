@@ -435,6 +435,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Dr.] Ethan Maw', factions: ['Medical'], displayName: 2 },
     ],
     cleaneu: [
+        { name: 'Michael Robinson', factions: ['DoC'], displayName: 0 },
         { name: 'Pete Bourke', factions: ['Prison'], displayName: 0 },
     ],
     CloudyDL: [
@@ -1912,6 +1913,9 @@ export const npCharacters: NpCharacters = {
     ],
     SoMuchOregano: [
         { name: 'Vincent Genovese', factions: ['Rooster'], displayName: 0 },
+    ],
+    SonKnuck: [
+        { name: 'Patrick Desseault', factions: ['Rooster'], displayName: 0 },
     ],
     Sp00nerism: [
         { name: 'Harry Phartz', displayName: 0 },
