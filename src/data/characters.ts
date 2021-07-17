@@ -1223,7 +1223,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Avon Barksdale', factions: ['Cleanbois'], leader: true },
     ],
     LisaMunchy: [
-        { name: '[Police] Lisa Adkins', factions: ['Police'] },
+        { name: '[Officer] Lisa Adkins', factions: ['Police'] },
         { name: '[Therapist] Thalia Hayes', factions: ['Medical'] },
         { name: '[Lawyer /] Lees Grey', factions: ['DoJ'] },
     ],
