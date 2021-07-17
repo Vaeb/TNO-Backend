@@ -1413,7 +1413,7 @@ export const npCharacters: NpCharacters = {
         { name: '[EMS] Janus Lee', factions: ['Medical'] },
     ],
     MistorThio: [
-        { name: 'Kirk Jerkems', factions: ['Rooster'] },
+        { name: 'Kirk Jerkems', factions: ['Rooster'], displayName: 0 },
     ],
     Moboking: [
         { name: '[Ranger] Ellis Pinzon', factions: ['Police'], nicknames: ['Ronaldo'], assumeServer: 'whitelist' },
