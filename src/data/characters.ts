@@ -1412,6 +1412,9 @@ export const npCharacters: NpCharacters = {
     MIQQA: [
         { name: '[EMS] Janus Lee', factions: ['Medical'] },
     ],
+    MistorThio: [
+        { name: 'Kirk Jerkems', factions: ['Rooster'] },
+    ],
     Moboking: [
         { name: '[Ranger] Ellis Pinzon', factions: ['Police'], nicknames: ['Ronaldo'], assumeServer: 'whitelist' },
         { name: 'Aleksander Bogorov', factions: ['Angels'], nicknames: ['Aleks'], displayName: 3, assumeServer: 'whitelist' },
