@@ -1025,10 +1025,6 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] George Lawson', factions: ['Police'], nicknames: ['592'] },
         { name: 'Tommy Cruizer', factions: ['Tuner Shop'] },
     ],
-    Jyeahlisa: [
-        { name: '[Therapist] Thalia Hayes', factions: ['Medical'] },
-        { name: '[Lawyer /] Lees Grey', factions: ['DoJ'] },
-    ],
     Kaceytron: [
         { name: 'Bobbi Jo', displayName: 0 },
     ],
@@ -1225,6 +1221,11 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Bayvon Barksdale', factions: ['Police'], nicknames: ['555'], displayName: 2 },
         { name: 'Abe Vaughn', displayName: 0 },
         { name: 'Avon Barksdale', factions: ['Cleanbois'], leader: true },
+    ],
+    LisaMunchy: [
+        { name: '[Police] Lisa Adkins', factions: ['Police'] },
+        { name: '[Therapist] Thalia Hayes', factions: ['Medical'] },
+        { name: '[Lawyer /] Lees Grey', factions: ['DoJ'] },
     ],
     Lisilsanya: [
         { name: '[EMS] Lei Sanya', factions: ['Medical'], nicknames: ['Lasagna'], displayName: 0 },
