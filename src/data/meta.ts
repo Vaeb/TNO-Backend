@@ -11,6 +11,7 @@ export const npFactionsReal = { // map: removed spaces + converted to lower case
     mandem: 'Mandem',
     doj: 'DoJ',
     asrr: 'ASRR',
+    dans: 'Dans',
     angels: 'Angels',
     nbc: 'NBC',
     bbmc: 'BBMC',

@@ -103,7 +103,7 @@ npFactionsRealMini.forEach((faction) => {
     if (!has(faction, noAutoFaction) && !has(faction, npFactionsRegex) && !['doc'].includes(faction)) {
         faction = faction as NpFactionsRegexKeys;
         let regStr = RegExp.escape(fullFaction[fullFaction.length - 1] === 's' && !keepS[faction] ? fullFaction.slice(0, -1) : fullFaction).toLowerCase();
-        if (regStr.length <= 3) {
+        if (regStr.length <= 4) {
             regStr = `\\b${regStr}\\b`;
         } else {
             regStr = `\\b${regStr}`;

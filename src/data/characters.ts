@@ -1178,8 +1178,9 @@ export const npCharacters: NpCharacters = {
     Kyle: [
         { name: '[Sheriff] Kyle Pred', factions: ['Police'], leader: true },
         { name: 'Alabaster Slim', nicknames: ['Pimp'], displayName: 2 },
-        { name: 'Hampton Brandon', nicknames: ['TTD', 'Ten Toes Down'] },
+        { name: 'Kegal Dan', factions: ['Dans'] },
         { name: 'Brett Biggledoinks' },
+        { name: 'Hampton Brandon', nicknames: ['TTD', 'Ten Toes Down'] },
         { name: 'Tame "The Mandalorian" Saxon', nicknames: ['Mandolorian'] },
         { name: 'Hat Carl', nicknames: ['The Matador'], displayName: 0 },
         { name: "[Lawyer /] Rory O'Banion", factions: ['DoJ'], displayName: 0 },
