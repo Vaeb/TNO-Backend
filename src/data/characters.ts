@@ -1187,7 +1187,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Pal Gore' },
     ],
     kyliebitkin: [
-        { name: '[Deputy] Brittany Angel', factions: ['Police'] },
+        { name: '[Deputy] Brittany Angel', factions: ['Police'], nicknames: ['Angle'] },
         { name: 'Mary Mushkin', displayName: 0 },
     ],
     Jackhuddo: [
