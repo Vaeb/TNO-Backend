@@ -96,7 +96,7 @@ export type NpFactionsRegexMini = keyof typeof npFactionsRegex;
 
 const has = <K extends string>(key: K, x: Record<string, unknown>): x is { [key in K]: unknown } => key in x;
 
-const keepS: { [key in FactionRealMini]?: boolean } = { pegasus: true, news: true, russians: true };
+const keepS: { [key in FactionRealMini]?: boolean } = { pegasus: true, news: true, russians: true, dans: true };
 
 npFactionsRealMini.forEach((faction) => {
     const fullFaction = npFactions[faction];
