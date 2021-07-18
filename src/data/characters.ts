@@ -2103,7 +2103,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Tyler Kwando', displayName: 0 },
     ],
     TheChief1114: [
-        { name: 'Fingle Dan', displayName: 0, assume: 'assumeNpNoOther' },
+        { name: 'Fingle Dan', factions: ['Dans'] },
     ],
     TheDondi: [
         { name: 'Arthur Hammond', nicknames: ['The "Doctor"'] },
