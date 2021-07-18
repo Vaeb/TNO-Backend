@@ -46,6 +46,7 @@ const displayNameDefault: { [key in FactionMini]?: number } = {
     doj: 2,
     asrr: 0,
     mersions: 0,
+    dans: 0,
 } as const;
 
 const FSTATES = {
