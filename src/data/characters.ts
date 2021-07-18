@@ -2030,7 +2030,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Ranger] Yuno Sykk', factions: ['Police'], displayName: 1, assumeServer: 'public' },
     ],
     SynthHunter: [
-        { name: 'Hunter "Wingman" Skye' },
+        { name: 'Hunter "Wingman" Skye', factions: ['Rooster'] },
     ],
     Syraphic: [
         { name: 'Elena Marilyn Vega' },
