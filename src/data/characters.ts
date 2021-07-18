@@ -2221,6 +2221,9 @@ export const npCharacters: NpCharacters = {
     ValorWasTaken: [
         { name: 'Esteban Julio-Cruz-Perez-Rodriguez', factions: ['Marabunta'] },
     ],
+    Venomfly: [
+        { name: 'Babe Calloway', factions: ['Rooster'], displayName: 0 },
+    ],
     Vigors: [
         { name: '[Warlock /] Kayn "Yager Demonblood" Larp', factions: ['LARPers', 'Rooster'], nicknames: ['Warlock', 'Fighter', 'Yager', 'Demonblood', 'Demon'], displayName: 0 },
     ],
