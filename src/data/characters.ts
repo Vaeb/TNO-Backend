@@ -274,6 +274,9 @@ export const npCharacters: NpCharacters = {
     BikeMan: [
         { name: 'Chet Summerset', assume: 'assumeNpNoOther' },
     ],
+    binoversion: [
+        { name: '? "O Dogg" ?', factions: ['SSB'] },
+    ],
     Biotoxz_: [
         { name: '[Barbarian /] Bjorn', factions: ['LARPers', 'Rooster'], assumeServer: 'whitelist' },
         { name: '[Barbarian /] Bjorn', factions: ['Police', 'LARPers'], assumeServer: 'public' },
@@ -2319,6 +2322,9 @@ export const npCharacters: NpCharacters = {
     xReklez: [
         { name: 'AJ', factions: ['SSB'] },
         { name: 'Chico Guzman', factions: ['Vagos', 'Burger Shot'] },
+    ],
+    yaboiSavageG: [
+        { name: 'Salvaje "Savage" Mendoza', factions: ['Vagos'] },
     ],
     YoinksOG: [
         { name: 'Doug Canada' },
