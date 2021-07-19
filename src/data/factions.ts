@@ -27,7 +27,7 @@ export const npFactionsRegex = {
     changgang: noFormer(/chang\s*gang|\bcga?\b/i),
     vagos: noLater(noFormer(/vagos|\bvago\b|yellow[\s\-]*gang|\besv\b/i)),
     gsf: noLater(noFormer(/grove|\bgsf\b/i)),
-    ssb: noLater(noFormer(/ball+a|\bssb\b(?![\s\-]+(?:wo?rld|later))|\besb\b/i)),
+    ssb: noLater(noFormer(/\bball+a|\besb\b|\bssb\b(?![\s\-]+(?:wo?rld|later))/i)),
     bsk: noFormer(/\bb[s$]k\b|brouge street|burger shot king/i),
     marabunta: noLater(noFormer(/\bmarabunta/i)),
     hoa: noFormer(/\bhoa\b|hogs\s*of\s*anarchy|home[\s\-]*owners[\s\-]*association/i),
