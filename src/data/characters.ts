@@ -977,7 +977,7 @@ export const npCharacters: NpCharacters = {
     JoeSmitty123: [
         { name: '[Officer] Michael Murphy', factions: ['Police'] },
     ],
-    jogiejoey: [
+    Jogiiee: [
         { name: 'Jessie Jugg' },
         { name: 'Eva Wall' },
         { name: '[Dr.] Emma Gaine', factions: ['Medical'] },
@@ -1962,7 +1962,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Sydney Bearmont', factions: ['Police'], displayName: 1 },
     ],
     Stephanerys: [
-        { name: '[Officer] Patricia Mayonnaise', factions: ['Police'], displayName: 1 },
+        { name: '[Officer] Patricia Mayonnaise', factions: ['Police'], nicknames: ['Patty'], displayName: 1 },
     ],
     ster: [
         { name: 'Guy Dance' },
