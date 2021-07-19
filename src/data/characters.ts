@@ -1999,6 +1999,7 @@ export const npCharacters: NpCharacters = {
     ],
     Surefour: [
         { name: 'Fred Fredrick', factions: ['LARPers', 'Rooster'], nicknames: ['Necrolord', 'Ranger'], displayName: 3 },
+        { name: 'Chute D. Block', factions: ['ASRR'] },
         { name: '[Officer] Kenny Hawk', factions: ['Police'], nicknames: ['Powice'], displayName: 1 },
     ],
     Suspect: [
