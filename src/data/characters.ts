@@ -513,6 +513,9 @@ export const npCharacters: NpCharacters = {
     Dadulio: [
         { name: '[Deputy] Franky Dulio', factions: ['Police'] },
     ],
+    daisykiss: [
+        { name: 'Molly Rollin', factions: ['SSB'], displayName: 0 },
+    ],
     DanGheesling: [
         { name: 'Tanner Buttermaker', displayName: 1 },
     ],
@@ -1918,6 +1921,9 @@ export const npCharacters: NpCharacters = {
     ],
     Smaczny: [
         { name: 'Conrad Gross' },
+    ],
+    SmithyFPS: [
+        { name: 'Craig ?', factions: ['SSB'], nicknames: ['Crackhead Craig'], displayName: 3 },
     ],
     smo_och: [
         { name: 'Mike Smoore', factions: ['Vagos'], displayName: 0 },
