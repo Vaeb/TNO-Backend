@@ -630,6 +630,9 @@ export const npCharacters: NpCharacters = {
     ElvisRP: [
         { name: '[Deputy] John Dorian', factions: ['Police'] },
     ],
+    EmmyWithLove: [
+        { name: 'Peaches Hayabusa', factions: ['Burger Shot'] },
+    ],
     Evee: [
         { name: '[Judge] Antigone Weston', factions: ['DoJ'], assumeServer: 'whitelist' },
         { name: '[Officer] Antigone Weston', factions: ['Police'], assumeServer: 'public' },
