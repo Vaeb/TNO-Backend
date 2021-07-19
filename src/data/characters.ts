@@ -1613,6 +1613,9 @@ export const npCharacters: NpCharacters = {
     PapaChip: [
         { name: 'Channing "Chain" Turner', factions: ['BBMC'] },
     ],
+    PapaDrgnz: [
+        { name: 'Thur Teen', factions: ['Prison'], displayName: 0 },
+    ],
     Pengwin: [
         { name: '[Deputy] Jerry Perkins', factions: ['Police'] },
         { name: 'Dustin "Dark Shadow" Manson' },
@@ -1674,6 +1677,9 @@ export const npCharacters: NpCharacters = {
     Pssychotic: [
         { name: 'Jason Paul', factions: ['Lost MC'], nicknames: ['JP'] },
         { name: 'Hades', nicknames: ['Dog'] },
+    ],
+    PuckNatorGaming: [
+        { name: 'Tate Urchips', factions: ['Prison'], displayName: 0 },
     ],
     puddledux: [
         { name: 'Jake Rake', factions: ['Prison'], displayName: 0 },
