@@ -2186,6 +2186,7 @@ export const npCharacters: NpCharacters = {
     ],
     Traumz: [
         { name: '[Deputy] Edward Thatch', nicknames: ['Captain Moosebeard'], factions: ['Police'], displayName: 2 },
+        { name: 'Tim Littleman', displayName: 0 },
     ],
     travpiper: [
         { name: 'Carlos "Cheddar" Sanchez', factions: ['HOA'] },
