@@ -1887,7 +1887,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Ziggy Flint', nicknames: [reg(/🌿/)], displayName: 0 },
     ],
     silky_rp: [
-        { name: '? "Baby D" ?', factions: ['SSB'] },
+        { name: 'Darnell "Baby D" Davis', factions: ['SSB'] },
     ],
     Simo: [
         { name: '[Lawyer /] Reggie Might', factions: ['DoJ'], assumeServer: 'whitelist' },
