@@ -2256,6 +2256,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Griselda Ambrose', nicknames: ['Granny'] },
         { name: 'Lana Valentine', factions: ['Rooster'] },
     ],
+    VNDRIZZLE: [
+        { name: 'Basem Shahin' },
+    ],
     VTechas: [
         { name: 'Daryl Dixon', factions: ['HOA'] },
     ],
