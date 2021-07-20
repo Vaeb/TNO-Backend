@@ -2347,6 +2347,9 @@ export const npCharacters: NpCharacters = {
     yooApollo: [
         { name: 'Martin Julio-Perez-Cruz-Rodriguez', factions: ['Marabunta'] },
     ],
+    Zaitohro: [
+        { name: 'Oswald Tinkerman', factions: ['Burger Shot'], displayName: 0 },
+    ],
     Zaquelle: [
         { name: '[Officer] Mackenzie Hayes', factions: ['Police'], assume: 'assumeNp' },
     ],
