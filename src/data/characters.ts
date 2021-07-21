@@ -1412,7 +1412,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Ranger] Manny Multchbottom', factions: ['Police'], displayName: 0, assumeServer: 'public' },
     ],
     mikezout14: [
-        { name: '[Deputy] Michael Rodgers', factions: ['Police'] },
+        { name: '[Deputy] Michael Rodgers', factions: ['Police'], assume: 'assumeNpNoOther' },
     ],
     MiltonTPike1: [
         { name: 'Kiki Chanel', assumeServer: 'whitelist' },
