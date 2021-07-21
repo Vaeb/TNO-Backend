@@ -408,7 +408,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Jagger "Chatterbox" Gerardy' },
     ],
     Chief: [
-        { name: 'Baada Ka', factions: ['HOA'], nicknames: ['Chief'], displayName: 3, assume: 'assumeNpNoOther' },
+        { name: 'Baada Ka', nicknames: ['Chief'], displayName: 3, assume: 'assumeNpNoOther' },
     ],
     Choi: [
         { name: '[Dr.] Choi Zhangsun', factions: ['Medical'], assume: 'assumeOther' },
