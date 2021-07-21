@@ -1734,6 +1734,9 @@ export const npCharacters: NpCharacters = {
     ray308win: [
         { name: '[FIB Agent] Lyonel Winchester', factions: ['Police'] },
     ],
+    RayvenEyed: [
+        { name: 'Milo King', factions: ['Rooster'], displayName: 0 },
+    ],
     Realzman: [
         { name: '[EMS] Connor', factions: ['Medical'] },
         { name: 'Malakai' },
