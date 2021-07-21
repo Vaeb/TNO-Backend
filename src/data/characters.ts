@@ -1377,6 +1377,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Erin Cox' },
         { name: 'Ari Tistu', displayName: 0 },
     ],
+    Melly_Mae: [
+        { name: '[Dispatch] Jessica Easton', factions: ['Police'] },
+    ],
     MeMayoi: [
         { name: 'Yoi Tsukita', factions: ['Rooster'] },
     ],
