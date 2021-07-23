@@ -2170,6 +2170,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Chino G', factions: ['Vagos'] },
         { name: 'Cardell "CJ" Jones', factions: ['SSB'] },
     ],
+    TinaKitten: [
+        { name: '? ?' },
+    ],
     Tinker: [
         { name: '[Deputy] Theodore Tinker', factions: ['Police'] },
         { name: 'Sean Tinker', factions: ['Pegasus'], displayName: 0 },
