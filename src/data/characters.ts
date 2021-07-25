@@ -259,7 +259,7 @@ export const npCharacters: NpCharacters = {
     Beast_: [
         { name: '[Deputy] Ruger Daniels', factions: ['Police'] },
     ],
-    BennniStreams: [
+    Benni: [
         { name: 'Santiago "Santi" Madrid', factions: ['Vagos'], nicknames: [reg(/\bSanti/)] },
         { name: 'Antonio Reyes', nicknames: [reg(/\bAntonio/)] },
         { name: 'Pablo Madrid', factions: ['Vagos'], nicknames: ['Diablo'] },
