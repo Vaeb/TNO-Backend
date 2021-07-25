@@ -793,6 +793,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Jim Underwood', factions: ['Police'], nicknames: ['437'] },
         { name: '[Development /] GTAWiseGuy', factions: ['Development'], nicknames: ['Handling', 'Fixes', 'Fixing'] },
         { name: 'Igor Skovacic' },
+        { name: 'Big M', displayName: 0 },
         { name: 'Daequan "Double D" DeMarco', factions: ['SSB'] },
         { name: 'RayRay' },
         { name: 'Maury Mersion', factions: ['Mersions'] },
@@ -862,7 +863,7 @@ export const npCharacters: NpCharacters = {
         { name: 'James-Kamea Brown', factions: ['Vagos'] },
     ],
     HutchMF: [
-        { name: 'Hutch Hutcherson', factions: ['Chang Gang'] },
+        { name: 'Hutch Hutcherson', factions: ['Chang Gang'], nicknames: [reg(/\bkilled a man/)] },
         { name: '[Deputy] Jaryd Peak', factions: ['Police'] },
         { name: 'Drew "Dead Eye Drew"', nicknames: ['DeadEye'] },
         { name: 'Hutch Hendrickson' },
