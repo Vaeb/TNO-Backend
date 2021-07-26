@@ -1523,7 +1523,7 @@ export const npCharacters: NpCharacters = {
         { name: '[EMS] Nettie Machete', factions: ['Medical'] },
     ],
     neutreN: [
-        { name: 'Octane "Goofy" ?', nicknames: ['Hypergoof'] },
+        { name: 'Octavio "Goofy" Stenberg', nicknames: ['Hypergoof', 'Octane'] },
     ],
     NeveRossa: [
         { name: 'Dawn Hearte', factions: ['Medical'] },
