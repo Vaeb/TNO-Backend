@@ -44,7 +44,7 @@ export const regOthers = [
     { name: 'Grizzley World', reg: /grizzley[\s\-]*wo?rld/i, include: 0 },
     {
         name: '',
-        reg: /\bgta[\s:-]*v?[\s:-]*online|tuners?[\s\-]*\w*[\s\-]*dlc(?!\s+leaks)|chaos\s*mod\b|story[\s\-]*mode|\bgta[\s:-]*v?[\s\-]+story|grizzely\s*rp|\boc\s*rp\b|\bybn\b/i,
+        reg: /\bgta[\s:-]*v?[\s:-]*online|tuners?[\s\-]*\w*[\s\-]*dlc(?![\s\w]+\bleaks\b)|chaos\s*mod\b|story[\s\-]*mode|\bgta[\s:-]*v?[\s\-]+story|grizzely\s*rp|\boc\s*rp\b|\bybn\b/i,
         include: 0,
     },
 ];
