@@ -791,7 +791,7 @@ export const npCharacters: NpCharacters = {
     GTAWiseGuy: [
         { name: 'Eddie Marshall', factions: ['Tuner Shop'] },
         { name: '[Officer] Jim Underwood', factions: ['Police'], nicknames: ['437'] },
-        { name: '[Development /] GTAWiseGuy', factions: ['Development'], nicknames: ['Handling', 'Fixes', 'Fixing'] },
+        { name: '[Development /] GTAWiseGuy', factions: ['Development'], nicknames: ['Handling', 'Fixes', 'Fixing', reg(/\btuners?(?:\s*\w*)*leaks/)] },
         { name: 'Igor Skovacic' },
         { name: 'Big M', displayName: 0 },
         { name: 'Daequan "Double D" DeMarco', factions: ['SSB'] },
