@@ -1526,7 +1526,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Octavio "Goofy" Stenberg', nicknames: ['Hypergoof', 'Octane'] },
     ],
     NeveRossa: [
-        { name: 'Dawn Hearte', factions: ['Medical'] },
+        { name: 'Dawn Hearte', factions: ['Lost MC', 'Medical'] },
     ],
     NewFaceSuper: [
         { name: 'Davey Doherty' },
