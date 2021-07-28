@@ -179,7 +179,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Milton Pointdexter' },
     ],
     Ash_on_LoL: [
-        { name: 'Ash Ketchup', factions: ['Burger Shot'], assumeChar: true },
+        { name: 'Ash Ketchup', factions: ['Burger Shot', 'Vagos'], assumeChar: true },
     ],
     Ashi: [
         { name: 'Fiona Stewart', nicknames: ['Fi-ho-na'], factions: ['Rooster'] },
