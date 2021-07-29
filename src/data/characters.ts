@@ -1272,6 +1272,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Rose Edwards' },
         { name: '[Officer] Leah Strong', factions: ['Police'], displayName: 1, assumeServer: 'public' },
     ],
+    Lt_Custard: [
+        { name: 'Collin McKinley', factions: ['BBMC'], displayName: 0 },
+    ],
     Lt_Raven: [
         { name: '[Officer] Vladimir Raven', factions: ['Police'], highCommand: true },
     ],
