@@ -1310,7 +1310,8 @@ export const npCharacters: NpCharacters = {
         { name: 'Mayumi Himura' },
     ],
     Lyndi: [
-        { name: 'Violet Van Housen', factions: ['Angels'] },
+        { name: 'Violet Van Housen', factions: ['Angels'], assumeServer: 'whitelist' },
+        { name: '[Officer] Violet Van Housen', factions: ['Police'], displayName: 1, assumeServer: 'public' },
         { name: 'Willow Wolfhart', factions: ['DoC'] },
     ],
     Lysium: [
