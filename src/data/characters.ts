@@ -233,8 +233,9 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Fernando Diego Pablo Juan Esteban Luis Cortez Bonanza II', factions: ['Police'], displayName: 1, assumeServer: 'public' },
     ],
     bananabrea: [
-        { name: 'Claire Seducer', factions: ['Angels'] },
-        { name: '[Officer] Tyme Reducer', factions: ['Police'] },
+        { name: 'Claire Seducer', factions: ['Angels'], assumeServer: 'whitelist' },
+        { name: '[Officer] Tyme Reducer', factions: ['Police'], assumeServer: 'whitelist' },
+        { name: '[Officer] Claire Seducer', factions: ['Police'], displayName: 1, assumeServer: 'public' },
         { name: 'Becky Hopper', displayName: 0 },
         { name: 'Juanita Carlita Hernandez', nicknames: ['Flippa'] },
     ],
