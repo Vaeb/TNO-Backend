@@ -1082,6 +1082,9 @@ export const npCharacters: NpCharacters = {
         { name: '[EMS] Valkyrie Sunshot', factions: ['Medical'] },
         { name: 'Katt Vincent' },
     ],
+    KazMendalez: [
+        { name: 'Kaz Mendalez', factions: ['BBMC'] },
+    ],
     kClient: [
         { name: 'Daquan "Peanut" Dumas', factions: ['NBC'] },
     ],
@@ -1120,6 +1123,9 @@ export const npCharacters: NpCharacters = {
     ],
     King_1455: [
         { name: 'Cooch Cassidy', factions: ['Lost MC'] },
+    ],
+    Kingothestone: [
+        { name: 'Steven Stone III', factions: ['BBMC'], displayName: 2 },
     ],
     KingsGamingUnleashed: [
         { name: 'Pablo Loco', factions: ['Vagos'], displayName: 0 },
@@ -1253,6 +1259,9 @@ export const npCharacters: NpCharacters = {
     ],
     Lisilsanya: [
         { name: '[EMS] Lei Sanya', factions: ['Medical'], nicknames: ['Lasagna'], displayName: 0 },
+    ],
+    Loorara: [
+        { name: 'Olivia Garcia', factions: ['BBMC'], nicknames: ['Liv', 'Livvy', 'Olives'], displayName: 0 },
     ],
     Lord_Kebun: [
         { name: 'Mr. K', factions: ['Chang Gang'], leader: true, displayName: 0, nicknames: ['Chang', 'The "Dragon"'] },
@@ -2326,9 +2335,15 @@ export const npCharacters: NpCharacters = {
         { name: '"James Marco" St. Marco', nicknames: ['marko', 'marcoing', 'markoing'] },
         { name: "? \"Don's Mother\" ?", nicknames: ['Mama', 'Donna'] },
     ],
+    WLVSx: [
+        { name: 'Wolfe McCreedy', factions: ['BBMC'], nicknames: ['Wolfie'] },
+    ],
     Wolfabelle: [
         { name: 'Bianca Walters' },
         { name: '[Deputy] Candice Defitt', factions: ['Police'], displayName: 1 },
+    ],
+    Wootpiegames: [
+        { name: 'Rick Szhae', factions: ['BBMC'], displayName: 0 },
     ],
     WTFGameNation: [
         { name: '[Dr.] Noah Drake', factions: ['Medical'] },
