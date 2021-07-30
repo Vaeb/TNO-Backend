@@ -1703,6 +1703,9 @@ export const npCharacters: NpCharacters = {
     Primal: [
         { name: '[Officer] Kareem Lyon', factions: ['Police'], displayName: 1 },
     ],
+    Protay10: [
+        { name: 'James Thompson', nicknames: ['James "Phantom" Thompson', 'Phantom'], displayName: 3 },
+    ],
     PsiSyn: [
         { name: '[Officer] Lucio Panini', factions: ['Police'], displayName: 1, assumeServer: 'public' },
     ],
