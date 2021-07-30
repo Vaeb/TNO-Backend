@@ -875,6 +875,9 @@ export const npCharacters: NpCharacters = {
     IAmSoul_RP: [
         { name: 'Johnathen Riker' },
     ],
+    iddqd: [
+        { name: 'Jesse Cree', factions: ['BBMC'] },
+    ],
     IHeartGaming: [
         { name: 'Markuz Jackelson', factions: ['GSF'], nicknames: ['Meatball', 'Meat', 'Meatwad'] },
     ],
