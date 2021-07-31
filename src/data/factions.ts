@@ -94,7 +94,7 @@ export const lesserFactions: { [key in FactionRealMini]?: true } = {
 // const checkKeys: FactionRealMini = (null!) as keyof typeof lesserFactions;
 
 export const greaterFactions: { [key in FactionRealMini]?: true } = {
-    vagos: true,
+    podcast: true,
 } as const;
 
 export type NpFactionsRegexMini = keyof typeof npFactionsRegex;
