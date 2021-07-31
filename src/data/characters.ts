@@ -327,7 +327,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Kodak Bodega' },
     ],
     buddha: [
-        { name: 'Lang Buddha', factions: ['Cleanbois', 'Rooster'], leader: true, nicknames: ['Circle Andy'], assumeServer: 'whitelist' },
+        { name: 'Lang Buddha', factions: ['Cleanbois', 'Rooster'], leader: true, nicknames: ['Circle Andy', 'Timelord'], assumeServer: 'whitelist' },
         { name: '[Ranger] Lang Buddha', factions: ['Police'], displayName: 1, assumeServer: 'public' },
         { name: '[Deputy] Kevin Kona', factions: ['Police'] },
         { name: 'Esteban Julio Ricardo Montoya De La Rosa Ramirez' },
@@ -1208,7 +1208,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Pal Gore' },
     ],
     kyliebitkin: [
-        { name: '[Deputy] Brittany Angel', factions: ['Police'], nicknames: ['Angle'] },
+        { name: '[Deputy] Brittany Angel', factions: ['Police'], nicknames: ['Angle', 'Red Devil', 'R3d Devil'] },
         { name: 'Mary Mushkin', displayName: 0 },
     ],
     Jackhuddo: [
@@ -1749,7 +1749,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Mary Livingston', displayName: 0 },
     ],
     RatedEpicz: [
-        { name: 'Randy Bullet', factions: ['Chang Gang'], nicknames: ['Lazy-Eye'], assumeServer: 'whitelist' },
+        { name: 'Randy Bullet', factions: ['Chang Gang'], nicknames: ['Lazy-Eye', 'Shankz'], assumeServer: 'whitelist' },
         { name: 'Roundy Buffet', factions: ['Gulag Gang'], nicknames: ['Randy', 'Bullet'], assumeServer: 'public' },
         { name: '[Trooper] AJ Hunter', factions: ['Police'], nicknames: ['207'] },
     ],

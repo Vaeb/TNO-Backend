@@ -93,6 +93,10 @@ export const lesserFactions: { [key in FactionRealMini]?: true } = {
 // validateType<{ [key in FactionRealMini]?: true }>(lesserFactions);
 // const checkKeys: FactionRealMini = (null!) as keyof typeof lesserFactions;
 
+export const greaterFactions: { [key in FactionRealMini]?: true } = {
+    vagos: true,
+} as const;
+
 export type NpFactionsRegexMini = keyof typeof npFactionsRegex;
 
 const has = <K extends string>(key: K, x: Record<string, unknown>): x is { [key in K]: unknown } => key in x;
