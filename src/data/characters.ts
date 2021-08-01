@@ -1770,6 +1770,10 @@ export const npCharacters: NpCharacters = {
     Reina: [
         { name: 'Mona Sanchez', assume: 'assumeOther' },
     ],
+    Reklez: [
+        { name: 'Chico Guzman', factions: ['Vagos', 'Burger Shot'] },
+        { name: 'AJ', factions: ['SSB'] },
+    ],
     RemiTheSiren: [
         { name: '[Dr.] Lily Harte', factions: ['Medical'], displayName: 2 },
         { name: 'Wednesday Mushkin', factions: ['HOA'] },
@@ -2372,10 +2376,6 @@ export const npCharacters: NpCharacters = {
     ],
     xNittyGritty: [
         { name: 'Donny ?', factions: ['Rooster'] },
-    ],
-    xReklez: [
-        { name: 'AJ', factions: ['SSB'] },
-        { name: 'Chico Guzman', factions: ['Vagos', 'Burger Shot'] },
     ],
     yaboiSavageG: [
         { name: 'Salvaje "Savage" Mendoza', factions: ['Vagos'] },
