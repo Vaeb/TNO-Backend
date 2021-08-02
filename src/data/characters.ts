@@ -2037,8 +2037,8 @@ export const npCharacters: NpCharacters = {
         { name: 'Jack "Sully" Sullivan' },
     ],
     summit1g: [
-        { name: '[Deputy] John Charleston', factions: ['Police'], assumeServer: 'whitelist' },
         { name: 'Charles "Chawa" Johnson', factions: ['Chang Gang'] },
+        { name: '[Deputy] John Charleston', factions: ['Police'], assumeServer: 'whitelist' },
         { name: '[Trooper] Charles Johnson', factions: ['Police'], nicknames: ['Chawa'], assumeServer: 'public' },
     ],
     Sunni: [
