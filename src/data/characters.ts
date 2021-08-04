@@ -1494,6 +1494,9 @@ export const npCharacters: NpCharacters = {
     mrtimeee: [
         { name: 'Lennon "Bane" Lee', factions: ['Prison'] },
     ],
+    mrwobblestwitch: [
+        { name: 'Axel Simpleton' },
+    ],
     MsTeamKK: [
         { name: 'Riley Carter' },
     ],
