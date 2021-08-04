@@ -1087,6 +1087,7 @@ export const npCharacters: NpCharacters = {
     ],
     kClient: [
         { name: 'Daquan "Peanut" Dumas', factions: ['NBC'] },
+        { name: 'Alejandro Picadillo' },
     ],
     Keeno: [
         { name: 'Kyle Brovloski', displayName: 0 },
