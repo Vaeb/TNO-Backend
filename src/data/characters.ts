@@ -2247,7 +2247,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Jack Valentino', factions: ['Lunatix'] },
     ],
     UberHaxorNova: [
-        { name: 'Siz Fulker', factions: ['HOA'], leader: true, nicknames: ['uhnSuffer', 'mechanic', reg(/\bloans?\b/), reg(/\bsiz/)] },
+        { name: 'Siz Fulker', factions: ['HOA'], leader: true, nicknames: ['Zis', 'Ziz', 'uhnSuffer', 'mechanic', reg(/\bloans?\b/), reg(/\bsiz/)] },
         { name: '[Deputy] Barry Briddle', factions: ['Police'], nicknames: [reg(/\bbriddl/)] },
         { name: 'Toh Biggles Fitzcharles', displayName: 0, nicknames: ['Yaes'] },
     ],
