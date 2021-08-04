@@ -2034,6 +2034,9 @@ export const npCharacters: NpCharacters = {
     Striking_Fast: [
         { name: 'Gerard "Dewey" Hawthorne', nicknames: ['Dewie'], factions: ['Rooster'] },
     ],
+    Stuply: [
+        { name: 'Salvatore "Big Pussy" Tamburlini' },
+    ],
     SullyRP: [
         { name: 'Jack "Sully" Sullivan' },
     ],
