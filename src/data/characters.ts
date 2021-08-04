@@ -1536,7 +1536,7 @@ export const npCharacters: NpCharacters = {
         { name: '[EMS] Maya Jane', factions: ['Medical'] },
     ],
     Neloc_: [
-        { name: 'Moses Khan', factions: ['Mandem'], displayName: 0 },
+        { name: 'Moses Khan', factions: ['Mandem'], displayName: 1 },
     ],
     Nerdandi: [
         { name: 'Petunia Susan Brookshire', factions: ['Rooster'] },
@@ -2403,7 +2403,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Renato Ortiz', factions: ['Vagos'], displayName: 0 },
     ],
     Zerkaa: [
-        { name: 'Tommy Tate', factions: ['Mandem'], displayName: 0 },
+        { name: 'Tommy Tate', factions: ['Mandem'], nicknames: ['Tommy T'], displayName: 3 },
     ],
     Zettafrag: [
         { name: 'Kimberly Daniels', factions: ['Condemned MC'], displayName: 0 },
