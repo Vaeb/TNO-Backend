@@ -315,7 +315,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Jeff Arnold' },
     ],
     Braenstus: [
-        { name: 'Adam Nielsen', factions: ['Rooster'], displayName: 0 },
+        { name: '[Lawyer /] Adam Nielsen', factions: ['DoJ', 'Rooster'], displayName: 1 },
     ],
     breakyx: [
         { name: 'Dris Peters', factions: ['SSB'] },
