@@ -95,7 +95,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Dr.] Valentine', factions: ['Medical'] },
     ],
     AfricanSnowball: [
-        { name: '[Justice] Buck Stanton', factions: ['DoJ'] },
+        { name: '[Judge] Buck Stanton', factions: ['DoJ'] },
         { name: '[Officer] Dwayne Carter IV', factions: ['Police'], displayName: 2 },
         { name: 'Leland "LJ" Jones', factions: ['GSF', 'Pegasus'] },
     ],
@@ -834,7 +834,7 @@ export const npCharacters: NpCharacters = {
     ],
     hobbittrash: [
         { name: '[Officer] Tracy Martell', factions: ['Police'], nicknames: ['Cop'] },
-        { name: '[Justice] Katya Zamalodchikova', factions: ['DoJ'], displayName: 1 },
+        { name: '[Judge] Katya Zamalodchikova', factions: ['DoJ'], displayName: 1 },
         { name: 'Jane Obama', displayName: 0 },
         { name: 'Jane Souls', displayName: 0 },
         { name: 'Rounda Block', factions: ['ASRR'], displayName: 0 },
@@ -1018,7 +1018,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Ricardo Perez', factions: ['Burger Shot'], displayName: 1 },
     ],
     Judd: [
-        { name: '[Chief Justice] Coyote Russell', factions: ['DoJ'], displayName: 1, assumeServer: 'whitelist' },
+        { name: '[Judge] Coyote Russell', factions: ['DoJ'], displayName: 1, assumeServer: 'whitelist' },
         { name: 'Judd Lincoln' },
         { name: '[Officer] Judd Lincoln', factions: ['Police'], displayName: 1, assumeServer: 'public' },
         { name: 'Reverend I.M. Voland', factions: ['Dark Web'] },
@@ -1504,7 +1504,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Cindy Lou' },
     ],
     MurphyBraun: [
-        { name: '[Justice] Holden', factions: ['DoJ'] },
+        { name: '[Judge] Holden', factions: ['DoJ'] },
         { name: 'Marvin Peanut', nicknames: ['Marv'] },
         { name: '[Lawyer /] Murphy Braun', factions: ['DoJ'], displayName: 0 },
     ],
@@ -1604,7 +1604,7 @@ export const npCharacters: NpCharacters = {
     OccamsSabre: [
         { name: '[Officer] Jeffrey Bundy', factions: ['Police'], nicknames: ['451'] },
         { name: '[Lawyer /] Benjamin Crane', factions: ['DoJ'] },
-        { name: '[Justice] Ray Montag', factions: ['DoJ'] },
+        { name: '[Judge] Ray Montag', factions: ['DoJ'] },
         { name: 'Busta Block', factions: ['ASRR'], displayName: 0 },
     ],
     Octopimp: [
