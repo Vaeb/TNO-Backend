@@ -57,7 +57,7 @@ export const npFactionsRegex = {
             /(?!\?)/i,
         ])
     )),
-    medical: noLater(/(?<!then\b.*|!)(?:doctor|\b(?:dr|ems|emt)\b)/i),
+    medical: noLater(/(?<!then\b.*|!)(?:doctor|paramedic|therapist|psychologist|\b(?:dr|em[st])\b)/i),
 } as { [key in NpFactionsRegexKeys]: RegExp };
 
 export const npFactionsSubRegex: { [key in FactionRealMini]?: [string, RegExp][] } = {
