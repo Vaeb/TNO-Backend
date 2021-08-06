@@ -1998,6 +1998,7 @@ export const npCharacters: NpCharacters = {
     ],
     Spaceboy: [
         { name: 'Melbert "Mel" Rickenbacker' },
+        { name: 'James Randy', displayName: 0 },
         { name: 'Adrian Block', factions: ['ASRR'], displayName: 0 },
         { name: '[Deputy] Patrick Downing', factions: ['Police'], nicknames: ['Pat'] },
         { name: 'Casey Boyd', nicknames: ['Caseboy', 'L8PD'], displayName: 0 },
