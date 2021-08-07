@@ -1210,6 +1210,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Wyatt Derp', factions: ['Lost MC'] },
         { name: 'Pal Gore' },
     ],
+    KylendOnTwitch: [
+        { name: 'Kylend LaCroix', factions: ['GSF'], assumeServer: 'public' },
+    ],
     kyliebitkin: [
         { name: '[Deputy] Brittany Angel', factions: ['Police'], nicknames: ['Angle', 'Red Devil', 'R3d Devil'] },
         { name: 'Mary Mushkin', displayName: 0 },
