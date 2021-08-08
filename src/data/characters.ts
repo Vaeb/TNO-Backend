@@ -286,7 +286,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Barbarian /] Bjorn', factions: ['Police', 'LARPers'], assumeServer: 'public' },
     ],
     BJPofficial: [
-        { name: '[Lawyer /] Buford J. Preston', factions: ['DoJ'] },
+        { name: '[Lawyer //] Buford J. Preston', factions: ['DoJ'] },
     ],
     Blaustoise: [
         { name: 'Mickey S', factions: ['Cleanbois'], nicknames: ['Downbad', 'Downrat'], assumeServer: 'whitelist' },
@@ -318,7 +318,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Jeff Arnold' },
     ],
     Braenstus: [
-        { name: '[Lawyer /] Adam Nielsen', factions: ['DoJ', 'Rooster'], displayName: 1 },
+        { name: '[Lawyer //] Adam Nielsen', factions: ['DoJ', 'Rooster'], displayName: 1 },
     ],
     breakyx: [
         { name: 'Dris Peters', factions: ['SSB'] },
@@ -385,7 +385,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Lydia Vale', factions: ['Police'] },
         { name: 'Summer Mersion', factions: ['GSF'], displayName: 0 },
         { name: 'Natya Block', factions: ['ASRR'], displayName: 0 },
-        { name: "[Lawyer /] Shannon O'Banion", factions: ['DoJ'], displayName: 0 },
+        { name: "[Lawyer //] Shannon O'Banion", factions: ['DoJ'], displayName: 0 },
     ],
     Cathie: [
         { name: '[Deputy] Anita May', factions: ['Police'] },
@@ -502,7 +502,7 @@ export const npCharacters: NpCharacters = {
     curvyelephant: [
         { name: '[Deputy] Matt Rhodes', factions: ['Police'] },
         { name: 'Ryan Parker', factions: ['Lost MC'] },
-        { name: '[Lawyer /] Kevin Shaw', factions: ['DoJ'] },
+        { name: '[Lawyer //] Kevin Shaw', factions: ['DoJ'] },
     ],
     Curvyllama: [
         { name: '[Deputy] Lorenzo Lezar', factions: ['Police'], displayName: 1 },
@@ -989,7 +989,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Garry Berry', factions: ['Police'] },
     ],
     Joeeigel: [
-        { name: '[Lawyer /] Arthur MacNee', factions: ['DoJ', 'Rooster'], displayName: 1 },
+        { name: '[Lawyer //] Arthur MacNee', factions: ['DoJ', 'Rooster'], displayName: 1 },
     ],
     JoeSmitty123: [
         { name: '[Officer] Michael Murphy', factions: ['Police'] },
@@ -998,7 +998,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Jessie Jugg' },
         { name: 'Eva Wall' },
         { name: '[Dr.] Emma Gaine', factions: ['Medical'] },
-        { name: '[Lawyer /] Maggie Kayden', factions: ['DoJ'] },
+        { name: '[Lawyer //] Maggie Kayden', factions: ['DoJ'] },
     ],
     Jonthebroski: [
         { name: '[Mayor] Denzel Williams', factions: ['Cleanbois', 'Pegasus', 'Rooster'], nicknames: ['The "Cleaner"', 'Presidente'] },
@@ -1136,7 +1136,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Pablo Loco', factions: ['Vagos'], displayName: 0 },
     ],
     KinkyHobo_: [
-        { name: '[Lawyer /] Gill Schultz', factions: ['DoJ'], displayName: 1 },
+        { name: '[Lawyer //] Gill Schultz', factions: ['DoJ'], displayName: 1 },
         { name: 'Max Muller', displayName: 0 },
     ],
     Kitboga: [
@@ -1209,7 +1209,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Hampton Brandon', nicknames: ['TTD', 'Ten Toes Down'] },
         { name: 'Tame "The Mandalorian" Saxon', nicknames: ['Mandolorian'] },
         { name: 'Hat Carl', nicknames: ['The Matador'], displayName: 0 },
-        { name: "[Lawyer /] Rory O'Banion", factions: ['DoJ'], displayName: 0 },
+        { name: "[Lawyer //] Rory O'Banion", factions: ['DoJ'], displayName: 0 },
         { name: 'Wyatt Derp', factions: ['Lost MC'] },
         { name: 'Pal Gore' },
     ],
@@ -1264,7 +1264,7 @@ export const npCharacters: NpCharacters = {
     LisaMunchy: [
         { name: '[Officer] Lisa Adkins', factions: ['Police'] },
         { name: '[Therapist] Thalia Hayes', factions: ['Medical'] },
-        { name: '[Lawyer /] Lees Grey', factions: ['DoJ'] },
+        { name: '[Lawyer //] Lees Grey', factions: ['DoJ'] },
     ],
     Lisilsanya: [
         { name: '[EMS] Lei Sanya', factions: ['Medical'], nicknames: ['Lasagna'], displayName: 0 },
@@ -1366,7 +1366,7 @@ export const npCharacters: NpCharacters = {
     Mantis: [
         { name: '[Officer] Domenic Toretti', factions: ['Police'] },
         { name: 'Ike Block', factions: ['ASRR'], displayName: 0 },
-        { name: '[Lawyer /] Jerry Callow', factions: ['DoJ'], displayName: 1 },
+        { name: '[Lawyer //] Jerry Callow', factions: ['DoJ'], displayName: 1 },
         { name: 'Pepe Silvia' },
     ],
     Markiplier: [
@@ -1514,7 +1514,7 @@ export const npCharacters: NpCharacters = {
     MurphyBraun: [
         { name: '[Judge] Holden', factions: ['DoJ'] },
         { name: 'Marvin Peanut', nicknames: ['Marv'] },
-        { name: '[Lawyer /] Murphy Braun', factions: ['DoJ'], displayName: 0 },
+        { name: '[Lawyer //] Murphy Braun', factions: ['DoJ'], displayName: 0 },
     ],
     Myladyballs: [
         { name: 'Veronica Garcia', factions: ['Vagos'] },
@@ -1611,7 +1611,7 @@ export const npCharacters: NpCharacters = {
     ],
     OccamsSabre: [
         { name: '[Officer] Jeffrey Bundy', factions: ['Police'], nicknames: ['451'] },
-        { name: '[Lawyer /] Benjamin Crane', factions: ['DoJ'] },
+        { name: '[Lawyer //] Benjamin Crane', factions: ['DoJ'] },
         { name: '[Judge] Ray Montag', factions: ['DoJ'] },
         { name: 'Busta Block', factions: ['ASRR'], displayName: 0 },
     ],
@@ -1630,7 +1630,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Peter Frost', factions: ['Police'] },
     ],
     OhMadOne: [
-        { name: '[Lawyer /] Ginzu Okada', factions: ['DoJ'] },
+        { name: '[Lawyer //] Ginzu Okada', factions: ['DoJ'] },
     ],
     OllyPop: [
         { name: 'Ivy Poppins' },
@@ -1935,7 +1935,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Darnell "Baby D" Davis', factions: ['SSB'] },
     ],
     Simo: [
-        { name: '[Lawyer /] Reggie Might', factions: ['DoJ'], assumeServer: 'whitelist' },
+        { name: '[Lawyer //] Reggie Might', factions: ['DoJ'], assumeServer: 'whitelist' },
         { name: '[A.D.A.] Blake Specter', factions: ['DoJ'] },
         { name: '[Officer] Reggie Might', factions: ['Police'], assumeServer: 'public' },
     ],
@@ -2332,7 +2332,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Dr.] Kennedy Adams', factions: ['Medical'], displayName: 0 },
     ],
     Wehtuns: [
-        { name: '[Lawyer /] Lawrence Splainer', factions: ['DoJ'], displayName: 2 },
+        { name: '[Lawyer //] Lawrence Splainer', factions: ['DoJ'], displayName: 2 },
     ],
     Whippy: [
         { name: 'Irwin Dundee', factions: ['BBMC'], displayName: 2 },
