@@ -134,6 +134,9 @@ export const npCharacters: NpCharacters = {
     Alisha: [
         { name: 'Alisha Wuornos' },
     ],
+    Alonelyhawk: [
+        { name: '[Judge] Allison Thomas', factions: ['DoJ'] },
+    ],
     alpacagurl92: [
         { name: 'April Fooze', nicknames: ['first time'] },
     ],
