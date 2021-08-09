@@ -1935,7 +1935,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Darnell "Baby D" Davis', factions: ['SSB'] },
     ],
     Simo: [
-        { name: '[Lawyer //] Reggie Might', factions: ['DoJ'], assumeServer: 'whitelist' },
+        { name: 'Reggie Might', factions: ['DoJ'], displayName: 0, assumeServer: 'whitelist' },
         { name: '[A.D.A.] Blake Specter', factions: ['DoJ'] },
         { name: '[Officer] Reggie Might', factions: ['Police'], assumeServer: 'public' },
     ],
