@@ -20,7 +20,7 @@ export const regNp = /(?<!not\s)(?:no[\s\-_.]*pixel|\bn[\s\-_.]*p\b)(?![\s\-]*(?
 export const regNpPublic = addPublicCounties(mergeRegex([
     /(?:no[\s\-_.]*pixel|\bn[\s\-_.]*p(?=\b|\d))(?:[\s\-_.]*(?:rp|\d+\.?\d*))?[\W_]*pub\w*\b(?!\W+(?:later|after))/i,
     /|(\bpub\w*[\W_]*(?:no[\s\-_.]*pixel|\bn[\s\-_.]*p(?=\b|\d)))/i,
-    /|(?<=(?:on|playing)\W+)(?:pub|public)/i,
+    /|(?<=(?:\bon|playing|gta[\s\-_.]*[5v]?|rp|roleplay)\W+)(?:pub|public)/i,
     /|\bpub\w*[\W_]*(?:pub|public|server|county|city|country|universe|timeline|queue|for\b|roleplay|rp\b|stuff\b|shenanigans)/i,
     /|[^\w\s]\s*pub\w*\s*[^\w\s]/i,
     /|\b(?:pub|public)$/i,
@@ -44,7 +44,7 @@ export const regOthers = [
     { name: 'Grizzley World', reg: /grizzley[\s\-]*wo?rld/i, include: 0 },
     {
         name: '',
-        reg: /\bgta[\s:-]*v?[\s:-]*online|chaos\s*mod\b|story[\s\-]*mode|\bgta[\s:-]*v?[\s\-]+story|grizzely\s*rp|\boc\s*rp\b|\bybn\b/i,
+        reg: /\bgta[\s:-]*[5v]?[\s:-]*online|chaos\s*mod\b|story[\s\-]*mode|\bgta[\s:-]*[5v]?[\s\-]+story|grizzely\s*rp|\boc\s*rp\b|\bybn\b/i,
         include: 0,
     },
 ];
