@@ -344,6 +344,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Sasuke Johnson' },
         { name: '? "TTS" ?' },
         { name: 'Sanic Speedrun' },
+        { name: '? "Vsauce" ?', factions: ['SSB'], nicknames: ['Bsauce'] },
         { name: 'Chi "Chi-ku" Ku' },
         { name: 'Plankton ?' },
         { name: 'Bruce "The Dank Knight" Strayne' },
