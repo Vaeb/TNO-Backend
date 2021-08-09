@@ -1015,7 +1015,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Billiam Williams', factions: ['Police'], displayName: 1 },
     ],
     JPKMoto: [
-        { name: '[A.D.A.] Odessa Pearson', factions: ['DoJ'], displayName: 1 },
+        { name: '[Clerk] Odessa Pearson', factions: ['DoJ'], displayName: 1 },
         { name: 'Nora Dupres' },
         { name: 'Zee Nanakaze Mathers' },
     ],
