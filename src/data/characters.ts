@@ -1677,7 +1677,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Jane Obama', displayName: 0 },
     ],
     peruze: [
-        { name: 'Ronald "Scuffed Tony" Legarski', factions: ['ASRR'], nicknames: ['Tony', 'Block'] },
+        { name: 'Ronald "Scuffed Tony" Legarski', factions: ['ASRR'], nicknames: ['Tony', 'Ron', 'Block'] },
     ],
     peterparkTV: [
         { name: 'Peener Pogue', factions: ['Rooster'] },
