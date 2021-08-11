@@ -285,7 +285,7 @@ export const npCharacters: NpCharacters = {
         { name: '? "O Dogg" ?', factions: ['SSB'] },
     ],
     Biotoxz_: [
-        { name: '[Barbarian /] Bjorn', factions: ['LARPers', 'Rooster'], assumeServer: 'whitelist' },
+        { name: '[Barbarian /] Bjorn', factions: ['LARPers', 'Cleanbois', 'Rooster'], assumeServer: 'whitelist' },
         { name: '[Barbarian /] Bjorn', factions: ['Police', 'LARPers'], assumeServer: 'public' },
     ],
     BJPofficial: [
@@ -746,7 +746,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Ranger] Connie Clark', factions: ['Police'], displayName: 2, assumeServer: 'public' },
     ],
     Fyzicul: [
-        { name: '[Shaman /] Keith "Lando" Wanderlust', factions: ['LARPers', 'Rooster'], nicknames: ['Stormborn', 'Shaman', 'Mountain Kingdom'], displayName: 0 },
+        { name: '[Shaman /] Keith "Lando" Wanderlust', factions: ['LARPers', 'Cleanbois', 'Rooster'], nicknames: ['Stormborn', 'Shaman', 'Mountain Kingdom'], displayName: 0 },
     ],
     Gabz: [
         { name: '[Development /] Gabz', factions: ['Development'], nicknames: ['3D'] },
@@ -755,7 +755,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Peter Johnson', factions: ['Police'] },
     ],
     Garek: [
-        { name: '[Cleric /] Burt "Gloryon" Beans', factions: ['LARPers', 'Rooster'], nicknames: ['Cleric'] },
+        { name: '[Cleric /] Burt "Gloryon" Beans', factions: ['LARPers', 'Cleanbois', 'Rooster'], nicknames: ['Cleric'] },
     ],
     GattisTV: [
         { name: 'Carlos Guzman', factions: ['Vagos'], displayName: 0 },
@@ -773,7 +773,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Lance Malton', factions: ['Police'] },
     ],
     ggqf: [
-        { name: '[Paladin /] Stagdancer', factions: ['LARPers', 'Rooster'], nicknames: ['Gea'] },
+        { name: '[Paladin /] Stagdancer', factions: ['LARPers', 'Cleanbois', 'Rooster'], nicknames: ['Gea'] },
         { name: '[Officer] Bennett Calhoun', factions: ['Police'] },
     ],
     gibbs_gg: [
@@ -921,7 +921,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Levi Dawson', factions: ['SSB'] },
     ],
     ItsLeslie: [
-        { name: '[Wizard /] KyrinChan "Leyla" WeuhBou', factions: ['LARPers', 'Rooster'], nicknames: ['Nightingale', 'Wizard', 'Embervale'] },
+        { name: '[Wizard /] KyrinChan "Leyla" WeuhBou', factions: ['LARPers', 'Cleanbois', 'Rooster'], nicknames: ['Nightingale', 'Wizard', 'Embervale'] },
     ],
     ItsLSG: [
         { name: '[Officer] Jack Miller', factions: ['Police'] },
@@ -1847,7 +1847,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Ezekiel "Zero" Rogaine' },
     ],
     Saiiren: [
-        { name: 'Ai "Egg" Musori', nicknames: ['Bitch'], factions: ['LARPers', 'Rooster'], displayName: 0 },
+        { name: 'Ai "Egg" Musori', nicknames: ['Bitch'], factions: ['LARPers', 'Cleanbois', 'Rooster'], displayName: 0 },
         { name: '[Deputy] Yuu Gondai', factions: ['Police'], nicknames: ['Yu', 'Yoo', 'Gon Die'] },
     ],
     Sal_Rosenberg: [
@@ -1906,7 +1906,7 @@ export const npCharacters: NpCharacters = {
     shiny: [
         { name: '[Officer] Honey Buns', factions: ['Police'], nicknames: ['D-21'] },
         { name: 'Pebbles ?', nicknames: ['Dog'] },
-        { name: '[Archdruid /] Clyde "Meowfurryon" Eastside', factions: ['LARPers', 'Rooster'], nicknames: ['Druid', 'Archdruid', 'Malfurryon'] },
+        { name: '[Archdruid /] Clyde "Meowfurryon" Eastside', factions: ['LARPers', 'Cleanbois', 'Rooster'], nicknames: ['Druid', 'Archdruid', 'Malfurryon'] },
     ],
     Shortyyguy: [
         { name: 'Eddie Delish' },
@@ -2076,7 +2076,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Mitch "Dumbass" Bader' },
     ],
     Surefour: [
-        { name: 'Fred Fredrick', factions: ['LARPers', 'Rooster'], nicknames: ['Necrolord', 'Ranger'], displayName: 3 },
+        { name: 'Fred Fredrick', factions: ['LARPers', 'Cleanbois', 'Rooster'], nicknames: ['Necrolord', 'Ranger'], displayName: 3 },
         { name: 'Chute D. Block', factions: ['ASRR'] },
         { name: '[Officer] Kenny Hawk', factions: ['Police'], nicknames: ['Powice'], displayName: 1 },
     ],
@@ -2308,7 +2308,12 @@ export const npCharacters: NpCharacters = {
         { name: 'Babe Calloway', factions: ['Rooster'], displayName: 0 },
     ],
     Vigors: [
-        { name: '[Warlock /] Kayn "Yager Demonblood" Larp', factions: ['LARPers', 'Rooster'], nicknames: ['Warlock', 'Fighter', 'Yager', 'Demonblood', 'Demon'], displayName: 0 },
+        {
+            name: '[Warlock /] Kayn "Yager Demonblood" Larp',
+            factions: ['LARPers', 'Cleanbois', 'Rooster'],
+            nicknames: ['Warlock', 'Fighter', 'Yager', 'Demonblood', 'Demon'],
+            displayName: 0,
+        },
     ],
     VindiceLIVE: [
         { name: '[Deputy] Oliver Fury', factions: ['Police'] },
