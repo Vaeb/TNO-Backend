@@ -251,6 +251,9 @@ export const npCharacters: NpCharacters = {
     barryscottlive: [
         { name: 'Barry Scott' },
     ],
+    Basyk: [
+        { name: '[Deputy] Marcellus Mikaelson', factions: ['Police'], displayName: 2 },
+    ],
     BazzaGazza: [
         { name: 'Barry Benson', factions: ['BBMC'], displayName: 0 },
     ],
