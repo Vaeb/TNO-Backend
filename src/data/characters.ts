@@ -1582,6 +1582,9 @@ export const npCharacters: NpCharacters = {
     Nmplol: [
         { name: 'Buddy Black' },
     ],
+    nnsLUL: [
+        { name: '[Development /] nns', factions: ['Development'] },
+    ],
     NoElusionz: [
         { name: 'Bobby Schmiguel', factions: ['BSK'], nicknames: ['Bobby Beats'], displayName: 3 },
     ],
