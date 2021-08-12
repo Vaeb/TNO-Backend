@@ -554,7 +554,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Keith "Bulldog" Dooger', factions: ['Lost MC'] },
     ],
     Denis3D: [
-        { name: '[Development /] Denis3D', factions: ['Development'], nicknames: ['3D'] },
+        { name: '[Development //] Denis3D', factions: ['Development'], nicknames: ['3D'] },
     ],
     devolore: [
         { name: '[Officer] Cassius Kennedy', factions: ['Police'], nicknames: ['Cash'] },
@@ -611,7 +611,7 @@ export const npCharacters: NpCharacters = {
     dwjft: [
         { name: 'Dean Watson', leader: true },
         { name: '[Officer] Derby West Bromwich', factions: ['Police'], displayName: 3 },
-        { name: '[Development /] DW', factions: ['Development'], nicknames: ['tinkering'] },
+        { name: '[Development //] DW', factions: ['Development'], nicknames: ['tinkering'] },
     ],
     Dyoti: [
         { name: '[Deputy] Wyatt Cole', factions: ['Police'], assumeServer: 'public' },
@@ -749,7 +749,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Keith "Lando" Wanderlust', factions: ['LARPers', 'Cleanbois', 'Rooster'], nicknames: ['Stormborn', 'Shaman', 'Mountain Kingdom'], displayName: 0 },
     ],
     Gabz: [
-        { name: '[Development /] Gabz', factions: ['Development'], nicknames: ['3D'] },
+        { name: '[Development //] Gabz', factions: ['Development'], nicknames: ['3D'] },
     ],
     GameDemented: [
         { name: '[Deputy] Peter Johnson', factions: ['Police'] },
@@ -799,7 +799,7 @@ export const npCharacters: NpCharacters = {
     GTAWiseGuy: [
         { name: 'Eddie Marshall', factions: ['Tuner Shop'] },
         { name: '[Deputy] Jim Underwood', factions: ['Police'], nicknames: ['337'] },
-        { name: '[Development /] GTAWiseGuy', factions: ['Development'], nicknames: ['Handling', 'Fixes', 'Fixing', 'Tuning', reg(/\btuners?(?:\s*\w*)*leaks/)] },
+        { name: '[Development //] GTAWiseGuy', factions: ['Development'], nicknames: ['Handling', 'Fixes', 'Fixing', 'Tuning', reg(/\btuners?(?:\s*\w*)*leaks/)] },
         { name: 'Igor Skovacic' },
         { name: 'Big M', displayName: 0 },
         { name: 'Daequan "Double D" DeMarco', factions: ['SSB'] },
@@ -1183,7 +1183,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Trooper] Kael Soze', factions: ['Police'], highCommand: true, leader: true, nicknames: ['are illegal'] },
         { name: '[Officer] Francis Francer', factions: ['Police'], displayName: 1 },
         { name: 'Otto Delmar', nicknames: ['race', 'racing'] },
-        { name: '[Development /] Koil', factions: ['Development'], nicknames: ['Code'] },
+        { name: '[Development //] Koil', factions: ['Development'], nicknames: ['Code'] },
         { name: 'Saint Jospeh', nicknames: ['Jesus', 'Joseph', 'XUJIA', 'EMC'], displayName: 0 },
         { name: 'Ray Ray', factions: ['ASRR'], displayName: 0 },
     ],
@@ -1572,7 +1572,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Leslie Lingberg', displayName: 0, nicknames: ['Ling'] },
     ],
     Nikez: [
-        { name: '[Development /] Nikez', factions: ['Development'] },
+        { name: '[Development //] Nikez', factions: ['Development'] },
         { name: 'Nick Simone', displayName: 0 },
         { name: '[Officer] Cody Sharp', factions: ['Police'] },
     ],
@@ -1583,7 +1583,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Buddy Black' },
     ],
     nnsLUL: [
-        { name: '[Development /] nns', factions: ['Development'] },
+        { name: '[Development //] nns', factions: ['Development'] },
     ],
     NoElusionz: [
         { name: 'Bobby Schmiguel', factions: ['BSK'], nicknames: ['Bobby Beats'], displayName: 3 },
@@ -1757,7 +1757,7 @@ export const npCharacters: NpCharacters = {
     ],
     Raided: [
         { name: '[Officer] Gage Draider', factions: ['Police'] },
-        { name: '[Development /] Raided', factions: ['Development'] },
+        { name: '[Development //] Raided', factions: ['Development'] },
     ],
     raine: [
         { name: 'Penny Farthing', factions: ['Rooster'] },
@@ -2242,7 +2242,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Paulie' },
     ],
     Tobiii: [
-        { name: '[Development /] Tobiii', factions: ['Development'] },
+        { name: '[Development //] Tobiii', factions: ['Development'] },
     ],
     Trainwreckstv: [
         { name: 'Douglas "Doug Buck" Buck', displayName: 0 },
