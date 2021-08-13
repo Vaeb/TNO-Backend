@@ -1008,6 +1008,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Mayor] Denzel Williams', factions: ['Cleanbois', 'Pegasus', 'Rooster', 'DoJ'], nicknames: ['The "Cleaner"', 'Presidente'] },
         { name: '[Officer] Johnny Divine', factions: ['Police'], displayName: 0 },
         { name: 'Broskingle Dan', factions: ['Dans'] },
+        { name: '[Senator] ? " " ?', factions: ['DoJ'], nicknames: ['Senate'] },
         { name: 'Dio Ivanov', factions: ['Russians'] },
         { name: 'Holden D. Block', factions: ['ASRR'], displayName: 0 },
     ],
