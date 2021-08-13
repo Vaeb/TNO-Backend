@@ -9,9 +9,9 @@ export const intervalSeconds = 0.7;
 
 const addPublicCounties = (reg: RegExp) => new RegExp(
     replaceAll(
-        replaceAll(reg.source, 'pub\\w*', '(?:pub\\w*|orange|purp\\w*)'),
+        replaceAll(reg.source, 'pub\\w*', '(?:pub\\w*|ps|orange|purp\\w*)'),
         '(?:pub|public',
-        '(?:pub|public|orange|purp|purple'
+        '(?:pub|public|ps|orange|purp|purple'
     ),
     reg.flags
 );
