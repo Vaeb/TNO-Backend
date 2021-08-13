@@ -1508,6 +1508,7 @@ export const npCharacters: NpCharacters = {
     ],
     mrwobblestwitch: [
         { name: 'Axel Simpleton' },
+        { name: 'Sly Lion' },
     ],
     MsTeamKK: [
         { name: 'Riley Carter' },
