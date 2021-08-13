@@ -2030,7 +2030,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Kray-Tor Skullfondler', factions: ['HOA'] },
     ],
     Ssaab: [
-        { name: '[Chief of Police] Sam Baas', factions: ['Police'], nicknames: ['Samir', 'Baasem'], displayName: 2 },
+        { name: '[Chief of Police] Sam Baas', factions: ['Police'], nicknames: ['Samir', 'Baasem'], displayName: 2, leader: true },
         { name: 'Al Saab', factions: ['Cleanbois', 'HOA'], displayName: 2 },
     ],
     stanwilis: [
