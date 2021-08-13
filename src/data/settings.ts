@@ -11,7 +11,7 @@ const addPublicCounties = (reg: RegExp) => new RegExp(
     replaceAll(
         replaceAll(reg.source, 'pub\\w*', '(?:pub\\w*|ps|orange|purp\\w*)'),
         '(?:pub|public',
-        '(?:pub|public|ps|orange|purp|purple'
+        '(?:pub|public|public[\\s\\-_.]*server|ps\\b|orange|purp|purple'
     ),
     reg.flags
 );
