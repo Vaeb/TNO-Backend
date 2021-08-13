@@ -124,7 +124,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Timoteo "TT" Bushnell', nicknames: ['Rasta'] },
     ],
     aleks: [
-        { name: '[Chief of Police] Bobby Smith', factions: ['Police'], leader: true, nicknames: ['Bob', 'Chief'], displayName: 1 },
+        { name: '[Officer] Bobby Smith', factions: ['Police'], leader: true, nicknames: ['Bob', 'Chief'], displayName: 1 },
         { name: '[FIB Agent] Heath Mercer', factions: ['Police'] },
         { name: 'Vasily "V" Sazkaljovich', factions: ['Pegasus', 'Rooster'] },
     ],
