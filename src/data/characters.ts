@@ -1546,6 +1546,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Tessa Lamb', factions: ['Gulag Gang'], assumeServer: 'public' },
         { name: 'Taylor "Onyx" White', factions: ['Police'] },
         { name: 'Rachel Parker' },
+        { name: 'Stacy Myers', displayName: 0 },
     ],
     Natettvrp: [
         { name: 'Carlos "Carlitos" Loco', factions: ['Vagos'] },
@@ -2222,6 +2223,7 @@ export const npCharacters: NpCharacters = {
     theLGX: [
         { name: 'Bryce Miller', nicknames: ['BDawg'], assumeServer: 'whitelist' },
         { name: 'Diego Marquez' },
+        { name: 'Dave Myers', displayName: 0 },
         { name: 'Roland Nelson', assumeServer: 'whitelist' },
         { name: '[Deputy] Neil McReal', factions: ['Police'] },
         { name: '[Officer] Roland Nelson', factions: ['Police'], assumeServer: 'public' },
