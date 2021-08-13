@@ -40,6 +40,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Tim Lee', displayName: 0 },
         { name: '[Officer] Bexar McCree', factions: ['Police'] },
     ],
+    '9baller': [
+        { name: 'D "D Rose" Rose', factions: ['SSB'] },
+    ],
     Aaoki: [
         { name: '[Deputy] Maddison Bancroft', factions: ['Police'], displayName: 1 },
         { name: 'Shazza Wazza', factions: ['Rooster'], nicknames: ['Shazzam'] },
@@ -2317,6 +2320,9 @@ export const npCharacters: NpCharacters = {
     ],
     Venomfly: [
         { name: 'Babe Calloway', factions: ['Rooster'], displayName: 0 },
+    ],
+    veriomonen_: [
+        { name: 'Dimitri Azmanov', factions: ['SSB'], displayName: 0 },
     ],
     Vigors: [
         {
