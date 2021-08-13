@@ -209,35 +209,43 @@ const filterExclude: { [key in FactionRealMini]?: boolean } = {
     otherfaction: true,
 };
 
+type FactionMiniArr = FactionMini[];
+
+const filterOrderTop: FactionMiniArr = [
+    'allnopixel',
+    'alltwitch',
+    'publicnp',
+    'cleanbois',
+    'changgang',
+    'police',
+    'doj',
+    'vagos',
+    'ssb',
+    'gsf',
+    'rooster',
+    'bsk',
+    'gulaggang',
+    'lostmc',
+    'nbc',
+    'hoa',
+    'asrr',
+    'medical',
+    'prison',
+    'larpers',
+    'pegasus',
+    'bbmc',
+    'angels',
+];
+
+const filterOrderAfterHasColor: FactionMiniArr = ['burgershot', 'doc', 'development'];
+
+const filterOrderAfterNoColor: FactionMiniArr = ['independent', 'podcast', 'othernp', 'other'];
+
 const filterOrder: { [key in FactionMini]?: number } = Object.assign(
     {},
-    ...[
-        'allnopixel',
-        'alltwitch',
-        'publicnp',
-        'cleanbois',
-        'changgang',
-        'police',
-        'doj',
-        'vagos',
-        'ssb',
-        'gsf',
-        'medical',
-        'gulaggang',
-        'rooster',
-        'lostmc',
-        'nbc',
-        'bsk',
-        'hoa',
-        'asrr',
-        'prison',
-        'larpers',
-        'pegasus',
-        'bbmc',
-        'angels',
-    ].map((mini, index) => ({ [mini]: index + 1 })),
-    ...['burgershot', 'doc', 'development', 'podcast', 'othernp', 'other'].map((mini, index) => ({ [mini]: 1000 + index + 1 })),
-    ...['independent', 'podcast', 'othernp', 'other'].map((mini, index) => ({ [mini]: 3000 + index + 1 }))
+    ...filterOrderTop.map((mini, index) => ({ [mini]: index + 1 })),
+    ...filterOrderAfterHasColor.map((mini, index) => ({ [mini]: 1000 + index + 1 })),
+    ...filterOrderAfterNoColor.map((mini, index) => ({ [mini]: 3000 + index + 1 }))
 );
 
 const filterRename: { [key in FactionMini]?: string } = {
