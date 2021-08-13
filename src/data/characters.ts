@@ -1749,7 +1749,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Hades', nicknames: ['Dog'] },
     ],
     PuckNatorGaming: [
-        { name: 'Tate Urchips', factions: ['Prison'], displayName: 0 },
+        { name: 'Tate Urchips', factions: ['Prison'], displayName: 0, assume: 'assumeOther' },
     ],
     puddledux: [
         { name: 'Jake Rake', factions: ['Prison'], displayName: 0 },
@@ -2149,6 +2149,9 @@ export const npCharacters: NpCharacters = {
     ],
     TastyMintsNA: [
         { name: '[Officer] Eric Wong', factions: ['Police'], assumeServer: 'public' },
+    ],
+    tehbigmadbarbarian: [
+        { name: '[Deputy] ? "JJ" ?', factions: ['Police'], assumeServer: 'public' },
     ],
     Tehrani: [
         { name: 'Boris Ivanov', factions: ['Russians'], leader: true },
