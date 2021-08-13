@@ -859,6 +859,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Joaquin "JJ" Jimenes', factions: ['Vagos'] },
         { name: 'Allen Widemann', factions: ['Chang Gang'] },
     ],
+    HPD007: [
+        { name: 'Joe Flatley', factions: ['BSK'], nicknames: ['Fat Joe'], displayName: 3 },
+    ],
     huddy_nz: [
         { name: 'Ash Huddy Hudson', factions: ['Lunatix'] },
     ],
@@ -925,6 +928,9 @@ export const npCharacters: NpCharacters = {
     ],
     ItsLSG: [
         { name: '[Officer] Jack Miller', factions: ['Police'] },
+    ],
+    itsmejjroleplay: [
+        { name: 'Johnny Jacksun', factions: ['BSK'], nicknames: ['JJ'], displayName: 0 },
     ],
     ItsSammyP: [
         { name: 'Mando Thompson', factions: ['SSB'] },
