@@ -80,3 +80,8 @@ export const parseParam = (value: string): any => {
 export const escapeRegExp = (str: string): string => str.replace(/[.*+\-?^${}()|[\]\\]/g, '\\$&'); // $& means the whole matched string
 
 export const replaceAll = (str: string, find: string, replace: string): string => str.replace(new RegExp(escapeRegExp(find), 'g'), replace);
+
+type Entries<T> = { [K in keyof T]: [K, T[K]] }[keyof T];
+export function objectEntries<T extends Record<string, unknown>>(t: T): Entries<T>[] {
+    return Object.entries(t) as any;
+}

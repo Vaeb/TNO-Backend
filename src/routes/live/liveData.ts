@@ -8,9 +8,9 @@ import {
 import { regNp, regOthers, regNpPublic, regNpWhitelist } from '../../data/settings';
 import settingsParsed from '../../data/settingsParsed';
 import factionsParsed from '../../data/factionsParsed';
-import { npFactions } from '../../data/meta';
+import { NpFactions, npFactions } from '../../data/meta';
 import { npCharacters as npCharactersOld } from '../../data/characters';
-import { isFactionColor, lesserFactions, greaterFactions, npFactionsRegex, npFactionsSubRegex } from '../../data/factions';
+import { isFactionColor, lesserFactions, greaterFactions, npFactionsRegex, npFactionsSubRegex, filterFactionsBase } from '../../data/factions';
 
 import type { RecordGen } from '../../utils';
 import type { FactionMini, FactionFull, FactionRealMini, FactionRealFull } from '../../data/meta';
@@ -302,8 +302,15 @@ interface Stream extends BaseStream {
 type FactionCount = { [key in FactionMini]: number };
 
 interface Live {
-    streams: Stream[];
+    minViewers: number;
+    stopOnMin: boolean;
+    intervalSeconds: number;
+    useColorsDark: RecordGen;
+    useColorsLight: RecordGen;
+    npFactions: NpFactions;
     factionCount: FactionCount;
+    filterFactions: any[];
+    streams: Stream[];
 }
 
 const cachedResults: { [key: string]: Live | undefined } = {};
@@ -643,7 +650,24 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                 });
 
                 factionCount.alltwitch = gtaStreams.length;
-                const result: Live = { ...includedData, factionCount, streams: npStreams };
+
+                const filterFactions = (cloneDeepJson(filterFactionsBase) as typeof filterFactionsBase)
+                    .sort((dataA, dataB) => {
+                        const countA = factionCount[dataA[0]] || 0;
+                        const countB = factionCount[dataB[0]] || 0;
+                        if (countA === countB) return 0;
+                        if (countA === 0) return 1;
+                        if (countB === 0) return -1;
+                        return 0;
+                    });
+
+                for (const data of filterFactions) {
+                    data[2] = factionCount[data[0]] !== 0;
+                }
+
+                log(filterFactions);
+
+                const result: Live = { ...includedData, factionCount, filterFactions, streams: npStreams };
                 cachedResults[optionsStr] = result;
                 log('Done fetching streams data!');
                 resolve(npStreams);

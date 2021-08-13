@@ -63,3 +63,4 @@ export type FactionMini = keyof NpFactions;
 export type FactionFull = (NpFactions)[FactionMini];
 
 export const npFactionsRealMini: FactionRealMini[] = (Object.keys(npFactionsReal) as FactionRealMini[]);
+export const npFactionsMini: FactionMini[] = (Object.keys(npFactions) as FactionMini[]);

@@ -1,7 +1,7 @@
 /* eslint-disable no-useless-escape */
 /* eslint-disable max-len */
 
-import { mergeRegex } from '../utils';
+import { mergeRegex, objectEntries } from '../utils';
 import { npFactions, npFactionsRealMini } from './meta';
 
 import type { FactionMini, FactionRealMini } from './meta';
@@ -153,6 +153,8 @@ export const useColorsDark = { // #f9002f
     othernp: '#ffffff',
     publicnp: '#81ecec',
     other: '#81ecec',
+    allnopixel: '#ffffff',
+    alltwitch: '#ffffff',
 } as const;
 
 export type FactionColorsMini = keyof typeof useColorsDark;
@@ -192,4 +194,75 @@ export const useColorsLight: { [key in FactionColorsMini]: string } = {
     othernp: '#000000',
     publicnp: '#65b1b8',
     other: '#65b1b8',
+    allnopixel: '#ffffff',
+    alltwitch: '#ffffff',
 } as const;
+
+const filterExclude: { [key in FactionRealMini]?: boolean } = {
+    mechanic: true,
+    harmony: true,
+    quickfix: true,
+    tunershop: true,
+    marabunta: true,
+    mersions: true,
+    podcast: true,
+    otherfaction: true,
+};
+
+const filterOrder: { [key in FactionMini]?: number } = Object.assign(
+    {},
+    ...[
+        'allnopixel',
+        'alltwitch',
+        'publicnp',
+        'cleanbois',
+        'changgang',
+        'police',
+        'doj',
+        'vagos',
+        'ssb',
+        'gsf',
+        'medical',
+        'gulaggang',
+        'rooster',
+        'lostmc',
+        'nbc',
+        'bsk',
+        'hoa',
+        'asrr',
+        'prison',
+        'larpers',
+        'pegasus',
+        'bbmc',
+        'angels',
+    ].map((mini, index) => ({ [mini]: index + 1 })),
+    ...['burgershot', 'doc', 'development', 'podcast', 'othernp', 'other'].map((mini, index) => ({ [mini]: 1000 + index + 1 })),
+    ...['independent', 'podcast', 'othernp', 'other'].map((mini, index) => ({ [mini]: 3000 + index + 1 }))
+);
+
+const filterRename: { [key in FactionMini]?: string } = {
+    allnopixel: 'All NoPixel (Default)',
+    alltwitch: 'All Twitch (No Filtering)',
+    publicnp: 'NoPixel Public',
+    hoa: 'Home Owners Association',
+    asrr: 'Alta Street Ruff Rydaz',
+    nbc: 'Natural Born Crackheads',
+    bsk: 'Brouge Street Kingz',
+    bbmc: 'Bondi Boys MC',
+    rooster: 'Rooster Companies',
+    doc: 'Department of Corrections',
+    doj: 'Lawyers & Judges',
+    ssb: 'Ballas',
+    gsf: 'Grove Street Families',
+    larpers: 'The Guild',
+    prison: 'Prison Lifers',
+    angels: 'The Angels',
+    lunatix: 'Lunatix MC',
+    othernp: 'Unknown',
+    other: 'Other Servers',
+};
+
+export const filterFactionsBase: [FactionMini, string, boolean][] = objectEntries(npFactions)
+    .filter(mini => !(mini[0] in filterExclude))
+    .sort((miniA, miniB) => (filterOrder[miniA[0]] || (miniA[0] in useColorsDark ? 1000 : 2000)) - (filterOrder[miniB[0]] || (miniB[0] in useColorsDark ? 1000 : 2000)))
+    .map(mini => [mini[0], filterRename[mini[0]] || mini[1], true]);
