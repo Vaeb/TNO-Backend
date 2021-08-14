@@ -870,7 +870,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Ash Huddy Hudson', factions: ['Lunatix'] },
     ],
     Huntag: [
-        { name: 'Freddy Fastfingers', factions: ['BBMC'], displayName: 0 },
+        { name: 'Freddy Fastfingers', factions: ['HOA'], displayName: 0 },
     ],
     Hurnani: [
         { name: 'Borat ?' },
