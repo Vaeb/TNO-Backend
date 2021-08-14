@@ -2014,6 +2014,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Bovice Wilkinson', factions: ['Prison'] },
         { name: 'Tayvadius "Chef" Jamarcus Livingston III', factions: ['GSF'] },
     ],
+    SnekoGebiko: [
+        { name: '[Deputy] Perry Willis', factions: ['Police'], displayName: 1, assumeServer: 'public' },
+    ],
     sock22: [
         { name: '[Deputy] Richard Dark', factions: ['Police'] },
     ],
