@@ -291,6 +291,7 @@ interface Stream extends BaseStream {
     characterName: string | null;
     faction: FactionMini;
     factions: FactionMini[];
+    factionsMap: { [key in FactionMini]?: boolean };
     tagText: string;
     tagFaction: FactionColorsMini;
     tagFactionSecondary?: FactionColorsMini;
@@ -461,6 +462,7 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                             characterName: null,
                             faction: 'other',
                             factions: ['other'],
+                            factionsMap: { other: true },
                             tagText: serverName.length > 0 ? `::${serverName}::` : '',
                             tagFaction: 'other',
                             noOthersInclude,
@@ -635,6 +637,7 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                         characterName: possibleCharacter?.name ?? null,
                         faction: activeFactions[0],
                         factions: activeFactions,
+                        factionsMap: Object.assign({}, ...activeFactions.map(faction => ({ [faction]: true }))),
                         tagText,
                         tagFaction,
                         tagFactionSecondary: onNpPublic ? 'publicnp' : undefined,
