@@ -304,6 +304,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Kaleb "Kleb" Rush', factions: ['HOA'] },
         { name: '[Officer] Ryan Wright', factions: ['Police'] },
     ],
+    BLooD_MoNeY_: [
+        { name: '[Lawyer //] Griz ?', factions: ['DoJ'], displayName: 1 },
+    ],
     Blown: [
         { name: 'Taylor "Spaceman" Briggs', factions: ['Burger Shot'] },
     ],
