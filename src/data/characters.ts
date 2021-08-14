@@ -1291,6 +1291,9 @@ export const npCharacters: NpCharacters = {
     Loorara: [
         { name: 'Olivia Garcia', factions: ['BBMC'], nicknames: ['Liv', 'Livvy', 'Olives'], displayName: 0 },
     ],
+    Loqrin: [
+        { name: '[Development //] Loqrin', factions: ['Development'] },
+    ],
     Lord_Kebun: [
         { name: 'Mr. K', factions: ['Chang Gang'], leader: true, displayName: 0, nicknames: ['Chang', 'The "Dragon"'] },
         { name: '[Deputy] Richard Richardson', factions: ['Police'], nicknames: ['585'] },
