@@ -725,7 +725,7 @@ export const npCharacters: NpCharacters = {
     FortyOne: [
         { name: 'Jose Martin Perez', nicknames: ['JMP'] },
         { name: '[Deputy] John Archer', factions: ['Police'] },
-        { name: 'Lucas Ortiz', displayName: 0 },
+        { name: 'Lucas Ortiz', factions: ['Burger Shot'] },
         { name: 'Don Russo', displayName: 0 },
         { name: 'Jacob "Funny Man" Storm' },
         { name: 'Arious "Breezy" Campbell' },
