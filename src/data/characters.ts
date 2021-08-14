@@ -1237,8 +1237,8 @@ export const npCharacters: NpCharacters = {
         { name: 'Kylend LaCroix', factions: ['GSF'], assumeServer: 'public' },
     ],
     kyliebitkin: [
-        { name: '[Deputy] Brittany Angel', factions: ['Police'], nicknames: ['Angle', 'Red Devil', 'R3d Devil'] },
-        { name: 'Mary Mushkin', displayName: 0 },
+        { name: '[Deputy] Brittany Angel', factions: ['Police'], nicknames: ['Angle', 'Captain'] },
+        { name: 'Mary Mushkin', nicknames: ['Red Devil', 'R3d Devil'], displayName: 0 },
     ],
     Jackhuddo: [
         { name: 'Shane Powers', nicknames: ['ShaneO', 'ShanO'] },
