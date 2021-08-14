@@ -480,7 +480,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Scott Ridley', factions: ['Police'] },
     ],
     craigysmith89: [
-        { name: 'Frank Junior-Smith', factions: ['Vagos'], nicknames: ['Frank Jr Smith', 'Scottish'], displayName: 3 },
+        { name: 'Frank Junior-Smith', factions: ['Vagos'], nicknames: ['Frank Jr Smith', 'Franky', 'Scottish'], displayName: 3 },
     ],
     CrayonPonyfish: [
         { name: 'Wynona Fontaine', factions: ['DoC'], displayName: 2 },
@@ -1965,7 +1965,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Darnell "Baby D" Davis', factions: ['SSB'] },
     ],
     Simo: [
-        { name: 'Reggie Might', factions: ['Vagos'], displayName: 0, assumeServer: 'whitelist' },
+        { name: 'Reggie', factions: ['Vagos'], displayName: 0, assumeServer: 'whitelist' },
         { name: '[A.D.A.] Blake Specter', factions: ['DoJ'] },
         { name: '[Officer] Reggie Might', factions: ['Police'], assumeServer: 'public' },
     ],
