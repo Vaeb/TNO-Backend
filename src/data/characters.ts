@@ -1947,7 +1947,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Vinny Pistone', factions: ['Chang Gang', 'Chaos'], assumeServer: 'whitelist' },
         { name: 'Vinny Pistone', factions: ['Gulag Gang'], assumeServer: 'public' },
         { name: 'Mr J', factions: ['Chang Gang'], displayName: 0 },
-        { name: '[Officer] John Mineo', factions: ['Police'] },
+        { name: '[Ranger] John Mineo', factions: ['Police'] },
     ],
     Shrimp_: [
         { name: 'Bradley Kickass', factions: ['Burger Shot'], displayName: 0 },
