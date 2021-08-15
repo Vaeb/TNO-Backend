@@ -782,6 +782,7 @@ export const npCharacters: NpCharacters = {
     ],
     ggqf: [
         { name: 'Stanly "Stag" Lessfield', factions: ['LARPers', 'Cleanbois', 'Rooster'], nicknames: ['Stagdancer', 'Gea', 'Paladin'] },
+        { name: 'Garth Gregory Quincy Fafnir', displayName: 1 },
         { name: '[Officer] Bennett Calhoun', factions: ['Police'] },
     ],
     gibbs_gg: [
