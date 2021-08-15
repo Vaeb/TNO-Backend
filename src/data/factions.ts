@@ -129,7 +129,7 @@ export const useColorsDark = { // #f9002f
     vagos: '#f1c40f',
     gsf: '#006422',
     ssb: '#9b59b6',
-    bsk: '#7D56D3',
+    bsk: '#7957D4',
     pegasus: '#A87C2D',
     hoa: '#a6033a',
     doj: '#00a032',
