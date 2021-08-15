@@ -1752,7 +1752,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Kareem Lyon', factions: ['Police'], displayName: 1 },
     ],
     Protay10: [
-        { name: 'James Thompson', nicknames: ['James "Phantom" Thompson', 'Phantom'], displayName: 3 },
+        { name: 'James Thompson', nicknames: ['James "Phantom" Thompson', 'Phantom'], displayName: 4 },
     ],
     PsiSyn: [
         { name: '[Officer] Lucio Panini', factions: ['Police'], displayName: 1, assumeServer: 'public' },
@@ -2468,6 +2468,9 @@ export const npCharacters: NpCharacters = {
     ],
     Zettafrag: [
         { name: 'Kimberly Daniels', factions: ['Condemned MC'], displayName: 0 },
+    ],
+    Zidsy: [
+        { name: 'Zane Jackson', nicknames: ['Rat'], displayName: 3 },
     ],
     Ziggy: [
         { name: '[Ranger] Ziggy Buggs', factions: ['Police'], displayName: 1, assumeChar: true },
