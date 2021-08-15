@@ -2226,7 +2226,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Delaney', factions: ['Police'] },
     ],
     TheEazyLife: [
-        { name: 'Brandon Valentino', factions: ['Rooster', 'Pegasus'], displayName: 0 },
+        { name: 'Brandon Valentino', factions: ['Pegasus', 'Rooster'], displayName: 0 },
     ],
     theeYAIR: [
         { name: 'Yair Lamas', factions: ['SSB'], displayName: 0 },
