@@ -1005,8 +1005,8 @@ export const npCharacters: NpCharacters = {
     jimmytulip: [
         { name: 'Wayne Biggaz', factions: ['Chang Gang'], nicknames: [reg(/\bwe+y+n/), reg(/\bwayne/)] },
     ],
-    JJLake: [
-        { name: 'Jay Jarvis', factions: ['Pegasus'] },
+    JJLakee: [
+        { name: 'Jay Jarvis', factions: ['Pegasus'], displayName: 0 },
     ],
     JoblessGarrett: [
         { name: 'Garrett Jobless', factions: ['Chang Gang'] },
