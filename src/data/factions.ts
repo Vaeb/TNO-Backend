@@ -262,6 +262,7 @@ const filterRename: { [key in FactionMini]?: string } = {
     ssb: 'Ballas',
     gsf: 'Grove Street Families',
     larpers: 'The Guild',
+    mandem: 'The Mandem',
     prison: 'Prison Lifers',
     angels: 'The Angels',
     lunatix: 'Lunatix MC',
