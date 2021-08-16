@@ -1996,6 +1996,9 @@ export const npCharacters: NpCharacters = {
     Skelasoldier: [
         { name: 'Raymond Delprince', factions: ['SSB'], displayName: 0 },
     ],
+    Skiliyo: [
+        { name: 'Derek Thomson', factions: ['Rooster'], displayName: 0 },
+    ],
     SkipGently: [
         { name: 'John Riggs' },
     ],
@@ -2252,6 +2255,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Roland Nelson', assumeServer: 'whitelist' },
         { name: '[Deputy] Neil McReal', factions: ['Police'] },
         { name: '[Officer] Roland Nelson', factions: ['Police'], assumeServer: 'public' },
+    ],
+    TheOnlyWendigo: [
+        { name: 'Alexandru Vasquez', factions: ['Rooster'] },
     ],
     Timmac: [
         { name: '[Deputy] T.J. Mack', factions: ['Police'], assumeServer: 'whitelist' },
