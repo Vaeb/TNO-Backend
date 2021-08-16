@@ -618,7 +618,7 @@ export const npCharacters: NpCharacters = {
     ],
     dwjft: [
         { name: 'Dean Watson', leader: true },
-        { name: '[Officer] Derby West Bromwich', factions: ['Police'], displayName: 3 },
+        { name: '[Trooper] Derby West Bromwich', factions: ['Police'], displayName: 1 },
         { name: '[Development //] DW', factions: ['Development'], nicknames: ['tinkering'] },
     ],
     Dyoti: [
