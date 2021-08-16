@@ -640,6 +640,9 @@ export const npCharacters: NpCharacters = {
     EliotJuun: [
         { name: '[Officer] Douglas Fir', factions: ['Police'], displayName: 1 },
     ],
+    ellegrenn: [
+        { name: 'Sofia Castellano', factions: ['Pegasus'], displayName: 1 },
+    ],
     Elochai: [
         { name: 'Tao Chen', factions: ['Rooster'] },
         { name: 'Damien Grey', factions: ['Condemned MC'], displayName: 0 },
