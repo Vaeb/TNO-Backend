@@ -912,7 +912,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Kitty Dream', factions: ['Burger Shot', 'Rooster'] },
     ],
     ilenol: [
-        { name: 'Max Larson', factions: ['Pegasus', 'Rooster'], displayName: 0 },
+        { name: 'Max Larson', factions: ['Rooster'], displayName: 0 },
     ],
     ImClammy: [
         { name: 'AK', factions: ['SSB'], assumeServer: 'whitelist' },
