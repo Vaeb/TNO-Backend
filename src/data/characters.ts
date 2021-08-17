@@ -1523,6 +1523,9 @@ export const npCharacters: NpCharacters = {
     Moose_Taffy: [
         { name: 'Patar Bellosh', factions: ['NBC'], assume: 'assumeOther' },
     ],
+    mr_grimreaper_: [
+        { name: '[Officer] Joe Fish', factions: ['Police'], assumeServer: 'public' },
+    ],
     mrborealislive: [
         { name: 'Rudolph ?', factions: ['Burger Shot'] },
     ],
