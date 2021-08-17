@@ -2400,6 +2400,9 @@ export const npCharacters: NpCharacters = {
     VNDRIZZLE: [
         { name: 'Basem Shahin' },
     ],
+    Voladin17: [
+        { name: '[Lawyer //] Tidus Schwinghammer', factions: ['DoJ'] },
+    ],
     VTechas: [
         { name: 'Daryl Dixon', factions: ['HOA'] },
     ],
