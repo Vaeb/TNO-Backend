@@ -1707,6 +1707,9 @@ export const npCharacters: NpCharacters = {
     PapaDrgnz: [
         { name: 'Thur Teen', factions: ['Prison'], displayName: 0 },
     ],
+    Pasty: [
+        { name: '[Officer] Ernest Kaminski', factions: ['Police'], displayName: 2 },
+    ],
     Pengwin: [
         { name: '[Deputy] Jerry Perkins', factions: ['Police'] },
         { name: 'Dustin "Dark Shadow" Manson' },
