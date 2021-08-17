@@ -259,7 +259,7 @@ const filterRename: { [key in FactionMini]?: string } = {
     bbmc: 'Bondi Boys MC',
     rooster: 'Rooster Companies',
     doc: 'Department of Corrections',
-    doj: 'Lawyers & Judges',
+    doj: 'Law & Government', // Lawyers & Judges
     ssb: 'Ballas',
     gsf: 'Grove Street Families',
     larpers: 'The Guild',
