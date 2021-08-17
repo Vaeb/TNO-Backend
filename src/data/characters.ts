@@ -864,6 +864,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Rounda Block', factions: ['ASRR'], displayName: 0 },
         { name: "Kayden Dell'Anno" },
     ],
+    hobosrust: [
+        { name: 'Hei Zeus', factions: ['Lost MC'], assumeServer: 'public' },
+    ],
     HonathanTV: [
         { name: '[Deputy] Honathan Yolo', factions: ['Police'] },
     ],
