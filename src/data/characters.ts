@@ -1253,6 +1253,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Shane Powers', nicknames: ['ShaneO', 'ShanO'] },
         { name: 'Hubbo Samson' },
     ],
+    JarJarBloo: [
+        { name: 'Marcus Miller', factions: ['Police'], assumeServer: 'public' },
+    ],
     LadyHope: [
         { name: '[Officer] Lily Pond', factions: ['Police'] },
         { name: 'Isabella "Izzy" Carrington', factions: ['Harmony'] },
