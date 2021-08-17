@@ -2240,6 +2240,9 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Chris Kross', factions: ['Police'] },
         { name: 'Tyler Kwando', displayName: 0 },
     ],
+    TheBigXH: [
+        { name: 'Jose Rodriguez', factions: ['Vagos'], nicknames: ['Lil Ese'], displayName: 3 },
+    ],
     TheChief1114: [
         { name: 'Fingle Dan', factions: ['Dans'] },
     ],
