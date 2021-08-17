@@ -131,6 +131,9 @@ export const npCharacters: NpCharacters = {
         { name: '[FIB Agent] Heath Mercer', factions: ['Police'] },
         { name: 'Vasily "V" Sazkaljovich', factions: ['Pegasus', 'Rooster'] },
     ],
+    alexhasg2g: [
+        { name: 'Liz Anya', displayName: 0 },
+    ],
     alexten0909: [
         { name: 'Alexander Campbell', factions: ['Angels'], nicknames: ['Alex'], displayName: 3, assumeServer: 'whitelist' },
         { name: '[Officer] Alex Campbell', factions: ['Police'], assumeServer: 'public' },
