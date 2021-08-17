@@ -984,7 +984,7 @@ export const npCharacters: NpCharacters = {
     jay4871: [
         { name: 'Dave Perry', displayName: 0 },
     ],
-    JayAitch5: [
+    JayAitch: [
         { name: 'Lil Cap', displayName: 0, assumeServer: 'whitelist' },
         { name: 'Lil Strap', displayName: 0, assumeServer: 'public' },
     ],
