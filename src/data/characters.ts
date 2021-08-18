@@ -2178,7 +2178,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Dr.] Andrew Ducksworth', factions: ['Medical'], displayName: 2 },
     ],
     T5GJukebox: [
-        { name: '[Officer] Shane Jones', factions: ['Police'], displayName: 1 },
+        { name: '[Officer] Shane Jones', factions: ['Police'], displayName: 2 },
     ],
     TakanoriRuki: [
         { name: 'Allen Jones', factions: ['Prison'], displayName: 0 },
