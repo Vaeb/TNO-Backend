@@ -1735,7 +1735,7 @@ export const npCharacters: NpCharacters = {
     peterparkTV: [
         { name: 'Peener Pogue', factions: ['Rooster'] },
     ],
-    Pez_Br0: [
+    Pezz: [
         { name: 'Pez Speedwagon', factions: ['BBMC'] },
         { name: 'Pezzy Pee' },
     ],
