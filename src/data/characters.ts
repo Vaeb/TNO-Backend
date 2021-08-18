@@ -671,6 +671,9 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Cletus Cornwood', factions: ['Police'] },
         { name: 'Ali Farmand', displayName: 0 },
     ],
+    ExNinja_: [
+        { name: '[Deputy] Paul String', factions: ['Police'], assumeServer: 'public' },
+    ],
     explodicy: [
         { name: 'Ted Kindly' },
     ],
