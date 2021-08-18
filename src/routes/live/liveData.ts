@@ -175,6 +175,9 @@ for (const [streamer, characters] of Object.entries(npCharacters)) {
         char.displayName = char.displayName.trim();
 
         nameRegAll.push(`\\b(?:${parsedNames.join('|')})\\b`);
+        if (char.factions.includes('development')) { // Include regex for dev faction
+            nameRegAll.push(npFactionsRegex.development.source);
+        }
         char.nameReg = new RegExp(nameRegAll.join('|'), nameRegAll.length > 1 ? 'ig' : 'g');
 
         if (primaryFaction != null) {
