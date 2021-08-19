@@ -1158,6 +1158,9 @@ export const npCharacters: NpCharacters = {
     KillrBeauty: [
         { name: 'Catherine Scratch', factions: ['Lost MC'], nicknames: ['Cat'], displayName: 3 },
     ],
+    KiloAU: [
+        { name: '[Officer] Robert Anderson', factions: ['Police'] },
+    ],
     Kimchi: [
         { name: 'Sun Moon' },
     ],
