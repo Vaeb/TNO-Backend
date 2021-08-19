@@ -16,7 +16,7 @@ const addPublicCounties = (reg: RegExp) => new RegExp(
     reg.flags
 );
 
-export const regNp = /(?<!not\s)(?:no[\s\-_.]*pixel|\bn[\s\-_.]*p\b)(?![\s\-]*(?:inspired|based|ban|\.ins\b))/i;
+export const regNp = /(?<!not\s)(?:no[\s\-_.]*pixel|\bn[\s\-_.]*p\b)(?![\s\-]*(?:inspired|based|like|ban|\.ins\b))/i;
 export const regNpPublic = addPublicCounties(mergeRegex([
     /(?:no[\s\-_.]*pixel|\bn[\s\-_.]*p(?=\b|\d))(?:[\s\-_.]*(?:rp|\d+\.?\d*))?[\W_]*pub\w*\b(?!\W+(?:later|after))/i,
     /|(\bpub\w*[\W_]*(?:no[\s\-_.]*pixel|\bn[\s\-_.]*p(?=\b|\d)))/i,
