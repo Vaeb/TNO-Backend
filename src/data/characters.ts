@@ -365,7 +365,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Plankton ?' },
         { name: 'Bruce "The Dank Knight" Strayne' },
         { name: 'Brocky Potage', displayName: 1 },
-        { name: 'Gordo Ramsay', displayName: 0 },
+        { name: 'Gordo Ramsay', nicknames: ['Gorden', 'Gordon'], displayName: 0 },
     ],
     ButterRoyaleTV: [
         { name: 'Deejay Bartello' },
