@@ -357,6 +357,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Moe Nopoli', displayName: 0 },
         { name: 'Mentle Block', factions: ['ASRR'] },
         { name: 'Sasuke Johnson' },
+        { name: 'Bojack Horseman', displayName: 0 },
         { name: '? "TTS" ?' },
         { name: 'Sanic Speedrun' },
         { name: '? "Vsauce" ?', factions: ['SSB'], nicknames: ['Bsauce'] },
