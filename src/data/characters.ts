@@ -2417,7 +2417,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Lawyer //] Tidus Schwinghammer', factions: ['DoJ'] },
     ],
     VTechas: [
-        { name: 'Daryl Dixon', factions: ['HOA'] },
+        { name: 'Daryl Dixon', factions: ['HOA'], nicknames: ['DRL'] },
     ],
     w00ter: [
         { name: '[Deputy] Peter Rogers', factions: ['Police'] },
