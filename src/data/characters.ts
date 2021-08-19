@@ -2042,6 +2042,9 @@ export const npCharacters: NpCharacters = {
     SlixGamingTV: [
         { name: 'Nico August', factions: ['GSF'] },
     ],
+    SlummpyJ: [
+        { name: 'Javier Diaz', factions: ['Vagos'] },
+    ],
     Smaczny: [
         { name: 'Conrad Gross' },
     ],
