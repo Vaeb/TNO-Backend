@@ -2173,7 +2173,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Ty Jones', factions: ['SSB'], nicknames: ['xray'], displayName: 0 },
     ],
     SwizzMB: [
-        { name: 'Miguel Almerion' },
+        { name: 'Miguel Almerion', factions: ['HOA'] },
     ],
     Sykkuno: [
         { name: 'Yuno Sykk', factions: ['Cleanbois', 'Rooster'], displayName: 1, assumeServer: 'whitelist', assumeChar: true },
