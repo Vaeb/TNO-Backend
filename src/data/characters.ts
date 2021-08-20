@@ -610,6 +610,9 @@ export const npCharacters: NpCharacters = {
     Dr_Knope: [
         { name: 'Patrit "Mete" Metemahaan', factions: ['HOA'] },
     ],
+    Dragecia: [
+        { name: 'Bunnie Bunsworth', factions: ['HOA'] },
+    ],
     DROwSeph420: [
         { name: 'John "Geno" Collins', factions: ['GSF'] },
     ],
@@ -635,7 +638,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Eve Summers', factions: ['Rooster'] },
     ],
     eebern: [
-        { name: 'Huck Guthrie', factions: ['HOA'] },
+        { name: 'Huck Guthrie', factions: ['HOA'], nicknames: ['Huckleberry'] },
     ],
     either: [
         { name: 'Jaden Christopher' },
@@ -978,6 +981,10 @@ export const npCharacters: NpCharacters = {
     Jack: [
         { name: 'Jack Cortair', factions: ['NBC'] },
     ],
+    Jackhuddo: [
+        { name: 'Shane Powers', nicknames: ['ShaneO', 'ShanO'] },
+        { name: 'Hubbo Samson' },
+    ],
     jacobpibbtv: [
         { name: 'Jacob Pibb' },
     ],
@@ -986,6 +993,9 @@ export const npCharacters: NpCharacters = {
     ],
     jakenbakeLIVE: [
         { name: 'Ryu Tenga' },
+    ],
+    JarJarBloo: [
+        { name: 'Marcus Miller', factions: ['Police'], assumeServer: 'public' },
     ],
     Javaaaa: [
         { name: 'Joseph Yorinobu', nicknames: ['Majima', 'Goro'], displayName: 3 },
@@ -1055,6 +1065,9 @@ export const npCharacters: NpCharacters = {
     JOVIAN: [
         { name: '[Deputy] Billiam Williams', factions: ['Police'], displayName: 1 },
     ],
+    JPeavy: [
+        { name: 'Dante Thomas', factions: ['HOA'], displayName: 0 },
+    ],
     JPKMoto: [
         { name: '[Clerk //] Odessa Pearson', factions: ['DoJ'], displayName: 1 },
         { name: 'Nora Dupres' },
@@ -1083,6 +1096,9 @@ export const npCharacters: NpCharacters = {
     ],
     JustaMinx: [
         { name: 'Mercy Peggers' },
+    ],
+    JustenTymes: [
+        { name: 'Blanden Haster', factions: ['HOA'], displayName: 1 },
     ],
     JustJambaa: [
         { name: 'La Flare Davis', displayName: 0 },
@@ -1265,13 +1281,6 @@ export const npCharacters: NpCharacters = {
     kyliebitkin: [
         { name: '[Deputy] Brittany Angel', factions: ['Police'], nicknames: ['Angle', 'Captain'] },
         { name: 'Mary Mushkin', nicknames: ['Red Devil', 'R3d Devil'], displayName: 0 },
-    ],
-    Jackhuddo: [
-        { name: 'Shane Powers', nicknames: ['ShaneO', 'ShanO'] },
-        { name: 'Hubbo Samson' },
-    ],
-    JarJarBloo: [
-        { name: 'Marcus Miller', factions: ['Police'], assumeServer: 'public' },
     ],
     LadyHope: [
         { name: '[Officer] Lily Pond', factions: ['Police'] },
@@ -1727,6 +1736,7 @@ export const npCharacters: NpCharacters = {
     ],
     Pengwin: [
         { name: '[Deputy] Jerry Perkins', factions: ['Police'] },
+        { name: 'Stanley Wilkinson', factions: ['HOA'], nicknames: ['Stan', 'White Devil'] },
         { name: 'Dustin "Dark Shadow" Manson' },
         { name: 'Kenneth "Ken-sama" Foreman', factions: ['Burger Shot'] },
     ],
@@ -2096,6 +2106,9 @@ export const npCharacters: NpCharacters = {
     ],
     spicybackpain: [
         { name: 'Kray-Tor Skullfondler', factions: ['HOA'] },
+    ],
+    SpiderPigEthan: [
+        { name: 'Marvin Chunder', factions: ['HOA'], nicknames: ['Hades'], displayName: 3 },
     ],
     Ssaab: [
         { name: '[Chief of Police] Sam Baas', factions: ['Police'], nicknames: ['Samir', 'Baasem'], displayName: 2, leader: true },
