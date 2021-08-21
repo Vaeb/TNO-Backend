@@ -1535,7 +1535,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Kirk Jerkems', factions: ['Rooster'], displayName: 0 },
     ],
     Moboking: [
-        { name: '[Ranger] Ellis Pinzon', factions: ['Police'], nicknames: ['Ronaldo'], assumeServer: 'whitelist' },
+        { name: '[Officer] Ellis Pinzon', factions: ['Police'], nicknames: ['Ronaldo'], assumeServer: 'whitelist' },
         { name: 'Aleksander Bogorov', factions: ['Angels'], nicknames: ['Aleks'], displayName: 3, assumeServer: 'whitelist' },
         { name: '[Officer] Aleks Sazkaljovich', factions: ['Police'], displayName: 1, assumeServer: 'public' },
         { name: 'Elijiah "Middle E" Parks', factions: ['SSB'] },
@@ -1782,6 +1782,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Adam Peterson', displayName: 0 },
     ],
     Pons: [
+        { name: '[Deputy] Otis Tucker', factions: ['Police'] },
         { name: '[Officer] Chet Manley', factions: ['Police'], displayName: 1, assume: 'assumeOther' },
         { name: '[Officer] Bodean Tucker', factions: ['Police'], nicknames: ['Bo'] },
     ],
