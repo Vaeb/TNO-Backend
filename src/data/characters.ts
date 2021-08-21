@@ -2393,7 +2393,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Yuri Grozniy', displayName: 0 },
     ],
     Vaerinis: [
-        { name: '[Officer] Thomas Metzger', factions: ['Police'] },
+        { name: '[Deputy] Thomas Metzger', factions: ['Police'] },
     ],
     VaguePWNage: [
         { name: 'Ramsay', factions: ['SSB'] },
