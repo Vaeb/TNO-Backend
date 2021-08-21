@@ -1813,6 +1813,9 @@ export const npCharacters: NpCharacters = {
     Purge9090: [
         { name: 'Jack Frent', factions: ['DoC'], displayName: 0 },
     ],
+    Pydrex: [
+        { name: '[Officer] James Doakes', factions: ['Police'], displayName: 2 },
+    ],
     qMARIOx: [
         { name: 'Fernando "Mario" Reyes', factions: ['Chaos'], nicknames: ['"Mario" from the Barrio'] },
     ],
