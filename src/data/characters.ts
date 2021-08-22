@@ -1734,6 +1734,9 @@ export const npCharacters: NpCharacters = {
     PacifistV: [
         { name: 'Merry Achi', factions: ['Rooster'], displayName: 0 },
     ],
+    panpawn1: [
+        { name: '[Officer] Adam Swanson', factions: ['Police'], assumeServer: 'public' },
+    ],
     PapaChip: [
         { name: 'Channing "Chain" Turner', factions: ['BBMC'] },
     ],
