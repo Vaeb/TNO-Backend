@@ -335,6 +335,9 @@ export const npCharacters: NpCharacters = {
     Braenstus: [
         { name: '[Lawyer //] Adam Nielsen', factions: ['DoJ', 'Rooster'], displayName: 1 },
     ],
+    Brakketts: [
+        { name: '[Dispatch] Tommy Horver', factions: ['Police'] },
+    ],
     breakyx: [
         { name: 'Dris Peters', factions: ['SSB'] },
     ],
@@ -979,6 +982,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Vincent' },
     ],
     Jack: [
+        { name: '[Deputy] Dez Wright', factions: ['Police'] },
         { name: 'Jack Cortair', factions: ['NBC'] },
     ],
     Jackhuddo: [
@@ -1552,6 +1556,9 @@ export const npCharacters: NpCharacters = {
     Moose_Taffy: [
         { name: 'Patar Bellosh', assume: 'assumeOther' },
     ],
+    Moosebrother: [
+        { name: '[Deputy] Louis Bloom', factions: ['Police'] },
+    ],
     mr_grimreaper_: [
         { name: '[Officer] Joe Fish', factions: ['Police'], assumeServer: 'public' },
     ],
@@ -1796,6 +1803,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Kareem Lyon', factions: ['Police'], displayName: 1 },
     ],
     Protay10: [
+        { name: '[Deputy] Jacob Specter', factions: ['Police'] },
         { name: 'James Thompson', nicknames: ['James "Phantom" Thompson', 'Phantom'], displayName: 4 },
     ],
     PsiSyn: [
@@ -2401,6 +2409,9 @@ export const npCharacters: NpCharacters = {
     ],
     VaguePWNage: [
         { name: 'Ramsay', factions: ['SSB'] },
+    ],
+    valkyrion___: [
+        { name: '[Deputy] Lewis Collins', factions: ['Police'] },
     ],
     ValorWasTaken: [
         { name: 'Esteban Julio-Cruz-Perez-Rodriguez', factions: ['Marabunta'] },
