@@ -222,6 +222,7 @@ export const npCharacters: NpCharacters = {
     ],
     Autumn: [
         { name: 'Autumn Rhodes', assumeServer: 'whitelist' },
+        { name: '[Officer] May Maple', factions: ['Police'] },
         { name: '[Ranger] May Maple', factions: ['Police'], assumeServer: 'public' },
     ],
     Auxidental: [
