@@ -984,7 +984,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Vincent' },
     ],
     Jack: [
-        { name: '[Deputy] Dez Wright', factions: ['Police'] },
+        { name: '[Deputy] Dez Wright', factions: ['Police'], nicknames: ['Doofy'], displayName: 3 },
         { name: 'Jack Cortair', factions: ['NBC'] },
     ],
     Jackhuddo: [
