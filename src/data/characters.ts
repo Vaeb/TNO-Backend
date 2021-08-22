@@ -409,7 +409,7 @@ export const npCharacters: NpCharacters = {
         { name: "[Lawyer //] Shannon O'Banion", factions: ['DoJ'], displayName: 0 },
     ],
     Cathie: [
-        { name: '[Deputy] Anita May', factions: ['Police'] },
+        { name: '[Deputy] Anita May', factions: ['Police'], displayName: 1 },
         { name: 'Ninacska Mihkala', factions: ['Russians'], nicknames: ['Nina'], displayName: 3 },
         { name: 'Kaelyn "Kae" East', factions: ['SSB'] },
     ],
@@ -1651,7 +1651,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Cody Sharp', factions: ['Police'] },
     ],
     NikkisARiot: [
-        { name: '[Deputy] Jenny Hall', factions: ['Police'], nicknames: [reg(/\bje\S{1,3}y/)] },
+        { name: '[Deputy] Jenny Hall', factions: ['Police'], nicknames: [reg(/\bje\S{1,3}y/)], displayName: 1 },
     ],
     Nmplol: [
         { name: 'Buddy Black' },
