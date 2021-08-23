@@ -738,7 +738,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Richard Chiclets', factions: ['Burger Shot'], nicknames: ['Dick Chiclets'], displayName: 3 },
     ],
     Flynno: [
-        { name: '[Officer] ? Reynolds', factions: ['Police'], displayName: 3, assume: 'assumeNpNoOther' },
+        { name: '[Officer] Mickey Reynolds', factions: ['Police'], displayName: 3, assume: 'assumeNpNoOther' },
     ],
     Forlorn79: [
         { name: '[EMS] Amoris Pax', factions: ['Medical'] },
