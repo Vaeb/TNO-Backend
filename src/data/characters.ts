@@ -674,7 +674,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Demi Black' },
     ],
     EvilShatner: [
-        { name: 'Anna Swallows', displayName: 0 },
+        { name: '[Lawyer //] Anna Swallows', factions: ['DoJ'], displayName: 1 },
     ],
     EsfandTV: [
         { name: '[Deputy] Cletus Cornwood', factions: ['Police'] },
