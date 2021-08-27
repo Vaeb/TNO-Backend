@@ -539,7 +539,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Franky Dulio', factions: ['Police'] },
     ],
     daisykiss: [
-        { name: 'Molly Rollin', factions: ['SSB'], displayName: 0, assume: 'assumeNpNoOther' },
+        { name: 'Molly Rollin', displayName: 0, assume: 'assumeNpNoOther' },
     ],
     DanGheesling: [
         { name: 'Tanner Buttermaker', displayName: 1 },
@@ -2302,7 +2302,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Brandon Valentino', factions: ['Pegasus', 'Rooster'], displayName: 0 },
     ],
     theeYAIR: [
-        { name: 'Yair Lamas', factions: ['SSB'], displayName: 0 },
+        { name: 'Yair Lamas', displayName: 0 },
     ],
     TheGeekEntry: [
         { name: 'Stacey Doyle' },
