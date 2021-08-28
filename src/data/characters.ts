@@ -2444,6 +2444,9 @@ export const npCharacters: NpCharacters = {
     VinterPhoenix: [
         { name: 'Raymond Frost', factions: ['Vagos'], displayName: 0 },
     ],
+    VioletCutie: [
+        { name: 'Maisie Hart', factions: ['Rooster'], displayName: 0 },
+    ],
     Viviana: [
         { name: 'Griselda Ambrose', nicknames: ['Granny'] },
         { name: 'Lana Valentine', factions: ['Rooster'] },
