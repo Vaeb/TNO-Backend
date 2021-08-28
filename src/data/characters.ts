@@ -2130,6 +2130,7 @@ export const npCharacters: NpCharacters = {
     Ssaab: [
         { name: '[Chief of Police] Sam Baas', factions: ['Police'], nicknames: ['Samir', 'Baasem'], displayName: 2, leader: true },
         { name: 'Al Saab', factions: ['Cleanbois', 'HOA'], displayName: 2 },
+        { name: 'Ray Singha', displayName: 0 },
     ],
     stanwilis: [
         { name: 'Trina Bergström', factions: ['Rooster'], nicknames: ['Bergstrom'], displayName: 0 },
