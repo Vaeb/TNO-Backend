@@ -475,7 +475,7 @@ export const npCharacters: NpCharacters = {
         { name: '? ?' },
     ],
     CodeMiko: [
-        { name: 'Code Psyko', displayName: 0 },
+        { name: 'Code Psyko', nicknames: ['CodePsyko'], displayName: 0 },
     ],
     ConfusedDevil: [
         { name: '[Deputy] Travis Tribble', factions: ['Police'] },
