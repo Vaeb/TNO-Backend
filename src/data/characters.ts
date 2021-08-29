@@ -69,8 +69,8 @@ export const npCharacters: NpCharacters = {
         { name: 'Khrystal Vibez' },
     ],
     AbdulHD: [
-        { name: 'Abdul AlRahim', assumeServer: 'whitelist' },
-        { name: '[Judge] Ali Habibi', factions: ['DoJ'] },
+        { name: '[Mayor] Abdul AlRahim', factions: ['DoJ'], displayName: 1, assumeServer: 'whitelist' },
+        { name: '[Judge] Ali Habibi', factions: ['DoJ'], nicknames: ['Al'] },
         { name: '[Officer] Basha Habibi', factions: ['Police'], assumeServer: 'public' },
         { name: 'Mustafa Habibi' },
         { name: 'Fahad AlArabi', factions: ['DoC'] },
@@ -95,6 +95,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Aaron Melarky', factions: ['Condemned MC'], displayName: 0 },
     ],
     Adzzstarr: [
+        { name: '[Judge] Adam Prince', factions: ['DoJ'] },
         { name: '[Dr.] Valentine', factions: ['Medical'] },
     ],
     AfricanSnowball: [
@@ -118,7 +119,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Scruffy Doodle', factions: ['Burger Shot'] },
     ],
     Airborne: [
-        { name: '[Judge] Dennis LaBarre', factions: ['DoJ'] },
+        { name: 'Dennis LaBarre', factions: ['DoJ'] },
         { name: 'Unity', nicknames: ['Cat'] },
     ],
     akaMONKEY: [
@@ -665,9 +666,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Peaches Hayabusa', factions: ['Burger Shot'] },
     ],
     Evee: [
-        { name: '[Judge] Antigone Weston', factions: ['DoJ'], assumeServer: 'whitelist' },
+        { name: 'Antigone Weston', factions: ['DoJ'], assumeServer: 'whitelist' },
         { name: '[Officer] Antigone Weston', factions: ['Police'], assumeServer: 'public' },
-        { name: '[Judge] Whitney Crawford', factions: ['DoJ'] },
+        { name: 'Whitney Crawford', factions: ['DoJ'] },
         { name: 'Adrienne West' },
         { name: 'Meggie "Megan" Right' },
         { name: 'Bree Matthews' },
@@ -725,6 +726,9 @@ export const npCharacters: NpCharacters = {
     ],
     FerretRP: [
         { name: 'Alberto Weaselton', factions: ['Lost MC'] },
+    ],
+    Ferst711: [
+        { name: '[Judge] Ferst Temple', factions: ['DoJ'] },
     ],
     Fiendota: [
         { name: 'Jonathan "Magnum" Humes', nicknames: [reg(/\bP\.?\s*I\b/)] },
@@ -791,7 +795,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Carlos Guzman', factions: ['Vagos'], displayName: 0 },
     ],
     Gavbin_: [
-        { name: '[Judge] Gavin Holliday', factions: ['DoJ'] },
+        { name: 'Gavin Holliday', factions: ['DoJ'] },
     ],
     geenelly: [
         { name: 'Misty Bloom', displayName: 0 },
@@ -876,7 +880,7 @@ export const npCharacters: NpCharacters = {
     ],
     hobbittrash: [
         { name: '[Officer] Tracy Martell', factions: ['Police'], nicknames: ['Cop'] },
-        { name: '[Judge] Katya Zamalodchikova', factions: ['DoJ'], displayName: 1 },
+        { name: 'Katya Zamalodchikova', factions: ['DoJ'], displayName: 1 },
         { name: 'Jane Obama', displayName: 0 },
         { name: 'Jane Souls', displayName: 0 },
         { name: 'Rounda Block', factions: ['ASRR'], displayName: 0 },
@@ -1058,7 +1062,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Lawyer //] Maggie Kayden', factions: ['DoJ'] },
     ],
     Jonthebroski: [
-        { name: '[Mayor] Denzel Williams', factions: ['Cleanbois', 'Pegasus', 'Rooster', 'DoJ'], nicknames: ['The "Cleaner"', 'Presidente'] },
+        { name: 'Denzel Williams', factions: ['Cleanbois', 'Pegasus', 'Rooster'], nicknames: ['The "Cleaner"', 'Presidente'] },
         { name: '[Officer] Johnny Divine', factions: ['Police'], displayName: 0 },
         { name: 'Broskingle Dan', factions: ['Dans'] },
         { name: '[Senator] ? " " ?', factions: ['DoJ'], nicknames: ['Senate'] },
@@ -1374,8 +1378,8 @@ export const npCharacters: NpCharacters = {
         { name: 'Marlo Stanfield', nicknames: [reg(/ma?rlo/)] },
     ],
     LuckyxMoon: [
-        { name: '[Judge] ? Devereaux', factions: ['DoJ'] },
-        { name: '[Judge] Jessica Wesker', factions: ['DoJ'] },
+        { name: '? Devereaux', factions: ['DoJ'] },
+        { name: 'Jessica Wesker', factions: ['DoJ'] },
     ],
     ludwig: [
         { name: 'Klevin Ballsworth' },
@@ -1588,7 +1592,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Cindy Lou' },
     ],
     MurphyBraun: [
-        { name: '[Judge] Holden', factions: ['DoJ'] },
+        { name: 'Holden', factions: ['DoJ'] },
         { name: 'Marvin Peanut', nicknames: ['Marv'] },
         { name: '[Lawyer //] Murphy Braun', factions: ['DoJ'], displayName: 0 },
     ],
@@ -1693,7 +1697,8 @@ export const npCharacters: NpCharacters = {
     OccamsSabre: [
         { name: '[Officer] Jeffrey Bundy', factions: ['Police'], nicknames: ['451'] },
         { name: '[Lawyer //] Benjamin Crane', factions: ['DoJ'] },
-        { name: '[Judge] Ray Montag', factions: ['DoJ'] },
+        { name: '[Judge] Judge Holden', factions: ['DoJ'] },
+        { name: 'Ray Montag', factions: ['DoJ'] },
         { name: 'Busta Block', factions: ['ASRR'], displayName: 0 },
     ],
     Octopimp: [
@@ -2266,7 +2271,7 @@ export const npCharacters: NpCharacters = {
     ],
     thaCOOP: [
         { name: '[Officer] Luke Holliday', factions: ['Police'] },
-        { name: '[Judge] Coop Holliday', factions: ['DoJ'], displayName: 1 },
+        { name: 'Coop Holliday', factions: ['DoJ'], displayName: 1 },
         { name: 'Matthew Payne', displayName: 2 },
         { name: 'Remee El-Rahman' },
     ],
@@ -2456,7 +2461,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Basem Shahin' },
     ],
     Voladin17: [
-        { name: '[Lawyer //] Tidus Schwinghammer', factions: ['DoJ'] },
+        { name: '[Judge] Tidus Schwinghammer', factions: ['DoJ'] },
     ],
     VTechas: [
         { name: 'Daryl Dixon', factions: ['HOA'], nicknames: ['DRL'] },
@@ -2465,7 +2470,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Peter Rogers', factions: ['Police'] },
     ],
     Wayward: [
-        { name: '[Judge] Wayne Ardson', factions: ['DoJ'], assumeServer: 'whitelist' },
+        { name: 'Wayne Ardson', factions: ['DoJ'], assumeServer: 'whitelist' },
         { name: 'Angelo "Leo Nardo" Nardo', nicknames: ['Leo'] },
         { name: 'Jack "The Joker" Knaves', nicknames: ['The "Joker"'] },
         { name: '[Deputy] Michael Colt', factions: ['Police'], assumeServer: 'public' },
