@@ -2378,6 +2378,9 @@ export const npCharacters: NpCharacters = {
     traycee: [
         { name: 'Lexi Law', factions: ['Angels'] },
     ],
+    Turkaderk: [
+        { name: 'Benji Carter', factions: ['BSK'], displayName: 0 },
+    ],
     Turtledoves: [
         { name: 'Hung Jae-Min', factions: ['Rooster'], displayName: 0 },
     ],
