@@ -601,6 +601,8 @@ export const npCharacters: NpCharacters = {
     ],
     Dorken: [
         { name: 'Valentina' },
+        { name: 'Debby Doodle' },
+        { name: '[Deputy] Nicholine Quinn', factions: ['Police'] },
         { name: 'Nicholine Quinn' },
     ],
     DotoDoya: [
