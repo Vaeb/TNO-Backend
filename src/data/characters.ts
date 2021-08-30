@@ -2218,6 +2218,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Yuno Sykk', factions: ['Cleanbois', 'Rooster'], displayName: 1, assumeServer: 'whitelist', assumeChar: true },
         { name: '[Ranger] Yuno Sykk', factions: ['Police'], displayName: 1, assumeServer: 'public' },
     ],
+    Syndicate: [
+        { name: 'Seven Lighthouse', displayName: 0 },
+    ],
     SynthHunter: [
         { name: 'Hunter "Wingman" Skye', factions: ['Rooster'] },
     ],
