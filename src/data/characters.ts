@@ -1410,7 +1410,7 @@ export const npCharacters: NpCharacters = {
     ],
     Lysium: [
         { name: 'Benji Ramos', factions: ['Vagos'], nicknames: ['B'] },
-        { name: 'Dean Duncan', factions: ['DoC'] },
+        { name: '[Deputy] Dean Duncan', factions: ['Police'] },
         { name: 'Maxim Pochinki' },
     ],
     M0Dmr: [
