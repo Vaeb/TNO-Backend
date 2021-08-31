@@ -1008,7 +1008,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Ryu Tenga' },
     ],
     JarJarBloo: [
-        { name: 'Marcus Miller', factions: ['Police'], assumeServer: 'public' },
+        { name: '[Officer] Marcus Miller', factions: ['Police'], assumeServer: 'public' },
     ],
     Javaaaa: [
         { name: 'Joseph Yorinobu', nicknames: ['Majima', 'Goro'], displayName: 3 },
@@ -1162,7 +1162,7 @@ export const npCharacters: NpCharacters = {
     ],
     kClient: [
         { name: 'Daquan "Peanut" Dumas', factions: ['NBC'] },
-        { name: 'Alejandro Picadillo' },
+        { name: '[Officer] Alejandro Picadillo', factions: ['Police'] },
     ],
     Keeno: [
         { name: 'Kyle Brovloski', displayName: 0 },
@@ -1988,6 +1988,7 @@ export const npCharacters: NpCharacters = {
     ],
     SgtApollo: [
         { name: 'Salem Barghouthi', factions: ['NBC'] },
+        { name: '[Officer] Aziz Sultan', factions: ['Police'], nicknames: ['Za Nose'], displayName: 1 },
     ],
     shadiko: [
         { name: 'Alex Domino', factions: ['Rooster'], displayName: 0 },
