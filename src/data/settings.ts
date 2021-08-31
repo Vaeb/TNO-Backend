@@ -26,7 +26,7 @@ export const regNpPublic = addPublicCounties(mergeRegex([
     /|\b(?:pub|public)$/i,
 ]));
 
-export const regNpWhitelist = /(?:\bwhitelist|\bwl\b|\bmain\b|\bprivate\b(?![\s\-]+(?:detective|investigat\w+)))\b(?!\W+(?:later|after))/i;
+export const regNpWhitelist = /(?<!(?:waiting for)\s)(?:\bwhitelist|\bwl\b|\bmain\b|\bprivate\b(?![\s\-]+(?:detective|investigat\w+)))\b(?!\W+(?:later|after))/i;
 export const regOther = /the\s*family|\btf\s?rp|family\s*rp|twitchrp|\bt\W*rp|\bnon[\s\-]*stop|\bns\s?rp/i;
 export const regOthers = [
     { name: 'TheFamilyRP', reg: /the\s*family|\btf\s?rp|family\s*rp/i, include: 1 },
