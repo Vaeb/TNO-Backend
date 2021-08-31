@@ -350,6 +350,9 @@ export const npCharacters: NpCharacters = {
     Brofain: [
         { name: 'Kodak Bodega' },
     ],
+    BronzeRP: [
+        { name: 'Gary Adams', factions: ['Lost MC'] },
+    ],
     buddha: [
         { name: 'Lang Buddha', factions: ['Cleanbois', 'Rooster'], leader: true, nicknames: ['Circle Andy', 'Timelord'], assumeServer: 'whitelist' },
         { name: '[Ranger] Lang Buddha', factions: ['Police'], displayName: 1, assumeServer: 'public' },
