@@ -1272,6 +1272,9 @@ export const npCharacters: NpCharacters = {
     kritacul: [
         { name: 'Devon "Dev" Jones', factions: ['GSF'] },
     ],
+    KrizFrost: [
+        { name: 'Kriz Khaoz', factions: ['Police'] },
+    ],
     Kunaives: [
         { name: 'Wally Veloce', factions: ['BSK'] },
     ],
