@@ -1600,6 +1600,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Marvin Peanut', nicknames: ['Marv'] },
         { name: '[Lawyer //] Murphy Braun', factions: ['DoJ'], displayName: 0 },
     ],
+    mycahpittman: [
+        { name: 'Mycah Pittman', factions: ['Pink Gang'], displayName: 0 },
+    ],
     Myladyballs: [
         { name: 'Veronica Garcia', factions: ['Vagos'] },
     ],
@@ -2370,6 +2373,9 @@ export const npCharacters: NpCharacters = {
     ],
     Trainwreckstv: [
         { name: 'Douglas "Doug Buck" Buck', displayName: 0 },
+    ],
+    TranquilKJ: [
+        { name: 'KJ Taylor', factions: ['Pink Gang'], displayName: 0 },
     ],
     Traumz: [
         { name: '[Deputy] Edward Thatch', nicknames: ['Captain Moosebeard'], factions: ['Police'], displayName: 2 },
