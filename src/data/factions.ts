@@ -228,6 +228,7 @@ const filterOrderTop: FactionMiniArr = [
     'rooster',
     'pegasus',
     'hoa',
+    'pinkgang',
     'lostmc',
     'prison',
     'gulaggang',
