@@ -83,7 +83,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Jolene Mushkin', nicknames: ['Little Red'] },
     ],
     adeptthebest: [
-        { name: 'Mari Posa', factions: ['Chaos'], displayName: 0, assumeServer: 'whitelist' },
+        { name: 'Mari Posa', factions: ['Chang Gang', 'Chaos'], displayName: 0, assumeServer: 'whitelist' },
         { name: '[Deputy] Selena Mendoza', factions: ['Police'] },
         { name: 'Hannah Hiltop' },
         { name: 'Maria Poser', factions: ['Gulag Gang'], displayName: 0, assumeServer: 'public' },
@@ -1846,7 +1846,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] James Doakes', factions: ['Police'], displayName: 2 },
     ],
     qMARIOx: [
-        { name: 'Fernando "Mario" Reyes', factions: ['Chaos'], nicknames: ['"Mario" from the Barrio'] },
+        { name: 'Fernando "Mario" Reyes', factions: ['Chang Gang', 'Chaos'], nicknames: ['"Mario" from the Barrio'] },
     ],
     qurquru: [
         { name: '[Officer] Vladimir Reznik', factions: ['Police'] },
