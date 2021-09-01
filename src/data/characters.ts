@@ -493,6 +493,10 @@ export const npCharacters: NpCharacters = {
         { name: 'Dequarius "Big D" Johnson', factions: ['Chang Gang'] },
         { name: '[Deputy] Adam Hopping', factions: ['Police'] },
     ],
+    Cosmic: [
+        { name: '[Officer] Alex Casterman', factions: ['Police'] },
+        { name: 'Finlay' },
+    ],
     CptCheeto: [
         { name: '[Officer] Scott Ridley', factions: ['Police'] },
     ],
@@ -2512,10 +2516,6 @@ export const npCharacters: NpCharacters = {
         { name: 'Irwin Dundee', factions: ['BBMC'], displayName: 2 },
         { name: '[Officer] Crocodile "Croc" Steve', factions: ['Police'], nicknames: ['Cop'] },
         { name: 'James Tinklebottom' },
-    ],
-    WhiteyRP: [
-        { name: '[Officer] Alex Casterman', factions: ['Police'] },
-        { name: 'Finlay' },
     ],
     whosremz: [
         { name: 'Remy Brown', factions: ['Mandem'], displayName: 1 },
