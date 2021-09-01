@@ -80,6 +80,8 @@ const toFactionMini = (faction: string) => faction.toLowerCase().replace(' ', ''
 
 */
 for (const [streamer, characters] of Object.entries(npCharacters)) {
+    const streamerLower = streamer.toLowerCase();
+
     if (characters.length > 0) {
         characters.push({ name: '? "< One-Life Character >" ?', nicknames: ['Permathon', 'Perma?thon', '/\\bone[\\s-]life/'], assumeServer: 'both' } as Character); // '/\\bone[\\s-]life[\\s-]charac/'
     }
@@ -175,7 +177,7 @@ for (const [streamer, characters] of Object.entries(npCharacters)) {
         char.displayName = char.displayName.trim();
 
         nameRegAll.push(`\\b(?:${parsedNames.join('|')})\\b`);
-        if (char.factions.includes('development')) { // Include regex for dev faction
+        if (char.factions.includes('development') && streamerLower !== 'dwjft') { // Include regex for dev faction
             nameRegAll.push(npFactionsRegex.development.source);
         }
         char.nameReg = new RegExp(nameRegAll.join('|'), nameRegAll.length > 1 ? 'ig' : 'g');
@@ -206,7 +208,6 @@ for (const [streamer, characters] of Object.entries(npCharacters)) {
         characters.assumeOther = ASTATES.assumeNp;
     }
 
-    const streamerLower = streamer.toLowerCase();
     if (streamer !== streamerLower) {
         npCharacters[streamerLower] = characters;
         delete npCharacters[streamer];
