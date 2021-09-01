@@ -124,7 +124,7 @@ npFactionsRealMini.forEach((faction) => {
 // : { [key in FactionColorsMini]: string }
 
 export const useColorsDark = { // #f9002f
-    cleanbois: '#e74c3c',
+    cleanbois: '#bfff00 ',
     lostmc: '#ab5179',
     changgang: '#686de0',
     vagos: '#f1c40f',
