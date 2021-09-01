@@ -125,7 +125,7 @@ npFactionsRealMini.forEach((faction) => {
 
 export const useColorsDark = { // #f9002f
     cleanbois: '#e74c3c',
-    limebois: '#bfff00',
+    limelight: '#bfff00',
     lostmc: '#ab5179',
     changgang: '#686de0',
     vagos: '#f1c40f',
@@ -168,7 +168,7 @@ export const isFactionColor = (factionMini: FactionMini): factionMini is Faction
 
 export const useColorsLight: { [key in FactionColorsMini]: string } = {
     cleanbois: '#c74c3c',
-    limebois: '#bfff00',
+    limelight: '#bfff00',
     lostmc: '#ab5179',
     changgang: '#686de0',
     vagos: '#e3ba16',
@@ -220,7 +220,7 @@ const filterOrderTop: FactionMiniArr = [
     'allnopixel',
     'alltwitch',
     'publicnp',
-    'limebois',
+    'limelight',
     'cleanbois',
     'changgang',
     'police',
