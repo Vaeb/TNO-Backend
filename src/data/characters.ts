@@ -640,7 +640,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Otis Goody', factions: ['Burger Shot'] },
     ],
     dwjft: [
-        { name: 'Dean Watson', factions: ['Limebois'] },
+        { name: 'Dean Watson', factions: ['Limebois'], nicknames: ['Dev stuff '] },
         { name: '[Trooper] Derby West Bromwich', factions: ['Police'], displayName: 1 },
         { name: '[Development //] DW', factions: ['Development'], nicknames: ['tinkering'] },
     ],
