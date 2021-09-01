@@ -1,5 +1,6 @@
 export const npFactionsReal = { // map: removed spaces + converted to lower case
     cleanbois: 'Cleanbois',
+    limebois: 'Limebois',
     lostmc: 'Lost MC',
     changgang: 'Chang Gang',
     chaos: 'Chaos',

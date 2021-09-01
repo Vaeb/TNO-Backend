@@ -166,7 +166,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Larry Papidopoulos', nicknames: ['Papi'] },
     ],
     AnthonyZ: [
-        { name: 'Tony Corleone', factions: ['Cleanbois', 'Rooster'] },
+        { name: 'Tony Corleone', factions: ['Limebois', 'Cleanbois', 'Rooster'] },
         { name: '[Deputy] Anthony Copleone', factions: ['Police'] },
     ],
     Apitoxin11: [
@@ -354,7 +354,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Gary Adams', factions: ['Lost MC'] },
     ],
     buddha: [
-        { name: 'Lang Buddha', factions: ['Cleanbois', 'Rooster'], leader: true, nicknames: ['Circle Andy', 'Timelord'], assumeServer: 'whitelist' },
+        { name: 'Lang Buddha', factions: ['Limebois', 'Cleanbois', 'Rooster'], leader: true, nicknames: ['Circle Andy', 'Timelord'], assumeServer: 'whitelist' },
         { name: '[Ranger] Lang Buddha', factions: ['Police'], displayName: 1, assumeServer: 'public' },
         { name: '[Deputy] Kevin Kona', factions: ['Police'] },
         { name: 'Esteban Julio Ricardo Montoya De La Rosa Ramirez' },
@@ -640,7 +640,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Otis Goody', factions: ['Burger Shot'] },
     ],
     dwjft: [
-        { name: 'Dean Watson', leader: true },
+        { name: 'Dean Watson', factions: ['Limebois'] },
         { name: '[Trooper] Derby West Bromwich', factions: ['Police'], displayName: 1 },
         { name: '[Development //] DW', factions: ['Development'], nicknames: ['tinkering'] },
     ],
@@ -859,7 +859,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Blaine Burke', factions: ['Angels'] },
     ],
     Harry: [
-        { name: 'Harry Brown', factions: ['Cleanbois', 'Pegasus', 'Rooster'] },
+        { name: 'Harry Brown', factions: ['Limebois', 'Cleanbois', 'Pegasus', 'Rooster'] },
     ],
     HasanAbi: [
         { name: 'Humberto Antonio Donato Pecorino', factions: ['Cleanbois', 'Rooster'], nicknames: ['Don', 'Donnie', reg(/\bOva[h']? here\b/)], displayName: 5 },
@@ -1667,7 +1667,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Dougie Fresh', nicknames: ['Bobcat'] },
     ],
     Nidas: [
-        { name: 'Leslie Lingberg', displayName: 0, nicknames: ['Ling'] },
+        { name: 'Leslie Lingberg', factions: ['Limebois'], nicknames: ['Ling'], displayName: 0 },
     ],
     Nikez: [
         { name: '[Development //] Nikez', factions: ['Development'] },
@@ -1887,7 +1887,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Trooper] AJ Hunter', factions: ['Police'], nicknames: ['207'] },
     ],
     Ray__C: [
-        { name: 'Raymond "Ray" Romanov', factions: ['Cleanbois', 'Rooster'], nicknames: ['Ray', reg(/\brussia/)], assumeChar: true, assumeServer: 'whitelist' },
+        { name: 'Raymond "Ray" Romanov', factions: ['Limebois', 'Cleanbois', 'Rooster'], nicknames: ['Ray', reg(/\brussia/)], assumeChar: true, assumeServer: 'whitelist' },
         { name: '[Officer] Raycardo Flick', factions: ['Police'], assumeServer: 'public' },
     ],
     ray308win: [
