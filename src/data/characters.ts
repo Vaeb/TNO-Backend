@@ -544,6 +544,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Uchiha Jones', factions: ['Chang Gang'] },
         { name: 'Fred Hurst', nicknames: [reg(/Lim.\s?Bizkif/)] },
     ],
+    cyter: [
+        { name: 'Demetrius "Draco" Jones', factions: ['SSB'], nicknames: ['DJ'] },
+    ],
     Dadulio: [
         { name: '[Deputy] Franky Dulio', factions: ['Police'] },
     ],
