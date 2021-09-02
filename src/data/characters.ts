@@ -1603,7 +1603,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Sly Lion' },
     ],
     MsTeamKK: [
-        { name: 'Riley Carter' },
+        { name: 'Riley Carter', factions: ['Rooster'] },
     ],
     MurderCrumpet: [
         { name: 'Cindy Lou' },
