@@ -2559,7 +2559,7 @@ export const npCharacters: NpCharacters = {
     ],
     Xiceman: [
         { name: '[Deputy] Mike Bayo', factions: ['Police'] },
-        { name: 'Mike Wadum', factions: ['Vagos'], nicknames: ['El Gringo'] },
+        { name: 'Mike Wadum', nicknames: ['El Gringo'] },
     ],
     XMOTHATRUCKAX: [
         { name: 'Ronald "Red" Juggler' },
