@@ -2077,7 +2077,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Wayne Kerr' },
     ],
     Skelasoldier: [
-        { name: 'Raymond Delprince', factions: ['SSB'], displayName: 0 },
+        { name: 'Raymond "Xray" Delprince', factions: ['SSB'], displayName: 0 },
     ],
     Skiliyo: [
         { name: 'Derek Thomson', factions: ['Rooster'], displayName: 0 },
