@@ -895,7 +895,7 @@ export const npCharacters: NpCharacters = {
     hobbittrash: [
         { name: '[Officer] Tracy Martell', factions: ['Police'], nicknames: ['Cop'] },
         { name: 'Katya Zamalodchikova', factions: ['DoJ'], displayName: 1 },
-        { name: 'Jane Obama', displayName: 0 },
+        { name: 'Jane Obama', nicknames: ['jesus', 'christ'], displayName: 0 },
         { name: 'Jane Souls', displayName: 0 },
         { name: 'Rounda Block', factions: ['ASRR'], displayName: 0 },
         { name: "Kayden Dell'Anno" },
