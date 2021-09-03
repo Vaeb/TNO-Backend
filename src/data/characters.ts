@@ -976,6 +976,9 @@ export const npCharacters: NpCharacters = {
     itmeJP: [
         { name: 'Wilbur Higgins' },
     ],
+    itsjustasummerjob: [
+        { name: 'Sabith "Bunny" Cohen' },
+    ],
     ItsJustJosh: [
         { name: 'Levi Dawson', factions: ['SSB'] },
     ],
