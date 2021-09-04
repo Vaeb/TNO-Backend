@@ -2013,6 +2013,9 @@ export const npCharacters: NpCharacters = {
     shadiko: [
         { name: 'Alex Domino', factions: ['Rooster'], displayName: 0 },
     ],
+    shadowgam3rx: [
+        { name: 'Jenny Ondamic', factions: ['BSK'], nicknames: ['BSQueen'], displayName: 0 },
+    ],
     shaggy_steve: [
         { name: '[Deputy] Jimmy Gordon', factions: ['Police'] },
     ],
