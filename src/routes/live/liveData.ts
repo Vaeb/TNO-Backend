@@ -293,7 +293,7 @@ interface BaseStream {
 interface Stream extends BaseStream {
     rpServer: string | null;
     characterName: string | null;
-    nicknames: string[];
+    nicknameMatcher: string | null;
     faction: FactionMini;
     factions: FactionMini[];
     factionsMap: { [key in FactionMini]?: boolean };
@@ -465,7 +465,7 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                             ...baseStream,
                             rpServer: serverName.length ? serverName : null,
                             characterName: null,
-                            nicknames: [],
+                            nicknameMatcher: null,
                             faction: 'other',
                             factions: ['other'],
                             factionsMap: { other: true },
@@ -641,7 +641,7 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                         ...baseStream,
                         rpServer: serverName,
                         characterName: possibleCharacter?.name ?? null,
-                        nicknames: possibleCharacter?.nicknames ?? [],
+                        nicknameMatcher: possibleCharacter?.nicknames ? possibleCharacter.nicknames.join(' _-_ ') : null,
                         faction: activeFactions[0],
                         factions: activeFactions,
                         factionsMap: Object.assign({}, ...activeFactions.map(faction => ({ [faction]: true }))),
