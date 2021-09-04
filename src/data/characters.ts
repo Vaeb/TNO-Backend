@@ -609,7 +609,7 @@ export const npCharacters: NpCharacters = {
     Dogbert: [
         { name: '[Deputy] Rocko Colombo', factions: ['Police'], nicknames: [reg(/\bcol.mb./)] },
         { name: 'Luther Caine', factions: ['HOA'] },
-        { name: 'Wyatt Mersion', factions: ['Mersions'] },
+        { name: 'Wyatt Mersion', factions: ['Limelight', 'Mersions'] },
     ],
     Dorken: [
         { name: 'Valentina' },
