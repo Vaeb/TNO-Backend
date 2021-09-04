@@ -155,6 +155,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Lil Erf', displayName: 0 },
         { name: 'Carmen Amuso' },
     ],
+    Angrysquirlz: [
+        { name: 'Lizard Block', factions: ['ASRR'] },
+    ],
     AnimatedJF: [
         { name: 'Cameron Dupres', factions: ['DoJ'] },
     ],
