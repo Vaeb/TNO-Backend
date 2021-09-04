@@ -85,3 +85,9 @@ type Entries<T> = { [K in keyof T]: [K, T[K]] }[keyof T];
 export function objectEntries<T extends Record<string, unknown>>(t: T): Entries<T>[] {
     return Object.entries(t) as any;
 }
+
+export const parseLookup = (text: string, retainCase = false): string => {
+    text = text.replace(/^\W+|\W+$|[^\w\s]+/g, ' ').replace(/\s+/g, ' ');
+    if (!retainCase) text = text.toLowerCase();
+    return text.trim();
+};

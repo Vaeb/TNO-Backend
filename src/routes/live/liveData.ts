@@ -2,7 +2,7 @@ import { HelixPaginatedResult, HelixStream, HelixStreamType } from 'twitch';
 
 import { apiClient } from '../../twitchSetup';
 import {
-    log, cloneDeepJson, filterObj, mapObj, parseParam, isObjEmpty,
+    log, cloneDeepJson, filterObj, mapObj, parseParam, isObjEmpty, parseLookup,
 } from '../../utils';
 
 import { regNp, regOthers, regNpPublic, regNpWhitelist } from '../../data/settings';
@@ -293,7 +293,7 @@ interface BaseStream {
 interface Stream extends BaseStream {
     rpServer: string | null;
     characterName: string | null;
-    nicknameMatcher: string | null;
+    nicknameLookup: string | null;
     faction: FactionMini;
     factions: FactionMini[];
     factionsMap: { [key in FactionMini]?: boolean };
@@ -465,7 +465,7 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                             ...baseStream,
                             rpServer: serverName.length ? serverName : null,
                             characterName: null,
-                            nicknameMatcher: null,
+                            nicknameLookup: null,
                             faction: 'other',
                             factions: ['other'],
                             factionsMap: { other: true },
@@ -641,7 +641,7 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                         ...baseStream,
                         rpServer: serverName,
                         characterName: possibleCharacter?.name ?? null,
-                        nicknameMatcher: possibleCharacter?.nicknames ? possibleCharacter.nicknames.join(' _-_ ') : null,
+                        nicknameLookup: possibleCharacter?.nicknames ? possibleCharacter.nicknames.map(nick => parseLookup(nick)).join(' _-_ ') : null,
                         faction: activeFactions[0],
                         factions: activeFactions,
                         factionsMap: Object.assign({}, ...activeFactions.map(faction => ({ [faction]: true }))),
