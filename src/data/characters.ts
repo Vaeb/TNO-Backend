@@ -2469,6 +2469,7 @@ export const npCharacters: NpCharacters = {
     ],
     Venomfly: [
         { name: 'Babe Calloway', factions: ['Rooster'], displayName: 0 },
+        { name: 'Carolina Reaper' },
     ],
     vanyaa_3D: [
         { name: '[Development //] Vanya', factions: ['Development'], nicknames: ['clothes', 'clothing'], assumeChar: true },
