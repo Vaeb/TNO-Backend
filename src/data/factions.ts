@@ -274,7 +274,7 @@ const filterRename: { [key in FactionMini]?: string } = {
     prison: 'Prison Lifers',
     angels: 'The Angels',
     lunatix: 'Lunatix MC',
-    othernp: 'Unknown',
+    othernp: 'Unknown RPers',
     other: 'Other Servers',
 };
 
