@@ -2604,7 +2604,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Martin Julio-Perez-Cruz-Rodriguez', factions: ['Marabunta'] },
     ],
     Zaitohro: [
-        { name: 'Oswald Tinkerman', factions: ['Lost MC'], displayName: 0 },
+        { name: 'Oswald Tinkerman', factions: ['Lost MC'], displayName: 1 },
     ],
     Zaquelle: [
         { name: '[Officer] Mackenzie Hayes', factions: ['Police'], assume: 'assumeNp' },
