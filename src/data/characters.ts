@@ -866,6 +866,9 @@ export const npCharacters: NpCharacters = {
     GutturalSteve: [
         { name: 'Tomathy Steampipe', factions: ['Burger Shot'] },
     ],
+    hannerb_naner: [
+        { name: '[EMS] Jenny Schildt', factions: ['Medical'] },
+    ],
     HARMSwahy: [
         { name: 'Blaine Burke', factions: ['Angels'] },
     ],
@@ -947,6 +950,9 @@ export const npCharacters: NpCharacters = {
     ],
     IAmSoul_RP: [
         { name: 'Johnathen Riker' },
+    ],
+    iballzach: [
+        { name: '[EMS] Zachary Kellogg', factions: ['Medical'] },
     ],
     iddqd: [
         { name: 'Jesse Cree', factions: ['BBMC'] },
@@ -1478,6 +1484,12 @@ export const npCharacters: NpCharacters = {
     ],
     Markiplier: [
         { name: 'Stan Wheeler' },
+    ],
+    markuu: [
+        { name: '[EMS] Leonardo Sand', factions: ['Medical'], nicknames: ['Leo'], displayName: 3 },
+    ],
+    Marsziipan: [
+        { name: '[EMS] Misa Price', factions: ['Medical'] },
     ],
     MartinCreek: [
         { name: 'Bertha Clark' },
