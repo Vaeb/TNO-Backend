@@ -200,7 +200,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Ash Ketchup', factions: ['Burger Shot', 'Vagos'], assumeChar: true },
     ],
     Ashi: [
-        { name: 'Fiona Stewart', nicknames: ['Fi-ho-na'], factions: ['Rooster'] },
+        { name: 'Fiona Stewart', nicknames: ['Fi-ho-na', 'Fifi'], factions: ['Rooster'] },
         { name: 'Annie May', displayName: 0 },
     ],
     ashlynn: [
