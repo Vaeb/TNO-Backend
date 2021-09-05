@@ -1143,6 +1143,9 @@ export const npCharacters: NpCharacters = {
     Kainalo: [
         { name: 'Risto Suolamies' },
     ],
+    Kangaro0: [
+        { name: '[Deputy] Jimmy Frost', factions: ['Police'] },
+    ],
     KaoruHare: [
         { name: '[Therapist] Kizzy Neveah', factions: ['Medical'] },
     ],
@@ -1611,6 +1614,9 @@ export const npCharacters: NpCharacters = {
     mrwobblestwitch: [
         { name: 'Axel Simpleton' },
         { name: 'Sly Lion' },
+    ],
+    ms_star: [
+        { name: '[Deputy] Skye Faye', factions: ['Police'] },
     ],
     MsTeamKK: [
         { name: 'Riley Carter', factions: ['Rooster'] },
