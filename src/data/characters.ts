@@ -1940,6 +1940,9 @@ export const npCharacters: NpCharacters = {
     RevRoach: [
         { name: "Happy D'Klown" },
     ],
+    RhiTexxy: [
+        { name: 'Brook Lexi', factions: ['Lost MC'] },
+    ],
     RickMongoLIVE: [
         { name: '[D.A.] Rick Mongo', factions: ['DoJ'], assume: 'assumeNpNoOther' },
     ],
