@@ -749,6 +749,7 @@ export const npCharacters: NpCharacters = {
     ],
     Ferst711: [
         { name: '[Judge] Ferst Temple', factions: ['DoJ'] },
+        { name: 'Tom Ryan', displayName: 0 },
     ],
     Fiendota: [
         { name: 'Jonathan "Magnum" Humes', nicknames: [reg(/\bP\.?\s*I\b/)] },
