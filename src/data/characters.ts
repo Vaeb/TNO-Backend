@@ -2078,6 +2078,7 @@ export const npCharacters: NpCharacters = {
     ],
     silky_rp: [
         { name: 'Darnell "Baby D" Davis', factions: ['SSB'] },
+        { name: 'Spooky Conchas', factions: ['Marabunta'] },
     ],
     Simo: [
         { name: 'Reggie', factions: ['Vagos'], displayName: 0, assumeServer: 'whitelist' },
