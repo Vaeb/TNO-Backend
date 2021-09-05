@@ -1144,7 +1144,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Risto Suolamies' },
     ],
     Kangaro0: [
-        { name: '[Deputy] Jimmy Frost', factions: ['Police'] },
+        { name: '[Officer] Jimmy Frost', factions: ['Police'] },
     ],
     KaoruHare: [
         { name: '[Therapist] Kizzy Neveah', factions: ['Medical'] },
