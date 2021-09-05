@@ -1538,6 +1538,9 @@ export const npCharacters: NpCharacters = {
     Mexi: [
         { name: '[Deputy] Clarence Williams', factions: ['Police'], displayName: 1 },
     ],
+    MiamiPepe: [
+        { name: '[Dispatch] Drake Wax', factions: ['Police'], displayName: 1 },
+    ],
     michaelreeves: [
         { name: 'NoPixel ?' },
     ],
