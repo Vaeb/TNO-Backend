@@ -48,7 +48,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Shazza Wazza', factions: ['Rooster'], nicknames: ['Shazzam'] },
     ],
     aaron_rp: [
-        { name: 'Aaron Alexander', factions: ['BSK'], nicknames: ['Double A', reg(/double.?a/)], displayName: 3 },
+        { name: 'Aaron Alexander', nicknames: ['Double A', reg(/double.?a/)], displayName: 3 },
     ],
     AaronOnAir: [
         { name: '[Officer] Dan Faily', factions: ['Police'], nicknames: ['485'] },
@@ -1719,7 +1719,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Development //] nns', factions: ['Development'], assumeChar: true },
     ],
     NoElusionz: [
-        { name: 'Bobby Schmiguel', factions: ['BSK'], nicknames: ['Bobby Beats'], displayName: 3 },
+        { name: 'Bobby Schmiguel', nicknames: ['Bobby Beats'], displayName: 3 },
     ],
     noKingu: [
         { name: '[Deputy] Henri King', factions: ['Police'] },
