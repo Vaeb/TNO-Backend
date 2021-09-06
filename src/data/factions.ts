@@ -238,6 +238,7 @@ const filterOrderTop: FactionMiniArr = [
     'bbmc',
     'mandem',
     'asrr',
+    'britneygang',
     'pegasus',
     'condemnedmc',
     'gulaggang',
@@ -274,6 +275,7 @@ const filterRename: { [key in FactionMini]?: string } = {
     prison: 'Prison Lifers',
     angels: 'The Angels',
     lunatix: 'Lunatix MC',
+    britneygang: 'Britney Gang',
     othernp: 'Unknown RPers',
     other: 'Other Servers',
 };

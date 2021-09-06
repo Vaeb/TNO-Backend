@@ -351,7 +351,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Dris Peters', factions: ['SSB'] },
     ],
     BRIT: [
-        { name: 'Tori Corleone', nicknames: ['Bologna'], factions: ['Rooster'] },
+        { name: 'Tori Corleone', nicknames: ['Bologna'], factions: ['Britney Gang', 'Rooster'] },
     ],
     Brofain: [
         { name: 'Kodak Bodega' },
@@ -961,7 +961,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Markuz Jackelson', factions: ['GSF'], nicknames: ['Meatball', 'Meat', 'Meatwad'] },
     ],
     ikittyyyy: [
-        { name: 'Kitty Dream', factions: ['Burger Shot', 'Rooster'] },
+        { name: 'Kitty Dream', factions: ['Britney Gang', 'Burger Shot', 'Rooster'] },
     ],
     ilenol: [
         { name: 'Max Larson', factions: ['Rooster'], displayName: 0 },
@@ -1177,7 +1177,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Arush', factions: ['GSF'] },
     ],
     Kate: [
-        { name: 'Nancy Drew' },
+        { name: 'Nancy Drew', factions: ['Britney Gang'] },
     ],
     KatFires: [
         { name: 'Novah Walker', factions: ['Chang Gang'] },
@@ -1913,7 +1913,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Development //] Raided', factions: ['Development'] },
     ],
     raine: [
-        { name: 'Penny Farthing', factions: ['Rooster'] },
+        { name: 'Penny Farthing', factions: ['Britney Gang', 'Rooster'] },
     ],
     Ramee: [
         { name: 'Ramee El-Rahman', factions: ['Chang Gang'], nicknames: ['The "Warlord"', 'The "Vulture"', 'SBS Patient-0'] },
@@ -2264,7 +2264,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Michael Kowalski', factions: ['BSK'], displayName: 0 },
     ],
     suzy_q: [
-        { name: 'Dreah Johnson', factions: ['Rooster'] },
+        { name: 'Dreah Johnson', factions: ['Britney Gang', 'Rooster'] },
     ],
     Svennoss: [
         { name: 'Barry Svensson', factions: ['Pegasus', 'Rooster'] },
@@ -2534,7 +2534,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Raymond Frost', factions: ['Vagos'], displayName: 0 },
     ],
     VioletCutie: [
-        { name: 'Maisie Hart', factions: ['Rooster'], displayName: 0 },
+        { name: 'Maisie Hart', factions: ['Britney Gang', 'Rooster'], displayName: 0 },
     ],
     Viviana: [
         { name: 'Griselda Ambrose', nicknames: ['Granny'] },
