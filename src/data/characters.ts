@@ -1603,6 +1603,9 @@ export const npCharacters: NpCharacters = {
     moistcr1tikal: [
         { name: 'Charles White', displayName: 0 },
     ],
+    mollyruu: [
+        { name: 'Lizzie Byrne', displayName: 1 },
+    ],
     MOONMOON: [
         { name: '[Officer] Lenny Hawk', factions: ['Police'], nicknames: ['Renegade'], displayName: 1, assume: 'assumeNp' },
         { name: 'Bernice "Shadowlord" Caldershot', factions: ['LARPers'] },
