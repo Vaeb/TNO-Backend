@@ -1836,6 +1836,9 @@ export const npCharacters: NpCharacters = {
     PlasticLittle: [
         { name: 'Parson "Frosty" Brown', factions: ['Lost MC'] },
     ],
+    PMoney: [
+        { name: 'P Money', displayName: 0 },
+    ],
     PmsProxy: [
         { name: '[Officer] Kira Light', factions: ['Police'] },
         { name: 'Ella Stone' },
