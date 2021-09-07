@@ -579,7 +579,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Vladimir "Vlad" Ivanov', factions: ['Russians'] },
     ],
     Deansocool: [
-        { name: 'Dean Quincy', displayName: 0, assume: 'assumeNpNoOther', assumeServer: 'whitelist' },
+        { name: 'Dean Quincy', factions: ['Mandem'], displayName: 0, assume: 'assumeNpNoOther', assumeServer: 'whitelist' },
         { name: '[Officer] Den Shiesty', factions: ['Police'], displayName: 1 },
         { name: 'Dean Shiesty', factions: ['SSB'], displayName: 0, assumeServer: 'public' },
     ],
@@ -1613,7 +1613,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Maximilian "Yung Dab" Thoroughbred', nicknames: ['The "Gnome"', 'Yung', 'Dab', 'Max'], displayName: 0 },
     ],
     Moose_Taffy: [
-        { name: 'Patar Bellosh', assume: 'assumeOther' },
+        { name: 'Patar Bellosh', factions: ['Mandem'], assume: 'assumeOther' },
     ],
     Moosebrother: [
         { name: '[Deputy] Louis Bloom', factions: ['Police'] },
