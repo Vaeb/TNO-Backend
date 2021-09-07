@@ -265,6 +265,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Dick Fillet', displayName: 0 },
         { name: 'Ravi Ravson', displayName: 0 },
     ],
+    Bananalover115: [
+        { name: 'Mamaita "Mama" Jehmimi', factions: ['Britney Gang'] },
+    ],
     barryscottlive: [
         { name: 'Barry Scott' },
     ],
@@ -997,7 +1000,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Levi Dawson', factions: ['SSB'] },
     ],
     ItsLeslie: [
-        { name: 'KyrinChan "Leyla" WeuhBou', factions: ['LARPers', 'Cleanbois', 'Rooster'], nicknames: ['Nightingale', 'Wizard', 'Embervale'] },
+        { name: 'KyrinChan "Leyla" WeuhBou', factions: ['LARPers', 'Cleanbois', 'Britney Gang', 'Rooster'], nicknames: ['Nightingale', 'Wizard', 'Embervale'] },
     ],
     ItsLSG: [
         { name: '[Officer] Jack Miller', factions: ['Police'] },
@@ -1642,7 +1645,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Skye Faye', factions: ['Police'] },
     ],
     MsTeamKK: [
-        { name: 'Riley Carter', factions: ['Rooster'] },
+        { name: 'Riley Carter', factions: ['Britney Gang', 'Rooster'] },
     ],
     MurderCrumpet: [
         { name: 'Cindy Lou' },
