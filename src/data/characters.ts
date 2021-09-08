@@ -2633,6 +2633,9 @@ export const npCharacters: NpCharacters = {
     yooApollo: [
         { name: 'Martin Julio-Perez-Cruz-Rodriguez', factions: ['Marabunta'] },
     ],
+    yungxaquafina: [
+        { name: 'Antonio Carter Jr', factions: ['SSB'], nicknames: ['AJ'], displayName: 4 },
+    ],
     Zaitohro: [
         { name: 'Oswald Tinkerman', factions: ['Lost MC'], displayName: 1 },
     ],
