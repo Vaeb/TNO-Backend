@@ -845,6 +845,9 @@ export const npCharacters: NpCharacters = {
     GoldGlove: [
         { name: 'Marvin King', nicknames: ['Marv'], displayName: 3 },
     ],
+    goose_thegreat: [
+        { name: 'Thad Owens', factions: ['HOA'], displayName: 0 },
+    ],
     GrandPOObear: [
         { name: 'Mick Flair', displayName: 0 },
     ],
