@@ -2005,6 +2005,9 @@ export const npCharacters: NpCharacters = {
     RyanRV: [
         { name: 'Jay Jones', factions: ['Rooster'], displayName: 0 },
     ],
+    S_Palms: [
+        { name: 'Kimmy Youngirl', displayName: 1 },
+    ],
     s0upes: [
         { name: '[Officer] Silas Grimmer', factions: ['Police'] },
         { name: 'James "Apples" Apeller' },
