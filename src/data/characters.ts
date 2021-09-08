@@ -246,6 +246,7 @@ export const npCharacters: NpCharacters = {
     ],
     AyeGavMF: [
         { name: '[Deputy] Dave Bird', factions: ['Police'], assumeServer: 'public' },
+        { name: 'Nash Mastersin', displayName: 1, assumeServer: 'whitelist' },
     ],
     Baki961: [
         { name: 'Yoshimoto Nakanishi', assumeServer: 'whitelist' },
