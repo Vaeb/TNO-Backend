@@ -2,7 +2,7 @@
 
 import { FactionRealFull } from './meta';
 
-export type AssumeOther = 'assumeNpNoOther' | 'assumeNp' | 'assumeOther' | 'someOther';
+export type AssumeOther = 'assumeNpNoOther' | 'assumeNp' | 'assumeOther' | 'someOther' | 'neverNp';
 
 export type AssumeServer = 'whitelist' | 'public' | 'both';
 
@@ -1223,6 +1223,9 @@ export const npCharacters: NpCharacters = {
     ],
     KhaosAdam: [
         { name: 'Adam Ababwa', factions: ['Mandem'], assume: 'assumeOther', displayName: 0 },
+    ],
+    KiingJoee: [
+        { name: '? ?', assume: 'neverNp' },
     ],
     KillrBeauty: [
         { name: 'Catherine Scratch', factions: ['Lost MC'], nicknames: ['Cat'], displayName: 3 },

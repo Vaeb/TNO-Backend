@@ -59,6 +59,7 @@ const ASTATES = {
     assumeNp: 0,
     assumeOther: 1,
     someOther: 1.5,
+    neverNp: 2,
 } as const;
 
 const game = '32982' as const;
@@ -204,6 +205,8 @@ for (const [streamer, characters] of Object.entries(npCharacters)) {
         characters.assumeOther = ASTATES.assumeNpNoOther;
     } else if (foundOthers.assumeNp) {
         characters.assumeOther = ASTATES.assumeNp;
+    } else if (foundOthers.neverNp) {
+        characters.assumeOther = ASTATES.neverNp;
     } else {
         characters.assumeOther = ASTATES.assumeNp;
     }
@@ -414,7 +417,14 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                         onOther = false;
                         onOtherIncluded = false;
                     }
+
                     const characters = npCharacters[channelNameLower];
+
+                    if (characters.assumeOther === ASTATES.neverNp) {
+                        console.log('Excluded', channelName, 'because of "neverNp"');
+                        return;
+                    }
+
                     const mainsOther = characters && characters.assumeOther == ASTATES.assumeOther;
                     const keepNp = characters && characters.assumeOther == ASTATES.assumeNpNoOther;
                     const onMainOther = !onNp && mainsOther;
