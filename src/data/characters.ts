@@ -2149,7 +2149,7 @@ export const npCharacters: NpCharacters = {
         { name: 'John Riggs' },
     ],
     skippypoppin: [
-        { name: 'Kevin Whipaloo', factions: ['Burger Shot'], leader: true, displayName: 0 },
+        { name: 'Kevin Whipaloo', factions: ['Burger Shot'], displayName: 0 },
     ],
     Skitx0: [
         { name: 'Smino "Hitta" Brown', factions: ['GSF'], assume: 'assumeNpNoOther' },
