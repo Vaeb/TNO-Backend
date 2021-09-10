@@ -420,7 +420,7 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
 
                     const characters = npCharacters[channelNameLower];
 
-                    if (characters.assumeOther === ASTATES.neverNp) {
+                    if (characters && characters.assumeOther === ASTATES.neverNp) {
                         console.log('Excluded', channelName, 'because of "neverNp"');
                         return;
                     }
