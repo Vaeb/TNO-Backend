@@ -2668,7 +2668,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Kimberly Daniels', factions: ['Condemned MC'], displayName: 0 },
     ],
     zhifven: [
-        { name: 'Kai Pond', displayName: 0 },
+        { name: 'Kai Pond', factions: ['Rooster'], displayName: 0 },
     ],
     Zidsy: [
         { name: 'Zane Jackson', nicknames: ['Rat'], displayName: 3 },
