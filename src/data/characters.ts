@@ -602,6 +602,9 @@ export const npCharacters: NpCharacters = {
     dibitybopty: [
         { name: '[Officer] Gus Gorman', factions: ['Police'] },
     ],
+    DiewithLivv: [
+        { name: 'Cindy Tipton', factions: ['BBMC'], nicknames: ['Girlboss'] },
+    ],
     DigiiTsuna: [
         { name: '[Dr.] Kai King', factions: ['Medical'], displayName: 2 },
     ],
@@ -1872,7 +1875,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Celine LaCroix' },
     ],
     Polen: [
-        { name: 'Adam Peterson', displayName: 0 },
+        { name: 'Adam "AP" Peterson', displayName: 0 },
     ],
     Pons: [
         { name: '[Deputy] Otis Tucker', factions: ['Police'] },
