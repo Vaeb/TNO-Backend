@@ -31,7 +31,7 @@ export const npFactionsRegex = {
     bsk: noFormer(/\bb[s$]k\b|brouge street|burger shot king/i),
     marabunta: noLater(noFormer(/\bmarabunta/i)),
     hoa: noFormer(/\bh[.\s]*o[.\s\-_]*[ab]\b|hogs\s*of\s*anarchy|home[\s\-]*owners[\s\-]*association/i),
-    pinkgang: noFormer(/\bpittman|[^\w\s(]\s*pc\s*[^\w\s)]|(?:pink|\bpit+?)[\s\-_.]*(?:gang|crew)/i),
+    pinkgang: noFormer(/\bpittman|(?:pink|\bpit+?)[\s\-_.]*(?:gang|crew)/i), // [^\w\s(]\s*pc\s*[^\w\s)]
     doj: noLater(noFormer(/\bdoj\b|department\s*of\s*justice|judge\b(?![\s]*me)|\bd\.a\b|\ba\.?d\.?a\b|(?<!\b(?:former|ex|aspiring)[\s\-]*)(?:lawyer|attorney)|para[\s\-]*legal/i)),
     asrr: noLater(noFormer(/\balta[\s\-]*street|\bblock(?:\b|[\s\-]*party|[\s\-]*athon)/i)),
     dans: noLater(noFormer(/\bdans\b|g[le][el][\s\-_.]+dan/i)),
