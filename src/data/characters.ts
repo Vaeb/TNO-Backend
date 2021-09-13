@@ -2153,7 +2153,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Reginald "Reggie" Bigglesby', factions: ['Burger Shot', 'Rooster'] },
     ],
     Skannerz_: [
-        { name: 'Wayne Kerr', factions: ['Tuner Shop'] },
+        { name: 'Wayne Kerr', factions: ['Tuner Shop'], displayName: 0 },
     ],
     Skelasoldier: [
         { name: 'Raymond "Xray" Delprince', factions: ['SSB'], displayName: 0 },
