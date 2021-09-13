@@ -1156,6 +1156,9 @@ export const npCharacters: NpCharacters = {
     JustenTymes: [
         { name: 'Blanden Haster', factions: ['HOA'], displayName: 1 },
     ],
+    justFritz: [
+        { name: 'Fritz Ericson', factions: ['Condemned MC'] },
+    ],
     JustJambaa: [
         { name: 'La Flare Davis', displayName: 0 },
     ],
