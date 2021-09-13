@@ -330,6 +330,9 @@ export const npCharacters: NpCharacters = {
     bLuE622: [
         { name: 'Boe Jangles', factions: ['Chang Gang'], affiliate: true },
     ],
+    blunt_20202020: [
+        { name: 'Dub Blunt', factions: ['Tuner Shop'], displayName: 0 },
+    ],
     bmcloughlin22: [
         { name: '[A.D.A.] Lachlan Pike', factions: ['DoJ'] },
     ],
@@ -1458,7 +1461,7 @@ export const npCharacters: NpCharacters = {
     ],
     LunaOni: [
         { name: '[Officer] Claire Everly', displayName: 1, factions: ['Police'] },
-        { name: 'Mayumi Himura' },
+        { name: 'Mayumi Himura', factions: ['Tuner Shop'] },
     ],
     Lyndi: [
         { name: 'Violet Van Housen', factions: ['Angels'], assumeServer: 'whitelist' },
@@ -1712,7 +1715,7 @@ export const npCharacters: NpCharacters = {
         { name: '[EMS] Nettie Machete', factions: ['Medical'] },
     ],
     neutreN: [
-        { name: 'Octavio "Goofy" Stenberg', nicknames: ['Hypergoof', 'Octane'] },
+        { name: 'Octavio "Goofy" Stenberg', factions: ['Tuner Shop'], nicknames: ['Hypergoof', 'Octane'] },
     ],
     NeveRossa: [
         { name: 'Dawn Hearte', factions: ['Lost MC', 'Medical'] },
@@ -1875,8 +1878,11 @@ export const npCharacters: NpCharacters = {
     pokimane: [
         { name: 'Celine LaCroix' },
     ],
+    Polaflex: [
+        { name: 'Lewis Marsden', factions: ['Tuner Shop'], displayName: 0 },
+    ],
     Polen: [
-        { name: 'Adam "AP" Peterson', displayName: 0 },
+        { name: 'Adam "AP" Peterson', factions: ['Tuner Shop'], displayName: 0 },
     ],
     Pons: [
         { name: '[Deputy] Otis Tucker', factions: ['Police'] },
@@ -2265,7 +2271,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Jack "Sully" Sullivan' },
     ],
     summit1g: [
-        { name: 'Charles "Chawa" Johnson', factions: ['Chang Gang'] },
+        { name: 'Charles "Chawa" Johnson', factions: ['Chang Gang', 'Tuner Shop'] },
         { name: '[Deputy] John Charleston', factions: ['Police'], assumeServer: 'whitelist' },
         { name: '[Trooper] Charles Johnson', factions: ['Police'], nicknames: ['Chawa'], assumeServer: 'public' },
     ],
