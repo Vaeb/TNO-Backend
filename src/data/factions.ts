@@ -14,6 +14,7 @@ const noAutoFaction = {
     russians: true,
     chaos: true,
     mechanic: true,
+    tunershop: true,
 } as const;
 
 export type NpFactionsRegexKeys = Exclude<FactionRealMini, keyof typeof noAutoFaction>;
@@ -49,7 +50,7 @@ export const npFactionsRegex = {
     prison: noLater(/\blifer|\bprison|\blife\W+sentence/i),
     harmony: /\bharmony\b/i,
     quickfix: /\bquick[\s\-]*fix/i,
-    tunershop: /\btuner[\s\-]*shop\b/i,
+    // tunershop: /\btuner[\s\-]*shop\b/i,
     larpers: /\blarp\b|\blarper|the\s*guild/i,
     police: noLater(noFormer(
         mergeRegex([
@@ -207,7 +208,6 @@ const filterExclude: { [key in FactionRealMini]?: boolean } = {
     mechanic: true,
     harmony: true,
     quickfix: true,
-    tunershop: true,
     marabunta: true,
     mersions: true,
     podcast: true,
@@ -231,6 +231,7 @@ const filterOrderTop: FactionMiniArr = [
     'gsf',
     'rooster',
     'hoa',
+    'tunershop',
     'pinkgang',
     'lostmc',
     'prison',

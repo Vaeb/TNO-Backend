@@ -253,7 +253,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Fernando Diego Pablo Juan Esteban Luis Cortez Bonanza II', factions: ['Police'], displayName: 1, assumeServer: 'public' },
     ],
     bananabrea: [
-        { name: 'Claire Seducer', factions: ['Angels'], assumeServer: 'whitelist' },
+        { name: 'Claire Seducer', factions: ['Angels', 'Tuner Shop'], assumeServer: 'whitelist' },
         { name: '[Officer] Tyme Reducer', factions: ['Police'], assumeServer: 'whitelist' },
         { name: '[Officer] Claire Seducer', factions: ['Police'], displayName: 1, assumeServer: 'public' },
         { name: 'Becky Hopper', displayName: 0 },
@@ -784,7 +784,7 @@ export const npCharacters: NpCharacters = {
     FortyOne: [
         { name: 'Jose Martin Perez', nicknames: ['JMP'] },
         { name: '[Deputy] John Archer', factions: ['Police'] },
-        { name: 'Lucas Ortiz', factions: ['Burger Shot'] },
+        { name: 'Lucas Ortiz', factions: ['Tuner Shop'] },
         { name: 'Don Russo', displayName: 0 },
         { name: 'Jacob "Funny Man" Storm' },
         { name: 'Arious "Breezy" Campbell' },
@@ -929,13 +929,13 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Honathan Yolo', factions: ['Police'] },
     ],
     Hoss: [
-        { name: 'Chip Wheeler', factions: ['BBMC'], displayName: 0, assumeServer: 'whitelist' },
+        { name: 'Chip Wheeler', factions: ['BBMC', 'Tuner Shop'], displayName: 0, assumeServer: 'whitelist' },
         { name: 'Rocky Balboner', displayName: 0, assumeServer: 'public' },
     ],
     Hotted89: [
         { name: '[Deputy] Matthew Espinoz', factions: ['Police'], nicknames: ['Airspinoz', 'Air 1 Andy'] },
         { name: 'Joaquin "JJ" Jimenes', factions: ['Vagos'] },
-        { name: 'Allen Widemann', factions: ['Chang Gang'] },
+        { name: 'Allen Widemann', factions: ['Chang Gang', 'Tuner Shop'] },
     ],
     HPD007: [
         { name: 'Joe Flatley', factions: ['BSK'], nicknames: ['Fat Joe'], displayName: 3 },
@@ -1345,7 +1345,7 @@ export const npCharacters: NpCharacters = {
     ],
     kyliebitkin: [
         { name: '[Deputy] Brittany Angel', factions: ['Police'], nicknames: ['Angle', 'Captain'] },
-        { name: 'Mary Mushkin', nicknames: ['Red Devil', 'R3d Devil'], displayName: 0 },
+        { name: 'Mary Mushkin', factions: ['Tuner Shop'], nicknames: ['Red Devil', 'R3d Devil'], displayName: 0 },
     ],
     LadyHope: [
         { name: '[Officer] Lily Pond', factions: ['Police'] },
@@ -1750,7 +1750,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Chips Ahoy' },
     ],
     Nottics: [
-        { name: 'Raymundo Ortiz', factions: ['Vagos'], nicknames: [reg(/\br+ay/), reg(/\bmundo/)] },
+        { name: 'Raymundo Ortiz', factions: ['Vagos', 'Tuner Shop'], nicknames: [reg(/\br+ay/), reg(/\bmundo/)] },
         { name: 'Raul Rodriguez', nicknames: [reg(/\br+au+l/)] },
     ],
     NovalokHD: [
@@ -1933,8 +1933,11 @@ export const npCharacters: NpCharacters = {
     raine: [
         { name: 'Penny Farthing', factions: ['Britney Gang', 'Rooster'] },
     ],
+    RALLY728: [
+        { name: 'Armando Hernandez', factions: ['Tuner Shop'] },
+    ],
     Ramee: [
-        { name: 'Ramee El-Rahman', factions: ['Chang Gang'], nicknames: ['The "Warlord"', 'The "Vulture"', 'SBS Patient-0'] },
+        { name: 'Ramee El-Rahman', factions: ['Chang Gang', 'Tuner Shop'], nicknames: ['The "Warlord"', 'The "Vulture"', 'SBS Patient-0'] },
         { name: '[Ranger] Conan Clarkson', factions: ['Police'] },
     ],
     Rasta: [
@@ -2096,7 +2099,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Eddie Delish' },
     ],
     Shotz: [
-        { name: 'Vinny Pistone', factions: ['Chang Gang', 'Chaos'], assumeServer: 'whitelist' },
+        { name: 'Vinny Pistone', factions: ['Chang Gang', 'Chaos', 'Tuner Shop'], assumeServer: 'whitelist' },
         { name: 'Vinny Pistone', factions: ['Gulag Gang'], assumeServer: 'public' },
         { name: 'Mr J', factions: ['Chang Gang'], displayName: 0 },
         { name: '[Ranger] John Mineo', factions: ['Police'] },
@@ -2141,7 +2144,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Reginald "Reggie" Bigglesby', factions: ['Burger Shot', 'Rooster'] },
     ],
     Skannerz_: [
-        { name: 'Wayne Kerr' },
+        { name: 'Wayne Kerr', factions: ['Tuner Shop'] },
     ],
     Skelasoldier: [
         { name: 'Raymond "Xray" Delprince', factions: ['SSB'], displayName: 0 },
@@ -2546,7 +2549,7 @@ export const npCharacters: NpCharacters = {
     Vigors: [
         {
             name: 'Kayn "Yager" Larp',
-            factions: ['LARPers', 'Cleanbois', 'Rooster'],
+            factions: ['LARPers', 'Cleanbois', 'Rooster', 'Tuner Shop'],
             nicknames: ['Warlock', 'Fighter', 'Yager', 'Demonblood', 'Demon'],
             displayName: 0,
         },
@@ -2558,7 +2561,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Raymond Frost', factions: ['Vagos'], displayName: 0 },
     ],
     VioletCutie: [
-        { name: 'Maisie Hart', factions: ['Britney Gang', 'Rooster'], displayName: 0 },
+        { name: 'Maisie Hart', factions: ['Britney Gang', 'Rooster', 'Tuner Shop'], displayName: 0 },
     ],
     Viviana: [
         { name: 'Griselda Ambrose', nicknames: ['Granny'] },
