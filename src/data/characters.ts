@@ -627,6 +627,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Luther Caine', factions: ['HOA'] },
         { name: 'Wyatt Mersion', factions: ['Limelight', 'Mersions'] },
     ],
+    Donut3venTryMe: [
+        { name: 'Joey Pepperoni', factions: ['Tuner Shop'], displayName: 0 },
+    ],
     Dorken: [
         { name: 'Valentina' },
         { name: 'Debby Doodle' },
@@ -1223,7 +1226,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Susie Carmichael', displayName: 0 },
     ],
     Kennasofly: [
-        { name: 'Jupiter Adams', displayName: 0 },
+        { name: 'Jupiter Adams', factions: ['Tuner Shop'], displayName: 0 },
     ],
     KezieEve: [
         { name: 'Ghost Storm', factions: ['GSF'] },
