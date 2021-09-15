@@ -2330,6 +2330,7 @@ export const npCharacters: NpCharacters = {
     ],
     Syndicate: [
         { name: 'Seven Lighthouse', displayName: 0 },
+        { name: 'Alfie Hunter', displayName: 0 },
     ],
     SynthHunter: [
         { name: 'Hunter "Wingman" Skye', factions: ['Rooster'] },
