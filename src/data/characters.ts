@@ -2051,7 +2051,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Debo Davis', factions: ['GSF'] },
     ],
     Sams: [
-        { name: 'Dimitri Barkov', factions: ['HOA'] },
+        { name: 'Dimitri Barkov' },
     ],
     Sareff: [
         { name: 'Paige Green' },
