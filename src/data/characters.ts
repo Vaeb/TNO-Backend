@@ -287,6 +287,9 @@ export const npCharacters: NpCharacters = {
     Beast_: [
         { name: '[Deputy] Ruger Daniels', factions: ['Police'] },
     ],
+    Beerman155: [
+        { name: 'Abner Vaca', factions: ['Stable'] },
+    ],
     Benni: [
         { name: 'Santiago "Santi" Madrid', factions: ['Vagos'], nicknames: [reg(/\bSanti/)] },
         { name: 'Antonio Reyes', nicknames: [reg(/\bAntonio/)] },
@@ -338,6 +341,9 @@ export const npCharacters: NpCharacters = {
     ],
     Bomaah: [
         { name: 'Viper Rodriguez', assume: 'assumeOther' },
+    ],
+    BoogieTD: [
+        { name: 'Xavier Valentine', factions: ['Stable'] },
     ],
     BoschMerchant: [
         { name: 'Anto Murphy', factions: ['Chang Gang'] },
@@ -656,7 +662,7 @@ export const npCharacters: NpCharacters = {
         { name: 'John "Geno" Collins', factions: ['GSF'] },
     ],
     Dunrunnin12: [
-        { name: 'Thomas Dwayne', nicknames: ['The Narrator'], displayName: 0 },
+        { name: 'Thomas Dwayne', factions: ['Stable'], nicknames: ['The Narrator'], displayName: 0 },
         { name: 'Nay "Delamain" Rater' },
     ],
     durptastic: [
@@ -775,7 +781,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Rhode Block', factions: ['ASRR'], displayName: 0 },
     ],
     FloMcNasty_TV: [
-        { name: 'Richard Chiclets', factions: ['Burger Shot'], nicknames: ['Dick Chiclets'], displayName: 3 },
+        { name: 'Richard Chiclets', factions: ['Stable', 'Burger Shot'], nicknames: ['Dick Chiclets'], displayName: 3 },
     ],
     Flynno: [
         { name: '[Officer] Mickey Reynolds', factions: ['Police'], displayName: 3, assume: 'assumeNpNoOther' },
@@ -861,7 +867,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Thad Owens', factions: ['HOA'], displayName: 0 },
     ],
     GrandPOObear: [
-        { name: 'Mick Flair', displayName: 0 },
+        { name: 'Mick Flair', factions: ['Stable'], displayName: 0 },
     ],
     Greekgodx: [
         { name: '"Tay Tay" Tyrone', nicknames: ['TayTay'], assumeServer: 'public' },
@@ -1199,7 +1205,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Arush', factions: ['GSF'] },
     ],
     Kate: [
-        { name: 'Nancy Drew', factions: ['Britney Gang'] },
+        { name: 'Nancy Drew', factions: ['Stable', 'Britney Gang'] },
     ],
     KatFires: [
         { name: 'Novah Walker', factions: ['Chang Gang'] },
@@ -1379,7 +1385,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Jesse "Baby Joker" Morales', assume: 'assumeOther' },
     ],
     LeWolfy: [
-        { name: '[Deputy] Dante Wolf', factions: ['Police'] },
+        { name: '[Deputy] Dante Wolf', factions: ['Police', 'Stable'] },
     ],
     lilypichu: [
         { name: 'Tulip Peach' },
@@ -1618,7 +1624,7 @@ export const npCharacters: NpCharacters = {
         { name: '[EMS] Janus Lee', factions: ['Medical'] },
     ],
     MistorThio: [
-        { name: 'Kirk Jerkems', factions: ['Rooster'], displayName: 0 },
+        { name: 'Kirk Jerkems', factions: ['Stable', 'Rooster'], displayName: 0 },
     ],
     Moboking: [
         { name: '[Officer] Ellis Pinzon', factions: ['Police'], nicknames: ['Ronaldo'], assumeServer: 'whitelist' },
@@ -1630,7 +1636,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Charles White', displayName: 0 },
     ],
     mollyruu: [
-        { name: 'Lizzie Byrne', displayName: 1 },
+        { name: 'Elizabeth "Lizzie" Byrne', factions: ['Stable'], displayName: 1 },
     ],
     MOONMOON: [
         { name: '[Officer] Lenny Hawk', factions: ['Police'], nicknames: ['Renegade'], displayName: 1, assume: 'assumeNp' },
@@ -1864,6 +1870,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Pez Speedwagon', factions: ['BBMC'] },
         { name: 'Pezzy Pee' },
     ],
+    Plashir: [
+        { name: 'Thom Yung', factions: ['Stable'], displayName: 0 },
+    ],
     PlasticLittle: [
         { name: 'Parson "Frosty" Brown', factions: ['Lost MC'] },
     ],
@@ -1992,6 +2001,9 @@ export const npCharacters: NpCharacters = {
     ],
     rerolldota: [
         { name: '[Deputy] Lea Nova', factions: ['Police'] },
+    ],
+    ReverendCatino: [
+        { name: 'Rocky Topps', factions: ['Stable'], displayName: 1 },
     ],
     RevRoach: [
         { name: "Happy D'Klown" },
@@ -2396,6 +2408,9 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Jonathan Dazzler', factions: ['Police'], nicknames: ['Johnny'], displayName: 2 },
         { name: 'Slappy McGaffey' },
     ],
+    Thatblokeryan: [
+        { name: 'Jaxxon Jones', factions: ['Stable'] },
+    ],
     ThatEmoPunk: [
         { name: 'Ezreal Kay-Hoss', factions: ['Rooster'], nicknames: ['EZ', 'E.Z'] },
     ],
@@ -2641,6 +2656,9 @@ export const npCharacters: NpCharacters = {
     ],
     WTFGameNation: [
         { name: '[Dr.] Noah Drake', factions: ['Medical'] },
+    ],
+    wtfmoses: [
+        { name: 'Smooth Williams', factions: ['Stable'] },
     ],
     WuPingNOTEggRoll: [
         { name: 'Wu "Egg Roll" Ping' },
