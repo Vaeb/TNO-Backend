@@ -208,7 +208,6 @@ const filterExclude: { [key in FactionRealMini]?: boolean } = {
     mechanic: true,
     harmony: true,
     quickfix: true,
-    marabunta: true,
     mersions: true,
     podcast: true,
     otherfaction: true,
