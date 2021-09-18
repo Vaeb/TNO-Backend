@@ -2210,6 +2210,7 @@ export const npCharacters: NpCharacters = {
     ],
     SmithyPlaysUK: [
         { name: 'Reginald Parker', factions: ['DoC'] },
+        { name: 'Duke Wiggles', displayName: 0 },
     ],
     smo_och: [
         { name: 'Mike Smoore', factions: ['Vagos'], displayName: 0 },
