@@ -167,15 +167,19 @@ for (const [streamer, characters] of Object.entries(npCharacters)) {
         const primaryFaction = char.factions[0];
         if (displayNameNum === undefined) displayNameNum = displayNameDefault[primaryFaction] ?? 1;
 
-        char.displayName = titles ? `${titles.join(' ')} ` : '';
+        const displayNameTitle = titles ? `${titles.join(' ')} ` : '';
+        let displayNameChar = '';
         if (knownName !== undefined) {
-            char.displayName += knownName;
+            displayNameChar = knownName;
+            parsedNames.push(RegExp.escape(`${displayNameChar.toLowerCase()}s`));
         } else if (displayNameNum === 0) {
-            char.displayName += realNames.join(' ');
+            displayNameChar = realNames.join(' ');
+            parsedNames.push(RegExp.escape(`${realNames[0].toLowerCase()}s`));
         } else {
-            char.displayName += realNames[displayNameNum - 1] || realNames[0];
+            displayNameChar = realNames[displayNameNum - 1] || realNames[0];
+            parsedNames.push(RegExp.escape(`${displayNameChar.toLowerCase()}s`));
         }
-        char.displayName = char.displayName.trim();
+        char.displayName = `${displayNameTitle}${displayNameChar}`.trim();
 
         nameRegAll.push(`\\b(?:${parsedNames.join('|')})\\b`);
         if (char.factions.includes('development') && streamerLower !== 'dwjft') { // Include regex for dev faction
