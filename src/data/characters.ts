@@ -1018,7 +1018,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Wilbur Higgins' },
     ],
     itsjustasummerjob: [
-        { name: 'Sabith "Bunny" Cohen' },
+        { name: 'Sabith "Bunny" Cohen', factions: ['Stable'] },
     ],
     ItsJustJosh: [
         { name: 'Levi Dawson', factions: ['SSB'] },
