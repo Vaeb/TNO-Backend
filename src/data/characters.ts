@@ -857,6 +857,9 @@ export const npCharacters: NpCharacters = {
     gibbs_gg: [
         { name: 'Walter Franks', factions: ['Condemned MC'], displayName: 0 },
     ],
+    gingersnap___: [
+        { name: 'Sophie Sanders', displayName: 0 },
+    ],
     goldelena: [
         { name: 'August Vakarian' },
     ],
