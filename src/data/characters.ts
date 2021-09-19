@@ -1813,6 +1813,9 @@ export const npCharacters: NpCharacters = {
     OG_Tyger: [
         { name: '[Officer] Peter Frost', factions: ['Police'] },
     ],
+    ogk3nz: [
+        { name: 'Marko Russetto', factions: ['BSK'], displayName: 0 },
+    ],
     OhMadOne: [
         { name: '[Lawyer //] Ginzu Okada', factions: ['DoJ'] },
     ],
