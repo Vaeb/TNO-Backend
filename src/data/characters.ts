@@ -214,7 +214,7 @@ export const npCharacters: NpCharacters = {
         { name: '[EMS] Boba Stone', factions: ['Medical'] },
     ],
     AuriEllis: [
-        { name: 'Ursula Leichenberg', factions: ['News'] },
+        { name: 'Ursula Leichenberg', factions: ['Burger Shot', 'News'] },
         { name: 'Gracie ?' },
     ],
     aurvinR: [
