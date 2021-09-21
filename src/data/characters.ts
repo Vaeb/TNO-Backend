@@ -1133,6 +1133,9 @@ export const npCharacters: NpCharacters = {
     JoshOG: [
         { name: 'Mario Le-Pipe', factions: ['Chang Gang'], affiliate: true, displayName: 0 },
     ],
+    JostQQ: [
+        { name: 'Jost Zueger', factions: ['Rooster'], displayName: 0 },
+    ],
     JOVIAN: [
         { name: '[Deputy] Billiam Williams', factions: ['Police'], displayName: 1 },
     ],
