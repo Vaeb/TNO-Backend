@@ -873,7 +873,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Thad Owens', factions: ['HOA'], displayName: 0 },
     ],
     GrandPOObear: [
-        { name: 'Mick Flair', factions: ['Stable'], displayName: 0 },
+        { name: 'Mick Jhonson', factions: ['Stable'], displayName: 0 },
     ],
     Greekgodx: [
         { name: '"Tay Tay" Tyrone', nicknames: ['TayTay'], assumeServer: 'public' },
