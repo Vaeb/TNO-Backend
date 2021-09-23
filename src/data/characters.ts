@@ -615,6 +615,9 @@ export const npCharacters: NpCharacters = {
     DiewithLivv: [
         { name: 'Cindy Tipton', factions: ['BBMC'], nicknames: ['Girlboss'] },
     ],
+    DigbyTathamWarter: [
+        { name: 'Nigel Edwardson', factions: ['News'], displayName: 0 },
+    ],
     DigiiTsuna: [
         { name: '[Dr.] Kai King', factions: ['Medical'], displayName: 2 },
     ],
