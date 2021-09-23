@@ -114,6 +114,7 @@ export const npCharacters: NpCharacters = {
     AidenNortha: [
         { name: '[Deputy] Kevin Keyte', factions: ['Police'], displayName: 1, assumeServer: 'whitelist' },
         { name: '[Officer] Melvin Graves', factions: ['Police'], displayName: 0, assumeServer: 'public' },
+        { name: 'Jase Dawson', displayName: 0 },
     ],
     aintitadam: [
         { name: 'Scruffy Doodle', factions: ['Burger Shot'] },
