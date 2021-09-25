@@ -802,9 +802,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Mason Foorhees' },
     ],
     FortyOne: [
-        { name: 'Jose Martin Perez', nicknames: ['JMP'] },
-        { name: '[Deputy] John Archer', factions: ['Police'] },
         { name: 'Lucas Ortiz', factions: ['Tuner Shop'] },
+        { name: '[Deputy] John Archer', factions: ['Police'] },
+        { name: 'Jose Martin Perez', nicknames: ['JMP'] },
         { name: 'Don Russo', displayName: 0 },
         { name: 'Jacob "Funny Man" Storm' },
         { name: 'Arious "Breezy" Campbell' },
