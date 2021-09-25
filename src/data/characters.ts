@@ -1458,7 +1458,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Hellfire Holden', factions: ['Lost MC'], nicknames: ['biker', reg(/hell\W*fire/)] },
     ],
     LtSerge: [
-        { name: '[Dr.] Serge Cross', factions: ['Medical'], displayName: 2 },
+        { name: '[Deputy] Serge Cross', factions: ['Police'], displayName: 2 },
     ],
     Lucky_RP: [
         { name: 'Marlo Stanfield', nicknames: [reg(/ma?rlo/)] },
