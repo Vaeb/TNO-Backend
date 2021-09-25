@@ -494,6 +494,10 @@ export const npCharacters: NpCharacters = {
         { name: 'Michael Robinson', factions: ['DoC'], displayName: 0 },
         { name: 'Pete Bourke', factions: ['Prison'], displayName: 0 },
     ],
+    Client: [
+        { name: 'Daquan "Peanut" Dumas', factions: ['NBC'] },
+        { name: '[Officer] Alejandro Picadillo', factions: ['Police'], nicknames: ['World Wide', 'Worldwide'] },
+    ],
     CloudyDL: [
         { name: 'Scotty Dixon', factions: ['BSK'] },
     ],
@@ -1230,10 +1234,6 @@ export const npCharacters: NpCharacters = {
     ],
     KazMendalez: [
         { name: 'Kaz Mendalez', factions: ['BBMC'] },
-    ],
-    kClient: [
-        { name: 'Daquan "Peanut" Dumas', factions: ['NBC'] },
-        { name: '[Officer] Alejandro Picadillo', factions: ['Police'], nicknames: ['World Wide', 'Worldwide'] },
     ],
     Keeno: [
         { name: 'Kyle Brovloski', displayName: 0 },
