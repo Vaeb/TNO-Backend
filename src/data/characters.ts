@@ -648,7 +648,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Joey Pepperoni', factions: ['Tuner Shop'], displayName: 0 },
     ],
     Dorken: [
-        { name: 'Valentina' },
+        { name: 'Valentina Hops', factions: ['Burger Shot'] },
         { name: 'Debby Doodle' },
         { name: '[Deputy] Nicholine Quinn', factions: ['Police'] },
         { name: 'Nicholine Quinn' },
