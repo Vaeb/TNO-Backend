@@ -1604,6 +1604,10 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Damien Alexander', factions: ['Police'] },
         { name: '[Deputy] Kurt Leonard', factions: ['Police'], assume: 'assumeOther' },
     ],
+    Mikeemod: [
+        { name: '[Development //] GTAWiseGuy', factions: ['Development'] },
+        { name: 'Ratlord' },
+    ],
     MikeTheBard: [
         { name: 'Hubcap Jones', factions: ['Burger Shot'], displayName: 0, assumeServer: 'whitelist' },
         { name: 'Jack Nova', displayName: 0 },
