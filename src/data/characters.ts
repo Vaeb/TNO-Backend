@@ -1098,7 +1098,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Robert "Mr. Rodgers" Rodgers' },
     ],
     JdotField: [
-        { name: 'Miles Landon', factions: ['Pegasus', 'Rooster'], assumeServer: 'whitelist' },
+        { name: 'Miles Landon', factions: ['Pegasus'], assumeServer: 'whitelist' },
         { name: 'Miles Landon', nicknames: ['451'], assumeServer: 'public' },
         { name: 'Jake LaMotta', displayName: 0 },
         { name: 'Andrew "Drew" Jackson', factions: ['GSF'] },
@@ -2038,7 +2038,7 @@ export const npCharacters: NpCharacters = {
         { name: '[D.A.] Rick Mongo', factions: ['DoJ'], assume: 'assumeNpNoOther' },
     ],
     RiZRP: [
-        { name: 'Nikita Reznikov', factions: ['Pegasus', 'Rooster'] },
+        { name: 'Nikita Reznikov', factions: ['Pegasus'] },
     ],
     rlly: [
         { name: 'Shelly Targaryen', factions: ['Burger Shot'], nicknames: ['Shelleh', 'Queen'] },
@@ -2467,7 +2467,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Delaney', factions: ['Police'] },
     ],
     TheEazyLife: [
-        { name: 'Brandon Valentino', factions: ['Pegasus', 'Rooster'], displayName: 0 },
+        { name: 'Brandon Valentino', factions: ['Pegasus'], displayName: 0 },
     ],
     theeYAIR: [
         { name: 'Yair Lamas', displayName: 0 },
