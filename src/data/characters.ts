@@ -1612,7 +1612,7 @@ export const npCharacters: NpCharacters = {
     ],
     Mikeemod: [
         { name: '[Development //] Mikeemod', factions: ['Development'] },
-        { name: 'Ratlord' },
+        { name: 'Ratlord', nicknames: ['Raccoon', 'Racoon', 'Rat Lord'] },
     ],
     MikeTheBard: [
         { name: 'Hubcap Jones', factions: ['Burger Shot'], displayName: 0, assumeServer: 'whitelist' },
