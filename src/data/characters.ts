@@ -64,8 +64,8 @@ export const npCharacters: NpCharacters = {
         { name: 'Sanjay Patel', factions: ['Burger Shot'] },
     ],
     abby: [
-        { name: 'Big Bertha', displayName: 0 },
         { name: 'Irma Gawd', factions: ['Rooster'], displayName: 0 },
+        { name: 'Big Bertha', displayName: 0 },
         { name: 'Ivy Wood' },
     ],
     abbyduren: [
