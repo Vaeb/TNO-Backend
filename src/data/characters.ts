@@ -1439,6 +1439,9 @@ export const npCharacters: NpCharacters = {
     LordNetloc: [
         { name: 'Carter Banx', factions: ['GSF'], displayName: 0 },
     ],
+    LordSnowRP: [
+        { name: 'PillBot XP', factions: ['Medical', 'Burger Shot'], displayName: 1 },
+    ],
     Loserfruit: [
         { name: '[EMS] Lizzie Bien', factions: ['Medical'] },
     ],
