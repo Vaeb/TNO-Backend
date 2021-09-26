@@ -1001,6 +1001,9 @@ export const npCharacters: NpCharacters = {
     IHeartGaming: [
         { name: 'Markuz Jackelson', factions: ['GSF'], nicknames: ['Meatball', 'Meat', 'Meatwad'] },
     ],
+    IJuanAWin: [
+        { name: 'Machete Cortez', factions: ['Marabunta'] },
+    ],
     ikittyyyy: [
         { name: 'Kitty Dream', factions: ['Britney Gang', 'Burger Shot', 'Rooster'] },
     ],
