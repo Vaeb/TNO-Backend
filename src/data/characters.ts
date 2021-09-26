@@ -1605,7 +1605,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Kurt Leonard', factions: ['Police'], assume: 'assumeOther' },
     ],
     Mikeemod: [
-        { name: '[Development //] GTAWiseGuy', factions: ['Development'] },
+        { name: '[Development //] Mikeemod', factions: ['Development'] },
         { name: 'Ratlord' },
     ],
     MikeTheBard: [
