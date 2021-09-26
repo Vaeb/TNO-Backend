@@ -1671,7 +1671,8 @@ export const npCharacters: NpCharacters = {
         { name: 'Maximilian "Yung Dab" Thoroughbred', nicknames: ['The "Gnome"', 'Yung', 'Dab', 'Max'], displayName: 0 },
     ],
     Moose_Taffy: [
-        { name: 'Patar Bellosh', factions: ['Mandem'], assume: 'assumeOther' },
+        { name: 'Patar Bellosh', factions: ['Mandem'], assume: 'assumeNpNoOther' },
+        { name: '[Ride Along] Mantar Mellosh', factions: ['Police'] },
     ],
     Moosebrother: [
         { name: '[Deputy] Louis Bloom', factions: ['Police'] },
@@ -2001,7 +2002,7 @@ export const npCharacters: NpCharacters = {
     ],
     Ray__C: [
         { name: 'Raymond "Ray" Romanov', factions: ['Limelight', 'Cleanbois', 'Rooster'], nicknames: ['Ray', reg(/\brussia/)], assumeChar: true, assumeServer: 'whitelist' },
-        { name: '[Ride-Along] Raycardo Flick', factions: ['Police'], assumeServer: 'whitelist' },
+        { name: '[Ride Along] Raycardo Flick', factions: ['Police'], assumeServer: 'whitelist' },
         { name: '[Officer] Raycardo Flick', factions: ['Police'], assumeServer: 'public' },
     ],
     ray308win: [
