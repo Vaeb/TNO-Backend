@@ -36,6 +36,9 @@ export const npCharacters: NpCharacters = {
     '713stew': [
         { name: 'Junior Diaz', factions: ['Vagos'], displayName: 0 },
     ],
+    '77_Nights': [
+        { name: 'Damian De Santos', factions: ['Vagos'], displayName: 1 },
+    ],
     '80bsaget': [
         { name: 'Tim Lee', displayName: 0 },
         { name: '[Officer] Bexar McCree', factions: ['Police'] },
