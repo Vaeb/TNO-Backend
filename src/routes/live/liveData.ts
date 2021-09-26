@@ -154,7 +154,7 @@ for (const [streamer, characters] of Object.entries(npCharacters)) {
                     }
                 }
             });
-        }
+        } // testing commit identity
 
         const fullFactions: FactionRealFull[] = charOld.factions?.length ? charOld.factions : ['Independent'];
         char.factionsObj = {};
