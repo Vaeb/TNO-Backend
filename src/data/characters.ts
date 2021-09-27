@@ -791,6 +791,7 @@ export const npCharacters: NpCharacters = {
     Fiendota: [
         { name: 'Jonathan "Magnum" Humes', nicknames: [reg(/\bP\.?\s*I\b/)] },
         { name: 'Booba ?' },
+        { name: 'Boobingle Dan', factions: ['Dans'] },
     ],
     Five0AnthO: [
         { name: '[Trooper] Tony Andrews', factions: ['Police'], highCommand: true, leader: true },
