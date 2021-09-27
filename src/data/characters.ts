@@ -133,6 +133,7 @@ export const npCharacters: NpCharacters = {
     ],
     aleks: [
         { name: '[Officer] Bob Smith', factions: ['Police'], nicknames: ['Bobby', 'Chief'], displayName: 1 },
+        { name: 'Alex Marshall', factions: ['Frat'], displayName: 0 },
         { name: '[FIB Agent] Heath Mercer', factions: ['Police'] },
         { name: 'Vasily "V" Sazkaljovich', factions: ['Pegasus', 'Rooster'] },
     ],
@@ -325,7 +326,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Michael S.', factions: ['Gulag Gang'], nicknames: ['Upgood'], assumeServer: 'public' },
     ],
     bldrs: [
-        { name: 'Kaleb "Kleb" Rush', factions: ['HOA'] },
+        { name: 'Kaleb "Kleb" Rush', factions: ['HOA', 'Frat'] },
         { name: '[Officer] Ryan Wright', factions: ['Police'] },
     ],
     BLooD_MoNeY_: [
@@ -559,6 +560,7 @@ export const npCharacters: NpCharacters = {
     ],
     curvyelephant: [
         { name: '[Deputy] Matt Rhodes', factions: ['Police'] },
+        { name: 'Brad ?', factions: ['Frat'], nicknames: ['B-Rad'], displayName: 3 },
         { name: 'Ryan Parker', factions: ['Lost MC'] },
         { name: '[Lawyer //] Kevin Shaw', factions: ['DoJ'] },
     ],
@@ -1857,6 +1859,7 @@ export const npCharacters: NpCharacters = {
     ],
     OwenSeven: [
         { name: '[Officer] Owen Svensen', factions: ['Police'] },
+        { name: 'Tyler Dabrowski', factions: ['Frat'], nicknames: ['Bro', 'Brow', 'Brah', 'Broski', 'Browski', 'Brahski'], displayName: 0 },
     ],
     PacifistV: [
         { name: 'Merry Achi', factions: ['Rooster'], displayName: 0 },

@@ -37,6 +37,7 @@ export const npFactionsReal = { // map: removed spaces + converted to lower case
     darkweb: 'Dark Web',
     news: 'News',
     russians: 'Russians',
+    frat: 'Frat',
     condemnedmc: 'Condemned MC',
     mersions: 'Mersions',
     lunatix: 'Lunatix',

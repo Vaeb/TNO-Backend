@@ -47,6 +47,7 @@ export const npFactionsRegex = {
     burgershot: noFormer(/(?<!(?:everyone|people)\s+at\s+)burger[\s\-]*shot|\bburgers\b|\bburgersh/i),
     development: /\bdevelop|\bdev\b|\bcoding|devathon/i,
     doc: noLater(noFormer(/\bdoc\b|\bcorrection/i)),
+    frat: noLater(noFormer(/\bfrat\b/i)),
     prison: noLater(/\blifer|\bprison|\blife\W+sentence/i),
     harmony: /\bharmony\b/i,
     quickfix: /\bquick[\s\-]*fix/i,
