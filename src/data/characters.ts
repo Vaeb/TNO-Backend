@@ -760,6 +760,9 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Huxley Johnson', factions: ['Police'], assumeServer: 'public' },
         { name: 'Paddy Patrickson', factions: ['Lost MC'] },
     ],
+    fakejdn: [
+        { name: '[Deputy] Jaden Bane', factions: ['Police'], displayName: 2 },
+    ],
     FalconryGal: [
         { name: 'Jenna Tuttle', displayName: 2 },
     ],
