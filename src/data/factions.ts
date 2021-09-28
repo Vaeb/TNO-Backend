@@ -145,7 +145,7 @@ export const useColorsDark = { // #f9002f
     bbmc: '#3B64E6',
     burgershot: '#E99062',
     development: '#718093',
-    condemnedmc: '#a5f08f',
+    condemnedmc: '#90fa8f',
     doc: '#0984e3',
     prison: '#1C8EA2',
     stable: '#40739e',
