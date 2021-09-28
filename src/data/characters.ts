@@ -592,6 +592,9 @@ export const npCharacters: NpCharacters = {
     DanHawk1ns: [
         { name: 'Benny Gomez', factions: ['Burger Shot'] },
     ],
+    Dark0verseer: [
+        { name: '[Development //] Dark0', factions: ['Development'], nicknames: ['3D', 'manor'] },
+    ],
     Darthbobo77: [
         { name: 'Rudi Rinsen', factions: ['Lost MC'], leader: true },
     ],
