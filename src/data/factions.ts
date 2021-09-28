@@ -222,6 +222,7 @@ const filterOrderTop: FactionMiniArr = [
     'allnopixel',
     'alltwitch',
     'othernp',
+    'international',
     'cleanbois',
     'changgang',
     'police',
@@ -251,7 +252,7 @@ const filterOrderTop: FactionMiniArr = [
 
 const filterOrderAfterHasColor: FactionMiniArr = ['larpers', 'burgershot', 'medical', 'doc', 'development'];
 
-const filterOrderAfterNoColor: FactionMiniArr = ['independent', 'podcast', 'publicnp', 'international', 'other'];
+const filterOrderAfterNoColor: FactionMiniArr = ['independent', 'podcast', 'publicnp', 'other'];
 
 const filterOrder: { [key in FactionMini]?: number } = Object.assign(
     {},
