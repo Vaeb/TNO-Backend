@@ -1415,6 +1415,9 @@ export const npCharacters: NpCharacters = {
     LaS_: [
         { name: 'Jesse "Baby Joker" Morales', assume: 'assumeOther' },
     ],
+    LetterJaye: [
+        { name: 'Posy Florian', factions: ['Burger Shot'] },
+    ],
     LeWolfy: [
         { name: '[Deputy] Dante Wolf', factions: ['Police', 'Stable'] },
     ],
