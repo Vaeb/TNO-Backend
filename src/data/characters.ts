@@ -1638,6 +1638,9 @@ export const npCharacters: NpCharacters = {
     mikezout14: [
         { name: '[Deputy] Michael Rodgers', factions: ['Police'], assume: 'assumeNpNoOther' },
     ],
+    MikkisaurusRex: [
+        { name: '[EMS] Jessica Hilton', factions: ['Medical'] },
+    ],
     MiltonTPike1: [
         { name: 'Kiki Chanel', assumeServer: 'whitelist' },
         { name: '[Officer] Kiki Chanel', factions: ['Police'], displayName: 1, assumeServer: 'public' },
