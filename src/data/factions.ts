@@ -156,7 +156,7 @@ export const useColorsDark = { // #f9002f
     independent: '#32ff7e',
     podcast: '#ffffff',
     othernp: '#ffffff',
-    international: '#baffb9',
+    international: '#f780a1',
     publicnp: '#81ecec',
     other: '#429e9d',
     allnopixel: '#ffffff',
