@@ -5,7 +5,7 @@ import {
     log, cloneDeepJson, filterObj, mapObj, parseParam, isObjEmpty, parseLookup,
 } from '../../utils';
 
-import { regNp, regOthers, regNpPublic, regNpWhitelist } from '../../data/settings';
+import { regNp, regOthers, regNpPublic, regNpInternational, regNpWhitelist } from '../../data/settings';
 import settingsParsed from '../../data/settingsParsed';
 import factionsParsed from '../../data/factionsParsed';
 import { NpFactions, npFactions } from '../../data/meta';
@@ -283,6 +283,7 @@ export interface LiveOptions {
     factionName: FactionMini;
     filterEnabled: boolean;
     allowPublic: boolean;
+    allowInternational: boolean;
     allowOthers: boolean;
     darkMode: boolean;
     international: boolean;
@@ -309,6 +310,7 @@ interface Stream extends BaseStream {
     tagFactionSecondary?: FactionColorsMini;
     noOthersInclude: boolean;
     noPublicInclude: boolean; // use these props on frontend to determine whether stream should show
+    noInternationalInclude: boolean; // use these props on frontend to determine whether stream should show
     // keepCase: boolean;
 }
 
@@ -336,6 +338,7 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
         factionName: 'allnopixel',
         filterEnabled: true,
         allowPublic: true,
+        allowInternational: true,
         allowOthers: true,
         international: false,
         darkMode: true,
@@ -362,7 +365,7 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                 log('Fetching streams data...');
 
                 const {
-                    factionName, filterEnabled, allowPublic, allowOthers, searchNum, international,
+                    factionName, filterEnabled, allowPublic, allowInternational, allowOthers, searchNum, international,
                 } = options;
                 const allowOthersNow = allowOthers || factionName === 'other';
 
@@ -373,7 +376,7 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                 // const useTextColor = '#000';
                 // const useColors = darkMode ? useColorsDark : useColorsLight;
                 const metaFactions: FactionMini[] = ['allnopixel', 'alltwitch'];
-                // const npMetaFactions: FactionMini[] = ['allnopixel', 'alltwitch', 'othernp', 'publicnp'];
+                // const npMetaFactions: FactionMini[] = ['allnopixel', 'alltwitch', 'othernp', 'publicnp', 'international'];
                 const isMetaFaction = metaFactions.includes(factionName);
                 // const isNpMetaFaction = npMetaFactions.includes(factionName);
                 // const minViewersUse = isNpMetaFaction ? minViewers : 3;
@@ -487,6 +490,7 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                             tagFaction: 'other',
                             noOthersInclude,
                             noPublicInclude: true,
+                            noInternationalInclude: true,
                             // keepCase: true,
                         };
 
@@ -510,9 +514,13 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
 
                     const onPublicIndex = title.indexOfRegex(regNpPublic, 0, Infinity);
                     const onWhitelistIndex = title.indexOfRegex(regNpWhitelist, 0, Infinity);
+                    const onWorldwideIndex = title.indexOfRegex(regNpInternational, 0);
                     let onServerDetected = false;
 
-                    if (onPublicIndex < onWhitelistIndex) {
+                    if (onWorldwideIndex !== -1) {
+                        onServer = 'international';
+                        onServerDetected = true;
+                    } else if (onPublicIndex < onWhitelistIndex) {
                         onServer = 'public';
                         onServerDetected = true;
                     } else if (onWhitelistIndex < onPublicIndex) {
@@ -526,7 +534,8 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                         for (const char of characters) {
                             const matchPositions = [...titleParsed.matchAll(char.nameReg)];
                             const numResults = matchPositions.length;
-                            const lowIndex = numResults ? matchPositions[0].index! + (onServerDetected && char.assumeServer !== onServer && char.assumeServer !== 'both' ? 1e4 : 0) : -1;
+                            const serverMatchWeight = (onServerDetected && char.assumeServer !== onServer && char.assumeServer !== 'both') ? 1e4 : 0;
+                            const lowIndex = numResults ? matchPositions[0].index! + serverMatchWeight : -1;
                             if (lowIndex > -1 && (lowIndex < lowestPos || (lowIndex === lowestPos && numResults > maxResults))) {
                                 lowestPos = lowIndex;
                                 maxResults = numResults;
@@ -580,6 +589,7 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                     }
 
                     const onNpPublic = onServer === 'public';
+                    const onNpInternational = onServer === 'international';
 
                     // log(nowCharacter);
 
@@ -589,6 +599,8 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                             allowStream = !nowCharacter && !hasFactions && !hasCharacters;
                         } else if (factionName === 'publicnp') {
                             allowStream = onNpPublic;
+                        } else if (factionName === 'international') {
+                            allowStream = onNpInternational;
                         } else {
                             // eslint-disable-next-line no-lonely-if
                             if (nowCharacter) {
@@ -623,7 +635,11 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
 
                     // log(allowStream === false, (onNpPublic && factionName !== 'publicnp' && allowPublic == false));
 
-                    if (allowStream === false || (onNpPublic && factionName !== 'publicnp' && allowPublic == false)) {
+                    if (
+                        allowStream === false
+                            || (onNpPublic && factionName !== 'publicnp' && allowPublic == false)
+                            || (onNpInternational && factionName !== 'international' && allowInternational == false)
+                    ) {
                         return;
                     }
 
@@ -661,15 +677,17 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                         factionsMap: Object.assign({}, ...activeFactions.map(faction => ({ [faction]: true }))),
                         tagText,
                         tagFaction,
-                        tagFactionSecondary: onNpPublic ? 'publicnp' : undefined,
+                        tagFactionSecondary: (onNpPublic && 'publicnp') || (onNpInternational && 'international') || undefined,
                         noOthersInclude,
                         noPublicInclude: !onNpPublic,
+                        noInternationalInclude: !onNpInternational,
                         // keepCase,
                     };
 
                     for (const faction of activeFactions) factionCount[faction]++;
                     factionCount.allnopixel++;
                     if (onNpPublic) factionCount.publicnp++;
+                    if (onNpInternational) factionCount.international++;
                     npStreams.push(stream);
                 });
 

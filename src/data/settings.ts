@@ -25,6 +25,14 @@ export const regNpPublic = addPublicCounties(mergeRegex([
     /|[^\w\s]\s*pub\w*\s*[^\w\s]/i,
     /|\b(?:pub|public)$/i,
 ]));
+export const regNpInternational = mergeRegex([
+    /(?:no[\s\-_.]*pixel|\bn[\s\-_.]*p(?=\b|\d))(?:[\s\-_.]*(?:rp|\d+\.?\d*))?[\W_]*india\w*\b(?!\W+(?:later|after))/i,
+    /|(\bindia\w*[\W_]*(?:no[\s\-_.]*pixel|\bn[\s\-_.]*p(?=\b|\d)))/i,
+    /|(?<=(?:\bon|playing|gta[\s\-_.]*[5v]?|rp|roleplay)\W+)(?:india)/i,
+    /|\bindia\w*[\W_]*(?:india|server|county|city|country|universe|timeline|queue|for\b|roleplay|rp\b|stuff\b|shenanigans)/i,
+    /|[^\w\s]\s*india\w*\s*[^\w\s]/i,
+    /|\bindia\w*$/i,
+]);
 
 export const regNpWhitelist = /(?<!(?:waiting for)\s)(?:\bwhitelist|\bwl\b|\bmain\b|\bprivate\b(?![\s\-]+(?:detective|investigat\w+)))\b(?!\W+(?:later|after))/i;
 export const regOther = /the\s*family|\btf\s?rp|family\s*rp|twitchrp|\bt\W*rp|\bnon[\s\-]*stop|\bns\s?rp/i;

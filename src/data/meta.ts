@@ -52,6 +52,7 @@ export const npFactionsMeta = {
     alltwitch: 'All Twitch',
     othernp: 'Other NP',
     publicnp: 'Public NP',
+    international: 'International NP',
 } as const;
 
 type NpFactionsReal = typeof npFactionsReal;

@@ -157,6 +157,7 @@ export const useColorsDark = { // #f9002f
     podcast: '#ffffff',
     othernp: '#ffffff',
     publicnp: '#81ecec',
+    international: '#81ecec',
     other: '#81ecec',
     allnopixel: '#ffffff',
     alltwitch: '#ffffff',
@@ -200,6 +201,7 @@ export const useColorsLight: { [key in FactionColorsMini]: string } = {
     podcast: '#000000',
     othernp: '#000000',
     publicnp: '#65b1b8',
+    international: '#65b1b8',
     other: '#65b1b8',
     allnopixel: '#ffffff',
     alltwitch: '#ffffff',
@@ -249,7 +251,7 @@ const filterOrderTop: FactionMiniArr = [
 
 const filterOrderAfterHasColor: FactionMiniArr = ['larpers', 'burgershot', 'medical', 'doc', 'development'];
 
-const filterOrderAfterNoColor: FactionMiniArr = ['independent', 'podcast', 'publicnp', 'other'];
+const filterOrderAfterNoColor: FactionMiniArr = ['independent', 'podcast', 'publicnp', 'international', 'other'];
 
 const filterOrder: { [key in FactionMini]?: number } = Object.assign(
     {},
@@ -262,6 +264,7 @@ const filterRename: { [key in FactionMini]?: string } = {
     allnopixel: 'All NoPixel (Default)',
     alltwitch: 'All Twitch (No Filtering)',
     publicnp: 'NoPixel Public',
+    international: 'NoPixel International',
     hoa: 'Home Owners Association',
     asrr: 'Alta Street Ruff Rydaz',
     nbc: 'Natural Born Crackheads',
