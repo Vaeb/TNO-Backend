@@ -1695,6 +1695,7 @@ export const npCharacters: NpCharacters = {
     ],
     Moosebrother: [
         { name: '[Deputy] Louis Bloom', factions: ['Police'] },
+        { name: 'Laura Gapes', factions: ['ASRR'], nicknames: ['Hooker Block', 'Hooker', 'Block'], displayName: 3 },
     ],
     mr_grimreaper_: [
         { name: '[Officer] Joe Fish', factions: ['Police'], assumeServer: 'public' },
