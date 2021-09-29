@@ -652,6 +652,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Luther Caine', factions: ['HOA'] },
         { name: 'Wyatt Mersion', factions: ['Limelight', 'Mersions'] },
     ],
+    DoluTattoo: [
+        { name: '[Development //] Dolu', factions: ['Development'] },
+    ],
     Donut3venTryMe: [
         { name: 'Joey Pepperoni', factions: ['Tuner Shop'], displayName: 0 },
     ],
@@ -2394,6 +2397,9 @@ export const npCharacters: NpCharacters = {
     Sykkuno: [
         { name: 'Yuno Sykk', factions: ['Cleanbois', 'Rooster'], displayName: 1, assumeServer: 'whitelist', assumeChar: true },
         { name: '[Ranger] Yuno Sykk', factions: ['Police'], displayName: 1, assumeServer: 'public' },
+    ],
+    SyncedGamingTV: [
+        { name: '[Development //] Synced', factions: ['Development'] },
     ],
     Syndicate: [
         { name: 'Seven Lighthouse', displayName: 0 },
