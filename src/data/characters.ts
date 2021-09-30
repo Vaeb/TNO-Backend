@@ -1083,6 +1083,7 @@ export const npCharacters: NpCharacters = {
     ItsSlikeR: [
         { name: 'Abe Makaveli', displayName: 0, assumeServer: 'whitelist' },
         { name: 'Abe Moe', displayName: 0, assumeServer: 'public' },
+        { name: 'Hershall Turtle', nicknames: ['Hershal'] },
         { name: 'Abraham Mohammed' },
     ],
     JaboodyShow: [
