@@ -532,6 +532,9 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Alex Casterman', factions: ['Police'] },
         { name: 'Finlay' },
     ],
+    CowsMooingNSuch: [
+        { name: '[Clerk //] Sophia McMoo', factions: ['DoJ'], displayName: 1 },
+    ],
     CptCheeto: [
         { name: '[Officer] Scott Ridley', factions: ['Police'] },
     ],
