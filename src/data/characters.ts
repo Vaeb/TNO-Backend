@@ -91,6 +91,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Hannah Hiltop' },
         { name: 'Maria Poser', factions: ['Gulag Gang'], displayName: 0, assumeServer: 'public' },
     ],
+    AdinRoss: [
+        { name: 'Ivan Gorbahtjov' },
+    ],
     adnormaltv: [
         { name: 'Ivan Gorbahtjov' },
     ],
@@ -1137,6 +1140,9 @@ export const npCharacters: NpCharacters = {
     jennylouise1997: [
         { name: '[Dispatch] Louise Campbell', factions: ['Police'] },
         { name: 'Jenny Smith', displayName: 0 },
+    ],
+    jettskiiee: [
+        { name: 'Xavier "Xay" Sin', factions: ['Rooster'] },
     ],
     jimmytulip: [
         { name: 'Wayne Biggaz', factions: ['Chang Gang'], nicknames: [reg(/\bwe+y+n/), reg(/\bwayne/)] },
