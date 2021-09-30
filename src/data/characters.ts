@@ -1308,6 +1308,9 @@ export const npCharacters: NpCharacters = {
         { name: '[Lawyer //] Gill Schultz', factions: ['DoJ'], displayName: 1 },
         { name: '[Officer] Max Muller', factions: ['Police'], displayName: 2 },
     ],
+    KinslayerxX: [
+        { name: '[Dispatch] Youjimaru Takimura', factions: ['Police'], displayName: 2 },
+    ],
     Kitboga: [
         { name: 'Edna Moose' },
         { name: '[Deputy] Claire Annette Reed', factions: ['Police'] },
@@ -1539,6 +1542,9 @@ export const npCharacters: NpCharacters = {
     ],
     Madoreline: [
         { name: '[Officer] Elizabeth Reed', factions: ['Police'] },
+    ],
+    MaestroPD: [
+        { name: 'Muten "Roshi" Roushi', factions: ['Burger Shot'] },
     ],
     Maggna: [
         { name: '[EMS] Mari Jones', factions: ['Medical'], nicknames: ['MJ'], displayName: 3 },
