@@ -693,6 +693,9 @@ export const npCharacters: NpCharacters = {
     durptastic: [
         { name: 'Otis Goody', factions: ['Burger Shot'] },
     ],
+    dustbinflowers: [
+        { name: 'Cara Lynn', factions: ['Burger Shot'], displayName: 0 },
+    ],
     dwjft: [
         { name: 'Dean Watson', factions: ['Limelight', 'Development'], nicknames: ['Dev stuff'] },
         { name: '[Trooper] Derby West Bromwich', factions: ['Police'], displayName: 1 },
