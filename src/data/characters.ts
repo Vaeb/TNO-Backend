@@ -2179,7 +2179,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Marcel King', factions: ['Police'], assumeServer: 'public' },
     ],
     ShawW0w: [
-        { name: 'Garry Roche', displayName: 0 },
+        { name: 'Garry Roche', factions: ['Burger Shot'], displayName: 0 },
     ],
     Shindur: [
         { name: '[Deputy] Joey Keys', factions: ['Police'] },
