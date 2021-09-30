@@ -483,6 +483,9 @@ export const npCharacters: NpCharacters = {
     ChelbM: [
         { name: 'Alan Kyles', factions: ['NBC'], displayName: 0 },
     ],
+    CHUDOCKEN: [
+        { name: 'Orpheus Dawson', factions: ['Burger Shot'], displayName: 1 },
+    ],
     CinnamonToastKen: [
         { name: 'Chuck Colton' },
         { name: 'Buck Colton', nicknames: ['Book', 'Bucky', 'Cultan'] },
