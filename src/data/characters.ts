@@ -1396,6 +1396,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Alabaster Slim', nicknames: ['Pimp'], displayName: 2 },
         { name: 'Kegal Dan', factions: ['Dans'] },
         { name: 'Brett Biggledoinks' },
+        { name: 'Notta Local', factions: ['SSB'], displayName: 0 },
         { name: 'Marty Oldmen', displayName: 0 },
         { name: 'Lee Harvey Tinker', displayName: 0 },
         { name: 'Cop Killa', displayName: 0 },
