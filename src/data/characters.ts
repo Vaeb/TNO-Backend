@@ -2766,6 +2766,10 @@ export const npCharacters: NpCharacters = {
     xNittyGritty: [
         { name: 'Donny ?', factions: ['Rooster'] },
     ],
+    XxAshleyxX: [
+        { name: 'Sparkle Lee', factions: ['Burger Shot'] },
+        { name: 'Naomi Kent', factions: ['Burger Shot'] },
+    ],
     yaboiSavageG: [
         { name: 'Salvaje "Savage" Mendoza', factions: ['Vagos'] },
     ],
