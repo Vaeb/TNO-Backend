@@ -236,11 +236,12 @@ const filterOrderTop: FactionMiniArr = [
     'hoa',
     'lostmc',
     'stable',
-    'pinkgang',
+    'burgershot',
     'prison',
     'nbc',
     'bbmc',
     'mandem',
+    'pinkgang',
     'asrr',
     'britneygang',
     'pegasus',
@@ -249,7 +250,7 @@ const filterOrderTop: FactionMiniArr = [
     'angels',
 ];
 
-const filterOrderAfterHasColor: FactionMiniArr = ['larpers', 'burgershot', 'medical', 'doc', 'development'];
+const filterOrderAfterHasColor: FactionMiniArr = ['larpers', 'medical', 'doc', 'development'];
 
 const filterOrderAfterNoColor: FactionMiniArr = ['independent', 'podcast', 'international', 'publicnp', 'other'];
 
