@@ -1080,6 +1080,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Mando Thompson', factions: ['SSB'] },
         { name: 'Tyrone "Big T" Thompson', factions: ['SSB'] },
     ],
+    itsSANDR: [
+        { name: 'Asher Brown', factions: ['BBMC'] },
+    ],
     ItsSlikeR: [
         { name: 'Abe Makaveli', displayName: 0, assumeServer: 'whitelist' },
         { name: 'Abe Moe', displayName: 0, assumeServer: 'public' },
