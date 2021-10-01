@@ -841,6 +841,7 @@ export const npCharacters: NpCharacters = {
     ],
     FourMilli: [
         { name: 'Brad Bett', factions: ['NBC'] },
+        { name: '[Deputy] Preston Hale', factions: ['Police'] },
     ],
     FragZone: [
         { name: 'Derek Bogart', factions: ['Condemned MC'], displayName: 0 },
