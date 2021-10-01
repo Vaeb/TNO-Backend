@@ -1463,6 +1463,9 @@ export const npCharacters: NpCharacters = {
     LeWolfy: [
         { name: '[Deputy] Dante Wolf', factions: ['Police', 'Stable'] },
     ],
+    LiftedGN: [
+        { name: 'Walter Melon', factions: ['Burger Shot'], displayName: 0 },
+    ],
     lilypichu: [
         { name: 'Tulip Peach' },
     ],
