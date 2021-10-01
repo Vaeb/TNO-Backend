@@ -277,6 +277,9 @@ export const npCharacters: NpCharacters = {
     Bananalover115: [
         { name: 'Mamaita "Mama" Jehmimi', factions: ['Britney Gang'] },
     ],
+    banditobrown1: [
+        { name: "Shankeal O'Neal", factions: ['Street Team', 'Chang Gang'], nicknames: ['Shank', 'Shankyou'] },
+    ],
     barryscottlive: [
         { name: 'Barry Scott' },
     ],
@@ -1062,6 +1065,9 @@ export const npCharacters: NpCharacters = {
     itmeJP: [
         { name: 'Wilbur Higgins' },
     ],
+    Its_Tyger: [
+        { name: "Chase O'Dell", factions: ['Street Team', 'Chang Gang'], nicknames: ['Lil Bleach', 'Bleach'], displayName: 3 },
+    ],
     itsjustasummerjob: [
         { name: 'Sabith "Bunny" Cohen', factions: ['Stable'] },
     ],
@@ -1076,6 +1082,9 @@ export const npCharacters: NpCharacters = {
     ],
     itsmejjroleplay: [
         { name: 'Johnny Jacksun', factions: ['BSK'], nicknames: ['JJ'], displayName: 0 },
+    ],
+    itsnowas: [
+        { name: 'Trequan Jenkins', factions: ['Street Team', 'Chang Gang'], nicknames: ['Ashtray'], displayName: 3 },
     ],
     ItsSammyP: [
         { name: 'Mando Thompson', factions: ['SSB'] },
@@ -1170,6 +1179,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Eva Wall' },
         { name: '[Dr.] Emma Gaine', factions: ['Medical'] },
         { name: '[Lawyer //] Maggie Kayden', factions: ['DoJ'] },
+    ],
+    JonnyRotten: [
+        { name: 'Billy Phresh', factions: ['Street Team', 'Chang Gang'], displayName: 0 },
     ],
     Jonthebroski: [
         { name: 'Denzel Williams', factions: ['Limelight', 'Cleanbois', 'Pegasus', 'Rooster'], nicknames: ['The "Cleaner"', 'Presidente'] },
@@ -1630,6 +1642,9 @@ export const npCharacters: NpCharacters = {
     MeMayoi: [
         { name: 'Yoi Tsukita', factions: ['Rooster'] },
     ],
+    Meraldje: [
+        { name: 'Jaylen Carter', factions: ['Street Team', 'Chang Gang'], nicknames: ['LampPost', 'Lamp Post'], displayName: 1 },
+    ],
     Merrcy: [
         { name: 'Cody Palmer', factions: ['Rooster'], displayName: 0 },
     ],
@@ -1728,6 +1743,9 @@ export const npCharacters: NpCharacters = {
     Moosebrother: [
         { name: '[Deputy] Louis Bloom', factions: ['Police'] },
         { name: 'Laura Gapes', factions: ['ASRR'], nicknames: ['Hooker Block', 'Hooker', 'Block'], displayName: 3 },
+    ],
+    moxier4wr: [
+        { name: 'Mercury Frost', factions: ['Street Team'], displayName: 1 },
     ],
     mr_grimreaper_: [
         { name: '[Officer] Joe Fish', factions: ['Police'], assumeServer: 'public' },
@@ -2208,6 +2226,9 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Honey Buns', factions: ['Police'], nicknames: ['D-21'] },
         { name: 'Pebbles ?', nicknames: ['Dog'] },
         { name: 'Clyde "Meowfurryon" Eastside', factions: ['LARPers', 'Cleanbois', 'Rooster'], nicknames: ['Druid', 'Archdruid', 'Malfurryon'] },
+    ],
+    shodtwo: [
+        { name: 'Kishawn Baker', factions: ['Street Team', 'Chang Gang'], nicknames: ['Lil Blicky'], displayName: 3 },
     ],
     Shortyyguy: [
         { name: 'Eddie Delish' },
@@ -2771,6 +2792,9 @@ export const npCharacters: NpCharacters = {
     ],
     xNittyGritty: [
         { name: 'Donny ?', factions: ['Rooster'] },
+    ],
+    xPytu: [
+        { name: 'Mario Hernandez', factions: ['Street Team', 'Chang Gang'], nicknames: ['Hernández', 'PandaHoe'], displayName: 0 },
     ],
     XxAshleyxX: [
         { name: 'Sparkle Lee', factions: ['Burger Shot'] },
