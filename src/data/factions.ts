@@ -40,6 +40,7 @@ export const npFactionsRegex = {
     mandem: noFormer(/\bmandem|\bmdma?\b/i),
     bbmc: noFormer(/\bbbmc\b|\bbondi/i),
     stable: noLater(noFormer(/\bstable(?:hand)?\b/i)),
+    podcast: noLater(noFormer(/\b(?<!!)podcast\b/i)),
     gulaggang: noLater(noFormer(/\bgulag[\s\-_.]*gang/i)),
     condemnedmc: noLater(noFormer(/\bcondemned|\bcmc\b/i)),
     news: noFormer(/(?<!(?:good|big|great|amazing|bad|some)\s*)\bnews\b|\blsbn\b|weazel[\s\-_.]*news/i),
