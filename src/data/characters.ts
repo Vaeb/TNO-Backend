@@ -4,7 +4,7 @@ import { FactionRealFull } from './meta';
 
 export type AssumeOther = 'assumeNpNoOther' | 'assumeNp' | 'assumeOther' | 'someOther' | 'neverNp';
 
-export type AssumeServer = 'whitelist' | 'public' | 'international' | 'both';
+export type AssumeServer = 'whitelist' | 'public' | 'international' | 'allUsuallyWl' | 'allUsuallyOther';
 
 export interface Character {
     name: string;

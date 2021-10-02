@@ -84,7 +84,12 @@ for (const [streamer, characters] of Object.entries(npCharacters)) {
     const streamerLower = streamer.toLowerCase();
 
     if (characters.length > 0) {
-        characters.push({ name: '? "< One-Life Character >" ?', nicknames: ['Permathon', 'Perma?thon', '/\\bone[\\s-]life/'], assumeServer: 'both' } as Character); // '/\\bone[\\s-]life[\\s-]charac/'
+        const usuallyWl = !characters[0].assumeServer || characters[0].assumeServer === 'whitelist' || characters[0].assumeServer === 'allUsuallyWl';
+        characters.push({
+            name: '? "< One-Life Character >" ?',
+            nicknames: ['Permathon', 'Perma?thon', '/\\bone[\\s-]life/'],
+            assumeServer: usuallyWl ? 'allUsuallyWl' : 'allUsuallyOther',
+        } as Character); // '/\\bone[\\s-]life[\\s-]charac/'
     }
 
     const foundOthers: { [key in AssumeOther]?: boolean } = {};
@@ -311,6 +316,7 @@ interface Stream extends BaseStream {
     noOthersInclude: boolean;
     noPublicInclude: boolean; // use these props on frontend to determine whether stream should show
     noInternationalInclude: boolean; // use these props on frontend to determine whether stream should show
+    wlOverride: boolean;
     // keepCase: boolean;
 }
 
@@ -471,6 +477,18 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
 
                     // log(streamState);
 
+                    const hasCharacters = characters && characters.length;
+
+                    let assumeServer: AssumeServer = 'whitelist';
+                    let usualServer: AssumeServer = 'whitelist';
+                    const wlAssumes: AssumeServer[] = ['whitelist', 'allUsuallyWl'];
+                    const realAssumes: AssumeServer[] = ['whitelist', 'public', 'international'];
+
+                    if (hasCharacters) {
+                        ({ assumeServer } = characters);
+                        usualServer = assumeServer;
+                    }
+
                     if (streamState === FSTATES.other) {
                         // Other included RP servers
                         const allowStream = isMetaFaction;
@@ -491,6 +509,7 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                             noOthersInclude,
                             noPublicInclude: true,
                             noInternationalInclude: true,
+                            wlOverride: wlAssumes.includes(usualServer),
                             // keepCase: true,
                         };
 
@@ -501,15 +520,7 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
 
                     // streamState === FSTATES.nopixel
 
-                    const hasCharacters = characters && characters.length;
                     let nowCharacter;
-
-                    let assumeServer: AssumeServer = 'whitelist';
-
-                    if (hasCharacters) {
-                        ({ assumeServer } = characters);
-                    }
-
                     let onServer: AssumeServer = assumeServer;
 
                     const onPublicIndex = title.indexOfRegex(regNpPublic, 0, Infinity);
@@ -534,7 +545,7 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                         for (const char of characters) {
                             const matchPositions = [...titleParsed.matchAll(char.nameReg)];
                             const numResults = matchPositions.length;
-                            const serverMatchWeight = (onServerDetected && char.assumeServer !== onServer && char.assumeServer !== 'both') ? 1e4 : 0;
+                            const serverMatchWeight = (onServerDetected && char.assumeServer !== onServer && realAssumes.includes(char.assumeServer)) ? 1e4 : 0;
                             const lowIndex = numResults ? matchPositions[0].index! + serverMatchWeight : -1;
                             if (lowIndex > -1 && (lowIndex < lowestPos || (lowIndex === lowestPos && numResults > maxResults))) {
                                 lowestPos = lowIndex;
@@ -681,6 +692,7 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                         noOthersInclude,
                         noPublicInclude: !onNpPublic,
                         noInternationalInclude: !onNpInternational,
+                        wlOverride: wlAssumes.includes(usualServer),
                         // keepCase,
                     };
 
