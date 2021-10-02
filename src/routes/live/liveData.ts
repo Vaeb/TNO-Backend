@@ -480,8 +480,8 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                     const hasCharacters = characters && characters.length;
 
                     let assumeServer: AssumeServer = 'whitelist';
-                    let usualServer: AssumeServer = 'whitelist';
-                    const wlAssumes: AssumeServer[] = ['whitelist', 'allUsuallyWl'];
+                    let usualServer: AssumeServer | 'unknown' = 'unknown';
+                    const wlAssumes: Array<AssumeServer | 'unknown'> = ['whitelist', 'allUsuallyWl'];
                     const realAssumes: AssumeServer[] = ['whitelist', 'public', 'international'];
 
                     if (hasCharacters) {
