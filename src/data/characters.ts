@@ -2399,6 +2399,7 @@ export const npCharacters: NpCharacters = {
     Stoner_Minded: [
         { name: '[Officer] Frank Williams', factions: ['Police'], displayName: 1, assumeServer: 'whitelist' },
         { name: '[Chief of Police] Frank Williams', factions: ['Police'], displayName: 1, assumeServer: 'public' },
+        { name: 'Frankie Eastwood', displayName: 0, assumeServer: 'public' },
     ],
     Striking_Fast: [
         { name: 'Gerard "Dewey" Hawthorne', nicknames: ['Dewie'], factions: ['Rooster'] },
