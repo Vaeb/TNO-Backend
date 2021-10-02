@@ -2397,8 +2397,8 @@ export const npCharacters: NpCharacters = {
         { name: 'Abigail "Abi" Sharp' },
     ],
     Stoner_Minded: [
-        { name: '[Officer] Frank Williams', factions: ['Police'], displayName: 1, assumeServer: 'whitelist' },
         { name: '[Chief of Police] Frank Williams', factions: ['Police'], displayName: 1, assumeServer: 'public' },
+        { name: '[Officer] Frank Williams', factions: ['Police'], displayName: 1, assumeServer: 'whitelist' },
         { name: 'Frankie Eastwood', displayName: 0, assumeServer: 'public' },
     ],
     Striking_Fast: [
