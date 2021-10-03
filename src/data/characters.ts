@@ -92,7 +92,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Maria Poser', factions: ['Gulag Gang'], displayName: 0, assumeServer: 'public' },
     ],
     AdinRoss: [
-        { name: '? ?' },
+        { name: 'David ?' },
     ],
     adnormaltv: [
         { name: 'Ivan Gorbahtjov' },
