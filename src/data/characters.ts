@@ -468,6 +468,10 @@ export const npCharacters: NpCharacters = {
     Chatterbox: [
         { name: 'Jagger "Chatterbox" Gerardy' },
     ],
+    Cheever7: [
+        { name: 'River Cheever', nicknames: ['River'], factions: ['ASRR'], assume: 'whitelist' },
+    ],
+
     Chief: [
         { name: 'Baada Ka', nicknames: ['Chief'], displayName: 3, assume: 'assumeNpNoOther' },
     ],
