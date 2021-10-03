@@ -2764,6 +2764,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Kyrus Langley', factions: ['SSB'], displayName: 1 },
         { name: 'Truth Flores', displayName: 0 },
     ],
+    WildJing: [
+        { name: 'Wilmer "Azul" Guzman', factions: ['Marabunta'] },
+    ],
     WillerZ: [
         { name: 'Will Earnz', displayName: 0 },
     ],
