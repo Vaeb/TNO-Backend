@@ -2673,8 +2673,8 @@ export const npCharacters: NpCharacters = {
         { name: 'Mikey Mersion' },
     ],
     Umadbrahlive: [
-        { name: 'Leonel Martinez', factions: ['Vagos'], nicknames: ['lion'], displayName: 2 },
         { name: 'Sergio Lopez', factions: ['Marabunta'], leader: true },
+        { name: 'Leonel Martinez', factions: ['Vagos'], nicknames: ['lion'], displayName: 2 },
         { name: 'Big E', factions: ['SSB'], leader: true, nicknames: ['Big L'], displayName: 0 },
     ],
     Vader: [
