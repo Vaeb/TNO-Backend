@@ -1753,6 +1753,9 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Louis Bloom', factions: ['Police'] },
         { name: 'Laura Gapes', factions: ['ASRR'], nicknames: ['Hooker Block', 'Hooker', 'Block'], displayName: 3 },
     ],
+    morgeu: [
+        { name: 'Morgan Jay', factions: ['BBMC'], nicknames: ['Blade'], displayName: 0 },
+    ],
     moxier4wr: [
         { name: 'Mercury Frost', factions: ['Street Team'], displayName: 1 },
     ],
