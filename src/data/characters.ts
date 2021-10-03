@@ -309,6 +309,9 @@ export const npCharacters: NpCharacters = {
     BFLY: [
         { name: '[Dr.] Torah Andrews', factions: ['Medical'] },
     ],
+    Bgrafix: [
+        { name: 'Billy Senora', factions: ['ASRR'], nicknames: ['Bloodbath'], assumeServer: 'whitelist' },
+    ],
     biggieferreira: [
         { name: '[Officer] Jamal Ferreira', factions: ['Police'], assumeServer: 'public' },
         { name: 'Dominic "Lil D" Chester', nicknames: ['Sabado de Sol'] },
@@ -1699,6 +1702,9 @@ export const npCharacters: NpCharacters = {
     MikkisaurusRex: [
         { name: '[EMS] Jessica Hilton', factions: ['Medical'] },
     ],
+    Milsera: [
+        { name: 'Mono Block', factions: ['ASRR']},
+    ],
     MiltonTPike1: [
         { name: 'Kiki Chanel', assumeServer: 'whitelist' },
         { name: '[Officer] Kiki Chanel', factions: ['Police'], displayName: 1, assumeServer: 'public' },
@@ -1734,6 +1740,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Aleksander Bogorov', factions: ['Angels'], nicknames: ['Aleks'], displayName: 3, assumeServer: 'whitelist' },
         { name: '[Officer] Aleks Sazkaljovich', factions: ['Police'], displayName: 1, assumeServer: 'public' },
         { name: 'Elijiah "Middle E" Parks', factions: ['SSB'] },
+    ],
+    Moesabai: [
+        { name: 'Mami Ko', factions: ['ASRR'], nicknames: ['Blue Storm']},
     ],
     moistcr1tikal: [
         { name: 'Charles White', displayName: 0 },
