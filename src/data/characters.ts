@@ -2623,6 +2623,9 @@ export const npCharacters: NpCharacters = {
     TranquilKJ: [
         { name: 'KJ Taylor', factions: ['Pink Gang'], displayName: 0 },
     ],
+    trashedpotatopie: [
+        { name: 'Marie Ortiz', factions: ['Stable'], displayName: 0 },
+    ],
     Traumz: [
         { name: '[Deputy] Edward Thatch', nicknames: ['Captain Moosebeard'], factions: ['Police'], displayName: 2 },
         { name: 'Tim Littleman', displayName: 0 },
