@@ -866,7 +866,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Tyrell Fresh', factions: ['SSB'], displayName: 0 },
     ],
     fuslie: [
-        { name: 'April Fooze', displayName: 0, assumeServer: 'whitelist' },
+        { name: 'April Fooze', displayName: 1, assumeServer: 'whitelist' },
         { name: '[Ranger] Connie Clark', factions: ['Police'], displayName: 2, assumeServer: 'public' },
     ],
     Fyzicul: [
