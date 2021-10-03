@@ -2096,7 +2096,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Malakai' },
     ],
     Reina: [
-        { name: 'Mona Sanchez', assume: 'assumeOther' },
+        { name: 'Mona Sanchez', factions: ['SSB'], assume: 'assumeNpNoOther' },
     ],
     Reklez: [
         { name: 'Chico Guzman', factions: ['Vagos', 'Burger Shot'] },
