@@ -2596,8 +2596,8 @@ export const npCharacters: NpCharacters = {
         { name: '[Trooper] T.J. Mack', factions: ['Police'], assumeServer: 'public' },
     ],
     Timmy2: [
-        { name: 'Orlando Jones', factions: ['SSB'], nicknames: ['OJ'] },
         { name: 'Chino G', factions: ['Vagos'] },
+        { name: 'Orlando Jones', factions: ['SSB'], nicknames: ['OJ'] },
         { name: 'Cardell "CJ" Jones', factions: ['SSB'] },
     ],
     TinaKitten: [
