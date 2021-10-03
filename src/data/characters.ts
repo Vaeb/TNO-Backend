@@ -2640,6 +2640,9 @@ export const npCharacters: NpCharacters = {
     Turkaderk: [
         { name: 'Benji Carter', factions: ['BSK'], displayName: 0 },
     ],
+    TurtleActually: [
+        { name: 'Jordan Lee', factions: ['BBMC'], displayName: 0 },
+    ],
     Turtledoves: [
         { name: 'Hung Jae-Min', factions: ['Rooster'], displayName: 0 },
     ],
