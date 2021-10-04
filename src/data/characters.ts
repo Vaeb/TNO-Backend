@@ -2231,6 +2231,9 @@ export const npCharacters: NpCharacters = {
     ShawW0w: [
         { name: 'Garry Roche', factions: ['Burger Shot'], displayName: 0 },
     ],
+    Shiki: [
+        { name: 'Vivian Vale', displayName: 0 },
+    ],
     Shindur: [
         { name: '[Deputy] Joey Keys', factions: ['Police'] },
     ],
