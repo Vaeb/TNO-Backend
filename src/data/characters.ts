@@ -1018,8 +1018,8 @@ export const npCharacters: NpCharacters = {
         { name: 'James-Kamea Brown', factions: ['Vagos'] },
     ],
     HutchMF: [
+        { name: 'Hutch Hutcherson', factions: ['Chang Gang'], nicknames: [reg(/\bkilled a man/), 'racing', 'business', 'paintball', 'h&o', reg(/\bwar/)] },
         { name: '[Deputy] Jaryd Peak', factions: ['Police'] },
-        { name: 'Hutch Hutcherson', factions: ['Chang Gang'], nicknames: [reg(/\bkilled a man/), 'racing', 'business', 'paintball', 'h&o'] },
         { name: 'Drew "Dead Eye Drew"', nicknames: ['DeadEye'] },
         { name: 'Hutch Hendrickson' },
     ],
