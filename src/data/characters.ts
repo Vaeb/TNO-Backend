@@ -1983,6 +1983,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Pez Speedwagon', factions: ['BBMC'] },
         { name: 'Pezzy Pee' },
     ],
+    Philderbeast: [
+        { name: '[Dispatch] Owen Fitz-Gibbon', factions: ['Police'], displayName: 2 },
+    ],
     Plashir: [
         { name: 'Thom Yung', factions: ['Stable'], displayName: 0 },
     ],
