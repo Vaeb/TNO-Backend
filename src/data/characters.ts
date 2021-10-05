@@ -1865,7 +1865,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Development //] nns', factions: ['Development'], assumeChar: true },
     ],
     NoElusionz: [
-        { name: 'Bobby Schmiguel', nicknames: ['Bobby Beats'], displayName: 3 },
+        { name: 'Bobby Schmiguel', factions: ['GSF'], nicknames: ['Bobby Beats'], displayName: 3 },
     ],
     noKingu: [
         { name: '[Deputy] Henri King', factions: ['Police'] },
