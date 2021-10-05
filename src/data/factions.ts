@@ -211,13 +211,14 @@ export const useColorsLight: { [key in FactionColorsMini]: string } = {
     alltwitch: '#ffffff',
 } as const;
 
-const filterExclude: { [key in FactionRealMini]?: boolean } = {
+const filterExclude: { [key in FactionMini]?: boolean } = {
     mechanic: true,
     harmony: true,
     quickfix: true,
     mersions: true,
     podcast: true,
     otherfaction: true,
+    othernp: true,
 };
 
 type FactionMiniArr = FactionMini[];
@@ -225,7 +226,9 @@ type FactionMiniArr = FactionMini[];
 const filterOrderTop: FactionMiniArr = [
     'allnopixel',
     'alltwitch',
-    'othernp',
+    'publicnp',
+    'international',
+    'independent',
     'cleanbois',
     'changgang',
     'police',
@@ -257,7 +260,7 @@ const filterOrderTop: FactionMiniArr = [
 
 const filterOrderAfterHasColor: FactionMiniArr = ['larpers', 'medical', 'doc', 'development'];
 
-const filterOrderAfterNoColor: FactionMiniArr = ['independent', 'podcast', 'international', 'publicnp', 'other'];
+const filterOrderAfterNoColor: FactionMiniArr = ['podcast', 'other'];
 
 const filterOrder: { [key in FactionMini]?: number } = Object.assign(
     {},
