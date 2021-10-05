@@ -481,13 +481,15 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
 
                     let assumeServer: AssumeServer = 'whitelist';
                     let usualServer: AssumeServer | 'unknown' = 'unknown';
-                    const wlAssumes: Array<AssumeServer | 'unknown'> = ['whitelist', 'allUsuallyWl'];
                     const realAssumes: AssumeServer[] = ['whitelist', 'public', 'international'];
 
                     if (hasCharacters) {
                         ({ assumeServer } = characters);
                         usualServer = assumeServer;
                     }
+
+                    const usuallyOther = characters && ([ASTATES.assumeOther, ASTATES.neverNp] as number[]).includes(characters.assumeOther);
+                    const usuallyWl = !usuallyOther && ['whitelist', 'allUsuallyWl'].includes(usualServer);
 
                     if (streamState === FSTATES.other) {
                         // Other included RP servers
@@ -509,7 +511,7 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                             noOthersInclude,
                             noPublicInclude: true,
                             noInternationalInclude: true,
-                            wlOverride: wlAssumes.includes(usualServer),
+                            wlOverride: usuallyWl,
                             // keepCase: true,
                         };
 
@@ -692,7 +694,7 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                         noOthersInclude,
                         noPublicInclude: !onNpPublic,
                         noInternationalInclude: !onNpInternational,
-                        wlOverride: wlAssumes.includes(usualServer),
+                        wlOverride: usuallyWl,
                         // keepCase,
                     };
 
