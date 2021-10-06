@@ -1880,6 +1880,9 @@ export const npCharacters: NpCharacters = {
     NovalokHD: [
         { name: '[Officer] Ben Casanova', factions: ['Police'] },
     ],
+    NRG_Hamlinz: [
+        { name: 'Darnell Simmons', displayName: 0 },
+    ],
     Ntviiper: [
         { name: 'Kian Mercer', factions: ['HOA'] },
     ],
