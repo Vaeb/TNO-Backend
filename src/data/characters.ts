@@ -1832,6 +1832,9 @@ export const npCharacters: NpCharacters = {
     Nerdandi: [
         { name: 'Petunia Susan Brookshire', factions: ['Rooster'] },
     ],
+    Nescoh: [
+        { name: '[Dispatch] Tristan C', factions: ['Police'], displayName: 1 },
+    ],
     netsirk: [
         { name: '[EMS] Nettie Machete', factions: ['Medical'] },
     ],
