@@ -1993,6 +1993,9 @@ export const npCharacters: NpCharacters = {
     Philderbeast: [
         { name: '[Dispatch] Owen Fitz-Gibbon', factions: ['Police'], displayName: 2 },
     ],
+    PinkTrilobite: [
+        { name: 'Selena Martinez', factions: ['Vagos'], displayName: 1 },
+    ],
     Plashir: [
         { name: 'Thom Yung', factions: ['Stable'], displayName: 0 },
     ],
