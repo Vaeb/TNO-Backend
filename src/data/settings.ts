@@ -9,7 +9,7 @@ export const intervalSeconds = 0.7;
 
 const addPublicCounties = (reg: RegExp) => new RegExp(
     replaceAll(
-        replaceAll(reg.source, 'pub\\w*', '(?:pub\\w*|ps|orange|green|purp\\w*)'),
+        replaceAll(reg.source, 'pub\\w*', '(?:pub\\w*|ps|orange|green|purp|purple)'),
         '(?:pub|public',
         '(?:pub|public|public[\\s\\-_.]*server|ps\\b|orange|green|purp|purple'
     ),
@@ -33,6 +33,8 @@ export const regNpInternational = mergeRegex([
     /|[^\w\s]\s*india\w*\s*[^\w\s]/i,
     /|\bindia\w*$/i,
 ]);
+
+console.log(regNpPublic);
 
 export const regNpWhitelist = /(?<!(?:waiting for)\s)(?:\bwhitelist|\bwl\b|\bmain\b|\bprivate\b(?![\s\-]+(?:detective|investigat\w+)))\b(?!\W+(?:later|after))/i;
 export const regOther = /the\s*family|\btf\s?rp|family\s*rp|twitchrp|\bt\W*rp|\bnon[\s\-]*stop|\bns\s?rp/i;
