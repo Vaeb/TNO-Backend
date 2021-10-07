@@ -912,6 +912,9 @@ export const npCharacters: NpCharacters = {
     goldelena: [
         { name: 'August Vakarian' },
     ],
+    Golden_Laurel: [
+        { name: 'Gillea Taylor', factions: ['HOA'] },
+    ],
     GoldGlove: [
         { name: 'Marvin King', nicknames: ['Marv'], displayName: 3 },
     ],
