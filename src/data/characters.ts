@@ -1533,6 +1533,7 @@ export const npCharacters: NpCharacters = {
     ],
     Lt_Custard: [
         { name: 'Collin McKinley', factions: ['BBMC'], displayName: 0 },
+        { name: 'Cougar Dolly', displayName: 0 },
     ],
     Lt_Raven: [
         { name: '[Officer] Vladimir Raven', factions: ['Police'], highCommand: true },
