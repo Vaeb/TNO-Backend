@@ -110,7 +110,7 @@ const keepS: { [key in FactionRealMini]?: boolean } = { pegasus: true, news: tru
 
 npFactionsRealMini.forEach((faction) => {
     const fullFaction = npFactions[faction];
-    if (!has(faction, noAutoFaction) && !has(faction, npFactionsRegex) && !['doc'].includes(faction)) {
+    if (!has(faction, noAutoFaction) && !has(faction, npFactionsRegex)) {
         faction = faction as NpFactionsRegexKeys;
         let regStr = RegExp.escape(fullFaction[fullFaction.length - 1] === 's' && !keepS[faction] ? fullFaction.slice(0, -1) : fullFaction).toLowerCase();
         if (regStr.length <= 4) {
