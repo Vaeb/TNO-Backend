@@ -2330,6 +2330,9 @@ export const npCharacters: NpCharacters = {
     Skitx0: [
         { name: 'Smino "Hitta" Brown', factions: ['GSF'], assume: 'assumeNpNoOther' },
     ],
+    skxd07: [
+        { name: '[Officer] Joshi Drake', factions: ['Police'], assumeServer: 'international' },
+    ],
     Slasher2099: [
         { name: '[Officer] Darrel McCormik', factions: ['Police'] },
         { name: '[K9 Trooper] Fenton', factions: ['Police'], nicknames: ['Fentons'] },
