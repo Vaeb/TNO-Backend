@@ -1608,6 +1608,9 @@ export const npCharacters: NpCharacters = {
         { name: '[Lawyer //] Jerry Callow', factions: ['DoJ'], displayName: 1 },
         { name: 'Pepe Silvia' },
     ],
+    mAnYw: [
+        { name: '[Deputy] Jonathan Hale', factions: ['Police'] },
+    ],
     Markiplier: [
         { name: 'Stan Wheeler' },
     ],
