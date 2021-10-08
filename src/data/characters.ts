@@ -1882,6 +1882,7 @@ export const npCharacters: NpCharacters = {
     ],
     noKingu: [
         { name: '[Deputy] Henri King', factions: ['Police'] },
+        { name: 'DaMarcus Lewis', factions: ['Tuner Shop'] },
     ],
     NotoriousNorman: [
         { name: 'Chips Ahoy' },
