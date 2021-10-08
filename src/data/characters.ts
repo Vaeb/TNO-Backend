@@ -741,7 +741,8 @@ export const npCharacters: NpCharacters = {
         { name: 'Sofia Castellano', factions: ['Pegasus'], displayName: 1 },
     ],
     Elochai: [
-        { name: 'Tao Chen', factions: ['Rooster'] },
+        { name: 'Tao Chen', factions: ['Rooster'], assumeServer: 'whitelist' },
+        { name: 'Leyin Jhail', assumeServer: 'public' },
         { name: 'Damien Grey', factions: ['Condemned MC'], displayName: 0 },
     ],
     ElvisRP: [
@@ -2828,6 +2829,9 @@ export const npCharacters: NpCharacters = {
     ],
     wvngie: [
         { name: 'Le Wang', factions: ['Vagos'], nicknames: [reg(/\bwang/)], displayName: 0 },
+    ],
+    XenVers: [
+        { name: 'Xen Verse', factions: ['Pink Gang'], displayName: 0 },
     ],
     xQcOW: [
         { name: 'Jean "X" Paul', nicknames: ['Ghost Rider', 'Rider'], factions: ['Burger Shot'], displayName: 0, assumeServer: 'whitelist' },
