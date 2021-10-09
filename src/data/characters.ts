@@ -1753,7 +1753,7 @@ export const npCharacters: NpCharacters = {
     ],
     mollyruu: [
         { name: 'Elizabeth "Lizzie" Byrne', factions: ['Stable'], assumeServer: 'whitelist' },
-        { name: '[Deputy] Elizabeth Byrne', factions: ['Police'], nicknames: ['Lizzie'], displayName: 2, assumeServer: 'public' },
+        { name: '[Deputy] Elizabeth Byrne', factions: ['Police'], nicknames: ['Lizzie'], displayName: 3, assumeServer: 'public' },
         { name: 'Aishi Ayano', nicknames: ['Yandere'], displayName: 0 },
     ],
     MOONMOON: [
