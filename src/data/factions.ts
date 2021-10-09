@@ -36,7 +36,7 @@ export const npFactionsRegex = {
     doj: noLater(noFormer(/\bdoj\b|department\s*of\s*justice|judge\b(?![\s]*me)|\bd\.a\b|\ba\.?d\.?a\b|(?<!\b(?:former|ex|aspiring)[\s\-]*)(?:lawyer|attorney)|para[\s\-]*legal/i)),
     asrr: noLater(noFormer(/\balta[\s\-]*street|\bblock(?:\b|[\s\-]*party|[\s\-]*athon)/i)),
     dans: noLater(noFormer(/\bdans\b|g[le][el][\s\-_.]+dan/i)),
-    angels: noFormer(/\bangels\b/i),
+    angels: noFormer(/(?<!rejected[\s\-_.]*)\bangels\b/i),
     nbc: noFormer(/\bnbc\b/i),
     mandem: noFormer(/\bmandem|\bmdma?\b/i),
     bbmc: noFormer(/\bbbmc\b|\bbondi/i),
