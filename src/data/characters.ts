@@ -1518,7 +1518,7 @@ export const npCharacters: NpCharacters = {
         { name: 'PillBot XP', factions: ['Medical', 'Burger Shot'], displayName: 1 },
     ],
     Loserfruit: [
-        { name: '[EMS] Lizzie Bien', factions: ['Medical'] },
+        { name: '[EMS] Lizzie Bien', factions: ['Medical'], assume: 'assumeOther' },
     ],
     loveANG3L: [
         { name: 'Kendra Davis', factions: ['Vagos'] },
