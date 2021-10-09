@@ -1306,6 +1306,9 @@ export const npCharacters: NpCharacters = {
     Keeno: [
         { name: 'Kyle Brovloski', displayName: 0 },
     ],
+    kels_corner: [
+        { name: 'Victor Blaze', factions: ['SSB'], displayName: 0, assumeServer: 'public' },
+    ],
     KelsKatz: [
         { name: 'Lilian "Lily" Mackenzie', factions: ['GSF'] },
     ],
@@ -2418,6 +2421,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Al Saab', factions: ['Cleanbois', 'HOA'], displayName: 2 },
         { name: 'Ray Singha', displayName: 0 },
     ],
+    StalwartNightmare: [
+        { name: '[Deputy] Alex Night', factions: ['Police'], nicknames: ['Speedster'], displayName: 2, assumeServer: 'public' },
+    ],
     stanwilis: [
         { name: 'Trina Bergström', factions: ['Rooster'], nicknames: ['Bergstrom'], displayName: 0 },
     ],
@@ -2430,6 +2436,9 @@ export const npCharacters: NpCharacters = {
     ster: [
         { name: 'Guy Dance' },
         { name: 'Gerald Wagner', displayName: 0 },
+    ],
+    Sterling_live: [
+        { name: '[Officer] Sterling Silver', factions: ['Police'], assumeServer: 'public' },
     ],
     stitchybird: [
         { name: 'Daphne Tillamuck Valentino', factions: ['Lunatix'] },
