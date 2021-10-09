@@ -1959,7 +1959,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Arthur Morgan', factions: ['Condemned MC'], displayName: 0 },
     ],
     OneSmolBumble: [
-        { name: '[EMS] Rory Borealis', factions: ['Medical'], displayName: 0 },
+        { name: '[EMS] Rory Borealis', factions: ['Medical'], displayName: 1 },
     ],
     OneTapBingus: [
         { name: 'Bodhi Mack', factions: ['Vagos'] },
