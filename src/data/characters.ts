@@ -2221,6 +2221,9 @@ export const npCharacters: NpCharacters = {
     sashagrey: [
         { name: 'Enza Zissou' },
     ],
+    saturneighteen: [
+        { name: '[Officer] Cleo Shaw', factions: ['Police'], assumeServer: 'public' },
+    ],
     Sax850: [
         { name: 'Motya Satovksy', factions: ['Russians'] },
         { name: '[Officer] Olof Gunnarsson', factions: ['Police'] },
