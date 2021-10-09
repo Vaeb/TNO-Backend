@@ -180,7 +180,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Larry Papidopoulos', nicknames: ['Papi'] },
     ],
     AnthonyZ: [
-        { name: 'Tony Corleone', factions: ['Limelight', 'Cleanbois', 'Rooster'], assumeServer: 'whitelist' },
+        { name: 'Tony Corleone', factions: ['Cleanbois', 'Rooster'], assumeServer: 'whitelist' },
         { name: 'Tonish Corleone', assumeServer: 'public' },
         { name: '[Deputy] Anthony Copleone', factions: ['Police'], nicknames: ['reporting for duty'] },
     ],
@@ -2114,7 +2114,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Trooper] AJ Hunter', factions: ['Police'], nicknames: ['207'] },
     ],
     Ray__C: [
-        { name: 'Raymond "Ray" Romanov', factions: ['Limelight', 'Cleanbois', 'Rooster'], nicknames: ['Ray', reg(/\brussia/)], assumeChar: true, assumeServer: 'whitelist' },
+        { name: 'Raymond "Ray" Romanov', factions: ['Cleanbois', 'Rooster'], nicknames: ['Ray', reg(/\brussia/)], assumeChar: true, assumeServer: 'whitelist' },
         { name: '[Ride Along] Raycardo Flick', factions: ['Police'], assumeServer: 'whitelist' },
         { name: '[Officer] Raycardo Flick', factions: ['Police'], assumeServer: 'public' },
     ],
