@@ -2222,7 +2222,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Enza Zissou' },
     ],
     saturneighteen: [
-        { name: '[Officer] Cleo Shaw', factions: ['Police'], assumeServer: 'public' },
+        { name: '[Officer] Cleo Shaw', factions: ['Police'], displayName: 1, assumeServer: 'public' },
     ],
     Sax850: [
         { name: 'Motya Satovksy', factions: ['Russians'] },
