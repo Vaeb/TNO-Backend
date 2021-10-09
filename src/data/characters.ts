@@ -626,6 +626,9 @@ export const npCharacters: NpCharacters = {
     Daxxtr: [
         { name: '[Officer] Vincent Cannoli', factions: ['Police'], nicknames: ['V'], assumeServer: 'public' },
     ],
+    DDPeter: [
+        { name: '[Officer] Benjamin Peppers', factions: ['Police'], assumeServer: 'public' },
+    ],
     Deansocool: [
         { name: 'Dean Quincy', factions: ['Mandem'], displayName: 0, assume: 'assumeNpNoOther', assumeServer: 'whitelist' },
         { name: '[Officer] Den Shiesty', factions: ['Police'], displayName: 1 },
