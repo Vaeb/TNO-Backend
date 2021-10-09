@@ -1611,6 +1611,9 @@ export const npCharacters: NpCharacters = {
     malikouthere: [
         { name: 'Tito Conchas', factions: ['Vagos'] },
     ],
+    ManteegoTV: [
+        { name: 'Dougie Mane', factions: ['NBC'], displayName: 0 },
+    ],
     Mantis: [
         { name: 'Jackson Caldwell', factions: ['Frat'], displayName: 0 },
         { name: '[Officer] Domenic Toretti', factions: ['Police'] },
