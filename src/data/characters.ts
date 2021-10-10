@@ -2929,6 +2929,9 @@ export const npCharacters: NpCharacters = {
         { name: '[Ranger] Ziggy Buggs', factions: ['Police'], displayName: 1, assumeChar: true },
         { name: 'Norman Bones', displayName: 0 },
     ],
+    Zimboobwe: [
+        { name: '[Deputy] Jimbo Sutton', factions: ['Police'], displayName: 1, assumeServer: 'public' },
+    ],
     zirnrp: [
         { name: '[A.D.A.] Malcador Sigilite', factions: ['DoJ'] },
         { name: 'Solomon Seerson' },
