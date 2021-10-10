@@ -539,7 +539,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Adam Hopping', factions: ['Police'] },
     ],
     Cosmic: [
-        { name: '[Officer] Alex Casterman', factions: ['Police'] },
+        { name: '[Officer] Alex Casterman', factions: ['Police'], nicknames: [reg(/as+terman\b/)] },
         { name: 'Finlay' },
     ],
     CowsMooingNSuch: [
