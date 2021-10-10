@@ -578,7 +578,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Cornelius "Cornbread" Scott', factions: ['GSF'] },
     ],
     curvyelephant: [
-        { name: '[Deputy] Matt Rhodes', factions: ['Police'] },
+        { name: '[Deputy] Matt Rhodes', factions: ['Police'], nicknames: ['petty'] },
         { name: 'Brad ?', factions: ['Frat'], nicknames: ['B-Rad'], displayName: 3 },
         { name: 'Ryan Parker', factions: ['Lost MC'] },
         { name: '[Lawyer //] Kevin Shaw', factions: ['DoJ'] },
