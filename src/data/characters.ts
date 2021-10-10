@@ -1035,6 +1035,9 @@ export const npCharacters: NpCharacters = {
     HydraPlz: [
         { name: 'Gandalf "Stankyleg" Butters', factions: ['ASRR'] },
     ],
+    iamnxera: [
+        { name: '[Officer] Tommy Tinker', factions: ['Police'], displayName: 1, assumeServer: 'public' },
+    ],
     IAmSoul_RP: [
         { name: 'Johnathen Riker' },
     ],
