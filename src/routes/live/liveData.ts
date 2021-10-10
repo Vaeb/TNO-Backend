@@ -26,16 +26,19 @@ const includedData = Object.assign(
     { npFactions }
 );
 
-interface Character extends Omit<CharacterOld, 'factions' | 'displayName' | 'assumeServer'> {
+interface Character extends Omit<CharacterOld, 'factions' | 'displayName' | 'assumeServer' | 'oftenPublic'> {
     factions: FactionRealMini[];
     factionsObj: { [key in FactionRealMini]?: true };
     factionUse: FactionColorsRealMini;
     displayName: string;
     nameReg: RegExp;
     assumeServer: AssumeServer;
+    oftenPublic: boolean;
 }
 
-type NpCharacters = { [key: string]: Character[] & { assumeOther: number; assumeServer: AssumeServer; assumeChar?: Character; } };
+type NpCharacter = Character[] & { assumeChar?: Character; assumeServer: AssumeServer; oftenPublic: boolean; assumeOther: number; };
+
+type NpCharacters = { [key: string]: NpCharacter };
 
 const npCharacters = cloneDeepJson<NpCharactersOld, NpCharacters>(npCharactersOld);
 
@@ -84,12 +87,15 @@ for (const [streamer, characters] of Object.entries(npCharacters)) {
     const streamerLower = streamer.toLowerCase();
 
     if (characters.length > 0) {
-        const usuallyWl = !characters[0].assumeServer || characters[0].assumeServer === 'whitelist' || characters[0].assumeServer === 'allUsuallyWl';
-        characters.push({
+        // const usuallyWl = !characters[0].assumeServer || characters[0].assumeServer === 'whitelist';
+        const permathonCharDefault = {
             name: '? "< One-Life Character >" ?',
             nicknames: ['Permathon', 'Perma?thon', '/\\bone[\\s-]life/'],
-            assumeServer: usuallyWl ? 'allUsuallyWl' : 'allUsuallyOther',
-        } as Character); // '/\\bone[\\s-]life[\\s-]charac/'
+            // assumeServer: 'whitelist',
+        } as Character;
+        // const permathonCharPublic = { ...permathonCharWl, assumeServer: 'public' } as Character;
+        // const permathonCharInternational = { ...permathonCharWl, assumeServer: 'international' } as Character;
+        characters.push(permathonCharDefault); // '/\\bone[\\s-]life[\\s-]charac/'
     }
 
     const foundOthers: { [key in AssumeOther]?: boolean } = {};
@@ -201,7 +207,9 @@ for (const [streamer, characters] of Object.entries(npCharacters)) {
         if (charOld.assume !== undefined) foundOthers[charOld.assume] = true;
 
         if (!characters.assumeServer) characters.assumeServer = char.assumeServer || 'whitelist';
+        if (!characters.oftenPublic) characters.oftenPublic = char.oftenPublic || false;
         if (!char.assumeServer) char.assumeServer = characters.assumeServer;
+        if (!char.oftenPublic) char.oftenPublic = characters.oftenPublic;
 
         if (char.assumeChar && !characters.assumeChar) characters.assumeChar = char;
     });
@@ -431,7 +439,7 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                         onOtherIncluded = false;
                     }
 
-                    const characters = npCharacters[channelNameLower];
+                    const characters = npCharacters[channelNameLower] as NpCharacter | undefined;
 
                     if (characters && characters.assumeOther === ASTATES.neverNp) {
                         console.log('Excluded', channelName, 'because of "neverNp"');
@@ -488,8 +496,8 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                         usualServer = assumeServer;
                     }
 
-                    const usuallyOther = characters && ([ASTATES.assumeOther, ASTATES.neverNp] as number[]).includes(characters.assumeOther);
-                    const usuallyWl = !usuallyOther && ['whitelist', 'allUsuallyWl'].includes(usualServer);
+                    const usuallyOther = !!(characters && ([ASTATES.assumeOther, ASTATES.neverNp] as number[]).includes(characters.assumeOther));
+                    const usuallyWl = !!(characters && !usuallyOther && usualServer === 'whitelist' && !characters.oftenPublic);
 
                     if (streamState === FSTATES.other) {
                         // Other included RP servers

@@ -4,7 +4,7 @@ import { FactionRealFull } from './meta';
 
 export type AssumeOther = 'assumeNpNoOther' | 'assumeNp' | 'assumeOther' | 'someOther' | 'neverNp';
 
-export type AssumeServer = 'whitelist' | 'public' | 'international' | 'allUsuallyWl' | 'allUsuallyOther';
+export type AssumeServer = 'whitelist' | 'public' | 'international';
 
 export interface Character {
     name: string;
@@ -17,6 +17,7 @@ export interface Character {
     assume?: AssumeOther;
     assumeServer?: AssumeServer;
     assumeChar?: boolean;
+    oftenPublic?: boolean;
 }
 
 export type NpCharacters = { [key: string]: Character[] };
@@ -1768,7 +1769,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Charles White', displayName: 0 },
     ],
     mollyruu: [
-        { name: 'Elizabeth "Lizzie" Byrne', factions: ['Stable'], assumeServer: 'whitelist' },
+        { name: 'Elizabeth "Lizzie" Byrne', factions: ['Stable'], assumeServer: 'whitelist', oftenPublic: true },
         { name: '[Deputy] Elizabeth Byrne', factions: ['Police'], nicknames: ['Lizzie'], displayName: 3, assumeServer: 'public' },
         { name: 'Aishi Ayano', nicknames: ['Yandere'], displayName: 0 },
     ],
