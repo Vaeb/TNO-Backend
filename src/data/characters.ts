@@ -1047,6 +1047,9 @@ export const npCharacters: NpCharacters = {
     iddqd: [
         { name: 'Jesse Cree', factions: ['BBMC'] },
     ],
+    IG_Raptor: [
+        { name: '[Ranger] Matt Cordell', factions: ['Police'], assumeServer: 'international' },
+    ],
     IHeartGaming: [
         { name: 'Markuz Jackelson', factions: ['GSF'], nicknames: ['Meatball', 'Meat', 'Meatwad'] },
     ],
