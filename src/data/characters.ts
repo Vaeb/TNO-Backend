@@ -969,7 +969,7 @@ export const npCharacters: NpCharacters = {
     Hedisaurus: [
         { name: '[Ranger] Ramona Celeste', factions: ['Police'], displayName: 1, assumeServer: 'public' },
         { name: '[EMS] Hedi Saurus', factions: ['Medical'], assume: 'assumeNpNoOther', assumeServer: 'whitelist' },
-        { name: '[Dispatch] Ramona Celeste', factions: ['Police'], displayName: 1, assumeServer: 'whitelist' },
+        { name: '[Deputy] Ramona Celeste', factions: ['Police'], displayName: 1, assumeServer: 'whitelist' },
     ],
     heyimzed: [
         { name: 'Edbert Ropeburn', factions: ['BBMC'] },
