@@ -17,7 +17,7 @@ export interface Character {
     assume?: AssumeOther;
     assumeServer?: AssumeServer;
     assumeChar?: boolean;
-    oftenPublic?: boolean;
+    noWlBias?: boolean;
 }
 
 export type NpCharacters = { [key: string]: Character[] };
@@ -1769,7 +1769,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Charles White', displayName: 0 },
     ],
     mollyruu: [
-        { name: 'Elizabeth "Lizzie" Byrne', factions: ['Stable'], assumeServer: 'whitelist', oftenPublic: true },
+        { name: 'Elizabeth "Lizzie" Byrne', factions: ['Stable'], assumeServer: 'whitelist', noWlBias: true },
         { name: '[Deputy] Elizabeth Byrne', factions: ['Police'], nicknames: ['Lizzie'], displayName: 3, assumeServer: 'public' },
         { name: 'Aishi Ayano', nicknames: ['Yandere'], displayName: 0 },
     ],
@@ -1780,7 +1780,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Maximilian "Yung Dab" Thoroughbred', nicknames: ['The "Gnome"', 'Yung', 'Dab', 'Max'], displayName: 0 },
     ],
     Moose_Taffy: [
-        { name: 'Patar Bellosh', factions: ['Mandem'], assume: 'assumeNpNoOther' },
+        { name: 'Patar Bellosh', factions: ['Mandem'] },
         { name: '[Ride Along] Mantar Mellosh', factions: ['Police'] },
     ],
     Moosebrother: [
@@ -2248,7 +2248,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Enza Zissou' },
     ],
     saturneighteen: [
-        { name: '[Officer] Cleo Shaw', factions: ['Police'], displayName: 1, assumeServer: 'public' },
+        { name: '[Officer] Cleo Shaw', factions: ['Police'], nicknames: ['Coleslaw'], displayName: 1, assumeServer: 'public' },
     ],
     Sax850: [
         { name: 'Motya Satovksy', factions: ['Russians'] },

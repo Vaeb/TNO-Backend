@@ -26,17 +26,17 @@ const includedData = Object.assign(
     { npFactions }
 );
 
-interface Character extends Omit<CharacterOld, 'factions' | 'displayName' | 'assumeServer' | 'oftenPublic'> {
+interface Character extends Omit<CharacterOld, 'factions' | 'displayName' | 'assumeServer' | 'noWlBias'> {
     factions: FactionRealMini[];
     factionsObj: { [key in FactionRealMini]?: true };
     factionUse: FactionColorsRealMini;
     displayName: string;
     nameReg: RegExp;
     assumeServer: AssumeServer;
-    oftenPublic: boolean;
+    noWlBias: boolean;
 }
 
-type NpCharacter = Character[] & { assumeChar?: Character; assumeServer: AssumeServer; oftenPublic: boolean; assumeOther: number; };
+type NpCharacter = Character[] & { assumeChar?: Character; assumeServer: AssumeServer; noWlBias: boolean; assumeOther: number; };
 
 type NpCharacters = { [key: string]: NpCharacter };
 
@@ -207,9 +207,9 @@ for (const [streamer, characters] of Object.entries(npCharacters)) {
         if (charOld.assume !== undefined) foundOthers[charOld.assume] = true;
 
         if (!characters.assumeServer) characters.assumeServer = char.assumeServer || 'whitelist';
-        if (!characters.oftenPublic) characters.oftenPublic = char.oftenPublic || false;
+        if (!characters.noWlBias) characters.noWlBias = char.noWlBias || false;
         if (!char.assumeServer) char.assumeServer = characters.assumeServer;
-        if (!char.oftenPublic) char.oftenPublic = characters.oftenPublic;
+        if (!char.noWlBias) char.noWlBias = characters.noWlBias;
 
         if (char.assumeChar && !characters.assumeChar) characters.assumeChar = char;
     });
@@ -497,7 +497,7 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                     }
 
                     const usuallyOther = !!(characters && ([ASTATES.assumeOther, ASTATES.neverNp] as number[]).includes(characters.assumeOther));
-                    const usuallyWl = !!(characters && !usuallyOther && usualServer === 'whitelist' && !characters.oftenPublic);
+                    const usuallyWl = !!(characters && !usuallyOther && usualServer === 'whitelist' && !characters.noWlBias);
 
                     if (streamState === FSTATES.other) {
                         // Other included RP servers
