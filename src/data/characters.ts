@@ -386,7 +386,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Gary Adams', factions: ['Lost MC'] },
     ],
     buddha: [
-        { name: 'Lang Buddha', factions: ['Cleanbois', 'Rooster'], leader: true, nicknames: ['Circle Andy', 'Timelord'], assumeServer: 'whitelist' },
+        { name: 'Lang Buddha', factions: ['Cleanbois', 'Rooster'], leader: true, nicknames: ['Circle Andy', 'Timelord'], assumeChar: true, assumeServer: 'whitelist' },
         { name: '[Ranger] Lang Buddha', factions: ['Police'], displayName: 1, assumeServer: 'public' },
         { name: '[Deputy] Kevin Kona', factions: ['Police'] },
         { name: 'Esteban Julio Ricardo Montoya De La Rosa Ramirez' },
