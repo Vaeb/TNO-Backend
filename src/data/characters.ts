@@ -1677,7 +1677,7 @@ export const npCharacters: NpCharacters = {
     ],
     MEKABEAR: [
         { name: '[Deputy] Amber Gold', factions: ['Police'] },
-        { name: 'Erin Cox' },
+        { name: 'Erin Cox', nicknames: ['c:'] },
         { name: 'Ari Tistu', displayName: 0 },
     ],
     Melly_Mae: [
