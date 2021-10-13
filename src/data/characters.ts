@@ -742,7 +742,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Douglas Fir', factions: ['Police'], displayName: 1 },
     ],
     ellegrenn: [
-        { name: 'Sofia Castellano', factions: ['Pegasus'], displayName: 1 },
+        { name: 'Sofia Castellano', displayName: 1 },
     ],
     Elochai: [
         { name: 'Tao Chen', factions: ['Rooster'], assumeServer: 'whitelist' },
