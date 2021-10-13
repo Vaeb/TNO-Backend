@@ -2662,6 +2662,9 @@ export const npCharacters: NpCharacters = {
     TheOnlyWendigo: [
         { name: 'Alexandru Vasquez', factions: ['Rooster'] },
     ],
+    TheRonineh: [
+        { name: '[Officer] Ash Anderson', factions: ['Police'], assumeServer: 'international' },
+    ],
     Timmac: [
         { name: '[Deputy] T.J. Mack', factions: ['Police'], assumeServer: 'whitelist' },
         { name: 'Gomer Colton', nicknames: ['Gomey'], assumeServer: 'whitelist' },
