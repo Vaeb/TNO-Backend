@@ -2201,6 +2201,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Kelly Smith' },
     ],
     RobotNinjaPants: [
+        { name: '[Deputy] Hunter Cross', factions: ['Police'] },
         { name: '[A.D.A.] Jacob Slate', factions: ['DoJ'] },
     ],
     roflgator: [
