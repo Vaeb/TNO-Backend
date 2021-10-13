@@ -1523,6 +1523,9 @@ export const npCharacters: NpCharacters = {
     Lisilsanya: [
         { name: '[EMS] Lei Sanya', factions: ['Medical'], nicknames: ['Lasagna'], displayName: 0 },
     ],
+    lolJukebox: [
+        { name: '[Officer] Shane Jones', factions: ['Police'], displayName: 2 },
+    ],
     Loorara: [
         { name: 'Olivia Garcia', factions: ['BBMC'], nicknames: ['Liv', 'Livvy', 'Olives'], displayName: 0 },
     ],
@@ -2558,9 +2561,6 @@ export const npCharacters: NpCharacters = {
     ],
     t3r0: [
         { name: '[Dr.] Andrew Ducksworth', factions: ['Medical'], displayName: 2 },
-    ],
-    T5GJukebox: [
-        { name: '[Officer] Shane Jones', factions: ['Police'], displayName: 2 },
     ],
     TakanoriRuki: [
         { name: 'Allen Jones', factions: ['Prison'], displayName: 0 },
