@@ -1919,7 +1919,7 @@ export const npCharacters: NpCharacters = {
         { name: 'DaMarcus Lewis', factions: ['Tuner Shop'] },
     ],
     NotoriousNorman: [
-        { name: 'Chips Ahoy' },
+        { name: 'Chips Ahoy', factions: ['Rooster'] },
     ],
     Nottics: [
         { name: 'Raymundo Ortiz', factions: ['Vagos', 'Tuner Shop'], nicknames: [reg(/\br+ay/), reg(/\bmundo/)] },
