@@ -96,7 +96,7 @@ export const npCharacters: NpCharacters = {
         { name: 'David ?' },
     ],
     adnormaltv: [
-        { name: 'Ivan Gorbahtjov' },
+        { name: 'Ivan Gorbahtjov', assume: 'assumeOther' },
     ],
     adzno: [
         { name: 'Aaron Melarky', factions: ['Condemned MC'], displayName: 0 },
@@ -914,6 +914,9 @@ export const npCharacters: NpCharacters = {
     ],
     gibbs_gg: [
         { name: 'Walter Franks', factions: ['Condemned MC'], displayName: 0 },
+    ],
+    Gilthflo: [
+        { name: 'Percy Perkins', factions: ['Burger Shot'], displayName: 0 },
     ],
     gingersnap___: [
         { name: 'Sophie Sanders', displayName: 0 },
@@ -2324,6 +2327,9 @@ export const npCharacters: NpCharacters = {
     ],
     shroud: [
         { name: 'Richard Hard' },
+    ],
+    Sidefxmayinclde: [
+        { name: 'Kerm Henson', factions: ['Rooster'], displayName: 0 },
     ],
     SiirToast: [
         { name: 'Anton Belov', factions: ['Russians'] },
