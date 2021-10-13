@@ -1409,7 +1409,7 @@ export const npCharacters: NpCharacters = {
     ],
     koil: [
         { name: '[Trooper] Kael Soze', factions: ['Police'], highCommand: true, leader: true, nicknames: ['are illegal'] },
-        { name: '[Deputy] Francis Francer', factions: ['Police'], nicknames: ['franic', 'franer', reg(/\bfr.nc.s/)], displayName: 1 },
+        { name: 'Francis Francer', nicknames: ['franic', 'franer', reg(/\bfr.nc.s/)], displayName: 1 },
         { name: 'Otto Delmar', nicknames: ['race', 'racing'] },
         { name: '[Development //] Koil', factions: ['Development'], nicknames: ['Code'] },
         { name: 'Saint Jospeh', nicknames: ['Jesus', 'Joseph', 'XUJIA', 'EMC'], displayName: 0 },
