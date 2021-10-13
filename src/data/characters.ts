@@ -1463,6 +1463,9 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Brittany Angel', factions: ['Police'], nicknames: ['Angle', 'Captain'] },
         { name: 'Mary Mushkin', factions: ['Tuner Shop'], nicknames: ['Red Devil', 'R3d Devil'], displayName: 0 },
     ],
+    KYR_SP33DY: [
+        { name: 'Moe Litman', displayName: 0 },
+    ],
     LadyHope: [
         { name: '[Officer] Lily Pond', factions: ['Police'] },
         { name: 'Isabella "Izzy" Carrington', factions: ['Harmony'] },
