@@ -2329,7 +2329,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Richard Hard' },
     ],
     Sidefxmayinclde: [
-        { name: 'Kerm Henson', factions: ['Rooster'], displayName: 0 },
+        { name: 'Kerm Henson', factions: ['Burger Shot', 'Rooster'], displayName: 0 },
     ],
     SiirToast: [
         { name: 'Anton Belov', factions: ['Russians'] },
