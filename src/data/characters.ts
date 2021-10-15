@@ -1894,6 +1894,9 @@ export const npCharacters: NpCharacters = {
     NewFaceSuper: [
         { name: 'Davey Doherty' },
     ],
+    Nexa9: [
+        { name: 'Meelo Graves', factions: ['Rooster', 'Tuner Shop'], nicknames: ['Nex'], displayName: 3 },
+    ],
     Niccorazi: [
         { name: 'Dougie Fresh', nicknames: ['Bobcat'] },
     ],
