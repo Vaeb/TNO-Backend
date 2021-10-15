@@ -184,7 +184,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Larry Papidopoulos', nicknames: ['Papi'] },
     ],
     AnthonyZ: [
-        { name: 'Tony Corleone', factions: ['Cleanbois', 'Rooster'], assumeServer: 'whitelist' },
+        { name: 'Tony Corleone', factions: ['Cleanbois', 'Rooster'], nicknames: ['Tonish'], assumeServer: 'whitelist' },
         { name: 'Tonish Corleone', assumeServer: 'public' },
         { name: '[Deputy] Anthony Copleone', factions: ['Police'], nicknames: ['reporting for duty'] },
     ],
