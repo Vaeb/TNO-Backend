@@ -399,6 +399,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Asmon Bronze', displayName: 0, nicknames: ['AsmonBronze', 'Transmog'] },
         { name: 'Norman "Norm" Yoder' },
         { name: 'Moe Nopoli', displayName: 0 },
+        { name: 'Michael Myers', displayName: 0 },
         { name: 'Mentle Block', factions: ['ASRR'] },
         { name: 'Sasuke Johnson' },
         { name: 'Bojack Horseman', displayName: 0 },
