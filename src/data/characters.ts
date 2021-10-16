@@ -1187,6 +1187,9 @@ export const npCharacters: NpCharacters = {
         { name: '[Dispatch] Louise Campbell', factions: ['Police'] },
         { name: 'Jenny Smith', displayName: 0 },
     ],
+    jessimiyaseo: [
+        { name: 'Jessi Adler', displayName: 0 },
+    ],
     jettskiiee: [
         { name: 'Xavier "Xay" Sin', factions: ['Rooster'] },
     ],
