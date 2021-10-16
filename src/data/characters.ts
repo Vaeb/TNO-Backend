@@ -2304,7 +2304,8 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Jimmy Gordon', factions: ['Police'] },
     ],
     Sharaadrick: [
-        { name: '[Officer] Marcel King', factions: ['Police'], assumeServer: 'public' },
+        { name: '[Officer] Marcel King', factions: ['Police'], displayName: 1, assumeServer: 'public' },
+        { name: '[Officer] Marcel King', factions: ['Police'], displayName: 1, assumeServer: 'whitelist' },
     ],
     ShawW0w: [
         { name: 'Garry Roche', factions: ['Burger Shot'], displayName: 0 },
