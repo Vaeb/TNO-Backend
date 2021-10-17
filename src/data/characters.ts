@@ -199,6 +199,7 @@ export const npCharacters: NpCharacters = {
     appyturk: [
         { name: 'Appie Turk', displayName: 2, assumeServer: 'whitelist' },
         { name: 'Appie Turk', factions: ['SSB'], displayName: 2, assumeServer: 'public' },
+        { name: 'Appie Turk', displayName: 2, assumeServer: 'international' },
     ],
     Arcadum: [
         { name: 'Svelt Tlevs', nicknames: ['Wizard'] },
