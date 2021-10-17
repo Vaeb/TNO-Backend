@@ -617,6 +617,9 @@ export const npCharacters: NpCharacters = {
     Dark0verseer: [
         { name: '[Development //] Dark0', factions: ['Development'], nicknames: ['3D', 'manor'] },
     ],
+    DarkestRoast_: [
+        { name: '? Scotts', factions: ['DoC'], displayName: 2 },
+    ],
     Darthbobo77: [
         { name: 'Rudi Rinsen', factions: ['Lost MC'], leader: true },
     ],
@@ -714,6 +717,9 @@ export const npCharacters: NpCharacters = {
     Dunrunnin12: [
         { name: 'Thomas Dwayne', factions: ['Stable'], nicknames: ['The Narrator'], displayName: 0 },
         { name: 'Nay "Delamain" Rater' },
+    ],
+    Duroode: [
+        { name: 'James McTavish', factions: ['DoC'], displayName: 0 },
     ],
     durptastic: [
         { name: 'Otis Goody', factions: ['Burger Shot'] },
@@ -2665,7 +2671,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Yair Lamas', displayName: 0 },
     ],
     TheGeekEntry: [
-        { name: 'Stacey Doyle', factions: ['Mandem'] },
+        { name: '[Ride Along] Stacey Doyle', factions: ['Police'], displayName: 1 },
         { name: 'Jenn Bordeaux', nicknames: ['Frenchie', 'French'] },
     ],
     TheHexagonist: [
