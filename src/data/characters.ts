@@ -1136,7 +1136,8 @@ export const npCharacters: NpCharacters = {
         { name: 'Vincent' },
     ],
     Jack: [
-        { name: 'Jack Cortair', factions: ['Vagos', 'NBC'], nicknames: ['Cookie', 'Galleta'] },
+        { name: 'Jack Cortair', factions: ['Vagos', 'NBC'], nicknames: ['Cookie', 'Galleta'], assumeServer: 'whitelist' },
+        { name: 'Jack Cortair', nicknames: ['Cookie'], assumeServer: 'international' },
         { name: '[Deputy] Dez Wright', factions: ['Police'], nicknames: ['Doofy'], displayName: 3 },
     ],
     Jackhuddo: [
@@ -1763,6 +1764,7 @@ export const npCharacters: NpCharacters = {
     Ming: [
         { name: 'Ming Jingtai', factions: ['Gulag Gang'], assume: 'assumeNp', assumeServer: 'public' },
         { name: '[Officer] Jing Mingtai', factions: ['Police'], displayName: 1, assumeServer: 'public' },
+        { name: 'Ming Jingtai', assumeServer: 'international' },
     ],
     miniminter: [
         { name: 'Peter Shufflebottom', displayName: 0, assume: 'assumeOther' },
@@ -1990,6 +1992,7 @@ export const npCharacters: NpCharacters = {
     omie: [
         { name: 'Marty Banks', assumeServer: 'whitelist' },
         { name: 'Marty Shanks', factions: ['Gulag Gang', 'Burger Shot'], nicknames: [reg(/\bburger/)], assumeServer: 'public' },
+        { name: 'Marty Banks', assumeServer: 'international' },
         { name: '[Officer] Sharty Manks', factions: ['Police'], displayName: 1, assumeServer: 'public' },
     ],
     onebaw: [
