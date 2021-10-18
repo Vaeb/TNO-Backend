@@ -1795,7 +1795,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Charles White', displayName: 0 },
     ],
     mollyruu: [
-        { name: 'Elizabeth "Lizzie" Byrne', factions: ['Stable'], assumeServer: 'whitelist', noWlBias: true },
+        { name: 'Elizabeth "Lizzie" Byrne', assumeServer: 'whitelist', noWlBias: true },
         { name: '[Deputy] Elizabeth Byrne', factions: ['Police'], nicknames: ['Lizzie'], displayName: 3, assumeServer: 'public' },
         { name: 'Aishi Ayano', nicknames: ['Yandere'], displayName: 0 },
     ],
