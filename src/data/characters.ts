@@ -48,7 +48,7 @@ export const npCharacters: NpCharacters = {
         { name: 'D "D Rose" Rose', factions: ['SSB'] },
     ],
     Aaoki: [
-        { name: '[Deputy] Maddison Bancroft', factions: ['Police'], displayName: 1 },
+        { name: '[Deputy] Maddison Bancroft', factions: ['Police'], displayName: 2 },
         { name: 'Shazza Wazza', factions: ['Rooster'], nicknames: ['Shazzam'] },
     ],
     aaron_rp: [
