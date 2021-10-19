@@ -730,6 +730,7 @@ export const npCharacters: NpCharacters = {
     dwjft: [
         { name: 'Dean Watson', factions: ['Limelight', 'Development'], nicknames: ['Dev stuff'] },
         { name: 'Terminator ?' },
+        { name: 'Lucious D Francer', nicknames: ['bwo'], displayName: 0 },
         { name: '[Trooper] Derby West Bromwich', factions: ['Police'], displayName: 1 },
         { name: '[Development //] DW', factions: ['Development'], nicknames: ['tinkering'] },
     ],
@@ -1429,7 +1430,7 @@ export const npCharacters: NpCharacters = {
     ],
     koil: [
         { name: '[Trooper] Kael Soze', factions: ['Police'], highCommand: true, leader: true, nicknames: ['are illegal'] },
-        { name: 'Francis Francer', nicknames: ['franic', 'franer', reg(/\bfr.n.{1,2}s/)], displayName: 1 },
+        { name: 'Francis Francer', nicknames: ['franic', 'franer', 'bwo', reg(/\bfr.n.{1,2}s/)], displayName: 1 },
         { name: 'Otto Delmar', nicknames: ['race', 'racing'] },
         { name: '[Development //] Koil', factions: ['Development'], nicknames: ['Code'] },
         { name: 'Saint Jospeh', nicknames: ['Jesus', 'Joseph', 'XUJIA', 'EMC'], displayName: 0 },
