@@ -2190,6 +2190,9 @@ export const npCharacters: NpCharacters = {
     RedPotatoPlays: [
         { name: '[Officer] Rudy Romano', factions: ['Police'], assumeServer: 'public' },
     ],
+    ReelSalty: [
+        { name: '[Deputy] Frank Giuliani', factions: ['Police'], assumeServer: 'public' },
+    ],
     Reina: [
         { name: 'Mona Sanchez', factions: ['SSB'], assume: 'assumeNpNoOther' },
     ],
