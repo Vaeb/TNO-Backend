@@ -2400,6 +2400,9 @@ export const npCharacters: NpCharacters = {
     SirPink: [
         { name: 'Reginald "Reggie" Bigglesby', factions: ['Burger Shot', 'Rooster'] },
     ],
+    sirryman: [
+        { name: 'Levi Colton', displayName: 0 },
+    ],
     Skannerz_: [
         { name: 'Wayne Kerr', factions: ['Tuner Shop'], displayName: 0 },
     ],
@@ -2860,6 +2863,9 @@ export const npCharacters: NpCharacters = {
     ],
     w00ter: [
         { name: '[Deputy] Peter Rogers', factions: ['Police'] },
+    ],
+    WaterGotHim: [
+        { name: 'Alessio "AJ" Jilani' },
     ],
     Wayward: [
         { name: 'Wayne Ardson', factions: ['DoJ'], assumeServer: 'whitelist' },
