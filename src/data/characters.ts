@@ -442,6 +442,9 @@ export const npCharacters: NpCharacters = {
     Carter: [
         { name: 'Spencer Smith', nicknames: ['Mormon'] },
     ],
+    CasadyOG: [
+        { name: '[Deputy] Casady ?', factions: ['Police'], displayName: 1 },
+    ],
     casek_: [
         { name: 'Cesar Conchas', factions: ['Vagos'], displayName: 0 },
     ],
@@ -1197,6 +1200,9 @@ export const npCharacters: NpCharacters = {
     jennylouise1997: [
         { name: '[Dispatch] Louise Campbell', factions: ['Police'] },
         { name: 'Jenny Smith', displayName: 0 },
+    ],
+    jessbleck: [
+        { name: '[Deputy] Jessie Dallas', factions: ['Police'], assumeServer: 'public' },
     ],
     jessimiyaseo: [
         { name: 'Jessi Adler', displayName: 0 },
@@ -2268,6 +2274,9 @@ export const npCharacters: NpCharacters = {
     Sams: [
         { name: 'Dimitri Barkov' },
     ],
+    sandiicheexs: [
+        { name: '[Dispatch] Hanna Baker', factions: ['Police'], displayName: 1 },
+    ],
     saNhje: [
         { name: '[Development //] saNhje', factions: ['Development'], nicknames: ['MLO'] },
     ],
@@ -2582,6 +2591,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Hunter "Wingman" Skye', factions: ['Rooster'] },
     ],
     Syraphic: [
+        { name: '[Deputy] Kyra Pierce', factions: ['Police'] },
         { name: 'Elena Marilyn Vega' },
         { name: 'Emilia Salvatore' },
     ],
