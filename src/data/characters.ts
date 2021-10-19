@@ -1291,7 +1291,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Fritz Ericson', factions: ['Condemned MC'] },
     ],
     JustJambaa: [
-        { name: 'La Flare Davis', displayName: 0 },
+        { name: 'La Flare Davis', nicknames: ['La Flare'], displayName: 4 },
     ],
     JustJamie: [
         { name: '[Officer] George Lawson', factions: ['Police'], nicknames: ['592'] },
