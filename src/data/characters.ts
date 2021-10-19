@@ -2210,11 +2210,11 @@ export const npCharacters: NpCharacters = {
     RhiTexxy: [
         { name: 'Brook Lexi', factions: ['Lost MC'] },
     ],
-    RileyRP: [
-        { name: 'Bubbles Smith' },
-    ],
     RickMongoLIVE: [
         { name: '[D.A.] Rick Mongo', factions: ['DoJ'], assume: 'assumeNpNoOther' },
+    ],
+    RileyRP: [
+        { name: 'Bubbles Smith' },
     ],
     RiZRP: [
         { name: 'Nikita Reznikov', factions: ['Pegasus'] },
