@@ -2219,6 +2219,9 @@ export const npCharacters: NpCharacters = {
     rerolldota: [
         { name: '[Deputy] Lea Nova', factions: ['Police'] },
     ],
+    Resurrex: [
+        { name: '[Officer] Ace Crow', factions: ['Police'] },
+    ],
     ReverendCatino: [
         { name: 'Rocky Topps', factions: ['Stable'], displayName: 1 },
     ],
