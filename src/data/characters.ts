@@ -1787,6 +1787,7 @@ export const npCharacters: NpCharacters = {
     ],
     Ming: [
         { name: 'Ming Jingtai', factions: ['Gulag Gang'], assume: 'assumeNp', assumeServer: 'public' },
+        { name: 'Boon Bundy', displayName: 0, assumeServer: 'public' },
         { name: '[Officer] Jing Mingtai', factions: ['Police'], displayName: 1, assumeServer: 'public' },
         { name: 'Ming Jingtai', assumeServer: 'international' },
     ],
