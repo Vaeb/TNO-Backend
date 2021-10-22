@@ -1872,7 +1872,7 @@ export const npCharacters: NpCharacters = {
     MurphyBraun: [
         { name: 'Holden', factions: ['DoJ'] },
         { name: 'Marvin Peanut', nicknames: ['Marv'] },
-        { name: '[Lawyer //] Murphy Braun', factions: ['DoJ'], displayName: 0 },
+        { name: '[Lawyer //] Murphy Braun', factions: ['DoJ'], displayName: 1 },
     ],
     mycahpittman: [
         { name: 'Mycah Pittman', factions: ['Pink Gang'], displayName: 0 },
