@@ -2562,6 +2562,7 @@ export const npCharacters: NpCharacters = {
     SuperBunneh: [
         { name: '[EMS] Mila Smoak', factions: ['Medical'] },
         { name: 'Madison "Maddy" Fox', factions: ['GSF'] },
+        { name: '[Officer] Lexus Lane', factions: ['Police'], displayName: 1 },
     ],
     Sur_Lee: [
         { name: 'Mitch "Dumbass" Bader' },
