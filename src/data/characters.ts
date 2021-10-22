@@ -736,7 +736,7 @@ export const npCharacters: NpCharacters = {
     ],
     dwjft: [
         { name: 'Dean Watson', factions: ['Limelight', 'Development'], nicknames: ['Dev stuff'] },
-        { name: '[Senator] ? ?', factions: ['DoJ'], nicknames: ['DW'], displayName: 3 },
+        { name: '[Senator] D W', factions: ['DoJ'], nicknames: ['DW', 'Senate'], displayName: 3 },
         { name: 'Terminator ?' },
         { name: 'Batman ?' },
         { name: 'Lucious Francer', nicknames: ['bwo'], displayName: 0 },
@@ -1245,7 +1245,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Denzel Williams', factions: ['Limelight', 'Cleanbois', 'Pegasus', 'Rooster'], nicknames: ['The "Cleaner"', 'Presidente'] },
         { name: '[Officer] Johnny Divine', factions: ['Police'], displayName: 0 },
         { name: 'Broskingle Dan', factions: ['Dans'] },
-        { name: '[Senator] ? " " ?', factions: ['DoJ'], nicknames: ['Senate'] },
+        { name: '[Senator] Sean Davis', factions: ['DoJ'], nicknames: ['Senate'] },
         { name: 'Dio Ivanov', factions: ['Russians'] },
         { name: 'Holden D. Block', factions: ['ASRR'], displayName: 0 },
     ],
@@ -1443,6 +1443,7 @@ export const npCharacters: NpCharacters = {
     koil: [
         { name: '[Trooper] Kael Soze', factions: ['Police'], highCommand: true, leader: true, nicknames: ['are illegal'] },
         { name: 'Francis Francer', nicknames: ['franic', 'franer', 'bwo', reg(/\bfr.n.{1,2}s/)], displayName: 0 },
+        { name: '[Senator] ? ?', factions: ['DoJ'], nicknames: ['Senate'] },
         { name: 'Otto Delmar', nicknames: ['race', 'racing'] },
         { name: '[Development //] Koil', factions: ['Development'], nicknames: ['Code'] },
         { name: 'Saint Jospeh', nicknames: ['Jesus', 'Joseph', 'XUJIA', 'EMC'], displayName: 0 },
