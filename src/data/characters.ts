@@ -2539,6 +2539,9 @@ export const npCharacters: NpCharacters = {
     Sterling_live: [
         { name: '[Officer] Sterling Silver', factions: ['Police'], assumeServer: 'public' },
     ],
+    StinneKay: [
+        { name: 'Sassa Raven', factions: ['Lost MC'], displayName: 0 },
+    ],
     stitchybird: [
         { name: 'Daphne Tillamuck Valentino', factions: ['Lunatix'] },
         { name: 'Abigail "Abi" Sharp' },
