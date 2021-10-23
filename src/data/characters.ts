@@ -1535,7 +1535,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Posy Florian', factions: ['Burger Shot'], nicknames: ['P O S Y'] },
     ],
     LeWolfy: [
-        { name: '[Deputy] Dante Wolf', factions: ['Police', 'Stable'] },
+        { name: '[Officer] Dante Wolf', factions: ['Police', 'Stable'] },
     ],
     LiftedGN: [
         { name: 'Walter Melon', factions: ['Burger Shot'], displayName: 0 },
@@ -1611,7 +1611,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Marlo Stanfield', nicknames: [reg(/ma?rlo/)] },
     ],
     LuckyxMoon: [
-        { name: '? Devereaux', factions: ['DoJ'] },
+        { name: 'Elizabeth Devereaux', factions: ['DoJ'] },
         { name: 'Jessica Wesker', factions: ['DoJ'] },
     ],
     ludwig: [
@@ -3026,6 +3026,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Jimbo Sutton', factions: ['Police'], displayName: 1, assumeServer: 'public' },
     ],
     zirnrp: [
+        { name: 'Malcador Sigilite', factions: ['DoJ'] },
         { name: 'Solomon Seerson' },
     ],
     Zoil: [
