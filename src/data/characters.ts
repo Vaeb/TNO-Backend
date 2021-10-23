@@ -1611,6 +1611,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Marlo Stanfield', nicknames: [reg(/ma?rlo/)] },
     ],
     LuckyxMoon: [
+        { name: '[Deputy] Blair Sutton', factions: ['Police'] },
         { name: '[Lawyer //] Elizabeth Devereaux', factions: ['DoJ'] },
         { name: 'Jessica Wesker', factions: ['DoJ'] },
     ],
