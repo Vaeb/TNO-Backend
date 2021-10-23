@@ -1203,6 +1203,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Rai "Juuls" Cumberwoood' },
         { name: '[Prince] Habib Khalid' },
     ],
+    Jennybeartv: [
+        { name: 'Peachingle Dan', factions: ['Dans'] },
+    ],
     jennylouise1997: [
         { name: '[Dispatch] Louise Campbell', factions: ['Police'] },
         { name: 'Jenny Smith', displayName: 0 },
