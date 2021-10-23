@@ -102,7 +102,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Aaron Melarky', factions: ['Condemned MC'], displayName: 0 },
     ],
     Adzzstarr: [
-        { name: 'Adam Prince', factions: ['DoJ'] },
+        { name: '[Lawyer //] Adam Prince', factions: ['DoJ'] },
         { name: '[Dr.] Valentine', factions: ['Medical'] },
     ],
     AfricanSnowball: [
@@ -224,7 +224,7 @@ export const npCharacters: NpCharacters = {
     ],
     Asteroba: [
         { name: '[Deputy] Aaron Byson', factions: ['Police'] },
-        { name: 'Larry Hallow', factions: ['DoJ'] },
+        { name: '[Lawyer //] Larry Hallow', factions: ['DoJ'] },
         { name: 'Kermy Fulker', factions: ['HOA'] },
         { name: '[EMS] Boba Stone', factions: ['Medical'] },
     ],
@@ -316,7 +316,7 @@ export const npCharacters: NpCharacters = {
     BFLY: [
         { name: '[Dr.] Torah Andrews', factions: ['Medical'] },
     ],
-    BFLY: [
+    Bgrafix: [
         { name: 'Billy "Bloodbath" Senora', factions: ['ASRR'], nicknames: ['Bloodbath'], assumeServer: 'whitelist' },
     ],
     biggieferreira: [
@@ -358,7 +358,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Dub Blunt', factions: ['Tuner Shop'], displayName: 0 },
     ],
     bmcloughlin22: [
-        { name: 'Lachlan Pike', factions: ['DoJ'] },
+        { name: '[Lawyer //] Lachlan Pike', factions: ['DoJ'] },
     ],
     Bomaah: [
         { name: 'Viper Rodriguez', assume: 'assumeOther' },
@@ -1611,7 +1611,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Marlo Stanfield', nicknames: [reg(/ma?rlo/)] },
     ],
     LuckyxMoon: [
-        { name: 'Elizabeth Devereaux', factions: ['DoJ'] },
+        { name: '[Lawyer //] Elizabeth Devereaux', factions: ['DoJ'] },
         { name: 'Jessica Wesker', factions: ['DoJ'] },
     ],
     ludwig: [
@@ -2418,7 +2418,7 @@ export const npCharacters: NpCharacters = {
     ],
     Simo: [
         { name: 'Reggie', factions: ['Vagos'], displayName: 0, assumeServer: 'whitelist' },
-        { name: 'Blake Specter', factions: ['DoJ'] },
+        { name: '[Lawyer //] Blake Specter', factions: ['DoJ'] },
         { name: '[Officer] Reggie Might', factions: ['Police'], assumeServer: 'public' },
     ],
     Simplyje2ns: [
