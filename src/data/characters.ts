@@ -316,6 +316,9 @@ export const npCharacters: NpCharacters = {
     BFLY: [
         { name: '[Dr.] Torah Andrews', factions: ['Medical'] },
     ],
+    BFLY: [
+        { name: 'Billy "Bloodbath" Senora', factions: ['ASRR'], nicknames: ['Bloodbath'], assumeServer: 'whitelist' },
+    ],
     biggieferreira: [
         { name: '[Officer] Jamal Ferreira', factions: ['Police'], assumeServer: 'public' },
         { name: 'Dominic "Lil D" Chester', nicknames: ['Sabado de Sol'] },
@@ -499,6 +502,9 @@ export const npCharacters: NpCharacters = {
     ],
     Chaseman7GG: [
         { name: 'Miguel Guerrero', factions: ['Vagos'] },
+    ],
+    Cheever7: [
+        { name: 'River Cheever', nicknames: ['River'], factions: ['ASRR'], assume: 'whitelist'},
     ],
     ChelbM: [
         { name: 'Alan Kyles', factions: ['NBC'], displayName: 0 },
@@ -1214,7 +1220,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Jessie Dallas', factions: ['Police'], assumeServer: 'public' },
     ],
     jessimiyaseo: [
-        { name: 'Jessi Adler', displayName: 0 },
+        { name: 'Jessi Adler', factions: ['ASRR'], displayName: 0 },
     ],
     jettskiiee: [
         { name: 'Xavier "Xay" Sin', factions: ['Rooster'] },
@@ -1813,6 +1819,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Aleksander Bogorov', nicknames: ['Aleks'], displayName: 3, assumeServer: 'whitelist' },
         { name: '[Officer] Aleks Sazkaljovich', factions: ['Police'], displayName: 1, assumeServer: 'public' },
         { name: 'Elijiah "Middle E" Parks', factions: ['SSB'] },
+    ],
+    Moesabai: [
+        { name: 'Mami Ko', factions: ['ASRR'], nicknames: ['Blue Storm'] },
     ],
     moistcr1tikal: [
         { name: 'Charles White', displayName: 0 },
