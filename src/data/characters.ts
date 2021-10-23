@@ -102,7 +102,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Aaron Melarky', factions: ['Condemned MC'], displayName: 0 },
     ],
     Adzzstarr: [
-        { name: '[Judge] Adam Prince', factions: ['DoJ'] },
+        { name: 'Adam Prince', factions: ['DoJ'] },
         { name: '[Dr.] Valentine', factions: ['Medical'] },
     ],
     AfricanSnowball: [
@@ -224,12 +224,12 @@ export const npCharacters: NpCharacters = {
     ],
     Asteroba: [
         { name: '[Deputy] Aaron Byson', factions: ['Police'] },
-        { name: '[D.A.] Larry Hallow', factions: ['DoJ'] },
+        { name: 'Larry Hallow', factions: ['DoJ'] },
         { name: 'Kermy Fulker', factions: ['HOA'] },
         { name: '[EMS] Boba Stone', factions: ['Medical'] },
     ],
     AuriEllis: [
-        { name: 'Ursula Leichenberg', factions: ['Burger Shot', 'News'] },
+        { name: 'Ursula Leichenberg', factions: ['DoJ', 'Burger Shot', 'News'] },
         { name: 'Gracie ?' },
     ],
     aurvinR: [
@@ -355,7 +355,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Dub Blunt', factions: ['Tuner Shop'], displayName: 0 },
     ],
     bmcloughlin22: [
-        { name: '[A.D.A.] Lachlan Pike', factions: ['DoJ'] },
+        { name: 'Lachlan Pike', factions: ['DoJ'] },
     ],
     Bomaah: [
         { name: 'Viper Rodriguez', assume: 'assumeOther' },
@@ -1873,7 +1873,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Cindy Lou' },
     ],
     MurphyBraun: [
-        { name: 'Holden', factions: ['DoJ'] },
+        { name: '[Judge] Judge Holden', factions: ['DoJ'] },
         { name: 'Marvin Peanut', nicknames: ['Marv'] },
         { name: '[Lawyer //] Murphy Braun', factions: ['DoJ'], displayName: 1 },
     ],
@@ -1993,7 +1993,6 @@ export const npCharacters: NpCharacters = {
     OccamsSabre: [
         { name: '[Officer] Jeffrey Bundy', factions: ['Police'], nicknames: ['451'] },
         { name: '[Lawyer //] Benjamin Crane', factions: ['DoJ'] },
-        { name: '[Judge] Judge Holden', factions: ['DoJ'] },
         { name: 'Ray Montag', factions: ['DoJ'] },
         { name: 'Busta Block', factions: ['ASRR'], displayName: 0 },
     ],
@@ -2253,7 +2252,7 @@ export const npCharacters: NpCharacters = {
     ],
     RobotNinjaPants: [
         { name: '[Deputy] Hunter Cross', factions: ['Police'] },
-        { name: '[A.D.A.] Jacob Slate', factions: ['DoJ'] },
+        { name: 'Jacob Slate'},
     ],
     roflgator: [
         { name: 'Robert Spowylamywanowski', nicknames: ['Rob', 'Polish', 'Night Manager'], displayName: 3 },
@@ -2410,7 +2409,7 @@ export const npCharacters: NpCharacters = {
     ],
     Simo: [
         { name: 'Reggie', factions: ['Vagos'], displayName: 0, assumeServer: 'whitelist' },
-        { name: '[A.D.A.] Blake Specter', factions: ['DoJ'] },
+        { name: 'Blake Specter', factions: ['DoJ'] },
         { name: '[Officer] Reggie Might', factions: ['Police'], assumeServer: 'public' },
     ],
     Simplyje2ns: [
@@ -3018,7 +3017,6 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Jimbo Sutton', factions: ['Police'], displayName: 1, assumeServer: 'public' },
     ],
     zirnrp: [
-        { name: '[A.D.A.] Malcador Sigilite', factions: ['DoJ'] },
         { name: 'Solomon Seerson' },
     ],
     Zoil: [
