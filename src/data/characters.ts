@@ -672,7 +672,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Gus Gorman', factions: ['Police'] },
     ],
     DiewithLivv: [
-        { name: 'Cindy Tipton', factions: ['BBMC'], nicknames: ['Girlboss'] },
+        { name: 'Cindy Tipton', factions: ['BBMC', 'Burger Shot'], nicknames: ['Girlboss'] },
     ],
     DigbyTathamWarter: [
         { name: 'Nigel Edwardson', factions: ['News'], displayName: 0 },
