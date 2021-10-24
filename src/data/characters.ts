@@ -989,6 +989,9 @@ export const npCharacters: NpCharacters = {
     hannerb_naner: [
         { name: '[EMS] Jenny Schildt', factions: ['Medical'] },
     ],
+    HalifamousNS: [
+        { name: 'Devon Davidson', factions: ['BSK'], nicknames: ['DD']},
+    ],
     HARMSwahy: [
         { name: 'Blaine Burke', factions: ['Angels'] },
     ],
@@ -1285,7 +1288,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Reverend I.M. Voland', factions: ['Dark Web'] },
     ],
     Juggs: [
-        { name: 'Lenny Large', factions: ['Burger Shot'], nicknames: [reg(/\blenny/)], displayName: 0 },
+        { name: 'Lenny Large', nicknames: [reg(/\blenny/)], displayName: 0 },
         { name: 'Traevon Williams', nicknames: ['The Barber'], displayName: 3 },
     ],
     JukeBoxEM: [
@@ -1508,6 +1511,9 @@ export const npCharacters: NpCharacters = {
     ],
     KYR_SP33DY: [
         { name: 'Moe Litman', displayName: 0 },
+    ],
+    kytolee: [
+        { name: 'Juan Cuervo', factions: ['Vagos'] },
     ],
     LadyHope: [
         { name: '[Officer] Lily Pond', factions: ['Police'] },
@@ -2152,6 +2158,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Hades', nicknames: ['Dog'] },
     ],
     PuckNatorGaming: [
+        { name: 'Jack Higgins', factions: ['DoC'], displayName: 0 },
         { name: 'Tate Urchips', factions: ['Prison'], displayName: 0, assume: 'assumeOther' },
     ],
     puddledux: [
@@ -2272,7 +2279,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Maggie Dean', factions: ['Police'] },
     ],
     Roxmiral: [
-        { name: 'Sherry Paie', displayName: 1, assumeServer: 'whitelist' },
+        { name: 'Sherry Paie', factions: ['DoJ'], displayName: 1, assumeServer: 'whitelist' },
         { name: '[Ranger] Sherry Paie', factions: ['Police'], displayName: 1, assumeServer: 'public' },
         { name: 'Ruby Morris' },
         { name: 'Nikki Drools', factions: ['DoC'] },
