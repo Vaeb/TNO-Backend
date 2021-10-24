@@ -1100,7 +1100,7 @@ export const npCharacters: NpCharacters = {
     ],
     ImClammy: [
         { name: 'AK', factions: ['SSB'], assumeServer: 'whitelist' },
-        { name: 'Derek Monroe', displayName: 0 },
+        { name: '[Deputy] Derek Monroe', factions: ['Police'], displayName: 2 },
         { name: '[Officer] Derek Monroe', factions: ['Police'], assumeServer: 'public' },
     ],
     indur: [
