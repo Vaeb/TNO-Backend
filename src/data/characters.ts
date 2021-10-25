@@ -2043,7 +2043,7 @@ export const npCharacters: NpCharacters = {
         { name: '[EMS] Rory Borealis', factions: ['Medical'], displayName: 1 },
     ],
     OneTapBingus: [
-        { name: 'Bodhi Mack', factions: ['Vagos'] },
+        { name: 'Bodhi Mack' },
     ],
     OwenSeven: [
         { name: '[Officer] Owen Svensen', factions: ['Police'] },
