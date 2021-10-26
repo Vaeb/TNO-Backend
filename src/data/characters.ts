@@ -2152,7 +2152,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Hades', nicknames: ['Dog'] },
     ],
     PuckNatorGaming: [
-        { name: 'Jack Higgins', factions: ['DoC'], displayName: 2, assume: 'assumeOther' },
+        { name: 'Jack Higgins', factions: ['DoC'], displayName: 0, assume: 'assumeOther' },
         { name: 'Tate Urchips', factions: ['Prison'], displayName: 0 },
     ],
     puddledux: [
