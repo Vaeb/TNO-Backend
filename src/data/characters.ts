@@ -588,8 +588,8 @@ export const npCharacters: NpCharacters = {
         { name: 'Amie Rush' },
     ],
     CurtisRyan: [
-        { name: 'Curtis Swoleroid', nicknames: ['"Demon" of Lean Street', 'Curt'], factions: ['Chang Gang', 'Chaos'], assumeServer: 'whitelist' },
-        { name: 'Curtis Swoleroid', nicknames: ['"Demon" of Lean Street', 'Curt'], factions: ['Gulag Gang'], assumeServer: 'public' },
+        { name: 'Curtis Swoleroid', nicknames: ['"Demon" of Lean Street', 'Curt', 'Citrus'], factions: ['Chang Gang', 'Chaos'], assumeServer: 'whitelist' },
+        { name: 'Curtis Swoleroid', nicknames: ['"Demon" of Lean Street', 'Curt', 'Citrus'], factions: ['Gulag Gang'], assumeServer: 'public' },
         { name: '[Officer] Stephen McClane', factions: ['Police'] },
         { name: 'Cornelius "Cornbread" Scott', factions: ['GSF'] },
     ],
