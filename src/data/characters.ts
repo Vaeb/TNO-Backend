@@ -564,7 +564,7 @@ export const npCharacters: NpCharacters = {
     CptCheeto: [
         { name: '[Officer] Scott Ridley', factions: ['Police'] },
     ],
-    craigysmith89: [
+    CraigySmith: [
         { name: 'Frank Junior-Smith', factions: ['Vagos'], nicknames: ['Frank Jr Smith', 'Franky', 'Scottish'], displayName: 3 },
     ],
     CrayonPonyfish: [
