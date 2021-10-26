@@ -384,6 +384,9 @@ export const npCharacters: NpCharacters = {
     breakyx: [
         { name: 'Dris Peters', factions: ['SSB'] },
     ],
+    Breehzee: [
+        { name: 'Wullie Mcdonnel', factions: ['DoC'], displayName: 0 },
+    ],
     BRIT: [
         { name: 'Tori Corleone', nicknames: ['Bologna'], factions: ['Britney Gang', 'Rooster'] },
     ],
@@ -504,7 +507,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Miguel Guerrero', factions: ['Vagos'] },
     ],
     Cheever7: [
-        { name: 'River Cheever', nicknames: ['River'], factions: ['ASRR'], assume: 'whitelist'},
+        { name: 'River Cheever', nicknames: ['River'], factions: ['ASRR'], assumeServer: 'whitelist' },
     ],
     ChelbM: [
         { name: 'Alan Kyles', factions: ['NBC'], displayName: 0 },
@@ -860,6 +863,9 @@ export const npCharacters: NpCharacters = {
     Five0AnthO: [
         { name: '[Trooper] Tony Andrews', factions: ['Police'], highCommand: true, leader: true },
         { name: 'Rhode Block', factions: ['ASRR'], displayName: 0 },
+    ],
+    fleureo: [
+        { name: 'Quinn Naiper', factions: ['DoC'], displayName: 0 },
     ],
     FloMcNasty_TV: [
         { name: 'Richard Chiclets', factions: ['Stable', 'Burger Shot'], nicknames: ['Dick Chiclets'], displayName: 3, assumeServer: 'whitelist' },
@@ -2276,7 +2282,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Sherry Paie', factions: ['DoJ'], displayName: 1, assumeServer: 'whitelist' },
         { name: '[Ranger] Sherry Paie', factions: ['Police'], displayName: 1, assumeServer: 'public' },
         { name: 'Ruby Morris' },
-        { name: 'Nikki Drools', factions: ['DoC'] },
+        { name: 'Nikki Drewel', factions: ['DoC'], nicknames: ['Drools'], displayName: 0 },
         { name: 'Sherry Lee' },
     ],
     RudeNoodleNPC: [
