@@ -1374,7 +1374,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Ghost Storm', factions: ['GSF'] },
     ],
     KGU__: [
-        { name: 'Pablo Loco', factions: ['Vagos'], displayName: 0 },
+        { name: 'Ruckus ?', factions: ['SSB'], nicknames: ['Uncle Ruckus'], displayName: 3 },
     ],
     KhaosAdam: [
         { name: 'Adam Ababwa', factions: ['Mandem'], assume: 'assumeOther', displayName: 0 },
