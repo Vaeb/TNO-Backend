@@ -59,7 +59,7 @@ export const npFactionsRegex = {
     police: noLater(noFormer(
         mergeRegex([
             /(?<!\bthen\b.*|!|\bformer\b[\s\w]+|corrections\s+|\bdoc\s+|\bmedic\w*\s+|\bems\s+)/i,
-            /(?:\bcop\b|chief of police|officer|der?puty|\bd-\d|\bdispatch\b|ride[\s\-_.]*along|sergeant|lieutenant|corporal|sheriff|trooper|cadet|\b(?:ranger|dt|sgt|cpl|cpt|ofc|lspd|sasp|bcso|police[\s\-_]*academy|lt(?![^|!]*\bjones\b))\b)/i,
+            /(?:\bcop\b|chief of police|officer|der?puty|\bd-\d|\bdispatch\b|ride[\s\-_.]*along|sergeant|lieutenant|corporal|sheriff|\btrooper|cadet|\b(?:ranger|dt|sgt|cpl|cpt|ofc|lspd|sasp|bcso|police[\s\-_]*academy|lt(?![^|!]*\bjones\b))\b)/i,
             /(?!\?)/i,
         ])
     )),
