@@ -2620,6 +2620,7 @@ export const npCharacters: NpCharacters = {
     ],
     SwizzMB: [
         { name: 'Miguel Almerion', factions: ['HOA'] },
+        { name: '[Officer] Mervin Napoli', factions: ['Police'], nicknames: ['Merv', 'Big Merv', 'Big M'], displayName: 1 },
     ],
     Sykkuno: [
         { name: 'Yuno Sykk', factions: ['Cleanbois', 'Clean Cartel', 'Rooster'], displayName: 1, assumeServer: 'whitelist', assumeChar: true },
