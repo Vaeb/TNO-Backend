@@ -1955,6 +1955,7 @@ export const npCharacters: NpCharacters = {
     ],
     Nidas: [
         { name: 'Leslie Lingberg', factions: ['Limelight'], leader: true, nicknames: ['Ling'], displayName: 1, assumeServer: 'whitelist' },
+        { name: 'Robin ?', nicknames: ['Boy Wonder'] },
         { name: 'Steve "Stiv" Adamescu', assumeServer: 'public' },
     ],
     Nikez: [
