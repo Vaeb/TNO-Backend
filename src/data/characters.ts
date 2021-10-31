@@ -1167,7 +1167,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Vincent' },
     ],
     Jack: [
-        { name: 'Jack Cortair', nicknames: ['Cookie', 'Galleta'], assumeServer: 'whitelist' },
+        { name: 'Jack Cortair', factions: ['Gulag Gang'], nicknames: ['Cookie', 'Galleta'], assumeServer: 'whitelist' },
         { name: 'Jack Cortair', nicknames: ['Cookie'], assumeServer: 'international' },
         { name: '[Deputy] Dez Wright', factions: ['Police'], nicknames: ['Doofy'], displayName: 3 },
     ],
@@ -2038,7 +2038,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Evee Poppins' },
     ],
     omie: [
-        { name: 'Marty Banks', assumeServer: 'whitelist' },
+        { name: 'Marty Banks', factions: ['Gulag Gang'], assumeServer: 'whitelist' },
         { name: 'Marty Shanks', factions: ['Gulag Gang', 'Burger Shot'], nicknames: [reg(/\bburger/)], assumeServer: 'public' },
         { name: 'Marty Banks', assumeServer: 'international' },
         { name: '[Officer] Sharty Manks', factions: ['Police'], displayName: 1, assumeServer: 'public' },
@@ -2973,8 +2973,8 @@ export const npCharacters: NpCharacters = {
         { name: 'Xen Verse', factions: ['Pink Gang'], displayName: 0 },
     ],
     xQcOW: [
-        { name: 'Jean "X" Paul', nicknames: ['Ghost Rider', 'Rider'], factions: ['Burger Shot'], displayName: 0, assumeServer: 'whitelist' },
-        { name: 'Jean "X" Paul', nicknames: ['Ghost Rider', 'Rider'], factions: ['Gulag Gang', 'Burger Shot'], displayName: 0, assumeServer: 'public' },
+        { name: 'Jean "X" Paul', factions: ['Gulag Gang', 'Cleanbois', 'Burger Shot'], nicknames: ['Ghost Rider', 'Rider'], displayName: 0, assumeServer: 'whitelist' },
+        { name: 'Jean "X" Paul', factions: ['Gulag Gang', 'Burger Shot'], nicknames: ['Ghost Rider', 'Rider'], displayName: 0, assumeServer: 'public' },
         { name: '[Deputy] Pierre "PP" Paul', factions: ['Police'], displayName: 0, assumeServer: 'whitelist' },
         { name: 'Jean Pierre', displayName: 0 },
     ],
