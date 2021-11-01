@@ -259,7 +259,8 @@ export const getStreams = async (options: GetStreamsOptions): Promise<HelixStrea
         searchNum -= limitNow;
         const gtaStreamsNow: HelixPaginatedResult<HelixStream> = await apiClient.helix.streams.getStreams({
             game,
-            language: optionsParsed.international ? undefined : language,
+            // language: optionsParsed.international ? undefined : language,
+            language: undefined,
             limit: String(limitNow),
             type: streamType,
             after,
