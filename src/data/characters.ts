@@ -996,7 +996,7 @@ export const npCharacters: NpCharacters = {
         { name: '[EMS] Jenny Schildt', factions: ['Medical'] },
     ],
     HalifamousNS: [
-        { name: 'Devon Davidson', factions: ['BSK'], nicknames: ['DD']},
+        { name: 'Devon Davidson', factions: ['BSK'], nicknames: ['DD'], displayName: 0 },
     ],
     HARMSwahy: [
         { name: 'Blaine Burke', factions: ['Angels'] },
@@ -1517,7 +1517,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Moe Litman', displayName: 0 },
     ],
     kytolee: [
-        { name: 'Juan Cuervo', factions: ['Vagos'] },
+        { name: 'Juan Cuervo', factions: ['Vagos'], displayName: 0 },
     ],
     LadyHope: [
         { name: '[Officer] Lily Pond', factions: ['Police'] },
@@ -2274,7 +2274,7 @@ export const npCharacters: NpCharacters = {
     ],
     RobotNinjaPants: [
         { name: '[Deputy] Hunter Cross', factions: ['Police'] },
-        { name: 'Jacob Slate'},
+        { name: 'Jacob Slate', factions: ['DoJ'], displayName: 0 },
     ],
     roflgator: [
         { name: 'Robert Spowylamywanowski', nicknames: ['Rob', 'Polish', 'Night Manager'], displayName: 3 },
