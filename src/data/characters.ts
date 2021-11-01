@@ -1380,8 +1380,8 @@ export const npCharacters: NpCharacters = {
         { name: 'Ghost Storm', factions: ['GSF'] },
     ],
     KGU__: [
-        { name: 'Ruckus ?', factions: ['SSB'], nicknames: ['Uncle Ruckus'], displayName: 3 },
         { name: 'Pablo Loco', factions: ['Vagos'], displayName: 0 },
+        { name: 'Ruckus ?', factions: ['SSB'], nicknames: ['Uncle Ruckus'], displayName: 3 },
     ],
     KhaosAdam: [
         { name: 'Adam Ababwa', factions: ['Mandem'], assume: 'assumeOther', displayName: 0 },
@@ -1409,9 +1409,6 @@ export const npCharacters: NpCharacters = {
     ],
     Kingothestone: [
         { name: 'Steven Stone III', factions: ['BBMC'], displayName: 2 },
-    ],
-    KingsGamingUnleashed: [
-        { name: 'Pablo Loco', factions: ['Vagos'], displayName: 0 },
     ],
     KinkyHobo_: [
         { name: '[Lawyer //] Gill Schultz', factions: ['DoJ'], displayName: 1 },
