@@ -995,6 +995,9 @@ export const npCharacters: NpCharacters = {
     hannerb_naner: [
         { name: '[EMS] Jenny Schildt', factions: ['Medical'] },
     ],
+    HalifamousNS: [
+        { name: 'Devon Davidson', factions: ['BSK'], nicknames: ['DD']},
+    ],
     HARMSwahy: [
         { name: 'Blaine Burke', factions: ['Angels'] },
     ],
@@ -1291,7 +1294,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Reverend I.M. Voland', factions: ['Dark Web'] },
     ],
     Juggs: [
-        { name: 'Lenny Large', factions: ['Burger Shot'], nicknames: [reg(/\blenny/)], displayName: 0 },
+        { name: 'Lenny Large', nicknames: [reg(/\blenny/)], displayName: 0 },
         { name: 'Traevon Williams', nicknames: ['The Barber'], displayName: 3 },
     ],
     JukeBoxEM: [
@@ -1512,6 +1515,9 @@ export const npCharacters: NpCharacters = {
     ],
     KYR_SP33DY: [
         { name: 'Moe Litman', displayName: 0 },
+    ],
+    kytolee: [
+        { name: 'Juan Cuervo', factions: ['Vagos'] },
     ],
     LadyHope: [
         { name: '[Officer] Lily Pond', factions: ['Police'] },
@@ -3015,7 +3021,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Renato Ortiz', factions: ['Vagos'], displayName: 0 },
     ],
     Zerkaa: [
-        { name: 'Tommy Tate', factions: ['Mandem'], nicknames: ['Tommy T'], displayName: 3 },
+        { name: 'Tommy Tate', factions: ['Mandem'], leader: true, nicknames: ['Tommy T'], displayName: 3 },
     ],
     Zettafrag: [
         { name: 'Kimberly Daniels', factions: ['Condemned MC'], displayName: 0 },
