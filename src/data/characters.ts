@@ -1610,6 +1610,9 @@ export const npCharacters: NpCharacters = {
     lozdog: [
         { name: 'Lilith Ailhart', factions: ['HOA'] },
     ],
+    lstrictlylogicl: [
+        { name: '[Deputy] John Spartan', factions: ['Police'], displayName: 2 },
+    ],
     Lt_Custard: [
         { name: 'Collin McKinley', factions: ['BBMC'], displayName: 0 },
         { name: 'Cougar Dolly', displayName: 0 },
