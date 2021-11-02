@@ -1843,7 +1843,7 @@ export const npCharacters: NpCharacters = {
     Moboking: [
         { name: '[Officer] Ellis Pinzon', factions: ['Police'], nicknames: ['Ronaldo'], assumeServer: 'whitelist' },
         { name: 'Aleksander Bogorov', nicknames: ['Aleks'], displayName: 3, assumeServer: 'whitelist' },
-        { name: '[Officer] Aleks Sazkaljovich', factions: ['Police'], displayName: 1, assumeServer: 'public' },
+        { name: '[Trooper] Aleks Sazkaljovich', factions: ['Police'], displayName: 1, assumeServer: 'public' },
         { name: 'Elijiah "Middle E" Parks', factions: ['SSB'] },
     ],
     Moesabai: [
