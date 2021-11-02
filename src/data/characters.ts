@@ -1810,6 +1810,9 @@ export const npCharacters: NpCharacters = {
     Minakorocket: [
         { name: 'Mina Rocket', factions: ['Rooster'], displayName: 0 },
     ],
+    MinervaMaat: [
+        { name: '[Deputy] Minerva Maat', factions: ['Police'], displayName: 1 },
+    ],
     Ming: [
         { name: 'Ming Jingtai', factions: ['Gulag Gang'], assume: 'assumeNp', assumeServer: 'public' },
         { name: 'Boon Bundy', displayName: 0, assumeServer: 'public' },
