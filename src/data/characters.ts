@@ -1161,7 +1161,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Trequan Jenkins', factions: ['Street Team', 'Chang Gang'], nicknames: ['Ashtray'], displayName: 3 },
     ],
     ItsSammyP: [
-        { name: 'Mando Thompson', factions: ['SSB'] },
+        { name: 'Mando Thompson' },
         { name: 'Tyrone "Big T" Thompson', factions: ['SSB'] },
     ],
     itsSANDR: [
