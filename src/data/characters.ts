@@ -2195,7 +2195,7 @@ export const npCharacters: NpCharacters = {
     ],
     Quru: [
         { name: '[Officer] Vladimir Reznik', factions: ['Police'] },
-        { name: 'Pepe Ramos', factions: ['Vagos'], displayName: 0 },
+        { name: 'Pepe Ramos', displayName: 0 },
     ],
     Ragonath: [
         { name: 'Maxwell Devitt', displayName: 0 },
