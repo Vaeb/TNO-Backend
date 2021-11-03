@@ -321,9 +321,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Billy "Bloodbath" Senora', factions: ['ASRR'], nicknames: ['Bloodbath'], assumeServer: 'whitelist' },
     ],
     biggieferreira: [
+        { name: 'Shevy Santanna', factions: ['Vagos'], assumeServer: 'whitelist' },
         { name: '[Officer] Jamal Ferreira', factions: ['Police'], assumeServer: 'public' },
         { name: 'Dominic "Lil D" Chester', nicknames: ['Sabado de Sol'] },
-        { name: 'Shevy Santanna', factions: ['Vagos'], assumeServer: 'whitelist' },
     ],
     BikeMan: [
         { name: 'Chet Summerset', assume: 'assumeNpNoOther' },
