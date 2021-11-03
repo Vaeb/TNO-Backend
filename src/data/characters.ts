@@ -1475,7 +1475,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Ray Ray', factions: ['ASRR'], displayName: 0 },
     ],
     Kongfue: [
-        { name: 'Karl "KJ" Johnny', factions: ['Vagos', 'Burger Shot'] },
+        { name: 'Karl "KJ" Johnny' },
     ],
     KristoferYee: [
         { name: 'Jay Que', factions: ['Rooster'], displayName: 0 },
@@ -1664,7 +1664,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Violet Van Housen', factions: ['Police'], displayName: 1, assumeServer: 'public' },
     ],
     Lysium: [
-        { name: 'Benji Ramos', factions: ['Vagos'], nicknames: ['B'] },
+        { name: 'Benji Ramos', nicknames: ['B'] },
         { name: '[Deputy] Dean Duncan', factions: ['Police'] },
         { name: 'Maxim Pochinki' },
     ],
@@ -2445,7 +2445,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Spooky Conchas', factions: ['Marabunta'] },
     ],
     Simo: [
-        { name: 'Reggie', factions: ['Vagos'], displayName: 0, assumeServer: 'whitelist' },
+        { name: 'Reggie Might', displayName: 1, assumeServer: 'whitelist' },
         { name: '[Lawyer //] Blake Specter', factions: ['DoJ'] },
         { name: '[Officer] Reggie Might', factions: ['Police'], assumeServer: 'public' },
     ],
