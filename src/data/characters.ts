@@ -2031,7 +2031,7 @@ export const npCharacters: NpCharacters = {
     ],
     OccamsSabre: [
         { name: '[Officer] Jeffrey Bundy', factions: ['Police'], nicknames: ['451'] },
-        { name: '[《Lawyer》] Benjamin Crane', factions: ['DoJ'] },
+        { name: '[《Lawyer》] Benjamin Crane', factions: ['DoJ'], displayName: 0 },
         { name: 'Ray Montag', factions: ['DoJ'] },
         { name: 'Busta Block', factions: ['ASRR'], displayName: 0 },
     ],
