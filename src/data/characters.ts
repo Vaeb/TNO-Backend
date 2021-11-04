@@ -2732,6 +2732,9 @@ export const npCharacters: NpCharacters = {
     TheAaronShaq: [
         { name: '? "Glue Guy" ?', factions: ['Burger Shot'] },
     ],
+    TheAmelina: [
+        { name: '[《Lawyer》] Alexandra Carlson', factions: ['DoJ'], displayName: 0 },
+    ],
     TheBigMeech: [
         { name: 'Pilbis Shonly', factions: ['NBC'] },
         { name: '[Officer] Chris Kross', factions: ['Police'], nicknames: ['Krossy'] },
