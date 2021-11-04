@@ -1374,7 +1374,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Kaz Mendalez', factions: ['BBMC'] },
     ],
     Keeno: [
-        { name: 'Kyle Brovloski', displayName: 0 },
+        { name: 'Kyle Brovloski', displayName: 0, assume: 'assumeOther' },
     ],
     kels_corner: [
         { name: 'Victor Blaze', factions: ['SSB'], displayName: 0, assumeServer: 'public' },
