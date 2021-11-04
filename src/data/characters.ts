@@ -617,7 +617,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Fred Hurst', nicknames: [reg(/Lim.\s?Bizkif/)] },
     ],
     cyter: [
-        { name: 'Demetrius "Draco" Jones', factions: ['SSB'], nicknames: ['DJ'] },
+        { name: 'Demetrius "Draco" Jones', factions: ['SSB'], leader: true, nicknames: ['DJ'] },
     ],
     Dadulio: [
         { name: '[Deputy] Franky Dulio', factions: ['Police'] },
@@ -909,7 +909,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Alexander Egorov' },
     ],
     Frshnesss: [
-        { name: 'Tyrell Fresh', factions: ['SSB'], displayName: 0 },
+        { name: 'Tyrell Fresh', factions: ['SSB'], leader: true, displayName: 0 },
     ],
     Frynaut: [
         { name: 'Kratos Of Sparta', nicknames: ['God of War', 'God'] },
