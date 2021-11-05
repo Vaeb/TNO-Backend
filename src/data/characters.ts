@@ -2124,7 +2124,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Dispatch] Owen Fitz-Gibbon', factions: ['Police'], displayName: 2 },
     ],
     PinkTrilobite: [
-        { name: 'Selena Martinez', factions: ['Vagos'], displayName: 0 },
+        { name: 'Selena Martinez', displayName: 0 },
     ],
     Plashir: [
         { name: 'Thom Yung', factions: ['Stable'], displayName: 0 },
