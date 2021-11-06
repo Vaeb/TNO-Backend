@@ -2929,7 +2929,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Basem Shahin' },
     ],
     Voladin17: [
-        { name: '[Judge] Tidus Schwinghammer', factions: ['DoJ'] },
+        { name: '[Lawyer] Tidus Schwinghammer', factions: ['DoJ'] },
     ],
     VTechas: [
         { name: 'Daryl Dixon', factions: ['HOA'], nicknames: ['DRL'] },
