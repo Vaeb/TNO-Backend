@@ -679,7 +679,7 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                     } else if (hasFactions) {
                         activeFactions = factionNames;
                         tagFaction = isFactionColor(factionNames[0]) ? factionNames[0] : 'independent';
-                        tagText = hasFactionsTagText ? `< ${hasFactionsTagText} >` : `< ${fullFactionMap[factionNames[0]] || factionNames[0]} >`;
+                        tagText = hasFactionsTagText ? `〈${hasFactionsTagText}〉` : `〈${fullFactionMap[factionNames[0]] || factionNames[0]}〉`;
                     } else if (possibleCharacter) {
                         activeFactions = possibleCharacter.factions;
                         tagFaction = possibleCharacter.factionUse;
