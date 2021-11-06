@@ -1059,7 +1059,7 @@ export const npCharacters: NpCharacters = {
     ],
     Hotted89: [
         { name: '[Deputy] Matthew Espinoz', factions: ['Police'], nicknames: ['Airspinoz', 'Air 1 Andy'] },
-        { name: 'Joaquin "JJ" Jimenes', factions: ['Vagos'] },
+        { name: 'Joaquin "JJ" Jimenes' },
         { name: 'Allen Widemann', factions: ['Chang Gang', 'Tuner Shop'] },
     ],
     HPD007: [
