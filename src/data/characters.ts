@@ -1173,6 +1173,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Hershall Turtle', nicknames: ['Hershal'] },
         { name: 'Abraham Mohammed' },
     ],
+    izzidizzy: [
+        { name: '[Deputy] Ruby Hope', factions: ['Police'], displayName: 2 },
+    ],
     JaboodyShow: [
         { name: 'Jerry Curl', displayName: 0 },
         { name: 'Vincent' },
