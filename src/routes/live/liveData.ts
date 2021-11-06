@@ -190,7 +190,7 @@ for (const [streamer, characters] of Object.entries(npCharacters)) {
             displayNameChar = realNames[displayNameNum - 1] || realNames[0];
             parsedNames.push(RegExp.escape(`${displayNameChar.toLowerCase()}s`));
         }
-        char.displayName = `${char.leader ? `♛${displayNameTitle.length ? '' : ' '}` : ''}《${displayNameTitle}》${displayNameChar}`.trim();
+        char.displayName = `${char.leader ? `♛${displayNameTitle.length ? '' : ' '}` : ''}${displayNameTitle ? `《${displayNameTitle}》` : ''}${displayNameChar}`.trim();
 
         console.log(char.displayName);
 
