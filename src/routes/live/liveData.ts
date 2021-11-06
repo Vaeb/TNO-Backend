@@ -178,7 +178,7 @@ for (const [streamer, characters] of Object.entries(npCharacters)) {
         const primaryFaction = char.factions[0];
         if (displayNameNum === undefined) displayNameNum = displayNameDefault[primaryFaction] ?? 1;
 
-        const displayNameTitle = titles ? `${titles.join(' ')} ` : '';
+        const displayNameTitle = titles.length ? titles.join(' ') : '';
         let displayNameChar = '';
         if (knownName !== undefined) {
             displayNameChar = knownName;
@@ -190,7 +190,9 @@ for (const [streamer, characters] of Object.entries(npCharacters)) {
             displayNameChar = realNames[displayNameNum - 1] || realNames[0];
             parsedNames.push(RegExp.escape(`${displayNameChar.toLowerCase()}s`));
         }
-        char.displayName = `${displayNameTitle}${displayNameChar}`.trim();
+        char.displayName = `${char.leader ? `♛${displayNameTitle.length ? '' : ' '}` : ''}《${displayNameTitle}》${displayNameChar}`.trim();
+
+        console.log(char.displayName);
 
         nameRegAll.push(`\\b(?:${parsedNames.join('|')})\\b`);
         if (char.factions.includes('development') && streamerLower !== 'dwjft') { // Include regex for dev faction
@@ -673,7 +675,7 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                     if (nowCharacter) {
                         activeFactions = nowCharacter.factions;
                         tagFaction = nowCharacter.factionUse;
-                        tagText = `${nowCharacter.leader ? '♛ ' : ''}${nowCharacter.displayName}`;
+                        tagText = nowCharacter.displayName;
                     } else if (hasFactions) {
                         activeFactions = factionNames;
                         tagFaction = isFactionColor(factionNames[0]) ? factionNames[0] : 'independent';
