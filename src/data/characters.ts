@@ -2497,7 +2497,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Nico August', factions: ['GSF'] },
     ],
     SlummpyJ: [
-        { name: 'Javier Diaz', factions: ['Vagos'] },
+        { name: 'Javier Diaz', nicknames: ['Javi'] },
     ],
     Smaczny: [
         { name: 'Conrad Gross' },
