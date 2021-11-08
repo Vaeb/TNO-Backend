@@ -1245,6 +1245,9 @@ export const npCharacters: NpCharacters = {
     jettskiiee: [
         { name: 'Xavier "Xay" Sin', factions: ['Rooster'] },
     ],
+    Jfourmess: [
+        { name: 'Vince Watson', factions: ['Mandem'], displayName: 0 },
+    ],
     jimmytulip: [
         { name: 'Wayne Biggaz', factions: ['Chang Gang'], nicknames: [reg(/\bwe+y+n/), reg(/\bwayne/)] },
     ],
