@@ -2510,7 +2510,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Duke Wiggles', displayName: 0 },
     ],
     smo_och: [
-        { name: 'Mike Smoore', factions: ['Vagos'], displayName: 0 },
+        { name: 'Mike Smoore', displayName: 0 },
     ],
     SmokySloth: [
         { name: 'Bovice Wilkinson', factions: ['Prison'] },
