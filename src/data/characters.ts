@@ -168,7 +168,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Hess Blade', factions: ['Rooster'] },
     ],
     AndyMilonakis: [
-        { name: 'Lil Erf', displayName: 0 },
+        { name: 'Lil Erf', factions: ['Chang Gang'], displayName: 0 },
         { name: 'Carmen Amuso' },
     ],
     Angrysquirlz: [
