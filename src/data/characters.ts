@@ -539,7 +539,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Alejandro Picadillo', factions: ['Police'], nicknames: ['World Wide', 'Worldwide'] },
     ],
     CloudyDL: [
-        { name: 'Scotty Dixon', factions: ['BSK'] },
+        { name: 'Scotty Dixon', factions: ['Italian Mafia'], displayName: 0 },
     ],
     CoconutB: [
         { name: '? ?' },
@@ -1209,7 +1209,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Dave Perry', displayName: 0 },
     ],
     JayAitch: [
-        { name: 'Lil Cap', displayName: 0, assumeServer: 'whitelist' },
+        { name: 'Alex "Lil Cap" Söderberg', factions: ['Italian Mafia'], nicknames: ['Soderberg', 'Cap'], displayName: 0, assumeServer: 'whitelist' },
         { name: 'Lil Strap', displayName: 0, assumeServer: 'public' },
     ],
     Jayce: [
@@ -1322,6 +1322,9 @@ export const npCharacters: NpCharacters = {
     ],
     JustaMinx: [
         { name: 'Mercy Peggers' },
+    ],
+    JustDurant: [
+        { name: 'Toni Balbani', factions: ['Italian Mafia'], displayName: 0 },
     ],
     JustenTymes: [
         { name: 'Blanden Haster', factions: ['HOA'], displayName: 1 },
@@ -2296,6 +2299,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Shelly Targaryen', factions: ['Burger Shot'], nicknames: ['Shelleh', 'Queen'] },
         { name: 'Kelly Smith' },
     ],
+    Robbeaxe: [
+        { name: 'Sally Avvocata', factions: ['Italian Mafia'], displayName: 0 },
+    ],
     RobotNinjaPants: [
         { name: '[Deputy] Hunter Cross', factions: ['Police'] },
         { name: 'Jacob Slate', factions: ['DoJ'], displayName: 0 },
@@ -2686,6 +2692,9 @@ export const npCharacters: NpCharacters = {
     Tasara22: [
         { name: 'Tuesday Phillips' },
         { name: 'Milena' },
+    ],
+    TASHI_zelba: [
+        { name: 'Zelda Johansson', factions: ['Italian Mafia'], displayName: 0 },
     ],
     TastyMintsNA: [
         { name: '[Officer] Eric Wong', factions: ['Police'], assumeServer: 'public' },

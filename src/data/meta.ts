@@ -32,6 +32,7 @@ export const npFactionsReal = { // map: removed spaces + converted to lower case
     harmony: 'Harmony',
     quickfix: 'QuickFix',
     larpers: 'LARPers',
+    italianmafia: 'Italian Mafia',
     police: 'Police',
     medical: 'Medical',
     independent: 'Independent',
