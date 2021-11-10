@@ -3,6 +3,7 @@ export const npFactionsReal = { // map: removed spaces + converted to lower case
     limelight: 'Limelight',
     lostmc: 'Lost MC',
     changgang: 'Chang Gang',
+    hydragang: 'Hydra Gang',
     chaos: 'Chaos',
     vagos: 'Vagos',
     gsf: 'GSF',

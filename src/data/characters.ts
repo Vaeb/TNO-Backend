@@ -87,7 +87,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Jolene Mushkin', nicknames: ['Little Red'] },
     ],
     adeptthebest: [
-        { name: 'Mari Posa', factions: ['Chang Gang', 'Chaos'], displayName: 1, assumeServer: 'whitelist' },
+        { name: 'Mari Posa', factions: ['Chang Gang', 'Hydra Gang', 'Chaos'], displayName: 1, assumeServer: 'whitelist' },
         { name: '[Deputy] Selena Mendoza', factions: ['Police'] },
         { name: 'Hannah Hiltop' },
         { name: 'Maria Poser', factions: ['Gulag Gang'], displayName: 0, assumeServer: 'public' },
@@ -1252,7 +1252,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Wayne Biggaz', factions: ['Chang Gang'], nicknames: [reg(/\bwe+y+n/), reg(/\bwayne/)] },
     ],
     JJLakee: [
-        { name: 'Jay Jarvis', factions: ['Pegasus'], displayName: 0 },
+        { name: 'Jay Jarvis', factions: ['Hydra Gang', 'Pegasus'], nicknames: ['JJ'], displayName: 0 },
     ],
     JoblessGarrett: [
         { name: 'Garrett Jobless', factions: ['Chang Gang'] },
@@ -1389,7 +1389,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Lilian "Lily" Mackenzie', factions: ['GSF'] },
     ],
     Kemony: [
-        { name: 'Susie Carmichael', displayName: 0 },
+        { name: 'Susie Carmichael', factions: ['Hydra Gang'], displayName: 0 },
     ],
     Kennasofly: [
         { name: 'Jupiter Adams', factions: ['Tuner Shop'], displayName: 0 },
@@ -1851,7 +1851,7 @@ export const npCharacters: NpCharacters = {
     ],
     Moboking: [
         { name: '[Officer] Ellis Pinzon', factions: ['Police'], nicknames: ['Ronaldo'], assumeServer: 'whitelist' },
-        { name: 'Aleksander Bogorov', nicknames: ['Aleks'], displayName: 3, assumeServer: 'whitelist' },
+        { name: 'Aleksander Bogorov', factions: ['Hydra Gang'], nicknames: ['Aleks', 'Bogo'], displayName: 3, assumeServer: 'whitelist' },
         { name: '[Trooper] Aleks Sazkaljovich', factions: ['Police'], displayName: 1, assumeServer: 'public' },
         { name: 'Elijiah "Middle E" Parks', factions: ['SSB'] },
     ],
@@ -2200,7 +2200,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] James Doakes', factions: ['Police'], displayName: 2 },
     ],
     qMARIOx: [
-        { name: 'Fernando "Mario" Reyes', factions: ['Chang Gang', 'Chaos'], nicknames: ['"Mario" from the Barrio'] },
+        { name: 'Fernando "Mario" Reyes', factions: ['Chang Gang', 'Hydra Gang', 'Chaos'], nicknames: ['"Mario" from the Barrio'] },
     ],
     Quru: [
         { name: '[Officer] Vladimir Reznik', factions: ['Police'] },
@@ -2649,7 +2649,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Ty Jones', factions: ['SSB'], nicknames: ['xray'], displayName: 0 },
     ],
     SwizzMB: [
-        { name: 'Miguel Almerion', factions: ['HOA'] },
+        { name: 'Miguel Almerion', factions: ['HOA', 'Hydra Gang'] },
         { name: '[Officer] Mervin Napoli', factions: ['Police'], nicknames: ['Merv', 'Big Merv', 'Big M'], displayName: 1 },
     ],
     Sykkuno: [
@@ -3012,7 +3012,7 @@ export const npCharacters: NpCharacters = {
     ],
     Xiceman: [
         { name: '[Deputy] Mike Bayo', factions: ['Police'] },
-        { name: 'Mike Wadum', nicknames: ['El Gringo'], displayName: 0 },
+        { name: 'Mike Wadum', factions: ['Hydra Gang'], nicknames: ['El Gringo'], displayName: 0 },
     ],
     XMOTHATRUCKAX: [
         { name: 'Ronald "Red" Juggler' },
