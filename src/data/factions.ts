@@ -42,7 +42,7 @@ export const npFactionsRegex = {
     nbc: noFormer(/\bnbc\b/i),
     mandem: noFormer(/\bmandem|\bmdma?\b/i),
     bbmc: noFormer(/\bbbmc\b|\bbondi/i),
-    italianmafia: noFormer(/\b(?:italian|sicilian)[\s\-_.]*mafi|\bcosa[\s\-_.]*nostra|\bbalbani\b|\bbcf\b/i),
+    italianmafia: noFormer(/\b(?:italian|sicilian)[\s\-_.]*(?:mafi|mob)|\bcosa[\s\-_.]*nostra|\bbalbani\b|\bbcf\b/i),
     stable: noLater(noFormer(/\bstable(?:hand)?\b/i)),
     podcast: noLater(noFormer(/\b(?<!!)podcast\b/i)),
     gulaggang: noLater(noFormer(/\bgulag[\s\-_.]*gang/i)),
