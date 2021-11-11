@@ -51,6 +51,7 @@ export const regOthers = [
     { name: 'SSB WRLD', reg: /\bssb\b|ssb[\s:-]*(?:wo?rld|rp)|ssb\s+(?:later|after)/i, include: 0 },
     { name: 'FrenzyRP', reg: /\bfrenzy\s*rp/i, include: 0 },
     { name: 'OvertimeRP', reg: /\bover[\s\-_.]*time[\s\-_.]*(?:rp\b|roleplay)/i, include: 0 },
+    { name: 'GrandRP', reg: /\bgrand[\s\-_.]*(?:rp\b|roleplay)/i, include: 0 },
     { name: 'FiveM', reg: /\brandom[\s\-_.]*fivem\b/i, include: 0 },
     { name: 'OurBenefactors', reg: /\bour[\s\-_.]*benefactors|\bob[\s\-_.]*rp\b/i, include: 1 },
     { name: 'Grizzley World', reg: /grizzley[\s\-]*wo?rld/i, include: 0 },
