@@ -1989,6 +1989,7 @@ export const npCharacters: NpCharacters = {
     ],
     Nidas: [
         { name: 'Leslie Lingberg', factions: ['Limelight', 'Cleanbois'], leader: true, nicknames: ['Ling'], displayName: 1, assumeServer: 'whitelist' },
+        { name: 'Rat Boy', nicknames: ['Ratboy'], displayName: 3 },
         { name: 'Robin ?', nicknames: ['Boy Wonder'] },
         { name: 'Steve "Stiv" Adamescu', assumeServer: 'public' },
     ],
