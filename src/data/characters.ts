@@ -1205,6 +1205,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Joseph Yorinobu', nicknames: ['Majima', 'Goro'], displayName: 3 },
         { name: 'Lillia Claurel' },
     ],
+    JavaShorty: [
+        { name: '[EMS] Shelby Lane', factions: ['Medical'], nicknames: ['Lt', 'Lieutenant'], displayName: 1 },
+    ],
     jay4871: [
         { name: 'Dave Perry', displayName: 0 },
     ],
