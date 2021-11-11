@@ -517,7 +517,7 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                             faction: 'other',
                             factions: ['other'],
                             factionsMap: { other: true },
-                            tagText: serverName.length > 0 ? `::${serverName}::` : '',
+                            tagText: serverName.length > 0 ? `::${serverName}::` : `:::${channelName}:::`,
                             tagFaction: 'other',
                             noOthersInclude,
                             noPublicInclude: true,
