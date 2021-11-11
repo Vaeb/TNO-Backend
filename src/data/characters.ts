@@ -1000,6 +1000,9 @@ export const npCharacters: NpCharacters = {
     GutturalSteve: [
         { name: 'Tomathy Steampipe', factions: ['Burger Shot'] },
     ],
+    HAchubby: [
+        { name: 'Ha Chu', displayName: 0 },
+    ],
     hannerb_naner: [
         { name: '[EMS] Jenny Schildt', factions: ['Medical'] },
     ],
