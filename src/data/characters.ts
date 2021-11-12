@@ -1399,6 +1399,7 @@ export const npCharacters: NpCharacters = {
     ],
     Kemony: [
         { name: 'Susie Carmichael', factions: ['Hydra Gang'], displayName: 0 },
+        { name: '[Ride Along] Alice Watson', factions: ['Police'], displayName: 2 },
     ],
     Kennasofly: [
         { name: 'Jupiter Adams', factions: ['Tuner Shop'], displayName: 0 },
