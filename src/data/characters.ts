@@ -2091,6 +2091,9 @@ export const npCharacters: NpCharacters = {
     OneTapBingus: [
         { name: 'Bodhi Mack' },
     ],
+    Osakanoodles: [
+        { name: '[Officer] Antoine Sigel', factions: ['Police'] },
+    ],
     OwenSeven: [
         { name: '[Officer] Owen Svensen', factions: ['Police'] },
         { name: 'Tyler Dabrowski', factions: ['Frat'], nicknames: ['Bro', 'Brow', 'Brah', 'Broski', 'Browski', 'Brahski'], displayName: 0 },
