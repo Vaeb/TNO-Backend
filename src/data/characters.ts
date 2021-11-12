@@ -2250,7 +2250,7 @@ export const npCharacters: NpCharacters = {
     ],
     Ray__C: [
         { name: 'Raymond "Ray" Romanov', factions: ['Cleanbois', 'Clean Cartel', 'Rooster'], nicknames: ['Ray', reg(/\brussia/)], assumeChar: true, assumeServer: 'whitelist' },
-        { name: '[Ride Along] Raycardo Flick', factions: ['Police'], assumeServer: 'whitelist' },
+        { name: '[Officer] Raycardo Flick', factions: ['Police'], assumeServer: 'whitelist' },
         { name: '[Officer] Raycardo Flick', factions: ['Police'], assumeServer: 'public' },
     ],
     ray308win: [
