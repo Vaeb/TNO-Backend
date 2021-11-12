@@ -1090,6 +1090,7 @@ export const npCharacters: NpCharacters = {
     ],
     iamnxera: [
         { name: '[Officer] Tommy Tinker', factions: ['Police'], displayName: 1, assumeServer: 'public' },
+        { name: 'Tommy Tinker', displayName: 1, assumeServer: 'whitelist' },
     ],
     IAmSoul_RP: [
         { name: 'Johnathen Riker' },
