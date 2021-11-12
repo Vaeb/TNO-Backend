@@ -2996,7 +2996,7 @@ export const npCharacters: NpCharacters = {
         { name: "? \"Don's Mother\" ?", nicknames: ['Mama', 'Donna'] },
     ],
     WLVSx: [
-        { name: 'Wolfe McCreedy', nicknames: ['Wolfie'] },
+        { name: 'Wolfe McCreedy', nicknames: ['Wolfie'], displayName: 3 },
     ],
     Wolfabelle: [
         { name: '[Deputy] Candice Defitt', factions: ['Police'], displayName: 1 },
