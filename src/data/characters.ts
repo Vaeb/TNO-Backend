@@ -1750,7 +1750,8 @@ export const npCharacters: NpCharacters = {
         { name: '[EMS] Rowan Hunter', factions: ['Medical'] },
     ],
     Mattie: [
-        { name: '[Dr.] Mikhail Keehl', factions: ['DoC'], displayName: 2 },
+        { name: '[Dr.] Mikhail Keehl', factions: ['DoC', 'Medical'], displayName: 2 },
+        { name: 'Titus Tsukasa', factions: ['BSK'], displayName: 0 },
     ],
     MattRP: [
         { name: '[Trooper] Jack Ripley', factions: ['Police'] },
