@@ -3061,7 +3061,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Antonio Carter Jr', factions: ['SSB'], nicknames: ['AJ'], displayName: 4 },
     ],
     Zaitohro: [
-        { name: 'Cameran Shaw', displayName: 0 },
+        { name: 'Cameran Shaw', factions: ['DoC'], nicknames: ['Cam'], displayName: 0 },
         { name: 'Oswald Tinkerman', factions: ['Lost MC'], displayName: 1 },
     ],
     Zaquelle: [
