@@ -2039,6 +2039,9 @@ export const npCharacters: NpCharacters = {
     Ntviiper: [
         { name: 'Kian Mercer', factions: ['HOA'] },
     ],
+    NuFahrenheit: [
+        { name: 'Boris Karishnikov', factions: ['Italian Mafia'], displayName: 0 },
+    ],
     NunnYaBiznezz: [
         { name: '[Deputy] Hingle McCringleberry', factions: ['Police'], displayName: 1, assumeServer: 'public' },
     ],
