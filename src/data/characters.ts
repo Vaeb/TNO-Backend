@@ -52,7 +52,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Shazza Wazza', factions: ['Rooster'], nicknames: ['Shazzam'] },
     ],
     aaron_rp: [
-        { name: 'Aaron Alexander', nicknames: ['Double A', reg(/double.?a/)], displayName: 3 },
+        { name: 'Aaron Alexander', factions: ['GSF'], nicknames: ['Double A', reg(/double.?a/)], displayName: 3 },
     ],
     AaronOnAir: [
         { name: '[Officer] Dan Faily', factions: ['Police'], nicknames: ['485'] },
@@ -1661,6 +1661,7 @@ export const npCharacters: NpCharacters = {
     ],
     luka_aus: [
         { name: '[Officer] Luka Kozlov', factions: ['Police'] },
+        { name: 'DeAndre Flocko', factions: ['GSF'], displayName: 0 },
         { name: 'Gazza Maloo', factions: ['Lost MC'] },
     ],
     Lullichiiqa: [
