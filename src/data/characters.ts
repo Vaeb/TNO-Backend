@@ -1010,6 +1010,9 @@ export const npCharacters: NpCharacters = {
     HalifamousNS: [
         { name: 'Devon Davidson', factions: ['BSK'], nicknames: ['DD'], displayName: 0 },
     ],
+    hansgaming08: [
+        { name: '[Chief of Police] M Hans', factions: ['Police'], assumeServer: 'international' },
+    ],
     HARMSwahy: [
         { name: 'Blaine Burke', factions: ['Angels'] },
     ],
