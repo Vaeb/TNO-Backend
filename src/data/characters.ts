@@ -1489,7 +1489,7 @@ export const npCharacters: NpCharacters = {
     koil: [
         { name: '[Trooper] Kael Soze', factions: ['Police'], highCommand: true, leader: true, nicknames: ['are illegal'] },
         { name: 'Francis Francer', nicknames: ['franic', 'franer', 'bwo', reg(/\bfr.n.{1,2}s/)], displayName: 0 },
-        { name: '[Senator] ? ?', factions: ['DoJ'], leader: true, nicknames: ['Senate'] },
+        { name: '[Senator] Steven ?', factions: ['DoJ'], leader: true, nicknames: ['Senate', 'Steve'] },
         { name: 'Otto Delmar', nicknames: ['race', 'racing'] },
         { name: '[Development] Koil', factions: ['Development'], nicknames: ['Code'] },
         { name: 'Saint Jospeh', nicknames: ['Jesus', 'Joseph', 'XUJIA', 'EMC'], displayName: 0 },
