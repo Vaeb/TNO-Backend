@@ -2828,7 +2828,7 @@ export const npCharacters: NpCharacters = {
     ],
     Timmy2: [
         { name: 'Chino G' },
-        { name: 'Orlando Jones', factions: ['SSB'], nicknames: ['OJ'] },
+        { name: 'Orlando Jones', factions: ['SSB'], nicknames: ['OJ'], displayName: 3 },
         { name: 'Cardell "CJ" Jones', factions: ['SSB'] },
     ],
     TinaKitten: [
