@@ -944,7 +944,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Serena Riven', factions: ['Rooster'] },
     ],
     GeneralEmu: [
-        { name: '[Officer] Lance Malton', factions: ['Police'] },
+        { name: '[Commissioner] Lance Malton', factions: ['Police'] },
     ],
     ggqf: [
         { name: 'Stanly "Stag" Lessfield', factions: ['LARPers', 'Cleanbois', 'Rooster'], nicknames: ['Stagdancer', 'Gea', 'Paladin'] },
