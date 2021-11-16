@@ -1273,7 +1273,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Garry Berry', factions: ['Police'] },
     ],
     Joeeigel: [
-        { name: '[Lawyer] Arthur MacNee', factions: ['DoJ', 'Rooster'], displayName: 1 },
+        { name: '[Judge] Arthur MacNee', factions: ['DoJ', 'Rooster'], displayName: 1 },
     ],
     JoeSmitty123: [
         { name: '[Officer] Michael Murphy', factions: ['Police'] },
