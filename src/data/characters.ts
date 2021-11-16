@@ -1099,6 +1099,9 @@ export const npCharacters: NpCharacters = {
     IAmSoul_RP: [
         { name: 'Johnathen Riker' },
     ],
+    IanDavis: [
+        { name: 'Reginald Watson', factions: ['Burger Shot'], nicknames: ['Sir'], displayName: 0 },
+    ],
     iballzach: [
         { name: '[EMS] Zachary Kellogg', factions: ['Medical'] },
     ],
