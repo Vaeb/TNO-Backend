@@ -2350,7 +2350,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Tee Veeman', factions: ['Burger Shot'] },
     ],
     RyanRV: [
-        { name: 'Jay Jones', factions: ['Rooster'], displayName: 0 },
+        { name: 'Jay Jones', factions: ['Rooster'], nicknames: ['JJ'], displayName: 0 },
     ],
     S_Palms: [
         { name: 'Kimmy Youngirl', displayName: 1 },
