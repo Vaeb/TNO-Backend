@@ -2900,7 +2900,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Toh Biggles Fitzcharles', displayName: 0, nicknames: ['Yaes'] },
     ],
     uhLuvi: [
-        { name: 'Treyvon Williams', factions: ['GSF'], nicknames: ['Trey'] },
+        { name: 'Treyvon Williams', factions: ['GSF'], nicknames: ['Trey'], assume: 'assumeOther' },
     ],
     uhSnow: [
         { name: '[Trooper] Jackie Snow', factions: ['Police'] },
