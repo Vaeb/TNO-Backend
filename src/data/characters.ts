@@ -2225,6 +2225,9 @@ export const npCharacters: NpCharacters = {
     Purge9090: [
         { name: 'Jack Frent', factions: ['DoC'], displayName: 0 },
     ],
+    Purpose2: [
+        { name: '[Lawyer] Percy Weaver', factions: ['DoJ'] },
+    ],
     Pydrex: [
         { name: '[Officer] James Doakes', factions: ['Police'], displayName: 2 },
     ],
