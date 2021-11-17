@@ -1466,7 +1466,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Navi Gates' },
     ],
     Kiwo: [
-        { name: '[Officer] Lauren Forcer', factions: ['Police'], assumeServer: 'whitelist' },
+        { name: '[Agent] Lauren Forcer', factions: ['Police'], assumeServer: 'whitelist' },
         { name: '[Officer] Maisy Graves', factions: ['Police'], assumeServer: 'public' },
         { name: 'Mia Mersion', factions: ['Pegasus'] },
         { name: 'Nah Vee', displayName: 0 },
@@ -1767,7 +1767,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Trooper] Jack Ripley', factions: ['Police'] },
     ],
     McconnellRet: [
-        { name: '? "Bench Guy" ?' },
+        { name: '[Agent] ? "Bench Guy" ?', factions: ['Police'] },
     ],
     Meatwrist: [
         { name: 'Chad "Chodie" Brodie' },
