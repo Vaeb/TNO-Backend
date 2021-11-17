@@ -2804,7 +2804,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Yair Lamas', displayName: 0 },
     ],
     TheGeekEntry: [
-        { name: '[Ride Along] Stacey Doyle', factions: ['Police'], displayName: 1 },
+        { name: 'Stacey Doyle', displayName: 1 },
         { name: 'Jenn Bordeaux', nicknames: ['Frenchie', 'French'] },
     ],
     TheHexagonist: [
