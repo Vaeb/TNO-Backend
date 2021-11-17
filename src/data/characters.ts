@@ -2975,6 +2975,9 @@ export const npCharacters: NpCharacters = {
     Voladin17: [
         { name: '[Lawyer] Tidus Schwinghammer', factions: ['DoJ'] },
     ],
+    vsperance: [
+        { name: '[Officer] Rustin Cooper', factions: ['Police'] },
+    ],
     VTechas: [
         { name: 'Daryl Dixon', factions: ['HOA'], nicknames: ['DRL'] },
     ],
