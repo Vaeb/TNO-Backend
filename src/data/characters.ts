@@ -2821,6 +2821,9 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Neil McReal', factions: ['Police'] },
         { name: '[Officer] Roland Nelson', factions: ['Police'], assumeServer: 'public' },
     ],
+    TheMLGenies: [
+        { name: 'Shivananand "Shivvy" Sunandrankumar', factions: ['Burger Shot'] },
+    ],
     TheOnlyWendigo: [
         { name: 'Alexandru Vasquez', factions: ['Rooster'] },
     ],
