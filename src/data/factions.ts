@@ -297,6 +297,7 @@ const filterRename: { [key in FactionMini]?: string } = {
     larpers: 'The Guild',
     stable: 'The Stable',
     mandem: 'The Mandem',
+    italianmafia: 'Italian Mafia (BCF)',
     prison: 'Prison Lifers',
     angels: 'The Angels',
     lunatix: 'Lunatix MC',
