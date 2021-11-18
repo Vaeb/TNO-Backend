@@ -3015,7 +3015,6 @@ export const npCharacters: NpCharacters = {
     Wiked: [
         { name: 'Dwayne Flores', factions: ['Mandem'], nicknames: ['Golden Boy'], displayName: 0 },
         { name: 'Kyrus Langley', factions: ['SSB'], displayName: 1 },
-        { name: 'Truth Flores', displayName: 0 },
     ],
     WildJing: [
         { name: 'Wilmer "Azul" Guzman', factions: ['Marabunta'] },
