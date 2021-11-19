@@ -2305,7 +2305,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Manny McDaniels', factions: ['HOA'] },
     ],
     rerolldota: [
-        { name: '[Deputy] Lea Nova', factions: ['Police'] },
+        { name: '[Deputy] Lea Nova', factions: ['Police'], nicknames: ['Enforcer'] },
     ],
     Resurrex: [
         { name: '[Officer] Ace Crow', factions: ['Police'] },
