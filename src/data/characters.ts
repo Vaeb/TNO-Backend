@@ -666,6 +666,9 @@ export const npCharacters: NpCharacters = {
     Deejayus: [
         { name: 'Albert Intelligence', factions: ['Rooster'], nicknames: ['A.I.'] },
     ],
+    DEFAC3D: [
+        { name: 'Denzel Wallace', factions: ['BSK'], displayName: 0 },
+    ],
     Dehxter: [
         { name: 'Mark Jango', factions: ['Clean Cartel'], displayName: 0 },
     ],
