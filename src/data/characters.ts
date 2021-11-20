@@ -1021,7 +1021,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Blaine Burke', factions: ['Angels'] },
     ],
     Harry: [
-        { name: 'Harry Brown', factions: ['Limelight', 'Cleanbois', 'Pegasus', 'Rooster'] },
+        { name: 'Harry Brown', factions: ['Cleanbois', 'Limelight', 'Pegasus', 'Rooster'] },
     ],
     HasanAbi: [
         { name: 'Humberto Antonio Donato Pecorino', factions: ['Cleanbois', 'Rooster'], nicknames: ['Don', 'Donnie', reg(/\bOva[h']? here\b/)], displayName: 5 },
@@ -1293,7 +1293,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Billy Phresh', factions: ['Street Team', 'Chang Gang'], displayName: 0 },
     ],
     Jonthebroski: [
-        { name: 'Denzel Williams', factions: ['Limelight', 'Cleanbois', 'Pegasus', 'Rooster'], nicknames: ['The "Cleaner"', 'Presidente'] },
+        { name: 'Denzel Williams', factions: ['Cleanbois', 'Limelight', 'Pegasus', 'Rooster'], nicknames: ['The "Cleaner"', 'Presidente'] },
         { name: '[Officer] Johnny Divine', factions: ['Police'], displayName: 0 },
         { name: 'Broskingle Dan', factions: ['Dans'] },
         { name: '[Senator] Sean Davis', factions: ['DoJ'], leader: true, nicknames: ['Senate'] },
