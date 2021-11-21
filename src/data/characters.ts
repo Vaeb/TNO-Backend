@@ -2981,7 +2981,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Lawyer] Tidus Schwinghammer', factions: ['DoJ'] },
     ],
     Vondill: [
-        { name: 'Samantha Snake', nicknames: ['Sammy', 'Sammy Snake'], displayName: 4 },
+        { name: 'Samantha Snake', factions: ['Clean Cartel'], nicknames: ['Sammy', 'Sammy Snake'], displayName: 4 },
     ],
     vsperance: [
         { name: '[Officer] Rustin Cooper', factions: ['Police'] },
