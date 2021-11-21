@@ -1710,7 +1710,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Negan Graham', factions: ['Lost MC'] },
     ],
     madbush: [
-        { name: '[Lawyer] James Haze', factions: ['DoJ'], nicknames: ['Jim'], displayName: 0 },
+        { name: '[Lawyer] James Haze', factions: ['DoJ'], nicknames: ['Jim'], displayName: 2 },
     ],
     Madmoiselle: [
         { name: '[Therapist] Pixie Plum', factions: ['Medical'] },
