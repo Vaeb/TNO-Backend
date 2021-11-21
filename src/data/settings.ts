@@ -54,10 +54,13 @@ export const regOthers = [
     { name: 'GrandRP', reg: /\bgrand[\s\-_.]*(?:rp\b|roleplay)/i, include: 0 },
     { name: 'FiveM', reg: /\brandom[\s\-_.]*fivem\b/i, include: 0 },
     { name: 'OurBenefactors', reg: /\bour[\s\-_.]*benefactors|\bob[\s\-_.]*rp\b/i, include: 1 },
-    { name: 'Grizzley World', reg: /grizzley[\s\-]*wo?rld/i, include: 0 },
+    { name: 'Grizzley World', reg: /grizzley[\s\-]*wo?rld|grizzely\s*rp/i, include: 0 },
+    { name: 'Chaos Mod', reg: /chaos\s*mod\b/i, include: 0 },
+    { name: 'GTA Online', reg: /\bgta[\s:-]*[5v]?[\s:-]*online/i, include: 0 },
+    { name: 'GTA Story', reg: /story[\s\-]*mode|\bgta[\s:-]*[5v]?[\s\-]+story/i, include: 0 },
     {
         name: '',
-        reg: /\bgta[\s:-]*[5v]?[\s:-]*online|chaos\s*mod\b|story[\s\-]*mode|\bgta[\s:-]*[5v]?[\s\-]+story|grizzely\s*rp|\boc\s*rp\b|\bybn\b/i,
+        reg: /\boc\s*rp\b|\bybn\b/i,
         include: 0,
     },
 ];
