@@ -1410,8 +1410,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Lilian "Lily" Mackenzie', factions: ['GSF'] },
     ],
     Kemony: [
-        { name: 'Susie Carmichael', factions: ['Hydra Gang'], displayName: 0 },
+        { name: 'Susie Carmichael', factions: ['Hydra Gang'], displayName: 0, assumeServer: 'whitelist' },
         { name: '[Ride Along] Alice Watson', factions: ['Police'], displayName: 2 },
+        { name: '[Officer] Susie Carmichael', factions: ['Police'], nicknames: ['Copmichael'], assumeServer: 'public' },
     ],
     Kennasofly: [
         { name: 'Jupiter Adams', factions: ['Tuner Shop'], displayName: 0 },
