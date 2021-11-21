@@ -2060,7 +2060,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Zelaya Fernando', factions: ['Prison'], nicknames: ['Z', 'Laya'] },
     ],
     NymN: [
-        { name: 'Frank Fritugo' },
+        { name: 'Frank Fritugo', assume: 'assumeOther' },
     ],
     o_Oakleyz_o: [
         { name: '[Deputy] Samuel Holtz', factions: ['Police'] },
