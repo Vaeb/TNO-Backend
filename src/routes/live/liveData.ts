@@ -411,7 +411,7 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                         profileUrl: knownPfps[helixStream.userId],
                     }; // rpServer, characterName, faction, tagText, tagFaction
 
-                    let noOthersInclude = true;
+                    // let noOthersInclude = true; // INV: Still being used?
 
                     const titleParsed = title.toLowerCase().replace(/\./g, ' ');
                     const channelNameLower = channelName.toLowerCase();
@@ -467,7 +467,7 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                         } else if ((onOtherIncluded || onMainOther || (npStreamer && onOther))) {
                             if (allowOthersNow) {
                                 streamState = FSTATES.other;
-                                noOthersInclude = false;
+                                // noOthersInclude = false;
                             } else {
                                 return;
                             }
@@ -519,7 +519,7 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                             factionsMap: { other: true },
                             tagText: serverName.length > 0 ? `::${serverName}::` : `:::${channelName}:::`,
                             tagFaction: 'other',
-                            noOthersInclude,
+                            noOthersInclude: false,
                             noPublicInclude: true,
                             noInternationalInclude: true,
                             wlOverride: usuallyWl,
@@ -702,7 +702,7 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                         tagText,
                         tagFaction,
                         tagFactionSecondary: (onNpPublic && 'publicnp') || (onNpInternational && 'international') || undefined,
-                        noOthersInclude,
+                        noOthersInclude: true, // noOthersInclude
                         noPublicInclude: !onNpPublic,
                         noInternationalInclude: !onNpInternational,
                         wlOverride: usuallyWl,
