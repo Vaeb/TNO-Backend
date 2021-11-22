@@ -1508,11 +1508,11 @@ export const npCharacters: NpCharacters = {
     ],
     KristoferYee: [
         { name: 'Jay Que', factions: ['Rooster'], displayName: 0 },
-        { name: 'Ka Chao', displayName: 0 },
+        { name: '[Deputy] Ka Chao', factions: ['Police'], displayName: 2 },
     ],
     KrisTWOfer: [
         { name: 'Jay Que', factions: ['Rooster'], displayName: 0 },
-        { name: 'Ka Chao', displayName: 0 },
+        { name: '[Deputy] Ka Chao', factions: ['Police'], displayName: 2 },
     ],
     kritacul: [
         { name: 'Devon "Dev" Jones', factions: ['GSF'] },
