@@ -211,7 +211,7 @@ export const npCharacters: NpCharacters = {
     Armeeof1: [
         { name: 'Milton Pointdexter' },
     ],
-    Ash_on_LoL: [
+    ash: [
         { name: 'Ash Ketchup', assumeChar: true },
     ],
     Ashi: [
