@@ -1527,7 +1527,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Natalia Omar' },
     ],
     Kyle: [
-        { name: '[Sheriff] Kyle Pred', factions: ['Police'], assumeServer: 'whitelist' },
+        { name: '[Deputy] Kyle Pred', factions: ['Police'], assumeServer: 'whitelist' },
         { name: '[Officer] Kyle Pred', factions: ['Police'], assumeServer: 'public' },
         { name: 'Dominic Toretti', displayName: 0, assumeServer: 'public' },
         { name: 'Jaguar Toretti', displayName: 0 },
