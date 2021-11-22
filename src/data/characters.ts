@@ -917,7 +917,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Tyrell Fresh', factions: ['SSB'], leader: true, displayName: 0 },
     ],
     Frynaut: [
-        { name: 'Kratos Of Sparta', nicknames: ['God of War', 'God'] },
+        { name: 'Kratos Of Sparta', factions: ['Rooster'], nicknames: ['God of War', 'God'] },
     ],
     fuslie: [
         { name: 'April Fooze', displayName: 1, assumeServer: 'whitelist' },
