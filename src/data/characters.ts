@@ -264,6 +264,9 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Dave Bird', factions: ['Police'], assumeServer: 'public' },
         { name: 'Nash Mastersin', displayName: 1, assumeServer: 'whitelist' },
     ],
+    baguettegirI: [
+        { name: 'Ange VanLaeken', factions: ['Prison'], nicknames: ['French Girl', 'French'] },
+    ],
     Baki961: [
         { name: 'Yoshimoto Nakanishi', assumeServer: 'whitelist' },
         { name: '[Officer] Fernando Diego Pablo Juan Esteban Luis Cortez Bonanza II', factions: ['Police'], displayName: 1, assumeServer: 'public' },
