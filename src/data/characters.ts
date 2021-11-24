@@ -699,6 +699,9 @@ export const npCharacters: NpCharacters = {
     DisbeArex: [
         { name: 'Oki Doki', factions: ['Burger Shot'], displayName: 0 },
     ],
+    DisguisedToast: [
+        { name: 'Amon Gus', displayName: 0 },
+    ],
     DKane: [
         { name: 'Cletus McCoy' },
     ],
