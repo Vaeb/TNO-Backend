@@ -1795,7 +1795,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Dispatch] Jessica Easton', factions: ['Police'] },
     ],
     MeMayoi: [
-        { name: 'Yoi Tsukita', factions: ['Rooster'], assume: 'assumeOther' },
+        { name: 'Yoi Tsukita', assume: 'assumeOther' },
     ],
     Meraldje: [
         { name: 'Jaylen Carter', factions: ['Street Team', 'Chang Gang'], nicknames: ['LampPost', 'Lamp Post'], displayName: 1 },
