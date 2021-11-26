@@ -128,6 +128,7 @@ export const npCharacters: NpCharacters = {
     ],
     Airborne: [
         { name: 'Dennis LaBarre', factions: ['DoJ'] },
+        { name: '[Officer] Blaine Miller', factions: ['Police'], nicknames: ['Cow Killer'] },
         { name: 'Unity', nicknames: ['Cat'] },
     ],
     akaMONKEY: [
