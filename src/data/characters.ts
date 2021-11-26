@@ -1394,7 +1394,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Arush', factions: ['GSF'] },
     ],
     Kate: [
-        { name: 'Nancy Drew', factions: ['Stable', 'Britney Gang'] },
+        { name: 'Nancy Drew', factions: ['Britney Gang'] },
     ],
     KatFires: [
         { name: 'Novah Walker', factions: ['Chang Gang'] },
