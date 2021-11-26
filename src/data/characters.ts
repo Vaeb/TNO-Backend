@@ -165,6 +165,9 @@ export const npCharacters: NpCharacters = {
     AlyPlayNinja: [
         { name: '[Officer] Amelia Frost', factions: ['Police'] },
     ],
+    amsyz: [
+        { name: 'Zayn Ahmed', factions: ['BSK'], displayName: 0 },
+    ],
     AnarchoSyn: [
         { name: 'Hess Blade', factions: ['Rooster'] },
     ],
