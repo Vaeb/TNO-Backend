@@ -55,6 +55,7 @@ export const npFactionsMeta = {
     allnopixel: 'All NoPixel',
     alltwitch: 'All Twitch',
     othernp: 'Other NP',
+    whitelistnp: 'Whitelist NP',
     publicnp: 'Public NP',
     international: 'International NP',
 } as const;

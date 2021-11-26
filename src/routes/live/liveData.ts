@@ -393,7 +393,7 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                 // const useTextColor = '#000';
                 // const useColors = darkMode ? useColorsDark : useColorsLight;
                 const metaFactions: FactionMini[] = ['allnopixel', 'alltwitch'];
-                // const npMetaFactions: FactionMini[] = ['allnopixel', 'alltwitch', 'othernp', 'publicnp', 'international'];
+                // const npMetaFactions: FactionMini[] = ['allnopixel', 'alltwitch', 'othernp', 'whitelistnp', 'publicnp', 'international'];
                 const isMetaFaction = metaFactions.includes(factionName);
                 // const isNpMetaFaction = npMetaFactions.includes(factionName);
                 // const minViewersUse = isNpMetaFaction ? minViewers : 3;
@@ -612,6 +612,7 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                         onServer = assumeServer;
                     }
 
+                    const onNpWhitelist = onServer === 'whitelist';
                     const onNpPublic = onServer === 'public';
                     const onNpInternational = onServer === 'international';
 
@@ -621,6 +622,8 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                     if (allowStream === false) {
                         if (factionName === 'othernp') {
                             allowStream = !nowCharacter && !hasFactions && !hasCharacters;
+                        } else if (factionName === 'whitelistnp') {
+                            allowStream = onNpWhitelist;
                         } else if (factionName === 'publicnp') {
                             allowStream = onNpPublic;
                         } else if (factionName === 'international') {
@@ -711,6 +714,7 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
 
                     for (const faction of activeFactions) factionCount[faction]++;
                     factionCount.allnopixel++;
+                    if (onNpWhitelist) factionCount.whitelistnp++;
                     if (onNpPublic) factionCount.publicnp++;
                     if (onNpInternational) factionCount.international++;
                     npStreams.push(stream);
