@@ -694,6 +694,8 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                         tagText = `${serverName}`;
                     }
 
+                    if (onNpWhitelist) activeFactions.push('whitelistnp');
+
                     const stream: Stream = {
                         ...baseStream,
                         rpServer: serverName,
