@@ -2197,6 +2197,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Lacari Anemay' },
     ],
     pokimane: [
+        { name: 'Jolie Paul', displayName: 0 },
         { name: 'Celine LaCroix' },
     ],
     Polaflex: [
