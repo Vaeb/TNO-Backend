@@ -1338,6 +1338,7 @@ export const npCharacters: NpCharacters = {
     ],
     Juggs: [
         { name: 'Lenny Large', nicknames: [reg(/\blenny/)], displayName: 0 },
+        { name: 'Sidwig Crawshank', nicknames: [reg(/\bsidwig/)], displayName: 0 },
         { name: 'Traevon Williams', nicknames: ['The Barber'], displayName: 3 },
     ],
     JukeBoxEM: [
