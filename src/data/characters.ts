@@ -628,6 +628,9 @@ export const npCharacters: NpCharacters = {
     cyter: [
         { name: 'Demetrius "Draco" Jones', factions: ['SSB'], leader: true, nicknames: ['DJ'] },
     ],
+    D4N1ELLE: [
+        { name: 'Quimbley Hayabusa', factions: ['Rooster'], nicknames: ['Q'], displayName: 0 },
+    ],
     Dadulio: [
         { name: '[Deputy] Franky Dulio', factions: ['Police'] },
     ],
