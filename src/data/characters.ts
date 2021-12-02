@@ -248,7 +248,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Austin Creed', displayName: 0 },
     ],
     Autumn: [
-        { name: 'Autumn Rhodes', assumeServer: 'whitelist' },
+        { name: 'Autumn Rhodes', factions: ['Chang Gang'], assumeServer: 'whitelist' },
         { name: '[Officer] May Maple', factions: ['Police'] },
         { name: '[Ranger] May Maple', factions: ['Police'], assumeServer: 'public' },
     ],
@@ -1507,7 +1507,7 @@ export const npCharacters: NpCharacters = {
     ],
     koil: [
         { name: '[Trooper] Kael Soze', factions: ['Police'], highCommand: true, leader: true, nicknames: ['are illegal'] },
-        { name: 'Francis Francer', nicknames: ['franic', 'franer', 'bwo', reg(/\bfr.n.{1,2}s/)], displayName: 0 },
+        { name: 'Francis Francer', factions: ['Chang Gang'], nicknames: ['franic', 'franer', 'bwo', reg(/\bfr.n.{1,2}s/)], displayName: 0 },
         { name: '[Senator] Steven Barosi', factions: ['DoJ'], leader: true, nicknames: ['Senate', 'Steve'], displayName: 1 },
         { name: 'Otto Delmar', nicknames: ['race', 'racing'] },
         { name: '[Development] Koil', factions: ['Development'], nicknames: ['Code'] },
