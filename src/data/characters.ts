@@ -1541,7 +1541,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Natalia Omar' },
     ],
     Kyle: [
-        { name: '[Sheriff] Kyle Pred', factions: ['Police'], assumeServer: 'whitelist' },
+        { name: '[Sheriff] Kyle Pred', factions: ['Police'], leader: true, assumeServer: 'whitelist' },
         { name: '[Officer] Kyle Pred', factions: ['Police'], assumeServer: 'public' },
         { name: 'Dominic Toretti', displayName: 0, assumeServer: 'public' },
         { name: 'Jaguar Toretti', displayName: 0 },
@@ -1751,7 +1751,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Dougie Mane', factions: ['NBC'], displayName: 0 },
     ],
     Mantis: [
-        { name: '[Officer] Domenic Toretti', factions: ['Police'] },
+        { name: '[Sheriff] Domenic Toretti', factions: ['Police'], leader: true },
         { name: 'Jackson Caldwell', factions: ['Frat'], displayName: 0 },
         { name: 'Ike Block', factions: ['ASRR'], displayName: 0 },
         { name: '[Lawyer] Jerry Callow', factions: ['DoJ'], displayName: 1 },
