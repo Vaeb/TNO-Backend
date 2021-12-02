@@ -2195,6 +2195,7 @@ export const npCharacters: NpCharacters = {
     ],
     pokelawls: [
         { name: 'Bogg Dann' },
+        { name: 'Bart Batchest', displayName: 0 },
         { name: 'Lacari Anemay' },
     ],
     pokimane: [
