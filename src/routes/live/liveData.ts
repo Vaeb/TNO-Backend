@@ -192,7 +192,7 @@ for (const [streamer, characters] of Object.entries(npCharacters)) {
         }
         char.displayName = `${char.leader ? `♛${displayNameTitle ? '' : ' '}` : ''}${displayNameTitle}${displayNameChar}`.trim();
 
-        console.log(char.displayName);
+        // console.log(char.displayName);
 
         nameRegAll.push(`\\b(?:${parsedNames.join('|')})\\b`);
         if (char.factions.includes('development') && streamerLower !== 'dwjft') { // Include regex for dev faction
