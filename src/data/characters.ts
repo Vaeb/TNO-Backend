@@ -3102,6 +3102,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Salvaje "Savage" Mendoza', factions: ['Vagos'] },
     ],
     YoinksOG: [
+        { name: '[Development] YoinksOG', factions: ['Development'], nicknames: ['3D', 'Clothes', 'Clothing'] },
         { name: 'Doug Canada' },
     ],
     yooApollo: [
