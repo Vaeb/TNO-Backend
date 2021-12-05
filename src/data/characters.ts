@@ -2935,7 +2935,7 @@ export const npCharacters: NpCharacters = {
     ],
     uhSnow: [
         { name: '[Trooper] Jackie Snow', factions: ['Police'] },
-        { name: 'Mikey Mersion' },
+        { name: 'Mikey Mersion', displayName: 0 },
     ],
     Umadbrahlive: [
         { name: 'Sergio Lopez', factions: ['Marabunta'], leader: true },
