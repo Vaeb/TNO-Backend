@@ -2429,7 +2429,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Olof Gunnarsson', factions: ['Police'] },
     ],
     SayeedBlack: [
-        { name: 'Arush Patel "Speedy" Santana', factions: ['Vagos'], leader: true, nicknames: ['El Jefe'] },
+        { name: 'Arush Patel "Speedy" Santana', factions: ['Vagos', 'Cleanbois'], leader: true, nicknames: ['El Jefe'] },
         { name: 'Sayeed White', factions: ['DoC'], nicknames: ['Mr. White'], displayName: 3 },
     ],
     scotism: [
