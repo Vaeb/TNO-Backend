@@ -1143,6 +1143,9 @@ export const npCharacters: NpCharacters = {
     ilenol: [
         { name: 'Max Larson', factions: ['Rooster'], displayName: 0 },
     ],
+    illwac: [
+        { name: 'Bob Moss', factions: ['Burger Shot'], displayName: 0 },
+    ],
     ImClammy: [
         { name: 'AK', factions: ['SSB'], assumeServer: 'whitelist' },
         { name: '[Deputy] Derek Monroe', factions: ['Police'], displayName: 2 },
