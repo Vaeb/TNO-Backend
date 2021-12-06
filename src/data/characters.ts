@@ -1011,6 +1011,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Igor Skovacic' },
         { name: 'Terminator T777', displayName: 0 },
         { name: 'Big M', displayName: 0 },
+        { name: 'Earl ?', displayName: 1 },
         { name: 'Daequan "Double D" DeMarco', factions: ['SSB'] },
         { name: 'RayRay' },
         { name: 'Maury Mersion', factions: ['Mersions'] },
