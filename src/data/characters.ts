@@ -2217,6 +2217,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Adam "AP" Peterson', factions: ['Tuner Shop'], displayName: 0 },
     ],
     Pons: [
+        { name: 'Harry Martinez', displayName: 0 },
         { name: '[Deputy] Otis Tucker', factions: ['Police'] },
         { name: '[Officer] Chet Manley', factions: ['Police'], displayName: 1, assume: 'assumeOther' },
         { name: '[Officer] Bodean Tucker', factions: ['Police'], nicknames: ['Bo'] },
