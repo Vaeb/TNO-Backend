@@ -645,6 +645,7 @@ export const npCharacters: NpCharacters = {
     ],
     Dark0verseer: [
         { name: '[Development] Dark0', factions: ['Development'], nicknames: ['3D', 'manor'] },
+        { name: 'Alfred D. Arko', nicknames: [reg(/\bNoPixel.Dev/)] },
     ],
     DarkestRoast_: [
         { name: '? Scotts', factions: ['DoC'], displayName: 2 },
