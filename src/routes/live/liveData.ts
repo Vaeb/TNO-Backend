@@ -558,8 +558,9 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                         for (const char of characters) {
                             const matchPositions = [...titleParsed.matchAll(char.nameReg)];
                             const numResults = matchPositions.length;
+                            const devFactionWeight = char.factions[0] === 'development' ? 2e4 : 0;
                             const serverMatchWeight = (onServerDetected && char.assumeServer !== onServer && realAssumes.includes(char.assumeServer)) ? 1e4 : 0;
-                            const lowIndex = numResults ? matchPositions[0].index! + serverMatchWeight : -1;
+                            const lowIndex = numResults ? matchPositions[0].index! + serverMatchWeight + devFactionWeight : -1;
                             if (lowIndex > -1 && (lowIndex < lowestPos || (lowIndex === lowestPos && numResults > maxResults))) {
                                 lowestPos = lowIndex;
                                 maxResults = numResults;
