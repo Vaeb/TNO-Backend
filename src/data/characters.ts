@@ -2666,6 +2666,9 @@ export const npCharacters: NpCharacters = {
     Striking_Fast: [
         { name: 'Gerard "Dewey" Hawthorne', nicknames: ['Dewie'], factions: ['Rooster'] },
     ],
+    StrikingContact: [
+        { name: 'Seano "The Chemist" Blackthorne', nicknames: ['Chemist'] },
+    ],
     Stuply: [
         { name: 'Salvatore "Big Pussy" Tamburlini' },
     ],
