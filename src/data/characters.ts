@@ -222,7 +222,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Ash Ketchup', assumeChar: true },
     ],
     Ashi: [
-        { name: 'Fiona Stewart', nicknames: ['Fi-ho-na', 'Fifi'], factions: ['Rooster'] },
+        { name: 'Fiona Stewart', nicknames: ['Fi-ho-na', 'Fifi'], factions: ['LARPers', 'Rooster'] },
         { name: 'Annie May', displayName: 0 },
     ],
     ashlynn: [
@@ -2709,7 +2709,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Dreah Johnson', factions: ['Britney Gang', 'Rooster'] },
     ],
     Svennoss: [
-        { name: 'Barry Svensson', factions: ['Pegasus', 'Rooster'] },
+        { name: 'Barry Svensson', factions: ['LARPers', 'Rooster'] },
     ],
     SwaggerSouls: [
         { name: 'Ace Hull', displayName: 0 },
