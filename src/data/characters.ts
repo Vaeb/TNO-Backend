@@ -123,6 +123,9 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Melvin Graves', factions: ['Police'], displayName: 0, assumeServer: 'public' },
         { name: 'Jase Dawson', displayName: 0 },
     ],
+    aimbotcalvin: [
+        { name: '? ?', factions: ['LARPers', 'Cleanbois'] },
+    ],
     aintitadam: [
         { name: 'Scruffy Doodle', factions: ['Burger Shot'] },
     ],
