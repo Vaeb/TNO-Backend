@@ -2888,8 +2888,8 @@ export const npCharacters: NpCharacters = {
     ToastRP: [
         { name: 'Paulie' },
     ],
-    Tobiii: [
-        { name: '[Development] Tobiii', factions: ['Development'] },
+    Tobii: [
+        { name: '[Development] Tobii', factions: ['Development'] },
     ],
     Trainwreckstv: [
         { name: 'Douglas "Doug Buck" Buck', displayName: 0 },
