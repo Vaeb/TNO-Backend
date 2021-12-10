@@ -1580,7 +1580,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Mary Mushkin', factions: ['Tuner Shop'], nicknames: ['Red Devil', 'R3d Devil'], displayName: 0 },
     ],
     KYR_SP33DY: [
-        { name: 'Moe Litman', displayName: 0 },
+        { name: 'Moe Litman', displayName: 0, assume: 'assumeOther' },
     ],
     kytolee: [
         { name: 'Juan Cuervo', factions: ['Vagos'], displayName: 0 },
