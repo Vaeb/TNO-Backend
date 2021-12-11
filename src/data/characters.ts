@@ -219,10 +219,10 @@ export const npCharacters: NpCharacters = {
         { name: 'Milton Pointdexter' },
     ],
     ArsenaI: [
-        { name: '[Deputy Mayor] James Arsenal', factions: ['DoJ'], displayName: 2 },
+        { name: '[D-Mayor] James Arsenal', factions: ['DoJ'], displayName: 2 },
     ],
     ash: [
-        { name: '[Deputy Mayor] Ash Ketchup', factions: ['DoJ'], displayName: 1, assumeChar: true },
+        { name: '[D-Mayor] Ash Ketchup', factions: ['DoJ'], displayName: 1, assumeChar: true },
     ],
     Ashi: [
         { name: 'Fiona Stewart', nicknames: ['Fi-ho-na', 'Fifi'], factions: ['LARPers', 'Cleanbois', 'Rooster'] },
@@ -1814,7 +1814,7 @@ export const npCharacters: NpCharacters = {
     ],
     MEKABEAR: [
         { name: '[Deputy] Amber Gold', factions: ['Police'] },
-        { name: '[Deputy Mayor] Erin Cox', factions: ['DoJ'], nicknames: ['c:', 'E R I N', 'C O X'], displayName: 1 },
+        { name: '[D-Mayor] Erin Cox', factions: ['DoJ'], nicknames: ['c:', 'E R I N', 'C O X'], displayName: 1 },
         { name: 'Ari Tistu', displayName: 0 },
     ],
     Melly_Mae: [
@@ -1865,7 +1865,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Michael Rodgers', factions: ['Police'], assume: 'assumeNpNoOther' },
     ],
     MikkisaurusRex: [
-        { name: '[Deputy Mayor] Jessica Hilton', factions: ['DoJ', 'Medical'] },
+        { name: '[D-Mayor] Jessica Hilton', factions: ['DoJ', 'Medical'] },
     ],
     Milsera: [
         { name: 'Mono Block', factions: ['ASRR'] },
@@ -2186,7 +2186,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Peener Pogue', factions: ['Rooster'] },
     ],
     Pezz: [
-        { name: '[Deputy Mayor] Pez Speedwagon', factions: ['BBMC', 'DoJ'], displayName: 1 },
+        { name: '[D-Mayor] Pez Speedwagon', factions: ['BBMC', 'DoJ'], displayName: 1 },
         { name: 'Pezzy Pee' },
     ],
     Philderbeast: [
@@ -2857,7 +2857,7 @@ export const npCharacters: NpCharacters = {
         { name: '[EMS] Chad Chaddington III', factions: ['Medical'] },
     ],
     theLGX: [
-        { name: '[Deputy Mayor] Bryce Miller', factions: ['DoJ'], nicknames: ['BDawg'], displayName: 1, assumeServer: 'whitelist' },
+        { name: '[D-Mayor] Bryce Miller', factions: ['DoJ'], nicknames: ['BDawg'], displayName: 1, assumeServer: 'whitelist' },
         { name: 'Diego Marquez' },
         { name: 'Dave Myers', displayName: 0 },
         { name: 'Roland Nelson', assumeServer: 'whitelist' },
