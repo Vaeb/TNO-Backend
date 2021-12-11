@@ -1311,7 +1311,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Michael Murphy', factions: ['Police'] },
     ],
     Jogiiee: [
-        { name: '[Mayor] Emma Gaine', factions: ['DoJ', 'Medical'] },
+        { name: '[Mayor] Emma Gaine', factions: ['DoJ', 'Medical'], displayName: 1 },
         { name: 'Jessie Jugg' },
         { name: '[Dispatch] Penny Schildt', factions: ['Police'] },
         { name: 'Eva Wall' },
