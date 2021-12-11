@@ -218,8 +218,11 @@ export const npCharacters: NpCharacters = {
     Armeeof1: [
         { name: 'Milton Pointdexter' },
     ],
+    ArsenaI: [
+        { name: 'James Arsenal', factions: ['DoJ'], displayName: 0 },
+    ],
     ash: [
-        { name: 'Ash Ketchup', assumeChar: true },
+        { name: 'Ash Ketchup', factions: ['DoJ'], assumeChar: true },
     ],
     Ashi: [
         { name: 'Fiona Stewart', nicknames: ['Fi-ho-na', 'Fifi'], factions: ['LARPers', 'Cleanbois', 'Rooster'] },
@@ -236,7 +239,7 @@ export const npCharacters: NpCharacters = {
         { name: '[EMS] Boba Stone', factions: ['Medical'] },
     ],
     AuriEllis: [
-        { name: 'Ursula Leichenberg', factions: ['DoJ', 'Burger Shot', 'News'], displayName: 1 },
+        { name: 'Ursula Leichenberg', factions: ['Burger Shot', 'News'], displayName: 1 },
         { name: 'Gracie ?' },
     ],
     aurvinR: [
@@ -1811,7 +1814,7 @@ export const npCharacters: NpCharacters = {
     ],
     MEKABEAR: [
         { name: '[Deputy] Amber Gold', factions: ['Police'] },
-        { name: 'Erin Cox', nicknames: ['c:', 'E R I N', 'C O X'] },
+        { name: 'Erin Cox', factions: ['DoJ'], nicknames: ['c:', 'E R I N', 'C O X'] },
         { name: 'Ari Tistu', displayName: 0 },
     ],
     Melly_Mae: [
@@ -1862,7 +1865,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Michael Rodgers', factions: ['Police'], assume: 'assumeNpNoOther' },
     ],
     MikkisaurusRex: [
-        { name: '[EMS] Jessica Hilton', factions: ['Medical'] },
+        { name: '[EMS] Jessica Hilton', factions: ['Medical', 'DoJ'] },
     ],
     Milsera: [
         { name: 'Mono Block', factions: ['ASRR'] },
@@ -2377,7 +2380,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Maggie Dean', factions: ['Police'] },
     ],
     Roxmiral: [
-        { name: 'Sherry Paie', factions: ['DoJ'], displayName: 1, assumeServer: 'whitelist' },
+        { name: 'Sherry Paie', displayName: 1, assumeServer: 'whitelist' },
         { name: '[Ranger] Sherry Paie', factions: ['Police'], displayName: 1, assumeServer: 'public' },
         { name: 'Ruby Morris' },
         { name: 'Nikki Drewel', factions: ['DoC'], nicknames: ['Drools'], displayName: 0 },
@@ -2854,7 +2857,7 @@ export const npCharacters: NpCharacters = {
         { name: '[EMS] Chad Chaddington III', factions: ['Medical'] },
     ],
     theLGX: [
-        { name: 'Bryce Miller', nicknames: ['BDawg'], assumeServer: 'whitelist' },
+        { name: 'Bryce Miller', factions: ['DoJ'], nicknames: ['BDawg'], assumeServer: 'whitelist' },
         { name: 'Diego Marquez' },
         { name: 'Dave Myers', displayName: 0 },
         { name: 'Roland Nelson', assumeServer: 'whitelist' },
