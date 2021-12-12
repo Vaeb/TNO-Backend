@@ -489,6 +489,9 @@ export const npCharacters: NpCharacters = {
     CaussiePreacher: [
         { name: '[EMS] Jack Preacher', factions: ['Medical'] },
     ],
+    CazeyTV: [
+        { name: 'Sam Simmons', factions: ['NBC'], displayName: 0 },
+    ],
     CFirst93: [
         { name: 'Mac Jones', factions: ['GSF'], nicknames: ['MJ'], displayName: 0 },
     ],
