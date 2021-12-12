@@ -702,6 +702,9 @@ export const npCharacters: NpCharacters = {
     devolore: [
         { name: '[Officer] Cassius Kennedy', factions: ['Police'], nicknames: ['Cash'] },
     ],
+    dew_ski: [
+        { name: 'Alem Barghouthi', factions: ['NBC'], displayName: 0 },
+    ],
     dibitybopty: [
         { name: '[Officer] Gus Gorman', factions: ['Police'] },
     ],
