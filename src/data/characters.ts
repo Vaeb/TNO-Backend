@@ -1926,6 +1926,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Lenny Hawk', factions: ['Police'], nicknames: ['Renegade'], displayName: 1, assume: 'assumeNp' },
         { name: 'Bernice "Shadowlord" Caldershot', factions: ['LARPers'] },
         { name: 'Ro Block', factions: ['ASRR'], displayName: 0 },
+        { name: 'Mitch Moonmoon', nicknames: [reg(/\witch\.tv\/moonmoon\b/)], displayName: 0 },
         { name: 'Maximilian "Yung Dab" Thoroughbred', nicknames: ['The "Gnome"', 'Yung', 'Dab', 'Max'], displayName: 0 },
     ],
     Moose_Taffy: [
