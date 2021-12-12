@@ -954,6 +954,7 @@ export const npCharacters: NpCharacters = {
     ],
     Garek: [
         { name: 'Burt "Gloryon" Beans', factions: ['LARPers', 'Cleanbois', 'Rooster'], nicknames: ['Cleric'] },
+        { name: 'Garek', displayName: 1 },
     ],
     GattisTV: [
         { name: 'Carlos Guzman', factions: ['Vagos'], displayName: 0 },
