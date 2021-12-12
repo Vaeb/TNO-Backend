@@ -945,6 +945,7 @@ export const npCharacters: NpCharacters = {
     ],
     Fyzicul: [
         { name: 'Keith "Lando" Wanderlust', factions: ['LARPers', 'Cleanbois', 'Rooster'], nicknames: ['Stormborn', 'Shaman', 'Mountain Kingdom'], displayName: 0 },
+        { name: 'Fyz', nicknames: [reg(/self\W*insert/)], displayName: 1 },
     ],
     Gabz: [
         { name: '[Development] Gabz', factions: ['Development'], nicknames: ['3D'] },
