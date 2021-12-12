@@ -1569,6 +1569,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Marty Oldmen', displayName: 0 },
         { name: 'Lee Harvey Tinker', displayName: 0 },
         { name: 'Cop Killa', displayName: 0 },
+        { name: 'Kyle Kyle', nicknames: [reg(/self\W*insert/)], displayName: 1 },
         { name: 'Sigfried Porsche', nicknames: ['porshe'], displayName: 0 },
         { name: 'Hampton Brandon', nicknames: ['TTD', 'Ten Toes Down'] },
         { name: 'Tame "The Mandalorian" Saxon', nicknames: ['Mandolorian'] },
