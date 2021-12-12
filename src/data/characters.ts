@@ -2179,6 +2179,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Mike Block', factions: ['ASRR'], leader: true, displayName: 0 },
         { name: 'Chase Clouter', displayName: 0 },
         { name: 'Karen Karenly' },
+        { name: 'Robert Penta', nicknames: [reg(/self\W+insert/)], displayName: 0 },
         { name: 'Jane Obama', displayName: 0 },
     ],
     peruze: [
