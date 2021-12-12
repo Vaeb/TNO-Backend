@@ -2836,6 +2836,7 @@ export const npCharacters: NpCharacters = {
     ],
     TheChief1114: [
         { name: 'Fingle Dan', factions: ['Dans'] },
+        { name: 'Chief', displayName: 1 },
     ],
     TheDogfather82: [
         { name: 'Lucas "Wolfy" Frank', factions: ['SSB'] },
