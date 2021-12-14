@@ -109,7 +109,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Buck Stanton', displayName: 2 },
         { name: '[Officer] Dwayne Carter IV', factions: ['Police'], displayName: 2 },
         { name: 'Leland "LJ" Jones', factions: ['GSF', 'Pegasus'] },
-        { name: 'Taylor ?', factions: ['Self Insert'], displayName: 1 },
+        { name: 'Taylor Africansnowball', factions: ['Self Insert'], displayName: 0 },
     ],
     Afro: [
         { name: 'Dexx Martin', factions: ['GSF'], leader: true },
