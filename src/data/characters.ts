@@ -1395,6 +1395,7 @@ export const npCharacters: NpCharacters = {
     JustJamie: [
         { name: '[Officer] George Lawson', factions: ['Police'], nicknames: ['592'] },
         { name: 'Tommy Cruizer', factions: ['Tuner Shop'] },
+        { name: 'Jamie ?', nicknames: [reg(/self\W*insert/)], displayName: 1 },
     ],
     Kaceytron: [
         { name: 'Bobbi Jo', displayName: 0 },
