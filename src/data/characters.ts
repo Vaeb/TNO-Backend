@@ -1829,6 +1829,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Amber Gold', factions: ['Police'] },
         { name: '[D-Mayor] Erin Cox', factions: ['DoJ'], nicknames: ['c:', 'E R I N', 'C O X'], displayName: 1 },
         { name: 'Ari Tistu', displayName: 0 },
+        { name: 'Amber ?', nicknames: [reg(/self\W*insert/)], displayName: 1 },
     ],
     Melly_Mae: [
         { name: '[Dispatch] Jessica Easton', factions: ['Police'] },
