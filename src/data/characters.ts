@@ -1594,6 +1594,7 @@ export const npCharacters: NpCharacters = {
     kyliebitkin: [
         { name: '[Deputy] Brittany Angel', factions: ['Police'], nicknames: ['Angle', 'Captain'] },
         { name: 'Mary Mushkin', factions: ['Tuner Shop'], nicknames: ['Red Devil', 'R3d Devil'], displayName: 0 },
+        { name: 'Kylie Bitcoin', factions: ['Self Insert'], displayName: 1 },
     ],
     KYR_SP33DY: [
         { name: 'Moe Litman', displayName: 0, assume: 'assumeOther' },
