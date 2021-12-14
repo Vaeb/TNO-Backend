@@ -47,6 +47,7 @@ export const npFactionsReal = { // map: removed spaces + converted to lower case
     lunatix: 'Lunatix',
     marabunta: 'Marabunta',
     bsk: 'BSK',
+    selfinsert: 'Self Insert',
     gulaggang: 'Gulag Gang',
     podcast: 'Podcast',
 } as const;

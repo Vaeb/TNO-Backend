@@ -953,7 +953,7 @@ export const npCharacters: NpCharacters = {
     ],
     Fyzicul: [
         { name: 'Keith "Lando" Wanderlust', factions: ['LARPers', 'Cleanbois', 'Rooster'], nicknames: ['Stormborn', 'Shaman', 'Mountain Kingdom'], displayName: 0 },
-        { name: 'Fyz', nicknames: [reg(/self\W*insert/)], displayName: 1 },
+        { name: 'Fyz', factions: ['Self Insert'], displayName: 1 },
     ],
     Gabz: [
         { name: '[Development] Gabz', factions: ['Development'], nicknames: ['3D'] },
@@ -963,7 +963,7 @@ export const npCharacters: NpCharacters = {
     ],
     Garek: [
         { name: 'Burt "Gloryon" Beans', factions: ['LARPers', 'Cleanbois', 'Rooster'], nicknames: ['Cleric'] },
-        { name: 'Garek', displayName: 1 },
+        { name: 'Garek', factions: ['Self Insert'], displayName: 1 },
     ],
     GattisTV: [
         { name: 'Carlos Guzman', factions: ['Vagos'], displayName: 0 },
@@ -1026,7 +1026,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Jim Underwood', factions: ['Police'], nicknames: ['337'] },
         { name: '[Development] GTAWiseGuy', factions: ['Development', 'Tuner Shop'], nicknames: ['Handling', 'Fixes', 'Fixing', 'Tuning', reg(/\btuners?(?:\s*\w*)*leaks/)] },
         { name: 'Igor Skovacic' },
-        { name: 'Robin Williams', nicknames: [reg(/self\W*insert/)], displayName: 0 },
+        { name: 'Robin Williams', factions: ['Self Insert'], displayName: 0 },
         { name: 'Terminator T777', displayName: 0 },
         { name: 'Big M', displayName: 0 },
         { name: 'Earl ?', displayName: 1 },
@@ -1396,7 +1396,7 @@ export const npCharacters: NpCharacters = {
     JustJamie: [
         { name: '[Officer] George Lawson', factions: ['Police'], nicknames: ['592'] },
         { name: 'Tommy Cruizer', factions: ['Tuner Shop'] },
-        { name: 'Jamie ?', nicknames: [reg(/self\W*insert/)], displayName: 1 },
+        { name: 'Jamie ?', factions: ['Self Insert'], displayName: 1 },
     ],
     Kaceytron: [
         { name: 'Bobbi Jo', displayName: 0 },
@@ -1579,7 +1579,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Marty Oldmen', displayName: 0 },
         { name: 'Lee Harvey Tinker', displayName: 0 },
         { name: 'Cop Killa', displayName: 0 },
-        { name: 'Kyle Kyle', nicknames: [reg(/self\W*insert/)], displayName: 1 },
+        { name: 'Kyle Kyle', factions: ['Self Insert'], displayName: 1 },
         { name: 'Sigfried Porsche', nicknames: ['porshe'], displayName: 0 },
         { name: 'Hampton Brandon', nicknames: ['TTD', 'Ten Toes Down'] },
         { name: 'Tame "The Mandalorian" Saxon', nicknames: ['Mandolorian'] },
@@ -1829,7 +1829,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Amber Gold', factions: ['Police'] },
         { name: '[D-Mayor] Erin Cox', factions: ['DoJ'], nicknames: ['c:', 'E R I N', 'C O X'], displayName: 1 },
         { name: 'Ari Tistu', displayName: 0 },
-        { name: 'Amber ?', nicknames: [reg(/self\W*insert/)], displayName: 1 },
+        { name: 'Amber ?', factions: ['Self Insert'], displayName: 1 },
     ],
     Melly_Mae: [
         { name: '[Dispatch] Jessica Easton', factions: ['Police'] },
@@ -1940,7 +1940,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Lenny Hawk', factions: ['Police'], nicknames: ['Renegade'], displayName: 1, assume: 'assumeNp' },
         { name: 'Bernice "Shadowlord" Caldershot', factions: ['LARPers'] },
         { name: 'Ro Block', factions: ['ASRR'], displayName: 0 },
-        { name: 'Mitch Moonmoon', nicknames: [reg(/\witch\.tv\/moonmoon\b/)], displayName: 0 },
+        { name: 'Mitch Moonmoon', factions: ['Self Insert'], nicknames: [reg(/\witch\.tv\/moonmoon\b/)], displayName: 0 },
         { name: 'Maximilian "Yung Dab" Thoroughbred', nicknames: ['The "Gnome"', 'Yung', 'Dab', 'Max'], displayName: 0 },
     ],
     Moose_Taffy: [
@@ -2195,7 +2195,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Mike Block', factions: ['ASRR'], leader: true, displayName: 0 },
         { name: 'Chase Clouter', displayName: 0 },
         { name: 'Karen Karenly' },
-        { name: 'Robert Penta', nicknames: [reg(/self\W*insert/)], displayName: 0 },
+        { name: 'Robert Penta', factions: ['Self Insert'], displayName: 0 },
         { name: 'Jane Obama', displayName: 0 },
     ],
     peruze: [
@@ -2851,7 +2851,7 @@ export const npCharacters: NpCharacters = {
     ],
     TheChief1114: [
         { name: 'Fingle Dan', factions: ['Dans'] },
-        { name: 'Chief', displayName: 1 },
+        { name: 'Chief', factions: ['Self Insert'], displayName: 1 },
     ],
     TheDogfather82: [
         { name: 'Lucas "Wolfy" Frank', factions: ['SSB'] },
