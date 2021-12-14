@@ -50,6 +50,7 @@ export const npFactionsReal = { // map: removed spaces + converted to lower case
     selfinsert: 'Self Insert',
     gulaggang: 'Gulag Gang',
     podcast: 'Podcast',
+    onelife: 'One Life',
 } as const;
 
 export const npFactionsMeta = {

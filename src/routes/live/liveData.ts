@@ -86,7 +86,7 @@ const toFactionMini = (faction: string) => faction.toLowerCase().replace(' ', ''
 for (const [streamer, characters] of Object.entries(npCharacters)) {
     const streamerLower = streamer.toLowerCase();
 
-    if (characters.length > 0) {
+    /* if (characters.length > 0) {
         // const usuallyWl = !characters[0].assumeServer || characters[0].assumeServer === 'whitelist';
         const permathonCharDefault = {
             name: '? "< One-Life Character >" ?',
@@ -96,7 +96,7 @@ for (const [streamer, characters] of Object.entries(npCharacters)) {
         // const permathonCharPublic = { ...permathonCharWl, assumeServer: 'public' } as Character;
         // const permathonCharInternational = { ...permathonCharWl, assumeServer: 'international' } as Character;
         characters.push(permathonCharDefault); // '/\\bone[\\s-]life[\\s-]charac/'
-    }
+    } */
 
     const foundOthers: { [key in AssumeOther]?: boolean } = {};
 
