@@ -1082,6 +1082,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Jenny Hawk', displayName: 0 },
         { name: 'Onya Block', factions: ['ASRR'], displayName: 0 },
         { name: 'Debbie Hopper', displayName: 0 },
+        { name: 'Kristen Rules', factions: ['Self Insert'], displayName: 0 },
         { name: 'Griselda "Zelda" Harth', factions: ['HOA'] },
         { name: 'Olga Sazkaljovich', factions: ['Pegasus'], nicknames: ['Olgaa', 'Olgaaa', 'Olgaaaa'] },
     ],
