@@ -429,7 +429,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Michael Myers', displayName: 0 },
         { name: 'Mentle Block', factions: ['ASRR'] },
         { name: 'Sasuke Johnson' },
-        { name: 'Jack Napiere', nicknames: ['Sheriff', 'Pred'], displayName: 0 },
+        { name: 'Jack Napiere', nicknames: ['"Kyle Pred"', 'Sheriff', 'Pred'], displayName: 3 },
         { name: 'Bojack Horseman', displayName: 0 },
         { name: 'Bob Penta', displayName: 0 },
         { name: '? "TTS" ?' },
