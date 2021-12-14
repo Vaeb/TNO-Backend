@@ -1399,7 +1399,7 @@ export const npCharacters: NpCharacters = {
     JustJamie: [
         { name: '[Officer] George Lawson', factions: ['Police'], nicknames: ['592'] },
         { name: 'Tommy Cruizer', factions: ['Tuner Shop'] },
-        { name: 'Jamie ?', factions: ['Self Insert'], displayName: 1 },
+        { name: 'Jamie Bee', factions: ['Self Insert'], displayName: 0 },
     ],
     Kaceytron: [
         { name: 'Bobbi Jo', displayName: 0 },
