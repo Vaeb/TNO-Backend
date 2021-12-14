@@ -3172,6 +3172,7 @@ export const npCharacters: NpCharacters = {
     ],
     Zerkaa: [
         { name: 'Tommy Tate', factions: ['Mandem'], leader: true, nicknames: ['Tommy T'], displayName: 3 },
+        { name: 'Josh Zerker', factions: ['Self Insert'], displayName: 0 },
     ],
     Zettafrag: [
         { name: 'Kimberly Daniels', factions: ['Condemned MC'], displayName: 0 },
