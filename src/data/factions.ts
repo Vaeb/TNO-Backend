@@ -59,7 +59,7 @@ export const npFactionsRegex = {
     tunershop: /\btun(?:er|a)[\s\-]*shop\b|\b6str\W*tun(?:er|a)\b/i,
     larpers: /\blarp\b|\blarper|the\s*guild/i,
     selfinsert: /self\W*insert/i,
-    onelife: /\bperma?thon|\bone[\s-]life/i,
+    onelife: /\bperma?thon|\b(?:one|1)[\s\-_.]*life/i,
     police: noLater(noFormer(
         mergeRegex([
             /(?<!\bthen\b.*|!|\bformer\b[\s\w]+|corrections\s+|\bdoc\s+|\bmedic\w*\s+|\bems\s+)/i,

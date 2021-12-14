@@ -203,7 +203,7 @@ export const npCharacters: NpCharacters = {
     APPLESHAMPOO: [
         { name: '[Dispatch] Nancy Ree', factions: ['Police'], displayName: 1, assumeServer: 'whitelist' },
         { name: '[EMS] Gioconda "Gio" Coppola', factions: ['Medical'], nicknames: ['T-17'] },
-        { name: 'Apple Schampu', factions: ['Self Insert'], displayName: 0 },
+        { name: 'Apple Schampu', factions: ['Self Insert', 'One Life'], displayName: 0 },
         { name: '[Officer] Gio Coppola', factions: ['Police'], nicknames: ['466'], displayName: 1, assumeServer: 'public' },
     ],
     appyturk: [
@@ -483,6 +483,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Lydia Vale', factions: ['Police'] },
         { name: 'Summer Mersion', factions: ['GSF'], displayName: 0 },
         { name: 'Natya Block', factions: ['ASRR'], displayName: 0 },
+        { name: 'Catrin Fawr', factions: ['Self Insert', 'One Life'], displayName: 0 },
         { name: "[Lawyer] Shannon O'Banion", factions: ['DoJ'], displayName: 0 },
     ],
     Cathie: [
@@ -1029,7 +1030,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Jim Underwood', factions: ['Police'], nicknames: ['337'] },
         { name: '[Development] GTAWiseGuy', factions: ['Development', 'Tuner Shop'], nicknames: ['Handling', 'Fixes', 'Fixing', 'Tuning', reg(/\btuners?(?:\s*\w*)*leaks/)] },
         { name: 'Igor Skovacic' },
-        { name: 'Robin Williams', factions: ['Self Insert'], displayName: 0 },
+        { name: 'Robin Williams', factions: ['Self Insert', 'One Life'], displayName: 0 },
         { name: 'Terminator T777', displayName: 0 },
         { name: 'Big M', displayName: 0 },
         { name: 'Earl ?', displayName: 1 },
@@ -1583,7 +1584,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Marty Oldmen', displayName: 0 },
         { name: 'Lee Harvey Tinker', displayName: 0 },
         { name: 'Cop Killa', displayName: 0 },
-        { name: 'Kyle Kyle', factions: ['Self Insert'], displayName: 1 },
+        { name: 'Kyle Kyle', factions: ['Self Insert', 'One Life'], displayName: 1 },
         { name: 'Sigfried Porsche', nicknames: ['porshe'], displayName: 0 },
         { name: 'Hampton Brandon', nicknames: ['TTD', 'Ten Toes Down'] },
         { name: 'Tame "The Mandalorian" Saxon', nicknames: ['Mandolorian'] },
@@ -3173,7 +3174,7 @@ export const npCharacters: NpCharacters = {
     ],
     Zerkaa: [
         { name: 'Tommy Tate', factions: ['Mandem'], leader: true, nicknames: ['Tommy T'], displayName: 3 },
-        { name: 'Josh Zerker', factions: ['Self Insert'], displayName: 0 },
+        { name: 'Josh Zerker', factions: ['Self Insert', 'One Life'], displayName: 0 },
     ],
     Zettafrag: [
         { name: 'Kimberly Daniels', factions: ['Condemned MC'], displayName: 0 },
