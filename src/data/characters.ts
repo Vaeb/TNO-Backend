@@ -2534,7 +2534,11 @@ export const npCharacters: NpCharacters = {
         { name: 'Anton Belov', factions: ['Russians'] },
     ],
     Silent: [
-        { name: 'Juan Carlos "Flippy" Hernandez', factions: ['Chang Gang', 'Chaos'], nicknames: [reg(/\bflip/), reg(/\bcrim\w*\b(?!.+\bcop)/), 'not cop', 'trying out crim'] },
+        {
+            name: 'Juan Carlos "Flippy" Hernandez',
+            factions: ['Chang Gang', 'Chaos', 'Self Insert'],
+            nicknames: [reg(/\bflip/), reg(/\bcrim\w*\b(?!.+\bcop)/), 'not cop', 'trying out crim'],
+        },
         { name: '[Officer] Joel Garcia', factions: ['Police'], nicknames: [reg(/\bcop\b(?!.+\bcrim)/), reg(/\bcop\b(?:.+\bnerf)/), 'trying out cop'] },
     ],
     SilentSentry: [
