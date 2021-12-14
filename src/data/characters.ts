@@ -117,6 +117,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Sayid Mitra', nicknames: ['Sayeet'], displayName: 0 },
         { name: 'David "The Mime" Wonders', nicknames: ['Concrete', 'Mime'], factions: ['ASRR'] },
         { name: 'Gordon Parks', nicknames: ['DoorLord'] },
+        { name: 'Jay Afro', factions: ['Self Insert'], displayName: 0 },
     ],
     AidenNortha: [
         { name: '[Deputy] Kevin Keyte', factions: ['Police'], displayName: 1, assumeServer: 'whitelist' },
@@ -202,6 +203,7 @@ export const npCharacters: NpCharacters = {
     APPLESHAMPOO: [
         { name: '[Dispatch] Nancy Ree', factions: ['Police'], displayName: 1, assumeServer: 'whitelist' },
         { name: '[EMS] Gioconda "Gio" Coppola', factions: ['Medical'], nicknames: ['T-17'] },
+        { name: 'Apple Schampu', factions: ['Self Insert'], displayName: 0 },
         { name: '[Officer] Gio Coppola', factions: ['Police'], nicknames: ['466'], displayName: 1, assumeServer: 'public' },
     ],
     appyturk: [
@@ -286,6 +288,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Tyme Reducer', factions: ['Police'], assumeServer: 'whitelist' },
         { name: '[Officer] Claire Seducer', factions: ['Police'], displayName: 1, assumeServer: 'public' },
         { name: 'Becky Hopper', displayName: 0 },
+        { name: 'Joann Banana', factions: ['Self Insert'], displayName: 0 },
         { name: 'Juanita Carlita Hernandez', nicknames: ['Flippa'] },
     ],
     BananaDuck: [
@@ -2082,6 +2085,7 @@ export const npCharacters: NpCharacters = {
     noKingu: [
         { name: '[Deputy] Henri King', factions: ['Police'] },
         { name: 'DaMarcus Lewis', factions: ['Tuner Shop'] },
+        { name: 'Big K', factions: ['Self Insert'], displayName: 0 },
     ],
     NotoriousNorman: [
         { name: 'Chips Ahoy', factions: ['Rooster'] },
@@ -2246,6 +2250,7 @@ export const npCharacters: NpCharacters = {
     ],
     Polen: [
         { name: 'Adam "AP" Peterson', factions: ['Tuner Shop'], displayName: 0 },
+        { name: 'Martin Polen', factions: ['Self Insert'], displayName: 0 },
     ],
     Pons: [
         { name: 'Harry Martinez', displayName: 0 },
