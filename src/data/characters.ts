@@ -2213,7 +2213,7 @@ export const npCharacters: NpCharacters = {
     ],
     PinkTrilobite: [
         { name: 'Selena Martinez', displayName: 1 },
-        { name: 'Ashley Pinktrilobite', factions: ['Self Insert'], displayName: 1 },
+        { name: 'Ashley Pinktrilobite', factions: ['Self Insert'], displayName: 0 },
     ],
     Plashir: [
         { name: 'Thom Yung', factions: ['Stable'], displayName: 0 },
