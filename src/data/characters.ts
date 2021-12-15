@@ -1562,6 +1562,7 @@ export const npCharacters: NpCharacters = {
     KristoferYee: [
         { name: 'Jay Que', factions: ['Rooster'], displayName: 0 },
         { name: '[Deputy] Ka Chao', factions: ['Police'], displayName: 2 },
+        { name: 'Kristofer Yee', factions: ['Self Insert'], displayName: 0 },
     ],
     KrisTWOfer: [
         { name: 'Jay Que', factions: ['Rooster'], displayName: 0 },
