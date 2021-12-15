@@ -55,7 +55,7 @@ export const regOthers = [
     { name: 'FiveM', reg: /\brandom[\s\-_.]*fivem\b/i, include: 0 },
     { name: 'OurBenefactors', reg: /\bour[\s\-_.]*benefactors|\bob[\s\-_.]*rp\b/i, include: 1 },
     { name: 'Grizzley World', reg: /grizzley[\s\-]*wo?rld|grizzely\s*rp/i, include: 0 },
-    { name: 'Chaos Mod', reg: /chaos\s*mod\b/i, include: 0 },
+    { name: 'Chaos Mod', reg: /chaos\s*mod\b|\bgta[\s:-]*[5v]?[\s\-]+chaos\s*(?:[^\s\w]|$)/i, include: 0 },
     { name: 'GTA Online', reg: /\bgta[\s:-]*[5v]?[\s:-]*online/i, include: 0 },
     { name: 'GTA Story', reg: /story[\s\-]*mode|\bgta[\s:-]*[5v]?[\s\-]+story/i, include: 0 },
     {
