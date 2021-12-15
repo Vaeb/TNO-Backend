@@ -468,6 +468,9 @@ export const npCharacters: NpCharacters = {
     CaptainBarb: [
         { name: 'Mattias Nilson', factions: ['Condemned MC'], displayName: 0 },
     ],
+    Carbonoid: [
+        { name: 'Han Machiavelli', factions: ['BSK'], displayName: 0 },
+    ],
     Carmen: [
         { name: 'Carmella Corset', factions: ['Rooster'] },
     ],
@@ -558,6 +561,9 @@ export const npCharacters: NpCharacters = {
     cleaneu: [
         { name: 'Michael Robinson', factions: ['DoC'], displayName: 0 },
         { name: 'Pete Bourke', factions: ['Prison'], displayName: 0 },
+    ],
+    cleanstrikes: [
+        { name: 'Alex Fibbler', factions: ['BSK'], displayName: 0 },
     ],
     Client: [
         { name: 'Daquan "Peanut" Dumas', factions: ['NBC'] },
