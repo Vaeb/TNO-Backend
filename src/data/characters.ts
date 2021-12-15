@@ -2894,6 +2894,7 @@ export const npCharacters: NpCharacters = {
     ],
     TheHexagonist: [
         { name: '[Deputy] Vincent Glass', factions: ['Police'], displayName: 2 },
+        { name: 'Denis Blatovich', displayName: 0 },
     ],
     TheKozak_: [
         { name: '[EMS] Chad Chaddington III', factions: ['Medical'] },
