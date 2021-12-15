@@ -222,7 +222,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Milton Pointdexter' },
     ],
     ArsenaI: [
-        { name: '[D-Mayor] James Arsenal', factions: ['DoJ'], displayName: 2 },
+        { name: 'James Arsenal', displayName: 0 },
     ],
     ash: [
         { name: '[D-Mayor] Ash Ketchup', factions: ['DoJ'], displayName: 1, assumeChar: true },
@@ -1363,7 +1363,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Zee Nanakaze Mathers' },
     ],
     Jubby: [
-        { name: 'Ricardo Perez', factions: ['Burger Shot'], displayName: 1 },
+        { name: '[D-Mayor] Ricardo Perez', factions: ['DoJ', 'Burger Shot'], displayName: 1 },
     ],
     Judd: [
         { name: '[Judge] Coyote Russell', factions: ['DoJ'], displayName: 1, assumeServer: 'whitelist' },
@@ -2213,7 +2213,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Peener Pogue', factions: ['Rooster'] },
     ],
     Pezz: [
-        { name: '[D-Mayor] Pez Speedwagon', factions: ['BBMC', 'DoJ'], displayName: 1 },
+        { name: 'Pez Speedwagon', factions: ['BBMC'], displayName: 1 },
         { name: 'Pezzy Pee' },
     ],
     Philderbeast: [
@@ -2891,7 +2891,7 @@ export const npCharacters: NpCharacters = {
         { name: '[EMS] Chad Chaddington III', factions: ['Medical'] },
     ],
     theLGX: [
-        { name: '[D-Mayor] Bryce Miller', factions: ['DoJ'], nicknames: ['BDawg'], displayName: 1, assumeServer: 'whitelist' },
+        { name: 'Bryce Miller', nicknames: ['BDawg'], displayName: 1, assumeServer: 'whitelist' },
         { name: 'Diego Marquez' },
         { name: 'Dave Myers', displayName: 0 },
         { name: 'Roland Nelson', assumeServer: 'whitelist' },
