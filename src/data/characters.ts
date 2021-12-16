@@ -225,7 +225,7 @@ export const npCharacters: NpCharacters = {
         { name: 'James Arsenal', displayName: 0 },
     ],
     ash: [
-        { name: '[D-Mayor] Ash Ketchup', factions: ['DoJ'], displayName: 1, assumeChar: true },
+        { name: '[D-Mayor] Ash Ketchup', factions: ['Seaside', 'DoJ'], displayName: 1, assumeChar: true },
     ],
     Ashi: [
         { name: 'Fiona Stewart', nicknames: ['Fi-ho-na', 'Fifi'], factions: ['LARPers', 'Cleanbois', 'Rooster'] },
@@ -1114,7 +1114,7 @@ export const npCharacters: NpCharacters = {
     ],
     Hotted89: [
         { name: '[Deputy] Matthew Espinoz', factions: ['Police'], nicknames: ['Airspinoz', 'Air 1 Andy'] },
-        { name: 'Joaquin "JJ" Jimenes' },
+        { name: 'Joaquin "JJ" Jimenes', factions: ['Seaside'] },
         { name: 'Allen Widemann', factions: ['Chang Gang', 'Tuner Shop'] },
     ],
     HPD007: [
@@ -1554,7 +1554,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Ray Ray', factions: ['ASRR'], displayName: 0 },
     ],
     Kongfue: [
-        { name: 'Karl "KJ" Johnny' },
+        { name: 'Karl "KJ" Johnny Black', factions: ['Seaside'] },
     ],
     KristoferYee: [
         { name: 'Jay Que', factions: ['Rooster'], displayName: 0 },
@@ -1750,7 +1750,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Violet Van Housen', factions: ['Police'], displayName: 1, assumeServer: 'public' },
     ],
     Lysium: [
-        { name: 'Benji Ramos', nicknames: ['B'] },
+        { name: 'Benji Ramos', factions: ['Seaside'], nicknames: ['B'] },
         { name: '[Deputy] Dean Duncan', factions: ['Police'] },
         { name: 'Maxim Pochinki' },
     ],
@@ -2307,7 +2307,7 @@ export const npCharacters: NpCharacters = {
     ],
     Quru: [
         { name: '[Officer] Vladimir Reznik', factions: ['Police'] },
-        { name: 'Pepe Ramos', displayName: 0 },
+        { name: 'Pepe Ramos', factions: ['Seaside'], displayName: 0 },
     ],
     Ragonath: [
         { name: 'Maxwell Devitt', displayName: 0 },
@@ -2361,7 +2361,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Mona Sanchez', factions: ['SSB'], assume: 'assumeNpNoOther' },
     ],
     Reklez: [
-        { name: 'Chico Guzman' },
+        { name: 'Chico Guzman', factions: ['Seaside'] },
         { name: 'AJ', factions: ['SSB'] },
     ],
     RemiTheSiren: [
@@ -2568,7 +2568,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Po ?', nicknames: ['Uncle Po'], displayName: 3 },
     ],
     Simo: [
-        { name: 'Reggie Might', displayName: 1, assumeServer: 'whitelist' },
+        { name: 'Reggie Might', factions: ['Seaside'], displayName: 1, assumeServer: 'whitelist' },
         { name: '[Lawyer] Blake Specter', factions: ['DoJ'] },
         { name: '[Officer] Reggie Might', factions: ['Police'], assumeServer: 'public' },
     ],
@@ -2613,7 +2613,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Nico August', factions: ['GSF'] },
     ],
     SlummpyJ: [
-        { name: 'Javier Diaz', nicknames: ['Javi'] },
+        { name: 'Javier Diaz', factions: ['Seaside'], nicknames: ['Javi'] },
     ],
     Smaczny: [
         { name: 'Conrad Gross' },
@@ -2883,7 +2883,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Brandon Valentino', factions: ['Pegasus'], displayName: 0 },
     ],
     theeYAIR: [
-        { name: 'Yair Lamas', displayName: 0 },
+        { name: 'Yair Lamas', factions: ['Seaside'], displayName: 0 },
     ],
     TheGeekEntry: [
         { name: 'Stacey Doyle', displayName: 1 },
@@ -3027,6 +3027,9 @@ export const npCharacters: NpCharacters = {
     ],
     vanyaa_3D: [
         { name: '[Development] Vanya', factions: ['Development'], nicknames: ['clothes', 'clothing'], assumeChar: true },
+    ],
+    vee_v: [
+        { name: 'Antonio Chorizo', factions: ['Seaside'], displayName: 0 },
     ],
     veriomonen_: [
         { name: 'Dimitri Azmanov', factions: ['SSB'], displayName: 0 },

@@ -32,6 +32,7 @@ export const npFactionsRegex = {
     gsf: noLater(noFormer(/\bgrove\b|\bgsf\b|broc+ol+i bo[iy]|\bthe[\s\-_.]*families/i)),
     ssb: noLater(noFormer(/\bball+a|\besb\b|\bssb\b(?![\s\-]+(?:wo?rld|later))/i)),
     bsk: noFormer(/\bb[s$]k\b|brouge street|burger shot king/i),
+    seaside: noFormer(/\bsea[\-_.]*side\b/i),
     marabunta: noLater(noFormer(/\bmarabunta/i)),
     hoa: noFormer(/\bh[.\s]*o[.\s\-_]*[ab]\b|hogs\s*of\s*anarchy|home[\s\-]*owners[\s\-]*association/i),
     pinkgang: noFormer(/\bpittman|(?:pink|\bpit+?)[\s\-_.]*(?:gang|crew)/i), // [^\w\s(]\s*pc\s*[^\w\s)]
@@ -134,7 +135,7 @@ npFactionsRealMini.forEach((faction) => {
 // type FactionColorsMini = Exclude<FactionMini, NoFactionColorsMini>;
 // : { [key in FactionColorsMini]: string }
 
-export const useColorsDark = { // #f9002f
+export const useColorsDark = { // #f9002f #A87C2D #67BDA5
     cleanbois: '#e74c3c',
     limelight: '#bfff00',
     lostmc: '#ab5179',
@@ -143,10 +144,10 @@ export const useColorsDark = { // #f9002f
     streetteam: '#32ff7e',
     cleancartel: '#32ff7e',
     vagos: '#f1c40f',
+    seaside: '#67BDA5',
     gsf: '#006422',
     ssb: '#9b59b6',
     bsk: '#7957D4',
-    pegasus: '#A87C2D',
     hoa: '#a6033a',
     doj: '#00a032',
     asrr: '#a35231',
@@ -190,10 +191,10 @@ export const useColorsLight: { [key in FactionColorsMini]: string } = {
     streetteam: '#12af7e',
     cleancartel: '#12af7e',
     vagos: '#e3ba16',
+    seaside: '#67BDA5',
     gsf: '#006422',
     ssb: '#9b59b6',
     bsk: '#8854d0',
-    pegasus: '#A87C2D',
     hoa: '#a6033a',
     doj: '#00a032',
     asrr: '#a35231',
@@ -248,9 +249,10 @@ const filterOrderTop: FactionMiniArr = [
     'ssb',
     'bsk',
     'gsf',
-    'cleancartel',
+    'seaside',
     'rooster',
     'tunershop',
+    'cleancartel',
     'hoa',
     'lostmc',
     'stable',
