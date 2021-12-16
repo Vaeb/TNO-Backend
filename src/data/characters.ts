@@ -107,7 +107,7 @@ export const npCharacters: NpCharacters = {
     ],
     AfricanSnowball: [
         { name: 'Buck Stanton', displayName: 2 },
-        { name: '[Officer] Dwayne Carter IV', factions: ['Police'], displayName: 2 },
+        { name: '[Officer] Dwayne Carter IV', factions: ['Police'], nicknames: [reg(/good [a*][s*]+ day/)], displayName: 2 },
         { name: 'Leland "LJ" Jones', factions: ['GSF', 'Pegasus'] },
         { name: 'Taylor Africansnowball', factions: ['Self Insert'], displayName: 0 },
     ],
