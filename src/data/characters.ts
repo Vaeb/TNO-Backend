@@ -3169,6 +3169,9 @@ export const npCharacters: NpCharacters = {
     yungxaquafina: [
         { name: 'Antonio Carter Jr', factions: ['SSB'], nicknames: ['AJ'], displayName: 4 },
     ],
+    yuukidav: [
+        { name: 'Oakley Stallion', factions: ['Angels'], displayName: 0 },
+    ],
     Zaitohro: [
         { name: 'Cameran Shaw', factions: ['DoC'], nicknames: ['Cam'], displayName: 0 },
         { name: 'Oswald Tinkerman', factions: ['Lost MC'], displayName: 1 },
