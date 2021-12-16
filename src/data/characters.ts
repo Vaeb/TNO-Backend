@@ -1255,9 +1255,6 @@ export const npCharacters: NpCharacters = {
         { name: 'Shane Powers', nicknames: ['ShaneO', 'ShanO'] },
         { name: 'Hubbo Samson' },
     ],
-    jacobpibbtv: [
-        { name: 'Jacob Pibb' },
-    ],
     Jadez: [
         { name: '? "Mother Midnight" ?' },
     ],
@@ -3175,6 +3172,9 @@ export const npCharacters: NpCharacters = {
     Zaitohro: [
         { name: 'Cameran Shaw', factions: ['DoC'], nicknames: ['Cam'], displayName: 0 },
         { name: 'Oswald Tinkerman', factions: ['Lost MC'], displayName: 1 },
+    ],
+    ZapremeTV: [
+        { name: 'Jacob Pibb', factions: ['Vagos'], displayName: 0 },
     ],
     Zaquelle: [
         { name: '[Officer] Mackenzie Hayes', factions: ['Police'], assume: 'assumeNp' },
