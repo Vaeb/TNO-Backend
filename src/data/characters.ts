@@ -2213,6 +2213,7 @@ export const npCharacters: NpCharacters = {
     ],
     peruze: [
         { name: 'Ronald "Scuffed Tony" Legarski', factions: ['ASRR'], nicknames: ['Tony', 'Ron', 'Block'] },
+        { name: 'John Hobo', displayName: 0 },
     ],
     peterparkTV: [
         { name: 'Peener Pogue', factions: ['Rooster'] },
