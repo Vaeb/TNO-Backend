@@ -959,7 +959,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Kratos Of Sparta', factions: ['Rooster'], nicknames: ['God of War', 'God'] },
     ],
     fuslie: [
-        { name: 'April Fooze', displayName: 1, assumeServer: 'whitelist' },
+        { name: 'April Fooze', factions: ['Chang Gang'], displayName: 1, assumeServer: 'whitelist' },
         { name: '[Ranger] Connie Clark', factions: ['Police'], displayName: 2, assumeServer: 'public' },
     ],
     Fyzicul: [
