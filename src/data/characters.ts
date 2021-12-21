@@ -711,6 +711,9 @@ export const npCharacters: NpCharacters = {
     Denis3D: [
         { name: '[Development] Denis3D', factions: ['Development'], nicknames: ['3D'] },
     ],
+    DerpFront: [
+        { name: '[EMS] Rivington Rivera', factions: ['Medical'], nicknames: ['Riv', 'E-78'], displayName: 3 },
+    ],
     devolore: [
         { name: '[Officer] Cassius Kennedy', factions: ['Police'], nicknames: ['Cash'] },
     ],
