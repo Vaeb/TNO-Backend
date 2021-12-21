@@ -2242,7 +2242,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Parson "Frosty" Brown', factions: ['Lost MC'] },
     ],
     PMoney: [
-        { name: 'P Money', displayName: 0 },
+        { name: 'P Money', factions: ['Chang Gang', 'Chaos'], displayName: 0 },
     ],
     PmsProxy: [
         { name: '[Officer] Kira Light', factions: ['Police'] },
@@ -3060,7 +3060,7 @@ export const npCharacters: NpCharacters = {
     ],
     Viviana: [
         { name: 'Griselda Ambrose', nicknames: ['Granny'] },
-        { name: 'Lana Valentine', factions: ['Rooster'] },
+        { name: 'Lana Valentine', factions: ['Mandem', 'Rooster'] },
     ],
     VNDRIZZLE: [
         { name: 'Basem Shahin' },
