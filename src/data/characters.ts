@@ -1066,6 +1066,9 @@ export const npCharacters: NpCharacters = {
     hansgaming08: [
         { name: '[Chief of Police] M Hans', factions: ['Police'], assumeServer: 'international' },
     ],
+    Harbinger2183: [
+        { name: '[Warden] Ethan Maxwell', factions: ['DoC'], displayName: 2 },
+    ],
     HARMSwahy: [
         { name: 'Blaine Burke', factions: ['Angels'] },
     ],
