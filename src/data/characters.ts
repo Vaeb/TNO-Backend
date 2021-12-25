@@ -235,6 +235,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Cassie Cupcakes', factions: ['Angels'] },
         { name: '[Officer] Brenda Pancake', factions: ['Police'], displayName: 1, nicknames: ['Pancakes'] },
     ],
+    Ashurikun: [
+        { name: 'Rose Morrison', factions: ['DoC'], displayName: 0 },
+    ],
     Asteroba: [
         { name: '[Deputy] Aaron Byson', factions: ['Police'] },
         { name: '[Lawyer] Larry Hallow', factions: ['DoJ'] },
