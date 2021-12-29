@@ -1988,7 +1988,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Rudolph ?', factions: ['Burger Shot'] },
     ],
     MrMoonsHouse: [
-        { name: 'Freddy Price', displayName: 0 },
+        { name: 'Freddy Price', factions: ['Burger Shot'], displayName: 0 },
     ],
     MrMouton: [
         { name: 'Chuck Mouton', displayName: 0 },
@@ -2498,7 +2498,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Ronjulio Escjulio' },
     ],
     Selvek: [
-        { name: 'Jeffrey Price', displayName: 0 },
+        { name: 'Jeffrey Price', factions: ['Burger Shot'], displayName: 0 },
         { name: '[Officer] Jack Sawyer', factions: ['Police'] },
     ],
     SgtApollo: [
