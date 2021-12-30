@@ -3150,7 +3150,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Xen Verse', factions: ['Pink Gang'], displayName: 0 },
     ],
     xQcOW: [
-        { name: 'Jean "X" Paul', factions: ['Gulag Gang', 'Cleanbois', 'Burger Shot'], nicknames: ['Ghost Rider', 'Rider'], displayName: 0, assumeServer: 'whitelist' },
+        { name: 'Jean "X" Paul', factions: ['Gulag Gang', 'Cleanbois', 'Burger Shot'], nicknames: ['Ghost Rider', 'Rider'], displayName: 0, assumeChar: true, assumeServer: 'whitelist' },
         { name: 'Jean "X" Paul', factions: ['Gulag Gang', 'Burger Shot'], nicknames: ['Ghost Rider', 'Rider'], displayName: 0, assumeServer: 'public' },
         { name: '[Deputy] Pierre "PP" Paul', factions: ['Police'], displayName: 0, assumeServer: 'whitelist' },
         { name: 'Jean Pierre', displayName: 0 },
