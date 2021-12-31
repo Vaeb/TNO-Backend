@@ -2929,6 +2929,9 @@ export const npCharacters: NpCharacters = {
     TheRonineh: [
         { name: '[Officer] Ash Anderson', factions: ['Police'], assumeServer: 'international' },
     ],
+    TheRudyDuck: [
+        { name: 'Felix Klein', factions: ['Burger Shot'], displayName: 0 },
+    ],
     Timmac: [
         { name: '[Deputy] T.J. Mack', factions: ['Police'], assumeServer: 'whitelist' },
         { name: 'Gomer Colton', nicknames: ['Gomey'], assumeServer: 'whitelist' },
