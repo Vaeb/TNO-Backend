@@ -2555,6 +2555,9 @@ export const npCharacters: NpCharacters = {
     shroud: [
         { name: 'Richard Hard' },
     ],
+    ShutupWave: [
+        { name: 'Richard Tips', factions: ['Burger Shot'], displayName: 0 },
+    ],
     Sidefxmayinclde: [
         { name: 'Kerm Henson', factions: ['Burger Shot', 'Rooster'], displayName: 0 },
     ],
