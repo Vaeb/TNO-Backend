@@ -393,7 +393,6 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                 // const useTextColor = '#000';
                 // const useColors = darkMode ? useColorsDark : useColorsLight;
                 const metaFactions: FactionMini[] = ['allnopixel', 'alltwitch'];
-                // const npMetaFactions: FactionMini[] = ['allnopixel', 'alltwitch', 'othernp', 'whitelistnp', 'publicnp', 'international'];
                 const isMetaFaction = metaFactions.includes(factionName);
                 // const isNpMetaFaction = npMetaFactions.includes(factionName);
                 // const minViewersUse = isNpMetaFaction ? minViewers : 3;
@@ -695,7 +694,9 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                         tagText = `${serverName}`;
                     }
 
-                    if (onNpWhitelist) activeFactions.push('whitelistnp');
+                    if (onNpWhitelist && activeFactions[activeFactions.length - 1] !== 'whitelistnp') {
+                        activeFactions = [...activeFactions, 'whitelistnp'];
+                    }
 
                     const stream: Stream = {
                         ...baseStream,
