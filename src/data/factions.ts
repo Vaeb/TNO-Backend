@@ -276,7 +276,7 @@ const filterOrderTop: FactionMiniArr = [
 
 const filterOrderAfterHasColor: FactionMiniArr = ['larpers', 'medical', 'doc', 'development'];
 
-const filterOrderAfterNoColor: FactionMiniArr = ['podcast', 'whitelistnp', 'international', 'other'];
+const filterOrderAfterNoColor: FactionMiniArr = ['podcast', 'whitelistnp', 'international', 'other', 'guessed'];
 
 const filterOrder: { [key in FactionMini]?: number } = Object.assign(
     {},
@@ -314,6 +314,7 @@ const filterRename: { [key in FactionMini]?: string } = {
     britneygang: 'Britney Gang',
     othernp: 'Unknown RPers',
     other: 'Other Servers',
+    guessed: 'Guessed',
 };
 
 export const filterFactionsBase: [FactionMini, string, boolean][] = objectEntries(npFactions)

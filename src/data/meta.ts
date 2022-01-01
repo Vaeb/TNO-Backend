@@ -61,6 +61,7 @@ export const npFactionsMeta = {
     whitelistnp: 'Whitelist NP',
     publicnp: 'Public NP',
     international: 'International NP',
+    guessed: 'Guessed',
 } as const;
 
 type NpFactionsReal = typeof npFactionsReal;
