@@ -41,7 +41,7 @@ export const npFactionsRegex = {
     dans: noLater(noFormer(/\bdans\b|g[le][el][\s\-_.]+dan/i)),
     angels: noFormer(/(?<!rejected[\s\-_.]*)\bangels\b/i),
     nbc: noFormer(/\bnbc\b/i),
-    mandem: noFormer(/\bmandem|\bmdma?\b/i),
+    mandem: noFormer(/\bmandem|\bmdma?\b(?![\s\-]+record)/i),
     bbmc: noFormer(/\bbbmc\b|\bbondi/i),
     italianmafia: noFormer(/\b(?:italian|sicilian)[\s\-_.]*(?:mafi|mob)|\bcosa[\s\-_.]*nostra|\bbalbani\b|\bbcf\b/i),
     stable: noLater(noFormer(/\bstable(?:hand)?\b/i)),
