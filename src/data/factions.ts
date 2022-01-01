@@ -314,7 +314,7 @@ const filterRename: { [key in FactionMini]?: string } = {
     britneygang: 'Britney Gang',
     othernp: 'Unknown RPers',
     other: 'Other Servers',
-    guessed: 'Guessed',
+    guessed: 'Uncertain',
 };
 
 export const filterFactionsBase: [FactionMini, string, boolean][] = objectEntries(npFactions)
