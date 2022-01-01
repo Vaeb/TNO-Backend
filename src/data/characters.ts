@@ -1449,6 +1449,9 @@ export const npCharacters: NpCharacters = {
     karnt1: [
         { name: 'Arush', factions: ['GSF'] },
     ],
+    KatAudeo: [
+        { name: '[Dr.] Lucy Janis', factions: ['Medical'] },
+    ],
     Kate: [
         { name: 'Nancy Drew', factions: ['Britney Gang'] },
     ],
