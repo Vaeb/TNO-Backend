@@ -3202,6 +3202,9 @@ export const npCharacters: NpCharacters = {
         { name: '[Development] YoinksOG', factions: ['Development'], nicknames: ['3D', 'Clothes', 'Clothing'] },
         { name: 'Doug Canada' },
     ],
+    YoMarty: [
+        { name: 'Lil Marty', factions: ['SSB'], displayName: 0, assumeServer: 'public' },
+    ],
     yooApollo: [
         { name: 'Martin Julio-Perez-Cruz-Rodriguez', factions: ['Marabunta'] },
     ],
