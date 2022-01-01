@@ -2410,6 +2410,9 @@ export const npCharacters: NpCharacters = {
     RevRoach: [
         { name: "Happy D'Klown" },
     ],
+    Rexsair: [
+        { name: 'Rexarius Bracchimus', nicknames: ['Rex'], displayName: 3 },
+    ],
     RhiTexxy: [
         { name: 'Brook Lexi', factions: ['Lost MC'] },
     ],
