@@ -2640,7 +2640,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Javier Diaz', factions: ['Seaside'], nicknames: ['Javi'] },
     ],
     Smaczny: [
-        { name: 'Conrad Gross' },
+        { name: 'Conrad Gross', assume: 'assumeOther' },
     ],
     SmithyFPS: [
         { name: 'Craig ?', factions: ['SSB'], nicknames: ['Crackhead Craig'], displayName: 3, assume: 'assumeNpNoOther' },
