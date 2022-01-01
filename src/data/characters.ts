@@ -1508,6 +1508,9 @@ export const npCharacters: NpCharacters = {
     Kinamazing: [
         { name: '[Officer] Emma Dupont', factions: ['Police'], nicknames: ['Dupog'], assumeChar: true },
     ],
+    kindagloomy: [
+        { name: 'Vera Tea', factions: ['Vagos'] },
+    ],
     King_1455: [
         { name: 'Cooch Cassidy', factions: ['Lost MC'] },
     ],
