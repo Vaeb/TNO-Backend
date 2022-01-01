@@ -1808,6 +1808,9 @@ export const npCharacters: NpCharacters = {
     MalevolentReisu: [
         { name: 'Trey Walker', factions: ['Condemned MC'], displayName: 0 },
     ],
+    MaliciousRP: [
+        { name: 'Jericho Black', factions: ['DoC'] },
+    ],
     malikouthere: [
         { name: 'Tito Conchas', factions: ['Vagos'] },
     ],
@@ -2730,6 +2733,9 @@ export const npCharacters: NpCharacters = {
     ],
     Sterling_live: [
         { name: '[Officer] Sterling Silver', factions: ['Police'], assumeServer: 'public' },
+    ],
+    StevetheEmo: [
+        { name: 'Eddie Baker', factions: ['Prison'], displayName: 0 },
     ],
     StinneKay: [
         { name: 'Sassa Raven', factions: ['Lost MC'], displayName: 0 },
