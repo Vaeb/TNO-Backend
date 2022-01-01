@@ -409,6 +409,7 @@ export const npCharacters: NpCharacters = {
     ],
     Breehzee: [
         { name: 'Wullie Mcdonnel', factions: ['DoC'], displayName: 0 },
+        { name: 'Pedro Frank', displayName: 0 },
     ],
     BRIT: [
         { name: 'Tori Corleone', nicknames: ['Bologna'], factions: ['Britney Gang', 'Rooster'] },
@@ -1057,6 +1058,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Daequan "Double D" DeMarco', factions: ['SSB'] },
         { name: 'RayRay' },
         { name: 'Maury Mersion', factions: ['Mersions'] },
+    ],
+    GumbyMMA: [
+        { name: 'Gumbus McGoo', factions: ['HOA'], nicknames: [reg(/\bgumb/)] },
     ],
     GutturalSteve: [
         { name: 'Tomathy Steampipe', factions: ['Burger Shot'] },
