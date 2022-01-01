@@ -388,6 +388,8 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
 
                 const gtaStreams = await getStreams({ searchNum, international });
 
+                log('Fetched streams! Now processing data...');
+
                 // log(gtaStreams.length);
 
                 // const useTextColor = '#000';
