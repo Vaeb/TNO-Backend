@@ -488,7 +488,7 @@ export const npCharacters: NpCharacters = {
     ],
     CathFawr: [
         { name: '[Officer] Lydia Vale', factions: ['Police'] },
-        { name: 'Summer Mersion', factions: ['GSF'], displayName: 0 },
+        { name: 'Summer Mersion', factions: ['GSF', 'Mersions'], displayName: 0 },
         { name: 'Natya Block', factions: ['ASRR'], displayName: 0 },
         { name: 'Catrin Fawr', factions: ['Self Insert', 'One Life'], displayName: 0 },
         { name: "[Lawyer] Shannon O'Banion", factions: ['DoJ'], displayName: 0 },
@@ -907,7 +907,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Felix Volk', factions: ['Stable', 'News'] },
     ],
     FerretRP: [
-        { name: 'Alberto Weaselton', factions: ['Lost MC'] },
+        { name: 'Alberto Weaselton', factions: ['Lost MC'], nicknames: ['Al', reg(/\balb/)] },
     ],
     Ferst711: [
         { name: '[Judge] Ferst Temple', factions: ['DoJ'] },
@@ -1219,9 +1219,6 @@ export const npCharacters: NpCharacters = {
     ],
     itmeJP: [
         { name: 'Wilbur Higgins' },
-    ],
-    Its_Tyger: [
-        { name: "Chase O'Dell", factions: ['Street Team', 'Chang Gang'], nicknames: ['Lil Bleach', 'Bleach'], displayName: 3 },
     ],
     itsjustasummerjob: [
         { name: 'Sabith "Bunny" Cohen', factions: ['Stable'] },
@@ -2823,7 +2820,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Tuesday Phillips' },
         { name: 'Milena' },
     ],
-    TASHI_zelba: [
+    TashiRP: [
         { name: 'Zelda Johansson', factions: ['Italian Mafia'], displayName: 0 },
     ],
     TastyMintsNA: [
@@ -3005,6 +3002,9 @@ export const npCharacters: NpCharacters = {
     ],
     TwistedManifest: [
         { name: 'Jack Valentino', factions: ['Lunatix'] },
+    ],
+    TygerRP: [
+        { name: "Chase O'Dell", factions: ['Street Team', 'Chang Gang'], nicknames: ['Lil Bleach', 'Bleach'], displayName: 3 },
     ],
     UberHaxorNova: [
         { name: 'Siz Fulker', factions: ['HOA'], leader: true, nicknames: ['Zis', 'Ziz', 'uhnSuffer', 'mechanic', reg(/\bloans?\b/), reg(/\bsiz/)] },
