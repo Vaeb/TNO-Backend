@@ -466,6 +466,9 @@ export const npCharacters: NpCharacters = {
     CallMeKevin: [
         { name: 'Grognak The Destroyer', assume: 'assumeNpNoOther' },
     ],
+    CappedRP: [
+        { name: 'Capped Tarranova', factions: ['Street Team'], nicknames: ['Terranova', 'Nova'], displayName: 0 },
+    ],
     capsure: [
         { name: 'Dimitri Nekola', factions: ['Pegasus'] },
     ],
