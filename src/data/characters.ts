@@ -1649,12 +1649,13 @@ export const npCharacters: NpCharacters = {
     ],
     LetterJaye: [
         { name: 'Posy Florian', factions: ['Burger Shot'], nicknames: ['P O S Y'] },
+        { name: '[Dr.] Dahlia Fey', factions: ['Medical'] },
     ],
     LeWolfy: [
         { name: '[Officer] Dante Wolf', factions: ['Police', 'Stable'] },
     ],
     LiftedGN: [
-        { name: 'Walter Melon', factions: ['Burger Shot'], displayName: 0 },
+        { name: 'Walter Melon', factions: ['GSF', 'Burger Shot'], displayName: 0 },
     ],
     lilypichu: [
         { name: 'Tulip Peach' },
