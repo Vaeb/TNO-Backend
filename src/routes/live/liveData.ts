@@ -569,21 +569,26 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                     }
 
                     let factionNames: FactionRealMini[] = [];
+                    const factionsInTitle = [];
+                    let newCharFactionSpotted = false;
 
-                    if (nowCharacter === undefined) {
-                        interface FactionObj {
-                            rank1: number;
-                            rank2: number;
-                            rank3: number;
-                            index: number;
-                            factions: FactionRealMini[];
-                            character?: Character;
-                        }
-                        const factionObjects: FactionObj[] = [];
+                    // if (nowCharacter === undefined) {
+                    interface FactionObj {
+                        rank1: number;
+                        rank2: number;
+                        rank3: number;
+                        index: number;
+                        factions: FactionRealMini[];
+                        character?: Character;
+                    }
+                    const factionObjects: FactionObj[] = [];
 
-                        for (const [faction, regex] of npFactionsRegexEntries) {
-                            const matchPos = title.indexOfRegex(regex);
-                            if (matchPos > -1) {
+                    for (const [faction, regex] of npFactionsRegexEntries) {
+                        const matchPos = title.indexOfRegex(regex);
+                        if (matchPos > -1) {
+                            if (nowCharacter) {
+                                factionsInTitle.push(faction);
+                            } else {
                                 const factionCharacter = characters && characters.find(char => char.factionsObj[faction]);
                                 const factionObj: FactionObj = {
                                     rank1: greaterFactions[faction] ? 0 : 1,
@@ -596,14 +601,25 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                                 factionObjects.push(factionObj);
                             }
                         }
-
-                        if (factionObjects.length) {
-                            factionObjects.sort((a, b) => a.rank1 - b.rank1 || a.rank2 - b.rank2 || a.rank3 - b.rank3 || a.index - b.index);
-                            if (factionObjects[0].character) nowCharacter = factionObjects[0].character; // Sorted by has-character
-                            // factionNames = factionObjects[0].factions;
-                            factionNames = factionObjects.map(factionObj => factionObj.factions).flat(1);
-                        }
                     }
+
+                    if (nowCharacter) {
+                        if (factionsInTitle.length > 0) {
+                            const charFactionsMap = Object.assign({}, ...nowCharacter.factions.map(faction => ({ [faction]: true })));
+                            for (const faction of factionsInTitle) {
+                                if (!charFactionsMap[faction]) {
+                                    newCharFactionSpotted = true;
+                                    break;
+                                }
+                            }
+                        }
+                    } else if (factionObjects.length) {
+                        factionObjects.sort((a, b) => a.rank1 - b.rank1 || a.rank2 - b.rank2 || a.rank3 - b.rank3 || a.index - b.index);
+                        if (factionObjects[0].character) nowCharacter = factionObjects[0].character; // Sorted by has-character
+                        // factionNames = factionObjects[0].factions;
+                        factionNames = factionObjects.map(factionObj => factionObj.factions).flat(1);
+                    }
+                    // }
 
                     const hasFactions = factionNames.length;
 
@@ -694,9 +710,8 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                         tagText = `${serverName}`;
                     }
 
-                    if (onNpWhitelist) {
-                        activeFactions.push('whitelistnp');
-                    }
+                    if (newCharFactionSpotted) activeFactions.push('guessed');
+                    if (onNpWhitelist) activeFactions.push('whitelistnp');
 
                     const stream: Stream = {
                         ...baseStream,
