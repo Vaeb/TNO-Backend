@@ -2247,6 +2247,8 @@ export const npCharacters: NpCharacters = {
     ],
     PinkTrilobite: [
         { name: 'Selena Martinez', displayName: 1 },
+        { name: 'Tiffany Smith', nicknames: [reg(/\btiff/)], displayName: 0 },
+        { name: 'Ash Scuffem', displayName: 0 },
         { name: 'Ashley Pinktrilobite', factions: ['Self Insert'], displayName: 0 },
     ],
     Plashir: [
