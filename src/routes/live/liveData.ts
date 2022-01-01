@@ -676,15 +676,15 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                     let tagText;
 
                     if (nowCharacter) {
-                        activeFactions = nowCharacter.factions;
+                        activeFactions = [...nowCharacter.factions];
                         tagFaction = nowCharacter.factionUse;
                         tagText = nowCharacter.displayName;
                     } else if (hasFactions) {
-                        activeFactions = factionNames;
+                        activeFactions = [...factionNames, 'guessed'];
                         tagFaction = isFactionColor(factionNames[0]) ? factionNames[0] : 'independent';
                         tagText = hasFactionsTagText ? `〈${hasFactionsTagText}〉` : `〈${fullFactionMap[factionNames[0]] || factionNames[0]}〉`;
                     } else if (possibleCharacter) {
-                        activeFactions = possibleCharacter.factions;
+                        activeFactions = [...possibleCharacter.factions, 'guessed'];
                         tagFaction = possibleCharacter.factionUse;
                         tagText = `? ${possibleCharacter.displayName} ?`;
                     } else {
@@ -694,8 +694,8 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                         tagText = `${serverName}`;
                     }
 
-                    if (onNpWhitelist && activeFactions[activeFactions.length - 1] !== 'whitelistnp') {
-                        activeFactions = [...activeFactions, 'whitelistnp'];
+                    if (onNpWhitelist) {
+                        activeFactions.push('whitelistnp');
                     }
 
                     const stream: Stream = {
