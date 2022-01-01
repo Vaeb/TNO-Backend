@@ -1524,7 +1524,7 @@ export const npCharacters: NpCharacters = {
     Kingothestone: [
         { name: 'Steven Stone III', factions: ['BBMC'], displayName: 2 },
     ],
-    KinkyHobo_: [
+    KinkyHobo: [
         { name: '[Lawyer] Gill Schultz', factions: ['DoJ'], displayName: 1 },
         { name: '[Officer] Max Muller', factions: ['Police'], displayName: 2 },
     ],
