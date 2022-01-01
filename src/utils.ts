@@ -18,6 +18,8 @@ export const mergeRegex = (regexArr: Array<RegExp | string>): RegExp => {
     );
 };
 
+export const sleep = (ms: number): Promise<any> => new Promise(resolve => setTimeout(resolve, ms));
+
 export const filterObj = (obj: any, callback: (v: any, k: string) => boolean): any =>
     Object.keys(obj)
         .filter(key => callback(obj[key], key))

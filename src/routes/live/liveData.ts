@@ -66,7 +66,7 @@ const ASTATES = {
 } as const;
 
 const game = '32982' as const;
-const language = 'en' as const;
+const languages: string[] = ['en', 'hi'];
 const streamType = HelixStreamType.Live;
 const bigLimit = 100 as const;
 // const maxPages = 5 as const;
@@ -262,13 +262,16 @@ export const getStreams = async (options: GetStreamsOptions): Promise<HelixStrea
         const gtaStreamsNow: HelixPaginatedResult<HelixStream> = await apiClient.helix.streams.getStreams({
             game,
             // language: optionsParsed.international ? undefined : language,
-            language: undefined,
+            language: languages,
             limit: String(limitNow),
             type: streamType,
             after,
         });
 
-        if (gtaStreamsNow.data.length === 0) break;
+        if (gtaStreamsNow.data.length === 0) {
+            log(`Search ended (limit: ${limitNow})`, gtaStreamsNow);
+            break;
+        }
 
         const lookupStreams = [];
         for (const helixStream of gtaStreamsNow.data) {
@@ -282,7 +285,7 @@ export const getStreams = async (options: GetStreamsOptions): Promise<HelixStrea
         }
 
         if (lookupStreams.length > 0) {
-            log(`Looking up pfp for ${lookupStreams.length} users...`);
+            log(`Looking up pfp for ${lookupStreams.length} users after...`);
             const foundUsers = await apiClient.helix.users.getUsersByIds(lookupStreams);
             for (const helixUser of foundUsers) {
                 knownPfps[helixUser.id] = helixUser.profilePictureUrl.replace('-300x300.', '-50x50.');
