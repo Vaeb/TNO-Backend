@@ -2202,6 +2202,8 @@ export const npCharacters: NpCharacters = {
         { name: 'Arthur Morgan', factions: ['Condemned MC'], displayName: 0 },
     ],
     OneSmolBumble: [
+        { name: '[EMS] Emery Ore', factions: ['Medical'], displayName: 1 },
+        { name: 'Clover Bloom', displayName: 0 },
         { name: '[EMS] Rory Borealis', factions: ['Medical'], displayName: 1 },
     ],
     OneTapBingus: [
