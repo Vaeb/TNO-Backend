@@ -52,7 +52,7 @@ export const regOthers = [
     { name: 'FrenzyRP', reg: /\bfrenzy\s*rp/i, include: 0 },
     { name: 'OvertimeRP', reg: /\bover[\s\-_.]*time[\s\-_.]*(?:rp\b|roleplay)/i, include: 0 },
     { name: 'GrandRP', reg: /\bgrand[\s\-_.]*(?:rp\b|roleplay)/i, include: 0 },
-    { name: 'FiveM', reg: /\brandom[\s\-_.]*fivem\b/i, include: 0 },
+    { name: 'FiveM', reg: /\brandom[\s\-_.]*fivem\b|\bwhile\s+arena\s*(?:\||$)/i, include: 0 },
     { name: 'OurBenefactors', reg: /\bour[\s\-_.]*benefactors|\bob[\s\-_.]*rp\b/i, include: 1 },
     { name: 'Grizzley World', reg: /grizzley[\s\-]*wo?rld|grizzely\s*rp/i, include: 0 },
     { name: 'Chaos Mod', reg: /chaos\s*mod\b|\bgta[\s:-]*[5v]?[\s\-]+chaos\s*(?:[^\s\w]|$)/i, include: 0 },
