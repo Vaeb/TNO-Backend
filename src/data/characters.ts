@@ -793,6 +793,9 @@ export const npCharacters: NpCharacters = {
     DROwSeph420: [
         { name: 'John "Geno" Collins', factions: ['GSF'] },
     ],
+    DTalmer: [
+        { name: 'Jackson Wilson', factions: ['Harmony'], nicknames: ['Blacksteel'], displayName: 0 },
+    ],
     Dunrunnin12: [
         { name: 'Thomas Dwayne', factions: ['Stable'], nicknames: ['The Narrator'], displayName: 0 },
         { name: 'Nay "Delamain" Rater' },
