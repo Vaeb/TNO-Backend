@@ -725,6 +725,9 @@ export const npCharacters: NpCharacters = {
     Denis3D: [
         { name: '[Development] Denis3D', factions: ['Development'], nicknames: ['3D'] },
     ],
+    deputydangerdan: [
+        { name: "D'Brickashaw King", factions: ['GSF'], nicknames: ['Brick'], displayName: 3 },
+    ],
     DerpFront: [
         { name: '[EMS] Rivington Rivera', factions: ['Medical'], nicknames: ['Riv', 'E-78'], displayName: 3 },
     ],
