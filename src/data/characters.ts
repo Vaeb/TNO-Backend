@@ -2636,6 +2636,9 @@ export const npCharacters: NpCharacters = {
     Skiliyo: [
         { name: 'Derek Thomson', factions: ['Rooster'], displayName: 0 },
     ],
+    SkiMask0n: [
+        { name: 'Von Westbrook', factions: ['SSB'], nicknames: ['Vonn'], displayName: 0 },
+    ],
     SkipGently: [
         { name: 'John Riggs' },
     ],
@@ -2803,6 +2806,9 @@ export const npCharacters: NpCharacters = {
     ],
     SwaggerSouls: [
         { name: 'Ace Hull', displayName: 0 },
+    ],
+    Sweatyx420: [
+        { name: 'Darryl Gamin', factions: ['SSB'], displayName: 0 },
     ],
     Sweet_Anita: [
         { name: 'Marylin Hilton' },
