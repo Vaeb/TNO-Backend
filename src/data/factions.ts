@@ -228,7 +228,7 @@ const filterExclude: { [key in FactionMini]?: boolean } = {
     // harmony: true,
     quickfix: true,
     mersions: true,
-    podcast: true,
+    // podcast: true,
     otherfaction: true,
     othernp: true,
 };
@@ -238,6 +238,7 @@ type FactionMiniArr = FactionMini[];
 const filterOrderTop: FactionMiniArr = [
     'allnopixel',
     'alltwitch',
+    'podcast',
     'publicnp',
     'independent',
     'cleanbois',
@@ -276,7 +277,7 @@ const filterOrderTop: FactionMiniArr = [
 
 const filterOrderAfterHasColor: FactionMiniArr = ['larpers', 'medical', 'doc', 'development'];
 
-const filterOrderAfterNoColor: FactionMiniArr = ['podcast', 'whitelistnp', 'international', 'other', 'guessed'];
+const filterOrderAfterNoColor: FactionMiniArr = ['whitelistnp', 'international', 'other', 'guessed'];
 
 const filterOrder: { [key in FactionMini]?: number } = Object.assign(
     {},
