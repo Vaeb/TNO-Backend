@@ -2051,7 +2051,7 @@ export const npCharacters: NpCharacters = {
     ],
     Myles_Away: [
         { name: 'Whitley Booth', factions: ['Burger Shot', 'Rooster'], nicknames: ['Pirate'] },
-        { name: '[Deputy] Connor Stubble', factions: ['Police'], displayName: 2 },
+        { name: '[Deputy] Connor Stubble', factions: ['Police'], nicknames: ['514'], displayName: 2 },
         { name: 'Jim Littleman', displayName: 0 },
     ],
     Mythematic: [
