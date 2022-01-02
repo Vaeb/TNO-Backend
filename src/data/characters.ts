@@ -346,6 +346,9 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Jamal Ferreira', factions: ['Police'], assumeServer: 'public' },
         { name: 'Dominic "Lil D" Chester', nicknames: ['Sabado de Sol'] },
     ],
+    BigSkenger: [
+        { name: 'Zaceed Skengerton', displayName: 1 },
+    ],
     BikeMan: [
         { name: 'Chet Summerset', assume: 'assumeNpNoOther' },
     ],
