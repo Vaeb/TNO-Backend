@@ -225,7 +225,7 @@ export const useColorsLight: { [key in FactionColorsMini]: string } = {
 
 const filterExclude: { [key in FactionMini]?: boolean } = {
     mechanic: true,
-    harmony: true,
+    // harmony: true,
     quickfix: true,
     mersions: true,
     podcast: true,
