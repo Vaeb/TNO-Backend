@@ -519,7 +519,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Marco Holliday', factions: ['Police'], nicknames: ['683', 'Holiday'] },
     ],
     Chap: [
-        { name: 'Bryan Chapman', displayName: 0 },
+        { name: 'Bryan Chapman', nicknames: ['Chap', 'Orange'], displayName: 0, assumeChar: true },
     ],
     charlieblossom: [
         { name: 'Georgina "Windsong" Williams' },
