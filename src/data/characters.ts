@@ -1046,7 +1046,7 @@ export const npCharacters: NpCharacters = {
     ],
     GreenishMonkey: [
         { name: 'Bobby Brown', factions: ['Chang Gang'] },
-        { name: '[Officer] James Brown', factions: ['Police'], displayName: 0 },
+        { name: '[Officer] James Brown', factions: ['Police'], displayName: 2 },
     ],
     GTAWiseGuy: [
         { name: 'Eddie Marshall', factions: ['Tuner Shop'] },
