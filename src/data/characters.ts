@@ -2495,6 +2495,9 @@ export const npCharacters: NpCharacters = {
     Sams: [
         { name: 'Dimitri Barkov' },
     ],
+    samtbull23: [
+        { name: 'Sammy B', factions: ['Harmony'], displayName: 0 },
+    ],
     sandiicheexs: [
         { name: '[Dispatch] Hanna Baker', factions: ['Police'], displayName: 1 },
         { name: 'Cassie Hoyt', displayName: 0 },
