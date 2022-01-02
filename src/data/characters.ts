@@ -2332,7 +2332,7 @@ export const npCharacters: NpCharacters = {
     ],
     Protay10: [
         { name: '[Deputy] Jacob Specter', factions: ['Police'] },
-        { name: 'James Thompson', nicknames: ['James "Phantom" Thompson', 'Phantom'], displayName: 4 },
+        { name: 'James Thompson', factions: ['Harmony'], nicknames: ['James "Phantom" Thompson', 'Phantom'], displayName: 4 },
     ],
     PsiSyn: [
         { name: '[Officer] Lucio Panini', factions: ['Police'], displayName: 1, assumeServer: 'public' },
