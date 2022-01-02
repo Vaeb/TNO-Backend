@@ -2832,7 +2832,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Marylin Hilton' },
     ],
     Swett: [
-        { name: '[EMS] Keith Harris', factions: ['Medical'], displayName: 1 },
+        { name: '[EMS] Keith Harris', factions: ['Medical'], displayName: 0 },
     ],
     SwiftRP: [
         { name: 'Ty Jones', factions: ['SSB'], nicknames: ['xray'], displayName: 0 },
