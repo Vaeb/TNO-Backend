@@ -2492,6 +2492,7 @@ export const npCharacters: NpCharacters = {
     ],
     sandiicheexs: [
         { name: '[Dispatch] Hanna Baker', factions: ['Police'], displayName: 1 },
+        { name: 'Cassie Hoyt', displayName: 0 },
     ],
     saNhje: [
         { name: '[Development] saNhje', factions: ['Development'], nicknames: ['MLO'] },
