@@ -574,7 +574,7 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                     }
 
                     let factionNames: FactionRealMini[] = [];
-                    const factionsInTitle = [];
+                    const factionsInTitle: FactionRealMini[] = [];
                     let newCharFactionSpotted = false;
 
                     // if (nowCharacter === undefined) {
@@ -612,7 +612,7 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                         if (factionsInTitle.length > 0) {
                             const charFactionsMap = Object.assign({}, ...nowCharacter.factions.map(faction => ({ [faction]: true })));
                             for (const faction of factionsInTitle) {
-                                if (!charFactionsMap[faction]) {
+                                if (!charFactionsMap[faction] && (faction !== 'doc' || !charFactionsMap.medical)) {
                                     newCharFactionSpotted = true;
                                     break;
                                 }
