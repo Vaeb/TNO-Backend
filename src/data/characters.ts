@@ -2831,6 +2831,9 @@ export const npCharacters: NpCharacters = {
     Sweet_Anita: [
         { name: 'Marylin Hilton' },
     ],
+    Swett: [
+        { name: '[EMS] Keith Harris', factions: ['Medical'], displayName: 1 },
+    ],
     SwiftRP: [
         { name: 'Ty Jones', factions: ['SSB'], nicknames: ['xray'], displayName: 0 },
     ],
@@ -2929,6 +2932,7 @@ export const npCharacters: NpCharacters = {
     ],
     TheAmelina: [
         { name: '[Lawyer] Alexandra Carlson', factions: ['DoJ'], displayName: 0 },
+        { name: '[Dr.] Meredith Jenkins', factions: ['Medical'], displayName: 1 },
     ],
     TheBigMeech: [
         { name: 'Pilbis Shonly', factions: ['NBC'] },
