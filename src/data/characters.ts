@@ -2709,6 +2709,9 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Patrick Downing', factions: ['Police'], nicknames: ['Pat'] },
         { name: 'Casey Boyd', nicknames: ['Caseboy', 'L8PD'], displayName: 0 },
     ],
+    SpekCypher: [
+        { name: 'Luis Fernandez', factions: ['HOA'], displayName: 0 },
+    ],
     Spekel: [
         { name: 'Sonya Summers', nicknames: ['Black Betty'] },
         { name: 'Chloe Lesterol' },
