@@ -1561,6 +1561,9 @@ export const npCharacters: NpCharacters = {
     Klutch: [
         { name: 'Eli Porter', factions: ['Mandem'], nicknames: ['Elz'], displayName: 0 },
     ],
+    Knight_Xero: [
+        { name: 'Kai B. Knight', factions: ['DoC'], displayName: 0 },
+    ],
     Knotty: [
         { name: 'Guy Jones', factions: ['NBC'], displayName: 0, leader: true },
     ],
