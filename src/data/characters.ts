@@ -2339,7 +2339,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Jack Frent', factions: ['DoC'], displayName: 0 },
     ],
     Purpose2: [
-        { name: '[Lawyer] Percy Weaver', factions: ['DoJ'] },
+        { name: '[Officer] Percy Weaver', factions: ['Police'] },
     ],
     Pydrex: [
         { name: '[Officer] James Doakes', factions: ['Police'], displayName: 2 },
