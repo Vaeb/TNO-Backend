@@ -489,7 +489,10 @@ export const npCharacters: NpCharacters = {
         { name: 'Spencer Smith', nicknames: ['Mormon'] },
     ],
     CasadyOG: [
-        { name: '[Deputy] Casady ?', factions: ['Police'], displayName: 1 },
+        { name: '[Deputy] Zach Casady', factions: ['Police'], displayName: 2 },
+    ],
+    Cascadian_: [
+        { name: '[Deputy] Michael Pike', factions: ['Police'], nicknames: ['313'], displayName: 2 },
     ],
     casek_: [
         { name: 'Cesar Conchas', factions: ['Vagos'], displayName: 0 },
