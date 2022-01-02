@@ -418,6 +418,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Tori Corleone', nicknames: ['Bologna'], factions: ['Britney Gang', 'Rooster'] },
     ],
     BrodyCurtis_: [
+        { name: 'Max Power', displayName: 0, assumeServer: 'whitelist' },
         { name: '[Deputy] Sean Duncan', factions: ['Police'], assumeServer: 'public' },
     ],
     Brofain: [
