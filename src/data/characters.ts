@@ -810,7 +810,7 @@ export const npCharacters: NpCharacters = {
     ],
     Dunrunnin12: [
         { name: 'Thomas Dwayne', factions: ['Stable'], nicknames: ['The Narrator'], displayName: 0 },
-        { name: 'Talgar Blootonn', factions: ['Police'], displayName: 1 },
+        { name: '[Ride Along] Talgar Blootonn', factions: ['Police'], displayName: 1 },
         { name: 'Talgar Goldtooth', displayName: 0 },
         { name: 'Nay "Delamain" Rater' },
     ],
