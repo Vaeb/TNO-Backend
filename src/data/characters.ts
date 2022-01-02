@@ -758,6 +758,9 @@ export const npCharacters: NpCharacters = {
     DisguisedToast: [
         { name: 'Amon Gus', displayName: 0 },
     ],
+    DivaJilly: [
+        { name: '[Lawyer] Siobhan Fitzpatrick', factions: ['DoJ'], displayName: 1 },
+    ],
     DKane: [
         { name: 'Cletus McCoy' },
     ],
