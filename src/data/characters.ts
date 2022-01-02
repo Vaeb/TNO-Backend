@@ -3246,6 +3246,9 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Mike Bayo', factions: ['Police'] },
         { name: 'Mike Wadum', factions: ['Hydra Gang'], nicknames: ['El Gringo'], displayName: 0 },
     ],
+    Xiorx: [
+        { name: 'Jimmy "Fiddlesticks" Brown', factions: ['Burger Shot'] },
+    ],
     XMOTHATRUCKAX: [
         { name: 'Ronald "Red" Juggler' },
     ],
