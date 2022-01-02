@@ -944,7 +944,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Boobingle Dan', factions: ['Dans'] },
     ],
     Five0AnthO: [
-        { name: '[Trooper] Tony Andrews', factions: ['Police'], highCommand: true, leader: true },
+        { name: '[Trooper Chief] Tony Andrews', factions: ['Police'], highCommand: true, leader: true },
         { name: 'Rhode Block', factions: ['ASRR'], displayName: 0 },
     ],
     fleureo: [
@@ -1599,7 +1599,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Bjorn Eiriksson' },
     ],
     koil: [
-        { name: '[Trooper] Kael Soze', factions: ['Police'], highCommand: true, leader: true, nicknames: ['are illegal'] },
+        { name: '[Trooper Chief] Kael Soze', factions: ['Police'], highCommand: true, leader: true, nicknames: ['are illegal'] },
         { name: 'Francis Francer', factions: ['Chang Gang'], nicknames: ['franic', 'franer', 'bwo', reg(/\bfr.n.{1,2}s/)], displayName: 0 },
         { name: '[Senator] Steven Barosi', factions: ['DoJ'], leader: true, nicknames: ['Senate', 'Steve'], displayName: 1 },
         { name: 'Otto Delmar', nicknames: ['race', 'racing'] },
@@ -1632,7 +1632,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Natalia Omar' },
     ],
     Kyle: [
-        { name: '[Sheriff] Kyle Pred', factions: ['Police'], leader: true, assumeServer: 'whitelist' },
+        { name: '[Sheriff of PBSO] Kyle Pred', factions: ['Police'], leader: true, assumeServer: 'whitelist' },
         { name: '[Officer] Kyle Pred', factions: ['Police'], assumeServer: 'public' },
         { name: 'Dominic Toretti', displayName: 0, assumeServer: 'public' },
         { name: 'Jaguar Toretti', displayName: 0 },
@@ -1849,7 +1849,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Dougie Mane', factions: ['NBC'], displayName: 0 },
     ],
     Mantis: [
-        { name: '[Sheriff] Domenic Toretti', factions: ['Police'], leader: true },
+        { name: '[Sheriff of SDSO] Domenic Toretti', factions: ['Police'], leader: true },
         { name: 'Jackson Caldwell', factions: ['Frat'], displayName: 0 },
         { name: 'Ike Block', factions: ['ASRR'], displayName: 0 },
         { name: '[Lawyer] Jerry Callow', factions: ['DoJ'], displayName: 1 },
