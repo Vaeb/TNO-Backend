@@ -3224,6 +3224,9 @@ export const npCharacters: NpCharacters = {
     yaboiSavageG: [
         { name: 'Salvaje "Savage" Mendoza', factions: ['Vagos'] },
     ],
+    YeetabixGaming: [
+        { name: 'James Oxley', factions: ['News'], displayName: 0 },
+    ],
     YoinksOG: [
         { name: '[Development] YoinksOG', factions: ['Development'], nicknames: ['3D', 'Clothes', 'Clothing'] },
         { name: 'Doug Canada' },
