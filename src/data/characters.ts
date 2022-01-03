@@ -1500,6 +1500,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Novah Walker', factions: ['Chang Gang'] },
         { name: '[Officer] Ensley Alton', factions: ['Police'], nicknames: ['521'], displayName: 1 },
     ],
+    KatieBunny94: [
+        { name: '[Dr.] Luna Rivera', factions: ['Medical'], displayName: 2 },
+    ],
     KattValkyrie: [
         { name: '[EMS] Valkyrie Sunshot', factions: ['Medical'] },
         { name: 'Katt Vincent' },
@@ -2514,6 +2517,7 @@ export const npCharacters: NpCharacters = {
     ],
     S_Palms: [
         { name: 'Kimmy Youngirl', displayName: 1 },
+        { name: 'Mina Kwon', displayName: 0 },
     ],
     s0upes: [
         { name: '[Officer] Silas Grimmer', factions: ['Police'] },
@@ -3018,6 +3022,7 @@ export const npCharacters: NpCharacters = {
     ],
     TheMLGenies: [
         { name: 'Shivananand "Shivvy" Sunandrankumar', factions: ['Burger Shot'] },
+        { name: 'Sinbad Thoor', factions: ['DoC'], displayName: 0 },
     ],
     TheOnlyWendigo: [
         { name: 'Alexandru Vasquez', factions: ['Rooster'] },
