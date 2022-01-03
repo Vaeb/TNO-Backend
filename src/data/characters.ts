@@ -1317,7 +1317,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Lillia Claurel' },
     ],
     JavaShorty: [
-        { name: '[EMS] Shelby Lane', factions: ['Medical'], nicknames: ['Lt', 'Lieutenant'], displayName: 1 },
+        { name: '[Deputy] Shelby Lane', factions: ['Police'], nicknames: ['588'], displayName: 1 },
     ],
     jay4871: [
         { name: 'Dave Perry', displayName: 0 },
