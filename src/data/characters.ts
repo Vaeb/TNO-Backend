@@ -2106,6 +2106,7 @@ export const npCharacters: NpCharacters = {
     ],
     Nescoh: [
         { name: '[Dispatch] Tristan C', factions: ['Police'], displayName: 1 },
+        { name: 'Deshawn King', factions: ['SSB'], displayName: 0 },
     ],
     neskRP: [
         { name: 'Oliver Crawford', factions: ['DoC'], displayName: 0 },
