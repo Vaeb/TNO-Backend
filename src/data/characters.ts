@@ -30,6 +30,9 @@ export const npCharacters: NpCharacters = {
     '0Reed': [
         { name: 'Reed Dankleaf', factions: ['Lost MC'] },
     ],
+    '4HeadRP': [
+        { name: 'Aubrey "4HEAD" Webster', factions: ['Street Team', 'Chang Gang'] },
+    ],
     '52chains': [
         { name: 'Fidel Guevara', nicknames: ['Don', 'Cabron'] },
         { name: 'Carmine "The Mouse" Costello' },
@@ -885,7 +888,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Demi Black' },
     ],
     EvilShatner: [
-        { name: '[Lawyer] Anna Swallows', factions: ['DoJ', 'ASRR'], nicknames: ['Law'], displayName: 1 },
+        { name: '[Lawyer] Anna Swallows', factions: ['DoJ', 'ASRR'], nicknames: ['Law'], displayName: 1, assumeChar: true },
     ],
     EsfandTV: [
         { name: '[Deputy] Cletus Cornwood', factions: ['Police'] },
@@ -1766,6 +1769,7 @@ export const npCharacters: NpCharacters = {
     ],
     Lt_Custard: [
         { name: 'Collin McKinley', factions: ['BBMC'], displayName: 0 },
+        { name: 'Jerry Sweets', factions: ['DoC'], displayName: 0 },
         { name: 'Cougar Dolly', displayName: 0 },
     ],
     Lt_Raven: [
@@ -2135,6 +2139,7 @@ export const npCharacters: NpCharacters = {
     ],
     Niccorazi: [
         { name: 'Dougie Fresh', nicknames: ['Bobcat'] },
+        { name: 'Eyam Job', displayName: 0 },
     ],
     Nidas: [
         { name: 'Leslie Lingberg', factions: ['Limelight', 'Cleanbois'], leader: true, nicknames: ['Ling'], displayName: 1, assumeServer: 'whitelist' },
