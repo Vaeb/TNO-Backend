@@ -2297,7 +2297,7 @@ export const npCharacters: NpCharacters = {
     Philderbeast: [
         { name: '[Dispatch] Owen Fitz-Gibbon', factions: ['Police'], displayName: 2 },
     ],
-    PinkTrilobite: [
+    pinkchyu: [
         { name: 'Selena Martinez', displayName: 1 },
         { name: 'Tiffany Smith', nicknames: [reg(/\btiff/)], displayName: 0 },
         { name: 'Ash Scuffem', displayName: 0 },
