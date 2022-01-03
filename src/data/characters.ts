@@ -840,6 +840,9 @@ export const npCharacters: NpCharacters = {
     Dyrus: [
         { name: 'Louis Hill', displayName: 0 },
     ],
+    DzarekK: [
+        { name: 'Lulu ?', displayName: 1 },
+    ],
     EagleAye: [
         { name: 'Eve Summers', factions: ['Rooster'] },
     ],
