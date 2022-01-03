@@ -2093,6 +2093,9 @@ export const npCharacters: NpCharacters = {
     Natettvrp: [
         { name: 'Carlos "Carlitos" Loco', factions: ['Vagos'] },
     ],
+    nathankb_: [
+        { name: '[Judge] Alan Crane', factions: ['DoJ'], displayName: 2 },
+    ],
     Natsumiii: [
         { name: 'Natalie Sumi', factions: ['Rooster'] },
     ],
