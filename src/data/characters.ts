@@ -230,6 +230,9 @@ export const npCharacters: NpCharacters = {
     ash: [
         { name: '[D-Mayor] Ash Ketchup', factions: ['Seaside', 'DoJ'], displayName: 1, assumeChar: true },
     ],
+    Ashaweebaby78: [
+        { name: 'Frankiie Fletcher', factions: ['BSK'], displayName: 0 },
+    ],
     Ashi: [
         { name: 'Fiona Stewart', nicknames: ['Fi-ho-na', 'Fifi'], factions: ['LARPers', 'Cleanbois', 'Rooster'] },
         { name: 'Annie May', displayName: 0 },
