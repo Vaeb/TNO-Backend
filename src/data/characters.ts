@@ -2361,6 +2361,9 @@ export const npCharacters: NpCharacters = {
     puddledux: [
         { name: 'Jake Rake', factions: ['Prison'], displayName: 0 },
     ],
+    PureToTheSport: [
+        { name: 'Scooter McQueeny', factions: ['Street Team', 'Chang Gang', 'Tuner Shop'], nicknames: ['Sport'], displayName: 3 },
+    ],
     Purge9090: [
         { name: 'Jack Frent', factions: ['DoC'], displayName: 0 },
     ],
