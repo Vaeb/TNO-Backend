@@ -64,7 +64,7 @@ export const npFactionsRegex = {
     police: noLater(noFormer(
         mergeRegex([
             /(?<!\bthen\b.*|!|\bformer\b[\s\w]+|corrections\s+|\bdoc\s+|\bmedic\w*\s+|\bems\s+)/i,
-            /(?:\bcop\b|chief of police|\b[56](?:\d[1-9]|[1-9]\d)\b|officer|der?puty(?![\s\-_]*(?:mayor|warden))|\bd-\d|\bdispatch\b|ride[\s\-_.]*along|sergeant|lieutenant|corporal|sheriff|\btrooper|\bcadet|\bcaderp|\b(?:ranger|dt|sgt|cpl|cpt|ofc|lspd|sasp|bcso|pbso|sdso|police[\s\-_]*academy|lt(?![^|!]*\bjones\b))\b)/i,
+            /(?:\bcop\b|chief of police|\b[56](?:\d[1-9]|[1-9]\d)\b|officer|\bfto|der?puty(?![\s\-_]*(?:mayor|warden))|\bd-\d|\bdispatch\b|ride[\s\-_.]*along|sergeant|lieutenant|corporal|sheriff|\btrooper|\bcadet|\bcaderp|\b(?:ranger|dt|sgt|cpl|cpt|ofc|lspd|sasp|bcso|pbso|sdso|police[\s\-_]*academy|lt(?![^|!]*\bjones\b))\b)/i,
             /(?!\?|[\s\-_]+copium)/i,
         ])
     )),
