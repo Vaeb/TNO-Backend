@@ -1200,6 +1200,7 @@ export const npCharacters: NpCharacters = {
     ],
     HydraPlz: [
         { name: 'Gandalf "Stankyleg" Butters', factions: ['ASRR'] },
+        { name: 'John Hydra', displayName: 0 },
     ],
     iamnxera: [
         { name: '[Officer] Tommy Tinker', factions: ['Police'], displayName: 1, assumeServer: 'public' },
@@ -1436,8 +1437,8 @@ export const npCharacters: NpCharacters = {
         { name: 'Reverend I.M. Voland', factions: ['Dark Web'] },
     ],
     Juggs: [
-        { name: 'Lenny Large', nicknames: [reg(/\blenny/)], displayName: 0 },
         { name: 'Sidwig Crawshank', nicknames: [reg(/\bsidwig/)], displayName: 0 },
+        { name: 'Lenny Large', nicknames: [reg(/\blenny/)], displayName: 0 },
         { name: 'Traevon Williams', nicknames: ['The Barber'], displayName: 3 },
     ],
     JukeBoxEM: [
