@@ -609,8 +609,8 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Travis Tribble', factions: ['Police'] },
     ],
     ConnorCronus: [
+        { name: 'Roman Sionis', nicknames: ['Mask', 'Black Mask'], displayName: 0 },
         { name: '[Dr.] Isaac Smith', factions: ['Medical'] },
-        { name: 'Roman "Mask" Sionis', nicknames: ['Black Mask'] },
     ],
     Coolio: [
         { name: 'Dequarius "Big D" Johnson', factions: ['Chang Gang'] },
