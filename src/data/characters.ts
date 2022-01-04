@@ -1493,6 +1493,7 @@ export const npCharacters: NpCharacters = {
     ],
     KatAudeo: [
         { name: '[Dr.] Lucy Janis', factions: ['Medical'] },
+        { name: 'Charlotte Thomas', nicknames: ['Lottie'], displayName: 3 },
     ],
     Kate: [
         { name: 'Nancy Drew', factions: ['Britney Gang'] },
