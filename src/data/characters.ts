@@ -3081,6 +3081,7 @@ export const npCharacters: NpCharacters = {
         { name: 'KJ Taylor', factions: ['Pink Gang'], displayName: 0 },
     ],
     trashedpotatopie: [
+        { name: '[Officer] Cherri Blossom', factions: ['Police'], nicknames: ['512'], displayName: 1 },
         { name: 'Marie Ortiz', factions: ['Stable'], displayName: 0 },
     ],
     Traumz: [
