@@ -1490,7 +1490,7 @@ export const npCharacters: NpCharacters = {
     Kari: [
         { name: '[Deputy] Mina Price', factions: ['Police'] },
         { name: '[EMS] Khloe Brooks', factions: ['Medical'] },
-        { name: 'Karina Dawn', nicknames: ['crim', 'criminal', 'robbing'] },
+        { name: 'Karina Dawn', nicknames: ['crim', 'criminal', 'robbing', reg(/\bkarina/)] },
     ],
     Karma: [
         { name: 'Bobby Johnson', displayName: 0 },
