@@ -2500,7 +2500,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Robert Spowylamywanowski', nicknames: ['Rob', 'Polish', 'Night Manager'], displayName: 3 },
     ],
     RookTM: [
-        { name: '[Deputy] Deacon Frye', factions: ['Police'] },
+        { name: '[Deputy] Deacon Frye', factions: ['Police'], nicknames: ['564'] },
     ],
     Rose: [
         { name: '[Deputy] Perrie Lane', factions: ['Police'] },
