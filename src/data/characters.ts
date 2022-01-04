@@ -427,6 +427,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Wullie Mcdonnel', factions: ['DoC'], displayName: 0 },
         { name: 'Pedro Frank', displayName: 0 },
     ],
+    BrettGambit: [
+        { name: 'Leo Hayes', nicknames: ['DJ Leo'], factions: ['Burger Shot'], displayName: 3 },
+    ],
     BRIT: [
         { name: 'Tori Corleone', nicknames: ['Bologna'], factions: ['Britney Gang', 'Rooster'] },
     ],
