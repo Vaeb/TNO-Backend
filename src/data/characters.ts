@@ -3295,6 +3295,7 @@ export const npCharacters: NpCharacters = {
     ],
     XxAshleyxX: [
         { name: 'Sparkle Lee', factions: ['Burger Shot'] },
+        { name: '[Dispatch] Shyrell Larson', factions: ['Police'], nicknames: ['D-17'], displayName: 1 },
         { name: 'Naomi Kent', factions: ['Burger Shot'] },
     ],
     yaboiSavageG: [
