@@ -1847,6 +1847,9 @@ export const npCharacters: NpCharacters = {
     MacL0ven: [
         { name: 'Negan Graham', factions: ['Lost MC'] },
     ],
+    MadameGandalf: [
+        { name: 'Stephanie "Sooty" Gamwich', factions: ['Burger Shot'] },
+    ],
     madbush: [
         { name: '[Lawyer] James Haze', factions: ['DoJ'], nicknames: ['Jim'], displayName: 2 },
     ],
