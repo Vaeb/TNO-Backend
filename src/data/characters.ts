@@ -290,7 +290,8 @@ export const npCharacters: NpCharacters = {
         { name: 'Nash Mastersin', displayName: 1, assumeServer: 'whitelist' },
     ],
     baguettegirI: [
-        { name: 'Ange VanLaeken', factions: ['Prison'], nicknames: ['French Girl', 'French'] },
+        { name: 'France Gall', nicknames: ['French', 'French Lady', 'France Girl', 'French Girl'], displayName: 0 },
+        { name: 'Ange VanLaeken', factions: ['Prison'], nicknames: ['French', 'French Girl'] },
     ],
     Baki961: [
         { name: 'Yoshimoto Nakanishi', assumeServer: 'whitelist' },
