@@ -98,6 +98,9 @@ export const npCharacters: NpCharacters = {
     AdinRoss: [
         { name: 'David ?' },
     ],
+    ADKGuy: [
+        { name: '[EMS] Ron Farva', factions: ['Medical'], displayName: 1 },
+    ],
     adnormaltv: [
         { name: 'Ivan Gorbahtjov', assume: 'assumeOther' },
     ],
