@@ -1427,6 +1427,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Nora Dupres' },
         { name: 'Zee Nanakaze Mathers' },
     ],
+    JRandyDL: [
+        { name: 'Wyatt Jones', factions: ['DoC'], displayName: 0 },
+    ],
     Jubby: [
         { name: '[D-Mayor] Ricardo Perez', factions: ['DoJ', 'Burger Shot'], displayName: 1 },
     ],
