@@ -1017,6 +1017,9 @@ export const npCharacters: NpCharacters = {
     GameDemented: [
         { name: '[Deputy] Peter Johnson', factions: ['Police'] },
     ],
+    gangsters_paradise: [
+        { name: 'Maz Razi', factions: ['Italian Mafia'], nicknames: ['Uncle Tony', 'Uncle T'], displayName: 3 },
+    ],
     Garek: [
         { name: 'Burt "Gloryon" Beans', factions: ['LARPers', 'Cleanbois', 'Rooster'], nicknames: ['Cleric'] },
         { name: 'Garek', factions: ['Self Insert'], displayName: 1 },
