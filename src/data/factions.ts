@@ -265,6 +265,7 @@ const filterOrderTop: FactionMiniArr = [
     'italianmafia',
     'zoomafia',
     'pinkgang',
+    'medical',
     'hydragang',
     'asrr',
     'streetteam',
@@ -276,7 +277,7 @@ const filterOrderTop: FactionMiniArr = [
     'angels',
 ];
 
-const filterOrderAfterHasColor: FactionMiniArr = ['larpers', 'medical', 'doc', 'development'];
+const filterOrderAfterHasColor: FactionMiniArr = ['larpers', 'doc', 'development'];
 
 const filterOrderAfterNoColor: FactionMiniArr = ['whitelistnp', 'guessed', 'podcast', 'international', 'other'];
 
