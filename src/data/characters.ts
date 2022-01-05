@@ -866,7 +866,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Eve Summers', factions: ['Rooster'] },
     ],
     eaJParkOfficial: [
-        { name: 'Park Parker', nicknames: ['Santa'], displayName: 0 },
+        { name: 'Park Parker', factions: ['Rooster'], nicknames: ['Santa'], displayName: 0 },
     ],
     eebern: [
         { name: 'Huck Guthrie', factions: ['HOA'], nicknames: ['Huckleberry'] },
