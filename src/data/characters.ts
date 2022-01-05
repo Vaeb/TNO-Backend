@@ -2510,7 +2510,7 @@ export const npCharacters: NpCharacters = {
         { name: '[D.A.] Rick Mongo', factions: ['DoJ'], assume: 'assumeNpNoOther' },
     ],
     RileyRP: [
-        { name: 'Bubbles Smith' },
+        { name: 'Bubbles Smith', factions: ['ZooMafia'] },
     ],
     RiZRP: [
         { name: 'Nikita Reznikov', factions: ['Pegasus'] },
@@ -2608,6 +2608,9 @@ export const npCharacters: NpCharacters = {
     ],
     scotism: [
         { name: 'Mike Baldwin', factions: ['Tuner Shop'], displayName: 0 },
+    ],
+    ScytheX: [
+        { name: 'Frankie Lorenzo', factions: ['GSF'], displayName: 0 },
     ],
     SeaNanners: [
         { name: 'Ronjulio Escjulio' },
