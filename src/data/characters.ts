@@ -3358,6 +3358,9 @@ export const npCharacters: NpCharacters = {
     ZayTyree: [
         { name: 'Renato Ortiz', factions: ['Vagos'], displayName: 0 },
     ],
+    Zee_RP: [
+        { name: 'Zee Carbone', factions: ['ZooMafia'], displayName: 0 },
+    ],
     Zerkaa: [
         { name: 'Tommy Tate', factions: ['Mandem'], leader: true, nicknames: ['Tommy T'], displayName: 3 },
         { name: 'Josh Zerker', factions: ['Self Insert', 'One Life'], displayName: 0 },
