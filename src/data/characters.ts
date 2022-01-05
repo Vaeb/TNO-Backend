@@ -449,6 +449,9 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Kevin Kona', factions: ['Police'] },
         { name: 'Esteban Julio-Ricardo-Montoya-De-La-Rosa Ramirez' },
     ],
+    BucketSt: [
+        { name: 'Gheto Kaiba', displayName: 0 },
+    ],
     Burn: [
         { name: 'Johnny Silverhand', displayName: 0 },
         { name: 'Asmon Bronze', displayName: 0, nicknames: ['AsmonBronze', 'Transmog'] },
