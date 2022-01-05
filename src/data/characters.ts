@@ -469,6 +469,7 @@ export const npCharacters: NpCharacters = {
         { name: '? "Vsauce" ?', factions: ['SSB'], nicknames: ['Bsauce'] },
         { name: 'Chi "Chi-ku" Ku' },
         { name: 'Plankton ?' },
+        { name: 'Devan Almighty', nicknames: ['Bruce', 'Evan'], displayName: 0 },
         { name: 'Bruce "The Dank Knight" Strayne' },
         { name: 'Brocky Potage', displayName: 1 },
         { name: 'Gordo Ramsay', nicknames: ['Gorden', 'Gordon'], displayName: 0 },
