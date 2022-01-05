@@ -883,6 +883,7 @@ export const npCharacters: NpCharacters = {
     ],
     Elochai: [
         { name: 'Tao Chen', factions: ['Rooster'], assumeServer: 'whitelist' },
+        { name: '[Development] Elochai', factions: ['Development'], nicknames: ['working on', reg(/\b(?:cloth\w+|shirt|outfit|pants|helmet|hat)s?\b/)] },
         { name: 'Leyin Jhail', assumeServer: 'public' },
         { name: 'Damien Grey', factions: ['Condemned MC'], displayName: 0 },
     ],
