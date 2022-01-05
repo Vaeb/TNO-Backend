@@ -390,6 +390,9 @@ export const npCharacters: NpCharacters = {
     BLooD_MoNeY_: [
         { name: '[Lawyer] Griz ?', factions: ['DoJ'], displayName: 1 },
     ],
+    BloomOnline: [
+        { name: 'Dillon Dubbs', factions: ['News'], displayName: 0 },
+    ],
     Blown: [
         { name: 'Taylor "Spaceman" Briggs', factions: ['Burger Shot'] },
     ],
