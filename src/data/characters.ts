@@ -2964,6 +2964,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Boris Ivanov', factions: ['Russians'], leader: true },
         { name: 'Hector Guzman', factions: ['Vagos'] },
     ],
+    tenGreg: [
+        { name: 'Henry Goodman', factions: ['Harmony'], nicknames: ['Dinoco'], displayName: 0 },
+    ],
     TenguOP: [
         { name: 'Wally Veloce' },
     ],
