@@ -2769,6 +2769,9 @@ export const npCharacters: NpCharacters = {
     SnekoGebiko: [
         { name: '[Deputy] Perry Willis', factions: ['Police'], displayName: 1, assumeServer: 'public' },
     ],
+    SoapFPS: [
+        { name: 'Soap ?', factions: ['ZooMafia'] },
+    ],
     sock22: [
         { name: '[Deputy] Richard Dark', factions: ['Police'] },
     ],
