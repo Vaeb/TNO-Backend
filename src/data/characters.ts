@@ -646,6 +646,9 @@ export const npCharacters: NpCharacters = {
     crimsonswordsman: [
         { name: 'Raphael Kristof', factions: ['HOA'] },
     ],
+    Crix: [
+        { name: '[Deputy] Nick Obrien', factions: ['Police'], nicknames: ['557'] },
+    ],
     Crunchy: [
         { name: '[Dr.] Agnes Ranbough', factions: ['Medical'] },
         { name: 'Grimoire "Gremlin" Hauttogs' },
@@ -3052,6 +3055,9 @@ export const npCharacters: NpCharacters = {
     TheMLGenies: [
         { name: 'Shivananand "Shivvy" Sunandrankumar', factions: ['Burger Shot'] },
         { name: 'Sinbad Thoor', factions: ['DoC'], displayName: 0 },
+    ],
+    TheMrKatMar: [
+        { name: '[Ranger] Noah White', factions: ['Police'], displayName: 2, assumeServer: 'international' },
     ],
     TheOnlyWendigo: [
         { name: 'Alexandru Vasquez', factions: ['Rooster'] },
