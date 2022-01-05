@@ -256,7 +256,6 @@ const filterOrderTop: FactionMiniArr = [
     'cleancartel',
     'hoa',
     'lostmc',
-    'stable',
     'burgershot',
     'prison',
     'nbc',
@@ -273,6 +272,7 @@ const filterOrderTop: FactionMiniArr = [
     'condemnedmc',
     'gulaggang',
     'angels',
+    'stable',
 ];
 
 const filterOrderAfterHasColor: FactionMiniArr = ['doc', 'development'];
