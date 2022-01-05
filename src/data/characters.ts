@@ -2830,6 +2830,9 @@ export const npCharacters: NpCharacters = {
     StevetheEmo: [
         { name: 'Eddie Baker', factions: ['Prison'], displayName: 0 },
     ],
+    StinkusKrys: [
+        { name: 'Dean Gullberry', factions: ['Italian Mafia'], displayName: 0 },
+    ],
     StinneKay: [
         { name: 'Sassa Raven', factions: ['Lost MC'], displayName: 0 },
     ],
