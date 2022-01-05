@@ -1449,7 +1449,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Reverend I.M. Voland', factions: ['Dark Web'] },
     ],
     Juggs: [
-        { name: 'Sidwig Crawshank', nicknames: [reg(/\bsidwig/)], displayName: 0 },
+        { name: 'Sidwig Crawshank', factions: ['ZooMafia'], nicknames: [reg(/\bsidwig/)], displayName: 0 },
         { name: 'Lenny Large', nicknames: [reg(/\blenny/)], displayName: 0 },
         { name: 'Traevon Williams', nicknames: ['The Barber'], displayName: 3 },
     ],
@@ -3386,7 +3386,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Skunkz Wallace' },
     ],
     Zoomaa: [
-        { name: 'Tomassi Paparatto', displayName: 1 },
+        { name: 'Tomassi Paparatto', factions: ['ZooMafia'], displayName: 1 },
     ],
     Zotbot: [
         { name: '[Physiotherapist] Leon Marks', factions: ['Medical'] },
