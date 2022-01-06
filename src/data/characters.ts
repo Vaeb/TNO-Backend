@@ -3323,6 +3323,7 @@ export const npCharacters: NpCharacters = {
     ],
     wtfmoses: [
         { name: 'Smooth Williams', factions: ['Stable'] },
+        { name: '[Officer] Derek McNulty', factions: ['Police'] },
     ],
     WuPingNOTEggRoll: [
         { name: 'Wu "Egg Roll" Ping' },
