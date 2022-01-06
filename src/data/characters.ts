@@ -957,8 +957,8 @@ export const npCharacters: NpCharacters = {
         { name: 'Jenna Tuttle', displayName: 2 },
     ],
     FalloftheSeason: [
+        { name: 'Ophelia Quinn', nicknames: ['Ophie'] },
         { name: '[EMS] Orianna "Ori" Frost', factions: ['Medical'], nicknames: ['Olive'] },
-        { name: 'Ophelia Quinn' },
     ],
     Familybanter: [
         { name: '[Dr.] Jayce Petra', factions: ['Medical'], displayName: 0 },
