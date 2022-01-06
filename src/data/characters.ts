@@ -69,6 +69,7 @@ export const npCharacters: NpCharacters = {
     ],
     AbbottJake: [
         { name: 'Joey Grass', factions: ['Prison'], displayName: 0 },
+        { name: 'Tommy Lee', displayName: 0 },
     ],
     abby: [
         { name: 'Irma Gawd', factions: ['Rooster'], displayName: 0 },
