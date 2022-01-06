@@ -3305,6 +3305,9 @@ export const npCharacters: NpCharacters = {
         { name: '"James Marco" St. Marco', nicknames: ['marko', 'marcoing', 'markoing'] },
         { name: "? \"Don's Mother\" ?", nicknames: ['Mama', 'Donna'] },
     ],
+    Wizop: [
+        { name: 'Dreyvon Cartier', factions: ['SSB'], nicknames: ['Drip'], displayName: 3 },
+    ],
     WLVSx: [
         { name: 'Wolfe McCreedy', nicknames: ['Wolfie'], displayName: 3 },
     ],
