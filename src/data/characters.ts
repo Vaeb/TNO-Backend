@@ -505,6 +505,9 @@ export const npCharacters: NpCharacters = {
     CallMeKevin: [
         { name: 'Grognak The Destroyer', assume: 'assumeNpNoOther' },
     ],
+    CanadianYETI_: [
+        { name: 'Tee ?', factions: ['SSB'], assumeServer: 'public' },
+    ],
     CappedRP: [
         { name: 'Capped Tarranova', factions: ['Street Team'], nicknames: ['Terranova', 'Nova'], displayName: 0 },
     ],
