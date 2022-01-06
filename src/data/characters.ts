@@ -752,6 +752,9 @@ export const npCharacters: NpCharacters = {
     Dehxter: [
         { name: 'Mark Jango', factions: ['Clean Cartel'], displayName: 0 },
     ],
+    DeLucaRP: [
+        { name: 'James DeLuca', factions: ['Tuner Shop'], displayName: 0 },
+    ],
     Denior13: [
         { name: 'Keith "Bulldog" Dooger', factions: ['Lost MC'] },
     ],
