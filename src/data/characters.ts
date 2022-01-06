@@ -3367,6 +3367,9 @@ export const npCharacters: NpCharacters = {
     yaboiSavageG: [
         { name: 'Salvaje "Savage" Mendoza', factions: ['Vagos'] },
     ],
+    Yeahitsjodi: [
+        { name: '[Dr.] Lennon McDermitt', factions: ['Medical'], displayName: 1 },
+    ],
     YeetabixGaming: [
         { name: 'James Oxley', factions: ['News'], displayName: 0 },
     ],
