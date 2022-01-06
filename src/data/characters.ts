@@ -3322,8 +3322,8 @@ export const npCharacters: NpCharacters = {
         { name: '[Dr.] Noah Drake', factions: ['Medical'] },
     ],
     wtfmoses: [
-        { name: 'Smooth Williams', factions: ['Stable'] },
         { name: '[Officer] Derek McNulty', factions: ['Police'] },
+        { name: 'Smooth Williams', factions: ['Stable'] },
     ],
     WuPingNOTEggRoll: [
         { name: 'Wu "Egg Roll" Ping' },
