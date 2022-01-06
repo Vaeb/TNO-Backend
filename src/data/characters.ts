@@ -179,6 +179,9 @@ export const npCharacters: NpCharacters = {
     AlyPlayNinja: [
         { name: '[Officer] Amelia Frost', factions: ['Police'] },
     ],
+    ambientsurprise: [
+        { name: 'Terry LaBuff', factions: ['BSK'], displayName: 0 },
+    ],
     amsyz: [
         { name: 'Zayn Ahmed', factions: ['BSK'], displayName: 0 },
     ],
