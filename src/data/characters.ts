@@ -440,6 +440,7 @@ export const npCharacters: NpCharacters = {
     ],
     BrettGambit: [
         { name: 'Leo Hayes', factions: ['Burger Shot'], nicknames: ['DJ Leo'], displayName: 3 },
+        { name: 'Skele Tor', nicknames: ['Skeletor'], displayName: 3 },
     ],
     BRIT: [
         { name: 'Tori Corleone', factions: ['Britney Gang', 'Rooster'], nicknames: ['Bologna'] },
