@@ -2793,6 +2793,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Kevin Whipaloo', factions: ['Burger Shot'], leader: true, displayName: 0 },
         { name: 'Tappy "Cat" Nippers', nicknames: ['Cat'], displayName: 0 },
     ],
+    soleKEFS: [
+        { name: 'Junior Meats', factions: ['BBMC'], displayName: 0 },
+    ],
     SoMuchOregano: [
         { name: 'Vincent Genovese', factions: ['Rooster'], displayName: 0 },
     ],
