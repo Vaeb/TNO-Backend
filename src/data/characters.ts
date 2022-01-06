@@ -903,6 +903,13 @@ export const npCharacters: NpCharacters = {
     EmmyWithLove: [
         { name: 'Peaches Hayabusa', factions: ['Burger Shot'] },
     ],
+    erickeK: [
+        { name: 'Frederick Dutton', factions: ['Lost MC'], displayName: 1 },
+    ],
+    EsfandTV: [
+        { name: '[Deputy] Cletus Cornwood', factions: ['Police'] },
+        { name: 'Ali Farmand', displayName: 0 },
+    ],
     Evee: [
         { name: 'Antigone Weston', factions: ['DoJ'], assumeServer: 'whitelist' },
         { name: '[Officer] Antigone Weston', factions: ['Police'], assumeServer: 'public' },
@@ -914,10 +921,6 @@ export const npCharacters: NpCharacters = {
     ],
     EvilShatner: [
         { name: '[Lawyer] Anna Swallows', factions: ['DoJ', 'ASRR'], nicknames: ['Law'], displayName: 1, assumeChar: true },
-    ],
-    EsfandTV: [
-        { name: '[Deputy] Cletus Cornwood', factions: ['Police'] },
-        { name: 'Ali Farmand', displayName: 0 },
     ],
     ExNinja_: [
         { name: '[Deputy] Paul String', factions: ['Police'], assumeServer: 'public' },
