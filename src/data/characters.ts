@@ -435,10 +435,13 @@ export const npCharacters: NpCharacters = {
         { name: 'Pedro Frank', displayName: 0 },
     ],
     BrettGambit: [
-        { name: 'Leo Hayes', nicknames: ['DJ Leo'], factions: ['Burger Shot'], displayName: 3 },
+        { name: 'Leo Hayes', factions: ['Burger Shot'], nicknames: ['DJ Leo'], displayName: 3 },
     ],
     BRIT: [
-        { name: 'Tori Corleone', nicknames: ['Bologna'], factions: ['Britney Gang', 'Rooster'] },
+        { name: 'Tori Corleone', factions: ['Britney Gang', 'Rooster'], nicknames: ['Bologna'] },
+    ],
+    British_Bulldog: [
+        { name: 'Jayden Cooper', factions: ['GSF'], displayName: 0 },
     ],
     BrodyCurtis_: [
         { name: 'Max Power', displayName: 0, assumeServer: 'whitelist' },
