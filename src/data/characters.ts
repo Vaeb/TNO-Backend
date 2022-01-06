@@ -3086,7 +3086,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Roland Nelson', factions: ['Police'], assumeServer: 'public' },
     ],
     TheMLGenies: [
-        { name: 'Shivananand "Shivvy" Sunandrankumar', factions: ['Burger Shot'] },
+        { name: 'Shivananand "Shivvy" Sunandrankumar', factions: ['ZooMafia', 'Burger Shot'] },
         { name: 'Sinbad Thoor', factions: ['DoC'], displayName: 0 },
     ],
     TheMrKatMar: [
