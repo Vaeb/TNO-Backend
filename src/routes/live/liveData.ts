@@ -575,15 +575,22 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                     if (hasCharacters) {
                         let lowestPos = Infinity;
                         let maxResults = -1;
+                        let maxSize = -1;
                         for (const char of characters) {
                             const matchPositions = [...titleParsed.matchAll(char.nameReg)];
                             const numResults = matchPositions.length;
+                            const resSize = numResults > 0 ? matchPositions[0][0].length : -1; // Could use all matches, but more expensive
                             const devFactionWeight = char.factions[0] === 'development' ? 2e4 : 0;
                             const serverMatchWeight = (onServerDetected && char.assumeServer !== onServer && realAssumes.includes(char.assumeServer)) ? 1e4 : 0;
                             const lowIndex = numResults ? matchPositions[0].index! + serverMatchWeight + devFactionWeight : -1;
-                            if (lowIndex > -1 && (lowIndex < lowestPos || (lowIndex === lowestPos && numResults > maxResults))) {
+                            if (lowIndex > -1 && (
+                                lowIndex < lowestPos
+                                || (lowIndex === lowestPos && numResults > maxResults)
+                                || (lowIndex === lowestPos && numResults === maxResults && resSize > maxSize)
+                            )) {
                                 lowestPos = lowIndex;
                                 maxResults = numResults;
+                                maxSize = resSize;
                                 nowCharacter = char;
                             }
                         }
@@ -776,7 +783,7 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                     data[2] = factionCount[data[0]] !== 0;
                 }
 
-                log(filterFactions);
+                // log(filterFactions);
 
                 const result: Live = { ...includedData, factionCount, filterFactions, streams: npStreams };
                 cachedResults[optionsStr] = result;
