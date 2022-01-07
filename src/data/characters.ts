@@ -2122,6 +2122,7 @@ export const npCharacters: NpCharacters = {
     ],
     MsTeamKK: [
         { name: 'Riley Carter', factions: ['Britney Gang', 'Rooster'] },
+        { name: '[Officer] Sunny Brooks', factions: ['Police'], nicknames: ['509'] },
     ],
     MurderCrumpet: [
         { name: 'Cindy Lou' },
