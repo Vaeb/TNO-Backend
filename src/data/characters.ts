@@ -711,6 +711,9 @@ export const npCharacters: NpCharacters = {
     Dadulio: [
         { name: '[Deputy] Franky Dulio', factions: ['Police'] },
     ],
+    dafran: [
+        { name: 'Thor Bjorn', displayName: 0 },
+    ],
     daisykiss: [
         { name: 'Molly Rollin', displayName: 0, assume: 'assumeNpNoOther' },
     ],
