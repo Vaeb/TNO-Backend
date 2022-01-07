@@ -469,6 +469,9 @@ export const npCharacters: NpCharacters = {
     BucketSt: [
         { name: 'Gheto Kaiba', displayName: 0 },
     ],
+    BurgSZN: [
+        { name: 'Tyler Heisanburg', factions: ['ZooMafia'], nicknames: ['Burg'], displayName: 3 },
+    ],
     Burn: [
         { name: 'Johnny Silverhand', displayName: 0 },
         { name: 'Asmon Bronze', displayName: 0, nicknames: ['AsmonBronze', 'Transmog'] },
