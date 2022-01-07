@@ -6,6 +6,8 @@ export type AssumeOther = 'assumeNpNoOther' | 'assumeNp' | 'assumeOther' | 'some
 
 export type AssumeServer = 'whitelist' | 'public' | 'international';
 
+export type WlBias = -1 | 0 | 1;
+
 export interface Character {
     name: string;
     factions?: FactionRealFull[];
@@ -17,7 +19,7 @@ export interface Character {
     assume?: AssumeOther;
     assumeServer?: AssumeServer;
     assumeChar?: boolean;
-    noWlBias?: boolean;
+    wlBias?: WlBias;
 }
 
 export type NpCharacters = { [key: string]: Character[] };
@@ -712,7 +714,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Franky Dulio', factions: ['Police'] },
     ],
     dafran: [
-        { name: 'Thor Bjorn', displayName: 0 },
+        { name: 'Thor Bjorn', displayName: 0, assumeServer: 'public', wlBias: 1 },
     ],
     daisykiss: [
         { name: 'Molly Rollin', displayName: 0, assume: 'assumeNpNoOther' },
@@ -2069,7 +2071,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Charles White', displayName: 0 },
     ],
     mollyruu: [
-        { name: 'Elizabeth "Lizzie" Byrne', factions: ['Clean Cartel'], assumeServer: 'whitelist', noWlBias: true },
+        { name: 'Elizabeth "Lizzie" Byrne', factions: ['Clean Cartel'], assumeServer: 'whitelist', wlBias: -1 },
         { name: '[Deputy] Elizabeth Byrne', factions: ['Police'], nicknames: ['Lizzie'], displayName: 3, assumeServer: 'public' },
         { name: 'Aishi Ayano', nicknames: ['Yandere'], displayName: 0 },
     ],
@@ -2101,7 +2103,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Rudolph ?', factions: ['Burger Shot'] },
     ],
     MrMoonsHouse: [
-        { name: 'Freddy Price', factions: ['Burger Shot'], displayName: 0 },
+        { name: '[Officer] Freddy Price', factions: ['Police', 'Burger Shot'], displayName: 2 },
     ],
     MrMouton: [
         { name: 'Chuck Mouton', displayName: 0 },
@@ -2115,7 +2117,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Sly Lion' },
     ],
     ms_star: [
-        { name: '[Deputy] Skye Faye', factions: ['Police'], noWlBias: true },
+        { name: '[Deputy] Skye Faye', factions: ['Police'], wlBias: -1 },
         { name: 'Cora Star', displayName: 0 },
     ],
     MsTeamKK: [

@@ -14,7 +14,7 @@ import { isFactionColor, lesserFactions, greaterFactions, npFactionsRegex, npFac
 
 import type { RecordGen } from '../../utils';
 import type { FactionMini, FactionFull, FactionRealMini, FactionRealFull } from '../../data/meta';
-import type { Character as CharacterOld, NpCharacters as NpCharactersOld, AssumeOther, AssumeServer } from '../../data/characters';
+import type { Character as CharacterOld, NpCharacters as NpCharactersOld, AssumeOther, AssumeServer, WlBias } from '../../data/characters';
 import type { NpFactionsRegexMini, FactionColorsMini, FactionColorsRealMini } from '../../data/factions';
 
 const includedData = Object.assign(
@@ -26,17 +26,17 @@ const includedData = Object.assign(
     { npFactions }
 );
 
-interface Character extends Omit<CharacterOld, 'factions' | 'displayName' | 'assumeServer' | 'noWlBias'> {
+interface Character extends Omit<CharacterOld, 'factions' | 'displayName' | 'assumeServer' | 'wlBias'> {
     factions: FactionRealMini[];
     factionsObj: { [key in FactionRealMini]?: true };
     factionUse: FactionColorsRealMini;
     displayName: string;
     nameReg: RegExp;
     assumeServer: AssumeServer;
-    noWlBias: boolean;
+    wlBias: WlBias;
 }
 
-type NpCharacter = Character[] & { assumeChar?: Character; assumeServer: AssumeServer; noWlBias: boolean; assumeOther: number; };
+type NpCharacter = Character[] & { assumeChar?: Character; assumeServer: AssumeServer; wlBias: WlBias; assumeOther: number; };
 
 type NpCharacters = { [key: string]: NpCharacter };
 
@@ -99,9 +99,10 @@ for (const [streamer, characters] of Object.entries(npCharacters)) {
     } */
 
     const foundOthers: { [key in AssumeOther]?: boolean } = {};
+    let wlBiasIdx: number | undefined;
 
     // eslint-disable-next-line no-loop-func
-    characters.forEach((char) => {
+    characters.forEach((char, charIdx) => {
         const charOld = char as unknown as CharacterOld;
         const names = charOld.name.split(/\s+/);
         const nameRegAll = [];
@@ -209,12 +210,21 @@ for (const [streamer, characters] of Object.entries(npCharacters)) {
         if (charOld.assume !== undefined) foundOthers[charOld.assume] = true;
 
         if (!characters.assumeServer) characters.assumeServer = char.assumeServer || 'whitelist';
-        if (!characters.noWlBias) characters.noWlBias = char.noWlBias || false;
         if (!char.assumeServer) char.assumeServer = characters.assumeServer;
-        if (!char.noWlBias) char.noWlBias = characters.noWlBias;
-
         if (char.assumeChar && !characters.assumeChar) characters.assumeChar = char;
+        if (characters.wlBias === undefined) characters.wlBias = 0;
+        if (char.wlBias !== undefined) {
+            characters.wlBias = char.wlBias; // Static across all characters
+            wlBiasIdx = charIdx;
+        }
+        char.wlBias = characters.wlBias;
     });
+
+    if (wlBiasIdx) { // 1 or greater
+        for (let i = 0; i < wlBiasIdx; i++) {
+            characters[i].wlBias = characters.wlBias;
+        }
+    }
 
     if (foundOthers.assumeNp && foundOthers.assumeOther) {
         characters.assumeOther = ASTATES.someOther;
@@ -503,8 +513,14 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                         usualServer = assumeServer;
                     }
 
-                    const usuallyOther = !!(characters && ([ASTATES.assumeOther, ASTATES.neverNp] as number[]).includes(characters.assumeOther));
-                    const usuallyWl = !!(characters && !usuallyOther && usualServer === 'whitelist' && !characters.noWlBias);
+                    let usuallyOther = false;
+                    let usuallyWl = false;
+
+                    if (characters) {
+                        const otherStates = [ASTATES.assumeOther, ASTATES.neverNp] as number[];
+                        usuallyOther = otherStates.includes(characters.assumeOther);
+                        usuallyWl = characters.wlBias === 1 || (!usuallyOther && usualServer === 'whitelist' && characters.wlBias === 0);
+                    }
 
                     if (streamState === FSTATES.other) {
                         // Other included RP servers
