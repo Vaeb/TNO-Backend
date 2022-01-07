@@ -1960,7 +1960,7 @@ export const npCharacters: NpCharacters = {
     ],
     Meatwrist: [
         { name: 'Chad "Chodie" Brodie' },
-        { name: '[Deputy] Marshall Gustavsen', factions: ['Police'], nicknames: ['Gustav', '503'], displayName: 2 },
+        { name: '[Deputy] Marshall Gustavsen', factions: ['Police'], nicknames: ['Gustav', '503', 'Chodie Cop'], displayName: 2 },
     ],
     meeka_a: [
         { name: '[EMS] William "Middy" Haze', factions: ['Medical'] },
