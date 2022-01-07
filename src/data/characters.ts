@@ -3148,7 +3148,7 @@ export const npCharacters: NpCharacters = {
     ],
     Tobii: [
         { name: '[Development] Tobii', factions: ['Development'] },
-        { name: 'Michael Simone', nicknames: ['Architect'], displayName: 0 },
+        { name: 'Michael Simone', nicknames: ['Architect', 'RP'], displayName: 0 },
     ],
     Trainwreckstv: [
         { name: 'Douglas "Doug Buck" Buck', displayName: 0 },
