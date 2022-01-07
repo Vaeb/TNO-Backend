@@ -2021,6 +2021,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Jack Nova', displayName: 0 },
         { name: '[Ranger] Manny Multchbottom', factions: ['Police'], displayName: 0, assumeServer: 'public' },
     ],
+    MikeTheMarksman: [
+        { name: '? ?', assume: 'neverNp' },
+    ],
     mikezout14: [
         { name: '[Deputy] Michael Rodgers', factions: ['Police'], assume: 'assumeNpNoOther' },
     ],
