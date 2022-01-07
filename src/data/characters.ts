@@ -3040,7 +3040,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Oscar Fitzpatrick', factions: ['Police'], nicknames: ['Fitz', 'Patrick'] },
     ],
     TheAaronShaq: [
-        { name: '? "Glue Guy" ?', factions: ['Burger Shot'] },
+        { name: 'Ebeneezer Mackaral Botanacus IV', factions: ['Burger Shot'], nicknames: ['Glue Guy'], displayName: 5 },
     ],
     TheAmelina: [
         { name: '[Lawyer] Alexandra Carlson', factions: ['DoJ'], displayName: 0 },
