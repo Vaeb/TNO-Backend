@@ -1756,6 +1756,9 @@ export const npCharacters: NpCharacters = {
     LaS_: [
         { name: 'Jesse "Baby Joker" Morales', assume: 'assumeOther' },
     ],
+    Lastbrokenoath: [
+        { name: '[Dr.] Alexander Blake', factions: ['Medical'], displayName: 2 },
+    ],
     LetterJaye: [
         { name: 'Posy Florian', factions: ['Burger Shot'], nicknames: ['P O S Y'] },
         { name: '[Dr.] Dahlia Fey', factions: ['Medical'] },
