@@ -681,7 +681,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Regina Bunny' },
     ],
     Crystalst: [
-        { name: '[Deputy] Crystal Clear', factions: ['Police'], displayName: 1 },
+        { name: '[Deputy] Crystal Clear', factions: ['Police'], nicknames: ['370'], displayName: 1 },
         { name: 'Four "4T" Tee', factions: ['ASRR'], displayName: 0 },
         { name: 'Amie Rush' },
     ],
