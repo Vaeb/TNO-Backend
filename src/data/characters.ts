@@ -2619,6 +2619,9 @@ export const npCharacters: NpCharacters = {
     saNhje: [
         { name: '[Development] saNhje', factions: ['Development'], nicknames: ['MLO'] },
     ],
+    Sarah_Digitally: [
+        { name: 'Anna Jørgensen', nicknames: ['Lilac', 'Illac', 'Jorgensen'] },
+    ],
     Sareff: [
         { name: 'Paige Green' },
         { name: 'Jocelyn Wayne' },
