@@ -2008,9 +2008,10 @@ export const npCharacters: NpCharacters = {
         { name: 'Stanley Tuttles' },
     ],
     Miggitymaan: [
+        { name: '[Officer] Miguel Maan', factions: ['Police'], displayName: 1 },
         { name: 'Jayce Wyatt' },
         { name: '[Officer] Damien Alexander', factions: ['Police'] },
-        { name: '[Deputy] Kurt Leonard', factions: ['Police'], assume: 'assumeOther' },
+        { name: '[Deputy] Kurt Leonard', factions: ['Police'], assume: 'assumeNpNoOther' },
     ],
     Mikeemod: [
         { name: '[Development] Mikeemod', factions: ['Development'] },
