@@ -1668,10 +1668,10 @@ export const npCharacters: NpCharacters = {
         { name: 'Bjorn Eiriksson' },
     ],
     koil: [
-        { name: '[Trooper Chief] Kael Soze', factions: ['Police'], highCommand: true, leader: true, nicknames: ['are illegal'] },
-        { name: 'Francis Francer', factions: ['Chang Gang'], nicknames: ['franic', 'franer', 'bwo', reg(/\bfr.n.{1,2}s/)], displayName: 0 },
-        { name: '[Senator] Steven Barosi', factions: ['DoJ'], leader: true, nicknames: ['Senate', 'Steve'], displayName: 1 },
         { name: 'Otto Delmar', nicknames: ['race', 'racing'] },
+        { name: 'Francis Francer', factions: ['Chang Gang'], nicknames: ['franic', 'franer', 'bwo', reg(/\bfr.n.{1,2}s/)], displayName: 0 },
+        { name: '[Trooper Chief] Kael Soze', factions: ['Police'], highCommand: true, leader: true, nicknames: ['are illegal'] },
+        { name: '[Senator] Steven Barosi', factions: ['DoJ'], leader: true, nicknames: ['Senate', 'Steve'], displayName: 1 },
         { name: '[Development] Koil', factions: ['Development'], nicknames: ['Code'] },
         { name: 'Saint Jospeh', nicknames: ['Jesus', 'Joseph', 'XUJIA', 'EMC'], displayName: 0 },
         { name: 'Ray Ray', factions: ['ASRR'], displayName: 0 },
