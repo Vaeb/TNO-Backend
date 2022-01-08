@@ -483,6 +483,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Jack Napiere', nicknames: ['"Kyle Pred"', 'Sheriff', 'Pred'], displayName: 3 },
         { name: 'Bojack Horseman', displayName: 0 },
         { name: 'Bob Penta', displayName: 0 },
+        { name: 'Blau Jobs', displayName: 1 },
         { name: '? "TTS" ?' },
         { name: 'Sanic Speedrun' },
         { name: 'Burn Burnington', nicknames: [reg(/self\W*insert/), 'me', 'myself'], displayName: 1 },
