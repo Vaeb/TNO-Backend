@@ -779,6 +779,7 @@ export const npCharacters: NpCharacters = {
     ],
     deputydangerdan: [
         { name: "D'Brickashaw King", factions: ['GSF'], nicknames: ['Brick'], displayName: 3 },
+        { name: "Robert O'Shay", nicknames: ['Rob'], displayName: 0 },
     ],
     DerpFront: [
         { name: '[EMS] Rivington Rivera', factions: ['Medical'], nicknames: ['Riv', 'E-78'], displayName: 3 },
