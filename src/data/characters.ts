@@ -3340,7 +3340,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Wolfe McCreedy', nicknames: ['Wolfie'], displayName: 3 },
     ],
     Wolfabelle: [
-        { name: '[Deputy] Candice Defitt', factions: ['Police'], displayName: 1 },
+        { name: '[Deputy] Candice Defitt', factions: ['Police'], nicknames: ['393'], displayName: 1 },
         { name: 'Bianca Walters' },
     ],
     Wootpiegames: [
