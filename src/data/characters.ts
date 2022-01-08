@@ -3134,6 +3134,7 @@ export const npCharacters: NpCharacters = {
     Timmac: [
         { name: '[Deputy] T.J. Mack', factions: ['Police'], assumeServer: 'whitelist' },
         { name: 'Gomer Colton', nicknames: ['Gomey'], assumeServer: 'whitelist' },
+        { name: 'Shaggy Dankweed', displayName: 0 },
         { name: '[Trooper] T.J. Mack', factions: ['Police'], assumeServer: 'public' },
     ],
     Timmy2: [
