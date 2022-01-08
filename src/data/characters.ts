@@ -932,13 +932,13 @@ export const npCharacters: NpCharacters = {
         { name: 'Ali Farmand', displayName: 0 },
     ],
     Evee: [
+        { name: '[Officer] Demi Black', factions: ['Police'], nicknames: ['492'] },
         { name: 'Antigone Weston', factions: ['DoJ'], assumeServer: 'whitelist' },
         { name: '[Officer] Antigone Weston', factions: ['Police'], assumeServer: 'public' },
         { name: 'Whitney Crawford', factions: ['DoJ'] },
         { name: 'Adrienne West' },
         { name: 'Meggie "Megan" Right' },
         { name: 'Bree Matthews' },
-        { name: 'Demi Black' },
     ],
     EvilShatner: [
         { name: '[Lawyer] Anna Swallows', factions: ['DoJ', 'ASRR'], nicknames: ['Law'], displayName: 1, assumeChar: true },
