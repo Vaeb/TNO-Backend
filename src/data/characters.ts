@@ -1834,6 +1834,7 @@ export const npCharacters: NpCharacters = {
     Lovinurstyle: [
         { name: 'Leah Strong', assumeServer: 'whitelist' },
         { name: 'Rose Edwards' },
+        { name: 'Darlene ?', factions: ['DoC'], displayName: 1 },
         { name: '[Officer] Leah Strong', factions: ['Police'], displayName: 1, assumeServer: 'public' },
     ],
     lozdog: [
@@ -2736,6 +2737,9 @@ export const npCharacters: NpCharacters = {
     ],
     Sidefxmayinclde: [
         { name: 'Kerm Henson', factions: ['Burger Shot', 'Rooster'], displayName: 0 },
+    ],
+    sierraxmyst: [
+        { name: 'Lukas Myst', factions: ['DoC'], displayName: 0 },
     ],
     SiirToast: [
         { name: 'Anton Belov', factions: ['Russians'] },
