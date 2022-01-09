@@ -1041,6 +1041,9 @@ export const npCharacters: NpCharacters = {
     FragZone: [
         { name: 'Derek Bogart', factions: ['Condemned MC'], displayName: 0 },
     ],
+    frightval: [
+        { name: 'Berry ?', displayName: 1, assumeServer: 'public' },
+    ],
     Frobotic: [
         { name: 'Dizzy Bluffins', factions: ['SSB'], displayName: 1 },
     ],
