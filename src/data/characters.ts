@@ -353,6 +353,9 @@ export const npCharacters: NpCharacters = {
     Beerman155: [
         { name: 'Abner Vaca', factions: ['Stable'] },
     ],
+    beetricetv: [
+        { name: 'Benny Davis', factions: ['SSB'], displayName: 0 },
+    ],
     Benni: [
         { name: 'Santiago "Santi" Madrid', factions: ['Vagos'], nicknames: [reg(/\bSanti/)] },
         { name: 'Antonio Reyes', nicknames: [reg(/\bAntonio/)] },
