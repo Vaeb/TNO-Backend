@@ -91,6 +91,9 @@ export const npCharacters: NpCharacters = {
     Abou_: [
         { name: 'Modi Janta', factions: ['NBC'] },
     ],
+    abrvxas: [
+        { name: 'Alexei Pavlovich', factions: ['ZooMafia'], nicknames: ['Chicken Head'], displayName: 0 },
+    ],
     Acaibear: [
         { name: '[Officer] Emily Reinhart', factions: ['Police'] },
         { name: 'Jolene Mushkin', nicknames: ['Little Red'] },
@@ -229,9 +232,6 @@ export const npCharacters: NpCharacters = {
     ],
     ArboYT: [
         { name: 'Jimmy Sprinkle', factions: ['DoC'], displayName: 0 },
-    ],
-    abrvxas: [
-        { name: 'Alexei Pavlovich', factions: ['ZooMafia'], nicknames: ['Chicken Head'], displayName: 0 },
     ],
     Arcadum: [
         { name: 'Svelt Tlevs', nicknames: ['Wizard'] },
