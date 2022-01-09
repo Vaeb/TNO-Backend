@@ -1776,6 +1776,9 @@ export const npCharacters: NpCharacters = {
     LiftedGN: [
         { name: 'Walter Melon', factions: ['GSF', 'Burger Shot'], displayName: 0 },
     ],
+    Likochka71: [
+        { name: '[Lawyer] Juno Lemieux', factions: ['DoJ'], displayName: 2 },
+    ],
     LillyTenshine: [
         { name: '[Officer] Lilly Wills', factions: ['Police'], displayName: 2 },
     ],
