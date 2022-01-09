@@ -307,6 +307,9 @@ export const npCharacters: NpCharacters = {
     Baabeology: [
         { name: 'Lola White', factions: ['BBMC'], displayName: 0, assumeServer: 'public' },
     ],
+    badgerClaws_: [
+        { name: 'Cassidy Clearwater', factions: ['DoC'], displayName: 0 },
+    ],
     baguettegirI: [
         { name: 'France Gall', nicknames: ['French', 'French Lady', 'France Girl', 'French Girl'], displayName: 0 },
         { name: 'Ange VanLaeken', factions: ['Prison'], nicknames: ['French', 'French Girl'] },
