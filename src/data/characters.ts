@@ -1569,7 +1569,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Ensley Alton', factions: ['Police'], nicknames: ['521'], displayName: 1 },
     ],
     KatieBunny94: [
-        { name: '[Dr.] Luna Rivera', factions: ['Medical'], displayName: 2 },
+        { name: '[Dr.] Luna Rivera', factions: ['Medical'], displayName: 1 },
         { name: 'Bree McNab', displayName: 0 },
     ],
     KattValkyrie: [
