@@ -1552,6 +1552,7 @@ export const npCharacters: NpCharacters = {
     ],
     Kate: [
         { name: 'Nancy Drew', factions: ['Britney Gang'] },
+        { name: 'Muriel Gallstaff', displayName: 1 },
     ],
     KatFires: [
         { name: 'Novah Walker', factions: ['Chang Gang'] },
