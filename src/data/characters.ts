@@ -3295,6 +3295,7 @@ export const npCharacters: NpCharacters = {
     ],
     Voladin17: [
         { name: '[Lawyer] Tidus Schwinghammer', factions: ['DoJ'] },
+        { name: 'Ron DeCloque' },
         { name: '? "Wolfbiter" ?' },
     ],
     Vondill: [
