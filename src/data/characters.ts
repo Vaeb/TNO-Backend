@@ -1564,6 +1564,7 @@ export const npCharacters: NpCharacters = {
     ],
     KatieBunny94: [
         { name: '[Dr.] Luna Rivera', factions: ['Medical'], displayName: 2 },
+        { name: 'Bree McNab', displayName: 0 },
     ],
     KattValkyrie: [
         { name: '[EMS] Valkyrie Sunshot', factions: ['Medical'] },
