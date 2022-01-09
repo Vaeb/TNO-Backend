@@ -1335,6 +1335,7 @@ export const npCharacters: NpCharacters = {
     ],
     itsSANDR: [
         { name: 'Asher Brown', factions: ['BBMC'] },
+        { name: 'Lucas Shadow', factions: ['DoC'], displayName: 0 },
     ],
     ItsSlikeR: [
         { name: 'Chris Turtle', nicknames: ['Lil Sneach', 'Sneach'], displayName: 0 },
@@ -1774,6 +1775,9 @@ export const npCharacters: NpCharacters = {
     ],
     LiftedGN: [
         { name: 'Walter Melon', factions: ['GSF', 'Burger Shot'], displayName: 0 },
+    ],
+    LillyTenshine: [
+        { name: '[Officer] Lilly Wills', factions: ['Police'], displayName: 2 },
     ],
     lilypichu: [
         { name: 'Tulip Peach' },
