@@ -280,6 +280,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Jordan Walker', factions: ['Harmony'] },
         { name: 'Braxton Walker', nicknames: ['Brax'], displayName: 0 },
     ],
+    Austin_Bean: [
+        { name: '[Officer] ? Bean', factions: ['Police'], displayName: 2, assumeServer: 'public' },
+    ],
     AustinCreed: [
         { name: 'Austin Creed', displayName: 0 },
     ],
