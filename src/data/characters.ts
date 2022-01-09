@@ -281,7 +281,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Braxton Walker', nicknames: ['Brax'], displayName: 0 },
     ],
     Austin_Bean: [
-        { name: '[Officer] ? Bean', factions: ['Police'], displayName: 2, assumeServer: 'public' },
+        { name: '[Deputy] ? Bean', factions: ['Police'], displayName: 2, assumeServer: 'public' },
     ],
     AustinCreed: [
         { name: 'Austin Creed', displayName: 0 },
