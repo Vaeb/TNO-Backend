@@ -230,6 +230,9 @@ export const npCharacters: NpCharacters = {
     ArboYT: [
         { name: 'Jimmy Sprinkle', factions: ['DoC'], displayName: 0 },
     ],
+    abrvxas: [
+        { name: 'Alexei Pavlovich', factions: ['ZooMafia'], nicknames: ['Chicken Head'], displayName: 0 },
+    ],
     Arcadum: [
         { name: 'Svelt Tlevs', nicknames: ['Wizard'] },
     ],
