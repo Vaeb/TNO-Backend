@@ -301,6 +301,9 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Dave Bird', factions: ['Police'], assumeServer: 'public' },
         { name: 'Nash Mastersin', displayName: 1, assumeServer: 'whitelist' },
     ],
+    Baabeology: [
+        { name: 'Lola White', factions: ['BBMC'], displayName: 0, assumeServer: 'public' },
+    ],
     baguettegirI: [
         { name: 'France Gall', nicknames: ['French', 'French Lady', 'France Girl', 'French Girl'], displayName: 0 },
         { name: 'Ange VanLaeken', factions: ['Prison'], nicknames: ['French', 'French Girl'] },
