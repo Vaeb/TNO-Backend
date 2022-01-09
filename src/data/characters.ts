@@ -2098,6 +2098,7 @@ export const npCharacters: NpCharacters = {
     ],
     mollyruu: [
         { name: 'Elizabeth "Lizzie" Byrne', factions: ['Clean Cartel'], assumeServer: 'whitelist', wlBias: -1 },
+        { name: '[Deputy] Scarlett Royal', factions: ['Police'], displayName: 2 },
         { name: '[Deputy] Elizabeth Byrne', factions: ['Police'], nicknames: ['Lizzie'], displayName: 3, assumeServer: 'public' },
         { name: 'Aishi Ayano', nicknames: ['Yandere'], displayName: 0 },
     ],
