@@ -1368,6 +1368,9 @@ export const npCharacters: NpCharacters = {
     JarJarBloo: [
         { name: '[Officer] Marcus Miller', factions: ['Police'], assumeServer: 'public' },
     ],
+    jason_plays_games: [
+        { name: '[Judge] Norman Adams', factions: ['DoJ', 'Rooster'], displayName: 2 },
+    ],
     jastatank: [
         { name: 'Larry Jonson', factions: ['Italian Mafia'], displayName: 0 },
     ],
