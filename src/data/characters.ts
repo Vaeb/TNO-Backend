@@ -1176,7 +1176,7 @@ export const npCharacters: NpCharacters = {
         { name: '[EMS] Jenny Schildt', factions: ['Medical'] },
     ],
     HannibalSeca: [
-        { name: 'Willy Wong', factions: ['Tuner Shop'] },
+        { name: 'Willy Wong', factions: ['Tuner Shop'], displayName: 0 },
     ],
     HalifamousNS: [
         { name: 'Devon Davidson', factions: ['BSK'], nicknames: ['DD'], displayName: 0 },
