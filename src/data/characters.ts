@@ -2162,6 +2162,7 @@ export const npCharacters: NpCharacters = {
     ],
     mrwobblestwitch: [
         { name: 'Axel Simpleton' },
+        { name: 'Garth Crooks', displayName: 0 },
         { name: 'Sly Lion' },
     ],
     ms_star: [
