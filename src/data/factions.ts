@@ -293,7 +293,7 @@ const filterRename: { [key in FactionMini]?: string } = {
     publicnp: 'NoPixel Public',
     international: 'NoPixel International',
     hoa: 'Home Owners Association',
-    hydragang: 'Mario Gang',
+    hydragang: 'Hydra Gang',
     asrr: 'Alta Street Ruff Rydaz',
     nbc: 'Natural Born Crackheads',
     bsk: 'Brouge Street Kingz',
