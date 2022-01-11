@@ -937,7 +937,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] John Dorian', factions: ['Police'] },
     ],
     EmmyWithLove: [
-        { name: 'Peaches Hayabusa', factions: ['Burger Shot'] },
+        { name: 'Peaches Hayabusa', factions: ['NBC', 'Burger Shot'] },
     ],
     erickeK: [
         { name: 'Frederick Dutton', factions: ['Lost MC'], displayName: 1 },
@@ -3202,6 +3202,9 @@ export const npCharacters: NpCharacters = {
     Tobii: [
         { name: '[Development] Tobii', factions: ['Development'] },
         { name: 'Michael Simone', nicknames: ['Architect', 'RP'], displayName: 0 },
+    ],
+    Tommy5oh: [
+        { name: 'Pablo Santiago', factions: ['NBC'], displayName: 0 },
     ],
     Trainwreckstv: [
         { name: 'Douglas "Doug Buck" Buck', displayName: 0 },
