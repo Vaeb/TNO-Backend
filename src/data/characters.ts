@@ -3469,6 +3469,7 @@ export const npCharacters: NpCharacters = {
     ],
     Zaitohro: [
         { name: 'Cameran Shaw', factions: ['DoC'], nicknames: ['Cam'], displayName: 0 },
+        { name: 'Damien Tinkerman', displayName: 1 },
         { name: 'Oswald Tinkerman', factions: ['Lost MC'], displayName: 1 },
     ],
     ZapremeTV: [
