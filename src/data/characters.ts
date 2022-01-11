@@ -1703,6 +1703,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Saint Jospeh', nicknames: ['Jesus', 'Joseph', 'XUJIA', 'EMC'], displayName: 0 },
         { name: 'Ray Ray', factions: ['ASRR'], displayName: 0 },
     ],
+    kojoXD: [
+        { name: 'Kojo ?', factions: ['Gulag Gang'], assumeServer: 'public', assumeChar: true },
+    ],
     Kongfue: [
         { name: 'Karl "KJ" Johnny Black', factions: ['Seaside'] },
     ],
