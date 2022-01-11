@@ -1663,7 +1663,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Rusty Johnson' },
     ],
     Kiva: [
-        { name: 'Andi Jones', factions: ['HOA', 'DoJ'], nicknames: ['Ant'], displayName: 3 },
+        { name: 'Andi Jones', factions: ['HOA'], nicknames: ['Ant'], displayName: 3 },
         { name: 'Natalie ?', nicknames: ['not andi', 'not ant'], displayName: 1 },
         { name: 'Navi Gates' },
     ],
