@@ -502,7 +502,7 @@ export const npCharacters: NpCharacters = {
         { name: '? "TTS" ?' },
         { name: 'Sanic Speedrun' },
         { name: 'Burn Burnington', nicknames: [reg(/self\W*insert/), 'me', 'myself'], displayName: 1 },
-        { name: '? "Vsauce" ?', factions: ['SSB'], nicknames: ['Bsauce'] },
+        { name: '? "BSauce" Sauce', nicknames: ['VSauce'] },
         { name: 'Chi "Chi-ku" Ku' },
         { name: 'Plankton ?' },
         { name: 'Devan Almighty', nicknames: ['Bruce', 'Evan'], displayName: 0 },
