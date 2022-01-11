@@ -3222,7 +3222,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Marie Ortiz', factions: ['Stable'], displayName: 0 },
     ],
     Traumz: [
-        { name: '[Deputy] Edward Thatch', nicknames: ['Captain Moosebeard'], factions: ['Police'], displayName: 2 },
+        { name: '[Deputy] Edward Thatch', nicknames: ['Captain Moosebeard', 'Moosebeard'], factions: ['Police'], displayName: 2 },
         { name: 'Tim Littleman', displayName: 0 },
     ],
     travpiper: [
