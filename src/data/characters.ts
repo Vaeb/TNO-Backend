@@ -1122,6 +1122,7 @@ export const npCharacters: NpCharacters = {
     ],
     goldelena: [
         { name: 'August Vakarian' },
+        { name: '[Deputy] Manuela Santos', factions: ['Police'] },
     ],
     Golden_Laurel: [
         { name: 'Gillea Taylor', factions: ['HOA'] },
@@ -1474,7 +1475,7 @@ export const npCharacters: NpCharacters = {
     ],
     Jonthebroski: [
         { name: 'Denzel Williams', factions: ['Cleanbois', 'Limelight', 'Pegasus', 'Rooster'], nicknames: ['The "Cleaner"', 'Presidente'] },
-        { name: '[Officer] Johnny Divine', factions: ['Police'], displayName: 0 },
+        { name: '[Deputy] Johnny Divine', factions: ['Police'], displayName: 0 },
         { name: 'Broskingle Dan', factions: ['Dans'] },
         { name: '[Senator] Sean Davis', factions: ['DoJ'], leader: true, nicknames: ['Senate'] },
         { name: 'Dio Ivanov', factions: ['Russians'] },
@@ -1581,7 +1582,7 @@ export const npCharacters: NpCharacters = {
     ],
     KatFires: [
         { name: 'Novah Walker', factions: ['Chang Gang'] },
-        { name: '[Officer] Ensley Alton', factions: ['Police'], nicknames: ['521'], displayName: 1 },
+        { name: '[Deputy] Ensley Alton', factions: ['Police'], nicknames: ['521'], displayName: 1 },
     ],
     KatieBunny94: [
         { name: '[Dr.] Luna Rivera', factions: ['Medical'], displayName: 1 },
@@ -1628,7 +1629,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Catherine Scratch', factions: ['Lost MC'], nicknames: ['Cat'], displayName: 3 },
     ],
     KiloAU: [
-        { name: '[Officer] Robert Anderson', factions: ['Police'] },
+        { name: '[Deputy] Robert Anderson', factions: ['Police'] },
     ],
     Kimchi: [
         { name: 'Sun Moon', nicknames: [reg(/\bsun/)], displayName: 0 },
@@ -2260,7 +2261,7 @@ export const npCharacters: NpCharacters = {
     ],
     Nikez: [
         { name: '[Development] Nikez', factions: ['Development'] },
-        { name: '[Officer] Cody Sharp', factions: ['Police'], nicknames: [reg(/\bpolice\s*m.n/)] },
+        { name: '[Deputy] Cody Sharp', factions: ['Police'], nicknames: [reg(/\bpolice\s*m.n/)] },
         { name: 'Nicholas Simone', factions: ['Hydra Gang'], nicknames: ['Nick', 'Nico', 'Simon'], displayName: 0 },
     ],
     NikkisARiot: [
@@ -2362,7 +2363,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Antoine Sigel', factions: ['Police'] },
     ],
     OwenSeven: [
-        { name: '[Officer] Owen Svensen', factions: ['Police'] },
+        { name: '[Deputy] Owen Svensen', factions: ['Police'] },
         { name: 'Tyler Dabrowski', factions: ['Frat'], nicknames: ['Bro', 'Brow', 'Brah', 'Broski', 'Browski', 'Brahski'], displayName: 0 },
     ],
     PacifistV: [
@@ -2634,7 +2635,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Mina Kwon', displayName: 0 },
     ],
     s0upes: [
-        { name: '[Officer] Silas Grimmer', factions: ['Police'] },
+        { name: '[Deputy] Silas Grimmer', factions: ['Police'] },
         { name: 'James "Apples" Apeller' },
         { name: 'Chadley ?' },
         { name: 'Ryder S. Block', factions: ['ASRR'], displayName: 0 },
@@ -2962,6 +2963,7 @@ export const npCharacters: NpCharacters = {
     ],
     Stuply: [
         { name: 'Salvatore "Big Pussy" Tamburlini' },
+        { name: '[Deputy] Willy Glory', factions: ['Police'] },
     ],
     SullyRP: [
         { name: 'Jack "Sully" Sullivan' },
