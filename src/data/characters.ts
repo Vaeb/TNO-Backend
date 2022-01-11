@@ -733,7 +733,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Franky Dulio', factions: ['Police'] },
     ],
     dafran: [
-        { name: 'Thor Bjorn', displayName: 0, assumeServer: 'public', wlBias: 1 },
+        { name: 'Thor Bjorn', factions: ['Gulag Gang'], displayName: 0, assumeServer: 'public', wlBias: 1 },
     ],
     daisykiss: [
         { name: 'Molly Rollin', displayName: 0, assume: 'assumeNpNoOther' },
