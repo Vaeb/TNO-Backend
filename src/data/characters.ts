@@ -1873,7 +1873,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Cougar Dolly', displayName: 0 },
     ],
     Lt_Raven: [
-        { name: '[Officer] Vladimir Raven', factions: ['Police'], highCommand: true },
+        { name: '[Deputy] Vladimir Raven', factions: ['Police'], highCommand: true },
         { name: 'Hellfire Holden', factions: ['Lost MC'], nicknames: ['biker', reg(/hell\W*fire/)] },
     ],
     LtSerge: [
