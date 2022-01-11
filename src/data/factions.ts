@@ -47,7 +47,7 @@ export const npFactionsRegex = {
     zoomafia: noFormer(/zoo[\s\-_.]*mafi|\bzm\b/i),
     stable: noLater(noFormer(/\bstable(?:hand)?\b/i)),
     podcast: noLater(noFormer(/\b(?<!!)podcast\b/i)),
-    gulaggang: noLater(noFormer(/\bgulag[\s\-_.]*gang/i)),
+    gulaggang: noLater(noFormer(/\bgulag[\s\-_.]*gang|(?:[^\w\s]|^)\s*\bgg\b|\bgg[\s\-_.]*st\b/i)),
     condemnedmc: noLater(noFormer(/\bcondemned|\bcmc\b/i)),
     news: noFormer(/(?<!(?:good|big|great|amazing|bad|some)\s*)\bnews\b|\blsbn\b|weazel[\s\-_.]*news/i),
     rooster: noFormer(/\brr\b|\brooster[^\w\s]?(?:s|\b)|rooster[\s\-_.]*(?:rest|ranch|reef|inn|hotel|cab)/i),
