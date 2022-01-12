@@ -1028,7 +1028,7 @@ export const npCharacters: NpCharacters = {
     ],
     FloMcNasty_TV: [
         { name: 'Richard Chiclets', factions: ['Stable', 'Burger Shot'], nicknames: ['Dick Chiclets'], displayName: 3, assumeServer: 'whitelist' },
-        { name: 'William Clubb', nicknames: ['Billy'], displayName: 0 },
+        { name: '[Officer] William Clubb', factions: ['Police'], nicknames: ['Billy'], displayName: 2 },
         { name: 'Doc Chocolates', displayName: 0, assumeServer: 'public' },
     ],
     Flynno: [
