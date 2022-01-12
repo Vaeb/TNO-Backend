@@ -918,6 +918,9 @@ export const npCharacters: NpCharacters = {
     eebern: [
         { name: 'Huck Guthrie', factions: ['HOA'], nicknames: ['Huckleberry'] },
     ],
+    eHulzy: [
+        { name: 'Carmine Mosca', factions: ['Italian Mafia'], displayName: 0 },
+    ],
     either: [
         { name: 'Jaden Christopher' },
     ],
