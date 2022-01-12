@@ -1569,6 +1569,9 @@ export const npCharacters: NpCharacters = {
         { name: '[EMS] Khloe Brooks', factions: ['Medical'] },
         { name: 'Karina Dawn', nicknames: ['crim', 'criminal', 'robbing', reg(/\bkarina/)] },
     ],
+    karlnetwork: [
+        { name: 'Jacob Karlson', displayName: 0 },
+    ],
     Karma: [
         { name: 'Bobby Johnson', displayName: 0 },
     ],
