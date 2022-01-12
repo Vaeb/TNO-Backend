@@ -3183,6 +3183,9 @@ export const npCharacters: NpCharacters = {
     TheRudyDuck: [
         { name: 'Felix Klein', factions: ['Burger Shot'], displayName: 0 },
     ],
+    thicbootyconspiracyshorty: [
+        { name: 'Karli Marx', factions: ['BBMC'], displayName: 0, assumeServer: 'public' },
+    ],
     Timmac: [
         { name: '[Deputy] T.J. Mack', factions: ['Police'], assumeServer: 'whitelist' },
         { name: 'Gomer Colton', nicknames: ['Gomey'], assumeServer: 'whitelist' },
