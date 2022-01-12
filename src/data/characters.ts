@@ -1031,6 +1031,9 @@ export const npCharacters: NpCharacters = {
     Flynno: [
         { name: '[Officer] Mickey Reynolds', factions: ['Police'], displayName: 2, assume: 'assumeNpNoOther' },
     ],
+    Foolish_Gamers: [
+        { name: 'Morty Karlson', displayName: 0 },
+    ],
     Forlorn79: [
         { name: '[EMS] Amoris Pax', factions: ['Medical'] },
     ],
