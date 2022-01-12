@@ -1229,6 +1229,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Tracy Martell', factions: ['Police'], nicknames: ['Cop', 'Captain', reg(/\b\w+tell/)] },
         { name: 'Katya Zamalodchikova', factions: ['DoJ'], displayName: 1 },
         { name: 'Jane Obama', nicknames: ['jesus', 'christ'], displayName: 0 },
+        { name: 'Aja Monet', displayName: 0 },
         { name: 'Jane Souls', displayName: 0 },
         { name: 'Rounda Block', factions: ['ASRR'], displayName: 0 },
         { name: "Kayden Dell'Anno" },
