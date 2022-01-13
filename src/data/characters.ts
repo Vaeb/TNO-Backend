@@ -1322,6 +1322,9 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Derek Monroe', factions: ['Police'], displayName: 2 },
         { name: '[Officer] Derek Monroe', factions: ['Police'], assumeServer: 'public' },
     ],
+    ImFluffinJiggly: [
+        { name: '[Deputy] ? Wilkons', factions: ['Police'], assumeServer: 'public' },
+    ],
     indur: [
         { name: '[Deputy] Dea Bane', factions: ['Police'], assumeServer: 'public' },
     ],
