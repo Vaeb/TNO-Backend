@@ -817,6 +817,7 @@ export const npCharacters: NpCharacters = {
     ],
     DigiiTsuna: [
         { name: '[Dr.] Kai King', factions: ['Medical'], displayName: 2 },
+        { name: 'Maxy Mersion', factions: ['Mersions'], displayName: 0 },
     ],
     DisbeArex: [
         { name: 'Oki Doki', factions: ['Burger Shot'], displayName: 0 },
