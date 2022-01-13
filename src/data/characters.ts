@@ -1432,6 +1432,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Jake LaMotta', displayName: 0 },
         { name: 'Andrew "Drew" Jackson', factions: ['GSF'] },
     ],
+    jeimiru: [
+        { name: 'David Jackson', factions: ['Harmony'], nicknames: ['Benz'], displayName: 3 },
+    ],
     Jellypeanut: [
         { name: 'Rai "Juuls" Cumberwoood' },
         { name: '[Prince] Habib Khalid' },
