@@ -1351,7 +1351,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Levi Dawson', factions: ['SSB'] },
     ],
     ItsLeslie: [
-        { name: 'KyrinChan "Leyla" WeuhBou', factions: ['LARPers', 'Cleanbois', 'Britney Gang', 'Rooster'], nicknames: ['Nightingale', 'Wizard', 'Embervale'] },
+        { name: 'KyrinChan "Leyla" WeuhBou', factions: ['LARPers', 'Cleanbois', 'Britney Gang', 'Rooster'], nicknames: ['Nightingale', 'Wizard', 'Embervale', reg(/\bley+l+a/)] },
     ],
     ItsLSG: [
         { name: '[Officer] Jack Miller', factions: ['Police'] },
