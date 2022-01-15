@@ -1524,6 +1524,9 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Judd Lincoln', factions: ['Police'], displayName: 1, assumeServer: 'public' },
         { name: 'Reverend I.M. Voland', factions: ['Dark Web'] },
     ],
+    juelzzz: [
+        { name: 'Maria Estrella Duarte', factions: ['Vagos'], nicknames: [reg(/\be+s+t+r+e+l/)], displayName: 2 },
+    ],
     Juggs: [
         { name: 'Sidwig Crawshank', factions: ['ZooMafia'], nicknames: [reg(/\bsidwig/)], displayName: 0 },
         { name: 'Lenny Large', nicknames: [reg(/\blenny/)], displayName: 0 },
