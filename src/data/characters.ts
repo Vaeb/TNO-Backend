@@ -2690,6 +2690,7 @@ export const npCharacters: NpCharacters = {
     ],
     Sareff: [
         { name: 'Paige Green' },
+        { name: 'Ophelia Dawson', factions: ['BBMC'], nicknames: ['Fey'], displayName: 3 },
         { name: 'Jocelyn Wayne' },
         { name: 'Violet Noreguarde', factions: ['Vagos'], assumeServer: 'whitelist' },
         { name: '[Deputy] Paige Green', factions: ['Police'], assumeServer: 'public' },
