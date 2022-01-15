@@ -321,6 +321,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Yoshimoto Nakanishi', assumeServer: 'whitelist' },
         { name: '[Officer] Fernando Diego Pablo Juan Esteban Luis Cortez Bonanza II', factions: ['Police'], displayName: 1, assumeServer: 'public' },
     ],
+    BamiePlays: [
+        { name: 'Ryan Kolinsky', factions: ['DoC'], displayName: 0 },
+    ],
     bananabrea: [
         { name: 'Claire Seducer', factions: ['Angels', 'Tuner Shop'], assumeServer: 'whitelist' },
         { name: '[Officer] Tyme Reducer', factions: ['Police'], assumeServer: 'whitelist' },
