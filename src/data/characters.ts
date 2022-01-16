@@ -2518,7 +2518,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Jack Frent', factions: ['DoC'], displayName: 0 },
     ],
     Purpose2: [
-        { name: '[Officer] Percy Weaver', factions: ['Police', 'DoJ'] },
+        { name: '[Officer] Percy Weaver', factions: ['Police'] },
     ],
     Pydrex: [
         { name: '[Officer] James Doakes', factions: ['Police'], displayName: 2 },
@@ -3380,7 +3380,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Alessio "AJ" Jilani', factions: ['Clean Cartel'] },
     ],
     Wayward: [
-        { name: 'Wayne Ardson', factions: ['DoJ'], assumeServer: 'whitelist' },
+        { name: '[Judge] Wayne Ardson', factions: ['DoJ'], assumeServer: 'whitelist' },
         { name: 'Angelo "Leo Nardo" Nardo', nicknames: ['Leo'] },
         { name: 'Jack "The Joker" Knaves', nicknames: ['The "Joker"'] },
         { name: '[Deputy] Michael Colt', factions: ['Police'], assumeServer: 'public' },
