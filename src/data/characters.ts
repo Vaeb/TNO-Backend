@@ -486,7 +486,10 @@ export const npCharacters: NpCharacters = {
         { name: 'Esteban Julio-Ricardo-Montoya-De-La-Rosa Ramirez' },
     ],
     BucketSt: [
-        { name: 'Gheto Kaiba', displayName: 0 },
+        { name: 'Gheto Kaiba', factions: ['RUST'], displayName: 0 },
+    ],
+    Bundie: [
+        { name: 'Tane Mahuta', factions: ['RUST'], displayName: 1 },
     ],
     BurgSZN: [
         { name: 'Tyler Heisanburg', factions: ['ZooMafia'], nicknames: ['Burg'], displayName: 3 },
@@ -1557,7 +1560,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Fritz Ericson', factions: ['Condemned MC'] },
     ],
     JustJambaa: [
-        { name: 'La Flare Davis', nicknames: ['La Flare'], displayName: 4 },
+        { name: 'La Flare Davis', factions: ['RUST'], nicknames: ['La Flare'], displayName: 4 },
     ],
     JustJamie: [
         { name: '[Officer] George Lawson', factions: ['Police'], nicknames: ['592'] },
@@ -2540,7 +2543,7 @@ export const npCharacters: NpCharacters = {
     ],
     Raided: [
         { name: '[Officer] Gage Draider', factions: ['Police'] },
-        { name: 'Wren Draider', displayName: 0 },
+        { name: 'Wren Draider', factions: ['RUST'], displayName: 0 },
         { name: '[Development] Raided', factions: ['Development'] },
     ],
     raine: [
@@ -2563,7 +2566,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Trooper] AJ Hunter', factions: ['Police'], nicknames: ['207'] },
     ],
     Ray__C: [
-        { name: 'Raymond "Ray" Romanov', factions: ['Cleanbois', 'Clean Cartel', 'Rooster'], nicknames: ['Ray', reg(/\brussia/)], assumeChar: true, assumeServer: 'whitelist' },
+        { name: 'Raymond "Ray" Romanov', factions: ['Cleanbois', 'RUST', 'Clean Cartel', 'Rooster'], nicknames: ['Ray', reg(/\brussia/)], assumeChar: true, assumeServer: 'whitelist' },
         { name: '[Officer] Raycardo Flick', factions: ['Police'], displayName: 1, assumeServer: 'whitelist' },
         { name: '[Officer] Raycardo Flick', factions: ['Police'], displayName: 1, assumeServer: 'public' },
     ],
@@ -2844,7 +2847,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Raymond "Xray" Delprince', factions: ['SSB'], displayName: 0 },
     ],
     Skiliyo: [
-        { name: 'Derek Thomson', factions: ['Rooster'], displayName: 0 },
+        { name: 'Derek Thomson', factions: ['RUST', 'Rooster'], displayName: 0 },
     ],
     SkiMask0n: [
         { name: 'Von Westbrook', factions: ['SSB'], nicknames: ['Vonn'], displayName: 0 },
@@ -2989,7 +2992,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Gerard "Dewey" Hawthorne', nicknames: ['Dewie'], factions: ['Rooster'] },
     ],
     StrikingContact: [
-        { name: 'Seano "The Chemist" Blackthorne', nicknames: ['Chemist'] },
+        { name: 'Seano "The Chemist" Blackthorne', factions: ['RUST'], nicknames: ['Chemist'] },
     ],
     Stuply: [
         { name: 'Salvatore "Big Pussy" Tamburlini' },
