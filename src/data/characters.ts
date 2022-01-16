@@ -1951,6 +1951,9 @@ export const npCharacters: NpCharacters = {
     Macaiyla: [
         { name: 'Jolene Grace', nicknames: ['Savannah'] },
     ],
+    MaceyMclovin: [
+        { name: 'Floki Bartram', factions: ['Lost MC'] },
+    ],
     MacL0ven: [
         { name: 'Negan Graham', factions: ['Lost MC'] },
     ],
