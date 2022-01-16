@@ -2894,6 +2894,7 @@ export const npCharacters: NpCharacters = {
     ],
     sock22: [
         { name: '[Deputy] Richard Dark', factions: ['Police'] },
+        { name: 'Napolean Dankleaf', nicknames: ['Napoleon'], displayName: 0 },
     ],
     SodaKite: [
         { name: 'Ellie Dono', factions: ['Cleanbois', 'Rooster'] },
