@@ -177,7 +177,8 @@ export const npCharacters: NpCharacters = {
         { name: 'Father Dinker', factions: ['ASRR'], nicknames: ['god', 'block'], displayName: 0 },
     ],
     Alonelyhawk: [
-        { name: '[Judge] Allison Thomas', factions: ['DoJ'] },
+        { name: '[Deputy] Allison Thomas', factions: ['Police'] },
+        { name: '[Lawyer] Claudia Gartner', factions: ['DoJ'], displayName: 1 },
     ],
     alpacagurl92: [
         { name: 'April Fooze', nicknames: ['first time'] },
