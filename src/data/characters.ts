@@ -489,7 +489,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Gheto Kaiba', factions: ['RUST'], displayName: 0 },
     ],
     Bundie: [
-        { name: 'Tane Mahuta', factions: ['RUST'], displayName: 1 },
+        { name: 'Tane Mahuta', factions: ['RUST'], nicknames: ['Kiwi'], displayName: 3 },
     ],
     BurgSZN: [
         { name: 'Tyler Heisanburg', factions: ['ZooMafia'], nicknames: ['Burg'], displayName: 3 },
