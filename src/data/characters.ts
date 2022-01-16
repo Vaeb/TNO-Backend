@@ -2624,7 +2624,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Kelly Smith' },
     ],
     Robbeaxe: [
-        { name: 'Sally Avvocata', factions: ['Italian Mafia'], displayName: 0 },
+        { name: '[Deputy] Sally Avvocata', factions: ['Police'], displayName: 2 },
     ],
     RobotNinjaPants: [
         { name: '[Deputy] Hunter Cross', factions: ['Police'] },
