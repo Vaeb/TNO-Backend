@@ -1654,6 +1654,7 @@ export const npCharacters: NpCharacters = {
     ],
     KiloAU: [
         { name: '[Deputy] Robert Anderson', factions: ['Police'] },
+        { name: '[Lawyer] Jason Ledson', factions: ['DoJ'] },
     ],
     Kimchi: [
         { name: 'Sun Moon', nicknames: [reg(/\bsun/)], displayName: 0 },
