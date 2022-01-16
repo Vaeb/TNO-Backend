@@ -305,7 +305,7 @@ const filterRename: { [key in FactionMini]?: string } = {
     doj: 'Law & Government', // Lawyers & Judges
     ssb: 'Ballas',
     gsf: 'Grove Street Families',
-    rust: 'R.U.S.T.',
+    rust: 'RUST',
     larpers: 'The Guild',
     stable: 'The Stable',
     mandem: 'The Mandem',
