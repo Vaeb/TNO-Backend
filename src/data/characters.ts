@@ -1664,7 +1664,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Lawyer] Jason Ledson', factions: ['DoJ'] },
     ],
     Kimchi: [
-        { name: 'Sun Moon', nicknames: [reg(/\bsun/)], displayName: 0 },
+        { name: 'Sun Moon', nicknames: [reg(/\bsun/), 'Korean Gang'], displayName: 0 },
     ],
     Kimmykix: [
         { name: 'April Thompson', factions: ['Pegasus'] },
