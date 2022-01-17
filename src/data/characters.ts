@@ -181,7 +181,8 @@ export const npCharacters: NpCharacters = {
         { name: '[Lawyer] Claudia Gartner', factions: ['DoJ'], displayName: 1 },
     ],
     alpacagurl92: [
-        { name: 'April Fooze', nicknames: ['first time'] },
+        { name: 'April Fooze', factions: ['Chang Gang'], displayName: 1, assumeServer: 'whitelist' },
+        { name: '[Officer] Connie Clark', factions: ['Police'], nicknames: ['cop'], displayName: 2, assumeServer: 'public' },
     ],
     AlyPlayNinja: [
         { name: '[Officer] Amelia Frost', factions: ['Police'] },
