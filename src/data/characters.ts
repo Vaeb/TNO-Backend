@@ -2243,6 +2243,7 @@ export const npCharacters: NpCharacters = {
     ],
     nathankb_: [
         { name: '[Judge] Alan Crane', factions: ['DoJ'], displayName: 2 },
+        { name: '[Deputy] Wesley Arnold', factions: ['Police'], displayName: 2 },
     ],
     Natsumiii: [
         { name: 'Natalie Sumi', factions: ['Rooster'] },
