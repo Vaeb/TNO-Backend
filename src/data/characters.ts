@@ -1568,6 +1568,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Tommy Cruizer', factions: ['Tuner Shop'] },
         { name: 'Jamie Bee', factions: ['Self Insert'], displayName: 0 },
     ],
+    JustPenchi: [
+        { name: 'Casper Clock', factions: ['Prison'], nicknames: ['Plague Doctor'], displayName: 3 },
+    ],
     Kaceytron: [
         { name: 'Bobbi Jo', displayName: 0 },
     ],
