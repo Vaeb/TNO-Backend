@@ -2034,7 +2034,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Agent] Rhett "Bench Guy" McConnell', factions: ['Police'] },
     ],
     Meatwrist: [
-        { name: 'Chad "Chodie" Brodie' },
+        { name: 'Chad "Chodie" Brodie', factions: ['Chang Gang'] },
         { name: '[Deputy] Marshall Gustavsen', factions: ['Police'], nicknames: ['Gustav', '503', 'Chodie Cop'], displayName: 2 },
     ],
     meeka_a: [
