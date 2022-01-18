@@ -3115,6 +3115,7 @@ export const npCharacters: NpCharacters = {
     ],
     TerribleJamie: [
         { name: 'Lavante "L" Lamano', factions: ['GSF'] },
+        { name: 'Rob Farley', displayName: 0 },
     ],
     Test: [
         { name: 'Test6' },
