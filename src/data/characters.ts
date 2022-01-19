@@ -483,8 +483,8 @@ export const npCharacters: NpCharacters = {
     buddha: [
         { name: 'Lang Buddha', factions: ['Cleanbois', 'Clean Cartel', 'Rooster'], leader: true, nicknames: ['Circle Andy', 'Timelord'], assumeChar: true, assumeServer: 'whitelist' },
         { name: '[Ranger] Lang Buddha', factions: ['Police'], displayName: 1, assumeServer: 'public' },
+        { name: 'Esteban Julio-Ricardo-Montoya-De-La-Rosa Ramirez', factions: ['Police'] },
         { name: '[Deputy] Kevin Kona', factions: ['Police'] },
-        { name: 'Esteban Julio-Ricardo-Montoya-De-La-Rosa Ramirez' },
     ],
     BucketSt: [
         { name: 'Gheto Kaiba', factions: ['RUST'], displayName: 0 },
