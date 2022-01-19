@@ -1086,6 +1086,7 @@ export const npCharacters: NpCharacters = {
     ],
     fuslie: [
         { name: 'April Fooze', factions: ['Chang Gang'], displayName: 1, assumeServer: 'whitelist' },
+        { name: '[Officer] Connie Clark', factions: ['Police'], nicknames: ['cop'], displayName: 2 },
         { name: '[Officer] Connie Clark', factions: ['Police'], nicknames: ['cop'], displayName: 2, assumeServer: 'public' },
     ],
     Fyzicul: [
@@ -3061,7 +3062,7 @@ export const npCharacters: NpCharacters = {
     ],
     Sykkuno: [
         { name: 'Yuno Sykk', factions: ['Cleanbois', 'Clean Cartel', 'Rooster'], displayName: 1, assumeServer: 'whitelist', assumeChar: true },
-        { name: 'Uno Reverse', factions: ['Police'], displayName: 1 },
+        { name: '[Officer] Uno Reverse', factions: ['Police'], displayName: 1 },
         { name: '[Ranger] Yuno Sykk', factions: ['Police'], displayName: 1, assumeServer: 'public' },
     ],
     SyncedGamingTV: [
