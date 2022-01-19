@@ -182,6 +182,7 @@ export const npCharacters: NpCharacters = {
     ],
     alpacagurl92: [
         { name: 'April Fooze', factions: ['Chang Gang'], displayName: 1, assumeServer: 'whitelist' },
+        { name: '[Officer] Connie Clark', factions: ['Police'], nicknames: ['cop'], displayName: 2 },
         { name: '[Officer] Connie Clark', factions: ['Police'], nicknames: ['cop'], displayName: 2, assumeServer: 'public' },
     ],
     AlyPlayNinja: [
