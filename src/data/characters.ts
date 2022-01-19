@@ -379,6 +379,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Antonio Reyes', nicknames: [reg(/\bAntonio/)] },
         { name: 'Pablo Madrid', factions: ['Vagos'], nicknames: ['Diablo'] },
     ],
+    BerryyBoo: [
+        { name: '[Officer] Vivienne Grey', factions: ['Police'] },
+    ],
     BFLY: [
         { name: '[Dr.] Torah Andrews', factions: ['Medical'] },
     ],
