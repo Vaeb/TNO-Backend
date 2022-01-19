@@ -2493,6 +2493,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Adam "AP" Peterson', factions: ['Tuner Shop'], displayName: 0 },
         { name: 'Martin Polen', factions: ['Self Insert'], displayName: 0 },
     ],
+    Ponnhub: [
+        { name: '[Therapist] Rexford Yeung', factions: ['Medical'], nicknames: ['Rex'], displayName: 3 },
+    ],
     Pons: [
         { name: 'Harry Martinez', displayName: 0 },
         { name: '[Deputy] Otis Tucker', factions: ['Police'] },
