@@ -3061,6 +3061,7 @@ export const npCharacters: NpCharacters = {
     ],
     Sykkuno: [
         { name: 'Yuno Sykk', factions: ['Cleanbois', 'Clean Cartel', 'Rooster'], displayName: 1, assumeServer: 'whitelist', assumeChar: true },
+        { name: '[Officer] Uno Reverse', factions: ['Police'], displayName: 2 },
         { name: '[Ranger] Yuno Sykk', factions: ['Police'], displayName: 1, assumeServer: 'public' },
     ],
     SyncedGamingTV: [
