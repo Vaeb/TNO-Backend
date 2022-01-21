@@ -639,6 +639,11 @@ export const npCharacters: NpCharacters = {
     Citizen_Cannon: [
         { name: 'Marco Richter', factions: ['Prison'], displayName: 0 },
     ],
+    Clammy: [
+        { name: 'AK', factions: ['SSB'], assumeServer: 'whitelist' },
+        { name: '[Deputy] Derek Monroe', factions: ['Police'], displayName: 2 },
+        { name: '[Officer] Derek Monroe', factions: ['Police'], assumeServer: 'public' },
+    ],
     ClassyPax: [
         { name: 'Madam Ming', displayName: 0 },
         { name: '[Dr.] Ethan Maw', factions: ['Medical'], displayName: 2 },
@@ -1329,11 +1334,6 @@ export const npCharacters: NpCharacters = {
     ],
     illwac: [
         { name: 'Bob Moss', factions: ['Burger Shot'], displayName: 0 },
-    ],
-    ImClammy: [
-        { name: 'AK', factions: ['SSB'], assumeServer: 'whitelist' },
-        { name: '[Deputy] Derek Monroe', factions: ['Police'], displayName: 2 },
-        { name: '[Officer] Derek Monroe', factions: ['Police'], assumeServer: 'public' },
     ],
     ImFluffinJiggly: [
         { name: '[Deputy] ? Wilkons', factions: ['Police'], assumeServer: 'public' },
