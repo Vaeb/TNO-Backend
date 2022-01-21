@@ -1398,6 +1398,7 @@ export const npCharacters: NpCharacters = {
     ],
     JaboodyShow: [
         { name: 'Jerry Curl', displayName: 0 },
+        { name: 'Derrick Derpman' },
         { name: 'Vincent' },
     ],
     Jack: [
