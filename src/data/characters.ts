@@ -640,8 +640,8 @@ export const npCharacters: NpCharacters = {
         { name: 'Marco Richter', factions: ['Prison'], displayName: 0 },
     ],
     Clammy: [
-        { name: 'AK', factions: ['SSB'], assumeServer: 'whitelist' },
         { name: '[Deputy] Derek Monroe', factions: ['Police'], displayName: 2 },
+        { name: 'AK', factions: ['SSB'], assumeServer: 'whitelist' },
         { name: '[Officer] Derek Monroe', factions: ['Police'], assumeServer: 'public' },
     ],
     ClassyPax: [
