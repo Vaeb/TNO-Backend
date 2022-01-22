@@ -192,7 +192,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Terry LaBuff', factions: ['BSK'], displayName: 0 },
     ],
     Amouranth: [
-        { name: 'Amy Rain', nicknames: ['Amy'], displayName: 1 },
+        { name: 'Amy Rain', nicknames: ['Ammy'], displayName: 0 },
     ],
     amsyz: [
         { name: 'Zayn Ahmed', factions: ['BSK'], displayName: 0 },
