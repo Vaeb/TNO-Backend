@@ -545,7 +545,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Tee ?', factions: ['SSB'], assumeServer: 'public' },
     ],
     CappedRP: [
-        { name: 'Capped Tarranova', factions: ['Street Team'], nicknames: ['Terranova', 'Nova'], displayName: 0 },
+        { name: 'Capped Tarranova', factions: ['Street Team', 'Chang Gang'], nicknames: ['Terranova', 'Nova'], displayName: 0 },
     ],
     capsure: [
         { name: 'Dimitri Nekola', factions: ['Pegasus'] },
