@@ -99,7 +99,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Jolene Mushkin', nicknames: ['Little Red'] },
     ],
     adeptthebest: [
-        { name: 'Mari Posa', factions: ['Chang Gang', 'Hydra Gang', 'Chaos'], displayName: 1, assumeServer: 'whitelist' },
+        { name: 'Mari Posa', factions: ['Chang Gang', 'Hydra Gang', 'Chaos'], nicknames: ['Wari', 'Lari'], displayName: 1, assumeServer: 'whitelist' },
         { name: '[Trooper] Selena Mendoza', nicknames: [reg(/\bmendoz/)], factions: ['Police'] },
         { name: 'Hannah Hiltop' },
         { name: 'Maria Poser', factions: ['Gulag Gang'], displayName: 0, assumeServer: 'public' },
