@@ -32,6 +32,9 @@ export const npCharacters: NpCharacters = {
     '0Reed': [
         { name: 'Reed Dankleaf', factions: ['Lost MC'] },
     ],
+    '13Stewartc': [
+        { name: '[Development] Stewart', factions: ['Development'], nicknames: ['Handling', 'Fixes', 'Fixing', 'Tuning', reg(/\bnew\s+\w+\s*stuff/)] },
+    ],
     '4HeadRP': [
         { name: 'Aubrey "4HEAD" Webster', factions: ['Street Team', 'Chang Gang'] },
     ],
