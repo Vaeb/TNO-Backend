@@ -1284,8 +1284,8 @@ export const npCharacters: NpCharacters = {
         { name: 'Freddy Fastfingers', factions: ['HOA'], displayName: 0 },
     ],
     Hurnani: [
+        { name: 'Bruno Brown', factions: ['Italian Mafia'], displayName: 0 },
         { name: 'Borat ?' },
-        { name: 'Bruno Brown', displayName: 0 },
         { name: 'James-Kamea Brown', factions: ['Vagos'] },
     ],
     HutchMF: [
