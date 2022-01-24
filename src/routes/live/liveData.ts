@@ -66,7 +66,7 @@ const ASTATES = {
 } as const;
 
 const game = '32982' as const;
-const languages: string[] = ['en', 'hi'];
+const languages: string[] = ['en', 'hi', 'no'];
 const streamType = HelixStreamType.Live;
 const bigLimit = 100 as const;
 // const maxPages = 5 as const;
