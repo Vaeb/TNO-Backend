@@ -3511,6 +3511,9 @@ export const npCharacters: NpCharacters = {
     YeetabixGaming: [
         { name: 'James Oxley', factions: ['News'], displayName: 0 },
     ],
+    yickster: [
+        { name: 'Alexandra Yang', factions: ['Rooster'], nicknames: ['Alex'], displayName: 0 },
+    ],
     YoinksOG: [
         { name: '[Development] YoinksOG', factions: ['Development'], nicknames: ['3D', 'Clothes', 'Clothing'] },
         { name: 'Doug Canada' },
