@@ -3576,7 +3576,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Skunkz Wallace' },
     ],
     Zoomaa: [
-        { name: 'Tomassi Paparatto', factions: ['ZooMafia'], displayName: 1 },
+        { name: 'Tomassi Paparatto', factions: ['ZooMafia'], displayName: 1, assume: 'assumeOther' },
     ],
     Zotbot: [
         { name: '[Physiotherapist] Leon Marks', factions: ['Medical'] },
