@@ -3182,7 +3182,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Jose Rodriguez', factions: ['Vagos'], nicknames: ['Lil Ese'], displayName: 3 },
     ],
     TheChief1114: [
-        { name: '[Deputy] Fingle Dan', factions: ['Police', 'Dans'] },
+        { name: '[Deputy] Fingle Dan', factions: ['Police', 'Dans'], displayName: 1 },
         { name: 'Chief', factions: ['Self Insert'], displayName: 1 },
     ],
     TheDogfather82: [
