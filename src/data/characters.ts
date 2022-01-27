@@ -915,7 +915,7 @@ export const npCharacters: NpCharacters = {
     ],
     dwjft: [
         { name: 'Dean Watson', factions: ['Limelight', 'Cleanbois', 'Development'], nicknames: ['El Deano', 'El Deano (Dean)', 'Dev stuff'], displayName: 1 },
-        { name: '[Senator] D W', factions: ['DoJ'], leader: true, nicknames: ['DW', 'Senate'], displayName: 3 },
+        { name: '[Senator] D.W.', factions: ['DoJ'], leader: true, nicknames: ['DW', 'Senate'], displayName: 3 },
         { name: 'Terminator ?' },
         { name: 'Batman ?' },
         { name: 'Lucious Francer', nicknames: ['bwo'], displayName: 0 },
