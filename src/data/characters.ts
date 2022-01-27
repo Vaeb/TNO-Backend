@@ -3081,6 +3081,9 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Uno Reverse', factions: ['Police'], displayName: 1 },
         { name: '[Ranger] Yuno Sykk', factions: ['Police'], displayName: 1, assumeServer: 'public' },
     ],
+    Symfuhny: [
+        { name: 'Simon Fuhny', displayName: 0 },
+    ],
     SyncedGamingTV: [
         { name: '[Development] Synced', factions: ['Development'] },
     ],
