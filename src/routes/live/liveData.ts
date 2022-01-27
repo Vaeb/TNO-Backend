@@ -726,9 +726,10 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                     } else if (hasFactions) {
                         activeFactions = [...factionNames, 'guessed'];
                         tagFaction = isFactionColor(factionNames[0]) ? factionNames[0] : 'independent';
-                        tagText = hasFactionsTagText ? `〈${hasFactionsTagText}〉` : `〈${fullFactionMap[factionNames[0]] || factionNames[0]}〉`;
+                        const factionNameFull = fullFactionMap[factionNames[0]] || factionNames[0];
+                        tagText = hasFactionsTagText ? `〈${hasFactionsTagText}〉` : `〈${factionNameFull}〉`;
                         if (tagFaction === 'podcast' || tagFaction === 'watchparty') {
-                            tagText = `《${tagFaction}》${channelName}`;
+                            tagText = `《${factionNameFull}》${channelName}`;
                         }
                     } else if (possibleCharacter) {
                         activeFactions = [...possibleCharacter.factions, 'guessed'];
