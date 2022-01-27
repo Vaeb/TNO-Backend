@@ -48,6 +48,7 @@ export const npFactionsRegex = {
     zoomafia: noFormer(/zoo[\s\-_.]*mafi|\bzm\b/i),
     stable: noLater(noFormer(/\bstable(?:hand)?\b/i)),
     podcast: noLater(noFormer(/\b(?<!!)podcast\b/i)),
+    watchparty: noLater(noFormer(/\b(?<!!)watch[\s\-_.]*part/i)),
     gulaggang: noLater(noFormer(/\bgulag[\s\-_.]*gang|(?:[^\w\s]|^)\s*\bgg\b|\bgg[\s\-_.]*st\b/i)),
     condemnedmc: noLater(noFormer(/\bcondemned|\bcmc\b/i)),
     news: noFormer(/(?<!(?:good|big|great|amazing|bad|some)\s*)\bnews\b|\blsbn\b|weazel[\s\-_.]*news/i),
@@ -110,6 +111,7 @@ export const lesserFactions: { [key in FactionRealMini]?: true } = {
 
 export const greaterFactions: { [key in FactionRealMini]?: true } = {
     podcast: true,
+    watchparty: true,
 } as const;
 
 export type NpFactionsRegexMini = keyof typeof npFactionsRegex;
@@ -170,6 +172,7 @@ export const useColorsDark = { // #f9002f #A87C2D #67BDA5
     otherfaction: '#32ff7e',
     independent: '#32ff7e',
     podcast: '#ffffff',
+    watchparty: '#ffffff',
     othernp: '#ffffff',
     international: '#f780a1',
     publicnp: '#81ecec',
@@ -217,6 +220,7 @@ export const useColorsLight: { [key in FactionColorsMini]: string } = {
     otherfaction: '#12af7e',
     independent: '#12af7e',
     podcast: '#000000',
+    watchparty: '#000000',
     othernp: '#000000',
     international: '#8faf7f',
     publicnp: '#65b1b8',
@@ -279,7 +283,7 @@ const filterOrderTop: FactionMiniArr = [
 
 const filterOrderAfterHasColor: FactionMiniArr = ['doc', 'development'];
 
-const filterOrderAfterNoColor: FactionMiniArr = ['limelight', 'larpers', 'pegasus', 'whitelistnp', 'guessed', 'podcast', 'international', 'other'];
+const filterOrderAfterNoColor: FactionMiniArr = ['limelight', 'larpers', 'pegasus', 'whitelistnp', 'guessed', 'podcast', 'watchparty', 'international', 'other'];
 
 const filterOrder: { [key in FactionMini]?: number } = Object.assign(
     {},

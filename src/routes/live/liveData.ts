@@ -727,6 +727,9 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                         activeFactions = [...factionNames, 'guessed'];
                         tagFaction = isFactionColor(factionNames[0]) ? factionNames[0] : 'independent';
                         tagText = hasFactionsTagText ? `〈${hasFactionsTagText}〉` : `〈${fullFactionMap[factionNames[0]] || factionNames[0]}〉`;
+                        if (tagFaction === 'podcast' || tagFaction === 'watchparty') {
+                            tagText = `${tagText} ${channelName}`;
+                        }
                     } else if (possibleCharacter) {
                         activeFactions = [...possibleCharacter.factions, 'guessed'];
                         tagFaction = possibleCharacter.factionUse;
