@@ -1822,7 +1822,7 @@ export const npCharacters: NpCharacters = {
     ],
     LAGTVMaximusBlack: [
         { name: 'Outto-Tune "OTT" Tyrone', factions: ['BSK'], nicknames: [reg(/\b[O0]\S?TT/)], leader: true, assumeServer: 'whitelist' },
-        { name: '[Ride Along] Max Prime', factions: ['Police'], nicknames: ['Twija'], displayName: 2 },
+        { name: '[Deputy] Max Prime', factions: ['Police'], nicknames: ['Twija'], displayName: 2 },
         { name: 'Outto-Tune "OTT" Tyrone', factions: ['Gulag Gang'], nicknames: [reg(/\b[O0]\S?TT/)], assumeServer: 'public' },
         { name: '[Officer] Twija Prime', factions: ['Police'], assumeServer: 'public' },
     ],
