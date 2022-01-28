@@ -9,7 +9,11 @@ export const intervalSeconds = 0.7;
 
 const addPublicCounties = (reg: RegExp) => new RegExp(
     replaceAll(
-        replaceAll(reg.source, 'pub\\w*', '(?:pub\\w*|ps|🟢|🟣|green|purp|purple)'),
+        replaceAll(
+            reg.source,
+            'pub\\w*',
+            '(?:pub\\w*|ps\\b|🟢|🟣|green|purp|purple)'
+        ),
         '(?:pub|public',
         '(?:pub|public|public[\\s\\-_.]*server|ps\\b|🟢|🟣|green|purp|purple'
     ),
@@ -18,7 +22,7 @@ const addPublicCounties = (reg: RegExp) => new RegExp(
 
 export const regNp = /(?<!(?:not|like)\s)(?:no[\s\-_.]*pixel|\bn[\s\-_.]*p\b)(?![\s\-]*(?:inspired|based|like|ban|\.ins\b))/i;
 export const regNpPublic = addPublicCounties(mergeRegex([
-    /(?:no[\s\-_.]*pixel|\bn[\s\-_.]*p(?=\b|\d))(?:[\s\-_.]*(?:rp|\d+\.?\d*))?[\W_]*pub\w*\b(?!\W+(?:later|after))/i,
+    /(?:no[\s\-_.]*pixel|\bn[\s\-_.]*p(?=\b|\d))(?:[\s\-_.]*(?:rp|\d+\.?\d*))?[\W_]*pub\w*(?!\W+(?:later|after))/i,
     /|(\bpub\w*[\W_]*(?:no[\s\-_.]*pixel|\bn[\s\-_.]*p(?=\b|\d)))/i,
     /|(?<=(?:\bon|playing|gta[\s\-_.]*[5v]?|rp|roleplay)\W+)(?:pub|public)/i,
     /|\bpub\w*[\W_]*(?:pub|public|server|county|city|country|universe|timeline|queue|for\b|roleplay|rp\b|stuff\b|shenanigans)/i,
