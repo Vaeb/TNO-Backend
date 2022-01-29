@@ -49,7 +49,7 @@ export const npFactionsRegex = {
     stable: noLater(noFormer(/\bstable(?:hand)?\b/i)),
     podcast: noLater(noFormer(/\b(?<!!)podcast\b/i)),
     watchparty: noLater(noFormer(/\b(?<!!)watch[\s\-_.]*part/i)),
-    gulaggang: noLater(noFormer(/\bgulag[\s\-_.]*gang|(?:[^\w\s]|^)\s*\bgg\b|\bgg[\s\-_.]*st\b/i)),
+    gulaggang: noLater(noFormer(/\bgulag[\s\-_.]*gang|(?:[^\w\s]|^)\s*\bgg\b|\bgg[\s\-_.]*(?:st|z)\b/i)),
     condemnedmc: noLater(noFormer(/\bcondemned|\bcmc\b/i)),
     news: noFormer(/(?<!(?:good|big|great|amazing|bad|some)\s*)\bnews\b|\blsbn\b|weazel[\s\-_.]*news/i),
     rooster: noFormer(/\brr\b|\brooster[^\w\s]?(?:s|\b)|rooster[\s\-_.]*(?:rest|ranch|reef|inn|hotel|cab)/i),
