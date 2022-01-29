@@ -1098,7 +1098,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Tyrell Fresh', factions: ['SSB'], leader: true, displayName: 0 },
     ],
     Frynaut: [
-        { name: 'Kratos Of Sparta', factions: ['Rooster'], nicknames: ['God of War', 'God'] },
+        { name: 'Kratos Of Sparta', factions: ['Gulag Gang', 'Rooster'], nicknames: ['God of War', 'God'] },
     ],
     fuslie: [
         { name: 'April Fooze', factions: ['Chang Gang'], displayName: 1, assumeServer: 'whitelist' },
@@ -2262,6 +2262,9 @@ export const npCharacters: NpCharacters = {
         { name: '[Judge] Alan Crane', factions: ['DoJ'], displayName: 2 },
         { name: '[Deputy] Wesley Arnold', factions: ['Police'], displayName: 2 },
     ],
+    nattfasa_: [
+        { name: 'Max Wazowski', factions: ['Gulag Gang'], nicknames: ['Maxwell'], displayName: 0 },
+    ],
     Natsumiii: [
         { name: 'Natalie Sumi', factions: ['Rooster'] },
     ],
@@ -2645,6 +2648,9 @@ export const npCharacters: NpCharacters = {
     ],
     RileyRP: [
         { name: 'Bubbles Smith', factions: ['ZooMafia'] },
+    ],
+    ripoozi: [
+        { name: 'Larry Knox', factions: ['Gulag Gang'], displayName: 0 },
     ],
     RiZRP: [
         { name: 'Nikita Reznikov', factions: ['Pegasus'] },
