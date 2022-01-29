@@ -856,7 +856,7 @@ export const npCharacters: NpCharacters = {
     ],
     DocWizard: [
         { name: '[Judge] John Bailey', factions: ['DoJ'] },
-        { name: '[Officer] Terrance "TJ" Walker', factions: ['Police'] },
+        { name: 'Terrance "TJ" Walker', factions: ['BBMC'] },
         { name: 'Preston Landor' },
     ],
     Dogbert: [
@@ -1549,7 +1549,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Maria Estrella Duarte', factions: ['Vagos'], nicknames: [reg(/\be+s+t+r+e+l/)], displayName: 2 },
     ],
     Juggs: [
-        { name: 'Sidwig Crawshank', factions: ['ZooMafia'], nicknames: [reg(/\bsidwig/)], displayName: 0 },
+        { name: 'Sidwig Crawshank', factions: ['ZooMafia'], nicknames: [reg(/\bsidwig/)], displayName: 1 },
         { name: 'Lenny Large', nicknames: [reg(/\blenny/)], displayName: 0 },
         { name: 'Traevon Williams', nicknames: ['The Barber'], displayName: 3 },
     ],
