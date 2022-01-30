@@ -609,7 +609,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Jagger "Chatterbox" Gerardy' },
     ],
     Chief: [
-        { name: 'Baada Ka', factions: ['Independent', 'Chang Gang'], nicknames: ['Chief'], displayName: 3, assume: 'assumeNpNoOther' },
+        { name: 'Baada Ka', factions: ['GSF'], nicknames: ['Chief'], displayName: 3, assume: 'assumeNpNoOther' },
     ],
     ChloeLock: [
         { name: 'Chloe Blanc', nicknames: ['Chloé'], displayName: 0 },
