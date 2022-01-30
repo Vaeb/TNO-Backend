@@ -1603,7 +1603,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Rick Tames', factions: ['GSF'], nicknames: ['Microphone'], displayName: 0 },
     ],
     Kari: [
-        { name: 'Karina Dawn', nicknames: ['crim', 'criminal', 'robbing', reg(/\bkarina/)] },
+        { name: 'Karina Dawn', factions: ['Harmony'], nicknames: ['crim', 'criminal', 'robbing', reg(/\bkarina/)] },
         { name: '[Deputy] Mina Price', factions: ['Police'] },
         { name: '[EMS] Khloe Brooks', factions: ['Medical'] },
     ],
