@@ -2871,6 +2871,7 @@ export const npCharacters: NpCharacters = {
     ],
     Skannerz_: [
         { name: 'Wayne Kerr', factions: ['Tuner Shop'], displayName: 0 },
+        { name: '[Deputy] Pual Greenway', factions: ['Police'], displayName: 2 },
     ],
     Skelasoldier: [
         { name: 'Raymond "Xray" Delprince', factions: ['SSB'], displayName: 0 },
