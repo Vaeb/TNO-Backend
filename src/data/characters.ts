@@ -490,6 +490,9 @@ export const npCharacters: NpCharacters = {
     BronzeRP: [
         { name: 'Gary Adams', factions: ['Lost MC'] },
     ],
+    BrookeAB: [
+        { name: 'Abby ?' },
+    ],
     buddha: [
         { name: 'Lang Buddha', factions: ['Cleanbois', 'Clean Cartel', 'Rooster'], leader: true, nicknames: ['Circle Andy', 'Timelord'], assumeChar: true, assumeServer: 'whitelist' },
         { name: '[Ranger] Lang Buddha', factions: ['Police'], displayName: 1, assumeServer: 'public' },
