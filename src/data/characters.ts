@@ -491,7 +491,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Gary Adams', factions: ['Lost MC'] },
     ],
     BrookeAB: [
-        { name: 'Abby ?' },
+        { name: 'Abby Brooks', displayName: 0 },
     ],
     buddha: [
         { name: 'Lang Buddha', factions: ['Cleanbois', 'Clean Cartel', 'Rooster'], leader: true, nicknames: ['Circle Andy', 'Timelord'], assumeChar: true, assumeServer: 'whitelist' },
