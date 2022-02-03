@@ -3307,7 +3307,7 @@ export const npCharacters: NpCharacters = {
     ],
     travpiper: [
         { name: 'Carlos "Cheddar" Sanchez', factions: ['HOA'] },
-        { name: 'William Gunner', nicknames: ['Willy'], displayName: 2 },
+        { name: '[Deputy] William Gunner', factions: ['Police'], nicknames: ['Willy'], displayName: 2 },
         { name: '[Deputy] Jason Hannah', factions: ['Police'], displayName: 1 },
         { name: 'Warren Wallace' },
         { name: 'Charlie Colcord' },
