@@ -3101,6 +3101,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Seven Lighthouse', displayName: 0 },
         { name: 'Alfie Hunter', displayName: 0 },
     ],
+    synkuraa: [
+        { name: 'Alfredo ?', factions: ['BBMC'], assumeServer: 'public' },
+    ],
     SynthHunter: [
         { name: 'Hunter "Wingman" Skye', factions: ['Rooster'] },
     ],
