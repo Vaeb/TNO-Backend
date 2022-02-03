@@ -2707,6 +2707,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Ai "Egg" Musori', nicknames: ['Bitch'], factions: ['LARPers', 'Cleanbois', 'Rooster'], displayName: 0 },
         { name: '[Deputy] Yuu Gondai', factions: ['Police'], nicknames: ['Yu', 'Yoo', 'Gon Die'] },
     ],
+    SAkiller: [
+        { name: 'Pablo Wealth', factions: ['Chang Gang'], displayName: 0 },
+    ],
     Sal_Rosenberg: [
         { name: 'Sal Rosenberg' },
         { name: 'Debo Davis', factions: ['GSF'] },
