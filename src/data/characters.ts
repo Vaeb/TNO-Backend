@@ -95,7 +95,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Modi Janta', factions: ['NBC'] },
     ],
     abrvxas: [
-        { name: 'Alexei Pavlovich', factions: ['ZooMafia'], nicknames: ['Chicken Head'], displayName: 0 },
+        { name: 'Alexei Pavlovich', factions: ['ZooMafia'], nicknames: ['Chicken Head'], displayName: 3 },
     ],
     Acaibear: [
         { name: '[Officer] Emily Reinhart', factions: ['Police'] },
