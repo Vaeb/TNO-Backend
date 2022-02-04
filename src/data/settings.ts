@@ -40,7 +40,8 @@ export const regNpInternational = mergeRegex([
 
 console.log(regNpPublic);
 
-export const regNpWhitelist = /(?<!(?:waiting for)\s)(?:\bwhitelist|\bwl+\b|\bmain\b|\bprivate\b(?![\s\-]+(?:detective|investigat\w+)))\b(?!\W+(?:later|after))/i;
+// eslint-disable-next-line max-len
+export const regNpWhitelist = /(?<!(?:waiting for)\s)(?:\bwhitelist|\bwl+\b|(?:no[\s\-_.]*pixel|\bn[\s\-_.]*p(?=\b|\d))(?:[\s\-_.]*(?:rp|\d+\.?\d*))?[\W_]*(?:main|white)\b|\b(?:main|white)[\W_]*(?:nopixel|np|server)|\bprivate\b(?![\s\-]+(?:detective|investigat\w+)))\b(?!\W+(?:later|after))/i;
 export const regOther = /the\s*family|\btf\s?rp|family\s*rp|twitchrp|\bt\W*rp|\bnon[\s\-]*stop|\bns\s?rp/i;
 export const regOthers = [
     { name: 'TheFamilyRP', reg: /\btf\s?rp|family\s*(?:rp\b|roleplay)/i, include: 1 },
