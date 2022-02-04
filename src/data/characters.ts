@@ -2673,7 +2673,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Jacob Slate', factions: ['DoJ'], displayName: 0 },
     ],
     roflgator: [
-        { name: 'Robert Spowylamywanowski', nicknames: ['Rob', 'Polish', 'Night Manager'], displayName: 3 },
+        { name: 'Robert Spowylamywanowski', factions: ['Burger Shot'], nicknames: ['Rob', 'Polish', 'Night Manager'], displayName: 3 },
     ],
     RookTM: [
         { name: '[Deputy] Deacon Frye', factions: ['Police'], nicknames: ['564'] },
