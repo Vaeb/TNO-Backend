@@ -2410,6 +2410,10 @@ export const npCharacters: NpCharacters = {
     onebaw: [
         { name: 'Arthur Morgan', factions: ['Condemned MC'], displayName: 0 },
     ],
+    OneProtectiveFox: [
+        { name: 'Hanna Baker', factions: ['DoC'], displayName: 0 },
+        { name: 'Cassie Hoyt', displayName: 0 },
+    ],
     OneSmolBumble: [
         { name: '[EMS] Emery Ore', factions: ['Medical'], nicknames: ['E-55'], displayName: 1 },
         { name: 'Clover Bloom', displayName: 0 },
@@ -2722,10 +2726,6 @@ export const npCharacters: NpCharacters = {
     ],
     samtbull23: [
         { name: 'Sammy B', factions: ['Harmony'], displayName: 0 },
-    ],
-    sandiicheexs: [
-        { name: 'Hanna Baker', factions: ['DoC'], displayName: 0 },
-        { name: 'Cassie Hoyt', displayName: 0 },
     ],
     saNhje: [
         { name: '[Development] saNhje', factions: ['Development'], nicknames: ['MLO'] },
