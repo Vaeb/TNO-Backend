@@ -1,4 +1,5 @@
 import { HelixPaginatedResult, HelixStream, HelixStreamType } from 'twitch';
+import { gotScraping } from 'got-scraping';
 
 import { apiClient } from '../../twitchSetup';
 import {
@@ -83,6 +84,8 @@ const toFactionMini = (faction: string) => faction.toLowerCase().replace(' ', ''
 *****************************************************************************
 
 */
+const fbStreamers: [string, NpCharacter][] = [];
+
 for (const [streamer, characters] of Object.entries(npCharacters)) {
     const streamerLower = streamer.toLowerCase();
 
@@ -100,6 +103,7 @@ for (const [streamer, characters] of Object.entries(npCharacters)) {
 
     const foundOthers: { [key in AssumeOther]?: boolean } = {};
     let wlBiasIdx: number | undefined;
+    let isFacebook = false;
 
     // eslint-disable-next-line no-loop-func
     characters.forEach((char, charIdx) => {
@@ -112,6 +116,7 @@ for (const [streamer, characters] of Object.entries(npCharacters)) {
         let knownName;
         let currentName = null;
         let displayNameNum = charOld.displayName;
+        if (char.facebook) isFacebook = true;
 
         for (let i = 0; i < names.length; i++) {
             const name = names[i];
@@ -244,6 +249,10 @@ for (const [streamer, characters] of Object.entries(npCharacters)) {
         npCharacters[streamerLower] = characters;
         delete npCharacters[streamer];
     }
+
+    if (isFacebook) {
+        fbStreamers.push([streamer, characters]);
+    }
 }
 
 const npFactionsRegexEntries = Object.entries(npFactionsRegex) as [NpFactionsRegexMini, RegExp][];
@@ -308,6 +317,26 @@ export const getStreams = async (options: GetStreamsOptions): Promise<HelixStrea
     return gtaStreams;
 };
 
+interface FbStream {
+    channelName: string;
+    characters: NpCharacter[];
+}
+
+export const getFbStreams = async (): Promise<FbStream[]> => {
+    const fbStreams: FbStream[] = (await Promise.all(fbStreamers
+        .map(async ([streamer, characters]) => {
+            const { body } = await gotScraping.get(`https://www.facebook.com/${streamer}`);
+            const isLive = body.includes('is live now');
+            if (isLive === false) return undefined;
+            return { channelName: streamer, characters };
+        })))
+        .filter(fbStream => fbStream !== undefined) as unknown as FbStream[]; //
+
+    // const fbStreams: FbStream[] = fbStreamsMaybe.filter(fbStream => fbStream !== undefined);
+
+    return fbStreams;
+};
+
 export interface LiveOptions {
     factionName: FactionMini;
     filterEnabled: boolean;
@@ -341,6 +370,7 @@ interface Stream extends BaseStream {
     noPublicInclude: boolean; // use these props on frontend to determine whether stream should show
     noInternationalInclude: boolean; // use these props on frontend to determine whether stream should show
     wlOverride: boolean;
+    facebook: boolean;
     // keepCase: boolean;
 }
 
@@ -356,6 +386,14 @@ interface Live {
     factionCount: FactionCount;
     filterFactions: any[];
     streams: Stream[];
+}
+
+interface FbStreamDetails {
+    userDisplayName: string,
+    title: string,
+    viewers: number,
+    profileUrlOverride: string,
+    facebook: true,
 }
 
 const cachedResults: { [key: string]: Live | undefined } = {};
@@ -399,7 +437,20 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                 } = options;
                 const allowOthersNow = allowOthers || factionName === 'other';
 
-                const gtaStreams = await getStreams({ searchNum, international });
+                const gtaStreams: (HelixStream | FbStreamDetails)[] = await getStreams({ searchNum, international });
+                const fbStreams = await getFbStreams();
+
+                for (const fbStream of fbStreams) {
+                    gtaStreams.push({
+                        userDisplayName: fbStream.channelName,
+                        title: '',
+                        viewers: 0,
+                        profileUrlOverride: 'https://www.pngitem.com/pimgs/m/510-5106153_facebook-level-up-logo-hd-png-download.png',
+                        facebook: true,
+                    });
+                }
+
+                console.log('fbStreams', fbStreams);
 
                 log('Fetched streams! Now processing data...');
 
@@ -422,7 +473,7 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                         title,
                         // tagIds: helixStream.tagIds,
                         viewers,
-                        profileUrl: knownPfps[helixStream.userId],
+                        profileUrl: (helixStream as FbStreamDetails).profileUrlOverride || knownPfps[(helixStream as HelixStream).userId],
                     }; // rpServer, characterName, faction, tagText, tagFaction
 
                     // let noOthersInclude = true; // INV: Still being used?
@@ -543,6 +594,7 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                             noPublicInclude: true,
                             noInternationalInclude: true,
                             wlOverride: usuallyWl,
+                            facebook: !!(helixStream as FbStreamDetails).facebook,
                             // keepCase: true,
                         };
 
@@ -760,6 +812,7 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                         noPublicInclude: !onNpPublic,
                         noInternationalInclude: !onNpInternational,
                         wlOverride: usuallyWl,
+                        facebook: !!(helixStream as FbStreamDetails).facebook,
                         // keepCase,
                     };
 

@@ -20,6 +20,7 @@ export interface Character {
     assumeServer?: AssumeServer;
     assumeChar?: boolean;
     wlBias?: WlBias;
+    facebook?: boolean;
 }
 
 export type NpCharacters = { [key: string]: Character[] };
@@ -781,7 +782,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Rudi Rinsen', factions: ['Lost MC'], leader: true },
     ],
     dasMEHDI: [
-        { name: '[Officer] Brian Knight', factions: ['Police'], nicknames: ['495'] },
+        { name: '[Officer] Brian Knight', factions: ['Police'], nicknames: ['495'], facebook: true },
         { name: 'Nino Chavez', factions: ['Cleanbois', 'Pegasus', 'Rooster'] },
         { name: 'Ryan Kindle', factions: ['HOA'] },
         { name: 'Reema', nicknames: ['The "Whorelord"'] },
@@ -1889,12 +1890,12 @@ export const npCharacters: NpCharacters = {
     Loqrin: [
         { name: '[Development] Loqrin', factions: ['Development'] },
     ],
-    Lord_Kebun: [
-        { name: 'Mr. K', factions: ['Chang Gang'], leader: true, displayName: 0, nicknames: ['Chang', 'The "Dragon"'] },
-        { name: '[Deputy] Richard Richardson', factions: ['Police'], nicknames: ['585'] },
-    ],
     LordJasta: [
         { name: 'Chris McGrawl' },
+    ],
+    LordKebun: [
+        { name: 'Mr. K', factions: ['Chang Gang'], leader: true, displayName: 0, nicknames: ['Chang', 'The "Dragon"'], facebook: true },
+        { name: '[Deputy] Richard Richardson', factions: ['Police'], nicknames: ['585'] },
     ],
     LordNetloc: [
         { name: 'Carter Banx', factions: ['GSF'], displayName: 0 },
@@ -2588,7 +2589,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Armando Hernandez', factions: ['Tuner Shop'] },
     ],
     Ramee: [
-        { name: 'Ramee El-Rahman', factions: ['Chang Gang', 'Tuner Shop'], nicknames: ['The "Warlord"', 'The "Vulture"', 'SBS Patient-0'] },
+        { name: 'Ramee El-Rahman', factions: ['Chang Gang', 'Tuner Shop'], nicknames: ['The "Warlord"', 'The "Vulture"', 'SBS Patient-0'], facebook: true },
         { name: '[Ranger] Conan Clarkson', factions: ['Police'] },
     ],
     Rasta: [
@@ -2596,7 +2597,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Mary Livingston', displayName: 0 },
     ],
     RatedEpicz: [
-        { name: 'Randy Bullet', factions: ['Chang Gang'], nicknames: ['Lazy-Eye', 'Shankz'], assumeServer: 'whitelist' },
+        { name: 'Randy Bullet', factions: ['Chang Gang'], nicknames: ['Lazy-Eye', 'Shankz'], assumeServer: 'whitelist', facebook: true },
         { name: 'Roundy Buffet', factions: ['Gulag Gang'], nicknames: ['Randy', 'Bullet'], assumeServer: 'public' },
         { name: '[Trooper] AJ Hunter', factions: ['Police'], nicknames: ['207'] },
     ],
