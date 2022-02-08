@@ -342,7 +342,7 @@ export const getFbStreams = async (): Promise<FbStreamDetails[]> => {
         .map(async ([streamer, characters]) => {
             const { body } = await gotScraping.get(`https://mobile.facebook.com/gaming/${streamer}`);
             const isLive = body.includes('playbackIsLiveStreaming&quot;:true');
-            if (streamer === 'JJLakee' && isLive == false) console.log('NOT LIVE', streamer, body);
+            // if (streamer === 'JJLakee' && isLive == false) console.log('NOT LIVE', streamer, body);
             if (isLive === false) return undefined;
             return [streamer, body];
         })))
@@ -360,7 +360,7 @@ export const getFbStreams = async (): Promise<FbStreamDetails[]> => {
                 .replace(/\\(\w\w) /g, (_, hex) => String.fromCharCode(parseInt(hex, 16)));
             const thumbnailUrl = (body.match(/\sdata-store=[\s\S]+?background: url\(&#039;(http.+?)&#039;/) || ['', ''])[1]
                 .replace(/\\(\w\w) /g, (_, hex) => String.fromCharCode(parseInt(hex, 16)));
-            console.log(streamer, viewCountStr, videoUrl);
+            // console.log(streamer, viewCountStr, videoUrl);
 
             return {
                 userDisplayName: streamer,
@@ -917,7 +917,7 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                     baseHtmlFb,
                 };
 
-                console.log('npStreamsFb', npStreamsFb);
+                // console.log('npStreamsFb', npStreamsFb);
 
                 cachedResults[optionsStr] = result;
                 log('Done fetching streams data!');
