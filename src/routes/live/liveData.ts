@@ -342,7 +342,7 @@ export const getFbStreams = async (): Promise<FbStreamDetails[]> => {
         .map(async ([streamer, characters]) => {
             const { body } = await gotScraping.get(`https://mobile.facebook.com/gaming/${streamer}`);
             const isLive = body.includes('playbackIsLiveStreaming&quot;:true');
-            // if (streamer === 'JJLakee' && isLive == false) console.log('NOT LIVE', streamer, body);
+            if (streamer === 'JJLakee' && isLive == false) console.log('NOT LIVE', streamer, body);
             if (isLive === false) return undefined;
             return [streamer, body];
         })))
