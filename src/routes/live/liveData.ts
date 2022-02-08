@@ -325,9 +325,13 @@ interface FbStream {
 export const getFbStreams = async (): Promise<FbStream[]> => {
     const fbStreams: FbStream[] = (await Promise.all(fbStreamers
         .map(async ([streamer, characters]) => {
-            const { body } = await gotScraping.get(`https://www.facebook.com/${streamer}`);
-            const isLive = body.includes('is live now');
+            const { body } = await gotScraping.get(`https://mobile.facebook.com/gaming/${streamer}`);
+            const isLive = body.includes('playbackIsLiveStreaming&quot;:true');
             if (isLive === false) return undefined;
+            const videoUrl = (body.match(/&quot;videoURL&quot;:&quot;(.*?)&quot;/) || [])[1];
+            const viewCountStr = (body.match(/>LIVE<[\s\S]+?<\/i>([\d.K]+)<\/span>/) || [])[1];
+            console.log(streamer, viewCountStr, videoUrl);
+            // if (streamer === 'Ramee') console.log(body);
             return { channelName: streamer, characters };
         })))
         .filter(fbStream => fbStream !== undefined) as unknown as FbStream[]; //
@@ -437,18 +441,18 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                 } = options;
                 const allowOthersNow = allowOthers || factionName === 'other';
 
-                const gtaStreams: (HelixStream | FbStreamDetails)[] = await getStreams({ searchNum, international });
                 const fbStreams = await getFbStreams();
+                const gtaStreams: (HelixStream | FbStreamDetails)[] = await getStreams({ searchNum, international });
 
-                for (const fbStream of fbStreams) {
-                    gtaStreams.push({
-                        userDisplayName: fbStream.channelName,
-                        title: '',
-                        viewers: 0,
-                        profileUrlOverride: 'https://www.pngitem.com/pimgs/m/510-5106153_facebook-level-up-logo-hd-png-download.png',
-                        facebook: true,
-                    });
-                }
+                // for (const fbStream of fbStreams) {
+                //     gtaStreams.push({
+                //         userDisplayName: fbStream.channelName,
+                //         title: '',
+                //         viewers: 0,
+                //         profileUrlOverride: 'https://www.pngitem.com/pimgs/m/510-5106153_facebook-level-up-logo-hd-png-download.png',
+                //         facebook: true,
+                //     });
+                // }
 
                 console.log('fbStreams', fbStreams);
 
