@@ -956,7 +956,7 @@ export const getNpLive = async (baseOptions = {}, override = false, integrated =
 export const newFbData = async (fbStreams: FbStreamDetails[], tick: number): Promise<Stream[]> => {
     const fbStreamsJson = JSON.stringify(fbStreams);
     if (fbStreamsJson === fbStreamsCacheJson) {
-        log('SAME AS CACHE');
+        log('>>>>>>>>>> GOT FB REQUEST: SAME AS CACHE');
         return [];
     }
     const oldChannels = fbStreamsCache.map(data => data.userDisplayName);
