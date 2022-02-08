@@ -483,7 +483,7 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                 const nowTime = +new Date();
                 if ((nowTime - lastFbStreamsLookup) > 1000 * 60 * 10) {
                     lastFbStreamsLookup = nowTime;
-                    fbStreamsCache = await getFbStreams();
+                    // fbStreamsCache = await getFbStreams();
                 }
 
                 const fbStreams = fbStreamsCache;
