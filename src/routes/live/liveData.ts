@@ -439,6 +439,9 @@ interface Live {
 const cachedResults: { [key: string]: Live | undefined } = {};
 const npStreamsPromise: { [key: string]: Promise<Live> | undefined } = {};
 
+let fbStreamsCache: FbStreamDetails[] = [];
+let lastFbStreamsLookup: number = 0;
+
 export const getNpLive = async (baseOptions = {}, override = false): Promise<Live> => {
     if (!isObjEmpty(baseOptions)) log(baseOptions);
 
@@ -477,7 +480,13 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                 } = options;
                 const allowOthersNow = allowOthers || factionName === 'other';
 
-                const fbStreams = await getFbStreams();
+                const nowTime = +new Date();
+                if ((nowTime - lastFbStreamsLookup) > 1000 * 60 * 10) {
+                    lastFbStreamsLookup = nowTime;
+                    fbStreamsCache = await getFbStreams();
+                }
+
+                const fbStreams = fbStreamsCache;
                 const gtaStreams: (HelixStream | FbStreamDetails)[] = await getStreams({ searchNum, international });
 
                 for (const fbStream of fbStreams) {
