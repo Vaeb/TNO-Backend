@@ -317,24 +317,63 @@ export const getStreams = async (options: GetStreamsOptions): Promise<HelixStrea
     return gtaStreams;
 };
 
-interface FbStream {
-    channelName: string;
-    characters: NpCharacter[];
+// interface FbStream {
+//     channelName: string;
+//     videoUrl: string;
+//     viewCountStr: string;
+//     viewCount: number;
+//     pfpUrl: string;
+//     thumbnailUrl: string;
+//     characters: NpCharacter[];
+// }
+
+interface FbStreamDetails {
+    userDisplayName: string,
+    videoUrl: string
+    title: string,
+    viewers: number,
+    profileUrlOverride: string,
+    thumbnailUrl: string,
+    facebook: boolean,
 }
 
-export const getFbStreams = async (): Promise<FbStream[]> => {
-    const fbStreams: FbStream[] = (await Promise.all(fbStreamers
+export const getFbStreams = async (): Promise<FbStreamDetails[]> => {
+    const fbStreamsRaw = (await Promise.all(fbStreamers
         .map(async ([streamer, characters]) => {
             const { body } = await gotScraping.get(`https://mobile.facebook.com/gaming/${streamer}`);
             const isLive = body.includes('playbackIsLiveStreaming&quot;:true');
+            if (streamer === 'JJLakee' && isLive == false) console.log('NOT LIVE', streamer, body);
             if (isLive === false) return undefined;
-            const videoUrl = (body.match(/&quot;videoURL&quot;:&quot;(.*?)&quot;/) || [])[1];
-            const viewCountStr = (body.match(/>LIVE<[\s\S]+?<\/i>([\d.K]+)<\/span>/) || [])[1];
-            console.log(streamer, viewCountStr, videoUrl);
-            // if (streamer === 'Ramee') console.log(body);
-            return { channelName: streamer, characters };
+            return [streamer, body];
         })))
-        .filter(fbStream => fbStream !== undefined) as unknown as FbStream[]; //
+        .filter(result => result !== undefined);
+
+    const fbStreams: FbStreamDetails[] = fbStreamsRaw
+        .map((data) => {
+            const [streamer, body] = (data as [string, string]);
+            const videoUrl = (body.match(/&quot;videoURL&quot;:&quot;(.*?)&quot;/) || ['', ''])[1]
+                .replace(/\\/g, '');
+            const viewCountStr = (body.match(/>LIVE<[\s\S]+?<\/i>([\d.K]+)<\/span>/) || [])[1];
+            let viewCount = parseFloat(viewCountStr);
+            if (viewCountStr.includes('K')) viewCount *= 1000;
+            const pfpUrl = (body.match(/[ "]profpic"[\s\S]+?(http.+?)&#039;/) || ['', ''])[1]
+                .replace(/\\(\w\w) /g, (_, hex) => String.fromCharCode(parseInt(hex, 16)));
+            const thumbnailUrl = (body.match(/\sdata-store=[\s\S]+?background: url\(&#039;(http.+?)&#039;/) || ['', ''])[1]
+                .replace(/\\(\w\w) /g, (_, hex) => String.fromCharCode(parseInt(hex, 16)));
+            console.log(streamer, viewCountStr, videoUrl);
+
+            return {
+                userDisplayName: streamer,
+                videoUrl,
+                title: `《Facebook Gaming - ${streamer}》`,
+                viewers: viewCount,
+                profileUrlOverride: pfpUrl,
+                thumbnailUrl,
+                facebook: true,
+            };
+        });
+
+    fbStreams.sort((a, b) => b.viewers - a.viewers);
 
     // const fbStreams: FbStream[] = fbStreamsMaybe.filter(fbStream => fbStream !== undefined);
 
@@ -375,6 +414,8 @@ interface Stream extends BaseStream {
     noInternationalInclude: boolean; // use these props on frontend to determine whether stream should show
     wlOverride: boolean;
     facebook: boolean;
+    videoUrl?: string;
+    thumbnailUrl?: string;
     // keepCase: boolean;
 }
 
@@ -390,18 +431,13 @@ interface Live {
     factionCount: FactionCount;
     filterFactions: any[];
     streams: Stream[];
-}
-
-interface FbStreamDetails {
-    userDisplayName: string,
-    title: string,
-    viewers: number,
-    profileUrlOverride: string,
-    facebook: true,
+    streamsFb: Stream[];
+    baseHtml: string;
+    baseHtmlFb: string;
 }
 
 const cachedResults: { [key: string]: Live | undefined } = {};
-const npStreamsPromise: { [key: string]: Promise<Stream[]> | undefined } = {};
+const npStreamsPromise: { [key: string]: Promise<Live> | undefined } = {};
 
 export const getNpLive = async (baseOptions = {}, override = false): Promise<Live> => {
     if (!isObjEmpty(baseOptions)) log(baseOptions);
@@ -432,7 +468,7 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
     }
 
     if (npStreamsPromise[optionsStr] === undefined || override) {
-        npStreamsPromise[optionsStr] = new Promise<Stream[]>(async (resolve, reject) => {
+        npStreamsPromise[optionsStr] = new Promise<Live>(async (resolve, reject) => {
             try {
                 log('Fetching streams data...');
 
@@ -444,15 +480,9 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                 const fbStreams = await getFbStreams();
                 const gtaStreams: (HelixStream | FbStreamDetails)[] = await getStreams({ searchNum, international });
 
-                // for (const fbStream of fbStreams) {
-                //     gtaStreams.push({
-                //         userDisplayName: fbStream.channelName,
-                //         title: '',
-                //         viewers: 0,
-                //         profileUrlOverride: 'https://www.pngitem.com/pimgs/m/510-5106153_facebook-level-up-logo-hd-png-download.png',
-                //         facebook: true,
-                //     });
-                // }
+                for (const fbStream of fbStreams) {
+                    gtaStreams.push(fbStream);
+                }
 
                 console.log('fbStreams', fbStreams);
 
@@ -468,6 +498,7 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                 // const minViewersUse = isNpMetaFaction ? minViewers : 3;
 
                 const npStreams: Stream[] = [];
+                const npStreamsFb: Stream[] = [];
                 const factionCount: FactionCount = mapObj(npFactions, () => 0);
                 gtaStreams.forEach((helixStream) => {
                     const { userDisplayName: channelName, title, viewers } = helixStream;
@@ -479,6 +510,8 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                         viewers,
                         profileUrl: (helixStream as FbStreamDetails).profileUrlOverride || knownPfps[(helixStream as HelixStream).userId],
                     }; // rpServer, characterName, faction, tagText, tagFaction
+
+                    const isFacebook = !!(helixStream as FbStreamDetails).facebook;
 
                     // let noOthersInclude = true; // INV: Still being used?
 
@@ -598,12 +631,22 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                             noPublicInclude: true,
                             noInternationalInclude: true,
                             wlOverride: usuallyWl,
-                            facebook: !!(helixStream as FbStreamDetails).facebook,
+                            facebook: isFacebook,
                             // keepCase: true,
                         };
 
+                        if (isFacebook) {
+                            helixStream = helixStream as FbStreamDetails;
+                            stream.videoUrl = helixStream.videoUrl;
+                            stream.thumbnailUrl = helixStream.thumbnailUrl;
+                        }
+
                         factionCount.other++;
-                        npStreams.push(stream);
+                        if (isFacebook) {
+                            npStreamsFb.push(stream);
+                        } else {
+                            npStreams.push(stream);
+                        }
                         return;
                     }
 
@@ -816,16 +859,26 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                         noPublicInclude: !onNpPublic,
                         noInternationalInclude: !onNpInternational,
                         wlOverride: usuallyWl,
-                        facebook: !!(helixStream as FbStreamDetails).facebook,
+                        facebook: isFacebook,
                         // keepCase,
                     };
+
+                    if (isFacebook) {
+                        helixStream = helixStream as FbStreamDetails;
+                        stream.videoUrl = helixStream.videoUrl;
+                        stream.thumbnailUrl = helixStream.thumbnailUrl;
+                    }
 
                     for (const faction of activeFactions) factionCount[faction]++;
                     factionCount.allnopixel++;
                     if (onNpWhitelist) factionCount.whitelistnp++;
                     if (onNpPublic) factionCount.publicnp++;
                     if (onNpInternational) factionCount.international++;
-                    npStreams.push(stream);
+                    if (isFacebook) {
+                        npStreamsFb.push(stream);
+                    } else {
+                        npStreams.push(stream);
+                    }
                 });
 
                 factionCount.alltwitch = gtaStreams.length;
@@ -846,10 +899,29 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
 
                 // log(filterFactions);
 
-                const result: Live = { ...includedData, factionCount, filterFactions, streams: npStreams };
+                // Includes npManual, _ORDER_, _TITLE_, _VIEWERS_, _PFP_, _CHANNEL1_, _CHANNEL2_
+                // eslint-disable-next-line max-len
+                const baseHtml = '<div data-target="" style="order: _ORDER_;"><div class="Layout-sc-nxg1ff-0 hwqnUg"><div><div class="Layout-sc-nxg1ff-0"><article data-a-target="card-10" data-a-id="card-_CHANNEL1_" class="Layout-sc-nxg1ff-0 hTbBzX"><div class="Layout-sc-nxg1ff-0 gIDgyI"><div class="Layout-sc-nxg1ff-0 iTDkvD"><div class="ScTextWrapper-sc-14f6evl-1 cndMhY"><div class="ScTextMargin-sc-14f6evl-2 feEGBq"><div class="Layout-sc-nxg1ff-0 AjNUj"><a lines="1" data-a-target="preview-card-title-link" class="ScCoreLink-sc-udwpw5-0 iwYxXk ScCoreLink-sc-ybxm10-0 iEEhdE tw-link" href="/_CHANNEL1_"><h3 title="_TITLE_" class="CoreText-sc-cpl358-0 hkccBP">_TITLE_</h3></a></div></div><div class="ScTextMargin-sc-14f6evl-2 feEGBq"><p class="CoreText-sc-cpl358-0 gzYAzs"><a data-test-selector="ChannelLink" data-a-target="preview-card-channel-link" class="ScCoreLink-sc-udwpw5-0 iwYxXk tw-link" href="/_CHANNEL1_/videos">_CHANNEL2_</a></p></div><div class="Layout-sc-nxg1ff-0 gwFCeO"><div class="InjectLayout-sc-588ddc-0 bFhJdp"><div class="InjectLayout-sc-588ddc-0 hoDLKA"><button class="ScTag-sc-xzp4i-0 hrkHJN tw-tag" aria-label="English" data-a-target="English"><div class="ScTagContent-sc-xzp4i-1 iYcwjl">English</div></button></div></div></div></div><div class="ScImageWrapper-sc-14f6evl-0 eBvtgw"><a data-a-target="card-10" data-a-id="card-_CHANNEL1_" data-test-selector="preview-card-avatar" class="ScCoreLink-sc-udwpw5-0 hUIOdd tw-link" href="/_CHANNEL1_/videos"><div class="ScAspectRatio-sc-1sw3lwy-1 flFnOO tw-aspect"><div class="ScAspectSpacer-sc-1sw3lwy-0 giUbvo"></div><figure aria-label="_CHANNEL1_" class="ScAvatar-sc-12nlgut-0 hnnsXF tw-avatar"><img class="InjectLayout-sc-588ddc-0 bxsmXn tw-image tw-image-avatar" alt="_CHANNEL1_" src="_PFP_"></figure></div></a></div></div></div><div class="ScWrapper-sc-uo2e2v-0 bbtaKw tw-hover-accent-effect"><div class="ScTransformWrapper-sc-uo2e2v-1 ScCornerTop-sc-uo2e2v-2 dKYJaX eXxFuv"></div><div class="ScTransformWrapper-sc-uo2e2v-1 ScCornerBottom-sc-uo2e2v-3 bNOuEj dzSwHO"></div><div class="ScTransformWrapper-sc-uo2e2v-1 ScEdgeLeft-sc-uo2e2v-4 kIKqjn cdcwLw"></div><div class="ScTransformWrapper-sc-uo2e2v-1 ScEdgeBottom-sc-uo2e2v-5 cuGbfn geiifk"></div><div class="ScTransformWrapper-sc-uo2e2v-1 icKHub"><a data-a-target="preview-card-image-link" class="ScCoreLink-sc-udwpw5-0 hUIOdd tw-link" href="/_CHANNEL1_"><div class="Layout-sc-nxg1ff-0 bcTnJT"><div class="ScAspectRatio-sc-1sw3lwy-1 dJaMsL tw-aspect"><div class="ScAspectSpacer-sc-1sw3lwy-0 lnBtND"></div><img alt="_TITLE_ - _CHANNEL1_" class="tw-image" src="https://static-cdn.jtvnw.net/previews-ttv/live_user__CHANNEL1_-440x248.jpg_TIMEID_"></div><div class="ScPositionCorner-sc-1iiybo2-1 ibaFTb"><div class="ScChannelStatusTextIndicator-sc-1f5ghgf-0 cbXzwD tw-channel-status-text-indicator" font-size="font-size-6"><p class="CoreText-sc-cpl358-0 joOBZx">LIVE</p></div></div><div class="ScPositionCorner-sc-1iiybo2-1 fIveqX"><div class="ScMediaCardStatWrapper-sc-1ncw7wk-0 gPUAhy tw-media-card-stat">_VIEWERS_ viewers</div></div></div></a></div></div></article></div></div></div></div>';
+                const baseHtmlFb = baseHtml
+                    .replaceAll('https://static-cdn.jtvnw.net/previews-ttv/live_user__CHANNEL1_-440x248.jpg_TIMEID_', '_THUMBNAIL_')
+                    .replaceAll('href="/_CHANNEL1_/videos"', 'href="https://www.facebook.com/_CHANNEL2_"')
+                    .replaceAll('href="/_CHANNEL1_"', 'href="_VIDEOURL_"');
+
+                const result: Live = {
+                    ...includedData,
+                    factionCount,
+                    filterFactions,
+                    streams: npStreams,
+                    streamsFb: npStreamsFb,
+                    baseHtml,
+                    baseHtmlFb,
+                };
+
+                console.log('npStreamsFb', npStreamsFb);
+
                 cachedResults[optionsStr] = result;
                 log('Done fetching streams data!');
-                resolve(npStreams);
+                resolve(result);
             } catch (err) {
                 log('Failed to fetch streams data:', err);
                 reject(err);

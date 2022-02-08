@@ -1490,7 +1490,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Wayne Biggaz', factions: ['Chang Gang'], nicknames: [reg(/\bwe+y+n/), reg(/\bwayne/)] },
     ],
     JJLakee: [
-        { name: 'Jay Jarvis', factions: ['Hydra Gang', 'Harmony', 'Pegasus'], nicknames: ['JJ'], displayName: 0 },
+        { name: 'Jay Jarvis', factions: ['Hydra Gang', 'Harmony', 'Pegasus'], nicknames: ['JJ'], displayName: 0, facebook: true },
     ],
     JoblessGarrett: [
         { name: 'Garrett Jobless', factions: ['Chang Gang'] },
@@ -2386,7 +2386,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Big O', displayName: 0 },
     ],
     OfficialTaco: [
-        { name: 'Charles "Taco" Prince', factions: ['Chang Gang'], assumeServer: 'whitelist' },
+        { name: 'Charles "Taco" Prince', factions: ['Chang Gang'], assumeServer: 'whitelist', facebook: true },
         { name: 'Charles "Taco" Prince', factions: ['Gulag Gang'], assumeServer: 'public' },
     ],
     OG_Tyger: [
@@ -3357,8 +3357,8 @@ export const npCharacters: NpCharacters = {
         { name: 'Leonel Martinez', factions: ['Vagos'], nicknames: ['lion'], displayName: 2 },
         { name: 'Big E', factions: ['SSB'], leader: true, nicknames: ['Big L'], displayName: 0 },
     ],
-    Vader: [
-        { name: 'Eugene Zuckerberg', nicknames: ['Old Man'] },
+    VaderLive: [
+        { name: 'Eugene Zuckerberg', nicknames: ['Old Man'], facebook: true },
         { name: 'Nacho Block', factions: ['ASRR'], displayName: 0 },
         { name: '[Deputy] Rob Banks', factions: ['Police'] },
         { name: 'Tuong Ru Kim' },
