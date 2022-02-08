@@ -337,6 +337,11 @@ interface FbStreamDetails {
     facebook: boolean,
 }
 
+let fbLastMajorChange = 0;
+let fbStreamsCache: FbStreamDetails[] = [];
+let fbStreamsCacheJson = '';
+// let lastFbStreamsLookup = 0;
+
 export const getFbStreams = async (): Promise<FbStreamDetails[]> => {
     const fbStreamsRaw = (await Promise.all(fbStreamers
         .map(async ([streamer, characters]) => {
@@ -432,17 +437,16 @@ interface Live {
     filterFactions: any[];
     streams: Stream[];
     streamsFb: Stream[];
+    channelsFb: string[];
     baseHtml: string;
     baseHtmlFb: string;
+    tick: number;
 }
 
 const cachedResults: { [key: string]: Live | undefined } = {};
 const npStreamsPromise: { [key: string]: Promise<Live> | undefined } = {};
 
-let fbStreamsCache: FbStreamDetails[] = [];
-let lastFbStreamsLookup: number = 0;
-
-export const getNpLive = async (baseOptions = {}, override = false): Promise<Live> => {
+export const getNpLive = async (baseOptions = {}, override = false, integrated = false): Promise<Live> => {
     if (!isObjEmpty(baseOptions)) log(baseOptions);
 
     const options: LiveOptions = {
@@ -481,12 +485,12 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                 const allowOthersNow = allowOthers || factionName === 'other';
 
                 const nowTime = +new Date();
-                if ((nowTime - lastFbStreamsLookup) > 1000 * 60 * 10) {
-                    lastFbStreamsLookup = nowTime;
-                    // fbStreamsCache = await getFbStreams();
-                }
+                // if ((nowTime - lastFbStreamsLookup) > 1000 * 60 * 10) {
+                //     lastFbStreamsLookup = nowTime;
+                //     // fbStreamsCache = await getFbStreams();
+                // }
 
-                const fbStreams = fbStreamsCache;
+                const fbStreams = [...fbStreamsCache];
                 const gtaStreams: (HelixStream | FbStreamDetails)[] = await getStreams({ searchNum, international });
 
                 for (const fbStream of fbStreams) {
@@ -651,10 +655,10 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                         }
 
                         factionCount.other++;
-                        if (isFacebook) {
-                            npStreamsFb.push(stream);
-                        } else {
+                        if (!isFacebook || integrated) {
                             npStreams.push(stream);
+                        } else {
+                            npStreamsFb.push(stream);
                         }
                         return;
                     }
@@ -883,10 +887,10 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
                     if (onNpWhitelist) factionCount.whitelistnp++;
                     if (onNpPublic) factionCount.publicnp++;
                     if (onNpInternational) factionCount.international++;
-                    if (isFacebook) {
-                        npStreamsFb.push(stream);
-                    } else {
+                    if (!isFacebook || integrated) {
                         npStreams.push(stream);
+                    } else {
+                        npStreamsFb.push(stream);
                     }
                 });
 
@@ -918,6 +922,8 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
 
                 const result: Live = {
                     ...includedData,
+                    channelsFb: fbStreamers.map(data => data[0]),
+                    tick: nowTime,
                     factionCount,
                     filterFactions,
                     streams: npStreams,
@@ -945,6 +951,29 @@ export const getNpLive = async (baseOptions = {}, override = false): Promise<Liv
     log('Got data!');
 
     return cachedResults[optionsStr]!;
+};
+
+export const newFbData = async (fbStreams: FbStreamDetails[], tick: number): Promise<Stream[]> => {
+    const fbStreamsJson = JSON.stringify(fbStreams);
+    if (fbStreamsJson === fbStreamsCacheJson) {
+        log('SAME AS CACHE');
+        return [];
+    }
+    const oldChannels = fbStreamsCache.map(data => data.userDisplayName);
+    fbStreamsCacheJson = fbStreamsJson;
+    fbStreamsCache = fbStreams;
+    log('UPDATED CACHE', fbStreamsCache);
+    const newChannels = fbStreams.map(data => data.userDisplayName);
+    if (JSON.stringify(oldChannels) !== JSON.stringify(newChannels)) {
+        fbLastMajorChange = +new Date();
+        console.log('UPDATED FB FOR MAJOR CHANGE');
+    }
+    if (tick < fbLastMajorChange) {
+        console.log('Fetching new streams for next major change');
+        const live = await getNpLive({}, false, true);
+        return live.streams;
+    }
+    return [];
 };
 
 export const getNpStreams = async (baseOptions = {}, override = false): Promise<Stream[]> => {
