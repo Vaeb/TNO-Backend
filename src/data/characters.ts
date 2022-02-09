@@ -64,7 +64,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Aaron Alexander', factions: ['GSF'], nicknames: ['Double A', reg(/double.?a/)], displayName: 3 },
     ],
     AaronOnAir: [
-        { name: '[Officer] Dan Faily', factions: ['Police'], nicknames: ['485'] },
+        { name: '[Officer] Dan Faily', factions: ['Police'], nicknames: ['485'], facebook: true },
         { name: 'Sal T. Block', factions: ['ASRR'], displayName: 0 },
     ],
     abbay: [
@@ -755,6 +755,9 @@ export const npCharacters: NpCharacters = {
     ],
     D4N1ELLE: [
         { name: 'Quimbley Hayabusa', factions: ['Rooster'], nicknames: ['Q'], displayName: 0 },
+    ],
+    DadDoesDrag: [
+        { name: 'Kray-Tor Skullfondler', factions: ['HOA'], facebook: true },
     ],
     Dadulio: [
         { name: '[Deputy] Franky Dulio', factions: ['Police'] },
@@ -2052,7 +2055,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Titus Tsukasa', factions: ['BSK'], displayName: 0 },
     ],
     MattRP: [
-        { name: '[Trooper] Jack Ripley', factions: ['Police'] },
+        { name: '[Trooper] Jack Ripley', factions: ['Police'], facebook: true },
     ],
     McconnellRet: [
         { name: '[Agent] Rhett "Bench Guy" McConnell', factions: ['Police'] },
@@ -2774,6 +2777,10 @@ export const npCharacters: NpCharacters = {
         { name: 'Jeffrey Price', factions: ['Burger Shot'], displayName: 0 },
         { name: '[Officer] Jack Sawyer', factions: ['Police'] },
     ],
+    Sgt_Apollo: [
+        { name: 'Salem Barghouthi', factions: ['NBC'], facebook: true },
+        { name: '[Officer] Aziz Sultan', factions: ['Police'], nicknames: ['Za Nose'], displayName: 1 },
+    ],
     SgtApollo: [
         { name: 'Salem Barghouthi', factions: ['NBC'] },
         { name: '[Officer] Aziz Sultan', factions: ['Police'], nicknames: ['Za Nose'], displayName: 1 },
@@ -2982,7 +2989,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Scarlett Winters', factions: ['Police'] },
     ],
     spicybackpain: [
-        { name: 'Kray-Tor Skullfondler', factions: ['HOA'] },
+        { name: 'Kray-Tor Skullfondler', factions: ['HOA'], facebook: true },
     ],
     SpiderPigEthan: [
         { name: 'Marvin Chunder', factions: ['HOA'], nicknames: ['Hades'], displayName: 3 },
