@@ -339,8 +339,8 @@ interface FbStreamDetails {
 
 let fbLastMajorChangePrev = 0;
 let fbLastMajorChange = 0;
-const fbStreamsCache: { [key: string]: FbStreamDetails } = {};
-// let fbStreamsCacheJson = '';
+let fbStreamsCache: { [key: string]: FbStreamDetails } = {};
+let fbStreamsCacheJson = '';
 // let lastFbStreamsLookup = 0;
 
 export const getFbStreams = async (): Promise<FbStreamDetails[]> => {
@@ -993,14 +993,7 @@ export const getNpLive = async (baseOptions = {}, override = false, integrated =
     return cachedResults[optionsStr]!;
 };
 
-export const newFbData = async (fbChannels: string[], fbStreams: { [key: string]: FbStreamDetails }, tick: number): Promise<Stream[]> => {
-    // const fbStreamsJson = JSON.stringify(fbStreams);
-    // if (fbStreamsJson === fbStreamsCacheJson) {
-    //     log('>>>>>>>>>> GOT FB REQUEST: SAME AS CACHE');
-    //     return [];
-    // }
-    // const oldChannels = Object.values(fbStreamsCache).map(data => data.userDisplayName);
-    // fbStreamsCacheJson = fbStreamsJson;
+export const newFbData2 = async (fbChannels: string[], fbStreams: { [key: string]: FbStreamDetails }, tick: number): Promise<Stream[]> => {
     console.log(fbChannels, fbStreams);
     let isMajor = false;
     for (const channel of fbChannels) {
@@ -1013,9 +1006,36 @@ export const newFbData = async (fbChannels: string[], fbStreams: { [key: string]
             fbStreamsCache[channel] = stream;
         }
     }
+
     log('UPDATED CACHE', fbStreamsCache);
-    // const newChannels = Object.values(fbStreamsCache).map(data => data.userDisplayName);
     if (isMajor) {
+        fbLastMajorChangePrev = fbLastMajorChange;
+        fbLastMajorChange = +new Date();
+        log('>> UPDATED FB FOR MAJOR CHANGE');
+    }
+    if (tick < fbLastMajorChange) {
+        const override = (fbLastMajorChange - fbLastMajorChangePrev) > updateCacheMs * 2;
+        log('>> Fetching new streams for next major change | override:', override);
+        if (override) {
+            const live = await getNpLive({}, override, true);
+            return live.streams;
+        }
+    }
+    return [];
+};
+
+export const newFbData = async (fbStreams: FbStreamDetails[], tick: number): Promise<Stream[]> => {
+    const fbStreamsJson = JSON.stringify(fbStreams);
+    if (fbStreamsJson === fbStreamsCacheJson) {
+        log('>>>>>>>>>> GOT FB REQUEST: SAME AS CACHE');
+        return [];
+    }
+    const oldChannels = Object.values(fbStreamsCache).map(data => data.userDisplayName);
+    fbStreamsCacheJson = fbStreamsJson;
+    fbStreamsCache = Object.assign({}, ...fbStreams.map(data => ({ [data.userDisplayName]: data })));
+    log('UPDATED CACHE', fbStreamsCache);
+    const newChannels = fbStreams.map(data => data.userDisplayName);
+    if (JSON.stringify(oldChannels) !== JSON.stringify(newChannels)) {
         fbLastMajorChangePrev = fbLastMajorChange;
         fbLastMajorChange = +new Date();
         log('>> UPDATED FB FOR MAJOR CHANGE');
