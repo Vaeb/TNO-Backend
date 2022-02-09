@@ -963,7 +963,7 @@ export const getNpLive = async (baseOptions = {}, override = false, integrated =
                     baseHtml,
                     baseHtmlFb,
                     fbDebounce: 1000 * 60 * 5.5,
-                    fbMaxLookup: -1,
+                    fbMaxLookup: 3,
                     fbSleep: 2100,
                     fbGroupSize: 3,
                     fbGroupSleepInc: 1400,
