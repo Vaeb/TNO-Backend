@@ -3029,6 +3029,9 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Frank Williams', factions: ['Police'], displayName: 1, assumeServer: 'whitelist' },
         { name: 'Frankie Eastwood', displayName: 0, assumeServer: 'public' },
     ],
+    Stork1e: [
+        { name: '[Officer] Luis Montoya', factions: ['Police'], displayName: 2 },
+    ],
     Striking_Fast: [
         { name: 'Gerard "Dewey" Hawthorne', nicknames: ['Dewie'], factions: ['Rooster'] },
     ],
