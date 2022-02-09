@@ -339,8 +339,8 @@ interface FbStreamDetails {
 
 let fbLastMajorChangePrev = 0;
 let fbLastMajorChange = 0;
-let fbStreamsCache: FbStreamDetails[] = [];
-let fbStreamsCacheJson = '';
+const fbStreamsCache: { [key: string]: FbStreamDetails } = {};
+// let fbStreamsCacheJson = '';
 // let lastFbStreamsLookup = 0;
 
 export const getFbStreams = async (): Promise<FbStreamDetails[]> => {
@@ -499,7 +499,7 @@ export const getNpLive = async (baseOptions = {}, override = false, integrated =
                 //     // fbStreamsCache = await getFbStreams();
                 // }
 
-                const fbStreams = [...fbStreamsCache];
+                const fbStreams = Object.values(fbStreamsCache).sort((a, b) => b.viewers - a.viewers);
                 const gtaStreams: (HelixStream | FbStreamDetails)[] = await getStreams({ searchNum, international });
 
                 const numStreamsFb = fbStreams.length;
@@ -993,18 +993,29 @@ export const getNpLive = async (baseOptions = {}, override = false, integrated =
     return cachedResults[optionsStr]!;
 };
 
-export const newFbData = async (fbStreams: FbStreamDetails[], tick: number): Promise<Stream[]> => {
-    const fbStreamsJson = JSON.stringify(fbStreams);
-    if (fbStreamsJson === fbStreamsCacheJson) {
-        log('>>>>>>>>>> GOT FB REQUEST: SAME AS CACHE');
-        return [];
+export const newFbData = async (fbChannels: string[], fbStreams: { [key: string]: FbStreamDetails }, tick: number): Promise<Stream[]> => {
+    // const fbStreamsJson = JSON.stringify(fbStreams);
+    // if (fbStreamsJson === fbStreamsCacheJson) {
+    //     log('>>>>>>>>>> GOT FB REQUEST: SAME AS CACHE');
+    //     return [];
+    // }
+    // const oldChannels = Object.values(fbStreamsCache).map(data => data.userDisplayName);
+    // fbStreamsCacheJson = fbStreamsJson;
+    console.log(fbChannels, fbStreams);
+    let isMajor = false;
+    for (const channel of fbChannels) {
+        const stream = fbStreams[channel];
+        if (!stream) {
+            if (fbStreamsCache[channel]) isMajor = true;
+            delete fbStreamsCache[channel];
+        } else {
+            if (!fbStreamsCache[channel]) isMajor = true;
+            fbStreamsCache[channel] = stream;
+        }
     }
-    const oldChannels = fbStreamsCache.map(data => data.userDisplayName);
-    fbStreamsCacheJson = fbStreamsJson;
-    fbStreamsCache = fbStreams;
     log('UPDATED CACHE', fbStreamsCache);
-    const newChannels = fbStreams.map(data => data.userDisplayName);
-    if (JSON.stringify(oldChannels) !== JSON.stringify(newChannels)) {
+    // const newChannels = Object.values(fbStreamsCache).map(data => data.userDisplayName);
+    if (isMajor) {
         fbLastMajorChangePrev = fbLastMajorChange;
         fbLastMajorChange = +new Date();
         log('>> UPDATED FB FOR MAJOR CHANGE');
