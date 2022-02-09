@@ -441,6 +441,7 @@ interface Live {
     channelsFb: string[];
     baseHtml: string;
     baseHtmlFb: string;
+    fbSleep: number;
     tick: number;
 }
 
@@ -923,14 +924,15 @@ export const getNpLive = async (baseOptions = {}, override = false, integrated =
 
                 const result: Live = {
                     ...includedData,
-                    channelsFb: fbStreamers.map(data => data[0]),
-                    tick: nowTime,
                     factionCount,
                     filterFactions,
                     streams: npStreams,
                     streamsFb: npStreamsFb,
+                    channelsFb: fbStreamers.map(data => data[0]),
                     baseHtml,
                     baseHtmlFb,
+                    fbSleep: 2100,
+                    tick: nowTime,
                 };
 
                 // console.log('npStreamsFb', npStreamsFb);
