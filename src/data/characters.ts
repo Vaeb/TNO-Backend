@@ -2282,6 +2282,9 @@ export const npCharacters: NpCharacters = {
     Navajo: [
         { name: 'Clarence Carter' },
     ],
+    neeko: [
+        { name: 'Cherry ?' },
+    ],
     NefariousCharm: [
         { name: '[EMS] Maya Jane', factions: ['Medical'] },
     ],
