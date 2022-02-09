@@ -932,7 +932,7 @@ export const getNpLive = async (baseOptions = {}, override = false, integrated =
                     channelsFb: fbStreamers.map(data => data[0]),
                     baseHtml,
                     baseHtmlFb,
-                    fbDebounce: 1000 * 60 * 4,
+                    fbDebounce: 1000 * 60 * 5.5,
                     fbSleep: 2100,
                     tick: nowTime,
                 };
