@@ -501,8 +501,27 @@ export const getNpLive = async (baseOptions = {}, override = false, integrated =
                 const fbStreams = [...fbStreamsCache];
                 const gtaStreams: (HelixStream | FbStreamDetails)[] = await getStreams({ searchNum, international });
 
-                for (const fbStream of fbStreams) {
-                    gtaStreams.push(fbStream);
+                const numStreamsFb = fbStreams.length;
+                if (numStreamsFb > 0) {
+                    let fbIdx = 0;
+                    let addStream = fbStreams[fbIdx];
+                    for (let i = 0; i < gtaStreams.length; i++) {
+                        const stream = gtaStreams[i];
+                        if (addStream.viewers >= stream.viewers) {
+                            gtaStreams.splice(i, 0, addStream);
+                            fbIdx++;
+                            if (fbIdx < numStreamsFb) {
+                                addStream = fbStreams[fbIdx];
+                            } else {
+                                break;
+                            }
+                        }
+                    }
+                    if (fbIdx < numStreamsFb) {
+                        for (let i = fbIdx; i < numStreamsFb; i++) {
+                            gtaStreams.push(fbStreams[i]);
+                        }
+                    }
                 }
 
                 console.log('fbStreams', fbStreams);
@@ -938,7 +957,7 @@ export const getNpLive = async (baseOptions = {}, override = false, integrated =
                     baseHtml,
                     baseHtmlFb,
                     fbDebounce: 1000 * 60 * 5.5,
-                    fbMaxLookup: 3,
+                    fbMaxLookup: -1,
                     fbSleep: 2100,
                     fbGroupSize: 3,
                     fbGroupSleepInc: 1400,
