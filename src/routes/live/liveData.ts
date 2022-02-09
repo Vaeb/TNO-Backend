@@ -339,8 +339,8 @@ interface FbStreamDetails {
 
 let fbLastMajorChangePrev = 0;
 let fbLastMajorChange = 0;
-let fbStreamsCache: { [key: string]: FbStreamDetails } = {};
-let fbStreamsCacheJson = '';
+const fbStreamsCache: { [key: string]: FbStreamDetails } = {};
+// let fbStreamsCacheJson = '';
 // let lastFbStreamsLookup = 0;
 
 export const getFbStreams = async (): Promise<FbStreamDetails[]> => {
