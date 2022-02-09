@@ -970,10 +970,12 @@ export const newFbData = async (fbStreams: FbStreamDetails[], tick: number): Pro
         log('>> UPDATED FB FOR MAJOR CHANGE');
     }
     if (tick < fbLastMajorChange) {
-        const override = (fbLastMajorChange - previousMajorChange) > updateCacheMs * 2.5;
+        const override = (fbLastMajorChange - previousMajorChange) > updateCacheMs * 2;
         log('>> Fetching new streams for next major change | override:', override);
-        const live = await getNpLive({}, override, true);
-        return live.streams;
+        if (override) {
+            const live = await getNpLive({}, override, true);
+            return live.streams;
+        }
     }
     return [];
 };
