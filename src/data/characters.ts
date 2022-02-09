@@ -636,8 +636,8 @@ export const npCharacters: NpCharacters = {
     Cheever7: [
         { name: 'River Cheever', nicknames: ['River'], factions: ['ASRR'], assumeServer: 'whitelist' },
     ],
-    ChelbM: [
-        { name: 'Alan Kyles', factions: ['NBC'], displayName: 0 },
+    ChelbMyster: [
+        { name: 'Alan Kyles', factions: ['NBC'], displayName: 0, facebook: true },
     ],
     CHUDOCKEN: [
         { name: 'Orpheus Dawson', factions: ['Burger Shot'], displayName: 1 },
@@ -1493,7 +1493,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Jay Jarvis', factions: ['Hydra Gang', 'Harmony', 'Pegasus'], nicknames: ['JJ'], displayName: 0, facebook: true },
     ],
     JoblessGarrett: [
-        { name: 'Garrett Jobless', factions: ['Chang Gang'] },
+        { name: 'Garrett Jobless', factions: ['Chang Gang'], facebook: true },
         { name: '[Officer] Garry Berry', factions: ['Police'] },
     ],
     Joeeigel: [
