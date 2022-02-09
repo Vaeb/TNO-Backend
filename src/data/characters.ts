@@ -2268,6 +2268,7 @@ export const npCharacters: NpCharacters = {
     nathankb_: [
         { name: '[Judge] Alan Crane', factions: ['DoJ'], displayName: 2 },
         { name: '[Deputy] Wesley Arnold', factions: ['Police'], displayName: 2 },
+        { name: 'Jov Diavol', displayName: 0 },
     ],
     nattfasa_: [
         { name: 'Max Wazowski', factions: ['Gulag Gang'], nicknames: ['Maxwell'], displayName: 0 },
