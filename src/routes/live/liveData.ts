@@ -443,6 +443,10 @@ interface Live {
     baseHtmlFb: string;
     fbDebounce: number;
     fbSleep: number;
+    fbGroupSize: number;
+    fbGroupSleepInc: number;
+    fbRandomRadius: number;
+    fbLastMajorChange: number;
     tick: number;
 }
 
@@ -934,6 +938,10 @@ export const getNpLive = async (baseOptions = {}, override = false, integrated =
                     baseHtmlFb,
                     fbDebounce: 1000 * 60 * 5.5,
                     fbSleep: 2100,
+                    fbGroupSize: 3,
+                    fbGroupSleepInc: 1400,
+                    fbRandomRadius: 1000,
+                    fbLastMajorChange,
                     tick: nowTime,
                 };
 
