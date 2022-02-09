@@ -964,13 +964,15 @@ export const newFbData = async (fbStreams: FbStreamDetails[], tick: number): Pro
     fbStreamsCache = fbStreams;
     log('UPDATED CACHE', fbStreamsCache);
     const newChannels = fbStreams.map(data => data.userDisplayName);
+    const previousMajorChange = fbLastMajorChange;
     if (JSON.stringify(oldChannels) !== JSON.stringify(newChannels)) {
         fbLastMajorChange = +new Date();
-        console.log('UPDATED FB FOR MAJOR CHANGE');
+        log('>> UPDATED FB FOR MAJOR CHANGE');
     }
     if (tick < fbLastMajorChange) {
-        console.log('Fetching new streams for next major change');
-        const live = await getNpLive({}, false, true);
+        const override = (fbLastMajorChange - previousMajorChange) > updateCacheMs * 2.5;
+        log('>> Fetching new streams for next major change | override:', override);
+        const live = await getNpLive({}, override, true);
         return live.streams;
     }
     return [];
