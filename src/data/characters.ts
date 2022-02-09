@@ -2213,6 +2213,9 @@ export const npCharacters: NpCharacters = {
     mrborealislive: [
         { name: 'Rudolph ?', factions: ['Burger Shot'] },
     ],
+    MrFestX: [
+        { name: 'Dow Jones', factions: ['BSK'] },
+    ],
     MrMoonsHouse: [
         { name: '[Officer] Freddy Price', factions: ['Police', 'Burger Shot'], displayName: 2 },
     ],
