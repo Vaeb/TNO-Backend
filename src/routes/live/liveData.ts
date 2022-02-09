@@ -406,6 +406,7 @@ interface BaseStream {
 }
 
 interface Stream extends BaseStream {
+    id: number;
     rpServer: string | null;
     characterName: string | null;
     nicknameLookup: string | null;
@@ -537,6 +538,7 @@ export const getNpLive = async (baseOptions = {}, override = false, integrated =
                 // const isNpMetaFaction = npMetaFactions.includes(factionName);
                 // const minViewersUse = isNpMetaFaction ? minViewers : 3;
 
+                let nextId = 0;
                 const npStreams: Stream[] = [];
                 const npStreamsFb: Stream[] = [];
                 const factionCount: FactionCount = mapObj(npFactions, () => 0);
@@ -658,6 +660,7 @@ export const getNpLive = async (baseOptions = {}, override = false, integrated =
                         }
 
                         const stream: Stream = {
+                            id: nextId,
                             ...baseStream,
                             rpServer: serverName.length ? serverName : null,
                             characterName: null,
@@ -681,6 +684,7 @@ export const getNpLive = async (baseOptions = {}, override = false, integrated =
                             stream.thumbnailUrl = helixStream.thumbnailUrl;
                         }
 
+                        nextId++;
                         factionCount.other++;
                         if (!isFacebook || integrated) {
                             npStreams.push(stream);
@@ -885,6 +889,7 @@ export const getNpLive = async (baseOptions = {}, override = false, integrated =
                     if (onNpWhitelist) activeFactions.push('whitelistnp');
 
                     const stream: Stream = {
+                        id: nextId,
                         ...baseStream,
                         rpServer: serverName,
                         characterName: possibleCharacter?.name ?? null,
@@ -909,6 +914,7 @@ export const getNpLive = async (baseOptions = {}, override = false, integrated =
                         stream.thumbnailUrl = helixStream.thumbnailUrl;
                     }
 
+                    nextId++;
                     for (const faction of activeFactions) factionCount[faction]++;
                     factionCount.allnopixel++;
                     if (onNpWhitelist) factionCount.whitelistnp++;
