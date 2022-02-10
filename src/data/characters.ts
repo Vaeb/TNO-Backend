@@ -2584,6 +2584,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Pepe Ramos', factions: ['Seaside'], displayName: 0 },
     ],
     Ragonath: [
+        { name: '[Officer] Leif Norgaard', factions: ['Police'], displayName: 2 },
         { name: 'Maxwell Devitt', displayName: 0 },
         { name: 'Ezekiel "Zeke" Stahl', factions: ['Prison'], displayName: 0 },
     ],
