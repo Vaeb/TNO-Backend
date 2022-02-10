@@ -15,7 +15,8 @@ router.get('/', async (req, res) => {
         mapObjKeys(req.query as RecordGen, ((v, k) => {
             if (k === 'faction') return 'factionName';
             return k;
-        }))
+        })),
+        undefined, undefined, '/live'
     );
     // log('live', live);
     return res.send(live);

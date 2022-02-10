@@ -455,7 +455,7 @@ interface Live {
 const cachedResults: { [key: string]: Live | undefined } = {};
 const npStreamsPromise: { [key: string]: Promise<Live> | undefined } = {};
 
-export const getNpLive = async (baseOptions = {}, override = false, integrated = false): Promise<Live> => {
+export const getNpLive = async (baseOptions = {}, override = false, integrated = false, endpoint = '<no-endpoint>'): Promise<Live> => {
     if (!isObjEmpty(baseOptions)) log(baseOptions);
 
     const options: LiveOptions = {
@@ -479,14 +479,14 @@ export const getNpLive = async (baseOptions = {}, override = false, integrated =
     const optionsStr = JSON.stringify(options);
 
     if (!override && cachedResults[optionsStr] !== undefined) {
-        log('/live: Returning cached results.');
+        log(`${endpoint}: Returning cached results.`);
         return cachedResults[optionsStr]!;
     }
 
     if (npStreamsPromise[optionsStr] === undefined || override) {
         npStreamsPromise[optionsStr] = new Promise<Live>(async (resolve, reject) => {
             try {
-                log('Fetching streams data...');
+                log(`${endpoint}: Fetching streams data...`);
 
                 const {
                     factionName, filterEnabled, allowPublic, allowInternational, allowOthers, searchNum, international,
@@ -983,7 +983,7 @@ export const getNpLive = async (baseOptions = {}, override = false, integrated =
             }
         });
     } else {
-        log('Waiting for npStreamsPromise...');
+        log(`${endpoint}: Waiting for npStreamsPromise...`);
     }
 
     await npStreamsPromise[optionsStr]!;
@@ -1017,7 +1017,7 @@ export const newFbData = async (fbChannels: string[], fbStreams: { [key: string]
         const override = (fbLastMajorChange - fbLastMajorChangePrev) > updateCacheMs * 2;
         log('>> Fetching new streams for next major change | override:', override);
         if (override) {
-            const live = await getNpLive({}, override, true);
+            const live = await getNpLive({}, override, true, '/parse_streams');
             return live.streams;
         }
     }
@@ -1052,7 +1052,7 @@ export const newFbData = async (fbChannels: string[], fbStreams: { [key: string]
 // };
 
 export const getNpStreams = async (baseOptions = {}, override = false): Promise<Stream[]> => {
-    const live = await getNpLive(baseOptions, override);
+    const live = await getNpLive(baseOptions, override, undefined, '/streams');
     return live.streams;
 };
 
