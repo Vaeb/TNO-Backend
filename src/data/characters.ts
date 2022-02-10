@@ -1023,6 +1023,7 @@ export const npCharacters: NpCharacters = {
     ],
     FalloftheSeason: [
         { name: 'Ophelia Quinn', nicknames: ['Ophie'] },
+        { name: 'Odiment Sparrow', factions: ['DoC'] },
         { name: '[EMS] Orianna "Ori" Frost', factions: ['Medical'], nicknames: ['Olive'] },
     ],
     Familybanter: [
