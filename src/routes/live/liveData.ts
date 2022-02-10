@@ -995,7 +995,7 @@ export const getNpLive = async (baseOptions = {}, override = false, integrated =
 
 export const newFbData = async (fbChannels: string[], fbStreams: { [key: string]: FbStreamDetails }, tick: number): Promise<Stream[]> => {
     console.log(fbChannels, fbStreams);
-    let isMajor = false;
+    let isMajor = fbLastMajorChange === 0;
     for (const channel of fbChannels) {
         const stream = fbStreams[channel];
         if (!stream) {
