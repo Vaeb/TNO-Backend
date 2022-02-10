@@ -3374,12 +3374,12 @@ export const npCharacters: NpCharacters = {
         { name: 'Leonel Martinez', factions: ['Vagos'], nicknames: ['lion'], displayName: 2 },
         { name: 'Big E', factions: ['SSB'], leader: true, nicknames: ['Big L'], displayName: 0 },
     ],
-    // VaderLive: [
-    //     { name: 'Eugene Zuckerberg', nicknames: ['Old Man'], facebook: true },
-    //     { name: 'Nacho Block', factions: ['ASRR'], displayName: 0 },
-    //     { name: '[Deputy] Rob Banks', factions: ['Police'] },
-    //     { name: 'Tuong Ru Kim' },
-    // ],
+    VaderLive: [
+        { name: 'Eugene Zuckerberg', nicknames: ['Old Man'], facebook: true },
+        { name: 'Nacho Block', factions: ['ASRR'], displayName: 0 },
+        { name: '[Deputy] Rob Banks', factions: ['Police'] },
+        { name: 'Tuong Ru Kim' },
+    ],
     VADIKUS007: [
         { name: 'Yuri Grozniy', displayName: 0 },
     ],

@@ -995,7 +995,7 @@ export const getNpLive = async (baseOptions = {}, override = false, integrated =
 
 export const newFbData = async (fbChannels: string[], fbStreams: { [key: string]: FbStreamDetails }, tick: number): Promise<Stream[]> => {
     console.log(fbChannels, fbStreams);
-    let isMajor = fbLastMajorChange === 0;
+    let isMajor = fbLastMajorChange === 0; // Initial POST counts as a major change (full data)
     for (const channel of fbChannels) {
         const stream = fbStreams[channel];
         if (!stream) {
