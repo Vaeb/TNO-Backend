@@ -10,7 +10,7 @@ import type { RecordGen } from '../../utils';
 const router = Router();
 
 router.get('/', async (req, res) => {
-    log('Handling request for /live');
+    // log('Handling request for /live');
     const live = await getNpLive(
         mapObjKeys(req.query as RecordGen, ((v, k) => {
             if (k === 'faction') return 'factionName';

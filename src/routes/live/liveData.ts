@@ -479,7 +479,7 @@ export const getNpLive = async (baseOptions = {}, override = false, integrated =
     const optionsStr = JSON.stringify(options);
 
     if (!override && cachedResults[optionsStr] !== undefined) {
-        log('Returning cached results.');
+        log('/live: Returning cached results.');
         return cachedResults[optionsStr]!;
     }
 
