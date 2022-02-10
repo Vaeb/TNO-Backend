@@ -2780,7 +2780,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Ronjulio Escjulio' },
     ],
     Selvek: [
-        { name: 'Jeffrey Price', factions: ['Burger Shot'], displayName: 0 },
+        { name: '[Officer] Jeffrey Price', factions: ['Police', 'Burger Shot'], displayName: 1 },
         { name: '[Officer] Jack Sawyer', factions: ['Police'] },
     ],
     Sgt_Apollo: [
