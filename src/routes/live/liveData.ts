@@ -261,7 +261,7 @@ const knownPfps: { [key: string]: string } = {};
 
 interface GetStreamsOptions { searchNum?: number; international?: boolean }
 type GetStreamsOptionsRequired = Required<GetStreamsOptions>;
-export const getStreams = async (options: GetStreamsOptions): Promise<HelixStream[]> => {
+export const getStreams = async (options: GetStreamsOptions, endpoint = '<no-endpoint>'): Promise<HelixStream[]> => {
     const optionsParsed: GetStreamsOptionsRequired = {
         searchNum: searchNumDefault,
         international: false,
@@ -288,7 +288,7 @@ export const getStreams = async (options: GetStreamsOptions): Promise<HelixStrea
         });
 
         if (gtaStreamsNow.data.length === 0) {
-            log(`Search ended (limit: ${limitNow})`, gtaStreamsNow);
+            log(`${endpoint}: Search ended (limit: ${limitNow})`, gtaStreamsNow);
             break;
         }
 
@@ -304,7 +304,7 @@ export const getStreams = async (options: GetStreamsOptions): Promise<HelixStrea
         }
 
         if (lookupStreams.length > 0) {
-            log(`Looking up pfp for ${lookupStreams.length} users after...`);
+            log(`${endpoint}: Looking up pfp for ${lookupStreams.length} users after...`);
             const foundUsers = await apiClient.helix.users.getUsersByIds(lookupStreams);
             for (const helixUser of foundUsers) {
                 knownPfps[helixUser.id] = helixUser.profilePictureUrl.replace('-300x300.', '-50x50.');
@@ -456,7 +456,7 @@ const cachedResults: { [key: string]: Live | undefined } = {};
 const npStreamsPromise: { [key: string]: Promise<Live> | undefined } = {};
 
 export const getNpLive = async (baseOptions = {}, override = false, integrated = false, endpoint = '<no-endpoint>'): Promise<Live> => {
-    if (!isObjEmpty(baseOptions)) log(baseOptions);
+    if (!isObjEmpty(baseOptions)) log(`${endpoint}:`, baseOptions);
 
     const options: LiveOptions = {
         factionName: 'allnopixel',
@@ -500,7 +500,7 @@ export const getNpLive = async (baseOptions = {}, override = false, integrated =
                 // }
 
                 const fbStreams = Object.values(fbStreamsCache).sort((a, b) => b.viewers - a.viewers);
-                const gtaStreams: (HelixStream | FbStreamDetails)[] = await getStreams({ searchNum, international });
+                const gtaStreams: (HelixStream | FbStreamDetails)[] = await getStreams({ searchNum, international }, endpoint);
 
                 const numStreamsFb = fbStreams.length;
                 if (numStreamsFb > 0) {
@@ -527,7 +527,7 @@ export const getNpLive = async (baseOptions = {}, override = false, integrated =
 
                 console.log('fbStreams', fbStreams);
 
-                log('Fetched streams! Now processing data...');
+                log(`${endpoint}: Fetched streams! Now processing data...`);
 
                 // log(gtaStreams.length);
 
@@ -975,10 +975,10 @@ export const getNpLive = async (baseOptions = {}, override = false, integrated =
                 // console.log('npStreamsFb', npStreamsFb);
 
                 cachedResults[optionsStr] = result;
-                log('Done fetching streams data!');
+                log(`${endpoint}: Done fetching streams data!`);
                 resolve(result);
             } catch (err) {
-                log('Failed to fetch streams data:', err);
+                log(`${endpoint}: Failed to fetch streams data:`, err);
                 reject(err);
             }
         });
@@ -988,7 +988,7 @@ export const getNpLive = async (baseOptions = {}, override = false, integrated =
 
     await npStreamsPromise[optionsStr]!;
 
-    log('Got data!');
+    log(`${endpoint}: Got data!`);
 
     return cachedResults[optionsStr]!;
 };
