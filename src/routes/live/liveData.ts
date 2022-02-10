@@ -1002,7 +1002,15 @@ export const newFbData = async (fbChannels: string[], fbStreams: { [key: string]
             if (fbStreamsCache[channel]) isMajor = true;
             delete fbStreamsCache[channel];
         } else {
-            if (!fbStreamsCache[channel]) isMajor = true;
+            if (!fbStreamsCache[channel]) {
+                isMajor = true;
+            } else {
+                // eslint-disable-next-line no-lonely-if
+                if (!stream.title.startsWith('《FB》') && fbStreamsCache[channel].title.startsWith('《FB》')) {
+                    stream.title = fbStreamsCache[channel].title;
+                    console.log('Keeping old (better) title');
+                }
+            }
             fbStreamsCache[channel] = stream;
         }
     }
