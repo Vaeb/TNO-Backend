@@ -456,7 +456,7 @@ const cachedResults: { [key: string]: Live | undefined } = {};
 const npStreamsPromise: { [key: string]: Promise<Live> | undefined } = {};
 
 export const getNpLive = async (baseOptions = {}, override = false, integrated = false, endpoint = '<no-endpoint>'): Promise<Live> => {
-    if (!isObjEmpty(baseOptions)) log(`${endpoint}: options -`, baseOptions);
+    if (!isObjEmpty(baseOptions)) log(`${endpoint}: options -`, JSON.stringify(baseOptions));
 
     const options: LiveOptions = {
         factionName: 'allnopixel',
