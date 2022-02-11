@@ -47,6 +47,20 @@ export const makeLogMessage = (...messages: any[]): string => {
     return logMessage;
 };
 
+export const makeLogMessage2 = (...messages: any[]): any[] => {
+    const dateString = getDateString();
+    let firstMsg = messages[0];
+    if (typeof firstMsg === 'string' && firstMsg[0] === '\n') {
+        const startingLines = (firstMsg.match(/^\n+/) || [])[0];
+        firstMsg = `${startingLines}[${dateString}] ${firstMsg.substring(startingLines.length)}`;
+        messages[0] = firstMsg;
+    } else {
+        messages.splice(0, 0, `[${dateString}]`);
+    }
+
+    return messages;
+};
+
 export const log = (...messages: any[]): void => {
-    console.log(makeLogMessage(...messages));
+    console.log(...makeLogMessage2(...messages));
 };
