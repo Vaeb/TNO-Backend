@@ -3099,6 +3099,9 @@ export const npCharacters: NpCharacters = {
     Sweatyx420: [
         { name: 'Darryl Gamin', factions: ['SSB'], displayName: 0 },
     ],
+    SweeetTails: [
+        { name: 'Sweetie Jones', displayName: 1 },
+    ],
     Sweet_Anita: [
         { name: 'Marylin Hilton' },
     ],
