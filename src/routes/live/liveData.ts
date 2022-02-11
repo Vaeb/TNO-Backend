@@ -997,6 +997,10 @@ export const newFbData = async (fbChannels: string[], fbStreams: { [key: string]
     console.log(fbChannels, fbStreams);
     let isMajor = fbLastMajorChange === 0; // Initial POST counts as a major change (full data)
     for (const channel of fbChannels) {
+        if (!npCharacters[channel.toLowerCase()]) {
+            log('>> Bad entry:', channel);
+            break;
+        }
         const stream = fbStreams[channel];
         if (!stream) {
             if (fbStreamsCache[channel]) isMajor = true;
