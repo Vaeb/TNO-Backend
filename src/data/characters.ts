@@ -3109,7 +3109,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Ty Jones', factions: ['SSB'], nicknames: ['xray'], displayName: 0 },
     ],
     SwizzMB: [
-        { name: 'Miguel Almerion', factions: ['HOA', 'Hydra Gang'] },
+        { name: 'Miguel Almerion', factions: ['Hydra Gang'] },
         { name: '[Officer] Mervin Napoli', factions: ['Police'], nicknames: ['Merv', 'Big Merv', 'Big M', reg(/\bmerv/)], displayName: 1 },
     ],
     Sykkuno: [
