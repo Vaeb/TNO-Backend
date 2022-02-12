@@ -2868,7 +2868,7 @@ export const npCharacters: NpCharacters = {
     Silent: [
         {
             name: 'Juan Carlos "Flippy" Hernandez',
-            factions: ['Chang Gang', 'Chaos'],
+            factions: ['Chang Gang', 'Hydra Gang', 'Chaos'],
             nicknames: [reg(/\bflip/), reg(/\bcrim\w*\b(?!.+\bcop)/), 'not cop', 'trying out crim'],
         },
         { name: '[Officer] Joel Garcia', factions: ['Police'], nicknames: [reg(/\bcop\b(?!.+\bcrim)/), reg(/\bcop\b(?:.+\bnerf)/), 'trying out cop'] },
@@ -3118,7 +3118,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Ty Jones', factions: ['SSB'], nicknames: ['xray'], displayName: 0 },
     ],
     SwizzMB: [
-        { name: 'Miguel Almerion', factions: ['Hydra Gang'] },
+        { name: 'Miguel Almerion', factions: ['Chang Gang', 'Hydra Gang'] },
         { name: '[Officer] Mervin Napoli', factions: ['Police'], nicknames: ['Merv', 'Big Merv', 'Big M', reg(/\bmerv/)], displayName: 1 },
     ],
     Sykkuno: [
