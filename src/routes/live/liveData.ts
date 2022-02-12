@@ -1055,6 +1055,7 @@ export const newFbData = async (fbChannels: string[], fbStreamsMap: any, tick: n
 
     if (tick < initialStamp) {
         log('>>>>> Ignoring data from before initialStamp', initialStamp, tick);
+        return [];
     }
 
     if (!checkFbStreamsMap(fbStreamsMap)) {
