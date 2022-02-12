@@ -2491,7 +2491,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Dispatch] Owen Fitz-Gibbon', factions: ['Police'], displayName: 2 },
     ],
     pinkchyu: [
-        { name: 'Selena Martinez', displayName: 1 },
+        { name: 'Selena Martinez', factions: ['Street Team'], displayName: 1 },
         { name: 'Tiffany Smith', nicknames: [reg(/\btiff/)], displayName: 0 },
         { name: 'Sakura Haruwho', displayName: 1 },
         { name: 'Ash Scuffem', displayName: 0 },
