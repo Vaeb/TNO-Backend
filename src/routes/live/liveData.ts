@@ -1009,7 +1009,10 @@ const fbStreamSkeletonKeys = Object.keys(fbStreamSkeleton);
 const checkFbStreamsMap = (fbStreamsMap: any): fbStreamsMap is FbStreamsMap => {
     if (fbStreamsMap == null || typeof fbStreamsMap !== 'object') return false;
 
-    const fbStream = Object.values(fbStreamsMap)[0];
+    const fbStreams = Object.values(fbStreamsMap);
+    if (fbStreams.length === 0) return true;
+
+    const fbStream = fbStreams[0];
     if (fbStream == null || typeof fbStream !== 'object') return false;
 
     const objKeys = Object.keys(fbStream);
