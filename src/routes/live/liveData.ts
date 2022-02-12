@@ -458,7 +458,7 @@ interface Live {
 const cachedResults: { [key: string]: Live | undefined } = {};
 const npStreamsPromise: { [key: string]: Promise<Live> | undefined } = {};
 
-export const getNpLive = async (baseOptions = {}, override = false, endpoint = '<no-endpoint>'): Promise<Live> => {
+export const getNpLive = async (baseOptions = {}, override = false, endpoint = '<no-endpoint>', waitForNext = false): Promise<Live> => {
     if (!isObjEmpty(baseOptions)) log(`${endpoint}: options -`, JSON.stringify(baseOptions));
 
     const options: LiveOptions = {
@@ -481,7 +481,7 @@ export const getNpLive = async (baseOptions = {}, override = false, endpoint = '
 
     const optionsStr = JSON.stringify(options);
 
-    if (!override && cachedResults[optionsStr] !== undefined) {
+    if (!override && cachedResults[optionsStr] !== undefined && !waitForNext) {
         log(`${endpoint}: Returning cached results.`);
         return cachedResults[optionsStr]!;
     }
@@ -1096,7 +1096,7 @@ export const newFbData = async (fbChannels: string[], fbStreamsMap: any, tick: n
     if (tick < fbLastMajorChange) { // The user's data is missing major info
         const override = isMajor && (fbLastMajorChange - fbLastMajorChangePrev) > updateCacheMs * 2; // Immediately update the cache data
         log('>> Fetching new streams for next major change | override:', override);
-        const live = await getNpLive({}, override, '/parse_streams'); // Return the cache data (or override first)
+        const live = await getNpLive({}, override, '/parse_streams', true); // Return the cache data (or override first)
         const streamsAll = integrateFb(live);
         return streamsAll;
     }
