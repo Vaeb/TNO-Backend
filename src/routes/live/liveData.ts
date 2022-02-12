@@ -457,7 +457,7 @@ interface Live {
 const cachedResults: { [key: string]: Live | undefined } = {};
 const npStreamsPromise: { [key: string]: Promise<Live> | undefined } = {};
 
-export const getNpLive = async (baseOptions = {}, override = false, integrated = false, endpoint = '<no-endpoint>'): Promise<Live> => {
+export const getNpLive = async (baseOptions = {}, override = false, endpoint = '<no-endpoint>'): Promise<Live> => {
     if (!isObjEmpty(baseOptions)) log(`${endpoint}: options -`, JSON.stringify(baseOptions));
 
     const options: LiveOptions = {
@@ -688,7 +688,7 @@ export const getNpLive = async (baseOptions = {}, override = false, integrated =
 
                         nextId++;
                         factionCount.other++;
-                        if (!isFacebook || integrated) {
+                        if (!isFacebook) { // || integrated
                             npStreams.push(stream);
                         } else {
                             npStreamsFb.push(stream);
@@ -922,7 +922,7 @@ export const getNpLive = async (baseOptions = {}, override = false, integrated =
                     if (onNpWhitelist) factionCount.whitelistnp++;
                     if (onNpPublic) factionCount.publicnp++;
                     if (onNpInternational) factionCount.international++;
-                    if (!isFacebook || integrated) {
+                    if (!isFacebook) { // || integrated
                         npStreams.push(stream);
                     } else {
                         npStreamsFb.push(stream);
@@ -1019,6 +1019,33 @@ const checkFbStreamsMap = (fbStreamsMap: any): fbStreamsMap is FbStreamsMap => {
     return true;
 };
 
+const integrateFb = (live: Live): Stream[] => {
+    const { streams, streamsFb } = live;
+    const streamsAll: Stream[] = [];
+
+    const numStreamsFb = streamsFb.length;
+    if (numStreamsFb === 0) return streams;
+
+    let fbIdx = 0;
+    let addStream: Stream | undefined = streamsFb[fbIdx];
+    for (let i = 0; i < streams.length; i++) {
+        const stream = streams[i];
+        while (addStream && addStream.viewers >= stream.viewers) {
+            streamsAll.push(addStream);
+            fbIdx++;
+            addStream = streamsFb[fbIdx];
+        }
+        streamsAll.push(stream);
+    }
+    if (fbIdx < numStreamsFb) {
+        for (let i = fbIdx; i < numStreamsFb; i++) {
+            streamsAll.push(streamsFb[i]);
+        }
+    }
+
+    return streamsAll;
+};
+
 export const newFbData = async (fbChannels: string[], fbStreamsMap: any, tick: number): Promise<Stream[]> => {
     console.log(fbChannels, fbStreamsMap);
 
@@ -1052,18 +1079,17 @@ export const newFbData = async (fbChannels: string[], fbStreamsMap: any, tick: n
     }
 
     log('UPDATED CACHE', fbStreamsCache);
-    if (isMajor) {
+    if (isMajor) { // This data includes a major change
         fbLastMajorChangePrev = fbLastMajorChange;
         fbLastMajorChange = +new Date();
         log('>> UPDATED FB FOR MAJOR CHANGE');
     }
-    if (tick < fbLastMajorChange) {
-        const override = isMajor && (fbLastMajorChange - fbLastMajorChangePrev) > updateCacheMs * 2;
+    if (tick < fbLastMajorChange) { // The user's data is missing major info
+        const override = isMajor && (fbLastMajorChange - fbLastMajorChangePrev) > updateCacheMs * 2; // Immediately update the cache data
         log('>> Fetching new streams for next major change | override:', override);
-        if (override) {
-            const live = await getNpLive({}, override, true, '/parse_streams');
-            return live.streams;
-        }
+        const live = await getNpLive({}, override, '/parse_streams'); // Return the cache data (or override first)
+        const streamsAll = integrateFb(live);
+        return streamsAll;
     }
     return [];
 };
@@ -1096,7 +1122,7 @@ export const newFbData = async (fbChannels: string[], fbStreamsMap: any, tick: n
 // };
 
 export const getNpStreams = async (baseOptions = {}, override = false): Promise<Stream[]> => {
-    const live = await getNpLive(baseOptions, override, undefined, '/streams');
+    const live = await getNpLive(baseOptions, override, '/streams');
     return live.streams;
 };
 

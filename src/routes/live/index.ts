@@ -16,7 +16,7 @@ router.get('/', async (req, res) => {
             if (k === 'faction') return 'factionName';
             return k;
         })),
-        undefined, undefined, '/live'
+        undefined, '/live'
     );
     // log('live', live);
     return res.send(live);
