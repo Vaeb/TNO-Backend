@@ -1061,7 +1061,7 @@ export const newFbData = async (fbChannels: string[], fbStreamsMap: any, tick: n
     for (const channel of fbChannels) {
         if (!npCharacters[channel.toLowerCase()]) {
             log('>>>>> Bad entry:', channel);
-            break;
+            return [];
         }
         const stream = fbStreamsMap[channel];
         if (!stream) {
