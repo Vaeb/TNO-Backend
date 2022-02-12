@@ -525,7 +525,7 @@ export const getNpLive = async (baseOptions = {}, override = false, integrated =
                     }
                 }
 
-                log('fbStreams', fbStreams.map(fbStream => [fbStream.userDisplayName, fbStream.viewers]));
+                log(`${endpoint}: fbStreams`, fbStreams.map(fbStream => [fbStream.userDisplayName, fbStream.viewers]));
 
                 log(`${endpoint}: Fetched streams! Now processing data...`);
 
