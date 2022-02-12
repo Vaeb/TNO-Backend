@@ -339,6 +339,7 @@ interface FbStreamDetails {
 
 type FbStreamsMap = { [key: string]: FbStreamDetails };
 
+const initialStamp = +new Date();
 let fbLastMajorChangePrev = 0;
 let fbLastMajorChange = 0;
 const fbStreamsCache: FbStreamsMap = {};
@@ -1051,6 +1052,10 @@ const integrateFb = (live: Live): Stream[] => {
 
 export const newFbData = async (fbChannels: string[], fbStreamsMap: any, tick: number): Promise<Stream[]> => {
     console.log(fbChannels, fbStreamsMap);
+
+    if (tick < initialStamp) {
+        log('>>>>> Ignoring data from before initialStamp', initialStamp, tick);
+    }
 
     if (!checkFbStreamsMap(fbStreamsMap)) {
         log('>>>>> Bad fbStreamsMap structure!!!');
