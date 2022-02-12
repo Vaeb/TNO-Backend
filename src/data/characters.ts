@@ -317,6 +317,9 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Dave Bird', factions: ['Police'], assumeServer: 'public' },
         { name: 'Nash Mastersin', displayName: 1, assumeServer: 'whitelist' },
     ],
+    ayubfe: [
+        { name: '[EMS] Ayub Elmi', factions: ['Medical'], displayName: 2 },
+    ],
     Baabeology: [
         { name: 'Lola White', factions: ['BBMC'], displayName: 0, assumeServer: 'public' },
     ],
