@@ -2712,6 +2712,9 @@ export const npCharacters: NpCharacters = {
     RyanRV: [
         { name: 'Jay Jones', factions: ['Rooster'], nicknames: ['JJ'], displayName: 0 },
     ],
+    RyuRPG: [
+        { name: 'Rafael "Raffa" Sanchez', factions: ['Marabunta'] },
+    ],
     S_Palms: [
         { name: 'Kimmy Youngirl', displayName: 1 },
         { name: 'Mina Kwon', displayName: 0 },
@@ -3570,6 +3573,9 @@ export const npCharacters: NpCharacters = {
     ],
     yooApollo: [
         { name: 'Martin Julio-Perez-Cruz-Rodriguez', factions: ['Marabunta'] },
+    ],
+    YourFriendKermit: [
+        { name: 'Leslie Jenkins', factions: ['Gulag Gang'], displayName: 0 },
     ],
     yungxaquafina: [
         { name: 'Antonio Carter Jr', factions: ['SSB'], nicknames: ['AJ'], displayName: 4 },
