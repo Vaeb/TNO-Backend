@@ -337,9 +337,11 @@ interface FbStreamDetails {
     facebook: boolean,
 }
 
+type FbStreamsMap = { [key: string]: FbStreamDetails };
+
 let fbLastMajorChangePrev = 0;
 let fbLastMajorChange = 0;
-const fbStreamsCache: { [key: string]: FbStreamDetails } = {};
+const fbStreamsCache: FbStreamsMap = {};
 // let fbStreamsCacheJson = '';
 // let lastFbStreamsLookup = 0;
 
@@ -993,15 +995,45 @@ export const getNpLive = async (baseOptions = {}, override = false, integrated =
     return cachedResults[optionsStr]!;
 };
 
-export const newFbData = async (fbChannels: string[], fbStreams: { [key: string]: FbStreamDetails }, tick: number): Promise<Stream[]> => {
-    console.log(fbChannels, fbStreams);
+const fbStreamSkeleton: FbStreamDetails = {
+    userDisplayName: '',
+    videoUrl: '',
+    title: '',
+    viewers: 0,
+    profileUrlOverride: '',
+    thumbnailUrl: '',
+    facebook: true,
+};
+const fbStreamSkeletonKeys = Object.keys(fbStreamSkeleton);
+
+const checkFbStreamsMap = (fbStreamsMap: any): fbStreamsMap is FbStreamsMap => {
+    if (fbStreamsMap == null || typeof fbStreamsMap !== 'object') return false;
+
+    const fbStream = Object.values(fbStreamsMap)[0];
+    if (fbStream == null || typeof fbStream !== 'object') return false;
+
+    const objKeys = Object.keys(fbStream);
+    const mixedKeys = new Set(fbStreamSkeletonKeys.concat(objKeys));
+    if (mixedKeys.size !== fbStreamSkeletonKeys.length || mixedKeys.size !== objKeys.length) return false;
+
+    return true;
+};
+
+export const newFbData = async (fbChannels: string[], fbStreamsMap: any, tick: number): Promise<Stream[]> => {
+    console.log(fbChannels, fbStreamsMap);
+
+    if (!checkFbStreamsMap(fbStreamsMap)) {
+        log('>>>>> Bad fbStreamsMap structure!!!');
+        return [];
+    }
+
     let isMajor = fbLastMajorChange === 0; // Initial POST counts as a major change (full data)
     for (const channel of fbChannels) {
         if (!npCharacters[channel.toLowerCase()]) {
-            log('>> Bad entry:', channel);
+            log('>>>>> Bad entry:', channel);
             break;
         }
-        const stream = fbStreams[channel];
+        const stream = fbStreamsMap[channel];
         if (!stream) {
             if (fbStreamsCache[channel]) isMajor = true;
             delete fbStreamsCache[channel];
