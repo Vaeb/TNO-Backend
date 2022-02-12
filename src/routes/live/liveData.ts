@@ -1058,7 +1058,7 @@ export const newFbData = async (fbChannels: string[], fbStreamsMap: any, tick: n
         log('>> UPDATED FB FOR MAJOR CHANGE');
     }
     if (tick < fbLastMajorChange) {
-        const override = (fbLastMajorChange - fbLastMajorChangePrev) > updateCacheMs * 2;
+        const override = isMajor && (fbLastMajorChange - fbLastMajorChangePrev) > updateCacheMs * 2;
         log('>> Fetching new streams for next major change | override:', override);
         if (override) {
             const live = await getNpLive({}, override, true, '/parse_streams');
