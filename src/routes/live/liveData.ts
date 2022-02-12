@@ -458,7 +458,7 @@ interface Live {
 const cachedResults: { [key: string]: Live | undefined } = {};
 const npStreamsPromise: { [key: string]: Promise<Live> | undefined } = {};
 
-export const getNpLive = async (baseOptions = {}, override = false, endpoint = '<no-endpoint>', waitForNext = false): Promise<Live> => {
+export const getNpLive = async (baseOptions = {}, override = false, endpoint = '<no-endpoint>', useActivePromise = false): Promise<Live> => {
     if (!isObjEmpty(baseOptions)) log(`${endpoint}: options -`, JSON.stringify(baseOptions));
 
     const options: LiveOptions = {
@@ -481,7 +481,7 @@ export const getNpLive = async (baseOptions = {}, override = false, endpoint = '
 
     const optionsStr = JSON.stringify(options);
 
-    if (!override && cachedResults[optionsStr] !== undefined && !waitForNext) {
+    if (!override && cachedResults[optionsStr] !== undefined && !useActivePromise) {
         log(`${endpoint}: Returning cached results.`);
         return cachedResults[optionsStr]!;
     }
