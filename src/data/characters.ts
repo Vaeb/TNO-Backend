@@ -2062,7 +2062,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Titus Tsukasa', factions: ['BSK'], displayName: 0 },
     ],
     MattRP: [
-        { name: '[Trooper] Jack Ripley', factions: ['Police'], facebook: true },
+        { name: '[Trooper] Jack Ripley', factions: ['Police'] },
     ],
     McconnellRet: [
         { name: '[Agent] Rhett "Bench Guy" McConnell', factions: ['Police'] },
