@@ -1393,8 +1393,9 @@ export const npCharacters: NpCharacters = {
     itsmejjroleplay: [
         { name: 'Johnny Jacksun', factions: ['BSK'], nicknames: ['JJ'], displayName: 0 },
     ],
-    itsnowas: [
+    ItsNowas: [
         { name: 'Trequan Jenkins', factions: ['Street Team', 'Chang Gang'], nicknames: ['Ashtray'], displayName: 3 },
+        { name: '[Deputy] Eli Hawkins', factions: ['Police'] },
     ],
     ItsSammyP: [
         { name: 'Mando Thompson', factions: ['Vagos'], nicknames: ['Mango'] },
