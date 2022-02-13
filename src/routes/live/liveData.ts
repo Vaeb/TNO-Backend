@@ -1087,7 +1087,7 @@ export const newFbData = async (fbChannels: string[], fbStreamsMap: any, tick: n
         }
     }
 
-    log('UPDATED CACHE', fbStreamsCache);
+    log('UPDATED CACHE', Object.keys(fbStreamsCache));
     if (isMajor) { // This data includes a major change
         fbLastMajorChangePrev = fbLastMajorChange;
         fbLastMajorChange = +new Date();
