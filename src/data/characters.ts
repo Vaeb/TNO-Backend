@@ -1062,6 +1062,9 @@ export const npCharacters: NpCharacters = {
     fleureo: [
         { name: 'Quinn Naiper', factions: ['DoC'], displayName: 0 },
     ],
+    Flocko1400: [
+        { name: 'Aaron Flocko', displayName: 0 },
+    ],
     FloMcNasty_TV: [
         { name: 'Richard Chiclets', factions: ['Stable', 'Burger Shot'], nicknames: ['Dick Chiclets'], displayName: 3, assumeServer: 'whitelist' },
         { name: '[Officer] William Clubb', factions: ['Police'], nicknames: ['Billy'], displayName: 2 },
