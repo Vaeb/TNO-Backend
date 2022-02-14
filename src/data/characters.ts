@@ -2771,7 +2771,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Enza Zissou' },
     ],
     saturneighteen: [
-        { name: '[Officer] Cleo Shaw', factions: ['Police'], nicknames: ['Coleslaw'], displayName: 1, assumeServer: 'whitelist' },
+        { name: 'Cleo Shaw', nicknames: ['Coleslaw'], displayName: 1, assumeServer: 'whitelist' },
         { name: '[Officer] Cleo Shaw', factions: ['Police'], nicknames: ['Coleslaw'], displayName: 1, assumeServer: 'public' },
     ],
     Sax850: [
