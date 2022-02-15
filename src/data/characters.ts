@@ -2066,7 +2066,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Trooper] Jack Ripley', factions: ['Police'] },
     ],
     McconnellRet: [
-        { name: '[Agent] Rhett "Bench Guy" McConnell', factions: ['Police'] },
+        { name: '[Agent] Rhett "Bench Guy" McConnell', factions: ['Police'], nicknames: [reg(/\bbench/)] },
     ],
     Meatwrist: [
         { name: 'Chad "Chodie" Brodie', factions: ['Chang Gang'] },
