@@ -3346,6 +3346,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Carlos "Cheddar" Sanchez', factions: ['HOA'] },
         { name: '[Deputy] Jason Hannah', factions: ['Police'], displayName: 1 },
         { name: 'Warren Wallace' },
+        { name: '[Watch Party] travpiper', factions: ['Watch Party'], nicknames: ['monday night sports'] },
         { name: 'Charlie Colcord' },
         { name: 'Hazard' },
     ],
