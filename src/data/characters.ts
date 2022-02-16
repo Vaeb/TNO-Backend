@@ -2919,7 +2919,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Von Westbrook', factions: ['SSB'], nicknames: ['Vonn'], displayName: 0 },
     ],
     SkipGently: [
-        { name: 'John Riggs' },
+        { name: '[Officer] John Riggs', factions: ['Police'] },
     ],
     skippypoppin: [
         { name: 'Kevin Whipaloo', factions: ['Burger Shot'], displayName: 0 },
