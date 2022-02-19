@@ -3011,6 +3011,9 @@ export const npCharacters: NpCharacters = {
     SpiderPigEthan: [
         { name: 'Marvin Chunder', factions: ['HOA'], nicknames: ['Hades'], displayName: 3 },
     ],
+    Sput: [
+        { name: 'Garry Smod', factions: ['DoC'], displayName: 0 },
+    ],
     Ssaab: [
         { name: '[Chief of Police] Sam Baas', factions: ['Police'], nicknames: ['Samir', 'Baasem'], displayName: 2, leader: true },
         { name: 'Al Saab', factions: ['Cleanbois'], displayName: 2 },
