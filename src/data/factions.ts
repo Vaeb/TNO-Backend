@@ -57,7 +57,7 @@ export const npFactionsRegex = {
     development: /\bdevelop|\bdev\b|\bcoding|devathon/i,
     doc: noLater(noFormer(/\bdoc\b|\bcorrection/i)),
     frat: noLater(noFormer(/\bfrat\b/i)),
-    prison: noLater(/\blifer|\bprison|\blife\W+sentence/i),
+    prison: noLater(/\blifer|\blife\W+sentence/i),
     harmony: /\bharmony\b/i,
     quickfix: /\bquick[\s\-]*fix/i,
     tunershop: /\btun(?:er|a)[\s\-]*shop\b|\b6str\W*tun(?:er|a)\b/i,
