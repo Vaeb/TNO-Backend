@@ -363,7 +363,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Mamaita "Mama" Jehmimi', factions: ['Britney Gang'] },
     ],
     banditobrown1: [
-        { name: "Shankeal O'Neal", factions: ['Street Team', 'Chang Gang'], nicknames: ['Shank', 'Shankyou'] },
+        { name: "Shankeal O'Neal", nicknames: ['Shank', 'Shankyou'] },
     ],
     barryscottlive: [
         { name: 'Barry Scott' },
