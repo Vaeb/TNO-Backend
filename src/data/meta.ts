@@ -50,7 +50,7 @@ export const npFactionsReal = { // map: removed spaces + converted to lower case
     marabunta: 'Marabunta',
     bsk: 'BSK',
     rust: 'RUST',
-    zoomafia: 'ZooMafia',
+    royalmafia: 'RoyalMafia',
     selfinsert: 'Self Insert',
     gulaggang: 'Gulag Gang',
     podcast: 'Podcast',
