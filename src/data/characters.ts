@@ -96,7 +96,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Modi Janta', factions: ['NBC'] },
     ],
     abrvxas: [
-        { name: 'Alexei Pavlovich', factions: ['RoyalMafia'], nicknames: ['Chicken Head'], displayName: 3 },
+        { name: 'Alexei Pavlovich', factions: ['Royal Mafia'], nicknames: ['Chicken Head'], displayName: 3 },
     ],
     Acaibear: [
         { name: '[Officer] Emily Reinhart', factions: ['Police'] },
@@ -519,7 +519,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Tane Mahuta', factions: ['RUST'], nicknames: ['Kiwi'], displayName: 3 },
     ],
     BurgSZN: [
-        { name: 'Tyler Heisanburg', factions: ['RoyalMafia'], nicknames: ['Burg'], displayName: 3 },
+        { name: 'Tyler Heisanburg', factions: ['Royal Mafia'], nicknames: ['Burg'], displayName: 3 },
     ],
     Burn: [
         { name: 'Johnny Silverhand', displayName: 0 },
@@ -1582,7 +1582,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Maria Estrella Duarte', factions: ['Vagos'], nicknames: [reg(/\be+s+t+r+e+l/)], displayName: 2 },
     ],
     Juggs: [
-        { name: 'Sidwig Crawshank', factions: ['RoyalMafia'], nicknames: [reg(/\bsidwig/)], displayName: 1 },
+        { name: 'Sidwig Crawshank', factions: ['Royal Mafia'], nicknames: [reg(/\bsidwig/)], displayName: 1 },
         { name: 'Lenny Large', nicknames: [reg(/\blenny/)], displayName: 0 },
         { name: 'Traevon Williams', nicknames: ['The Barber'], displayName: 3 },
     ],
@@ -2693,7 +2693,7 @@ export const npCharacters: NpCharacters = {
         { name: '[D.A.] Rick Mongo', factions: ['DoJ'], assume: 'assumeNpNoOther' },
     ],
     RileyRP: [
-        { name: 'Bubbles Smith', factions: ['RoyalMafia'] },
+        { name: 'Bubbles Smith', factions: ['Royal Mafia'] },
     ],
     ripoozi: [
         { name: 'Larry Knox', factions: ['Gulag Gang'], displayName: 0 },
@@ -2983,7 +2983,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Perry Willis', factions: ['Police'], displayName: 1, assumeServer: 'public' },
     ],
     SoapFPS: [
-        { name: 'Soap ?', factions: ['RoyalMafia'] },
+        { name: 'Soap ?', factions: ['Royal Mafia'] },
     ],
     sock22: [
         { name: '[Deputy] Richard Dark', factions: ['Police'] },
@@ -3308,7 +3308,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Roland Nelson', factions: ['Police'], assumeServer: 'public' },
     ],
     TheMLGenies: [
-        { name: 'Shivananand "Shivvy" Sunandrankumar', factions: ['RoyalMafia', 'Burger Shot'] },
+        { name: 'Shivananand "Shivvy" Sunandrankumar', factions: ['Royal Mafia', 'Burger Shot'] },
         { name: 'Sinbad Thoor', factions: ['DoC'], displayName: 0 },
     ],
     TheMrKatMar: [
@@ -3642,7 +3642,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Renato Ortiz', factions: ['Vagos'], displayName: 0 },
     ],
     Zee_RP: [
-        { name: 'Zee Carbone', factions: ['RoyalMafia'], displayName: 0 },
+        { name: 'Zee Carbone', factions: ['Royal Mafia'], displayName: 0 },
     ],
     Zerkaa: [
         { name: 'Tommy Tate', factions: ['Mandem'], leader: true, nicknames: ['Tommy T'], displayName: 3 },
@@ -3672,7 +3672,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Skunkz Wallace' },
     ],
     Zoomaa: [
-        { name: 'Tomassi Paparatto', factions: ['RoyalMafia'], displayName: 1, assume: 'assumeOther' },
+        { name: 'Tomassi Paparatto', factions: ['Royal Mafia'], displayName: 1, assume: 'assumeOther' },
     ],
     Zotbot: [
         { name: '[Physiotherapist] Leon Marks', factions: ['Medical'] },
