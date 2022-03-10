@@ -14,6 +14,7 @@ export const npFactionsReal = { // map: removed spaces + converted to lower case
     mandem: 'Mandem',
     doj: 'DoJ',
     streetteam: 'Street Team',
+    bcg: 'BCG',
     cleancartel: 'Clean Cartel',
     asrr: 'ASRR',
     dans: 'Dans',

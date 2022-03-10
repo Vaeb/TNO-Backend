@@ -252,6 +252,9 @@ export const npCharacters: NpCharacters = {
     Armeeof1: [
         { name: 'Milton Pointdexter' },
     ],
+    arnie_v: [
+        { name: 'Vincent Carl', factions: ['BCG'], nicknames: ['Arnie'], displayName: 3 },
+    ],
     ArsenaI: [
         { name: 'James Arsenal', displayName: 0 },
     ],
@@ -306,6 +309,9 @@ export const npCharacters: NpCharacters = {
     ],
     AvaGG: [
         { name: 'Karen Dahmer', factions: ['Chang Gang'], affiliate: true, nicknames: ['Kawen'] },
+    ],
+    awildzust: [
+        { name: 'Ryan Miller', factions: ['BCG'], displayName: 0 },
     ],
     awkwardsausesteph: [
         { name: '[Officer] Rebecka Lovejoy', factions: ['Police'], nicknames: ['Beck', 'Becks', '521'] },
@@ -402,6 +408,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Shevy Santanna', factions: ['Vagos'], assumeServer: 'whitelist' },
         { name: '[Officer] Jamal Ferreira', factions: ['Police'], assumeServer: 'public' },
         { name: 'Dominic "Lil D" Chester', nicknames: ['Sabado de Sol'] },
+    ],
+    BigRichardRP: [
+        { name: "Richard O'Conner", factions: ['BCG'], nicknames: ['Richie'], displayName: 0 },
     ],
     BigSkenger: [
         { name: 'Zaceed Skengerton', displayName: 1 },
@@ -838,6 +847,9 @@ export const npCharacters: NpCharacters = {
     ],
     dew_ski: [
         { name: 'Alem Barghouthi', factions: ['NBC'], displayName: 0 },
+    ],
+    DexGod: [
+        { name: 'JJ Bradley', factions: ['BCG'], nicknames: ['Dex'], displayName: 0 },
     ],
     dibitybopty: [
         { name: '[Officer] Gus Gorman', factions: ['Police'] },
@@ -1499,6 +1511,9 @@ export const npCharacters: NpCharacters = {
     ],
     jimmytulip: [
         { name: 'Wayne Biggaz', factions: ['Chang Gang'], nicknames: [reg(/\bwe+y+n/), reg(/\bwayne/)] },
+    ],
+    JJFried: [
+        { name: 'Ace Carter', factions: ['BCG'] },
     ],
     JJLakee: [
         { name: 'Jay Jarvis', factions: ['Hydra Gang', 'Harmony', 'Pegasus'], nicknames: ['JJ'], displayName: 0, facebook: true },
@@ -3027,8 +3042,14 @@ export const npCharacters: NpCharacters = {
     StalwartNightmare: [
         { name: '[Deputy] Alex Night', factions: ['Police'], nicknames: ['Speedster'], displayName: 2, assumeServer: 'public' },
     ],
+    StankXO: [
+        { name: 'Raccoon ?', factions: ['BCG'], displayName: 1 },
+    ],
     stanwilis: [
         { name: 'Trina Bergström', factions: ['Rooster'], nicknames: ['Bergstrom'], displayName: 0 },
+    ],
+    Stavy2hotty: [
+        { name: 'Chip Green', factions: ['BCG'], nicknames: ['Tails'], displayName: 3 },
     ],
     steamcharlie: [
         { name: '[Deputy] Sydney Bearmont', factions: ['Police'], displayName: 1 },
@@ -3060,6 +3081,9 @@ export const npCharacters: NpCharacters = {
         { name: '[Chief of Police] Frank Williams', factions: ['Police'], displayName: 1, assumeServer: 'public' },
         { name: '[Officer] Frank Williams', factions: ['Police'], displayName: 1, assumeServer: 'whitelist' },
         { name: 'Frankie Eastwood', displayName: 0, assumeServer: 'public' },
+    ],
+    Stoneyee: [
+        { name: 'Stone Malone', factions: ['BCG'], displayName: 1 },
     ],
     Stork1e: [
         { name: '[Officer] Luis Montoya', factions: ['Police'], displayName: 2 },
@@ -3199,6 +3223,9 @@ export const npCharacters: NpCharacters = {
     ],
     Test: [
         { name: 'Test6' },
+    ],
+    Tezibtw: [
+        { name: 'Jax Fury', factions: ['BCG'], displayName: 2 },
     ],
     TezMate: [
         { name: '[Deputy] Nicholas Riggs', factions: ['Police'] },
