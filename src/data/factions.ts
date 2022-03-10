@@ -156,7 +156,7 @@ export const useColorsDark = { // #ff77ff
     ssb: '#9b59b6',
     bsk: '#7957D4',
     hoa: '#a6033a',
-    gulaggang: '#F6EE6D',
+    gulaggang: '#F1EF6E',
     doj: '#00a032',
     asrr: '#a35231',
     angels: '#ff9ff3',
