@@ -146,7 +146,7 @@ export const useColorsDark = { // #f9002f #A87C2D
     lostmc: '#ab5179',
     changgang: '#686de0',
     hydragang: '#32ff7e',
-    streetteam: '#40739e',
+    streetteam: '#3F809B',
     bcg: '#90fa8f',
     rust: '#A87C2D',
     cleancartel: '#32ff7e',
