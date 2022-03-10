@@ -140,14 +140,15 @@ npFactionsRealMini.forEach((faction) => {
 // type FactionColorsMini = Exclude<FactionMini, NoFactionColorsMini>;
 // : { [key in FactionColorsMini]: string }
 
-export const useColorsDark = { // #f9002f #A87C2D #67BDA5
+export const useColorsDark = { // #f9002f #A87C2D
     cleanbois: '#e74c3c',
     limelight: '#bfff00',
     lostmc: '#ab5179',
     changgang: '#686de0',
     hydragang: '#32ff7e',
-    streetteam: '#32ff7e',
+    streetteam: '#90fa8f',
     bcg: '#32ff7e',
+    rust: '#A87C2D',
     cleancartel: '#32ff7e',
     vagos: '#f1c40f',
     seaside: '#67BDA5',
@@ -164,7 +165,7 @@ export const useColorsDark = { // #f9002f #A87C2D #67BDA5
     bbmc: '#3B64E6',
     burgershot: '#E99062',
     development: '#718093',
-    condemnedmc: '#90fa8f',
+    condemnedmc: '#32ff7e',
     doc: '#0984e3',
     prison: '#1C8EA2',
     stable: '#40739e',
@@ -195,8 +196,9 @@ export const useColorsLight: { [key in FactionColorsMini]: string } = {
     lostmc: '#ab5179',
     changgang: '#686de0',
     hydragang: '#12af7e',
-    streetteam: '#12af7e',
+    streetteam: '#6FBA7D',
     bcg: '#12af7e',
+    rust: '#A87C2D',
     cleancartel: '#12af7e',
     vagos: '#e3ba16',
     seaside: '#67BDA5',
@@ -213,7 +215,7 @@ export const useColorsLight: { [key in FactionColorsMini]: string } = {
     bbmc: '#2250ff',
     burgershot: '#c77c50',
     development: '#718093',
-    condemnedmc: '#6ab36a',
+    condemnedmc: '#12af7e',
     doc: '#1080d6',
     prison: '#1C8EA2',
     stable: '#40739e',

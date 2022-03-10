@@ -628,7 +628,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Baada Ka', factions: ['GSF'], nicknames: ['Chief'], displayName: 3, assume: 'assumeNpNoOther' },
     ],
     ChloeLock: [
-        { name: 'Chloe Blanc', nicknames: ['Chloé'], displayName: 0 },
+        { name: 'Chloe Blanc', factions: ['Hydra Gang'], nicknames: ['Chloé'], displayName: 0 },
     ],
     Choi: [
         { name: '[Dr.] Choi Zhangsun', factions: ['Medical'], assume: 'assumeOther' },
