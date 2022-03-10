@@ -2374,6 +2374,9 @@ export const npCharacters: NpCharacters = {
         { name: 'DaMarcus Lewis', factions: ['Tuner Shop'] },
         { name: 'Big K', factions: ['Self Insert'], displayName: 0 },
     ],
+    notmerrick: [
+        { name: 'Levi Rotti', factions: ['Gulag Gang'], displayName: 1 },
+    ],
     NotoriousNorman: [
         { name: 'Chips Ahoy', factions: ['Rooster'] },
     ],
@@ -2514,7 +2517,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Dispatch] Owen Fitz-Gibbon', factions: ['Police'], displayName: 2 },
     ],
     pinkchyu: [
-        { name: 'Selena Martinez', factions: ['Street Team'], displayName: 1 },
+        { name: 'Selena Martinez', factions: ['Gulag Gang'], displayName: 1 },
         { name: 'Tiffany Smith', nicknames: [reg(/\btiff/)], displayName: 0 },
         { name: 'Sakura Haruwho', displayName: 1 },
         { name: 'Ash Scuffem', displayName: 0 },
