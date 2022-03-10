@@ -237,6 +237,7 @@ const filterExclude: { [key in FactionMini]?: boolean } = {
     // harmony: true,
     quickfix: true,
     mersions: true,
+    stable: true,
     // podcast: true,
     otherfaction: true,
     othernp: true,
@@ -273,16 +274,15 @@ const filterOrderTop: FactionMiniArr = [
     'medical',
     'lostmc',
     'nbc',
-    'italianmafia',
-    'asrr',
     'royalmafia',
+    'asrr',
+    'angels',
+    'italianmafia',
     'cleancartel',
     'selfinsert',
     'pinkgang',
     'britneygang',
     'condemnedmc',
-    'angels',
-    'stable',
 ];
 
 const filterOrderAfterHasColor: FactionMiniArr = ['doc', 'development'];
