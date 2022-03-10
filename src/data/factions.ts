@@ -140,7 +140,7 @@ npFactionsRealMini.forEach((faction) => {
 // type FactionColorsMini = Exclude<FactionMini, NoFactionColorsMini>;
 // : { [key in FactionColorsMini]: string }
 
-export const useColorsDark = { // #FA0B42 #ff77ff #FBEE6C
+export const useColorsDark = { // #ff77ff
     cleanbois: '#e74c3c',
     limelight: '#bfff00',
     lostmc: '#ab5179',
@@ -264,9 +264,9 @@ const filterOrderTop: FactionMiniArr = [
     'hoa',
     'bsk',
     'bbmc',
-    'gulaggang',
     'mandem',
     'hydragang',
+    'gulaggang',
     'rust',
     'lostmc',
     'angels',
