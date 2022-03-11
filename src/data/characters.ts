@@ -375,6 +375,9 @@ export const npCharacters: NpCharacters = {
     BazzaGazza: [
         { name: 'Barry Benson', factions: ['BBMC'], displayName: 0 },
     ],
+    bbyruthless: [
+        { name: 'Saint Gomez', factions: ['Hydra Gang'] },
+    ],
     BCBeastly: [
         { name: 'Herbert The Pervert' },
     ],
@@ -1709,6 +1712,9 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Robert Anderson', factions: ['Police'] },
         { name: '[Lawyer] Jason Ledson', factions: ['DoJ'] },
     ],
+    kioShiMa_ff: [
+        { name: 'Kio Shima', factions: ['Hydra Gang'] },
+    ],
     Kimchi: [
         { name: 'Sun Moon', nicknames: [reg(/\bsun/), 'Korean Gang'], displayName: 0 },
     ],
@@ -2575,7 +2581,7 @@ export const npCharacters: NpCharacters = {
     ],
     Protay10: [
         { name: '[Deputy] Jacob Specter', factions: ['Police'] },
-        { name: 'James Thompson', factions: ['Harmony'], nicknames: ['James "Phantom" Thompson', 'Phantom'], displayName: 4 },
+        { name: 'James Thompson', factions: ['Hydra Gang', 'Harmony'], nicknames: ['James "Phantom" Thompson', 'Phantom'], displayName: 4 },
     ],
     PsiSyn: [
         { name: '[Officer] Lucio Panini', factions: ['Police'], displayName: 1, assumeServer: 'public' },
