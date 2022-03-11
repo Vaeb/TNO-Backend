@@ -147,7 +147,7 @@ export const useColorsDark = { // #ff77ff #FAA0A0 #FA0B42
     changgang: '#686de0',
     hydragang: '#E23B5B',
     streetteam: '#AF9595',
-    bcg: '#90fa8f',
+    bcg: '#9AFA99',
     rust: '#A87C2D',
     cleancartel: '#32ff7e',
     vagos: '#f1c40f',
