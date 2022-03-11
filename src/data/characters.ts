@@ -1210,7 +1210,7 @@ export const npCharacters: NpCharacters = {
     ],
     GTAWiseGuy: [
         { name: 'Eddie Marshall', factions: ['Tuner Shop'] },
-        { name: '[Deputy] Jim Underwood', factions: ['Police'], nicknames: ['337'] },
+        { name: '[Deputy] Jim Underwood', factions: ['Police'], nicknames: ['337', reg(/\w+wood\b/)] },
         {
             name: '[Development] GTAWiseGuy',
             factions: ['Development', 'Tuner Shop'],
