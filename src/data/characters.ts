@@ -1917,7 +1917,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Shane Jones', factions: ['Police'], displayName: 2 },
     ],
     Loorara: [
-        { name: 'Olivia Garcia', factions: ['BBMC'], nicknames: ['Liv', 'Livvy', 'Olives'], displayName: 0 },
+        { name: 'Olivia Garcia', nicknames: ['Liv', 'Livvy', 'Olives'], displayName: 0 },
     ],
     Loqrin: [
         { name: '[Development] Loqrin', factions: ['Development'] },
