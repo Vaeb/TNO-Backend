@@ -3371,7 +3371,7 @@ export const npCharacters: NpCharacters = {
     ],
     Tobii: [
         { name: '[Development] Tobii', factions: ['Development'] },
-        { name: 'Michael Simone', nicknames: ['Architect', 'RP'], displayName: 0 },
+        { name: 'Michael Simone', factions: ['Seaside'], nicknames: ['Architect', 'RP'], displayName: 0 },
     ],
     Tommy5oh: [
         { name: 'Pablo Santiago', factions: ['NBC'], displayName: 0 },
