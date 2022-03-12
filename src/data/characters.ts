@@ -659,7 +659,7 @@ export const npCharacters: NpCharacters = {
     ],
     CinnamonToastKen: [
         { name: 'Chuck Colton' },
-        { name: 'Buck Colton', nicknames: ['Book', 'Bucky', 'Cultan'] },
+        { name: 'Buck Colton', factions: ['BBMC'], nicknames: ['Book', 'Bucky', 'Cultan'] },
     ],
     Citizen_Cannon: [
         { name: 'Marco Richter', factions: ['Prison'], displayName: 0 },
@@ -858,7 +858,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Gus Gorman', factions: ['Police'] },
     ],
     DiewithLivv: [
-        { name: 'Cindy Tipton', factions: ['BBMC', 'Burger Shot'], nicknames: ['Girlboss'] },
+        { name: 'Cindy Tipton', factions: ['Burger Shot'], nicknames: ['Girlboss'] },
     ],
     DigbyTathamWarter: [
         { name: 'Nigel Edwardson', factions: ['News'], displayName: 0 },
@@ -1348,7 +1348,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Dispatch] Iris Nivira', factions: ['Police'], displayName: 1 },
     ],
     iddqd: [
-        { name: 'Jesse Cree', factions: ['BBMC'] },
+        { name: 'Jesse Reed', factions: ['BBMC'], nicknames: ['Cree'] },
     ],
     IG_Raptor: [
         { name: '[Ranger] Matt Cordell', factions: ['Police'], assumeServer: 'international' },
@@ -1570,7 +1570,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Lawyer] Lou Pohl', factions: ['DoJ'], displayName: 1 },
     ],
     JRandyDL: [
-        { name: 'Wyatt Jones', factions: ['DoC'], displayName: 0 },
+        { name: 'Wyatt Jones', factions: ['BBMC'], displayName: 0 },
     ],
     Jubby: [
         { name: '[Dept. Mayor] Ricardo Perez', factions: ['DoJ', 'Burger Shot'], displayName: 1 },
@@ -1672,9 +1672,6 @@ export const npCharacters: NpCharacters = {
         { name: '[EMS] Valkyrie Sunshot', factions: ['Medical'] },
         { name: 'Katt Vincent' },
     ],
-    KazMendalez: [
-        { name: 'Kaz Mendalez', factions: ['BBMC'] },
-    ],
     Keeno: [
         { name: 'Kyle Brovloski', displayName: 0, assume: 'assumeOther' },
     ],
@@ -1731,7 +1728,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Cooch Cassidy', factions: ['Lost MC'] },
     ],
     Kingothestone: [
-        { name: 'Steven Stone III', factions: ['BBMC'], displayName: 2 },
+        { name: 'Steven Stone III', displayName: 2 },
     ],
     KinkyHobo: [
         { name: '[Lawyer] Gill Schultz', factions: ['DoJ'], displayName: 1 },
@@ -1793,6 +1790,9 @@ export const npCharacters: NpCharacters = {
     ],
     Kongfue: [
         { name: 'Karl "KJ" Johnny Black', factions: ['Seaside'] },
+    ],
+    KriptedAUS: [
+        { name: 'Antonio Rodrigues', factions: ['BBMC'], displayName: 0 },
     ],
     KristoferYee: [
         { name: 'Jay Que', factions: ['Rooster'], displayName: 0 },
@@ -1912,6 +1912,9 @@ export const npCharacters: NpCharacters = {
     ],
     Lisilsanya: [
         { name: '[EMS] Lei Sanya', factions: ['Medical'], nicknames: ['Lasagna'], displayName: 0 },
+    ],
+    Llikthead: [
+        { name: 'Garion Noble', factions: ['BBMC', 'Rooster'], displayName: 1 },
     ],
     lolJukebox: [
         { name: '[Officer] Shane Jones', factions: ['Police'], displayName: 2 },
@@ -2778,6 +2781,9 @@ export const npCharacters: NpCharacters = {
     saNhje: [
         { name: '[Development] saNhje', factions: ['Development'], nicknames: ['MLO'] },
     ],
+    Sannmann_: [
+        { name: 'Finley Milton', factions: ['BBMC'], displayName: 0 },
+    ],
     Sarah_Digitally: [
         { name: 'Anna Jørgensen', factions: ['Harmony'], nicknames: ['Lilac', 'Illac', 'Jorgensen'], displayName: 3 },
     ],
@@ -3370,6 +3376,9 @@ export const npCharacters: NpCharacters = {
     Tommy5oh: [
         { name: 'Pablo Santiago', factions: ['NBC'], displayName: 0 },
     ],
+    Townie: [
+        { name: 'Teddy Booker', factions: ['BBMC', 'Mechanic'], displayName: 1 },
+    ],
     Trainwreckstv: [
         { name: 'Douglas "Doug Buck" Buck', displayName: 0 },
     ],
@@ -3559,7 +3568,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Bianca Walters' },
     ],
     Wootpiegames: [
-        { name: 'Rick Szhae', factions: ['BBMC'], displayName: 0 },
+        { name: 'Rick Szhae', displayName: 0 },
     ],
     WTFGameNation: [
         { name: '[Dr.] Noah Drake', factions: ['Medical'] },
@@ -3638,7 +3647,7 @@ export const npCharacters: NpCharacters = {
     ],
     Zaitohro: [
         { name: 'Cameran Shaw', factions: ['DoC'], nicknames: ['Cam'], displayName: 0 },
-        { name: 'Damien Tinkerman', displayName: 1 },
+        { name: 'Damien Tinkerman', factions: ['BBMC'], displayName: 0 },
         { name: 'Oswald Tinkerman', factions: ['Lost MC'], displayName: 1 },
     ],
     ZapremeTV: [
