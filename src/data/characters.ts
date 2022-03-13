@@ -2115,7 +2115,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Yoi Tsukita', assume: 'assumeOther' },
     ],
     Meraldje: [
-        { name: 'Jaylen Carter', factions: ['Street Team', 'Chang Gang'], nicknames: ['LampPost', 'Lamp Post'], displayName: 1 },
+        { name: 'Jaylen Carter', factions: ['Street Team', 'Chang Gang'], nicknames: ['LampPost', 'Lamp Post'], displayName: 1, leader: true },
     ],
     Merrcy: [
         { name: 'Cody Palmer', factions: ['Rooster'], displayName: 0 },
@@ -3588,8 +3588,13 @@ export const npCharacters: NpCharacters = {
         { name: 'Xen Verse', factions: ['Pink Gang'], displayName: 0 },
     ],
     xQcOW: [
-        { name: 'Jean "X" Paul', factions: ['Gulag Gang', 'Cleanbois', 'Burger Shot'], nicknames: ['Ghost Rider', 'Rider', 'Casino'], displayName: 0, assumeServer: 'whitelist' },
-        { name: 'Jean "X" Paul', factions: ['Gulag Gang', 'Burger Shot'], nicknames: ['Ghost Rider', 'Rider'], displayName: 0, assumeServer: 'public' },
+        {
+            name: 'Jean "X" Paul',
+            factions: ['Gulag Gang', 'Cleanbois', 'Burger Shot'],
+            nicknames: ['Ghost Rider', 'Rider', 'Casino'],
+            displayName: 0, assumeServer: 'whitelist', leader: true,
+        },
+        { name: 'Jean "X" Paul', factions: ['Gulag Gang', 'Burger Shot'], nicknames: ['Ghost Rider', 'Rider'], displayName: 0, assumeServer: 'public', leader: true },
         { name: '[Deputy] Pierre "PP" Paul', factions: ['Police'], displayName: 0, assumeServer: 'whitelist' },
         { name: 'Jean Pierre', displayName: 0 },
     ],
