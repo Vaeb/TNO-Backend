@@ -2905,6 +2905,7 @@ export const npCharacters: NpCharacters = {
             name: 'Juan Carlos "Flippy" Hernandez',
             factions: ['Hydra Gang', 'Chang Gang', 'Chaos'],
             nicknames: [reg(/\bflip/), reg(/\bcrim\w*\b(?!.+\bcop)/), 'not cop', 'trying out crim'],
+            leader: true,
         },
         { name: '[Officer] Joel Garcia', factions: ['Police'], nicknames: [reg(/\bcop\b(?!.+\bcrim)/), reg(/\bcop\b(?:.+\bnerf)/), 'trying out cop'] },
     ],
