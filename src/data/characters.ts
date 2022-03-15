@@ -2640,7 +2640,8 @@ export const npCharacters: NpCharacters = {
         { name: '[Ranger] Conan Clarkson', factions: ['Police'] },
     ],
     Rasta: [
-        { name: 'Dunn Robinson', assume: 'assumeOther' },
+        { name: 'Dunn Robinson', assume: 'assumeOther', assumeServer: 'whitelist' },
+        { name: '[Deputy] Dean Dimes III', factions: ['Police'], displayName: 2, assumeServer: 'public' },
         { name: 'Mary Livingston', displayName: 0 },
     ],
     RatedEpicz: [
