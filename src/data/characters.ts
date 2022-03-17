@@ -3537,7 +3537,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Lawyer] Lawrence Splainer', factions: ['DoJ'], displayName: 2 },
     ],
     Whippy: [
-        { name: 'Irwin Dundee', factions: ['BBMC'], displayName: 2 },
+        { name: 'Irwin Dundee', factions: ['BBMC'], displayName: 2, leader: true },
         { name: '[Officer] Crocodile "Croc" Steve', factions: ['Police'], nicknames: ['Cop'] },
         { name: 'James Tinklebottom' },
     ],
