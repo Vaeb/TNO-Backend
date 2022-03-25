@@ -2717,7 +2717,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Nikita Reznikov', factions: ['Pegasus'] },
     ],
     rlly: [
-        { name: 'Shelly Targaryen', factions: ['Burger Shot'], nicknames: ['Shelleh', 'Queen'] },
+        { name: '[Officer] Shelly Targaryen Smith', factions: ['Police', 'Burger Shot'], nicknames: ['Shelleh', 'Queen', '523'], displayName: 1 },
         { name: 'Kelly Smith' },
     ],
     Robbeaxe: [
