@@ -1754,6 +1754,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Agent] Lauren Forcer', factions: ['Police'], assumeServer: 'whitelist' },
         { name: '[Officer] Maisy Graves', factions: ['Police'], assumeServer: 'public' },
         { name: 'Mia Mersion', factions: ['Pegasus'] },
+        { name: 'Trish Baggs', displayName: 0 },
         { name: 'Nah Vee', displayName: 0 },
         { name: 'Evita "Mother" Nimm', factions: ['Dark Web'] },
         { name: 'Ava Ridge', nicknames: ['Silence', reg(/darkness/)] },
