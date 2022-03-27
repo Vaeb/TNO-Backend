@@ -25,7 +25,7 @@ const noFormer = (reg: RegExp) => mergeRegex([/(?<!(?:\b|_)(?:vs?|versus|on|agai
 export const npFactionsRegex = {
     lostmc: noLater(noFormer(/lost\s*mc|the\s*lost\b/i)),
     changgang: noFormer(/chang\s*gang|\bcga?\b/i),
-    hydragang: noFormer(/\b(?:hydra|mario|flippy|snake+)'?s?[\s\-]*(?:gang|crew)/i),
+    hydragang: noFormer(/\b(?:hydra|mario|flippy|snake+)'?s?[\s\-]*(?:gang|crew)|\bhga?\b/i),
     streetteam: noFormer(/street\s*team|\bst\b/i),
     bcg: noFormer(/\bbcg|\bbowl[\s\-_.]*cut|bowl[\s\-_.]*cut[\s\-_.]*gang/i),
     cleancartel: noFormer(/\bclean\s*cartel/i),
