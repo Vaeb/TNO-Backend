@@ -2669,6 +2669,9 @@ export const npCharacters: NpCharacters = {
     RedPotatoPlays: [
         { name: '[Officer] Rudy Romano', factions: ['Police'], assumeServer: 'public' },
     ],
+    Reedy: [
+        { name: 'Raul Luis-Blanco', factions: ['Hydra Gang'], displayName: 0 },
+    ],
     ReelSalty: [
         { name: '[Deputy] Frank Giuliani', factions: ['Police'], assumeServer: 'public' },
     ],
@@ -3568,7 +3571,7 @@ export const npCharacters: NpCharacters = {
     ],
     Wolfabelle: [
         { name: '[Deputy] Candice Defitt', factions: ['Police'], nicknames: ['393'], displayName: 1 },
-        { name: 'Scarlett Skye', displayName: 0 },
+        { name: 'Scarlett Skye', factions: ['Hydra Gang'], displayName: 0 },
         { name: 'Bianca Walters' },
     ],
     Wootpiegames: [
