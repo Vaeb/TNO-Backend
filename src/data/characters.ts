@@ -124,6 +124,9 @@ export const npCharacters: NpCharacters = {
         { name: '[Lawyer] Adam Prince', factions: ['DoJ'] },
         { name: '[Dr.] Valentine', factions: ['Medical'] },
     ],
+    AFCB78: [
+        { name: 'Dick Dudley', displayName: 2 },
+    ],
     AfricanSnowball: [
         { name: 'Buck Stanton', displayName: 2 },
         { name: '[Officer] Dwayne Carter IV', factions: ['Police'], nicknames: [reg(/good [a*][s*]+ day/)], displayName: 2 },
