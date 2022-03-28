@@ -1357,6 +1357,9 @@ export const npCharacters: NpCharacters = {
     IG_Raptor: [
         { name: '[Ranger] Matt Cordell', factions: ['Police'], assumeServer: 'international' },
     ],
+    iGumdrop: [
+        { name: 'Emi Drop' },
+    ],
     IHeartGaming: [
         { name: 'Markuz Jackelson', factions: ['GSF'], nicknames: ['Meatball', 'Meat', 'Meatwad'] },
     ],
