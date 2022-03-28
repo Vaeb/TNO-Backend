@@ -3135,7 +3135,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Trooper] Charles Johnson', factions: ['Police'], nicknames: ['Chawa'], assumeServer: 'public' },
     ],
     Sunni: [
-        { name: 'Hilda Bulking', factions: ['Vagos'] },
+        { name: 'Hilda Bulking', factions: ['Tuner Shop'] },
     ],
     SuperBunneh: [
         { name: '[EMS] Mila Smoak', factions: ['Medical'] },
