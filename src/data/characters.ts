@@ -2474,7 +2474,7 @@ export const npCharacters: NpCharacters = {
         { name: '[EMS] Rory Borealis', factions: ['Medical'], displayName: 1 },
     ],
     OneTapBingus: [
-        { name: 'Bodhi Mack' },
+        { name: 'Bodhi Mack', factions: ['Seaside'] },
     ],
     Osakanoodles: [
         { name: '[Officer] Antoine Sigel', factions: ['Police'] },
