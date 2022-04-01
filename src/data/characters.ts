@@ -3519,7 +3519,7 @@ export const npCharacters: NpCharacters = {
         { name: '? "Wolfbiter" ?' },
     ],
     Vondill: [
-        { name: 'Samantha Snake', factions: ['Clean Cartel'], nicknames: ['Sammy', 'Sammy Snake'], displayName: 4 },
+        { name: 'Samantha Snake', factions: ['BSK'], nicknames: ['Sammy', 'Sammy Snake'], displayName: 4 },
         { name: 'Otis Campbell', displayName: 0 },
     ],
     vsperance: [
