@@ -773,7 +773,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Demetrius "Draco" Jones', factions: ['SSB'], leader: true, nicknames: ['DJ'] },
     ],
     D4N1ELLE: [
-        { name: 'Quimbley Hayabusa', factions: ['CBPD', 'Rooster'], nicknames: ['Q'], displayName: 0 },
+        { name: 'Quimbley Hayabusa', factions: ['CBPD', 'Rooster'], nicknames: ['Q'], displayName: 3 },
     ],
     DadDoesDrag: [
         { name: 'Kray-Tor Skullfondler', factions: ['HOA'], facebook: true },
