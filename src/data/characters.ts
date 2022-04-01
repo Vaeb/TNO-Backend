@@ -3417,6 +3417,7 @@ export const npCharacters: NpCharacters = {
     ],
     traycee: [
         { name: 'Lexi Law', factions: ['Angels'] },
+        { name: '[Officer] Aspen Gray', factions: ['Police'] },
     ],
     Turkaderk: [
         { name: 'Benji Carter', factions: ['BSK'], displayName: 0 },
