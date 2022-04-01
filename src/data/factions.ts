@@ -261,6 +261,7 @@ const filterOrderTop: FactionMiniArr = [
     'vagos',
     'ssb',
     'gsf',
+    'cbpd',
     'rooster',
     'hoa',
     'bsk',
