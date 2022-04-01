@@ -262,7 +262,7 @@ export const npCharacters: NpCharacters = {
         { name: 'James Arsenal', displayName: 0 },
     ],
     ash: [
-        { name: '[Dept. Mayor] Ash Ketchup', factions: ['Seaside', 'DoJ'], displayName: 1, assumeChar: true },
+        { name: 'Ash Ketchup', factions: ['Seaside'], displayName: 1, assumeChar: true },
     ],
     Ashaweebaby78: [
         { name: 'Frankiie Fletcher', factions: ['BSK'], displayName: 0 },
@@ -1401,7 +1401,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Wilbur Higgins' },
     ],
     itsjustasummerjob: [
-        { name: 'Sabith "Bunny" Cohen', factions: ['Stable'] },
+        { name: '[Mayor] Sabith "Bunny" Cohen', factions: ['DoJ', 'Stable'] },
     ],
     ItsJustJosh: [
         { name: 'Levi Dawson', factions: ['SSB'] },
@@ -1539,7 +1539,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Michael Murphy', factions: ['Police'] },
     ],
     Jogiiee: [
-        { name: '[Mayor] Emma Gaine', factions: ['DoJ', 'Medical'], displayName: 1 },
+        { name: 'Emma Gaine', factions: ['Medical'], displayName: 1 },
         { name: 'Jessie Jugg' },
         { name: '[Dispatch] Penny Schildt', factions: ['Police'] },
         { name: 'Eva Wall' },
@@ -1580,7 +1580,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Wyatt Jones', factions: ['BBMC'], displayName: 0 },
     ],
     Jubby: [
-        { name: '[Dept. Mayor] Ricardo Perez', factions: ['DoJ', 'Burger Shot'], displayName: 1 },
+        { name: 'Ricardo Perez', factions: ['Burger Shot'], displayName: 1 },
     ],
     Judd: [
         { name: '[Judge] Coyote Russell', factions: ['DoJ'], displayName: 1, assumeServer: 'whitelist' },
@@ -2112,7 +2112,7 @@ export const npCharacters: NpCharacters = {
     ],
     MEKABEAR: [
         { name: '[Deputy] Amber Gold', factions: ['Police'] },
-        { name: '[Dept. Mayor] Erin Cox', factions: ['DoJ'], nicknames: ['c:', 'E R I N', 'C O X'], displayName: 1 },
+        { name: 'Erin Cox', nicknames: ['c:', 'E R I N', 'C O X'], displayName: 1 },
         { name: 'Ari Tistu', displayName: 0 },
         { name: 'Amber ?', factions: ['Self Insert'], displayName: 1 },
     ],
@@ -2168,7 +2168,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Michael Rodgers', factions: ['Police'], assume: 'assumeNpNoOther' },
     ],
     MikkisaurusRex: [
-        { name: '[Dept. Mayor] Jessica Hilton', factions: ['DoJ', 'Medical'] },
+        { name: 'Jessica Hilton', factions: ['Medical'] },
     ],
     Milsera: [
         { name: 'Mono Block', factions: ['ASRR'] },
