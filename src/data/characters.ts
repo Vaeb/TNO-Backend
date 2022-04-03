@@ -512,6 +512,9 @@ export const npCharacters: NpCharacters = {
     BrookeAB: [
         { name: 'Abby Brooks', displayName: 0 },
     ],
+    broxh_: [
+        { name: '? ?', displayName: 1 },
+    ],
     buddha: [
         { name: 'Lang Buddha', factions: ['Cleanbois', 'Clean Cartel', 'Rooster'], leader: true, nicknames: ['Circle Andy', 'Timelord'], assumeChar: true, assumeServer: 'whitelist' },
         { name: '[Officer] LeBron James', factions: ['Police'], nicknames: ['623'] },
