@@ -1261,7 +1261,7 @@ export const npCharacters: NpCharacters = {
     ],
     Harry: [
         { name: 'Harry Brown', factions: ['Cleanbois', 'Limelight', 'Pegasus', 'Rooster'] },
-        { name: 'Kevin Cooke', nicknames: ['Lil Kev', 'Kev'], displayName: 3 },
+        { name: '[Deputy] Lil Kev', factions: ['Police'], nicknames: ['Lil Kev', 'Kev'], displayName: 2 },
     ],
     HasanAbi: [
         { name: 'Humberto Antonio Donato Pecorino', factions: ['Cleanbois', 'Rooster'], nicknames: ['Don', 'Donnie', reg(/\bOva[h']? here\b/)], displayName: 5 },
