@@ -1491,10 +1491,10 @@ export const npCharacters: NpCharacters = {
         { name: 'Robert "Mr. Rodgers" Rodgers' },
     ],
     jdot: [
+        { name: 'Andrew "Drew" Jackson', factions: ['GSF'] },
         { name: 'Miles Landon', factions: ['Pegasus'], assumeServer: 'whitelist' },
         { name: 'Miles Landon', nicknames: ['451'], assumeServer: 'public' },
         { name: 'Jake LaMotta', displayName: 0 },
-        { name: 'Andrew "Drew" Jackson', factions: ['GSF'] },
     ],
     jeimiru: [
         { name: 'David Jackson', factions: ['RUST', 'Harmony'], nicknames: ['Benz'], displayName: 3 },
