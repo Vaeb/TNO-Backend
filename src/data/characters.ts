@@ -1490,7 +1490,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Molly Minaj', displayName: 0 },
         { name: 'Robert "Mr. Rodgers" Rodgers' },
     ],
-    JdotField: [
+    jdot: [
         { name: 'Miles Landon', factions: ['Pegasus'], assumeServer: 'whitelist' },
         { name: 'Miles Landon', nicknames: ['451'], assumeServer: 'public' },
         { name: 'Jake LaMotta', displayName: 0 },
