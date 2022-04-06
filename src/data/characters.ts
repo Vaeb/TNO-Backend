@@ -1260,6 +1260,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Blaine Burke', factions: ['Angels'] },
     ],
     Harry: [
+        { name: 'Harry Brown', factions: ['Cleanbois', 'Limelight', 'Pegasus', 'Rooster'] },
         { name: 'Kevin Cooke', nicknames: ['Lil Kev', 'Kev'], displayName: 3 },
     ],
     HasanAbi: [
