@@ -1348,7 +1348,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Johnathen Riker' },
     ],
     IanDavis: [
-        { name: 'Reginald Watson', factions: ['Burger Shot'], nicknames: ['Sir'], displayName: 0 },
+        { name: 'Reginald Watson', factions: ['Royal Mafia'], nicknames: ['Sir'], displayName: 0 },
     ],
     iballzach: [
         { name: '[EMS] Zachary Kellogg', factions: ['Medical'] },
@@ -1604,7 +1604,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Maria Estrella Duarte', factions: ['Vagos'], nicknames: [reg(/\be+s+t+r+e+l/)], displayName: 2 },
     ],
     Juggs: [
-        { name: 'Sidwig Crawshank', factions: ['Royal Mafia'], nicknames: [reg(/\bsidwig/)], displayName: 1 },
+        { name: 'Sidwig Crawshank', factions: ['Royal Mafia'], nicknames: [reg(/\bsidwig/)], displayName: 1, leader: true },
         { name: 'Lenny Large', nicknames: [reg(/\blenny/)], displayName: 0 },
         { name: 'Traevon Williams', nicknames: ['The Barber'], displayName: 3 },
     ],
@@ -2863,6 +2863,9 @@ export const npCharacters: NpCharacters = {
     shadiko: [
         { name: 'Alex Domino', factions: ['Rooster'], displayName: 0 },
     ],
+    shadowedkayla: [
+        { name: 'Kayla Rose', factions: ['Royal Mafia'], displayName: 1 },
+    ],
     shadowgam3rx: [
         { name: 'Jenny Ondamic', factions: ['BSK'], nicknames: ['BSQueen'], displayName: 0 },
     ],
@@ -2878,7 +2881,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Garry Roche', factions: ['Burger Shot'], displayName: 0 },
     ],
     Shayeno: [
-        { name: 'Ryder James Flint', factions: ['Tuner Shop'], nicknames: ['RJ'], displayName: 4 },
+        { name: 'Ryder James Flint', factions: ['Royal Mafia'], nicknames: ['RJ'], displayName: 4 },
     ],
     SheepDog59: [
         { name: '[Officer] Mason Kennedy', factions: ['Police'], nicknames: ['545'], displayName: 2 },
