@@ -396,6 +396,9 @@ export const npCharacters: NpCharacters = {
     beetricetv: [
         { name: 'Benny Davis', factions: ['SSB'], displayName: 0 },
     ],
+    BelowTheWaves: [
+        { name: '[Dispatch] L Lovesick', factions: ['Police'], displayName: 2 },
+    ],
     Benni: [
         { name: 'Santiago "Santi" Madrid', factions: ['Vagos'], nicknames: [reg(/\bSanti/)] },
         { name: 'Antonio Reyes', nicknames: [reg(/\bAntonio/)] },
@@ -1896,6 +1899,7 @@ export const npCharacters: NpCharacters = {
     ],
     Lastbrokenoath: [
         { name: '[Dr.] Alexander Blake', factions: ['Medical'], displayName: 2 },
+        { name: '[Dispatch] L Tailor', factions: ['Police'], nicknames: ['D-21'], displayName: 2 },
     ],
     LetterJaye: [
         { name: 'Posy Florian', factions: ['Burger Shot'], nicknames: ['P O S Y'] },
