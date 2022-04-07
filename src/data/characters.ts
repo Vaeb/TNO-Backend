@@ -366,7 +366,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Mamaita "Mama" Jehmimi', factions: ['Britney Gang'] },
     ],
     banditobrown1: [
-        { name: "Shankeal O'Neal", nicknames: ['Shank', 'Shankyou'] },
+        { name: "Shankeal O'Neal", factions: ['Roadmen', 'Mandem'], nicknames: ['Shank', 'Shankyou'] },
     ],
     barryscottlive: [
         { name: 'Barry Scott' },
@@ -1505,6 +1505,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Prince] Habib Khalid' },
     ],
     Jennybeartv: [
+        { name: '[Deputy] Peach Chee', factions: ['Police'], displayName: 1 },
         { name: 'Peachingle Dan', factions: ['Dans'] },
     ],
     jennylouise1997: [
@@ -1571,6 +1572,9 @@ export const npCharacters: NpCharacters = {
     ],
     JPeavy: [
         { name: 'Dante Thomas', factions: ['HOA'], displayName: 0 },
+    ],
+    JPF_14: [
+        { name: 'Jay Martin', factions: ['Roadmen', 'Mandem'], displayName: 0 },
     ],
     JPKMoto: [
         { name: '[Clerk] Odessa Pearson', factions: ['DoJ'], displayName: 1 },
@@ -3049,6 +3053,9 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Patrick Downing', factions: ['Police'], nicknames: ['Pat'] },
         { name: 'Casey Boyd', nicknames: ['Caseboy', 'L8PD'], displayName: 0 },
     ],
+    SparkyKNE: [
+        { name: 'Sparky Kane', factions: ['Roadmen', 'Mandem'], displayName: 1 },
+    ],
     SpekCypher: [
         { name: 'Luis Fernandez', factions: ['HOA'], displayName: 0 },
     ],
@@ -3208,6 +3215,9 @@ export const npCharacters: NpCharacters = {
     ],
     SynthHunter: [
         { name: 'Hunter "Wingman" Skye', factions: ['Rooster'] },
+    ],
+    syph3rau: [
+        { name: 'Lyon Martinez', factions: ['Roadmen', 'Mandem'] },
     ],
     Syraphic: [
         { name: '[Deputy] Kyra Pierce', factions: ['Police'] },
@@ -3480,6 +3490,9 @@ export const npCharacters: NpCharacters = {
     ],
     ValorWasTaken: [
         { name: 'Esteban Julio-Cruz-Perez-Rodriguez', factions: ['Marabunta'] },
+    ],
+    Vedstar: [
+        { name: 'Ved Jiggyjoglue', factions: ['Roadmen', 'Mandem'] },
     ],
     Venomfly: [
         { name: 'Babe Calloway', factions: ['Rooster'], displayName: 0 },
