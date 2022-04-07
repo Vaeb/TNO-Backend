@@ -1089,6 +1089,7 @@ export const npCharacters: NpCharacters = {
     ],
     FloMcNasty_TV: [
         { name: 'Richard Chiclets', factions: ['Stable', 'Burger Shot'], nicknames: ['Dick Chiclets'], displayName: 3, assumeServer: 'whitelist' },
+        { name: 'Lilith Sponge', nicknames: ['Lil Sponge'], displayName: 3 },
         { name: '[Officer] William Clubb', factions: ['Police'], nicknames: ['Billy'], displayName: 2 },
         { name: 'Doc Chocolates', displayName: 0, assumeServer: 'public' },
     ],
@@ -1261,7 +1262,7 @@ export const npCharacters: NpCharacters = {
     ],
     Harry: [
         { name: 'Harry Brown', factions: ['Cleanbois', 'Limelight', 'Pegasus', 'Rooster'] },
-        { name: '[Deputy] Lil Kev', factions: ['Police'], nicknames: ['Lil Kev', 'Kev'], displayName: 2 },
+        { name: '[Deputy] Kevin Little', factions: ['Police'], nicknames: ['Lil Kev', 'Kev'], displayName: 2 },
     ],
     HasanAbi: [
         { name: 'Humberto Antonio Donato Pecorino', factions: ['Cleanbois', 'Rooster'], nicknames: ['Don', 'Donnie', reg(/\bOva[h']? here\b/)], displayName: 5 },
@@ -1403,6 +1404,9 @@ export const npCharacters: NpCharacters = {
     ],
     itmeJP: [
         { name: 'Wilbur Higgins' },
+    ],
+    ItsHighsky: [
+        { name: 'Sky Parks', factions: ['Royal Mafia'], displayName: 0 },
     ],
     itsjustasummerjob: [
         { name: '[Mayor] Sabith "Bunny" Cohen', factions: ['DoJ', 'Stable'] },
@@ -1982,7 +1986,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Hellfire Holden', factions: ['Lost MC'], nicknames: ['biker', reg(/hell\W*fire/)] },
     ],
     LtSerge: [
-        { name: '[Deputy] Serge Cross', factions: ['Police'], displayName: 2 },
+        { name: '[Judge] Serge Cross', factions: ['DoJ'], displayName: 2 },
     ],
     Lucky_RP: [
         { name: 'Marlo Stanfield', nicknames: [reg(/ma?rlo/)] },
@@ -2343,6 +2347,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Moses Khan', factions: ['Mandem'], displayName: 1 },
     ],
     Nerdandi: [
+        { name: '[AA] Philomena Hawthorne', factions: ['Police'], nicknames: ['Luna'] },
         { name: 'Petunia Susan Brookshire', factions: ['Rooster'] },
     ],
     Nescoh: [
@@ -2578,6 +2583,7 @@ export const npCharacters: NpCharacters = {
     ],
     Polen: [
         { name: 'Adam "AP" Peterson', factions: ['Tuner Shop'], displayName: 0 },
+        { name: '[Deputy] Adrian Pearce', factions: ['Police'], displayName: 2 },
         { name: 'Martin Polen', factions: ['Self Insert'], displayName: 0 },
     ],
     Ponnhub: [
@@ -3586,6 +3592,9 @@ export const npCharacters: NpCharacters = {
     willneff: [
         { name: '"James Marco" St. Marco', nicknames: ['marko', 'marcoing', 'markoing'] },
         { name: "? \"Don's Mother\" ?", nicknames: ['Mama', 'Donna'] },
+    ],
+    WithExtraSauce: [
+        { name: '[Deputy] Budweiser Malarky', factions: ['Police'], nicknames: ['Bud'], displayName: 2 },
     ],
     Wizop: [
         { name: 'Dreyvon Cartier', factions: ['SSB'], nicknames: ['Drip'], displayName: 3 },
