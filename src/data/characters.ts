@@ -940,7 +940,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Nay "Delamain" Rater' },
     ],
     Duroode: [
-        { name: 'James McTavish', factions: ['DoC'], displayName: 0 },
+        { name: '[Officer] James McTavish', factions: ['Police'], displayName: 2 },
     ],
     durptastic: [
         { name: 'Otis Goody', factions: ['Burger Shot'] },
