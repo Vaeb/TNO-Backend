@@ -422,7 +422,8 @@ export const npCharacters: NpCharacters = {
         { name: "Richard O'Conner", factions: ['BCG'], nicknames: ['Richie'], displayName: 0 },
     ],
     BigSkenger: [
-        { name: 'Zaceed Skengerton', displayName: 1 },
+        { name: '[Officer] Zacood Skengerson', factions: ['Police'], displayName: 1, assumeServer: 'public' },
+        { name: 'Zaceed Skengerton', displayName: 1, assumeServer: 'whitelist' },
     ],
     BikeMan: [
         { name: 'Chet Summerset', assume: 'assumeNpNoOther' },
