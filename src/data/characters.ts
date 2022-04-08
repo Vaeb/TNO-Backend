@@ -2370,6 +2370,7 @@ export const npCharacters: NpCharacters = {
     ],
     NeveRossa: [
         { name: 'Dawn Hearte', factions: ['Lost MC', 'Medical'] },
+        { name: '[Deputy] Brandy Kaas', factions: ['Police'] },
     ],
     NewFaceSuper: [
         { name: 'Davey Doherty' },
@@ -3701,7 +3702,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Oakley Stallion', factions: ['Angels'], displayName: 0 },
     ],
     Zaitohro: [
-        { name: 'Cameran Shaw', factions: ['DoC'], nicknames: ['Cam'], displayName: 0 },
+        { name: '[Deputy] Cameran Shaw', factions: ['Police'], nicknames: ['Cam'], displayName: 2 },
         { name: 'Damien Tinkerman', factions: ['BBMC'], displayName: 0 },
         { name: 'Oswald Tinkerman', factions: ['Lost MC'], displayName: 1 },
     ],
