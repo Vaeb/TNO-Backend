@@ -2315,6 +2315,9 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Connor Stubble', factions: ['Police'], nicknames: ['514'], displayName: 2 },
         { name: 'Jim Littleman', displayName: 0 },
     ],
+    Myth: [
+        { name: 'Johny Burroh', displayName: 0 },
+    ],
     Mythematic: [
         { name: 'Mike Rosoftsam', affiliate: true },
     ],
