@@ -102,6 +102,9 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Emily Reinhart', factions: ['Police'] },
         { name: 'Jolene Mushkin', nicknames: ['Little Red'] },
     ],
+    AcezProduction: [
+        { name: 'Achez Perez', factions: ['RUST'], nicknames: ['Ace'], displayName: 1 },
+    ],
     adeptthebest: [
         { name: 'Mari Posa', factions: ['Chang Gang', 'Hydra Gang', 'Chaos'], nicknames: ['Wari', 'Lari'], displayName: 1, assumeServer: 'whitelist' },
         { name: '[Trooper] Selena Mendoza', nicknames: [reg(/\bmendoz/)], factions: ['Police'] },
