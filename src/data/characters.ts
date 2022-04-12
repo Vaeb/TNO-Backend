@@ -2128,7 +2128,7 @@ export const npCharacters: NpCharacters = {
         { name: '[EMS] William "Middy" Haze', factions: ['Medical'] },
     ],
     Megatruong_: [
-        { name: '[Deputy] Roy Armstrong', factions: ['Police', 'Cleanbois'], displayName: 1 },
+        { name: '[Deputy] Roy Armstrong', factions: ['Police'], displayName: 1 },
     ],
     MEKABEAR: [
         { name: '[Deputy] Amber Gold', factions: ['Police'] },
