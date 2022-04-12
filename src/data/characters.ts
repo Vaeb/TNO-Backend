@@ -1360,6 +1360,9 @@ export const npCharacters: NpCharacters = {
     iballzach: [
         { name: '[EMS] Zachary Kellogg', factions: ['Medical'] },
     ],
+    IbbyRed: [
+        { name: 'Jose "Fat Joe" Santini', factions: ['Vagos'] },
+    ],
     IcyMindRacer: [
         { name: '[Dispatch] Iris Nivira', factions: ['Police'], displayName: 1 },
     ],
