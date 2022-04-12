@@ -422,7 +422,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Dominic "Lil D" Chester', nicknames: ['Sabado de Sol'] },
     ],
     BigRichardRP: [
-        { name: "Richard O'Conner", factions: ['BCG'], nicknames: ['Richie'], displayName: 0 },
+        { name: "Richard O'Conner", factions: ['Gulag Gang'], nicknames: ['Richie'], displayName: 0 },
     ],
     BigSkenger: [
         { name: '[Officer] Zacood Skengerson', factions: ['Police'], displayName: 1, assumeServer: 'public' },
