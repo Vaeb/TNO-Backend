@@ -517,7 +517,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Gary Adams', factions: ['Lost MC'] },
     ],
     BrookeAB: [
-        { name: 'Abby Brooks', displayName: 0 },
+        { name: 'Abby Brooks', factions: ['Angels'], displayName: 0 },
     ],
     broxh_: [
         { name: '? ?', displayName: 1 },
