@@ -2396,6 +2396,7 @@ export const npCharacters: NpCharacters = {
     ],
     Nidas: [
         { name: 'Leslie Lingberg', factions: ['Limelight', 'Cleanbois'], leader: true, nicknames: ['Ling', 'Cerberus'], displayName: 1, assumeServer: 'whitelist' },
+        { name: '[Deputy] Ingevar Falk', factions: ['Police'], displayName: 2 },
         { name: 'Rat Boy', nicknames: ['Ratboy'], displayName: 3 },
         { name: 'Robin ?', nicknames: ['Boy Wonder'] },
         { name: 'Steve "Stiv" Adamescu', assumeServer: 'public' },
