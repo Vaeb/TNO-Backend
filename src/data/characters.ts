@@ -735,7 +735,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Frank Junior-Smith', factions: ['Vagos'], nicknames: ['Frank Jr Smith', 'Franky', 'Scottish'], displayName: 3 },
     ],
     CrayonPonyfish: [
-        { name: 'Wynona Fontaine', factions: ['DoC'], displayName: 2 },
+        { name: '[Officer] Wynona Fontaine', factions: ['Police'], displayName: 2 },
         { name: 'Sadie Thistle' },
         { name: 'Wilhelmina Copperpot', displayName: 2 },
     ],
