@@ -3552,6 +3552,9 @@ export const npCharacters: NpCharacters = {
     VioletCutie: [
         { name: 'Maisie Hart', factions: ['Britney Gang', 'Rooster', 'Tuner Shop'], displayName: 0 },
     ],
+    vitalsecond: [
+        { name: 'Zuck Cuc', factions: ['Gulag Gang'] },
+    ],
     Viviana: [
         { name: 'Griselda Ambrose', nicknames: ['Granny'] },
         { name: 'Lana Valentine', factions: ['Mandem', 'Rooster'] },
