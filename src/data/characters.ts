@@ -665,6 +665,9 @@ export const npCharacters: NpCharacters = {
     Cheever7: [
         { name: 'River Cheever', nicknames: ['River'], factions: ['ASRR'], assumeServer: 'whitelist' },
     ],
+    ChelbM: [
+        { name: 'Alan Kyles', factions: ['NBC'], displayName: 0 },
+    ],
     ChelbMyster: [
         { name: 'Alan Kyles', factions: ['NBC'], displayName: 0, facebook: true },
     ],
