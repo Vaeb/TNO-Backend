@@ -966,8 +966,8 @@ export const npCharacters: NpCharacters = {
         { name: '[Development] DW', factions: ['Development'], nicknames: ['tinkering'] },
     ],
     Dyoti: [
-        { name: '[Deputy] Wyatt Cole', factions: ['Police'], assumeServer: 'public' },
         { name: '[Deputy] Winston Walker', factions: ['Police'], assumeServer: 'whitelist' },
+        { name: '[Deputy] Wyatt Cole', factions: ['Police'], assumeServer: 'public' },
         { name: 'Dawson Whitehead', factions: ['HOA'] },
     ],
     Dyrus: [
