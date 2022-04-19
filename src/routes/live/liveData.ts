@@ -961,7 +961,8 @@ export const getNpLive = async (baseOptions = {}, override = false, endpoint = '
                     factionCount,
                     filterFactions,
                     streams: npStreams,
-                    streamsFb: npStreamsFb,
+                    // streamsFb: npStreamsFb,
+                    streamsFb: [], // Temporary disable fb until frontend fix
                     channelsFb: fbStreamers.map(data => data[0]),
                     baseHtml,
                     baseHtmlFb,
