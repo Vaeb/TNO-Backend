@@ -1086,7 +1086,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Tom Ryan', displayName: 0 },
     ],
     Fiendota: [
-        { name: 'Booba ?', factions: ['Burger Shot'] },
+        { name: 'Booba ?', factions: ['Police', 'Burger Shot'] },
         { name: 'Jonathan "Magnum" Humes', nicknames: [reg(/\bP\.?\s*I\b/)] },
         { name: 'Boobingle Dan', factions: ['Dans'] },
     ],
