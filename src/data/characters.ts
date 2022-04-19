@@ -977,7 +977,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Lulu ?', displayName: 1 },
     ],
     EagleAye: [
-        { name: 'Eve Summers', factions: ['Rooster'] },
+        { name: 'Eve Summers', factions: ['LARPers', 'Rooster'] },
     ],
     eaJParkOfficial: [
         { name: 'Park Parker', factions: ['Rooster'], nicknames: ['Santa'], displayName: 0, assumeChar: true },
@@ -2883,7 +2883,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Aziz Sultan', factions: ['Police'], nicknames: ['Za Nose'], displayName: 1 },
     ],
     shadiko: [
-        { name: 'Alex Domino', factions: ['Rooster'], displayName: 0 },
+        { name: 'Alex Domino', factions: ['LARPers', 'Rooster'], displayName: 0 },
     ],
     shadowedkayla: [
         { name: 'Kayla Rose', factions: ['Royal Mafia'], displayName: 1 },
