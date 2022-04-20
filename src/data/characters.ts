@@ -2108,7 +2108,7 @@ export const npCharacters: NpCharacters = {
         { name: '[EMS] Leonardo Sand', factions: ['Medical'], nicknames: ['Leo'], displayName: 3 },
     ],
     Marsziipan: [
-        { name: '[EMS] Misa Price', factions: ['Medical'] },
+        { name: '[Deputy] Misa Price', factions: ['Police'] },
     ],
     MartinCreek: [
         { name: 'Bertha Clark' },
