@@ -2407,7 +2407,7 @@ export const npCharacters: NpCharacters = {
     Nikez: [
         { name: '[Development] Nikez', factions: ['Development'] },
         { name: '[Deputy] Cody Sharp', factions: ['Police'], nicknames: [reg(/\bpolice\s*m.n/)] },
-        { name: 'Nicholas Simone', factions: ['Hydra Gang'], nicknames: ['Nick', 'Nico', 'Simon'], displayName: 0 },
+        { name: 'Nicholas Simone', factions: ['Seaside'], nicknames: ['Nick', 'Nico', 'Simon'], displayName: 0 },
     ],
     NikkisARiot: [
         { name: '[Deputy] Jenny Hall', factions: ['Police'], nicknames: [reg(/\bje\S{1,3}y/)], displayName: 1 },
