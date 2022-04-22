@@ -2861,6 +2861,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Arush Patel "Speedy" Santana', factions: ['Vagos', 'Cleanbois'], leader: true, nicknames: ['El Jefe'] },
         { name: 'Sayeed White', factions: ['DoC'], nicknames: ['Mr. White'], displayName: 3 },
     ],
+    Sciencegun: [
+        { name: 'John "Turbo" Miller' },
+    ],
     scotism: [
         { name: 'Mike Baldwin', factions: ['Tuner Shop'], displayName: 0 },
     ],
