@@ -74,6 +74,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Sanjay Patel', factions: ['Burger Shot'] },
     ],
     AbbottJake: [
+        { name: 'Nip Smith', displayName: 0 },
         { name: 'Joey Grass', factions: ['Prison'], displayName: 0 },
         { name: 'Tommy Lee', displayName: 0 },
     ],
