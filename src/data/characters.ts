@@ -3526,7 +3526,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Esteban Julio-Cruz-Perez-Rodriguez', factions: ['Marabunta'] },
     ],
     Vedstar: [
-        { name: 'Ved Jiggyjoglue', factions: ['Roadmen', 'Mandem'] },
+        { name: 'Ved Jiggyjoglue', factions: ['Mandem', 'Roadmen'] },
     ],
     Venomfly: [
         { name: 'Babe Calloway', factions: ['Rooster'], displayName: 0 },
