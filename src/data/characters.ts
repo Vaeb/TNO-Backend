@@ -260,7 +260,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Milton Pointdexter' },
     ],
     arnie_v: [
-        { name: 'Vincent Carl', factions: ['BCG'], nicknames: ['Arnie'], displayName: 3 },
+        { name: 'Vincent Carl', factions: ['Hydra Gang', 'BCG'], nicknames: ['Arnie'], displayName: 3 },
     ],
     ArsenaI: [
         { name: 'James Arsenal', displayName: 0 },
