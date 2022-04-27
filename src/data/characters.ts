@@ -3587,6 +3587,9 @@ export const npCharacters: NpCharacters = {
     w00ter: [
         { name: '[Deputy] Peter Rogers', factions: ['Police'] },
     ],
+    walnutcast: [
+        { name: '[Deputy] Brick James', factions: ['Police'], displayName: 1 },
+    ],
     WaterGotHim: [
         { name: 'Alessio "AJ" Jilani', factions: ['Clean Cartel'] },
     ],
