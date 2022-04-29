@@ -3485,7 +3485,7 @@ export const npCharacters: NpCharacters = {
     TwistedManifest: [
         { name: 'Jack Valentino', factions: ['Lunatix'] },
     ],
-    TygerRP: [
+    Tyger: [
         { name: "Chase O'Dell", factions: ['Street Team', 'Chang Gang'], nicknames: ['Lil Bleach', 'Bleach'], displayName: 3 },
     ],
     UberHaxorNova: [
