@@ -2376,7 +2376,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Deshawn King', factions: ['SSB'], displayName: 0 },
     ],
     neskRP: [
-        { name: 'Oliver Crawford', factions: ['DoC'], displayName: 0 },
+        { name: 'Oliver Crawford', displayName: 0 },
     ],
     netsirk: [
         { name: '[EMS] Nettie Machete', factions: ['Medical'] },
