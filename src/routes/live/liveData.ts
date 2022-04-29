@@ -67,7 +67,7 @@ const ASTATES = {
 } as const;
 
 const game = '32982' as const;
-const languages: string[] = ['en', 'hi', 'no'];
+const languages: string[] = ['en', 'hi', 'no', 'pt']; // https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
 const streamType = HelixStreamType.Live;
 const bigLimit = 100 as const;
 // const maxPages = 5 as const;
