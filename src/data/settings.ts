@@ -20,6 +20,15 @@ const addPublicCounties = (reg: RegExp) => new RegExp(
     reg.flags
 );
 
+const addOtherCountries = (reg: RegExp) => new RegExp(
+    replaceAll(
+        reg.source,
+        'india',
+        '(?:india|brazil|brasil|am[ée]rica\\s+do\\s+sul|south\\s*america)'
+    ),
+    reg.flags
+);
+
 export const regNp = /(?<!(?:not|like)\s)(?:no[\s\-_.]*pixel|\bn[\s\-_.]*p\b)(?![\s\-]*(?:inspired|based|like|ban|\.ins\b))/i;
 export const regNpPublic = addPublicCounties(mergeRegex([
     /(?:no[\s\-_.]*pixel|\bn[\s\-_.]*p(?=\b|\d))(?:[\s\-_.]*(?:rp|\d+\.?\d*))?[\W_]*pub\w*(?!\W+(?:later|after))/i,
@@ -29,16 +38,16 @@ export const regNpPublic = addPublicCounties(mergeRegex([
     /|[^\w\s]\s*pub\w*\s*[^\w\s]/i,
     /|\b(?:pub|public)$/i,
 ]));
-export const regNpInternational = mergeRegex([
+export const regNpInternational = addOtherCountries(mergeRegex([
     /(?:no[\s\-_.]*pixel|\bn[\s\-_.]*p(?=\b|\d))(?:[\s\-_.]*(?:rp|\d+\.?\d*))?[\W_]*india\w*\b(?!\W+(?:later|after))/i,
     /|(\bindia\w*[\W_]*(?:no[\s\-_.]*pixel|\bn[\s\-_.]*p(?=\b|\d)))/i,
     /|(?<=(?:\bon|playing|gta[\s\-_.]*[5v]?|rp|roleplay)\W+)(?:india)/i,
     /|\bindia\w*[\W_]*(?:india|server|county|city|country|universe|timeline|queue|for\b|roleplay|rp\b|stuff\b|shenanigans)/i,
     /|[^\w\s]\s*india\w*\s*[^\w\s]/i,
     /|\bindia\w*$/i,
-]);
+]));
 
-console.log(regNpPublic);
+console.log(regNpInternational);
 
 // eslint-disable-next-line max-len
 export const regNpWhitelist = /(?<!(?:waiting for|chance at)\s)(?:\bwhitelist|\bwl+\b|(?:no[\s\-_.]*pixel|\bn[\s\-_.]*p(?=\b|\d))(?:[\s\-_.]*(?:rp|\d+\.?\d*))?[\W_]*(?:main|white)\b|\b(?:main|white)[\W_]*(?:nopixel|np|server)|\bprivate\b(?![\s\-]+(?:detective|investigat\w+)))\b(?!\W+(?:later|after|gone))/i;
