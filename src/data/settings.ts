@@ -24,7 +24,7 @@ const addOtherCountries = (reg: RegExp) => new RegExp(
     replaceAll(
         reg.source,
         'india',
-        '(?:india|brazil|brasil|am[ée]rica\\s+do\\s+sul|south\\s*america)'
+        '(?:india\\w*|brazil\\w*|brasil\\w*|am[ée]rica\\s+do\\s+sul|sul\\s*america\\w*|south\\s*america\\w*|s\\.?\\s*a\\.?\\s*)'
     ),
     reg.flags
 );
@@ -39,12 +39,12 @@ export const regNpPublic = addPublicCounties(mergeRegex([
     /|\b(?:pub|public)$/i,
 ]));
 export const regNpInternational = addOtherCountries(mergeRegex([
-    /(?:no[\s\-_.]*pixel|\bn[\s\-_.]*p(?=\b|\d))(?:[\s\-_.]*(?:rp|\d+\.?\d*))?[\W_]*india\w*\b(?!\W+(?:later|after))/i,
-    /|(\bindia\w*[\W_]*(?:no[\s\-_.]*pixel|\bn[\s\-_.]*p(?=\b|\d)))/i,
+    /(?:no[\s\-_.]*pixel|\bn[\s\-_.]*p(?=\b|\d))(?:[\s\-_.]*(?:rp|\d+\.?\d*))?[\W_]*india\b(?!\W+(?:later|after))/i,
+    /|(\bindia[\W_]*(?:no[\s\-_.]*pixel|\bn[\s\-_.]*p(?=\b|\d)))/i,
     /|(?<=(?:\bon|playing|gta[\s\-_.]*[5v]?|rp|roleplay)\W+)(?:india)/i,
-    /|\bindia\w*[\W_]*(?:india|server|county|city|country|universe|timeline|queue|for\b|roleplay|rp\b|stuff\b|shenanigans)/i,
-    /|[^\w\s]\s*india\w*\s*[^\w\s]/i,
-    /|\bindia\w*$/i,
+    /|\bindia[\W_]*(?:india|server|county|city|country|universe|timeline|queue|for\b|roleplay|rp\b|stuff\b|shenanigans)/i,
+    /|[^\w\s]\s*india\s*[^\w\s]/i,
+    /|\bindia$/i,
 ]));
 
 console.log(regNpInternational);
