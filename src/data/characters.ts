@@ -2408,7 +2408,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Meelo Graves', factions: ['Rooster', 'Tuner Shop'], nicknames: ['Nex'], displayName: 3 },
     ],
     Niccorazi: [
-        { name: 'Dougie Fresh', nicknames: ['Bobcat'] },
+        { name: 'Douglas James', factions: ['Gulag Gang'], nicknames: ['Dougie', 'Fresh', 'Dougie Fresh', 'Bobcat'], displayName: 5 },
         { name: 'Eyam Job', displayName: 0 },
     ],
     Nidas: [
@@ -2930,7 +2930,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Mason Kennedy', factions: ['Police'], nicknames: ['545'], displayName: 2 },
     ],
     Shiki: [
-        { name: 'Vivian Vale', factions: ['CBPD', 'Clean Cartel'], displayName: 0 },
+        { name: 'Vivian Vale', factions: ['Gulag Gang', 'CBPD', 'Clean Cartel'], displayName: 0 },
     ],
     Shindur: [
         { name: '[Deputy] Joey Keys', factions: ['Police'] },
