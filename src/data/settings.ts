@@ -54,6 +54,7 @@ export const regNpWhitelist = /(?<!(?:waiting for|chance at)\s)(?:\bwhitelist|\b
 export const regOther = /the\s*family|\btf\s?rp|family\s*rp|twitchrp|\bt\W*rp|\bnon[\s\-]*stop|\bns\s?rp/i;
 export const regOthers = [
     { name: 'TheFamilyRP', reg: /\btf\s?rp|family\s*(?:rp\b|roleplay)/i, include: 1 },
+    { name: 'PurpleRP', reg: /\bprp\b|purple\s*(?:rp\b|role\s*play)/i, include: 1 },
     { name: 'TwitchRP', reg: /twitch[\s\-]*rp|\bt\W*rp/i, include: 1 },
     { name: 'NonStopRP', reg: /\bnon[\s\-]*stop\s*(?:rp\b|roleplay)|\bns\s?rp/i, include: 1 },
     { name: 'Project Homecoming', reg: /project[\s\-_.]*(?:homecoming\d*|\bhc\d*\b)|\bph\d*\b/i, include: 1 },
