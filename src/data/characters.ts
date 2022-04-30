@@ -2000,7 +2000,7 @@ export const npCharacters: NpCharacters = {
     ],
     Lt_Custard: [
         { name: 'Collin McKinley', factions: ['BBMC'], displayName: 0 },
-        { name: 'Jerry Sweets', factions: ['DoC'], displayName: 0 },
+        { name: '[Officer] Jerry Sweets', factions: ['Police'], displayName: 2 },
         { name: 'Cougar Dolly', displayName: 0 },
     ],
     Lt_Raven: [
