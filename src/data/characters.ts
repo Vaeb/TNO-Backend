@@ -542,6 +542,7 @@ export const npCharacters: NpCharacters = {
     ],
     Burn: [
         { name: 'Johnny Silverhand', displayName: 0 },
+        { name: '[Deputy] Brocky Potage', factions: ['Police'], displayName: 2 },
         { name: 'Asmon Bronze', displayName: 0, nicknames: ['AsmonBronze', 'Transmog'] },
         { name: 'Norman "Norm" Yoder' },
         { name: 'Moe Nopoli', displayName: 0 },
@@ -560,7 +561,6 @@ export const npCharacters: NpCharacters = {
         { name: 'Plankton ?' },
         { name: 'Devan Almighty', nicknames: ['Bruce', 'Evan'], displayName: 0 },
         { name: 'Bruce "The Dank Knight" Strayne' },
-        { name: 'Brocky Potage', displayName: 1 },
         { name: 'Gordo Ramsay', nicknames: ['Gorden', 'Gordon'], displayName: 0 },
     ],
     ButterRoyaleTV: [
