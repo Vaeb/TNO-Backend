@@ -32,6 +32,7 @@ const reg = (r: RegExp): string => `/${r.source}/`;
 export const npCharacters: NpCharacters = {
     '0Reed': [
         { name: 'Reed Dankleaf', factions: ['Lost MC'] },
+        { name: '[Deputy] Tommy Tribble', factions: ['Police'], displayName: 1 },
     ],
     '13Stewartc': [
         { name: '[Development] Stewart', factions: ['Development'], nicknames: ['Handling', 'Fixes', 'Fixing', 'Tuning', reg(/\bnew\s+\w+\s*stuff/)] },
@@ -132,8 +133,8 @@ export const npCharacters: NpCharacters = {
         { name: 'Dick Dudley', displayName: 2 },
     ],
     AfricanSnowball: [
-        { name: 'Buck Stanton', displayName: 2 },
         { name: '[Officer] Dwayne Carter IV', factions: ['Police'], nicknames: [reg(/good [a*][s*]+ day/)], displayName: 2 },
+        { name: 'Buck Stanton', displayName: 2 },
         { name: 'Leland "LJ" Jones', factions: ['GSF', 'Pegasus'] },
         { name: 'Taylor Africansnowball', factions: ['Self Insert'], displayName: 0 },
     ],
@@ -273,7 +274,7 @@ export const npCharacters: NpCharacters = {
     ],
     Ashi: [
         { name: 'Fiona Stewart', nicknames: ['Fi-ho-na', 'Fifi'], factions: ['LARPers', 'Cleanbois', 'Rooster'] },
-        { name: 'Annie May', displayName: 0 },
+        { name: '[Officer] Annie May', factions: ['Police'], displayName: 2 },
     ],
     ashlynn: [
         { name: 'Cassie Cupcakes', factions: ['Angels'] },
@@ -348,7 +349,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Fernando Diego Pablo Juan Esteban Luis Cortez Bonanza II', factions: ['Police'], displayName: 1, assumeServer: 'public' },
     ],
     BamiePlays: [
-        { name: 'Ryan Kolinsky', factions: ['DoC'], displayName: 0 },
+        { name: '[Officer] Ryan Kolinsky', factions: ['Police'], nicknames: ['591'], displayName: 2 },
     ],
     bananabrea: [
         { name: 'Claire Seducer', factions: ['Angels', 'Tuner Shop'], assumeServer: 'whitelist' },
@@ -1269,10 +1270,11 @@ export const npCharacters: NpCharacters = {
         { name: '[Chief of Police] M Hans', factions: ['Police'], assumeServer: 'international' },
     ],
     Harbinger2183: [
-        { name: '[Warden] Ethan Maxwell', factions: ['DoC'], displayName: 2 },
+        { name: '[Deputy] Ethan Maxwell', factions: ['Police'], nicknames: ['505'], displayName: 2 },
     ],
     HARMSwahy: [
         { name: 'Blaine Burke', factions: ['Angels'] },
+        { name: '[Officer] Wilson Burke', factions: ['Police'] },
     ],
     Harry: [
         { name: 'Harry Brown', factions: ['Cleanbois', 'Limelight', 'Pegasus', 'Rooster'] },
@@ -1352,7 +1354,7 @@ export const npCharacters: NpCharacters = {
     ],
     HydraPlz: [
         { name: 'Gandalf "Stankyleg" Butters', factions: ['ASRR'] },
-        { name: 'John Hydra', displayName: 0 },
+        { name: '[Deputy] John Hydra', factions: ['Police'], displayName: 2 },
     ],
     iamnxera: [
         { name: '[Officer] Tommy Tinker', factions: ['Police'], displayName: 1, assumeServer: 'public' },
@@ -1609,7 +1611,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Wyatt Jones', factions: ['BBMC'], displayName: 0 },
     ],
     Jubby: [
-        { name: 'Ricardo Perez', factions: ['Burger Shot'], displayName: 1 },
+        { name: '[Deputy] Ricardo Perez', factions: ['Police', 'Burger Shot'], displayName: 1 },
     ],
     Judd: [
         { name: '[Judge] Coyote Russell', factions: ['DoJ'], displayName: 1, assumeServer: 'whitelist' },
@@ -1740,6 +1742,7 @@ export const npCharacters: NpCharacters = {
     ],
     KillrBeauty: [
         { name: 'Catherine Scratch', factions: ['Lost MC'], nicknames: ['Cat'], displayName: 3 },
+        { name: '[Deputy] Ada Grille', factions: ['Police'], nicknames: ['Gril', 'Grill'] },
     ],
     KiloAU: [
         { name: '[Deputy] Robert Anderson', factions: ['Police'] },
@@ -1983,7 +1986,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Kendra Davis', factions: ['Vagos'] },
     ],
     Lovinurstyle: [
-        { name: 'Leah Strong', assumeServer: 'whitelist' },
+        { name: '[Officer] Leah Strong', factions: ['Police'], nicknames: ['531'], assumeServer: 'whitelist' },
         { name: 'Rose Edwards' },
         { name: 'Darlene ?', factions: ['DoC'], displayName: 1 },
         { name: '[Officer] Leah Strong', factions: ['Police'], displayName: 1, assumeServer: 'public' },
@@ -2137,7 +2140,7 @@ export const npCharacters: NpCharacters = {
     meeka_a: [
         { name: '[EMS] William "Middy" Haze', factions: ['Medical'] },
     ],
-    Megatruong_: [
+    MegaTruong: [
         { name: '[Deputy] Roy Armstrong', factions: ['Police'], displayName: 1 },
     ],
     MEKABEAR: [
@@ -2234,6 +2237,9 @@ export const npCharacters: NpCharacters = {
     ],
     MIQQA: [
         { name: '[EMS] Janus Lee', factions: ['Medical'] },
+    ],
+    MissBombastic: [
+        { name: '[Deputy] Ruby York', factions: ['Police'] },
     ],
     MistorThio: [
         { name: 'Kirk Jerkems', factions: ['Stable', 'Rooster'], displayName: 0 },
@@ -2860,7 +2866,7 @@ export const npCharacters: NpCharacters = {
     ],
     SayeedBlack: [
         { name: 'Arush Patel "Speedy" Santana', factions: ['Vagos', 'Cleanbois'], leader: true, nicknames: ['El Jefe'] },
-        { name: 'Sayeed White', factions: ['DoC'], nicknames: ['Mr. White'], displayName: 3 },
+        { name: '[Deputy] Sayeed White', factions: ['Police'], nicknames: ['Mr. White'], displayName: 2 },
     ],
     Sciencegun: [
         { name: 'John "Turbo" Miller' },
@@ -3337,7 +3343,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Ebeneezer Mackaral Botanacus IV', factions: ['Burger Shot'], nicknames: ['Glue Guy'], displayName: 5 },
     ],
     TheAmelina: [
-        { name: '[Lawyer] Alexandra Carlson', factions: ['DoJ'], displayName: 0 },
+        { name: '[Deputy] Alexandra Carlson', factions: ['Police'], nicknames: ['588'], displayName: 2 },
         { name: '[Dr.] Meredith Jenkins', factions: ['Medical'], displayName: 1 },
     ],
     TheBigMeech: [
@@ -3726,6 +3732,7 @@ export const npCharacters: NpCharacters = {
     ],
     yuukidav: [
         { name: 'Oakley Stallion', factions: ['Angels'], displayName: 0 },
+        { name: '[Officer] Lukas Lavender', factions: ['Police'], displayName: 2 },
     ],
     Zaitohro: [
         { name: '[Deputy] Cameran Shaw', factions: ['Police'], nicknames: ['Cam'], displayName: 2 },
