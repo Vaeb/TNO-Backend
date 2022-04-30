@@ -640,6 +640,9 @@ export const npCharacters: NpCharacters = {
     charlieblossom: [
         { name: 'Georgina "Windsong" Williams' },
     ],
+    charlieteevee: [
+        { name: '[Officer] Charlie Cox', factions: ['Police'], assumeServer: 'public' },
+    ],
     Chatterbox: [
         { name: 'Jagger "Chatterbox" Gerardy' },
     ],
@@ -1551,6 +1554,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Wayne Biggaz', factions: ['Chang Gang'], nicknames: [reg(/\bwe+y+n/), reg(/\bwayne/)] },
     ],
     JJFried: [
+        { name: '[Deputy] Jace Barter', factions: ['Police'] },
         { name: 'Ace Carter', factions: ['BCG'] },
     ],
     JJLakee: [
@@ -2176,6 +2180,7 @@ export const npCharacters: NpCharacters = {
         { name: 'NoPixel ?' },
     ],
     Mick: [
+        { name: '[Deputy] Sheldon Jones', factions: ['Police'], nicknames: ['572'], displayName: 1 },
         { name: 'Gladys Berry' },
     ],
     Middleditch: [
@@ -2513,6 +2518,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Cassie Hoyt', displayName: 0 },
     ],
     OneSmolBumble: [
+        { name: '[Deputy] Brielle Snowmin', factions: ['Police'], nicknames: ['594'], displayName: 1 },
         { name: '[EMS] Emery Ore', factions: ['Medical'], nicknames: ['E-55'], displayName: 1 },
         { name: 'Clover Bloom', displayName: 0 },
         { name: '[EMS] Rory Borealis', factions: ['Medical'], displayName: 1 },
@@ -2733,6 +2739,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Chico Guzman', factions: ['Seaside'] },
         { name: 'AJ', factions: ['SSB'] },
     ],
+    RemdogG: [
+        { name: '[Officer] Alex Suarez', factions: ['Police'], nicknames: ['549'] },
+    ],
     RemiTheSiren: [
         { name: '[Dr.] Lily Harte', factions: ['Medical'], displayName: 2 },
         { name: 'Wednesday Mushkin', factions: ['HOA'] },
@@ -2759,7 +2768,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Brook Lexi', factions: ['Lost MC'] },
     ],
     RickMongoLIVE: [
-        { name: '[D.A.] Rick Mongo', factions: ['DoJ'], assume: 'assumeNpNoOther' },
+        { name: '[D.A.] Rick Mongo', factions: ['DoJ'], assume: 'assumeOther' },
     ],
     RileyRP: [
         { name: 'Bubbles Smith', factions: ['Royal Mafia'] },
