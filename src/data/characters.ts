@@ -1731,8 +1731,9 @@ export const npCharacters: NpCharacters = {
     KezieEve: [
         { name: 'Ghost Storm', factions: ['GSF'] },
     ],
-    KGU__: [
+    KguGaming: [
         { name: 'Pablo Loco', factions: ['Vagos'], displayName: 0 },
+        { name: 'Mr. Ratchet', factions: ['Gulag Gang'], displayName: 0 },
         { name: 'Ruckus ?', factions: ['SSB'], nicknames: ['Uncle Ruckus'], displayName: 3 },
     ],
     KhaosAdam: [
