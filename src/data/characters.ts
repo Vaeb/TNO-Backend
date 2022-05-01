@@ -1906,7 +1906,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Isabella "Izzy" Carrington', factions: ['Harmony'] },
     ],
     LadyLynxx: [
-        { name: '[Officer] Saphira Sinclair', factions: ['Police'], nicknames: ['597'] },
+        { name: '[Officer] Saphira Sinclair', factions: ['Police'], nicknames: ['Saph', '597'] },
         { name: 'Jaed Smith' },
     ],
     LAGTVMaximusBlack: [
