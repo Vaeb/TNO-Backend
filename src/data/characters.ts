@@ -1091,7 +1091,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Tom Ryan', displayName: 0 },
     ],
     Fiendota: [
-        { name: 'Booba ?', factions: ['Police', 'Burger Shot'] },
+        { name: '[Officer] Booga Ooga', factions: ['Police', 'Burger Shot'], nicknames: ['651'], displayName: 1 },
         { name: 'Jonathan "Magnum" Humes', nicknames: [reg(/\bP\.?\s*I\b/)] },
         { name: 'Boobingle Dan', factions: ['Dans'] },
     ],
@@ -1508,6 +1508,7 @@ export const npCharacters: NpCharacters = {
     ],
     JayAitch: [
         { name: 'Alex "Lil Cap" Söderberg', factions: ['BBMC'], nicknames: ['Soderberg', 'Cap'], displayName: 0, assumeServer: 'whitelist' },
+        { name: '[Deputy] Roger S', factions: ['Police'], nicknames: ['546'], displayName: 1 },
         { name: 'Lil Strap', displayName: 0, assumeServer: 'public' },
     ],
     Jayce: [
@@ -2017,6 +2018,9 @@ export const npCharacters: NpCharacters = {
     ],
     Lucky_RP: [
         { name: 'Marlo Stanfield', nicknames: [reg(/ma?rlo/)] },
+    ],
+    LuckyPaddy: [
+        { name: '[Deputy] Paddy Luke', factions: ['Police'], displayName: 1 },
     ],
     LuckyxMoon: [
         { name: '[Deputy] Blair Sutton', factions: ['Police'] },
@@ -3131,7 +3135,8 @@ export const npCharacters: NpCharacters = {
         { name: 'Ray Singha', displayName: 0 },
     ],
     StalwartNightmare: [
-        { name: '[Deputy] Alex Night', factions: ['Police'], nicknames: ['Speedster'], displayName: 2, assumeServer: 'public' },
+        { name: '[Deputy] Alex Night', factions: ['Police'], nicknames: ['Speedster'], assumeServer: 'public' },
+        { name: '[Dispatch] Alex Night', factions: ['Police'], nicknames: ['Delta-39T', 'D-39T'], displayName: 2, assumeServer: 'whitelist' },
     ],
     StankXO: [
         { name: 'Raccoon ?', factions: ['BCG'], displayName: 1 },
