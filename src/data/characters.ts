@@ -1663,6 +1663,9 @@ export const npCharacters: NpCharacters = {
     JustPenchi: [
         { name: 'Casper Clock', factions: ['Prison'], nicknames: ['Plague Doctor'], displayName: 3 },
     ],
+    K3NJ1N: [
+        { name: '[Deputy] Kenji Hatake', factions: ['Police'], displayName: 2, assumeServer: 'public' },
+    ],
     Kaceytron: [
         { name: 'Bobbi Jo', displayName: 0 },
     ],
