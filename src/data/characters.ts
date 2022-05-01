@@ -3795,6 +3795,9 @@ export const npCharacters: NpCharacters = {
     Zotbot: [
         { name: '[Physiotherapist] Leon Marks', factions: ['Medical'] },
     ],
+    ZPapz: [
+        { name: '[Officer] Joseph Oxlong', factions: ['Police'] },
+    ],
     Zumapwn: [
         { name: 'James Laughton', nicknames: ['Fall Guy'], factions: ['Gulag Gang'], displayName: 3, assumeServer: 'public' },
     ],
