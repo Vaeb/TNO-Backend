@@ -3464,6 +3464,9 @@ export const npCharacters: NpCharacters = {
     Tommy5oh: [
         { name: 'Pablo Santiago', factions: ['NBC'], displayName: 0 },
     ],
+    Tomovids: [
+        { name: 'Toe Moh', nicknames: ['Big Toe'], displayName: 3 },
+    ],
     Townie: [
         { name: 'Teddy Booker', factions: ['BBMC', 'Mechanic'], displayName: 1 },
     ],
