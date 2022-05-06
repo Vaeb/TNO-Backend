@@ -2051,7 +2051,7 @@ export const npCharacters: NpCharacters = {
     ],
     LunaOni: [
         { name: '[Officer] Claire Everly', displayName: 1, factions: ['Police'] },
-        { name: 'Mayumi Himura', factions: ['Tuner Shop'] },
+        { name: 'Mayumi Himura', factions: ['HOA', 'Tuner Shop'], nicknames: ['May'] },
         { name: 'Paige Luna', factions: ['Self Insert'], displayName: 0 },
     ],
     Lyndi: [
