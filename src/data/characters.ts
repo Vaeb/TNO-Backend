@@ -897,7 +897,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Al Rashio', factions: ['Police'], displayName: 2 },
     ],
     DivaJilly: [
-        { name: '[Lawyer] Siobhan Fitzpatrick', factions: ['DoJ'], displayName: 1 },
+        { name: '[Judge] Siobhan Fitzpatrick', factions: ['DoJ'], displayName: 1 },
     ],
     DKane: [
         { name: 'Cletus McCoy' },
@@ -2366,7 +2366,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Carlos "Carlitos" Loco', factions: ['Vagos'] },
     ],
     nathankb_: [
-        { name: '[Judge] Alan Crane', factions: ['DoJ'], displayName: 2 },
+        { name: '[Chief Judge] Alan Crane', factions: ['DoJ'], displayName: 2 },
         { name: '[Deputy] Wesley Arnold', factions: ['Police'], displayName: 2 },
         { name: 'Jov Diavol', displayName: 0 },
     ],
@@ -2485,7 +2485,7 @@ export const npCharacters: NpCharacters = {
     OccamsSabre: [
         { name: '[Officer] Jeffrey Bundy', factions: ['Police'], nicknames: ['451'] },
         { name: '[Lawyer] Benjamin Crane', factions: ['DoJ'], displayName: 0 },
-        { name: 'Ray Montag', factions: ['DoJ'] },
+        { name: '[Judge] Ray Montag', factions: ['DoJ'] },
         { name: 'Busta Block', factions: ['ASRR'], displayName: 0 },
     ],
     Octopimp: [
