@@ -1168,7 +1168,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Development] Gabz', factions: ['Development'], nicknames: ['3D'] },
     ],
     GalacticDPN: [
-        { name: 'Roman "Professor Galactic" Shacks', nicknames: ['The Doctor', 'Professor'], displayName: 0 },
+        { name: 'Roman Shacks', nicknames: ['Professor Galactic', 'The Doctor', 'Professor'], displayName: 3 },
     ],
     GameDemented: [
         { name: '[Deputy] Peter Johnson', factions: ['Police'] },
