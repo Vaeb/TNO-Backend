@@ -2350,7 +2350,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Jim Littleman', displayName: 0 },
     ],
     Myth: [
-        { name: 'Kyle Clements', nicknames: ['Clem'], displayName: 0 },
+        { name: 'Kyle Clements', nicknames: ['Clem', 'Clemens'], displayName: 0 },
         { name: 'Johny Burroh', nicknames: ['Burrow', 'Burrohs'], displayName: 0 },
     ],
     Mythematic: [
