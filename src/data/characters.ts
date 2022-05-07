@@ -2681,6 +2681,7 @@ export const npCharacters: NpCharacters = {
     ],
     qMARIOx: [
         { name: 'Fernando "Mario" Reyes', factions: ['Hydra Gang', 'Chang Gang', 'Chaos'], nicknames: ['"Mario" from the Barrio'] },
+        { name: '[Officer] Rob Uncle', factions: ['Police'], nicknames: ['Robert'], displayName: 2 },
     ],
     Quru: [
         { name: '[Officer] Vladimir Reznik', factions: ['Police'] },
