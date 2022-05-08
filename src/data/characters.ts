@@ -670,6 +670,9 @@ export const npCharacters: NpCharacters = {
     Cheever7: [
         { name: 'River Cheever', nicknames: ['River'], factions: ['ASRR'], assumeServer: 'whitelist' },
     ],
+    cheezrp: [
+        { name: 'Terry Linkston', factions: ['Seaside'] },
+    ],
     ChelbM: [
         { name: 'Alan Kyles', factions: ['NBC'], displayName: 0 },
     ],
@@ -3444,7 +3447,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Trooper] T.J. Mack', factions: ['Police'], assumeServer: 'public' },
     ],
     Timmy2: [
-        { name: 'Orlando Jones', factions: ['SSB'], nicknames: ['OJ'], displayName: 3 },
+        { name: 'Orlando Jones', factions: ['Seaside'], nicknames: ['OJ'], displayName: 3 },
         { name: 'Chino G' },
         { name: 'Cardell "CJ" Jones', factions: ['SSB'] },
     ],
