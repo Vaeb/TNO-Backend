@@ -1384,6 +1384,9 @@ export const npCharacters: NpCharacters = {
     iddqd: [
         { name: 'Jesse Reed', factions: ['BBMC'], nicknames: ['Cree'] },
     ],
+    idksean: [
+        { name: '[Dept. Mayor] Sean Deane', factions: ['DoJ'], displayName: 0 },
+    ],
     IG_Raptor: [
         { name: '[Ranger] Matt Cordell', factions: ['Police'], assumeServer: 'international' },
     ],
@@ -3664,6 +3667,10 @@ export const npCharacters: NpCharacters = {
     ],
     WithExtraSauce: [
         { name: '[Deputy] Budweiser Malarky', factions: ['Police'], nicknames: ['Bud'], displayName: 2 },
+        { name: '[Dept. Mayor] Jeffy Coldiron', factions: ['DoJ'], displayName: 2 },
+    ],
+    withoutSunshine: [
+        { name: '[Dept. Mayor] Lola Sunshine', factions: ['DoJ'], displayName: 1 },
     ],
     Wizop: [
         { name: 'Dreyvon Cartier', factions: ['SSB'], nicknames: ['Drip'], displayName: 3 },
