@@ -784,6 +784,9 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Lorenzo Lezar', factions: ['Police'], displayName: 1 },
         { name: 'Freya Manning' },
     ],
+    CydRose: [
+        { name: 'Cydney Lune', factions: ['RUST'], nicknames: ['Cyd'], displayName: 1 },
+    ],
     cyr: [
         { name: 'Joe Caine', displayName: 0 },
         { name: "Khan Di'Sendo", displayName: 0 },
@@ -1729,6 +1732,9 @@ export const npCharacters: NpCharacters = {
         { name: '[EMS] Valkyrie Sunshot', factions: ['Medical'] },
         { name: 'Katt Vincent' },
     ],
+    kaylynstagram: [
+        { name: 'Eleanor West', factions: ['RUST'], displayName: 1 },
+    ],
     Keeno: [
         { name: 'Kyle Brovloski', displayName: 0, assume: 'assumeOther' },
     ],
@@ -2389,6 +2395,9 @@ export const npCharacters: NpCharacters = {
     Navajo: [
         { name: 'Clarence Carter' },
     ],
+    NebelNiek: [
+        { name: 'Konrad Kraut Dogenschmirz', factions: ['RUST'] },
+    ],
     neeko: [
         { name: 'Cherry ?' },
     ],
@@ -2597,6 +2606,9 @@ export const npCharacters: NpCharacters = {
     Pezz: [
         { name: 'Pez Speedwagon', factions: ['BBMC'], displayName: 1 },
         { name: 'Pezzy Pee' },
+    ],
+    phantomzz_ow: [
+        { name: 'Connell MacGregor', factions: ['RUST'], displayName: 1 },
     ],
     Philderbeast: [
         { name: '[Dispatch] Owen Fitz-Gibbon', factions: ['Police'], displayName: 2 },
