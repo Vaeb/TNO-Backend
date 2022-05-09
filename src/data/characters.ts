@@ -105,7 +105,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Jolene Mushkin', nicknames: ['Little Red'] },
     ],
     AcezProduction: [
-        { name: 'Achez Perez', factions: ['RUST'], nicknames: ['Ace'], displayName: 1 },
+        { name: 'Achez Perez', factions: ['RUST'], nicknames: ['Ace'], displayName: 2 },
     ],
     adeptthebest: [
         { name: 'Mari Posa', factions: ['Chang Gang', 'Hydra Gang', 'Chaos'], nicknames: ['Wari', 'Lari'], displayName: 1, assumeServer: 'whitelist' },
