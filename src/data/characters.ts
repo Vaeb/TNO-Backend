@@ -3469,7 +3469,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Paulie' },
     ],
     Tobii: [
-        { name: '[Development] Tobii', factions: ['Development'] },
+        { name: '[Development] Tobii', factions: ['Development'], nicknames: [reg(/\bdev\s*(?:stuff|things|fixing|work)/)] },
         { name: 'Michael Simone', factions: ['Seaside'], nicknames: ['Architect', 'RP'], displayName: 0 },
     ],
     Tommy5oh: [
