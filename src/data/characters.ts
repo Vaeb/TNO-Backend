@@ -2807,6 +2807,9 @@ export const npCharacters: NpCharacters = {
     ripoozi: [
         { name: 'Larry Knox', factions: ['Gulag Gang'], displayName: 0 },
     ],
+    Riseblap: [
+        { name: 'Saleem Shakib', factions: ['RUST'] },
+    ],
     RiZRP: [
         { name: 'Nikita Reznikov', factions: ['Pegasus'] },
     ],
