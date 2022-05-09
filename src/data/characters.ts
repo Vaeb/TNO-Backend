@@ -3051,7 +3051,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Raymond "Xray" Delprince', factions: ['SSB'], displayName: 0 },
     ],
     Skiliyo: [
-        { name: 'Derek Thomson', factions: ['RUST', 'CBPD', 'Rooster'], displayName: 0 },
+        { name: 'Derek Thomson', factions: ['RUST', 'CBPD', 'Rooster'], displayName: 1 },
     ],
     SkiMask0n: [
         { name: 'Von Westbrook', factions: ['SSB'], nicknames: ['Vonn'], displayName: 0 },
