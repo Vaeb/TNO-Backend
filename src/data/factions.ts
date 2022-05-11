@@ -26,7 +26,7 @@ export const npFactionsRegex = {
     lostmc: noLater(noFormer(/lost\s*mc|the\s*lost\b/i)),
     changgang: noFormer(/chang\s*gang|\bcga?\b/i),
     hydragang: noFormer(/\b(?:hydra|mario|flippy|snake+)'?s?[\s\-]*(?:gang|crew)|\bhydra\b|\bhga?\b/i),
-    streetteam: noFormer(/street\s*team|\bst\b/i),
+    streetteam: noFormer(/street\s*team|(?:[^\w\s]|^)\s*st\b|\bst\s*(?:[^\w\s]|$)/i),
     bcg: noFormer(/\bbcg|\bbowl[\s\-_.]*cut|bowl[\s\-_.]*cut[\s\-_.]*gang/i),
     cleancartel: noFormer(/\bclean\s*cartel/i),
     vagos: noLater(noFormer(/vagos|\bvago\b|yellow[\s\-]*gang|\besv\b/i)),
