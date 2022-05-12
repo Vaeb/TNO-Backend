@@ -873,6 +873,9 @@ export const npCharacters: NpCharacters = {
     DerpFront: [
         { name: '[EMS] Rivington Rivera', factions: ['Medical'], nicknames: ['Riv', 'E-78'], displayName: 3 },
     ],
+    Despooo_: [
+        { name: 'Alex Datum', displayName: 0 },
+    ],
     devolore: [
         { name: '[Officer] Cassius Kennedy', factions: ['Police'], nicknames: ['Cash'] },
     ],
