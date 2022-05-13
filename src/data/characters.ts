@@ -3030,7 +3030,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Po ?', nicknames: ['Uncle Po'], displayName: 3 },
     ],
     Simo: [
-        { name: '[Lawyer] Reggie Might', factions: ['Seaside', 'DoJ'], displayName: 1, assumeServer: 'whitelist' },
+        { name: '[Judge] Reggie Might', factions: ['Seaside', 'DoJ'], displayName: 1, assumeServer: 'whitelist' },
         { name: '[Lawyer] Blake Specter', factions: ['DoJ'] },
         { name: '[Officer] Reggie Might', factions: ['Police'], assumeServer: 'public' },
     ],
