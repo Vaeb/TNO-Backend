@@ -45,6 +45,7 @@ export const npFactionsRegex = {
     mandem: noFormer(/\bmandem|\bmdma?\b(?![\s\-]+record)/i),
     roadmen: noFormer(/\broadmen/i),
     bbmc: noFormer(/\bbbmc\b|\bbondi/i),
+    wastelanders: noFormer(/waste\s*landers/i),
     rust: noLater(noFormer(/\br[\s\-_.]*u[\s\-_.]*s[\s\-_.]*t\b|\bunfortunate[\s\-_.]*street[\s\-_.]*team\b/i)),
     cbpd: noFormer(/c[\s\-_.]*b[\s\-_.]*p[\s\-_.]*d|(?:cerberus|\bares)[\s\-_.]*(?:business[\s\-_.]*)?(?:protection|security)|\btartarus/),
     italianmafia: noFormer(/\b(?:italian|sicilian)[\s\-_.]*(?:mafi|mob)|\bcosa[\s\-_.]*nostra|\bbalbani\b|\bbcf\b/i),
@@ -282,6 +283,7 @@ const filterOrderTop: FactionMiniArr = [
     'asrr',
     'prison',
     'italianmafia',
+    'wastelanders',
     'roadmen',
     'cleancartel',
     'selfinsert',
@@ -317,6 +319,7 @@ const filterRename: { [key in FactionMini]?: string } = {
     nbc: 'Natural Born Crackheads',
     bsk: 'Brouge Street Kingz',
     bbmc: 'Bondi Boys MC',
+    wastelanders: 'The Wastelanders',
     rooster: 'Rooster Companies',
     doc: 'Department of Corrections',
     doj: 'Law & Government', // Lawyers & Judges

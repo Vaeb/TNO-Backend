@@ -107,6 +107,9 @@ export const npCharacters: NpCharacters = {
     AcezProduction: [
         { name: 'Achez Perez', factions: ['RUST'], nicknames: ['Ace'], displayName: 2 },
     ],
+    adamsmiley96: [
+        { name: "Sebastian Von Di'Quad", factions: ['Wastelanders'], displayName: 0 },
+    ],
     adeptthebest: [
         { name: 'Mari Posa', factions: ['Chang Gang', 'Hydra Gang', 'Chaos'], nicknames: ['Wari', 'Lari'], displayName: 1, assumeServer: 'whitelist' },
         { name: '[Trooper] Selena Mendoza', nicknames: [reg(/\bmendoz/)], factions: ['Police'] },
@@ -537,6 +540,9 @@ export const npCharacters: NpCharacters = {
     Bundie: [
         { name: 'Tane Mahuta', factions: ['RUST'], nicknames: ['Kiwi'], displayName: 3 },
     ],
+    bunicular: [
+        { name: 'Layla Lockhart', factions: ['Wastelanders'], displayName: 0 },
+    ],
     BurgSZN: [
         { name: 'Tyler Heisanburg', factions: ['Royal Mafia'], nicknames: ['Burg'], displayName: 3 },
     ],
@@ -648,6 +654,9 @@ export const npCharacters: NpCharacters = {
     ],
     Chief: [
         { name: 'Baada Ka', factions: ['GSF'], nicknames: ['Chief'], displayName: 3, assume: 'assumeNpNoOther' },
+    ],
+    Chitman: [
+        { name: 'Jax Fury', factions: ['Wastelanders'], displayName: 0 },
     ],
     ChloeLock: [
         { name: 'Chloe Blanc', factions: ['Hydra Gang'], nicknames: ['Chloé'], displayName: 0 },
@@ -924,6 +933,9 @@ export const npCharacters: NpCharacters = {
     DoluTattoo: [
         { name: '[Development] Dolu', factions: ['Development'] },
     ],
+    DongerDayz: [
+        { name: 'Kelly Camellia', factions: ['Wastelanders'], displayName: 0 },
+    ],
     Donut3venTryMe: [
         { name: 'Joey Pepperoni', factions: ['Tuner Shop'], displayName: 0 },
     ],
@@ -1058,6 +1070,9 @@ export const npCharacters: NpCharacters = {
     F3ARzZ: [
         { name: 'Ranjit Raventish' },
     ],
+    f3nrirsgaming: [
+        { name: 'Francis Angel Luis', factions: ['Wastelanders'], displayName: 0 },
+    ],
     Fairlight_Excalibur: [
         { name: 'Raja Bahadur', factions: ['QuickFix'], leader: true },
         { name: '[Officer] Alexander "Fox" Fawkes', factions: ['Police'] },
@@ -1096,8 +1111,8 @@ export const npCharacters: NpCharacters = {
         { name: 'Alberto Weaselton', factions: ['Lost MC'], nicknames: ['Al', reg(/\balb/)] },
     ],
     Ferst711: [
-        { name: '[Judge] Ferst Temple', factions: ['DoJ'] },
-        { name: 'Tom Ryan', displayName: 0 },
+        { name: 'Tom Ryan', factions: ['Wastelanders'], displayName: 0 },
+        { name: '[Lawyer] Ferst Temple', factions: ['DoJ'] },
     ],
     Fiendota: [
         { name: '[Officer] Booga Ooga', factions: ['Police', 'Burger Shot'], nicknames: ['651'], displayName: 1 },
@@ -1176,6 +1191,9 @@ export const npCharacters: NpCharacters = {
     Gabz: [
         { name: '[Development] Gabz', factions: ['Development'], nicknames: ['3D'] },
     ],
+    Galackxyz: [
+        { name: 'Annie Quigley', factions: ['Wastelanders'], displayName: 0 },
+    ],
     GalacticDPN: [
         { name: 'Roman Shacks', nicknames: ['Professor Galactic', 'The Doctor', 'Professor'], displayName: 0 },
     ],
@@ -1218,6 +1236,9 @@ export const npCharacters: NpCharacters = {
     ],
     gingersnap___: [
         { name: 'Sophie Sanders', displayName: 0 },
+    ],
+    Gnomey_au: [
+        { name: 'Max Moody', factions: ['Wastelanders'], displayName: 0 },
     ],
     goldelena: [
         { name: 'August Vakarian' },
@@ -1884,6 +1905,9 @@ export const npCharacters: NpCharacters = {
     KuroKunoichi13: [
         { name: 'Natalia Omar' },
     ],
+    Kydos___: [
+        { name: "Baby O'Conner", factions: ['Wastelanders'], displayName: 0 },
+    ],
     Kyle: [
         { name: '[Sheriff of PBSO] Kyle Pred', factions: ['Police'], leader: true, assumeServer: 'whitelist' },
         { name: '[Officer] James Hanna', factions: ['Police'] },
@@ -2356,6 +2380,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Marvin Peanut', nicknames: ['Marv'] },
         { name: '[Lawyer] Murphy Braun', factions: ['DoJ'], displayName: 1 },
     ],
+    mwat_: [
+        { name: 'Storm Creed', factions: ['Wastelanders'], displayName: 0 },
+    ],
     mycahpittman: [
         { name: 'Mycah Pittman', factions: ['Pink Gang'], displayName: 0 },
     ],
@@ -2494,6 +2521,9 @@ export const npCharacters: NpCharacters = {
     ],
     NunnYaBiznezz: [
         { name: '[Deputy] Hingle McCringleberry', factions: ['Police'], displayName: 1, assumeServer: 'public' },
+    ],
+    NurEinDarki: [
+        { name: 'Nolan Nicholson', factions: ['Wastelanders'], displayName: 0 },
     ],
     nxsiah: [
         { name: 'Zelaya Fernando', factions: ['Prison'], nicknames: ['Z', 'Laya'] },
@@ -2780,6 +2810,9 @@ export const npCharacters: NpCharacters = {
         { name: '[Dr.] Lily Harte', factions: ['Medical'], displayName: 2 },
         { name: 'Wednesday Mushkin', factions: ['HOA'] },
     ],
+    Renegade93TV: [
+        { name: 'Draxon Payne', factions: ['Wastelanders'], displayName: 1 },
+    ],
     reno_raines: [
         { name: 'Manny McDaniels', factions: ['HOA'] },
     ],
@@ -2844,8 +2877,14 @@ export const npCharacters: NpCharacters = {
         { name: 'Nikki Drewel', factions: ['DoC'], nicknames: ['Drools'], displayName: 0 },
         { name: 'Sherry Lee' },
     ],
+    royalbluesmile: [
+        { name: 'Ell LeFant', factions: ['Wastelanders'], displayName: 0 },
+    ],
     RudeNoodleNPC: [
         { name: 'Tee Veeman', factions: ['Burger Shot'] },
+    ],
+    Runyon11: [
+        { name: 'Luk Zwiebel', factions: ['Wastelanders'], displayName: 0 },
     ],
     RyanRV: [
         { name: 'Jay Jones', factions: ['Rooster'], nicknames: ['JJ'], displayName: 0 },
@@ -2997,6 +3036,9 @@ export const npCharacters: NpCharacters = {
     shroud: [
         { name: 'Richard Hard' },
     ],
+    ShrykeLP: [
+        { name: 'Patrick Shryke', factions: ['Wastelanders'], displayName: 0 },
+    ],
     ShutupWave: [
         { name: 'Richard Tips', factions: ['Burger Shot'], displayName: 0 },
     ],
@@ -3107,6 +3149,9 @@ export const npCharacters: NpCharacters = {
     SnekoGebiko: [
         { name: '[Deputy] Perry Willis', factions: ['Police'], displayName: 1, assumeServer: 'public' },
     ],
+    so_sneaky: [
+        { name: 'Jessie Dagger', factions: ['Wastelanders'], displayName: 0 },
+    ],
     SoapFPS: [
         { name: 'Soap ?', factions: ['Royal Mafia'] },
     ],
@@ -3158,6 +3203,9 @@ export const npCharacters: NpCharacters = {
     ],
     SpiderPigEthan: [
         { name: 'Marvin Chunder', factions: ['HOA'], nicknames: ['Hades'], displayName: 3 },
+    ],
+    SpitfireQG: [
+        { name: 'Billy Walker', factions: ['Wastelanders'], displayName: 0 },
     ],
     Sput: [
         { name: 'Garry Smod', factions: ['DoC'], displayName: 0 },
@@ -3534,6 +3582,9 @@ export const npCharacters: NpCharacters = {
     ],
     Turtledoves: [
         { name: 'Hung Jae-Min', factions: ['Rooster'], displayName: 0 },
+    ],
+    Turtlenumber13: [
+        { name: 'Chance Zero', factions: ['Wastelanders'], displayName: 0 },
     ],
     TwistedBones: [
         { name: 'Mark White', displayName: 0 },
