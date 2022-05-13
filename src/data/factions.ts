@@ -31,7 +31,7 @@ export const npFactionsRegex = {
     cleancartel: noFormer(/\bclean\s*cartel/i),
     vagos: noLater(noFormer(/vagos|\bvago\b|yellow[\s\-]*gang|\besv\b/i)),
     gsf: noLater(noFormer(/\bgrove\b|\bgsf\b|broc+ol+i bo[iy]|\bthe[\s\-_.]*families/i)),
-    ssb: noLater(noFormer(/\bball+a|\besb\b|\bssb\b(?![\s\-]+(?:wo?rld|later))/i)),
+    ssb: noLater(noFormer(/\bball+a|\besb\b|\b[sg]sb\b(?![\s\-]+(?:wo?rld|later))/i)),
     bsk: noFormer(/\bb[s$]k\b|brouge street|burger shot king/i),
     seaside: noFormer(/\bsea[\-_.]*side\b/i),
     marabunta: noLater(noFormer(/\bmarabunta|\bmg\b/i)),
