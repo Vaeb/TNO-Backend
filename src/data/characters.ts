@@ -293,7 +293,7 @@ export const npCharacters: NpCharacters = {
         { name: '[EMS] Boba Stone', factions: ['Medical'] },
     ],
     AuriEllis: [
-        { name: 'Ursula Leichenberg', factions: ['Burger Shot', 'News'], displayName: 1 },
+        { name: 'Ursula Leichenberg', factions: ['Royal Mafia', 'Burger Shot', 'News'], displayName: 1 },
         { name: 'Gracie ?' },
     ],
     aurvinR: [
@@ -1009,7 +1009,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Park Parker', factions: ['Rooster'], nicknames: ['Santa'], displayName: 0, assumeChar: true },
     ],
     edisonparklive: [
-        { name: 'Michael Hawkins', displayName: 0 },
+        { name: 'Michael Hawkins', factions: ['Royal Mafia'], displayName: 0 },
     ],
     eebern: [
         { name: 'Huck Guthrie', factions: ['HOA'], nicknames: ['Huckleberry'] },
