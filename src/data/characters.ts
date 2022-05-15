@@ -539,6 +539,7 @@ export const npCharacters: NpCharacters = {
     ],
     Bundie: [
         { name: 'Tane Mahuta', factions: ['RUST'], nicknames: ['Kiwi'], displayName: 3 },
+        { name: 'Charles Hendrix', nicknames: ['Charlie'], displayName: 0 },
     ],
     bunicular: [
         { name: 'Layla Lockhart', factions: ['Wastelanders'], displayName: 0 },
