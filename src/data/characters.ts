@@ -2479,7 +2479,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Steve "Stiv" Adamescu', assumeServer: 'public' },
     ],
     Nikez: [
-        { name: '[Development] Nikez', factions: ['Development'] },
+        { name: '[Development] Nikez', factions: ['Development', 'Seaside'] },
         { name: '[Deputy] Cody Sharp', factions: ['Police'], nicknames: [reg(/\bpolice\s*m.n/)] },
         { name: 'Nicholas Simone', factions: ['Seaside'], nicknames: ['Nick', 'Nico', 'Simon'], displayName: 0 },
     ],
