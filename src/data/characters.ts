@@ -875,6 +875,7 @@ export const npCharacters: NpCharacters = {
     ],
     Denis3D: [
         { name: '[Development] Denis3D', factions: ['Development'], nicknames: ['3D'] },
+        { name: 'Bob "Bob the Builder" Carter', factions: ['Seaside'], nicknames: ['The Builder'] },
     ],
     deputydangerdan: [
         { name: "D'Brickashaw King", factions: ['GSF', 'CBPD'], nicknames: ['Brick'], displayName: 3 },
@@ -1963,6 +1964,9 @@ export const npCharacters: NpCharacters = {
     Lairdo_: [
         { name: 'Henry King', factions: ['Rooster'] },
     ],
+    LargeSalt: [
+        { name: 'Ivan Samarsky', factions: ['Seaside'], displayName: 0 },
+    ],
     LarryX7: [
         { name: 'Jose "Cousin" Luis Santana', factions: ['Vagos'] },
     ],
@@ -2368,7 +2372,7 @@ export const npCharacters: NpCharacters = {
     ],
     ms_star: [
         { name: '[Deputy] Skye Faye', factions: ['Police'], wlBias: -1 },
-        { name: 'Cora Star', displayName: 0 },
+        { name: 'Cora Star', factions: ['Seaside'], displayName: 0 },
     ],
     MsTeamKK: [
         { name: 'Riley Carter', factions: ['CBPD', 'Britney Gang', 'Rooster'] },
