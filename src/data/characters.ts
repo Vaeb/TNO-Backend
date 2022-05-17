@@ -462,7 +462,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Dillon Dubbs', factions: ['News'], displayName: 0 },
     ],
     Blown: [
-        { name: 'Taylor "Spaceman" Briggs', factions: ['Burger Shot'] },
+        { name: 'Taylor "Spaceman" Briggs', factions: ['Seaside'] },
     ],
     bLuE622: [
         { name: 'Boe Jangles', factions: ['Chang Gang'], affiliate: true },
