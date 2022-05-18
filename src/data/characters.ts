@@ -2648,7 +2648,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Pezzy Pee' },
     ],
     phantomzz_ow: [
-        { name: 'Connell MacGregor', factions: ['RUST'], displayName: 1 },
+        { name: 'Connell MacGregor', factions: ['RUST'], displayName: 2 },
     ],
     Philderbeast: [
         { name: '[Dispatch] Owen Fitz-Gibbon', factions: ['Police'], displayName: 2 },
