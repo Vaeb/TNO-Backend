@@ -3678,9 +3678,6 @@ export const npCharacters: NpCharacters = {
     VioletCutie: [
         { name: 'Maisie Hart', factions: ['Britney Gang', 'Rooster', 'Tuner Shop'], displayName: 0 },
     ],
-    vitalsecond: [
-        { name: 'Zuck Cuc', factions: ['Gulag Gang'] },
-    ],
     Viviana: [
         { name: 'Griselda Ambrose', nicknames: ['Granny'] },
         { name: 'Lana Valentine', factions: ['Mandem', 'Rooster'] },
@@ -3903,6 +3900,9 @@ export const npCharacters: NpCharacters = {
     ],
     ZPapz: [
         { name: '[Officer] Joseph Oxlong', factions: ['Police'] },
+    ],
+    zuck: [
+        { name: 'Zuck Cuc', factions: ['Gulag Gang'] },
     ],
     Zumapwn: [
         { name: 'James Laughton', nicknames: ['Fall Guy'], factions: ['Gulag Gang'], displayName: 3, assumeServer: 'public' },
