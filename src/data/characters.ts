@@ -3781,7 +3781,7 @@ export const npCharacters: NpCharacters = {
     XenVers: [
         { name: 'Xen Verse', factions: ['Pink Gang'], displayName: 0 },
     ],
-    xQcOW: [
+    xQc: [
         {
             name: 'Jean "X" Paul',
             factions: ['Gulag Gang', 'Cleanbois', 'Burger Shot'],
