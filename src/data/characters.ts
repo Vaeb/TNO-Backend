@@ -2371,8 +2371,8 @@ export const npCharacters: NpCharacters = {
         { name: 'Sly Lion' },
     ],
     ms_star: [
-        { name: '[Deputy] Skye Faye', factions: ['Police'], wlBias: -1 },
         { name: 'Cora Star', factions: ['Seaside'], displayName: 0 },
+        { name: '[Deputy] Skye Faye', factions: ['Police'], wlBias: -1 },
     ],
     MsTeamKK: [
         { name: 'Riley Carter', factions: ['CBPD', 'Britney Gang', 'Rooster'] },
