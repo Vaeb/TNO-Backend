@@ -3519,7 +3519,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Shaggy Dankweed', displayName: 0 },
         { name: '[Trooper] T.J. Mack', factions: ['Police'], assumeServer: 'public' },
     ],
-    Timmy2: [
+    timmy: [
         { name: 'Orlando Jones', factions: ['Seaside'], nicknames: ['OJ'], displayName: 3 },
         { name: 'Chino G' },
         { name: 'Cardell "CJ" Jones', factions: ['SSB'] },
