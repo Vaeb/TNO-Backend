@@ -330,7 +330,7 @@ const filterRename: { [key in FactionMini]?: string } = {
     stable: 'The Stable',
     mandem: 'The Mandem',
     roadmen: 'The Roadmen',
-    italianmafia: 'Italian Mafia (BCF)',
+    italianmafia: 'Balbani Crime Family (BCF)',
     prison: 'Prison Lifers',
     angels: 'The Angels',
     selfinsert: 'Self Inserts',
