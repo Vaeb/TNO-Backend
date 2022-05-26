@@ -3031,7 +3031,7 @@ export const npCharacters: NpCharacters = {
     ],
     Shotz: [
         { name: 'Vinny Pistone', factions: ['Chang Gang', 'Chaos', 'Tuner Shop'], assumeServer: 'whitelist' },
-        { name: 'Vinny Pistone', factions: ['Gulag Gang'], assumeServer: 'public' },
+        // { name: 'Vinny Pistone', factions: ['Gulag Gang'], assumeServer: 'public' },
         { name: '[Ranger] John Mineo', factions: ['Police'], nicknames: ['Corporal'] },
         { name: 'Mr J', factions: ['Chang Gang'], displayName: 0 },
     ],
