@@ -2785,6 +2785,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Raycardo Flick', factions: ['Police'], displayName: 1, assumeServer: 'public' },
     ],
     ray308win: [
+        { name: '[Officer] Craig Barrett', factions: ['Police'] },
         { name: '[FIB Agent] Lyonel Winchester', factions: ['Police'] },
     ],
     RayvenEyed: [
