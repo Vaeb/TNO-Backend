@@ -3821,7 +3821,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Salvaje "Savage" Mendoza', factions: ['Vagos'] },
     ],
     Yawger: [
-        { name: '[Lawyer] Robert Locksley', factions: ['Chang Gang', 'DoJ'] },
+        { name: '[Lawyer] Robert Locksley', factions: ['Chang Gang', 'DoJ'], displayName: 2 },
     ],
     Yeahitsjodi: [
         { name: '[Dr.] Lennon McDermitt', factions: ['Medical'], displayName: 1 },
