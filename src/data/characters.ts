@@ -2384,7 +2384,7 @@ export const npCharacters: NpCharacters = {
     MurphyBraun: [
         { name: '[Judge] Judge Holden', factions: ['DoJ'] },
         { name: 'Marvin Peanut', nicknames: ['Marv'] },
-        { name: '[Lawyer] Murphy Braun', factions: ['DoJ'], displayName: 1 },
+        { name: '[Lawyer] Murphy Braun', factions: ['Chang Gang', 'DoJ'], displayName: 1 },
     ],
     mwat_: [
         { name: 'Storm Creed', factions: ['Wastelanders'], displayName: 0 },
@@ -3819,6 +3819,9 @@ export const npCharacters: NpCharacters = {
     ],
     yaboiSavageG: [
         { name: 'Salvaje "Savage" Mendoza', factions: ['Vagos'] },
+    ],
+    Yawger: [
+        { name: '[Lawyer] Robert Locksley', factions: ['Chang Gang', 'DoJ'] },
     ],
     Yeahitsjodi: [
         { name: '[Dr.] Lennon McDermitt', factions: ['Medical'], displayName: 1 },
