@@ -2236,8 +2236,8 @@ export const npCharacters: NpCharacters = {
         { name: 'NoPixel ?' },
     ],
     Mick: [
-        { name: '[Deputy] Sheldon Jones', factions: ['Police'], nicknames: ['572'], displayName: 1 },
         { name: 'Gladys Berry' },
+        { name: '[Deputy] Sheldon Jones', factions: ['Police'], nicknames: ['572'], displayName: 1 },
     ],
     Middleditch: [
         { name: 'Stanley Tuttles' },
