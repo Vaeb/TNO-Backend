@@ -26,7 +26,7 @@ export const npFactionsRegex = {
     lostmc: noLater(noFormer(/lost\s*mc|the\s*lost\b/i)),
     changgang: noFormer(/chang\s*gang|\bcga?\b/i),
     hydragang: noFormer(/\b(?:hydra|mario|flippy|snake+)'?s?[\s\-]*(?:gang|crew)|\bhydra\b|\bhga?\b/i),
-    streetteam: noFormer(/street\s*team|(?:[^\w\s]|^) *(?<![^']\b\w\.? *)s\.?\s*t\b(?!\.? *\w\.?\b)|(?<![^']\b\w\.? *)\bs\.?\s*t(?!\.? *\w\.?\b) *(?:[^\w\s]|$)/i), // https://regex101.com/r/i3N2HD/1
+    streetteam: noFormer(/street\s*team|(?:(?:[^\w\s]|^) *(?<![^']\b\w\.? *)s\.?\s*t\b(?!\.? *\w\.?\b)|(?<![^']\b\w\.? *)\bs\.?\s*t(?!\.? *\w\.?\b) *(?:[^\w\s]|$))(?!\s*jude)/i), // https://regex101.com/r/i3N2HD/1
     bcg: noFormer(/\bbcg|\bbowl[\s\-_.]*cut|bowl[\s\-_.]*cut[\s\-_.]*gang/i),
     cleancartel: noFormer(/\bclean\s*cartel/i),
     vagos: noLater(noFormer(/\bcb\s*street\s*team|vagos|\bvago\b|yellow[\s\-]*gang|\besv\b/i)),
