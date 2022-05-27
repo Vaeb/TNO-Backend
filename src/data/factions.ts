@@ -29,7 +29,7 @@ export const npFactionsRegex = {
     streetteam: noFormer(/street\s*team|(?:[^\w\s]|^) *(?<![^']\b\w\.? *)s\.?\s*t\b(?!\.? *\w\.?\b)|(?<![^']\b\w\.? *)\bs\.?\s*t(?!\.? *\w\.?\b) *(?:[^\w\s]|$)/i), // https://regex101.com/r/i3N2HD/1
     bcg: noFormer(/\bbcg|\bbowl[\s\-_.]*cut|bowl[\s\-_.]*cut[\s\-_.]*gang/i),
     cleancartel: noFormer(/\bclean\s*cartel/i),
-    vagos: noLater(noFormer(/vagos|\bvago\b|yellow[\s\-]*gang|\besv\b/i)),
+    vagos: noLater(noFormer(/\bcb\s*street\s*team|vagos|\bvago\b|yellow[\s\-]*gang|\besv\b/i)),
     gsf: noLater(noFormer(/\bgrove\b|\bgsf\b|broc+ol+i bo[iy]|\bthe[\s\-_.]*families/i)),
     ssb: noLater(noFormer(/\bball+a+(?:\b|[sgz])|\besb\b|\b[sg]sb\b(?![\s\-]+(?:wo?rld|later))/i)),
     bsk: noFormer(/\bb[s$]k\b|brouge street|burger shot king/i),
