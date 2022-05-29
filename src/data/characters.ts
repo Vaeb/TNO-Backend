@@ -3904,6 +3904,7 @@ export const npCharacters: NpCharacters = {
     ],
     ZPapz: [
         { name: '[Officer] Joseph Oxlong', factions: ['Police'] },
+        { name: 'Liam Law', factions: ['Angels'] },
     ],
     zuck: [
         { name: 'Zuck Cuc', factions: ['Gulag Gang'] },
