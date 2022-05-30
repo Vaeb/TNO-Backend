@@ -776,6 +776,7 @@ export const npCharacters: NpCharacters = {
     Crystalst: [
         { name: '[Deputy] Crystal Clear', factions: ['Police', 'RUST'], nicknames: ['370'], displayName: 1 },
         { name: 'Four "4T" Tee', factions: ['ASRR'], displayName: 0 },
+        { name: 'Swan DeLeur', displayName: 0 },
         { name: 'Amie Rush' },
     ],
     CurtisRyan: [
