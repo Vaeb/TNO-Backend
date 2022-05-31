@@ -2367,9 +2367,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Lennon "Bane" Lee', factions: ['Prison'] },
     ],
     mrwobblestwitch: [
+        { name: 'Sly Lion', displayName: 0 },
         { name: 'Axel Simpleton' },
         { name: 'Garth Crooks', displayName: 0 },
-        { name: 'Sly Lion' },
     ],
     ms_star: [
         { name: 'Cora Star', factions: ['Seaside'], displayName: 0 },
