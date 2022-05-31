@@ -1578,6 +1578,9 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Louise Campbell', factions: ['Police'] },
         { name: 'Jenny Smith', displayName: 0 },
     ],
+    jess_tation: [
+        { name: 'CJ Parker' },
+    ],
     jessbleck: [
         { name: '[Deputy] Jessie Dallas', factions: ['Police'], assumeServer: 'public' },
     ],
