@@ -43,7 +43,7 @@ export const npFactionsRegex = {
     angels: noFormer(/(?<!rejected[\s\-_.]*)\bangels\b/i),
     nbc: noFormer(/\bnbc\b/i),
     mandem: noFormer(/\bmandem|\bmdma?\b(?![\s\-]+record)/i),
-    roadmen: noFormer(/\broadmen/i),
+    roadmen: noFormer(/\broadmen|(?:[^\w\s]|^) *(?<![^']\b\w\.? *)rdm\b/i),
     bbmc: noFormer(/\bbbmc\b|\bbondi/i),
     wastelanders: noFormer(/waste\s*landers/i),
     rust: noLater(noFormer(/\br[\s\-_.]*u[\s\-_.]*s[\s\-_.]*t\b|\bunfortunate[\s\-_.]*street[\s\-_.]*team\b/i)),
