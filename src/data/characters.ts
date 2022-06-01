@@ -2773,6 +2773,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Ramee El-Rahman', factions: ['Chang Gang', 'BCG', 'Tuner Shop'], nicknames: ['The "Warlord"', 'The "Vulture"', 'SBS Patient-0'], facebook: true },
         { name: '[Ranger] Conan Clarkson', factions: ['Police'] },
     ],
+    Randolph: [
+        { name: 'Don Dolph', displayName: 0 },
+    ],
     Rasta: [
         { name: 'Dunn Robinson', assume: 'assumeOther', assumeServer: 'whitelist' },
         { name: '[Deputy] Dean Dimes III', factions: ['Police'], displayName: 2, assumeServer: 'public' },
