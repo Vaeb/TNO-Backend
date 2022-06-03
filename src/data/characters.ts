@@ -2844,7 +2844,7 @@ export const npCharacters: NpCharacters = {
         { name: "Happy D'Klown" },
     ],
     Rexsair: [
-        { name: 'Rexarius Bracchimus', nicknames: ['Rex'], displayName: 3 },
+        { name: 'Rexarius Bracchimus', factions: ['Independent', 'Seaside'], nicknames: ['Rex'], displayName: 3 },
     ],
     RhiTexxy: [
         { name: 'Brook Lexi', factions: ['Lost MC'] },
