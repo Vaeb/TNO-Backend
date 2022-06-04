@@ -1701,7 +1701,7 @@ export const npCharacters: NpCharacters = {
     ],
     JustJamie: [
         { name: '[Officer] George Lawson', factions: ['Police'], nicknames: ['592'] },
-        { name: 'Tommy Cruizer', factions: ['Tuner Shop'] },
+        { name: 'Tommy Cruizer', factions: ['Roadmen', 'Tuner Shop'] },
         { name: 'Jamie Bee', factions: ['Self Insert'], displayName: 0 },
     ],
     JustPenchi: [
@@ -2017,6 +2017,9 @@ export const npCharacters: NpCharacters = {
     Lisilsanya: [
         { name: '[EMS] Lei Sanya', factions: ['Medical'], nicknames: ['Lasagna'], displayName: 0 },
     ],
+    LJHUNCHO: [
+        { name: 'Leon Johnson', factions: ['Roadmen', 'Mandem'], nicknames: ['LJ'], displayName: 0 },
+    ],
     Llikthead: [
         { name: 'Garion Noble', factions: ['BBMC', 'CBPD', 'Rooster'], displayName: 1 },
     ],
@@ -2188,6 +2191,9 @@ export const npCharacters: NpCharacters = {
     ],
     MatchaSmash: [
         { name: '[EMS] Rowan Hunter', factions: ['Medical'] },
+    ],
+    MattEU: [
+        { name: 'Matthew Antov', factions: ['Roadmen', 'Mandem'], nicknames: ['Matt'], displayName: 0 },
     ],
     Mattie: [
         { name: '[Dr.] Mikhail Keehl', factions: ['DoC', 'Medical'], displayName: 2 },
