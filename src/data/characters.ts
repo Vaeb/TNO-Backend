@@ -2192,7 +2192,7 @@ export const npCharacters: NpCharacters = {
     MatchaSmash: [
         { name: '[EMS] Rowan Hunter', factions: ['Medical'] },
     ],
-    MattEU: [
+    MattEU___: [
         { name: 'Matthew Antov', factions: ['Roadmen', 'Mandem'], nicknames: ['Matt'], displayName: 0 },
     ],
     Mattie: [
