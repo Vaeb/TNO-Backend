@@ -1381,7 +1381,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Freddy Fastfingers', factions: ['HOA'], displayName: 0 },
     ],
     Hurnani: [
-        { name: 'Bruno Brown', factions: ['Italian Mafia'], displayName: 0 },
+        { name: 'Bruno Brown', factions: ['RUST'], displayName: 1 },
         { name: 'Borat ?' },
         { name: 'James-Kamea Brown', factions: ['Vagos'] },
     ],
@@ -1443,6 +1443,9 @@ export const npCharacters: NpCharacters = {
     ],
     illwac: [
         { name: 'Bob Moss', factions: ['Burger Shot'], displayName: 0 },
+    ],
+    ILYCappiCat: [
+        { name: 'SunMoon Lee', factions: ['RUST'], displayName: 1 },
     ],
     ImFluffinJiggly: [
         { name: '[Deputy] ? Wilkons', factions: ['Police'], assumeServer: 'public' },
