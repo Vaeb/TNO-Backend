@@ -3204,9 +3204,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Harry Phartz', displayName: 0 },
     ],
     Spaceboy: [
+        { name: 'James Randal', displayName: 0 },
         { name: 'Melbert "Mel" Rickenbacker' },
         { name: 'Joseph "Self Insert" Bobkylecyrmitch', displayName: 0 },
-        { name: 'James Randal', displayName: 0 },
         { name: 'Adrian Block', factions: ['ASRR'], displayName: 0 },
         { name: '[Deputy] Patrick Downing', factions: ['Police'], nicknames: ['Pat'] },
         { name: 'Casey Boyd', nicknames: ['Caseboy', 'L8PD'], displayName: 0 },
