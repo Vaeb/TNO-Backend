@@ -1984,6 +1984,9 @@ export const npCharacters: NpCharacters = {
         { name: '[Dr.] Alexander Blake', factions: ['Medical'], displayName: 2 },
         { name: '[Dispatch] L Tailor', factions: ['Police'], nicknames: ['D-21'], displayName: 2 },
     ],
+    Leg0s: [
+        { name: 'Clarke Bishop', factions: ['Hydra Gang'] },
+    ],
     LetterJaye: [
         { name: 'Posy Florian', factions: ['Burger Shot'], nicknames: ['P O S Y'] },
         { name: '[Dr.] Dahlia Fey', factions: ['Medical'] },
