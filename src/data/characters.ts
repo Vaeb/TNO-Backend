@@ -1044,6 +1044,9 @@ export const npCharacters: NpCharacters = {
     erickeK: [
         { name: 'Frederick Dutton', factions: ['Lost MC'], displayName: 1 },
     ],
+    erobb221: [
+        { name: '? ?' },
+    ],
     EsfandTV: [
         { name: '[Deputy] Cletus Cornwood', factions: ['Police'] },
         { name: 'Ali Farmand', displayName: 0 },
