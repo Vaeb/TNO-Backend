@@ -2457,6 +2457,9 @@ export const npCharacters: NpCharacters = {
     Navajo: [
         { name: 'Clarence Carter' },
     ],
+    '1ndiantechsupport': [
+        { name: 'Kendrick Jones', factions: ['SSB'], displayName: 1 },
+    ],
     NebelNiek: [
         { name: 'Konrad Kraut Dogenschmirz', factions: ['RUST'] },
     ],
