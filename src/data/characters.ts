@@ -1633,6 +1633,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Eva Wall' },
         { name: '[Lawyer] Maggie Kayden', factions: ['DoJ'] },
     ],
+    JonLaw_: [
+        { name: 'Jon Joyce', factions: ['SSB'], nicknames: ['Kong', 'Kong Joyce'], displayName: 4 },
+    ],
     JonnyRotten: [
         { name: 'Billy Phresh', factions: ['Street Team', 'Chang Gang'], displayName: 0 },
     ],
