@@ -3049,6 +3049,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Pebbles ?', nicknames: ['Dog', reg(/\b(?:wee+\s*woo+)+\b/)] },
         { name: 'Clyde "Meowfurryon" Eastside', factions: ['LARPers', 'Cleanbois', 'Rooster'], nicknames: ['Druid', 'Archdruid', 'Malfurryon'] },
     ],
+    Shnag: [
+        { name: 'Keyvon "Key" Cartier', factions: ['SSB'] },
+    ],
     shodtwo: [
         { name: 'Kishawn Baker', factions: ['Street Team', 'Chang Gang'], nicknames: ['Lil Blicky'], displayName: 3 },
     ],
