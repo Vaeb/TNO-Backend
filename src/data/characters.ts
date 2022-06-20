@@ -292,6 +292,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Kermy Fulker', factions: ['HOA'] },
         { name: '[EMS] Boba Stone', factions: ['Medical'] },
     ],
+    Audili: [
+        { name: 'Mordell Caldwell', factions: ['SSB'], nicknames: ['MD'], displayName: 1 },
+    ],
     AuriEllis: [
         { name: 'Ursula Leichenberg', factions: ['Royal Mafia', 'Burger Shot', 'News'], displayName: 1 },
         { name: 'Gracie ?' },
