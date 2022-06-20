@@ -3622,6 +3622,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Lexi Law', factions: ['Angels'] },
         { name: '[Officer] Aspen Gray', factions: ['Police'], nicknames: [reg(/a[s$]pen\b/)] },
     ],
+    TTV_CaptMcGee1818: [
+        { name: 'Leroy Smith', factions: ['SSB'], displayName: 1, assumeServer: 'public' },
+    ],
     Turkaderk: [
         { name: 'Benji Carter', factions: ['BSK'], displayName: 0 },
     ],
