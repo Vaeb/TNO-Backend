@@ -1472,7 +1472,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Donovan "DK" King', factions: ['GSF'] },
     ],
     ironmonkeytv: [
-        { name: 'Winston Bolt', factions: ['Pegasus'] },
+        { name: 'Winston Bolt' },
         { name: 'Dragon' },
     ],
     itmeJP: [
