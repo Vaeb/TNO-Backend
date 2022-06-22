@@ -2787,7 +2787,7 @@ export const npCharacters: NpCharacters = {
     ],
     Raided: [
         { name: '[Officer] Gage Draider', factions: ['Police'] },
-        { name: 'Wren Draider', factions: ['RUST'], displayName: 0 },
+        { name: 'Wren Draider', factions: ['RUST'], displayName: 1 },
         { name: '[Development] Raided', factions: ['Development'] },
     ],
     raine: [
