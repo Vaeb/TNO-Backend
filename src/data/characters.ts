@@ -2192,6 +2192,9 @@ export const npCharacters: NpCharacters = {
     mAnYw: [
         { name: '[Deputy] Jonathan Hale', factions: ['Police'] },
     ],
+    marcobc: [
+        { name: '? ?', assumeServer: 'international' },
+    ],
     Markiplier: [
         { name: 'Stan Wheeler' },
     ],
