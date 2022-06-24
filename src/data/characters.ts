@@ -2503,7 +2503,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Davey Doherty' },
     ],
     Nexa9: [
-        { name: 'Meelo Graves', factions: ['Rooster', 'Tuner Shop', 'Mandem'], nicknames: ['Nex'], displayName: 3 },
+        { name: 'Meelo Graves', factions: ['RUST', 'Rooster', 'Tuner Shop'], nicknames: ['Nex'], displayName: 3 },
     ],
     Niccorazi: [
         { name: 'Douglas James', factions: ['Gulag Gang'], nicknames: ['Dougie', 'Fresh', 'Dougie Fresh', 'Bobcat'], displayName: 5 },
