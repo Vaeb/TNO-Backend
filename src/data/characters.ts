@@ -3407,7 +3407,7 @@ export const npCharacters: NpCharacters = {
     ],
     Syraphic: [
         { name: '[Deputy] Kyra Pierce', factions: ['Police'] },
-        { name: 'Elena Marilyn Vega' },
+        { name: 'Elena Marilyn Vega', factions: ['Gulag Gang'] },
         { name: 'Emilia Salvatore' },
     ],
     t3r0: [
