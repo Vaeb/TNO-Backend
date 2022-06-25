@@ -686,7 +686,7 @@ export const npCharacters: NpCharacters = {
     cheezrp: [
         { name: 'Terry Linkston', factions: ['Seaside'] },
     ],
-    ChelbM: [
+    Chelb: [
         { name: 'Alan Kyles', factions: ['NBC'], displayName: 0 },
     ],
     ChelbMyster: [
