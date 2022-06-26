@@ -1958,6 +1958,7 @@ export const npCharacters: NpCharacters = {
     kyliebitkin: [
         { name: '[Deputy] Brittany Angel', factions: ['Police'], nicknames: ['Angle', 'Captain'] },
         { name: '[Dept. Mayor] Mary Mushkin', factions: ['DoJ', 'Tuner Shop'], nicknames: ['Red Devil', 'R3d Devil'], displayName: 1 },
+        { name: 'Sarah Reynolds', displayName: 0 },
         { name: 'Kylie Bitcoin', factions: ['Self Insert'], displayName: 0 },
     ],
     KYR_SP33DY: [
