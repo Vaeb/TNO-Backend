@@ -267,7 +267,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Vincent Carl', factions: ['Hydra Gang', 'BCG'], nicknames: ['Arnie', reg(/\b(?:vincent|carl)/)], displayName: 3 },
     ],
     ArsenaI: [
-        { name: 'James Arsenal', displayName: 0 },
+        { name: 'James Arsenal', factions: ['NBC'], displayName: 0 },
     ],
     ash: [
         { name: 'Ash Ketchup', factions: ['Seaside'], displayName: 1, assumeChar: true },
