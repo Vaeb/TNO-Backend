@@ -2249,7 +2249,7 @@ export const npCharacters: NpCharacters = {
     MeMayoi: [
         { name: 'Yoi Tsukita', assume: 'assumeOther' },
     ],
-    Meraldje: [
+    Merald: [
         { name: 'Jaylen Carter', factions: ['Street Team', 'Chang Gang'], nicknames: ['LampPost', 'Lamp Post'], displayName: 1, leader: true },
     ],
     Merrcy: [
