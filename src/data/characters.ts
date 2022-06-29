@@ -429,6 +429,9 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Jamal Ferreira', factions: ['Police'], assumeServer: 'public' },
         { name: 'Dominic "Lil D" Chester', nicknames: ['Sabado de Sol'] },
     ],
+    biggwoo: [
+        { name: 'Future Cortair', factions: ['Gulag Gang'] },
+    ],
     BigRichardRP: [
         { name: "Richard O'Conner", factions: ['Gulag Gang'], nicknames: ['Richie'], displayName: 0 },
     ],
@@ -2507,7 +2510,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Meelo Graves', factions: ['RUST', 'Rooster', 'Tuner Shop'], nicknames: ['Nex'], displayName: 3 },
     ],
     Niccorazi: [
-        { name: 'Douglas James', factions: ['Gulag Gang'], nicknames: ['Dougie', 'Fresh', 'Dougie Fresh', 'Bobcat'], displayName: 5 },
+        { name: 'Douglas James', nicknames: ['Dougie', 'Fresh', 'Dougie Fresh', 'Bobcat'], displayName: 5 },
         { name: 'Eyam Job', displayName: 0 },
     ],
     Nidas: [
