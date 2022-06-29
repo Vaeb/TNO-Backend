@@ -3521,6 +3521,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Stacey Doyle', displayName: 1 },
         { name: 'Jenn Bordeaux', nicknames: ['Frenchie', 'French'] },
     ],
+    TheGoldenDunsparce: [
+        { name: 'Phueng Madee', factions: ['RUST'], nicknames: ['Bee'] },
+    ],
     TheHexagonist: [
         { name: '[Deputy] Vincent Glass', factions: ['Police'], displayName: 2 },
         { name: 'Denis Blatovich', factions: ['CBPD'], nicknames: ['Boris'], displayName: 0 },
