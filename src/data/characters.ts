@@ -1192,7 +1192,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Tyrell Fresh', factions: ['SSB'], leader: true, displayName: 0 },
     ],
     Frynaut: [
-        { name: 'Kratos Of Sparta', factions: ['Gulag Gang', 'Rooster'], nicknames: ['God of War', 'God'] },
+        { name: 'Kratos Of Sparta', factions: ['Rooster'], nicknames: ['God of War', 'God'] },
     ],
     fuslie: [
         { name: 'April Fooze', factions: ['Chang Gang'], displayName: 1, assumeServer: 'whitelist' },
@@ -3055,7 +3055,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Mason Kennedy', factions: ['Police'], nicknames: ['545'], displayName: 2 },
     ],
     Shiki: [
-        { name: 'Vivian Vale', factions: ['Gulag Gang', 'CBPD', 'Clean Cartel'], displayName: 0 },
+        { name: 'Vivian Vale', factions: ['CBPD', 'Clean Cartel'], displayName: 0 },
     ],
     Shindur: [
         { name: '[Deputy] Joey Keys', factions: ['Police'] },
