@@ -1089,7 +1089,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Raja Bahadur', factions: ['QuickFix'], leader: true },
         { name: '[Officer] Alexander "Fox" Fawkes', factions: ['Police'] },
     ],
-    Fairzz91: [
+    Fairzz: [
         { name: 'Huxley Johnson', factions: ['DoC'], assumeServer: 'whitelist' },
         { name: '[Deputy] Huxley Johnson', factions: ['Police'], assumeServer: 'public' },
         { name: 'Paddy Patrickson', factions: ['Lost MC'] },
