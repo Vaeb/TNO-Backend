@@ -2001,7 +2001,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Dispatch] L Tailor', factions: ['Police'], nicknames: ['D-21'], displayName: 2 },
     ],
     Leg0s: [
-        { name: 'Clarke Bishop', factions: ['Hydra Gang'] },
+        { name: 'Clarke Bishop' },
     ],
     LetterJaye: [
         { name: 'Posy Florian', factions: ['Burger Shot'], nicknames: ['P O S Y'] },
@@ -3810,7 +3810,7 @@ export const npCharacters: NpCharacters = {
     ],
     Wolfabelle: [
         { name: '[Deputy] Candice Defitt', factions: ['Police'], nicknames: ['393'], displayName: 1 },
-        { name: 'Scarlett Skye', factions: ['Hydra Gang'], displayName: 0 },
+        { name: 'Scarlett Skye', displayName: 0 },
         { name: 'Bianca Walters' },
     ],
     Wootpiegames: [
