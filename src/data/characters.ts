@@ -38,7 +38,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Development] Stewart', factions: ['Development'], nicknames: ['Handling', 'Fixes', 'Fixing', 'Tuning', reg(/\bnew\s+\w+\s*stuff/)] },
     ],
     '4HEAD': [
-        { name: 'Aubrey "4HEAD" Webster', factions: ['Street Team', 'Chang Gang'] },
+        { name: 'Aubrey "4HEAD" Webster', factions: ['Gulag Gang'] },
     ],
     '52chains': [
         { name: 'Fidel Guevara', nicknames: ['Don', 'Cabron'] },
