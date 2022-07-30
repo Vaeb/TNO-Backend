@@ -2788,6 +2788,9 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Vladimir Reznik', factions: ['Police'] },
         { name: 'Pepe Ramos', factions: ['Seaside'], displayName: 0 },
     ],
+    RafBull: [
+        { name: 'Matthew Heisenbell', factions: ['Gulag Gang'], displayName: 0, assumeServer: 'public' },
+    ],
     Ragonath: [
         { name: '[Officer] Leif Norgaard', factions: ['Police'], displayName: 2 },
         { name: 'Maxwell Devitt', displayName: 0 },
