@@ -3853,7 +3853,7 @@ export const npCharacters: NpCharacters = {
         {
             name: 'Jean "X" Paul',
             factions: ['Gulag Gang', 'Cleanbois', 'Burger Shot'],
-            nicknames: ['Ghost Rider', 'Rider', 'Casino'],
+            nicknames: ['Ghost Rider', 'Rider', 'Casino', 'News'],
             displayName: 0,
             assumeServer: 'whitelist',
             leader: true,
