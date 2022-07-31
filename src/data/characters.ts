@@ -1909,6 +1909,9 @@ export const npCharacters: NpCharacters = {
     Kongfue: [
         { name: 'Karl "KJ" Johnny Black', factions: ['Seaside'] },
     ],
+    Kookie: [
+        { name: 'Kookie Louw', factions: ['Gulag Gang'] },
+    ],
     KriptedAUS: [
         { name: 'Antonio Rodrigues', factions: ['BBMC'], displayName: 0 },
     ],
