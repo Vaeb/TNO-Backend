@@ -269,6 +269,9 @@ export const npCharacters: NpCharacters = {
     ArsenaI: [
         { name: 'James Arsenal', factions: ['NBC'], displayName: 0 },
     ],
+    AscensionLive: [
+        { name: 'James Malding', factions: ['Street Team'], displayName: 0 },
+    ],
     ash: [
         { name: 'Ash Ketchup', factions: ['Seaside'], displayName: 1, assumeChar: true },
     ],
@@ -658,6 +661,9 @@ export const npCharacters: NpCharacters = {
     ],
     Chatterbox: [
         { name: 'Jagger "Chatterbox" Gerardy' },
+    ],
+    ChavRP: [
+        { name: 'Thai Chav', factions: ['Street Team'], displayName: 2 },
     ],
     Chief: [
         { name: 'Baada Ka', factions: ['GSF'], nicknames: ['Chief'], displayName: 3, assume: 'assumeNpNoOther' },
