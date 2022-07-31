@@ -1618,7 +1618,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Vince Watson', factions: ['Mandem'], displayName: 0 },
     ],
     jimmytulip: [
-        { name: 'Wayne Biggaz', factions: ['Chang Gang'], nicknames: [reg(/\bwe+y+n/), reg(/\bwayne/)] },
+        { name: 'Wayne Biggaz', factions: ['Street Team', 'Chang Gang'], nicknames: [reg(/\bwe+y+n/), reg(/\bwayne/)], leader: true },
     ],
     JJFried: [
         { name: '[Deputy] Jace Barter', factions: ['Police'] },
