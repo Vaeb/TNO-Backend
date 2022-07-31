@@ -1346,6 +1346,9 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Casey Valentine', factions: ['Police'] },
         { name: 'Richie Mersion', factions: ['Mersions'], displayName: 0 },
     ],
+    hidaruma: [
+        { name: 'Nico Kanto', factions: ['HOA'] },
+    ],
     HiredGunRP: [
         { name: '[Deputy] Colt Shepherd', factions: ['Police'] },
     ],
