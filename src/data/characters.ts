@@ -3133,6 +3133,7 @@ export const npCharacters: NpCharacters = {
     Simo: [
         { name: '[Judge] Reggie Might', factions: ['Seaside', 'DoJ'], displayName: 1, assumeServer: 'whitelist' },
         { name: '[Lawyer] Blake Specter', factions: ['DoJ'] },
+        { name: '[Officer] Rodney Fuel', factions: ['Police'] },
         { name: '[Officer] Reggie Might', factions: ['Police'], assumeServer: 'public' },
     ],
     Simplyje2ns: [
