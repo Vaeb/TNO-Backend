@@ -598,7 +598,7 @@ export const npCharacters: NpCharacters = {
     CanadianYETI_: [
         { name: 'Tee ?', factions: ['SSB'], assumeServer: 'public' },
     ],
-    CappedRP: [
+    Capped: [
         { name: 'Capped Tarranova', factions: ['Street Team', 'Chang Gang'], nicknames: ['Pigeon', 'Terranova', 'Nova'], displayName: 0 },
     ],
     capsure: [
