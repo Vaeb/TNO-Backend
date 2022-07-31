@@ -3578,6 +3578,9 @@ export const npCharacters: NpCharacters = {
     thicbootyconspiracyshorty: [
         { name: 'Karli Marx', factions: ['BBMC'], displayName: 0, assumeServer: 'public' },
     ],
+    Thirteen9N: [
+        { name: 'Arya Shah', factions: ['Street Team'], displayName: 1 },
+    ],
     Timmac: [
         { name: '[Deputy] T.J. Mack', factions: ['Police'], assumeServer: 'whitelist' },
         { name: 'Gomer Colton', nicknames: ['Gomey'], assumeServer: 'whitelist' },
