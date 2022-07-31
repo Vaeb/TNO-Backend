@@ -2265,7 +2265,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Yoi Tsukita', assume: 'assumeOther' },
     ],
     Merald: [
-        { name: 'Jaylen Carter', factions: ['Street Team', 'Chang Gang'], nicknames: ['LampPost', 'Lamp Post'], displayName: 1, leader: true },
+        { name: 'Jaylen Carter', factions: ['Street Team', 'Chang Gang'], nicknames: ['LampPost', 'Lamp Post'], displayName: 1 },
     ],
     Merrcy: [
         { name: 'Cody Palmer', factions: ['CBPD', 'Rooster'], displayName: 0 },
