@@ -1296,7 +1296,7 @@ export const npCharacters: NpCharacters = {
             factions: ['Development', 'Tuner Shop'],
             nicknames: ['Handling', 'Fixes', 'Fixing', 'Tuning', reg(/\btuners?(?:\s*\w*)*leaks/), reg(/\bnew\s+\w+\s*stuff/)],
         },
-        { name: 'Igor Skovacic' },
+        { name: 'Igor Skovacic', nicknames: ['GOR'] },
         { name: 'Robin Williams', factions: ['Self Insert', 'One Life'], displayName: 0 },
         { name: 'Terminator T777', displayName: 0 },
         { name: 'Big M', displayName: 0 },
