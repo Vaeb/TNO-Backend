@@ -41,8 +41,8 @@ export const npCharacters: NpCharacters = {
         { name: 'Aubrey "4HEAD" Webster', factions: ['Gulag Gang'] },
     ],
     '52chains': [
+        { name: '[Officer] Carmine Costello', factions: ['Police'], nicknames: ['Mouse'], displayName: 1 },
         { name: 'Fidel Guevara', nicknames: ['Don', 'Cabron'] },
-        { name: 'Carmine "The Mouse" Costello' },
     ],
     '713stew': [
         { name: 'Junior Diaz', factions: ['Vagos'], displayName: 0 },
