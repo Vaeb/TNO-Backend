@@ -3531,6 +3531,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Arthur Hammond', nicknames: ['The "Doctor"'] },
         { name: '[Officer] Delaney', factions: ['Police'] },
     ],
+    TheDoubles: [
+        { name: 'Peter Johnsen', factions: ['Gulag Gang'] },
+    ],
     TheEazyLife: [
         { name: 'Brandon Valentino', factions: ['Pegasus'], displayName: 0 },
     ],
