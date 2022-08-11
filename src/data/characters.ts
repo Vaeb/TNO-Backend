@@ -1525,7 +1525,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Lucas Shadow', factions: ['DoC'], displayName: 0 },
     ],
     ItsSlikeR: [
-        { name: 'Chris Turtle', nicknames: ['Lil Sneech', 'Lil Sneach', 'Sneach'], displayName: 3 },
+        { name: 'Chris Turtle', nicknames: ['Lil Sneach', 'Lil Sneech', 'Sneach'], displayName: 3 },
         { name: 'Hershall Turtle', nicknames: ['Hershal'] },
         { name: 'Abe Makaveli', displayName: 0, assumeServer: 'whitelist' },
         { name: 'Abe Moe', displayName: 0, assumeServer: 'public' },
@@ -1623,6 +1623,9 @@ export const npCharacters: NpCharacters = {
     ],
     jimmytulip: [
         { name: 'Wayne Biggaz', factions: ['Street Team', 'Chang Gang'], nicknames: [reg(/\bwe+y+n/), reg(/\bwayne/)], leader: true },
+    ],
+    JinxerTTY: [
+        { name: 'Brandon Bowers', factions: ['Gulag Gang'], nicknames: [String.fromCharCode(68, 117, 109, 98, 102, 117, 99, 107)] }, // -_-
     ],
     JJFried: [
         { name: '[Deputy] Jace Barter', factions: ['Police'] },
