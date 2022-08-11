@@ -1521,7 +1521,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Lucas Shadow', factions: ['DoC'], displayName: 0 },
     ],
     ItsSlikeR: [
-        { name: 'Chris Turtle', nicknames: ['Lil Sneach', 'Sneach'], displayName: 0 },
+        { name: 'Chris Turtle', nicknames: ['Lil Sneech', 'Lil Sneach', 'Sneach'], displayName: 3 },
         { name: 'Hershall Turtle', nicknames: ['Hershal'] },
         { name: 'Abe Makaveli', displayName: 0, assumeServer: 'whitelist' },
         { name: 'Abe Moe', displayName: 0, assumeServer: 'public' },
