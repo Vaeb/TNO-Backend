@@ -303,7 +303,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Gracie ?' },
     ],
     aurvinR: [
-        { name: '[Dispatch] John Doe', factions: ['Police'] },
+        { name: '[Deputy] John Doe', factions: ['Police'] },
     ],
     Aus24: [
         { name: '[Officer] Jack Davenport', factions: ['Police'] },
