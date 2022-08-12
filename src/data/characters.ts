@@ -380,7 +380,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Mamaita "Mama" Jehmimi', factions: ['Britney Gang'] },
     ],
     banditobrown1: [
-        { name: "Shankeal O'Neal", factions: ['Roadmen', 'Mandem'], nicknames: ['Shank', 'Shankyou'] },
+        { name: "Shankeal O'Neal", factions: ['Mandem'], nicknames: ['Shank', 'Shankyou'] },
     ],
     barryscottlive: [
         { name: 'Barry Scott' },
@@ -1488,7 +1488,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Donovan "DK" King', factions: ['GSF'] },
     ],
     ironmonkeytv: [
-        { name: 'Winston Bolt' },
+        { name: 'Winston Bolt', factions: ['Mandem'] },
         { name: 'Dragon' },
     ],
     itmeJP: [
@@ -1679,7 +1679,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Dante Thomas', factions: ['HOA'], displayName: 0 },
     ],
     JPF_14: [
-        { name: 'Jay Martin', factions: ['Roadmen', 'Mandem'], displayName: 0 },
+        { name: 'Jay Martin', factions: ['Mandem'], displayName: 0 },
     ],
     JPKMoto: [
         { name: '[Clerk] Odessa Pearson', factions: ['DoJ'], displayName: 1 },
@@ -1735,7 +1735,7 @@ export const npCharacters: NpCharacters = {
     ],
     JustJamie: [
         { name: '[Officer] George Lawson', factions: ['Police'], nicknames: ['592'] },
-        { name: 'Tommy Cruizer', factions: ['Roadmen', 'Tuner Shop'] },
+        { name: 'Tommy Cruizer', factions: ['Mandem', 'Tuner Shop'] },
         { name: 'Jamie Bee', factions: ['Self Insert'], displayName: 0 },
     ],
     JustPenchi: [
@@ -2065,7 +2065,7 @@ export const npCharacters: NpCharacters = {
         { name: '[EMS] Lei Sanya', factions: ['Medical'], nicknames: ['Lasagna'], displayName: 0 },
     ],
     LJHUNCHO: [
-        { name: 'Leon Johnson', factions: ['Roadmen', 'Mandem'], nicknames: ['LJ'], displayName: 0 },
+        { name: 'Leon Johnson', factions: ['Mandem'], nicknames: ['LJ'], displayName: 0 },
     ],
     Llikthead: [
         { name: 'Garion Noble', factions: ['BBMC', 'CBPD', 'Rooster'], displayName: 1 },
@@ -2242,8 +2242,8 @@ export const npCharacters: NpCharacters = {
     MatchaSmash: [
         { name: '[EMS] Rowan Hunter', factions: ['Medical'] },
     ],
-    MattEU___: [
-        { name: 'Matthew Antov', factions: ['Roadmen', 'Mandem'], nicknames: ['Matt'], displayName: 0 },
+    MattEU: [
+        { name: 'Matthew Antov', factions: ['Mandem'], nicknames: ['Matt'], displayName: 0 },
     ],
     Mattie: [
         { name: '[Dr.] Mikhail Keehl', factions: ['DoC', 'Medical'], displayName: 2 },
@@ -3276,7 +3276,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Casey Boyd', nicknames: ['Caseboy', 'L8PD'], displayName: 0 },
     ],
     SparkyKNE: [
-        { name: 'Sparky Kane', factions: ['Roadmen', 'Mandem'], displayName: 1 },
+        { name: 'Sparky Kane', factions: ['Mandem'], displayName: 1 },
     ],
     SpekCypher: [
         { name: 'Luis Fernandez', factions: ['HOA'], displayName: 0 },
@@ -3443,7 +3443,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Hunter "Wingman" Skye', factions: ['Rooster'] },
     ],
     syph3rau: [
-        { name: 'Lyon Martinez', factions: ['Roadmen', 'Mandem'] },
+        { name: 'Lyon Martinez', factions: ['Mandem'] },
     ],
     Syraphic: [
         { name: 'Elena Marilyn Vega', factions: ['Gulag Gang'] },
@@ -3739,7 +3739,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Esteban Julio-Cruz-Perez-Rodriguez', factions: ['Marabunta'] },
     ],
     Vedstar: [
-        { name: 'Ved Jiggyjoglue', factions: ['Mandem', 'Roadmen'] },
+        { name: 'Ved Jiggyjoglue', factions: ['Mandem'] },
     ],
     Venomfly: [
         { name: 'Babe Calloway', factions: ['Rooster'], displayName: 0 },
