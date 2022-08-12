@@ -237,6 +237,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Tonish Corleone', assumeServer: 'public' },
         { name: '[Deputy] Anthony Copleone', factions: ['Police'], nicknames: ['reporting for duty'] },
     ],
+    Anv1Ltv: [
+        { name: 'Brooklyn "BK" Davis', factions: ['GSF'] },
+    ],
     Apitoxin11: [
         { name: 'Trigger Freebird', factions: ['Harmony'] },
     ],
