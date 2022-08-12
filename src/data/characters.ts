@@ -817,7 +817,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Fred Hurst', nicknames: [reg(/Lim.\s?Bizkif/)] },
     ],
     cyter: [
-        { name: 'Demetrius "Draco" Jones', factions: ['Seaside'], leader: true, nicknames: ['DJ'] },
+        { name: 'Demetrius "Draco" Jones', factions: ['Seaside'], nicknames: ['DJ'] },
     ],
     D4N1ELLE: [
         { name: 'Quimbley Hayabusa', factions: ['CBPD', 'Rooster'], nicknames: ['Q'], displayName: 3 },
