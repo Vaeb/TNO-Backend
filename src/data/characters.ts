@@ -1424,8 +1424,8 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] John Hydra', factions: ['Police'], displayName: 2 },
     ],
     iamnxera: [
+        { name: '[Officer] Tommy Tinker', factions: ['Police'], displayName: 2, assumeServer: 'whitelist' },
         { name: '[Officer] Tommy Tinker', factions: ['Police'], displayName: 1, assumeServer: 'public' },
-        { name: 'Tommy Tinker', displayName: 1, assumeServer: 'whitelist' },
     ],
     IAmSoul_RP: [
         { name: 'Johnathen Riker' },
