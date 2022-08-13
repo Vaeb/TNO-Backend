@@ -1446,7 +1446,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Jesse Reed', factions: ['BBMC'], nicknames: ['Cree'] },
     ],
     idksean: [
-        { name: '[Dept. Mayor] Sean Deane', factions: ['DoJ'], displayName: 0 },
+        { name: 'Sean Deane', displayName: 0 },
     ],
     IG_Raptor: [
         { name: '[Ranger] Matt Cordell', factions: ['Police'], assumeServer: 'international' },
@@ -1988,7 +1988,7 @@ export const npCharacters: NpCharacters = {
     ],
     kyliebitkin: [
         { name: '[Deputy] Brittany Angel', factions: ['Police'], nicknames: ['Angle', 'Captain'] },
-        { name: '[Dept. Mayor] Mary Mushkin', factions: ['DoJ', 'Tuner Shop'], nicknames: ['Red Devil', 'R3d Devil'], displayName: 1 },
+        { name: 'Mary Mushkin', factions: ['Tuner Shop'], nicknames: ['Red Devil', 'R3d Devil'], displayName: 1 },
         { name: 'Sarah Reynolds', displayName: 0 },
         { name: 'Kylie Bitcoin', factions: ['Self Insert'], displayName: 0 },
     ],
@@ -3842,10 +3842,10 @@ export const npCharacters: NpCharacters = {
     ],
     WithExtraSauce: [
         { name: '[Deputy] Budweiser Malarky', factions: ['Police'], nicknames: ['Bud'], displayName: 2 },
-        { name: '[Dept. Mayor] Jeffy Coldiron', factions: ['DoJ'], displayName: 2 },
+        { name: 'Jeffy Coldiron', displayName: 2 },
     ],
     withoutSunshine: [
-        { name: '[Dept. Mayor] Lola Sunshine', factions: ['DoJ'], displayName: 1 },
+        { name: 'Lola Sunshine', displayName: 1 },
     ],
     Wizop: [
         { name: 'Dreyvon Cartier', factions: ['Gulag Gang'], nicknames: ['Drip'], displayName: 3 },
