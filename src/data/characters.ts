@@ -3227,7 +3227,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Conrad Gross', assume: 'assumeOther' },
     ],
     SmithyFPS: [
-        { name: 'Craig Munson', nicknames: ['Crackhead Craig'], displayName: 3, assume: 'assumeNpNoOther' },
+        { name: 'Craig Munson', factions: ['NBC'], nicknames: ['Crackhead Craig'], displayName: 3, assume: 'assumeNpNoOther' },
     ],
     SmithyPlaysUK: [
         { name: 'Reginald Parker', factions: ['DoC'] },
