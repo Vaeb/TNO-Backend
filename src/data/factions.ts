@@ -321,6 +321,7 @@ const filterRename: { [key in FactionMini]?: string } = {
     asrr: 'Alta Street Ruff Rydaz',
     nbc: 'Natural Born Crackheads',
     bsk: 'Brouge Street Kingz',
+    marabunta: 'Marabunta Grande',
     bbmc: 'Bondi Boys MC',
     wastelanders: 'The Wastelanders',
     rooster: 'Rooster Companies',
