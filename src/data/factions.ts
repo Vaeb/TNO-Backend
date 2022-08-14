@@ -210,7 +210,7 @@ export const useColorsLight: { [key in FactionColorsMini]: string } = {
     gsf: '#006422',
     ssb: '#9b59b6',
     bsk: '#8854d0',
-    marabunta: '#60a5fa',
+    marabunta: '#66A1FA',
     hoa: '#a6033a',
     gulaggang: '#CDC14C',
     doj: '#00a032',
