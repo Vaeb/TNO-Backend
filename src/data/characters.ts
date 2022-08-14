@@ -785,6 +785,9 @@ export const npCharacters: NpCharacters = {
         { name: '[Dr.] Agnes Ranbough', factions: ['Medical'] },
         { name: 'Grimoire "Gremlin" Hauttogs' },
     ],
+    cruzare: [
+        { name: 'Alfie Cruz', factions: ['Marabunta'] },
+    ],
     CrystalMushroom: [
         { name: 'Regina Bunny' },
     ],
@@ -3963,6 +3966,9 @@ export const npCharacters: NpCharacters = {
     ],
     Zee_RP: [
         { name: 'Zee Carbone', factions: ['Royal Mafia'], displayName: 0 },
+    ],
+    zerhxy: [
+        { name: 'Prince Tate', factions: ['Marabunta'], nicknames: ['Sicario'], displayName: 1 },
     ],
     Zerkaa: [
         { name: 'Tommy Tate', factions: ['Mandem'], leader: true, nicknames: ['Tommy T'], displayName: 3 },
