@@ -1631,7 +1631,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Wayne Biggaz', factions: ['Street Team', 'Chang Gang'], nicknames: [reg(/\bwe+y+n/), reg(/\bwayne/)], leader: true },
     ],
     JinxerTTY: [
-        { name: 'Brandon Bowers', factions: ['Gulag Gang'], nicknames: [String.fromCharCode(68, 117, 109, 98, 102, 117, 99, 107)] }, // -_-
+        { name: 'Brandon Bowers', factions: ['Gulag Gang'], nicknames: [String.fromCharCode(68, 117, 109, 98, 102, 117, 99, 107)], displayName: 3 }, // -_-
     ],
     JJFried: [
         { name: '[Deputy] Jace Barter', factions: ['Police'] },
