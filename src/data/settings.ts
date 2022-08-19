@@ -78,7 +78,7 @@ export const regOthers = [
     { name: 'GTA Story', reg: /story[\s\-]*mode|\bgta[\s:-]*[5v]?[\s\-]+story/i, include: 0 },
     {
         name: '',
-        reg: /\boc\s*rp\b|\bybn\b/i,
+        reg: /\boc\s*rp\b|\bybn\b|\bnew\s*(?:(?:rp|roleplay)\s*)?server/i,
         include: 0,
     },
 ];
