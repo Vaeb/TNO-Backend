@@ -1976,7 +1976,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Notta Local', factions: ['SSB'], nicknames: ['Balla Gang'], displayName: 3 },
         { name: 'Marty Oldmen', displayName: 0 },
         { name: 'Lee Harvey Tinker', displayName: 0 },
-        { name: 'Cop Killa', displayName: 0 },
+        // { name: 'Cop Killa', displayName: 0 },
         { name: 'Kyle Kyle', factions: ['Self Insert', 'One Life'], displayName: 1 },
         { name: 'Sigfried Porsche', nicknames: ['porshe'], displayName: 0 },
         { name: 'Hampton Brandon', nicknames: ['TTD', 'Ten Toes Down'] },
