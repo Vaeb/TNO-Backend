@@ -1201,7 +1201,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Alexander Egorov' },
     ],
     Frshnesss: [
-        { name: 'Tyrell Fresh', factions: ['SSB'], leader: true, nicknames: ['Ty'], displayName: 0 },
+        { name: 'Tyrell Fresh', factions: ['Hydra Gang'], nicknames: ['Ty'], displayName: 0 },
     ],
     Frynaut: [
         { name: 'Kratos Of Sparta', factions: ['Rooster'], nicknames: ['God of War', 'God'] },
@@ -1635,7 +1635,7 @@ export const npCharacters: NpCharacters = {
     ],
     JJFried: [
         { name: '[Deputy] Jace Barter', factions: ['Police'] },
-        { name: 'Ace Carter', factions: ['BCG'] },
+        { name: 'Ace Carter', factions: ['Hydra Gang', 'BCG'] },
     ],
     JJLakee: [
         { name: 'Jay Jarvis', factions: ['Hydra Gang', 'Harmony', 'Pegasus'], nicknames: ['JJ'], displayName: 0, facebook: true },
