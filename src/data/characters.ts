@@ -1188,7 +1188,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Derek Bogart', factions: ['Condemned MC'], displayName: 0 },
     ],
     FredosRP: [
-        { name: 'Fredo ?', factions: ['SSB'], displayName: 1 },
+        { name: 'Fredo Sanchez', factions: ['RUST'], displayName: 1 },
     ],
     frightval: [
         { name: 'Berry ?', displayName: 1, assumeServer: 'public' },
