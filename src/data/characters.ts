@@ -2642,7 +2642,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Evee Poppins' },
     ],
     omareloff: [
-        { name: 'Omar Dedon', factions: ['Gulag Gang'], displayName: 1 },
+        { name: 'Omar Dedon', factions: ['Gulag Gang'], displayName: 1, facebook: true },
     ],
     omie: [
         { name: 'Marty Banks', factions: ['Gulag Gang'], leader: true, assumeServer: 'whitelist' },
