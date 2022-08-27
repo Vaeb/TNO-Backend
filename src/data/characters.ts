@@ -1188,7 +1188,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Derek Bogart', factions: ['Condemned MC'], displayName: 0 },
     ],
     FredosRP: [
-        { name: 'Fredo Sanchez', factions: ['RUST'], displayName: 1 },
+        { name: 'Fredo Sanchez', displayName: 1 },
     ],
     frightval: [
         { name: 'Berry ?', displayName: 1, assumeServer: 'public' },
@@ -1804,7 +1804,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Katt Vincent' },
     ],
     kaylynstagram: [
-        { name: 'Eleanor West', factions: ['RUST'], displayName: 1 },
+        { name: 'Eleanor West', displayName: 1 },
     ],
     Keeno: [
         { name: 'Kyle Brovloski', displayName: 0, assume: 'assumeOther' },
