@@ -3805,6 +3805,11 @@ export const npCharacters: NpCharacters = {
     walnutcast: [
         { name: '[Deputy] Brick James', factions: ['Police'], displayName: 1 },
     ],
+    warpovturk: [
+        { name: 'Appie Turk', factions: ['Gulag Gang'], displayName: 2, assumeServer: 'whitelist' },
+        { name: 'Appie Turk', factions: ['Gulag Gang'], displayName: 2, assumeServer: 'public' },
+        { name: 'Appie Turk', displayName: 2, assumeServer: 'international' },
+    ],
     WaterGotHim: [
         { name: 'Alessio "AJ" Jilani', factions: ['Clean Cartel'] },
     ],
