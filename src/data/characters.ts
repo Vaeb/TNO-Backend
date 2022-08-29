@@ -816,6 +816,9 @@ export const npCharacters: NpCharacters = {
     CydRose: [
         { name: 'Cydney Lune', factions: ['RUST'], nicknames: ['Cyd'], displayName: 1 },
     ],
+    cynbubs: [
+        { name: 'Charli Woods', displayName: 0 },
+    ],
     cyr: [
         { name: 'Joe Caine', displayName: 0 },
         { name: "Khan Di'Sendo", displayName: 0 },
