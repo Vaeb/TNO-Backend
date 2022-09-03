@@ -275,43 +275,48 @@ export const getStreams = async (options: GetStreamsOptions, endpoint = '<no-end
     const gtaStreamsObj: { [key: string]: HelixStream } = {};
     const gtaStreams: HelixStream[] = [];
     let after;
-    while (searchNum > 0) {
-        const limitNow = Math.min(searchNum, bigLimit);
-        searchNum -= limitNow;
-        const gtaStreamsNow: HelixPaginatedResult<HelixStream> = await apiClient.helix.streams.getStreams({
-            game,
-            // language: optionsParsed.international ? undefined : language,
-            language: languages,
-            limit: String(limitNow),
-            type: streamType,
-            after,
-        });
+    try {
+        while (searchNum > 0) {
+            const limitNow = Math.min(searchNum, bigLimit);
+            searchNum -= limitNow;
+            const gtaStreamsNow: HelixPaginatedResult<HelixStream> = await apiClient.helix.streams.getStreams({
+                game,
+                // language: optionsParsed.international ? undefined : language,
+                language: languages,
+                limit: String(limitNow),
+                type: streamType,
+                after,
+            });
 
-        if (gtaStreamsNow.data.length === 0) {
-            log(`${endpoint}: Search ended (limit: ${limitNow})`, gtaStreamsNow);
-            break;
-        }
-
-        const lookupStreams = [];
-        for (const helixStream of gtaStreamsNow.data) {
-            const { userId } = helixStream;
-            if (gtaStreamsObj[userId]) continue;
-            gtaStreamsObj[userId] = helixStream;
-            gtaStreams.push(helixStream);
-            if (knownPfps[userId] === undefined) {
-                lookupStreams.push(userId);
+            if (gtaStreamsNow.data.length === 0) {
+                log(`${endpoint}: Search ended (limit: ${limitNow})`, gtaStreamsNow);
+                break;
             }
-        }
 
-        if (lookupStreams.length > 0) {
-            log(`${endpoint}: Looking up pfp for ${lookupStreams.length} users after...`);
-            const foundUsers = await apiClient.helix.users.getUsersByIds(lookupStreams);
-            for (const helixUser of foundUsers) {
-                knownPfps[helixUser.id] = helixUser.profilePictureUrl.replace('-300x300.', '-50x50.');
+            const lookupStreams = [];
+            for (const helixStream of gtaStreamsNow.data) {
+                const { userId } = helixStream;
+                if (gtaStreamsObj[userId]) continue;
+                gtaStreamsObj[userId] = helixStream;
+                gtaStreams.push(helixStream);
+                if (knownPfps[userId] === undefined) {
+                    lookupStreams.push(userId);
+                }
             }
-        }
 
-        after = gtaStreamsNow.cursor;
+            if (lookupStreams.length > 0) {
+                log(`${endpoint}: Looking up pfp for ${lookupStreams.length} users after...`);
+                const foundUsers = await apiClient.helix.users.getUsersByIds(lookupStreams);
+                for (const helixUser of foundUsers) {
+                    knownPfps[helixUser.id] = helixUser.profilePictureUrl.replace('-300x300.', '-50x50.');
+                }
+            }
+
+            after = gtaStreamsNow.cursor;
+        }
+    } catch (err) {
+        log(`GETSTREAMS FETCH FAILED | ${endpoint}: Error`, err);
+        return [];
     }
 
     return gtaStreams;
@@ -504,6 +509,10 @@ export const getNpLive = async (baseOptions = {}, override = false, endpoint = '
 
                 const fbStreams = Object.values(fbStreamsCache).sort((a, b) => b.viewers - a.viewers);
                 const gtaStreams: (HelixStream | FbStreamDetails)[] = await getStreams({ searchNum, international }, endpoint);
+                if (gtaStreams.length === 0) {
+                    resolve(cachedResults[optionsStr]!);
+                    return;
+                }
 
                 const numStreamsFb = fbStreams.length;
                 if (numStreamsFb > 0) {
