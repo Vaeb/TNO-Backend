@@ -53,7 +53,8 @@ console.log(regNpInternational);
 export const regNpWhitelist = /(?<!(?:waiting for|chance at)\s)(?:\bwhitelist|\bwl+\b|(?:no[\s\-_.]*pixel|\bn[\s\-_.]*p(?=\b|\d))(?:[\s\-_.]*(?:rp|\d+\.?\d*))?[\W_]*(?:main|white)\b|\b(?:main|white)[\W_]*(?:nopixel|np|server)|\bprivate\b(?![\s\-]+(?:detective|investigat\w+)))\b(?!\W+(?:later|after|gone))/i;
 export const regOther = /the\s*family|\btf\s?rp|family\s*rp|twitchrp|\bt\W*rp|\bnon[\s\-]*stop|\bns\s?rp/i;
 export const regOthers = [
-    { name: 'TheFamilyRP', reg: /\btf\s?rp|family\s*(?:rp\b|roleplay)/i, include: 1 },
+    // { name: 'TheFamilyRP', reg: /\btf\s?rp|family\s*(?:rp\b|roleplay)/i, include: 1 },
+    { name: 'TheFamilyRP', reg: /\btf\s?rp/i, include: 1 },
     { name: 'PurpleRP', reg: /\bprp\b|purple\s*(?:rp\b|role\s*play)/i, include: 1 },
     { name: 'TwitchRP', reg: /twitch[\s\-]*rp|\bt\W*rp/i, include: 1 },
     { name: 'NonStopRP', reg: /\bnon[\s\-]*stop\s*(?:rp\b|roleplay)|\bns\s?rp/i, include: 1 },
