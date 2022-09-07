@@ -33,7 +33,7 @@ export const npFactionsRegex = {
     gsf: noLater(noFormer(/\bgrove\b|\bgsf\b|broc+ol+i bo[iy]|\bthe[\s\-_.]*families/i)),
     ssb: noLater(noFormer(/\bball+a+(?:\b|[sgz])|\besb\b|\b[sg]sb\b(?![\s\-]+(?:wo?rld|later))/i)),
     bsk: noFormer(/\bb[s$]k\b|brouge street|burger shot king/i),
-    seaside: noFormer(/\bsea[\-_.]*side\b/i),
+    seaside: noFormer(/\bsea[\-_.]*side\b|(?<!\bthe\s)\bss\b/i),
     marabunta: noLater(noFormer(/\bmarabunta|\bmg\b/i)),
     hoa: noFormer(/\bh[.\s]*o[.\s\-_]*[ab]\b|hogs\s*of\s*anarchy|home[\s\-]*owners[\s\-]*association/i),
     pinkgang: noFormer(/\bpittman|(?:pink|\bpit+?)[\s\-_.]*(?:gang|crew)/i), // [^\w\s(]\s*pc\s*[^\w\s)]
