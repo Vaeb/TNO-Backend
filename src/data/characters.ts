@@ -1641,7 +1641,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Ace Carter', factions: ['Hydra Gang', 'BCG'] },
     ],
     JJLakee: [
-        { name: 'Jay Jarvis', factions: ['Hydra Gang', 'Harmony', 'Pegasus'], nicknames: ['JJ'], displayName: 0, facebook: true },
+        { name: 'Jay Jarvis', factions: ['Hydra Gang', 'Harmony', 'Pegasus'], nicknames: ['JJ'], displayName: 0 }, // facebook
     ],
     JoblessGarrett: [
         { name: 'Garrett Jobless', factions: ['Chang Gang'], facebook: true },
