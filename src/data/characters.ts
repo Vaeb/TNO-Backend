@@ -1723,7 +1723,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Shane Jones', factions: ['DoC'] },
     ],
     Julian: [
-        { name: 'Julian Santorno', factions: ['Seaside'], assumeServer: 'whitelist' },
+        { name: 'Julian Santorno', assumeServer: 'whitelist' },
         { name: 'Julian Santorno', factions: ['Gulag Gang'], assumeServer: 'public' },
         { name: '[Officer] Jules Scarpetta', factions: ['Police'], nicknames: [reg(/\bscar/)], displayName: 1, assumeServer: 'public' },
     ],
