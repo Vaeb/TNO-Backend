@@ -2247,6 +2247,7 @@ export const npCharacters: NpCharacters = {
     ],
     MasterMisuri: [
         { name: 'Jesus Antonio Lopez Contreras', factions: ['HOA', 'Tuner Shop'] },
+        { name: '[Deputy] Jeremias Jimenes', factions: ['Police'] },
     ],
     MatchaSmash: [
         { name: '[EMS] Rowan Hunter', factions: ['Medical'] },
