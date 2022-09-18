@@ -2578,6 +2578,9 @@ export const npCharacters: NpCharacters = {
         { name: 'DaMarcus Lewis', factions: ['Tuner Shop'] },
         { name: 'Big K', factions: ['Self Insert'], displayName: 0 },
     ],
+    NoraExplorer: [
+        { name: 'Nunu El Nene', factions: ['Gulag Gang'], displayName: 1 },
+    ],
     notmerrick: [
         { name: 'Levi Rotti', factions: ['Gulag Gang'], displayName: 1 },
     ],
