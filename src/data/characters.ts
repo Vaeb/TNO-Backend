@@ -3214,7 +3214,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Smino "Hitta" Brown', factions: ['GSF'], assume: 'assumeNpNoOther' },
     ],
     Skud_Oftr: [
-        { name: 'Skud Oftr', factions: ['Seaside'], displayName: 1 },
+        { name: 'Skud Oftr', displayName: 1 },
     ],
     Skushyy: [
         { name: 'Luka Malarkey', factions: ['Italian Mafia'], displayName: 0 },
