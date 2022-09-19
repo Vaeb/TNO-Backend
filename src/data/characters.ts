@@ -3719,6 +3719,9 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Barry Briddle', factions: ['Police'], nicknames: [reg(/\bbriddl/)] },
         { name: 'Toh Biggles Fitzcharles', displayName: 0, nicknames: ['Yaes'] },
     ],
+    uhhMort: [
+        { name: 'Morty Shaw', factions: ['Gulag Gang'], assumeServer: 'public' },
+    ],
     uhLuvi: [
         { name: 'Treyvon Williams', factions: ['GSF'], nicknames: ['Trey'], assume: 'assumeOther' },
     ],
