@@ -440,6 +440,7 @@ export const npCharacters: NpCharacters = {
     ],
     BigRichardRP: [
         { name: "Richard O'Conner", factions: ['Gulag Gang'], nicknames: ['Richie'], displayName: 1 },
+        { name: "[Officer] Rupert O'Copper", factions: ['Police'], displayName: 1 },
     ],
     BigSkenger: [
         { name: 'Zaceed Skengerton', displayName: 1, assumeServer: 'whitelist' },
