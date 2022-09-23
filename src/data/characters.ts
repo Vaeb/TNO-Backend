@@ -2728,7 +2728,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Peener Pogue', factions: ['Rooster'] },
     ],
     Pezz: [
-        { name: 'Pez Speedwagon', factions: ['BBMC'], displayName: 1 },
+        { name: '[Officer] Pez Speedwagon', factions: ['Police'], displayName: 1 },
         { name: 'Pezzy Pee' },
     ],
     phantomzz_ow: [
