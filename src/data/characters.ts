@@ -266,7 +266,7 @@ export const npCharacters: NpCharacters = {
     Armeeof1: [
         { name: 'Milton Pointdexter' },
     ],
-    arnie_v: [
+    Arnie: [
         { name: 'Vincent Carl', factions: ['Hydra Gang', 'BCG'], nicknames: ['Arnie', reg(/\b(?:vincent|carl)/)], displayName: 3 },
     ],
     ArsenaI: [
