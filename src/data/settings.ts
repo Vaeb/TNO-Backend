@@ -24,7 +24,7 @@ const addOtherCountries = (reg: RegExp) => new RegExp(
     replaceAll(
         reg.source,
         'india',
-        '(?:india\\w*|brazil\\w*|brasil\\w*|am[ée]rica\\s+do\\s+sul|sul\\s*america\\w*|south\\s*america\\w*|s\\.?\\s*a\\b\\.?\\s*)'
+        '(?:india\\w*|brazil\\w*|brasil\\w*|am[ée]rica\\s+do\\s+sul|sul\\s*america\\w*|south\\s*america\\w*|s\\.?/?\\s*a\\b\\.?\\s*)'
     ),
     reg.flags
 );
