@@ -3856,7 +3856,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Remy Brown', factions: ['Mandem'], displayName: 1 },
     ],
     Wiked: [
-        { name: 'Dwayne Flores', factions: ['Mandem'], nicknames: ['Golden Boy'], displayName: 0 },
+        { name: 'Dwayne Flores', nicknames: ['Golden Boy'], displayName: 0 },
         { name: 'Kyrus Langley', factions: ['SSB'], displayName: 1 },
     ],
     WildJing: [
