@@ -2565,6 +2565,9 @@ export const npCharacters: NpCharacters = {
     NikkisARiot: [
         { name: '[Deputy] Jenny Hall', factions: ['Police'], nicknames: [reg(/\bje\S{1,3}y/)], displayName: 1 },
     ],
+    niztopia: [
+        { name: 'Aziz Abdallah', factions: ['Gulag Gang'] },
+    ],
     Nmplol: [
         { name: 'Buddy Black' },
     ],
