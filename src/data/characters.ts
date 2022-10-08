@@ -436,7 +436,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Dominic "Lil D" Chester', nicknames: ['Sabado de Sol'] },
     ],
     biggwoo: [
-        { name: 'Future Cortair', factions: ['Gulag Gang'] },
+        { name: 'Future Cortair', factions: ['Gulag Gang'], leader: true },
     ],
     BigRichardRP: [
         { name: "Richard O'Conner", factions: ['Gulag Gang'], nicknames: ['Richie'], displayName: 1 },
