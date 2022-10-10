@@ -3368,8 +3368,8 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Frank Williams', factions: ['Police'], displayName: 1, assumeServer: 'whitelist' },
         { name: 'Frankie Eastwood', displayName: 0, assumeServer: 'public' },
     ],
-    Stoneyee: [
-        { name: 'Stone Malone', factions: ['BCG'], displayName: 1 },
+    StoneYEE: [
+        { name: 'Stone Malone', factions: ['Street Team'], displayName: 1 },
     ],
     Stork1e: [
         { name: '[Officer] Luis Montoya', factions: ['Police'], displayName: 2 },
