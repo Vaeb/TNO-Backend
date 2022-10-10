@@ -276,7 +276,7 @@ export const npCharacters: NpCharacters = {
         { name: 'James Malding', factions: ['Street Team'], displayName: 0 },
     ],
     ash: [
-        { name: 'Ash Ketchup', factions: ['Seaside'], displayName: 1, assumeChar: true },
+        { name: 'Ash Ketchup', factions: ['Independent'], displayName: 1, assumeChar: true },
     ],
     Ashaweebaby78: [
         { name: 'Frankiie Fletcher', factions: ['BSK'], displayName: 0 },
@@ -3369,7 +3369,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Frankie Eastwood', displayName: 0, assumeServer: 'public' },
     ],
     StoneYEE: [
-        { name: 'Stone Malone', factions: ['Street Team'], displayName: 1 },
+        { name: 'Stone Malone', factions: ['Street Team', 'BCG'], displayName: 1 },
     ],
     Stork1e: [
         { name: '[Officer] Luis Montoya', factions: ['Police'], displayName: 2 },
