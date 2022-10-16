@@ -3076,6 +3076,9 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Jeffrey Price', factions: ['Police', 'Burger Shot'], displayName: 1 },
         { name: '[Officer] Jack Sawyer', factions: ['Police'] },
     ],
+    SerialKillerRP: [
+        { name: 'Ezio Kafereska', factions: ['Street Team'] },
+    ],
     Sgt_Apollo: [
         { name: 'Salem Barghouthi', factions: ['NBC'], facebook: true },
         { name: '[Officer] Aziz Sultan', factions: ['Police'], nicknames: ['Za Nose'], displayName: 1 },
