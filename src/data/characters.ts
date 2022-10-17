@@ -3327,6 +3327,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Al Saab', factions: ['Cleanbois'], displayName: 2 },
         { name: 'Ray Singha', displayName: 0 },
     ],
+    SSLLAB: [
+        { name: 'Ant Gaboosh', factions: ['Street Team'], displayName: 1 },
+    ],
     StalwartNightmare: [
         { name: '[Deputy] Alex Night', factions: ['Police'], nicknames: ['Speedster'], assumeServer: 'public' },
         { name: '[Dispatch] Alex Night', factions: ['Police'], nicknames: ['Delta-39T', 'D-39T'], displayName: 2, assumeServer: 'whitelist' },
