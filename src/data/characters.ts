@@ -1724,7 +1724,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Shane Jones', factions: ['DoC'] },
     ],
     Julian: [
-        { name: 'Julian Santorno', assumeServer: 'whitelist' },
+        { name: 'Julian Santorno', factions: ['Hydra Gang'], assumeServer: 'whitelist' },
         { name: 'Julian Santorno', factions: ['Gulag Gang'], assumeServer: 'public' },
         { name: '[Officer] Jules Scarpetta', factions: ['Police'], nicknames: [reg(/\bscar/)], displayName: 1, assumeServer: 'public' },
     ],
@@ -2829,7 +2829,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] James Doakes', factions: ['Police'], displayName: 2 },
     ],
     qMARIOx: [
-        { name: 'Fernando "Mario" Reyes', factions: ['Hydra Gang', 'Chang Gang', 'Chaos'], nicknames: ['"Mario" from the Barrio'] },
+        { name: 'Fernando "Mario" Reyes', factions: ['Chang Gang', 'Chaos'], nicknames: ['"Mario" from the Barrio'] },
         { name: '[Officer] Rob Uncle', factions: ['Police'], nicknames: ['Robert'], displayName: 2 },
     ],
     Quru: [
