@@ -276,7 +276,7 @@ export const npCharacters: NpCharacters = {
         { name: 'James Malding', factions: ['Street Team'], displayName: 0 },
     ],
     ash: [
-        { name: 'Ash Ketchup', factions: ['Independent'], displayName: 1, assumeChar: true },
+        { name: 'Ash Ketchup', factions: ['Hydra Gang'], displayName: 1, assumeChar: true },
     ],
     Ashaweebaby78: [
         { name: 'Frankiie Fletcher', factions: ['BSK'], displayName: 0 },
