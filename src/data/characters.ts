@@ -2643,7 +2643,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Peter Frost', factions: ['Police'] },
     ],
     ogk3nz: [
-        { name: 'Marko Russetto', factions: ['BSK'], displayName: 0 },
+        { name: 'Marko Russetto', factions: ['Marabunta'], displayName: 0, leader: true },
     ],
     OhMadOne: [
         { name: '[Lawyer] Ginzu Okada', factions: ['DoJ'] },
