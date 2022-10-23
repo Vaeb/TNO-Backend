@@ -591,7 +591,7 @@ export const npCharacters: NpCharacters = {
     ],
     bythybeard: [
         { name: '[Officer] Sexton Hardcastle', factions: ['Police'], displayName: 2 },
-        { name: 'Wade Willson', factions: ['Lost MC'] },
+        { name: 'Wade Willson', factions: ['HOA'] },
     ],
     CallMeGrub: [
         { name: '[Deputy] Isaac Richardson', factions: ['Police'] },
