@@ -2520,7 +2520,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Moses Khan', factions: ['Mandem'], displayName: 1 },
     ],
     Nerdandi: [
-        { name: '[AA] Philomena Hawthorne', factions: ['Police'], nicknames: ['Luna'] },
+        { name: '[Deputy] Philomena Hawthorne', factions: ['Police'], nicknames: ['Luna', 'Me'] },
         { name: 'Petunia Susan Brookshire', factions: ['Rooster'] },
     ],
     Nescoh: [
