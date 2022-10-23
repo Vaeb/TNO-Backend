@@ -3323,7 +3323,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Garry Smod', factions: ['DoC'], displayName: 0 },
     ],
     Ssaab: [
-        { name: '[Chief of Police] Sam Baas', factions: ['Police'], nicknames: ['Samir', 'Baasem'], displayName: 2, leader: true },
+        { name: '[Trooper] Sam Baas', factions: ['Police'], nicknames: ['Samir', 'Baasem'], displayName: 2 },
         { name: 'Al Saab', factions: ['Cleanbois'], displayName: 2 },
         { name: 'Ray Singha', displayName: 0 },
     ],
