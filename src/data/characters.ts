@@ -136,7 +136,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Dick Dudley', displayName: 2 },
     ],
     AfricanSnowball: [
-        { name: '[Officer] Dwayne Carter IV', factions: ['Police'], nicknames: [reg(/good [a*][s*]+ day/)], displayName: 2 },
+        { name: '[Trooper] Dwayne Carter IV', factions: ['Police'], nicknames: [reg(/good [a*][s*]+ day/)], displayName: 2 },
         { name: 'Buck Stanton', displayName: 2 },
         { name: 'Leland "LJ" Jones', factions: ['GSF', 'Pegasus'] },
         { name: 'Taylor Africansnowball', factions: ['Self Insert'], displayName: 0 },
@@ -542,7 +542,7 @@ export const npCharacters: NpCharacters = {
     ],
     buddha: [
         { name: 'Lang Buddha', factions: ['Cleanbois', 'Clean Cartel', 'Rooster'], leader: true, nicknames: ['Circle Andy', 'Timelord'], assumeChar: true, assumeServer: 'whitelist' },
-        { name: '[Officer] LeBron James', factions: ['Police'], nicknames: ['623'], displayName: 1 },
+        { name: '[Trooper] LeBron James', factions: ['Police'], nicknames: ['623'], displayName: 1 },
         { name: '[Ranger] Lang Buddha', factions: ['Police'], displayName: 1, assumeServer: 'public' },
         { name: 'Esteban Julio-Ricardo-Montoya-De-La-Rosa Ramirez', factions: ['Police'] },
         { name: '[Deputy] Kevin Kona', factions: ['Police'] },
