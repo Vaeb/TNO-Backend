@@ -2236,7 +2236,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Dougie Mane', factions: ['NBC'], displayName: 0 },
     ],
     Mantis: [
-        { name: '[Sheriff of SDSO] Domenic Toretti', factions: ['Police'], leader: true },
+        { name: '[Sheriff] Domenic Toretti', factions: ['Police'], leader: true },
         { name: 'Jackson Caldwell', factions: ['Frat'], displayName: 0 },
         { name: 'Ike Block', factions: ['ASRR'], displayName: 0 },
         { name: '[Lawyer] Jerry Callow', factions: ['DoJ'], displayName: 1 },
