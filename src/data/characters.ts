@@ -1904,7 +1904,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Navi Gates' },
     ],
     Kiwo: [
-        { name: '[Agent] Lauren Forcer', factions: ['Police'], assumeServer: 'whitelist' },
+        { name: '[Peacekeeper] Lauren Forcer', factions: ['Police'], assumeServer: 'whitelist' },
         { name: '[Officer] Maisy Graves', factions: ['Police'], assumeServer: 'public' },
         { name: 'Mia Mersion', factions: ['Pegasus'] },
         { name: 'Trish Baggs', displayName: 1 },
