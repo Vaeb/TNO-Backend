@@ -887,7 +887,7 @@ export const npCharacters: NpCharacters = {
     Deansocool: [
         { name: 'Dean Quincy', factions: ['Mandem'], displayName: 0, assume: 'assumeNpNoOther', assumeServer: 'whitelist' },
         { name: '[Deputy] Den Shiesty', factions: ['Police'], displayName: 1 },
-        { name: 'Dean Shiesty', factions: ['SSB'], displayName: 0, assumeServer: 'public' },
+        // { name: 'Dean Shiesty', factions: ['SSB'], displayName: 0, assumeServer: 'public' },
     ],
     Deejayus: [
         { name: 'Albert Intelligence', factions: ['CBPD', 'Rooster'], nicknames: ['A.I.'] },
