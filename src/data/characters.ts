@@ -2129,6 +2129,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Lilith Ailhart', factions: ['HOA'] },
     ],
     lstrictlylogicl: [
+        { name: 'Ricardo Valdez', factions: ['RUST'] },
         { name: '[Peacekeeper] John Spartan', factions: ['Police'], displayName: 2 },
     ],
     Lt_Custard: [
