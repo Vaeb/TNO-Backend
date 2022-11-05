@@ -403,7 +403,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Barry Benson', factions: ['BBMC'], displayName: 0 },
     ],
     bbyruthless: [
-        { name: 'Saint Gomez', factions: ['Hydra Gang'] },
+        { name: 'Saint Gomez', factions: ['Mandem'] },
     ],
     BCBeastly: [
         { name: 'Herbert The Pervert' },
