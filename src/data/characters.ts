@@ -2692,6 +2692,9 @@ export const npCharacters: NpCharacters = {
     OneTapBingus: [
         { name: 'Bodhi Mack', factions: ['Seaside'] },
     ],
+    ooknumber15: [
+        { name: '<Contributor>', factions: ['Development'], assumeChar: true },
+    ],
     Osakanoodles: [
         { name: '[Officer] Antoine Sigel', factions: ['Police'] },
     ],
