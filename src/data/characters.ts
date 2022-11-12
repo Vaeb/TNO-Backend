@@ -981,7 +981,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Landon Campbell', displayName: 0, assume: 'assumeNpNoOther' },
     ],
     Doug: [
-        { name: 'Gazpacho Prince', factions: ['Gulag Gang'], nicknames: ['Pachi', 'Spachi'] },
+        { name: 'Gazpacho Prince', factions: ['Gulag Gang'], nicknames: ['Spachi', 'Pachi', reg(/[sz]pach/)], displayName: 3 },
         { name: 'William "W" Told', nicknames: ['Lil Pump'] },
     ],
     DougisRaw: [
