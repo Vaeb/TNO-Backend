@@ -450,7 +450,7 @@ export const npCharacters: NpCharacters = {
         { name: "[Officer] Rupert O'Copper", factions: ['Police'], displayName: 1 },
     ],
     BigSkenger: [
-        { name: 'Zaceed Skengerton', displayName: 1, assumeServer: 'whitelist' },
+        { name: 'Zaceed Skengerton', factions: ['Gulag Gang'], nicknames: [reg(/\b[zs]a[skc]+[ei]*y?d/)], displayName: 1, assumeServer: 'whitelist' },
         { name: '[Officer] Zacood Skengerson', factions: ['Police'], displayName: 1, assumeServer: 'public' },
     ],
     BikeMan: [
