@@ -823,7 +823,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Freya Manning' },
     ],
     CydRose: [
-        { name: 'Cydney Lune', factions: ['RUST'], nicknames: ['Cyd'], displayName: 1 },
+        { name: 'Cydney Lune', nicknames: ['Cyd'], displayName: 1 },
     ],
     cynbubs: [
         { name: 'Charli Woods', displayName: 0 },
@@ -893,7 +893,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Albert Intelligence', factions: ['CBPD', 'Rooster'], nicknames: ['A.I.'] },
     ],
     DEFAC3D: [
-        { name: 'Denzel Wallace', factions: ['BSK'], displayName: 0 },
+        { name: 'Denzel Wallace', displayName: 0 },
     ],
     Dehxter: [
         { name: 'Mark Jango', factions: ['Clean Cartel'], displayName: 0 },
