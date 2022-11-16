@@ -2693,7 +2693,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Bodhi Mack', factions: ['Seaside'] },
     ],
     ooknumber15: [
-        { name: '<GGC Dev>', factions: ['Gulag Gang', 'Development'], nicknames: ['Xmart', 'Mart'], assumeChar: true },
+        { name: 'GGC Dev', factions: ['Gulag Gang', 'Development'], nicknames: ['Xmart', 'Mart'], assumeChar: true },
     ],
     Osakanoodles: [
         { name: '[Officer] Antoine Sigel', factions: ['Police'] },
