@@ -3715,7 +3715,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Teddy Booker', factions: ['BBMC', 'Mechanic'], displayName: 1 },
     ],
     TPLivewire: [
-        { name: 'Timmy Yougman', factions: ['Seaside'], displayName: 0 },
+        { name: 'Timmy Yougman', displayName: 0 },
     ],
     Trainwreckstv: [
         { name: 'Douglas "Doug Buck" Buck', displayName: 0 },
