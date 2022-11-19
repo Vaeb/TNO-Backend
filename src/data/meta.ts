@@ -56,6 +56,7 @@ export const npFactionsReal = { // map: removed spaces + converted to lower case
     royalmafia: 'Royal Mafia',
     selfinsert: 'Self Insert',
     gulaggang: 'Gulag Gang',
+    dons: 'Dons',
     podcast: 'Podcast',
     watchparty: 'Watch Party',
     onelife: 'One Life',

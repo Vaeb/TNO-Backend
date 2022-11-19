@@ -132,6 +132,9 @@ export const npCharacters: NpCharacters = {
         { name: '[Lawyer] Adam Prince', factions: ['DoJ'] },
         { name: '[Dr.] Valentine', factions: ['Medical'] },
     ],
+    aezke: [
+        { name: 'Khalid Hussain', factions: ['Dons'], displayName: 1 },
+    ],
     AFCB78: [
         { name: 'Dick Dudley', displayName: 2 },
     ],
@@ -999,6 +1002,9 @@ export const npCharacters: NpCharacters = {
     DTalmer: [
         { name: 'Jackson Wilson', factions: ['Harmony'], nicknames: ['Blacksteel'], displayName: 0 },
     ],
+    DummyWack: [
+        { name: 'Nathan Peters', factions: ['Dons'], nicknames: ['Nate', 'Turtleneck'] },
+    ],
     Dunrunnin12: [
         { name: 'Thomas Dwayne', factions: ['Stable'], nicknames: ['The Narrator'], displayName: 0 },
         { name: '[Ride Along] Talgar Blootonn', factions: ['Police'], displayName: 1 },
@@ -1241,7 +1247,7 @@ export const npCharacters: NpCharacters = {
     ],
     gangsters_paradise: [
         { name: 'Jamal Abdul Jabbar', factions: ['Gulag Gang'], displayName: 1 },
-        { name: 'Maz Razi', factions: ['Italian Mafia'], nicknames: ['Uncle Tony', 'Uncle T'], displayName: 3 },
+        { name: 'Maz Razi', factions: ['Dons'], nicknames: ['Uncle Tony', 'Uncle T'], displayName: 3 },
     ],
     Garek: [
         { name: 'Burt "Gloryon" Beans', factions: ['LARPers', 'Cleanbois', 'Rooster'], nicknames: ['Cleric'] },
@@ -1493,6 +1499,9 @@ export const npCharacters: NpCharacters = {
     ILYCappiCat: [
         { name: 'SunMoon Lee', factions: ['RUST'], displayName: 1 },
     ],
+    ilyjordi: [
+        { name: 'Ralphie Ralphs', factions: ['Dons'], displayName: 1 },
+    ],
     ImFluffinJiggly: [
         { name: '[Deputy] ? Wilkons', factions: ['Police'], assumeServer: 'public' },
     ],
@@ -1743,7 +1752,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Mercy Peggers' },
     ],
     JustDurant: [
-        { name: 'Toni Balbani', factions: ['Italian Mafia'], displayName: 0 },
+        { name: 'Toni Balbani', factions: ['Dons'], displayName: 0 },
     ],
     JustenTymes: [
         { name: 'Blanden Haster', factions: ['HOA'], displayName: 1 },
@@ -2668,7 +2677,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Evee Poppins' },
     ],
     omareloff: [
-        { name: 'Omar Dedon', factions: ['Gulag Gang'], displayName: 1, facebook: true },
+        { name: 'Omar Dedon', factions: ['Gulag Gang', 'Dons'], displayName: 1, facebook: true },
     ],
     omie: [
         { name: 'Marty Banks', factions: ['Gulag Gang'], leader: true, assumeServer: 'whitelist' },
@@ -3082,6 +3091,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Arush Patel "Speedy" Santana', factions: ['Vagos', 'Cleanbois'], leader: true, nicknames: ['El Jefe'] },
         { name: '[Deputy] Sayeed White', factions: ['Police'], nicknames: ['Mr. White'], displayName: 2 },
     ],
+    scenri: [
+        { name: 'Reno Panic', factions: ['Dons'] },
+    ],
     Sciencegun: [
         { name: 'John "Turbo" Miller' },
     ],
@@ -3251,6 +3263,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Skud Oftr', displayName: 1 },
     ],
     Skushyy: [
+        { name: 'Joey Violento', factions: ['Dons'], displayName: 1 },
         { name: 'Luka Malarkey', factions: ['Italian Mafia'], displayName: 0 },
     ],
     skxd07: [
@@ -3607,6 +3620,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Peter Johnsen', factions: ['Gulag Gang'] },
     ],
     TheEazyLife: [
+        { name: 'Tyler "Ty" Thompson', factions: ['Dons'] },
         { name: 'Brandon Valentino', factions: ['Pegasus'], displayName: 0 },
     ],
     theeYAIR: [
@@ -4029,7 +4043,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Renato Ortiz', factions: ['Vagos'], displayName: 0 },
     ],
     Zee_RP: [
-        { name: 'Zee Carbone', factions: ['Royal Mafia'], displayName: 0 },
+        { name: 'Zee Carbone', factions: ['Dons'], displayName: 1 },
     ],
     zerhxy: [
         { name: 'Prince Tate', factions: ['Marabunta'], nicknames: ['Sicario'], displayName: 1 },
