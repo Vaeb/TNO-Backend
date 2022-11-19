@@ -657,6 +657,9 @@ export const npCharacters: NpCharacters = {
     CazeyTV: [
         { name: 'Sam Simmons', factions: ['NBC'], displayName: 0 },
     ],
+    CbasRP: [
+        { name: 'Cbas ?', factions: ['Dons'] },
+    ],
     CFirst93: [
         { name: 'Mac Jones', factions: ['GSF'], nicknames: ['MJ'], displayName: 0 },
     ],
