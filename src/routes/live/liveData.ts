@@ -1,4 +1,4 @@
-import { HelixPaginatedResult, HelixStream, HelixStreamType } from '@twurple/api';
+import { HelixPaginatedResult, HelixStream, HelixStreamType, HelixClip } from '@twurple/api';
 import { gotScraping } from 'got-scraping';
 
 import { apiClient } from '../../twitchSetup';
@@ -70,9 +70,12 @@ const game = '32982' as const;
 const languages: string[] = ['en', 'hi', 'no', 'pt']; // https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
 const streamType: HelixStreamType = 'live';
 const fetchLimit = 100 as const;
+const fetchLimitClips = 100 as const;
 // const maxPages = 5 as const;
 const searchNumDefault = 2000;
+const searchNumClipsDefault = 1000;
 const searchNumMax = 5000;
+const searchNumClipsMax = 4000;
 const updateCacheMs = 1000 * 60;
 
 const toFactionMini = (faction: string) => faction.toLowerCase().replace(' ', '');
@@ -260,9 +263,9 @@ const npFactionsRegexEntries = Object.entries(npFactionsRegex) as [NpFactionsReg
 const knownPfps: { [key: string]: string } = {};
 
 interface GetStreamsOptions { searchNum?: number; international?: boolean }
-type GetStreamsOptionsRequired = Required<GetStreamsOptions>;
+
 export const getStreams = async (options: GetStreamsOptions, endpoint = '<no-endpoint>'): Promise<HelixStream[]> => {
-    const optionsParsed: GetStreamsOptionsRequired = {
+    const optionsParsed: Required<GetStreamsOptions> = {
         searchNum: searchNumDefault,
         international: false,
         ...filterObj(options, v => v !== undefined),
@@ -320,6 +323,48 @@ export const getStreams = async (options: GetStreamsOptions, endpoint = '<no-end
     }
 
     return gtaStreams;
+};
+
+export const getClips = async (endpoint = '<no-endpoint>'): Promise<HelixClip[]> => {
+    const optionsParsed = {
+        searchNum: searchNumClipsDefault,
+    };
+
+    let { searchNum } = optionsParsed;
+    searchNum = Math.min(searchNum, searchNumClipsMax);
+
+    const foundClips: { [key: string]: HelixClip } = {};
+    const clips: HelixClip[] = [];
+    let after;
+    try {
+        while (searchNum > 0) {
+            const limitNow = Math.min(searchNum, fetchLimitClips);
+            searchNum -= limitNow;
+            const clipsNow: HelixPaginatedResult<HelixClip> = await apiClient.clips.getClipsForGame(game, {
+                limit: limitNow,
+                after,
+            });
+
+            if (clipsNow.data.length === 0) {
+                log(`${endpoint}: Clips search ended (limit: ${limitNow})`, clipsNow);
+                break;
+            }
+
+            for (const clip of clipsNow.data) {
+                const { id } = clip;
+                if (foundClips[id]) continue;
+                foundClips[id] = clip;
+                clips.push(clip);
+            }
+
+            after = clipsNow.cursor;
+        }
+    } catch (err) {
+        log(`GETCLIPS FETCH FAILED | ${endpoint}: Error`, err);
+        return [];
+    }
+
+    return clips;
 };
 
 // interface FbStream {
@@ -447,6 +492,7 @@ interface Live {
     filterFactions: any[];
     streams: Stream[];
     streamsFb: Stream[];
+    clips: HelixClip[];
     channelsFb: string[];
     baseHtml: string;
     baseHtmlFb: string;
@@ -508,11 +554,14 @@ export const getNpLive = async (baseOptions = {}, override = false, endpoint = '
                 // }
 
                 const fbStreams = Object.values(fbStreamsCache).sort((a, b) => b.viewers - a.viewers);
+
                 const gtaStreams: (HelixStream | FbStreamDetails)[] = await getStreams({ searchNum, international }, endpoint);
                 if (gtaStreams.length === 0) {
                     resolve(cachedResults[optionsStr]!);
                     return;
                 }
+
+                const clipsGta = await getClips(endpoint);
 
                 const numStreamsFb = fbStreams.length;
                 if (numStreamsFb > 0) {
@@ -969,6 +1018,7 @@ export const getNpLive = async (baseOptions = {}, override = false, endpoint = '
                     ...includedData,
                     factionCount,
                     filterFactions,
+                    clips: clipsGta,
                     streams: npStreams,
                     streamsFb: npStreamsFb,
                     // streamsFb: [], // Temporary disable fb until frontend fix
