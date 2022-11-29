@@ -69,7 +69,7 @@ const ASTATES = {
 const game = '32982' as const;
 const languages: string[] = ['en', 'hi', 'no', 'pt']; // https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
 const streamType: HelixStreamType = 'live';
-const bigLimit = 100 as const;
+const fetchLimit = 100 as const;
 // const maxPages = 5 as const;
 const searchNumDefault = 2000;
 const searchNumMax = 5000;
@@ -277,7 +277,7 @@ export const getStreams = async (options: GetStreamsOptions, endpoint = '<no-end
     let after;
     try {
         while (searchNum > 0) {
-            const limitNow = Math.min(searchNum, bigLimit);
+            const limitNow = Math.min(searchNum, fetchLimit);
             searchNum -= limitNow;
             const gtaStreamsNow: HelixPaginatedResult<HelixStream> = await apiClient.streams.getStreams({
                 game,
@@ -306,7 +306,7 @@ export const getStreams = async (options: GetStreamsOptions, endpoint = '<no-end
 
             if (lookupStreams.length > 0) {
                 log(`${endpoint}: Looking up pfp for ${lookupStreams.length} users after...`);
-                const foundUsers = await apiClient.helix.users.getUsersByIds(lookupStreams);
+                const foundUsers = await apiClient.users.getUsersByIds(lookupStreams);
                 for (const helixUser of foundUsers) {
                     knownPfps[helixUser.id] = helixUser.profilePictureUrl.replace('-300x300.', '-50x50.');
                 }
