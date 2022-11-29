@@ -343,7 +343,7 @@ interface Clip {
     // wlOverride: boolean;
 }
 
-export const getClips = async (endpoint = '<no-endpoint>'): Promise<HelixClip[]> => {
+export const getClips = async (endpoint = '<no-endpoint>'): Promise<Clip[]> => {
     const optionsParsed = {
         searchNum: searchNumClipsDefault,
     };
@@ -518,7 +518,7 @@ interface Live {
     filterFactions: any[];
     streams: Stream[];
     streamsFb: Stream[];
-    clips: HelixClip[];
+    clips: Clip[];
     channelsFb: string[];
     baseHtml: string;
     baseHtmlFb: string;
@@ -587,7 +587,7 @@ export const getNpLive = async (baseOptions = {}, override = false, endpoint = '
                     return;
                 }
 
-                const clipsGta = await getClips(endpoint);
+                const clips = await getClips(endpoint);
 
                 const numStreamsFb = fbStreams.length;
                 if (numStreamsFb > 0) {
@@ -1044,7 +1044,7 @@ export const getNpLive = async (baseOptions = {}, override = false, endpoint = '
                     ...includedData,
                     factionCount,
                     filterFactions,
-                    clips: clipsGta,
+                    clips,
                     streams: npStreams,
                     streamsFb: npStreamsFb,
                     // streamsFb: [], // Temporary disable fb until frontend fix
