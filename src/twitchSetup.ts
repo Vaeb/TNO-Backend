@@ -1,41 +1,35 @@
+import { ApiClient } from '@twurple/api';
+import { AccessToken, RefreshingAuthProvider } from '@twurple/auth';
 import { promises as fs } from 'fs';
-import { ApiClient } from 'twitch';
-import { RefreshableAuthProvider, StaticAuthProvider } from 'twitch-auth';
 
 import { log } from './utilsEarly';
 
 log('| Setting up twitch client...');
 
-interface AuthData {
+interface AuthData extends AccessToken {
     clientId: string;
     clientSecret: string;
-    accessToken: string;
-    expiryTimestamp: number;
-    refreshToken: string;
     randomFixedString: string;
 }
 
 const fetchAuth = async (): Promise<AuthData> => JSON.parse(String(await fs.readFile('./src/auth.json', 'utf-8')));
 
 export const authData = await fetchAuth();
-const authProvider = new RefreshableAuthProvider(
-    new StaticAuthProvider(authData.clientId, authData.accessToken),
+const authProvider = new RefreshingAuthProvider(
     {
+        clientId: authData.clientId,
         clientSecret: authData.clientSecret,
-        refreshToken: authData.refreshToken,
-        expiry: authData.expiryTimestamp ? new Date(authData.expiryTimestamp) : null,
-        onRefresh: async ({ accessToken, refreshToken, expiryDate }) => {
+        onRefresh: async (newTokenData) => {
             const authDataNew = {
                 ...authData,
-                accessToken,
-                refreshToken,
-                expiryTimestamp: expiryDate ? expiryDate.getTime() : null,
+                ...newTokenData,
             };
 
-            log('>>> Refreshing auth-data to:', accessToken, refreshToken, expiryDate);
+            log('>>> Refreshing auth-data to:', authDataNew.accessToken, authDataNew.refreshToken, authDataNew.expiresIn);
             await fs.writeFile('./src/auth.json', JSON.stringify(authDataNew, null, 4), 'utf-8');
         },
-    }
+    },
+    authData
 );
 
 export const apiClient = new ApiClient({ authProvider });

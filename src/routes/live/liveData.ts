@@ -1,4 +1,4 @@
-import { HelixPaginatedResult, HelixStream, HelixStreamType } from 'twitch';
+import { HelixPaginatedResult, HelixStream, HelixStreamType } from '@twurple/api';
 import { gotScraping } from 'got-scraping';
 
 import { apiClient } from '../../twitchSetup';
@@ -68,7 +68,7 @@ const ASTATES = {
 
 const game = '32982' as const;
 const languages: string[] = ['en', 'hi', 'no', 'pt']; // https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
-const streamType = HelixStreamType.Live;
+const streamType: HelixStreamType = 'live';
 const bigLimit = 100 as const;
 // const maxPages = 5 as const;
 const searchNumDefault = 2000;
@@ -279,11 +279,11 @@ export const getStreams = async (options: GetStreamsOptions, endpoint = '<no-end
         while (searchNum > 0) {
             const limitNow = Math.min(searchNum, bigLimit);
             searchNum -= limitNow;
-            const gtaStreamsNow: HelixPaginatedResult<HelixStream> = await apiClient.helix.streams.getStreams({
+            const gtaStreamsNow: HelixPaginatedResult<HelixStream> = await apiClient.streams.getStreams({
                 game,
                 // language: optionsParsed.international ? undefined : language,
                 language: languages,
-                limit: String(limitNow),
+                limit: limitNow,
                 type: streamType,
                 after,
             });
@@ -333,13 +333,13 @@ export const getStreams = async (options: GetStreamsOptions, endpoint = '<no-end
 // }
 
 interface FbStreamDetails {
-    userDisplayName: string,
-    videoUrl: string
-    title: string,
-    viewers: number,
-    profileUrlOverride: string,
-    thumbnailUrl: string,
-    facebook: boolean,
+    userDisplayName: string;
+    videoUrl: string;
+    title: string;
+    viewers: number;
+    profileUrlOverride: string;
+    thumbnailUrl: string;
+    facebook: boolean;
 }
 
 type FbStreamsMap = { [key: string]: FbStreamDetails };
@@ -1017,7 +1017,7 @@ const fbStreamSkeleton: FbStreamDetails = {
 };
 const fbStreamSkeletonKeys = Object.keys(fbStreamSkeleton);
 
-const checkFbStreamsMap = (fbStreamsMap: any): fbStreamsMap is FbStreamsMap => {
+const checkFbStreamsMap = (fbStreamsMap: FbStreamsMap): fbStreamsMap is FbStreamsMap => {
     if (fbStreamsMap == null || typeof fbStreamsMap !== 'object') return false;
 
     const fbStreams = Object.values(fbStreamsMap);
@@ -1060,7 +1060,7 @@ const integrateFb = (live: Live): Stream[] => {
     return streamsAll;
 };
 
-export const newFbData = async (fbChannels: string[], fbStreamsMap: any, tick: number): Promise<Stream[]> => {
+export const newFbData = async (fbChannels: string[], fbStreamsMap: FbStreamsMap, tick: number): Promise<Stream[]> => {
     console.log(fbChannels, fbStreamsMap);
 
     if (tick < initialStamp) {

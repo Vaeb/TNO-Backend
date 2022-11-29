@@ -2,7 +2,7 @@
 
 import { Router } from 'express';
 
-import { log, mapObjKeys } from '../../utils';
+import { mapObjKeys } from '../../utils';
 import { getNpLive } from './liveData';
 
 import type { RecordGen } from '../../utils';
