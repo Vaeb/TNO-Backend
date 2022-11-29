@@ -325,6 +325,24 @@ export const getStreams = async (options: GetStreamsOptions, endpoint = '<no-end
     return gtaStreams;
 };
 
+interface Clip {
+    id: string;
+    title: string;
+    channelName: string;
+    clipperName: string;
+    viewers: number;
+    thumbnailUrl: string;
+    // factionsMap: { [key in FactionMini]?: boolean };
+    // tagText: string;
+    // tagFaction: FactionColorsMini;
+    // tagFactionSecondary?: FactionColorsMini;
+    // nicknameLookup: string | null;
+    // noOthersInclude: boolean;
+    // noPublicInclude: boolean; // use these props on frontend to determine whether stream should show
+    // noInternationalInclude: boolean; // use these props on frontend to determine whether stream should show
+    // wlOverride: boolean;
+}
+
 export const getClips = async (endpoint = '<no-endpoint>'): Promise<HelixClip[]> => {
     const optionsParsed = {
         searchNum: searchNumClipsDefault,
@@ -334,7 +352,7 @@ export const getClips = async (endpoint = '<no-endpoint>'): Promise<HelixClip[]>
     searchNum = Math.min(searchNum, searchNumClipsMax);
 
     const foundClips: { [key: string]: HelixClip } = {};
-    const clips: HelixClip[] = [];
+    const clips: Clip[] = [];
     let after;
     try {
         while (searchNum > 0) {
@@ -351,10 +369,18 @@ export const getClips = async (endpoint = '<no-endpoint>'): Promise<HelixClip[]>
             }
 
             for (const clip of clipsNow.data) {
-                const { id } = clip;
-                if (foundClips[id]) continue;
+                const { id, broadcasterDisplayName } = clip;
+                const streamer = npCharacters[broadcasterDisplayName.toLowerCase()]
+                if (foundClips[id] || !streamer) continue;
                 foundClips[id] = clip;
-                clips.push(clip);
+                clips.push({
+                    id: clip.id,
+                    title: clip.title,
+                    channelName: broadcasterDisplayName,
+                    clipperName: clip.creatorDisplayName,
+                    viewers: clip.views,
+                    thumbnailUrl: clip.thumbnailUrl,
+                });
             }
 
             after = clipsNow.cursor;

@@ -33,7 +33,7 @@ export const regNp = /(?<!(?:not|like)\s)(?:no[\s\-_.]*pixel|\bn[\s\-_.]*p(?:wl|
 export const regNpPublic = addPublicCounties(mergeRegex([
     /(?:no[\s\-_.]*pixel|\bn[\s\-_.]*p(?=\b|\d))(?:[\s\-_.]*(?:rp|\d+\.?\d*))?[\W_]*pub\w*(?!\W+(?:later|after))/i,
     /|(\bpub\w*[\W_]*(?:no[\s\-_.]*pixel|\bn[\s\-_.]*p(?=\b|\d)))/i,
-    /|(?<=(?:\bon|playing|gta[\s\-_.]*[5v]?|rp|roleplay)\W+)(?:pub|public)/i,
+    /|(?<=(?:\bon|(?:playing|plays)|(?:trying|tries)(?:\s*out)?|(?:taking|takes)\s*over|gta[\s\-_.]*[5v]?|rp|roleplay)\W+)(?:pub|public)/i,
     /|\bpub\w*[\W_]*(?:pub|public|server|county|city|country|universe|timeline|queue|for\b|roleplay|rp\b|stuff\b|shenanigans)/i,
     /|[^\w\s]\s*pub\w*\s*[^\w\s]/i,
     /|\b(?:pub|public)$/i,
