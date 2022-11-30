@@ -372,6 +372,14 @@ type ClipGroups = { [key in ClipGroupNames]: Clip[] };
 
 const emptyClipGroups: ClipGroups = { '24h': [], '7d': [], '30d': [], all: [] };
 
+const clipAfters: { [key in ClipGroupNames]: string | undefined } = { '24h': undefined, '7d': undefined, '30d': undefined, all: undefined };
+
+const clipGroups: ClipGroups = JSON.parse(JSON.stringify(emptyClipGroups));
+const clipGroupsTemp: ClipGroups = JSON.parse(JSON.stringify(emptyClipGroups));
+
+// Has got a clip group active with full clips
+const hasCycled: { [key in ClipGroupNames]: boolean } = { '24h': false, '7d': false, '30d': false, all: false };
+
 // Can run less frequently
 // Make it so that each run it gets the next searchNumClipsDefault clips after `after[group.name]` or reset `after` if it's been 3 hours
 export const getClips = async (endpoint = '<no-endpoint>'): Promise<[ClipGroups, MixedStreamerData]> => {
@@ -386,7 +394,6 @@ export const getClips = async (endpoint = '<no-endpoint>'): Promise<[ClipGroups,
         { name: 'all', offset: undefined },
     ];
 
-    const clipGroups: ClipGroups = { ...emptyClipGroups };
     const streamerData: MixedStreamerData = {};
 
     const nowStamp = +new Date();
@@ -394,26 +401,33 @@ export const getClips = async (endpoint = '<no-endpoint>'): Promise<[ClipGroups,
     for (const group of offsets) {
         let { searchNum } = optionsParsed;
         searchNum = Math.min(searchNum, searchNumClipsMax);
+        let reachedEnd = false;
 
         const clips: Clip[] = [];
+        if (clipAfters[group.name] === undefined) {
+            clipGroupsTemp[group.name] = [];
+        }
 
         const foundClips: { [key: string]: HelixClip } = {};
 
-        let after;
+        log('RESTARTING FROM CLIP_AFTER:', clipAfters[group.name]);
+
         try {
             while (searchNum > 0) {
                 const limitNow = Math.min(searchNum, fetchLimitClips);
-                searchNum -= limitNow;
+
                 const clipsNow: HelixPaginatedResult<HelixClip> = await apiClient.clips.getClipsForGame(game, {
                     limit: limitNow,
                     startDate: group.offset ? new Date(nowStamp - group.offset).toISOString() : undefined,
-                    after,
+                    after: clipAfters[group.name],
                 });
 
                 if (clipsNow.data.length === 0) {
-                    log(`${endpoint}: Clips search ended (limit: ${limitNow})`, clipsNow);
+                    reachedEnd = true;
                     break;
                 }
+
+                searchNum -= limitNow;
 
                 const lookupStreams = [];
 
@@ -481,14 +495,29 @@ export const getClips = async (endpoint = '<no-endpoint>'): Promise<[ClipGroups,
 
                 await lookupPfps(lookupStreams, 'for_clip');
 
-                after = clipsNow.cursor;
+                clipAfters[group.name] = clipsNow.cursor;
             }
         } catch (err) {
             log(`GETCLIPS FETCH FAILED | ${endpoint}: Error`, err);
             return [{ ...emptyClipGroups }, {}];
         }
 
-        clipGroups[group.name] = clips;
+        clipGroupsTemp[group.name] = clipGroupsTemp[group.name].concat(clips);
+
+        if (hasCycled[group.name] === false) {
+            clipGroups[group.name] = clipGroupsTemp[group.name];
+        }
+
+        if (reachedEnd) {
+            log(`${endpoint}: Clips search ended (searchNum before: ${searchNum})`);
+            log('& RESET CLIP_AFTER', hasCycled[group.name]);
+            // Enable hasCycled (assuming there's actually clips, should always be true)
+            if (clipGroupsTemp[group.name].length) {
+                hasCycled[group.name] = true;
+                clipGroups[group.name] = clipGroupsTemp[group.name];
+            }
+            clipAfters[group.name] = undefined;
+        }
     }
 
     return [clipGroups, streamerData];
