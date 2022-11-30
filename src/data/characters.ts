@@ -2684,6 +2684,7 @@ export const npCharacters: NpCharacters = {
     ],
     omie: [
         { name: 'Marty Banks', factions: ['Gulag Gang'], leader: true, assumeServer: 'whitelist' },
+        { name: '[Deputy] Sharty Banks', factions: ['Police'], displayName: 1 },
         { name: 'Marty Shanks', factions: ['Gulag Gang', 'Burger Shot'], nicknames: [reg(/\bburger/)], assumeServer: 'public' },
         { name: 'Marty Banks', assumeServer: 'international' },
         { name: '[Officer] Sharty Manks', factions: ['Police'], displayName: 1, assumeServer: 'public' },
