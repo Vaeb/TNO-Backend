@@ -364,102 +364,125 @@ interface Clip {
     thumbnailUrl: string;
 }
 
-export const getClips = async (endpoint = '<no-endpoint>'): Promise<[Clip[], MixedStreamerData]> => {
+type ClipGroupNames = '24h' | '7d' | '30d' | 'all';
+
+type ClipGroups = { [key in ClipGroupNames]: Clip[] };
+
+const emptyClipGroups: ClipGroups = { '24h': [], '7d': [], '30d': [], all: [] };
+
+// Can run less frequently
+export const getClips = async (endpoint = '<no-endpoint>'): Promise<[ClipGroups, MixedStreamerData]> => {
     const optionsParsed = {
         searchNum: searchNumClipsDefault,
     };
 
-    let { searchNum } = optionsParsed;
-    searchNum = Math.min(searchNum, searchNumClipsMax);
+    const offsets: { name: ClipGroupNames, offset: number | undefined }[] = [
+        { name: '24h', offset: 1000 * 60 * 60 * 24 },
+        { name: '7d', offset: 1000 * 60 * 60 * 24 * 7 },
+        { name: '30d', offset: 1000 * 60 * 60 * 24 * 30 },
+        { name: 'all', offset: undefined },
+    ];
 
-    const clips: Clip[] = [];
+    const clipGroups: ClipGroups = { ...emptyClipGroups };
     const streamerData: MixedStreamerData = {};
 
-    const foundClips: { [key: string]: HelixClip } = {};
+    const nowStamp = +new Date();
 
-    let after;
-    try {
-        while (searchNum > 0) {
-            const limitNow = Math.min(searchNum, fetchLimitClips);
-            searchNum -= limitNow;
-            const clipsNow: HelixPaginatedResult<HelixClip> = await apiClient.clips.getClipsForGame(game, {
-                limit: limitNow,
-                after,
-            });
+    for (const group of offsets) {
+        let { searchNum } = optionsParsed;
+        searchNum = Math.min(searchNum, searchNumClipsMax);
 
-            if (clipsNow.data.length === 0) {
-                log(`${endpoint}: Clips search ended (limit: ${limitNow})`, clipsNow);
-                break;
-            }
+        const clips: Clip[] = [];
 
-            const lookupStreams = [];
+        const foundClips: { [key: string]: HelixClip } = {};
 
-            for (const clip of clipsNow.data) {
-                const { id, broadcasterDisplayName: channelName, broadcasterId: channelId } = clip;
-                const channelNameLower = channelName.toLowerCase();
-                const streamer = npCharacters[channelNameLower];
-                if (foundClips[id] || !streamer || streamer.assumeOther === ASTATES.neverNp) continue;
-                foundClips[id] = clip;
+        let after;
+        try {
+            while (searchNum > 0) {
+                const limitNow = Math.min(searchNum, fetchLimitClips);
+                searchNum -= limitNow;
+                const clipsNow: HelixPaginatedResult<HelixClip> = await apiClient.clips.getClipsForGame(game, {
+                    limit: limitNow,
+                    startDate: group.offset ? new Date(nowStamp - group.offset).toISOString() : undefined,
+                    after,
+                });
 
-                if (!streamerData[channelNameLower]) {
-                    if (!streamerDataArchive[channelNameLower]) {
-                        const firstChar = streamer[0];
-                        let tagFaction: FactionColorsMini = firstChar.factionUse;
-                        if (tagFaction === 'otherfaction') tagFaction = 'independent';
-                        const tagFactionSecondary = (streamer.assumeServer === 'public' && 'publicnp')
-                            || (streamer.assumeServer === 'international' && 'international')
-                            || undefined;
-                        // const factionsMap = streamer.reduce<FactionsMap>((obj, char) => {
-                        //     for (const faction of char.factions) {
-                        //         obj[faction] = true;
-                        //     }
-                        //     return obj;
-                        // }, {});
-                        const usuallyOther = streamer.assumeOther === ASTATES.assumeOther;
-                        const usuallyPublic = streamer.assumeServer === 'public';
-                        const usuallyInternational = streamer.assumeServer === 'international';
-                        const usuallyWl = streamer.wlBias === 1 || (!usuallyOther && streamer.assumeServer === 'whitelist' && streamer.wlBias === 0);
-
-                        streamerDataArchive[channelNameLower] = {
-                            factionsMap: firstChar.factionsObj,
-                            tagText: firstChar.displayName,
-                            tagFaction,
-                            tagFactionSecondary,
-                            characterName: firstChar.name,
-                            nicknameLookup: firstChar.nicknames ? firstChar.nicknames.map(nick => parseLookup(nick)).join(' _-_ ') : null,
-                            noOthersInclude: !usuallyOther,
-                            noPublicInclude: !usuallyPublic,
-                            noInternationalInclude: !usuallyInternational,
-                            wlOverride: usuallyWl,
-                        };
-
-                        if (knownPfps[channelId] === undefined) {
-                            lookupStreams.push(channelId);
-                        }
-                    }
-                    streamerData[channelNameLower] = streamerDataArchive[channelNameLower];
+                if (clipsNow.data.length === 0) {
+                    log(`${endpoint}: Clips search ended (limit: ${limitNow})`, clipsNow);
+                    break;
                 }
 
-                clips.push({
-                    id: clip.id,
-                    title: clip.title,
-                    channelName,
-                    clipperName: clip.creatorDisplayName,
-                    viewers: clip.views,
-                    thumbnailUrl: clip.thumbnailUrl,
-                });
+                const lookupStreams = [];
+
+                for (const clip of clipsNow.data) {
+                    const { id, broadcasterDisplayName: channelName, broadcasterId: channelId } = clip;
+                    const channelNameLower = channelName.toLowerCase();
+                    const streamer = npCharacters[channelNameLower];
+                    if (foundClips[id] || !streamer || streamer.assumeOther === ASTATES.neverNp) continue;
+                    foundClips[id] = clip;
+
+                    if (!streamerData[channelNameLower]) {
+                        if (!streamerDataArchive[channelNameLower]) {
+                            const firstChar = streamer[0];
+                            let tagFaction: FactionColorsMini = firstChar.factionUse;
+                            if (tagFaction === 'otherfaction') tagFaction = 'independent';
+                            const tagFactionSecondary = (streamer.assumeServer === 'public' && 'publicnp')
+                                || (streamer.assumeServer === 'international' && 'international')
+                                || undefined;
+                            // const factionsMap = streamer.reduce<FactionsMap>((obj, char) => {
+                            //     for (const faction of char.factions) {
+                            //         obj[faction] = true;
+                            //     }
+                            //     return obj;
+                            // }, {});
+                            const usuallyOther = streamer.assumeOther === ASTATES.assumeOther;
+                            const usuallyPublic = streamer.assumeServer === 'public';
+                            const usuallyInternational = streamer.assumeServer === 'international';
+                            const usuallyWl = streamer.wlBias === 1 || (!usuallyOther && streamer.assumeServer === 'whitelist' && streamer.wlBias === 0);
+
+                            streamerDataArchive[channelNameLower] = {
+                                factionsMap: firstChar.factionsObj,
+                                tagText: firstChar.displayName,
+                                tagFaction,
+                                tagFactionSecondary,
+                                characterName: firstChar.name,
+                                nicknameLookup: firstChar.nicknames ? firstChar.nicknames.map(nick => parseLookup(nick)).join(' _-_ ') : null,
+                                noOthersInclude: !usuallyOther,
+                                noPublicInclude: !usuallyPublic,
+                                noInternationalInclude: !usuallyInternational,
+                                wlOverride: usuallyWl,
+                            };
+
+                            if (knownPfps[channelId] === undefined) {
+                                lookupStreams.push(channelId);
+                            }
+                        }
+                        streamerData[channelNameLower] = streamerDataArchive[channelNameLower];
+                    }
+
+                    clips.push({
+                        id: clip.id,
+                        title: clip.title,
+                        channelName,
+                        clipperName: clip.creatorDisplayName,
+                        viewers: clip.views,
+                        thumbnailUrl: clip.thumbnailUrl,
+                    });
+                }
+
+                await lookupPfps(lookupStreams, 'for_clip');
+
+                after = clipsNow.cursor;
             }
-
-            await lookupPfps(lookupStreams, 'for_clip');
-
-            after = clipsNow.cursor;
+        } catch (err) {
+            log(`GETCLIPS FETCH FAILED | ${endpoint}: Error`, err);
+            return [{ ...emptyClipGroups }, {}];
         }
-    } catch (err) {
-        log(`GETCLIPS FETCH FAILED | ${endpoint}: Error`, err);
-        return [[], {}];
+
+        clipGroups[group.name] = clips;
     }
 
-    return [clips, streamerData];
+    return [clipGroups, streamerData];
 };
 
 // interface FbStream {
@@ -587,7 +610,7 @@ interface Live {
     filterFactions: any[];
     streams: Stream[];
     streamsFb: Stream[];
-    clips: Clip[];
+    clipGroups: ClipGroups;
     channelsFb: string[];
     baseHtml: string;
     baseHtmlFb: string;
@@ -657,7 +680,7 @@ export const getNpLive = async (baseOptions = {}, override = false, endpoint = '
                     return;
                 }
 
-                const [clips, streamerData] = await getClips(endpoint);
+                const [clipGroups, streamerData] = await getClips(endpoint);
 
                 const numStreamsFb = fbStreams.length;
                 if (numStreamsFb > 0) {
@@ -1116,7 +1139,7 @@ export const getNpLive = async (baseOptions = {}, override = false, endpoint = '
                     ...includedData,
                     factionCount,
                     filterFactions,
-                    clips,
+                    clipGroups,
                     streamerData,
                     streams: npStreams,
                     streamsFb: npStreamsFb,
