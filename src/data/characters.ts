@@ -571,8 +571,8 @@ export const npCharacters: NpCharacters = {
         { name: 'Tyler Heisanburg', factions: ['Royal Mafia'], nicknames: ['Burg'], displayName: 3 },
     ],
     Burn: [
-        { name: '[Deputy] Brocky Potage', factions: ['Police'], displayName: 2 },
         { name: 'Johnny Silverhand', displayName: 0 },
+        { name: '[Deputy] Brocky Potage', factions: ['Police'], displayName: 2 },
         { name: 'Asmon Bronze', displayName: 0, nicknames: ['AsmonBronze', 'Transmog'] },
         { name: 'Norman "Norm" Yoder' },
         { name: 'Moe Nopoli', displayName: 0 },
