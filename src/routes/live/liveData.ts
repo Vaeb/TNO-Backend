@@ -260,7 +260,43 @@ for (const [streamer, characters] of Object.entries(npCharacters)) {
 
 const npFactionsRegexEntries = Object.entries(npFactionsRegex) as [NpFactionsRegexMini, RegExp][];
 
+type FactionsMap = { [key in FactionMini]?: boolean };
+
+// TODO: In future can use streamer data for all streamer-only parts of *streams* data
+interface StreamerData {
+    factionsMap: FactionsMap;
+    tagText: string;
+    tagFaction: FactionColorsMini;
+    tagFactionSecondary?: FactionColorsMini;
+    characterName: string;
+    nicknameLookup: string | null;
+    noOthersInclude: boolean;
+    noPublicInclude: boolean; // use these props on frontend to determine whether stream should show
+    noInternationalInclude: boolean; // use these props on frontend to determine whether stream should show
+    wlOverride: boolean;
+    profileUrl?: string;
+}
+
+type MixedStreamerData = Record<string, StreamerData>;
+
+const streamerDataArchive: MixedStreamerData = {};
+
 const knownPfps: { [key: string]: string } = {};
+
+const lookupPfps = async (lookupStreams: string[], endpoint = '<no-endpoint>') => {
+    if (lookupStreams.length > 0) {
+        log(`${endpoint}: Looking up pfp for ${lookupStreams.length} users after...`);
+        const foundUsers = await apiClient.users.getUsersByIds(lookupStreams);
+        for (const helixUser of foundUsers) {
+            const pfpUrl = helixUser.profilePictureUrl.replace('-300x300.', '-50x50.')
+            const streamer = streamerDataArchive[helixUser.name.toLowerCase()];
+            knownPfps[helixUser.id] = pfpUrl;
+            if (streamer && !streamer.profileUrl) {
+                streamer.profileUrl = pfpUrl;
+            }
+        }
+    }
+};
 
 interface GetStreamsOptions { searchNum?: number; international?: boolean }
 
@@ -307,13 +343,7 @@ export const getStreams = async (options: GetStreamsOptions, endpoint = '<no-end
                 }
             }
 
-            if (lookupStreams.length > 0) {
-                log(`${endpoint}: Looking up pfp for ${lookupStreams.length} users after...`);
-                const foundUsers = await apiClient.users.getUsersByIds(lookupStreams);
-                for (const helixUser of foundUsers) {
-                    knownPfps[helixUser.id] = helixUser.profilePictureUrl.replace('-300x300.', '-50x50.');
-                }
-            }
+            await lookupPfps(lookupStreams, 'for_stream');
 
             after = gtaStreamsNow.cursor;
         }
@@ -325,21 +355,6 @@ export const getStreams = async (options: GetStreamsOptions, endpoint = '<no-end
     return gtaStreams;
 };
 
-type FactionsMap = { [key in FactionMini]?: boolean };
-
-interface StreamerData {
-    factionsMap: FactionsMap;
-    tagText: string;
-    tagFaction: FactionColorsMini;
-    tagFactionSecondary?: FactionColorsMini;
-    characterName: string;
-    nicknameLookup: string | null;
-    noOthersInclude: boolean;
-    noPublicInclude: boolean; // use these props on frontend to determine whether stream should show
-    noInternationalInclude: boolean; // use these props on frontend to determine whether stream should show
-    wlOverride: boolean;
-}
-
 interface Clip {
     id: string;
     title: string;
@@ -348,10 +363,6 @@ interface Clip {
     viewers: number;
     thumbnailUrl: string;
 }
-
-type MixedStreamerData = Record<string, StreamerData>;
-
-const streamerDataArchive: MixedStreamerData = {};
 
 export const getClips = async (endpoint = '<no-endpoint>'): Promise<[Clip[], MixedStreamerData]> => {
     const optionsParsed = {
@@ -381,9 +392,11 @@ export const getClips = async (endpoint = '<no-endpoint>'): Promise<[Clip[], Mix
                 break;
             }
 
+            const lookupStreams = [];
+
             for (const clip of clipsNow.data) {
-                const { id, broadcasterDisplayName } = clip;
-                const channelNameLower = broadcasterDisplayName.toLowerCase();
+                const { id, broadcasterDisplayName: channelName, broadcasterId: channelId } = clip;
+                const channelNameLower = channelName.toLowerCase();
                 const streamer = npCharacters[channelNameLower];
                 if (foundClips[id] || !streamer || streamer.assumeOther === ASTATES.neverNp) continue;
                 foundClips[id] = clip;
@@ -419,6 +432,10 @@ export const getClips = async (endpoint = '<no-endpoint>'): Promise<[Clip[], Mix
                             noInternationalInclude: !usuallyInternational,
                             wlOverride: usuallyWl,
                         };
+
+                        if (knownPfps[channelId] === undefined) {
+                            lookupStreams.push(channelId);
+                        }
                     }
                     streamerData[channelNameLower] = streamerDataArchive[channelNameLower];
                 }
@@ -426,12 +443,14 @@ export const getClips = async (endpoint = '<no-endpoint>'): Promise<[Clip[], Mix
                 clips.push({
                     id: clip.id,
                     title: clip.title,
-                    channelName: broadcasterDisplayName,
+                    channelName,
                     clipperName: clip.creatorDisplayName,
                     viewers: clip.views,
                     thumbnailUrl: clip.thumbnailUrl,
                 });
             }
+
+            await lookupPfps(lookupStreams, 'for_clip');
 
             after = clipsNow.cursor;
         }
