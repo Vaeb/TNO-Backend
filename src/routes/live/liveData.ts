@@ -410,7 +410,7 @@ export const getClips = async (endpoint = '<no-endpoint>'): Promise<[ClipGroups,
 
         const foundClips: { [key: string]: HelixClip } = {};
 
-        log('RESTARTING FROM CLIP_AFTER:', clipAfters[group.name]);
+        log(`RESTARTING FROM CLIP_AFTER ${group.name}:`, clipAfters[group.name]);
 
         try {
             while (searchNum > 0) {
