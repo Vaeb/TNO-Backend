@@ -325,6 +325,21 @@ export const getStreams = async (options: GetStreamsOptions, endpoint = '<no-end
     return gtaStreams;
 };
 
+type FactionsMap = { [key in FactionMini]?: boolean };
+
+interface StreamerData {
+    factionsMap: FactionsMap;
+    tagText: string;
+    tagFaction: FactionColorsMini;
+    tagFactionSecondary?: FactionColorsMini;
+    characterName: string;
+    nicknameLookup: string | null;
+    noOthersInclude: boolean;
+    noPublicInclude: boolean; // use these props on frontend to determine whether stream should show
+    noInternationalInclude: boolean; // use these props on frontend to determine whether stream should show
+    wlOverride: boolean;
+}
+
 interface Clip {
     id: string;
     title: string;
@@ -332,18 +347,13 @@ interface Clip {
     clipperName: string;
     viewers: number;
     thumbnailUrl: string;
-    // factionsMap: { [key in FactionMini]?: boolean };
-    // tagText: string;
-    // tagFaction: FactionColorsMini;
-    // tagFactionSecondary?: FactionColorsMini;
-    // nicknameLookup: string | null;
-    // noOthersInclude: boolean;
-    // noPublicInclude: boolean; // use these props on frontend to determine whether stream should show
-    // noInternationalInclude: boolean; // use these props on frontend to determine whether stream should show
-    // wlOverride: boolean;
 }
 
-export const getClips = async (endpoint = '<no-endpoint>'): Promise<Clip[]> => {
+type MixedStreamerData = Record<string, StreamerData>;
+
+const streamerDataArchive: MixedStreamerData = {};
+
+export const getClips = async (endpoint = '<no-endpoint>'): Promise<[Clip[], MixedStreamerData]> => {
     const optionsParsed = {
         searchNum: searchNumClipsDefault,
     };
@@ -351,8 +361,11 @@ export const getClips = async (endpoint = '<no-endpoint>'): Promise<Clip[]> => {
     let { searchNum } = optionsParsed;
     searchNum = Math.min(searchNum, searchNumClipsMax);
 
-    const foundClips: { [key: string]: HelixClip } = {};
     const clips: Clip[] = [];
+    const streamerData: MixedStreamerData = {};
+
+    const foundClips: { [key: string]: HelixClip } = {};
+
     let after;
     try {
         while (searchNum > 0) {
@@ -370,9 +383,46 @@ export const getClips = async (endpoint = '<no-endpoint>'): Promise<Clip[]> => {
 
             for (const clip of clipsNow.data) {
                 const { id, broadcasterDisplayName } = clip;
-                const streamer = npCharacters[broadcasterDisplayName.toLowerCase()]
-                if (foundClips[id] || !streamer) continue;
+                const channelNameLower = broadcasterDisplayName.toLowerCase();
+                const streamer = npCharacters[channelNameLower];
+                if (foundClips[id] || !streamer || streamer.assumeOther === ASTATES.neverNp) continue;
                 foundClips[id] = clip;
+
+                if (!streamerData[channelNameLower]) {
+                    if (!streamerDataArchive[channelNameLower]) {
+                        const firstChar = streamer[0];
+                        let tagFaction: FactionColorsMini = firstChar.factionUse;
+                        if (tagFaction === 'otherfaction') tagFaction = 'independent';
+                        const tagFactionSecondary = (streamer.assumeServer === 'public' && 'publicnp')
+                            || (streamer.assumeServer === 'international' && 'international')
+                            || undefined;
+                        const factionsMap = streamer.reduce<FactionsMap>((obj, char) => {
+                            for (const faction of char.factions) {
+                                obj[faction] = true;
+                            }
+                            return obj;
+                        }, {});
+                        const usuallyOther = streamer.assumeOther === ASTATES.assumeOther;
+                        const usuallyPublic = streamer.assumeServer === 'public';
+                        const usuallyInternational = streamer.assumeServer === 'international';
+                        const usuallyWl = streamer.wlBias === 1 || (!usuallyOther && streamer.assumeServer === 'whitelist' && streamer.wlBias === 0);
+
+                        streamerDataArchive[channelNameLower] = {
+                            factionsMap,
+                            tagText: firstChar.displayName,
+                            tagFaction,
+                            tagFactionSecondary,
+                            characterName: firstChar.name,
+                            nicknameLookup: firstChar.nicknames ? firstChar.nicknames.map(nick => parseLookup(nick)).join(' _-_ ') : null,
+                            noOthersInclude: !usuallyOther,
+                            noPublicInclude: !usuallyPublic,
+                            noInternationalInclude: !usuallyInternational,
+                            wlOverride: usuallyWl,
+                        };
+                    }
+                    streamerData[channelNameLower] = streamerDataArchive[channelNameLower];
+                }
+
                 clips.push({
                     id: clip.id,
                     title: clip.title,
@@ -387,10 +437,10 @@ export const getClips = async (endpoint = '<no-endpoint>'): Promise<Clip[]> => {
         }
     } catch (err) {
         log(`GETCLIPS FETCH FAILED | ${endpoint}: Error`, err);
-        return [];
+        return [[], {}];
     }
 
-    return clips;
+    return [clips, streamerData];
 };
 
 // interface FbStream {
@@ -587,7 +637,7 @@ export const getNpLive = async (baseOptions = {}, override = false, endpoint = '
                     return;
                 }
 
-                const clips = await getClips(endpoint);
+                const [clips, streamerData] = await getClips(endpoint);
 
                 const numStreamsFb = fbStreams.length;
                 if (numStreamsFb > 0) {
@@ -1045,6 +1095,7 @@ export const getNpLive = async (baseOptions = {}, override = false, endpoint = '
                     factionCount,
                     filterFactions,
                     clips,
+                    streamerData,
                     streams: npStreams,
                     streamsFb: npStreamsFb,
                     // streamsFb: [], // Temporary disable fb until frontend fix
