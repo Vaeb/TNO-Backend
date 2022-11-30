@@ -288,7 +288,7 @@ const lookupPfps = async (lookupStreams: string[], endpoint = '<no-endpoint>') =
         log(`${endpoint}: Looking up pfp for ${lookupStreams.length} users after...`);
         const foundUsers = await apiClient.users.getUsersByIds(lookupStreams);
         for (const helixUser of foundUsers) {
-            const pfpUrl = helixUser.profilePictureUrl.replace('-300x300.', '-50x50.')
+            const pfpUrl = helixUser.profilePictureUrl.replace('-300x300.', '-50x50.');
             const streamer = streamerDataArchive[helixUser.name.toLowerCase()];
             knownPfps[helixUser.id] = pfpUrl;
             if (streamer && !streamer.profileUrl) {
@@ -443,7 +443,7 @@ export const getClips = async (endpoint = '<no-endpoint>'): Promise<[ClipGroups,
                             const usuallyInternational = streamer.assumeServer === 'international';
                             const usuallyWl = streamer.wlBias === 1 || (!usuallyOther && streamer.assumeServer === 'whitelist' && streamer.wlBias === 0);
 
-                            streamerDataArchive[channelNameLower] = {
+                            const streamerInfo: StreamerData = {
                                 factionsMap: firstChar.factionsObj,
                                 tagText: firstChar.displayName,
                                 tagFaction,
@@ -458,7 +458,11 @@ export const getClips = async (endpoint = '<no-endpoint>'): Promise<[ClipGroups,
 
                             if (knownPfps[channelId] === undefined) {
                                 lookupStreams.push(channelId);
+                            } else {
+                                streamerInfo.profileUrl = knownPfps[channelId];
                             }
+
+                            streamerDataArchive[channelNameLower] = streamerInfo;
                         }
                         streamerData[channelNameLower] = streamerDataArchive[channelNameLower];
                     }
