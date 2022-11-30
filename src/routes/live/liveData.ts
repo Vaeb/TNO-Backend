@@ -396,19 +396,19 @@ export const getClips = async (endpoint = '<no-endpoint>'): Promise<[Clip[], Mix
                         const tagFactionSecondary = (streamer.assumeServer === 'public' && 'publicnp')
                             || (streamer.assumeServer === 'international' && 'international')
                             || undefined;
-                        const factionsMap = streamer.reduce<FactionsMap>((obj, char) => {
-                            for (const faction of char.factions) {
-                                obj[faction] = true;
-                            }
-                            return obj;
-                        }, {});
+                        // const factionsMap = streamer.reduce<FactionsMap>((obj, char) => {
+                        //     for (const faction of char.factions) {
+                        //         obj[faction] = true;
+                        //     }
+                        //     return obj;
+                        // }, {});
                         const usuallyOther = streamer.assumeOther === ASTATES.assumeOther;
                         const usuallyPublic = streamer.assumeServer === 'public';
                         const usuallyInternational = streamer.assumeServer === 'international';
                         const usuallyWl = streamer.wlBias === 1 || (!usuallyOther && streamer.assumeServer === 'whitelist' && streamer.wlBias === 0);
 
                         streamerDataArchive[channelNameLower] = {
-                            factionsMap,
+                            factionsMap: firstChar.factionsObj,
                             tagText: firstChar.displayName,
                             tagFaction,
                             tagFactionSecondary,
