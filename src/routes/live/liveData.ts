@@ -572,6 +572,7 @@ interface Live {
     channelsFb: string[];
     baseHtml: string;
     baseHtmlFb: string;
+    baseHtmlClip: string;
     fbDebounce: number;
     fbMaxLookup: number;
     fbSleep: number;
@@ -1089,6 +1090,8 @@ export const getNpLive = async (baseOptions = {}, override = false, endpoint = '
                     .replaceAll('https://static-cdn.jtvnw.net/previews-ttv/live_user__CHANNEL1_-440x248.jpg_TIMEID_', '_THUMBNAIL_')
                     .replaceAll('href="/_CHANNEL1_/videos"', 'href="https://www.facebook.com/_CHANNEL2_"')
                     .replaceAll('href="/_CHANNEL1_"', 'href="_VIDEOURL_"');
+                // eslint-disable-next-line max-len
+                const baseHtmlClip = '<div data-a-target="clips-card-_ORDER_" id="tno-stream-_TNOID_" class="tno-stream Layout-sc-1xcs6mc-0 iPAXTU"><article class="Layout-sc-1xcs6mc-0 guHXLE"><div class="Layout-sc-1xcs6mc-0 gUnRUD"><div class="Layout-sc-1xcs6mc-0 ilDsKw"><div class="ScTextWrapper-sc-10mto54-1 fwZpSK"><div class="ScTextMargin-sc-10mto54-2 bcdHdk"><div class="Layout-sc-1xcs6mc-0 idlTrs"><a lines="1" class="ScCoreLink-sc-16kq0mq-0 eYjhIv ScCoreLink-sc-bhsr9c-0 jYyMcQ tw-link" href="/_CHANNEL1_/clip/AdventurousShinyToothTebowing-RgP2Vc4RM_TFePuw"><h3 title="_TITLE_" class="CoreText-sc-1txzju1-0 dlDlel">_TITLE_</h3></a></div></div><div class="ScTextMargin-sc-10mto54-2 bcdHdk"><p class="CoreText-sc-1txzju1-0 jiepBC"><a data-a-target="preview-card-channel-link" class="ScCoreLink-sc-16kq0mq-0 eYjhIv tw-link" href="/_CHANNEL1_">_CHANNEL2_</a></p><p class="CoreText-sc-1txzju1-0 jiepBC"><a data-a-target="preview-card-clip-curator-link" class="ScCoreLink-sc-16kq0mq-0 eYjhIv tw-link" href="/_CLIPPER1_">Clipped by _CLIPPER1_</a></p></div></div><div class="ScImageWrapper-sc-10mto54-0 jrfBpi"><a data-test-selector="preview-card-avatar" tabindex="-1" class="ScCoreLink-sc-16kq0mq-0 jSrrlW tw-link" href="/_CHANNEL1_"><div class="ScAspectRatio-sc-18km980-1 gxJZAm tw-aspect"><div class="ScAspectSpacer-sc-18km980-0 kiiGFY"></div><figure aria-label="_CHANNEL1_" class="ScAvatar-sc-144b42z-0 jBfrnP tw-avatar"><img class="InjectLayout-sc-1i43xsx-0 bEwPpb tw-image tw-image-avatar" alt="_CHANNEL1_" src="_PFP_"></figure></div></a></div><div class="Layout-sc-1xcs6mc-0 jufFcl"><button class="ScCoreButton-sc-ocjdkq-0 hUGgcQ ScButtonIcon-sc-9yap0r-0 duUMaR" aria-label="More options" title="More options" data-a-target="report-button-more-button"><div class="ButtonIconFigure-sc-1emm8lf-0 hdCHgB"><div class="ScIconLayout-sc-1q25cff-0 cMWGQu"><div class="ScAspectRatio-sc-18km980-1 hTTohL tw-aspect"><div class="ScAspectSpacer-sc-18km980-0 kiiGFY"></div><svg width="100%" height="100%" version="1.1" viewBox="0 0 20 20" x="0px" y="0px" class="ScIconSVG-sc-1q25cff-1 dSicFr"><g><path d="M10 18a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM8 4a2 2 0 104 0 2 2 0 00-4 0z"></path></g></svg></div></div></div></button></div></div></div><div class="ScWrapper-sc-1wvuch4-0 dSyPJh tw-hover-accent-effect"><div class="ScTransformWrapper-sc-1wvuch4-1 ScCornerTop-sc-1wvuch4-2 gEBqEV hPOElK"></div><div class="ScTransformWrapper-sc-1wvuch4-1 ScCornerBottom-sc-1wvuch4-3 fNwmtl dTxLuP"></div><div class="ScTransformWrapper-sc-1wvuch4-1 ScEdgeLeft-sc-1wvuch4-4 jhgGdR blwnUh"></div><div class="ScTransformWrapper-sc-1wvuch4-1 ScEdgeBottom-sc-1wvuch4-5 dJYDVl dWkueR"></div><div class="ScTransformWrapper-sc-1wvuch4-1 gMwbGx"><a data-a-target="preview-card-image-link" tabindex="-1" class="ScCoreLink-sc-16kq0mq-0 jSrrlW tw-link" href="/_CHANNEL1_/clip/AdventurousShinyToothTebowing-RgP2Vc4RM_TFePuw"><div class="Layout-sc-1xcs6mc-0 hkwQCo"><div class="ScAspectRatio-sc-18km980-1 hTTohL tw-aspect"><div class="ScAspectSpacer-sc-18km980-0 ftHEOL"></div><img alt="_TITLE_" class="tw-image" src="_THUMBNAIL_"></div><div class="ScPositionCorner-sc-1shjvnv-1 hoKYhE"><div class="ScMediaCardStatWrapper-sc-anph5i-0 bEHknf tw-media-card-stat">0:59</div></div><div class="ScPositionCorner-sc-1shjvnv-1 gUtzBI"><div class="ScMediaCardStatWrapper-sc-anph5i-0 bEHknf tw-media-card-stat">_VIEWERS_ views</div></div><div class="ScPositionCorner-sc-1shjvnv-1 kBbWhP"><div class="ScMediaCardStatWrapper-sc-anph5i-0 bEHknf tw-media-card-stat">Yesterday</div></div></div></a></div></div></article></div>';
 
                 const result: Live = {
                     ...includedData,
@@ -1102,6 +1105,7 @@ export const getNpLive = async (baseOptions = {}, override = false, endpoint = '
                     channelsFb: fbStreamers.map(data => data[0]),
                     baseHtml,
                     baseHtmlFb,
+                    baseHtmlClip,
                     fbDebounce: 1000 * 60 * 5.5,
                     fbMaxLookup: 3,
                     fbSleep: 2100,
