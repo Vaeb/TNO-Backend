@@ -73,7 +73,7 @@ const fetchLimit = 100 as const;
 const fetchLimitClips = 100 as const;
 // const maxPages = 5 as const;
 const searchNumDefault = 2000;
-const searchNumClipsDefault = 1000;
+const searchNumClipsDefault = 750;
 const searchNumMax = 5000;
 const searchNumClipsMax = 4000;
 const updateCacheMs = 1000 * 60;
@@ -361,6 +361,8 @@ interface Clip {
     channelName: string;
     clipperName: string;
     viewers: number;
+    duration: number;
+    creationStamp: number;
     thumbnailUrl: string;
 }
 
@@ -466,6 +468,8 @@ export const getClips = async (endpoint = '<no-endpoint>'): Promise<[ClipGroups,
                         channelName,
                         clipperName: clip.creatorDisplayName,
                         viewers: clip.views,
+                        duration: clip.duration,
+                        creationStamp: +clip.creationDate,
                         thumbnailUrl: clip.thumbnailUrl,
                     });
                 }
