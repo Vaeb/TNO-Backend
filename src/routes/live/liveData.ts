@@ -422,6 +422,7 @@ export const getClips = async (endpoint = '<no-endpoint>'): Promise<[ClipGroups,
                 const clipsNow: HelixPaginatedResult<HelixClip> = await apiClient.clips.getClipsForGame(game, {
                     limit: limitNow,
                     startDate: group.offset ? new Date(nowStamp - group.offset).toISOString() : undefined,
+                    endDate: group.offset ? new Date(nowStamp).toISOString() : undefined,
                     after: clipAfters[group.name],
                 });
 
