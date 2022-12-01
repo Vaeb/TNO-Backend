@@ -380,6 +380,9 @@ const clipGroupsTemp: ClipGroups = JSON.parse(JSON.stringify(emptyClipGroups));
 // Has got a clip group active with full clips
 const hasCycled: { [key in ClipGroupNames]: boolean } = { '24h': false, '7d': false, '30d': false, all: false };
 
+// Is this actually necessary...? Don't think so (compared to general archive) but needs further thinking
+const streamerData: MixedStreamerData = {};
+
 // Can run less frequently
 // Make it so that each run it gets the next searchNumClipsDefault clips after `after[group.name]` or reset `after` if it's been 3 hours
 export const getClips = async (endpoint = '<no-endpoint>'): Promise<[ClipGroups, MixedStreamerData]> => {
@@ -393,8 +396,6 @@ export const getClips = async (endpoint = '<no-endpoint>'): Promise<[ClipGroups,
         { name: '30d', offset: 1000 * 60 * 60 * 24 * 30 },
         { name: 'all', offset: undefined },
     ];
-
-    const streamerData: MixedStreamerData = {};
 
     const nowStamp = +new Date();
 
@@ -718,7 +719,7 @@ export const getNpLive = async (baseOptions = {}, override = false, endpoint = '
                     return;
                 }
 
-                const [clipGroups, streamerData] = await getClips(endpoint);
+                await getClips(endpoint);
 
                 const numStreamsFb = fbStreams.length;
                 if (numStreamsFb > 0) {
