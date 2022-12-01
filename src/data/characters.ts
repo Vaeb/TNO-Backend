@@ -1312,7 +1312,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Mick Jhonson', factions: ['Stable'], displayName: 1 },
     ],
     Greekgodx: [
-        { name: '"Tay Tay" Tyrone', nicknames: ['TayTay'], assumeServer: 'public' },
+        { name: '"Tay Tay" Tyrone', nicknames: ['TayTay'] },
         { name: 'Tea Tea', factions: ['Police'], displayName: 0 },
     ],
     GreenishMonkey: [
