@@ -77,6 +77,7 @@ const searchNumClipsDefault = 750;
 const searchNumMax = 5000;
 const searchNumClipsMax = 4000;
 const updateCacheMs = 1000 * 60;
+const storeNumClipsMax = 5000;
 
 const toFactionMini = (faction: string) => faction.toLowerCase().replace(' ', '');
 
@@ -380,7 +381,8 @@ const clipGroupsTemp: ClipGroups = JSON.parse(JSON.stringify(emptyClipGroups));
 // Has got a clip group active with full clips
 const hasCycled: { [key in ClipGroupNames]: boolean } = { '24h': false, '7d': false, '30d': false, all: false };
 
-// Is this actually necessary...? Don't think so (compared to general archive) but needs further thinking
+// This is only useful if you set up a streamerDataTemp equivalent to clipGroupsTemp. Builds up until clipGroupsTemp is full.
+// Would need to do something to account for 4 clipGroupsTemp fulls vs 1 streamerDataTemp (should be in sync)
 const streamerData: MixedStreamerData = {};
 
 // Can run less frequently
@@ -509,7 +511,7 @@ export const getClips = async (endpoint = '<no-endpoint>'): Promise<[ClipGroups,
             clipGroups[group.name] = clipGroupsTemp[group.name];
         }
 
-        if (reachedEnd) {
+        if (reachedEnd || clipGroupsTemp[group.name].length >= storeNumClipsMax) {
             log(`${endpoint}: Clips search ended (searchNum before: ${searchNum})`);
             log('& RESET CLIP_AFTER', hasCycled[group.name]);
             // Enable hasCycled (assuming there's actually clips, should always be true)
