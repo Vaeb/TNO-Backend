@@ -599,6 +599,8 @@ export const getFbStreams = async (): Promise<FbStreamDetails[]> => {
     return fbStreams;
 };
 
+type FilterFactions = [FactionMini, string, boolean, number][];
+
 export interface LiveOptions {
     factionName: FactionMini;
     filterEnabled: boolean;
@@ -1151,15 +1153,18 @@ export const getNpLive = async (baseOptions = {}, override = false, endpoint = '
 
                 factionCount.alltwitch = gtaStreams.length;
 
-                const filterFactions = (cloneDeepJson(filterFactionsBase) as typeof filterFactionsBase)
-                    .sort((dataA, dataB) => {
-                        const countA = factionCount[dataA[0]] || 0;
-                        const countB = factionCount[dataB[0]] || 0;
-                        if (countA === countB) return 0;
-                        if (countA === 0) return 1;
-                        if (countB === 0) return -1;
-                        return 0;
-                    });
+                const filterFactions = (cloneDeepJson(filterFactionsBase) as FilterFactions);
+                filterFactions.forEach((faction, i) => {
+                    faction[3] = i;
+                });
+                filterFactions.sort((dataA, dataB) => {
+                    const countA = factionCount[dataA[0]] || 0;
+                    const countB = factionCount[dataB[0]] || 0;
+                    if (countA === countB) return 0;
+                    if (countA === 0) return 1;
+                    if (countB === 0) return -1;
+                    return 0;
+                });
 
                 for (const data of filterFactions) {
                     data[2] = factionCount[data[0]] !== 0;
