@@ -77,7 +77,7 @@ const searchNumClipsDefault = 750;
 const searchNumMax = 5000;
 const searchNumClipsMax = 4000;
 const updateCacheMs = 1000 * 60;
-const storeNumClipsMax = 5000;
+const storeNumClipsMax = 7500;
 
 const toFactionMini = (faction: string) => faction.toLowerCase().replace(' ', '');
 
