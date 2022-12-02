@@ -1503,7 +1503,7 @@ export const npCharacters: NpCharacters = {
         { name: 'SunMoon Lee', factions: ['RUST'], displayName: 1 },
     ],
     ilyjordi: [
-        { name: 'Ralphie Ralphs', factions: ['Dons'], displayName: 1 },
+        { name: 'Ralphie Ralphs', factions: ['Gulag Gang'], displayName: 1 },
     ],
     ImFluffinJiggly: [
         { name: '[Deputy] ? Wilkons', factions: ['Police'], assumeServer: 'public' },
@@ -2515,7 +2515,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Stacy Myers', displayName: 0 },
     ],
     Natettvrp: [
-        { name: 'Carlos "Carlitos" Loco', factions: ['Vagos'] },
+        { name: 'Carlos "Carlitos" Loco', factions: ['Gulag Gang'] },
     ],
     nathankb_: [
         { name: '[Chief Judge] Alan Crane', factions: ['DoJ'], displayName: 2 },
