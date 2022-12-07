@@ -55,7 +55,7 @@ export const npFactionsRegex = {
     watchparty: noLater(noFormer(/\b(?<!!)watch[\s\-_.]*part/i)),
     gulaggang: noLater(noFormer(/\bgulag[\s\-_.]*gang|(?:[^\w\s.]\s*|^\s*|\.\s+)\bgg\b|\bgg[\s\-_.]*(?:st|z|a|b)\b/i)),
     dons: noLater(noFormer(/\bdons\b/i)),
-    condemnedmc: noLater(noFormer(/\bcondemned|\bcmc\b/i)),
+    mayhemmc: noLater(noFormer(/\bmayhem|\bcmc\b/i)),
     news: noFormer(/(?<!(?:good|big|great|amazing|bad|some)\s*)\bnews\b|\blsbn\b|weazel[\s\-_.]*news/i),
     rooster: noFormer(/\brr\b|\brooster[^\w\s]?(?:s|\b)|rooster[\s\-_.]*(?:rest|ranch|reef|inn|hotel|cab)/i),
     burgershot: noFormer(/(?<!(?:everyone|people)\s+at\s+)burger[\s\-]*shot|\bburgers\b|\bburgersh/i),
@@ -140,7 +140,7 @@ npFactionsRealMini.forEach((faction) => {
     }
 });
 
-// export type NoFactionColorsMini = 'alltwitch' | 'allnopixel' | 'darkweb' | 'news' | 'russians' | 'condemnedmc' | 'mersions' | 'lunatix' | 'marabunta';
+// export type NoFactionColorsMini = 'alltwitch' | 'allnopixel' | 'darkweb' | 'news' | 'russians' | 'mayhemmc' | 'mersions' | 'lunatix' | 'marabunta';
 // type FactionColorsMini = Exclude<FactionMini, NoFactionColorsMini>;
 // : { [key in FactionColorsMini]: string }
 
@@ -173,7 +173,7 @@ export const useColorsDark = { // #ff77ff #FAA0A0 #FA0B42
     bbmc: '#3B64E6',
     burgershot: '#E99062',
     development: '#718093',
-    condemnedmc: '#32ff7e',
+    mayhemmc: '#32ff7e',
     doc: '#0984e3',
     prison: '#1C8EA2',
     larpers: '#FFECAF',
@@ -226,7 +226,7 @@ export const useColorsLight: { [key in FactionColorsMini]: string } = {
     bbmc: '#2250ff',
     burgershot: '#c77c50',
     development: '#718093',
-    condemnedmc: '#12af7e',
+    mayhemmc: '#12af7e',
     doc: '#1080d6',
     prison: '#1C8EA2',
     larpers: '#cfba57',
@@ -296,7 +296,7 @@ const filterOrderTop: FactionMiniArr = [
     'selfinsert',
     'pinkgang',
     'britneygang',
-    'condemnedmc',
+    'mayhemmc',
     'tunershop',
     'burgershot',
     'medical',

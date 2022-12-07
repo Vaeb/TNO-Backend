@@ -126,7 +126,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Ivan Gorbahtjov', assume: 'assumeOther' },
     ],
     adzno: [
-        { name: 'Aaron Melarky', factions: ['Condemned MC'], displayName: 0 },
+        { name: 'Aaron Melarky', factions: ['Mayhem MC'], displayName: 0 },
     ],
     Adzzstarr: [
         { name: '[Lawyer] Adam Prince', factions: ['DoJ'] },
@@ -267,7 +267,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Peacekeeper] Beric Johnson', factions: ['Police'] },
     ],
     ArmandMorte: [
-        { name: 'Lucky Cox', factions: ['Condemned MC'], displayName: 0 },
+        { name: 'Lucky Cox', factions: ['Mayhem MC'], displayName: 0 },
     ],
     Armeeof1: [
         { name: 'Milton Pointdexter' },
@@ -619,7 +619,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Dimitri Nekola', factions: ['Pegasus'] },
     ],
     CaptainBarb: [
-        { name: 'Mattias Nilson', factions: ['Condemned MC'], displayName: 0 },
+        { name: 'Mattias Nilson', factions: ['Mayhem MC'], displayName: 0 },
     ],
     Carbonoid: [
         { name: 'Han Machiavelli', factions: ['BSK'], displayName: 0 },
@@ -1072,7 +1072,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Tao Chen', factions: ['Rooster'], assumeServer: 'whitelist' },
         { name: '[Development] Elochai', factions: ['Development'], nicknames: ['finishing', 'working on', reg(/\b(?:cloth\w+|shirt|outfit|pants|helmet|hat)s?\b/)] },
         { name: 'Leyin Jhail', assumeServer: 'public' },
-        { name: 'Damien Grey', factions: ['Condemned MC'], displayName: 0 },
+        { name: 'Damien Grey', factions: ['Mayhem MC'], displayName: 0 },
     ],
     ElvisRP: [
         { name: '[Deputy] John Dorian', factions: ['Police'] },
@@ -1206,7 +1206,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Preston Hale', factions: ['Police'] },
     ],
     FragZone: [
-        { name: 'Derek Bogart', factions: ['Condemned MC'], displayName: 0 },
+        { name: 'Derek Bogart', factions: ['Mayhem MC'], displayName: 0 },
     ],
     FredosRP: [
         { name: 'Fredo Sanchez', factions: ['Seaside'], displayName: 1 },
@@ -1274,7 +1274,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Bennett Calhoun', factions: ['Police'] },
     ],
     gibbs_gg: [
-        { name: 'Walter Franks', factions: ['Condemned MC'], displayName: 0 },
+        { name: 'Walter Franks', factions: ['Mayhem MC'], displayName: 0 },
     ],
     Gilthflo: [
         { name: 'Percy Perkins', factions: ['Burger Shot'], displayName: 0 },
@@ -1757,7 +1757,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Blanden Haster', factions: ['HOA'], displayName: 1 },
     ],
     justFritz: [
-        { name: 'Fritz Ericson', factions: ['Condemned MC'] },
+        { name: 'Fritz Ericson', factions: ['Mayhem MC'] },
     ],
     JustJambaa: [
         { name: 'La Flare Davis', factions: ['RUST'], nicknames: ['La Flare'], displayName: 4 },
@@ -2233,7 +2233,7 @@ export const npCharacters: NpCharacters = {
         { name: '[EMS] Mari Jones', factions: ['Medical'], nicknames: ['MJ'], displayName: 3 },
     ],
     MalevolentReisu: [
-        { name: 'Trey Walker', factions: ['Condemned MC'], displayName: 0 },
+        { name: 'Trey Walker', factions: ['Mayhem MC'], displayName: 0 },
     ],
     MaliciousRP: [
         { name: 'Jericho Black', factions: ['DoC'] },
@@ -2686,7 +2686,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Sharty Manks', factions: ['Police'], displayName: 1, assumeServer: 'public' },
     ],
     onebaw: [
-        { name: 'Arthur Morgan', factions: ['Condemned MC'], displayName: 0 },
+        { name: 'Arthur Morgan', factions: ['Mayhem MC'], displayName: 0 },
     ],
     OneProtectiveFox: [
         { name: 'Hanna Baker', factions: ['DoC'], displayName: 0 },
@@ -3762,7 +3762,7 @@ export const npCharacters: NpCharacters = {
     ],
     TwistedBones: [
         { name: 'Mark White', displayName: 0 },
-        { name: 'Hank Marston', factions: ['Condemned MC'], leader: true, displayName: 0 },
+        { name: 'Hank Marston', factions: ['Mayhem MC'], leader: true, displayName: 0 },
         { name: 'Marcus Black', factions: ['GSF'], displayName: 0 },
     ],
     TwistedManifest: [
@@ -4057,7 +4057,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Josh Zerker', factions: ['Self Insert', 'One Life'], displayName: 0 },
     ],
     Zettafrag: [
-        { name: 'Kimberly Daniels', factions: ['Condemned MC'], displayName: 0 },
+        { name: 'Kimberly Daniels', factions: ['Mayhem MC'], displayName: 0 },
     ],
     zhifven: [
         { name: 'Kai Pond', factions: ['Rooster'], displayName: 0 },

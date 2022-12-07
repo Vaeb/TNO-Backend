@@ -46,7 +46,7 @@ export const npFactionsReal = { // map: removed spaces + converted to lower case
     news: 'News',
     russians: 'Russians',
     frat: 'Frat',
-    condemnedmc: 'Condemned MC',
+    mayhemmc: 'Mayhem MC',
     mersions: 'Mersions',
     lunatix: 'Lunatix',
     marabunta: 'Marabunta',
