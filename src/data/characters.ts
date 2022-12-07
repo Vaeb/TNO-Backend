@@ -713,10 +713,10 @@ export const npCharacters: NpCharacters = {
         { name: 'Terry Linkston', factions: ['Seaside'] },
     ],
     Chelb: [
-        { name: 'Alan Kyles', factions: ['NBC'], displayName: 0 },
+        { name: 'Alan Kyles', factions: ['Hydra Gang'], displayName: 0 },
     ],
     ChelbMyster: [
-        { name: 'Alan Kyles', factions: ['NBC'], displayName: 0, facebook: true },
+        { name: 'Alan Kyles', factions: ['Hydra Gang'], displayName: 0, facebook: true },
     ],
     CHUDOCKEN: [
         { name: 'Orpheus Dawson', factions: ['Burger Shot'], displayName: 1 },
