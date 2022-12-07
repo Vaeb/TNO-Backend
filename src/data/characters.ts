@@ -1248,10 +1248,6 @@ export const npCharacters: NpCharacters = {
     GameDemented: [
         { name: '[Deputy] Peter Johnson', factions: ['Police'] },
     ],
-    gangsters_paradise: [
-        { name: 'Jamal Abdul Jabbar', factions: ['Gulag Gang'], displayName: 1 },
-        { name: 'Maz Razi', factions: ['Dons'], nicknames: ['Uncle Tony', 'Uncle T'], displayName: 3 },
-    ],
     Garek: [
         { name: 'Burt "Gloryon" Beans', factions: ['LARPers', 'Cleanbois', 'Rooster'], nicknames: ['Cleric'] },
         { name: 'Garek', factions: ['Self Insert'], displayName: 1 },
@@ -3589,6 +3585,10 @@ export const npCharacters: NpCharacters = {
     ],
     ThatEmoPunk: [
         { name: 'Ezreal Kay-Hoss', factions: ['CBPD', 'Rooster'], nicknames: ['EZ', 'E.Z'] },
+    ],
+    ThatGuyGP: [
+        { name: 'Jamal Abdul Jabbar', factions: ['Gulag Gang'], displayName: 1 },
+        { name: 'Maz Razi', factions: ['Dons'], nicknames: ['Uncle Tony', 'Uncle T'], displayName: 3 },
     ],
     the_halfhand: [
         { name: 'Jack "Sully" Sullivan', factions: ['Rooster'] },
