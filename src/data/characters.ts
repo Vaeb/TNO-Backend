@@ -1846,6 +1846,9 @@ export const npCharacters: NpCharacters = {
     Kennasofly: [
         { name: 'Jupiter Adams', factions: ['Tuner Shop'], displayName: 0 },
     ],
+    KevinRamm: [
+        { name: 'Kevin Ram', displayName: 0 },
+    ],
     KezieEve: [
         { name: 'Ghost Storm', factions: ['GSF'] },
     ],
@@ -2729,7 +2732,7 @@ export const npCharacters: NpCharacters = {
     Pasty: [
         { name: '[Officer] Ernest Kaminski', factions: ['Police'], displayName: 2 },
     ],
-    Peeks_GG: [
+    Peeks: [
         { name: 'Pluto Rivers', factions: ['Gulag Gang'], displayName: 1 },
     ],
     Pengwin: [
