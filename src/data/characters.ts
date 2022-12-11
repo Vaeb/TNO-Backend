@@ -3644,7 +3644,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Chief', factions: ['Self Insert'], displayName: 1 },
     ],
     TheDogfather82: [
-        { name: 'Lucas "Wolfy" Frank', factions: ['SSB'] },
+        { name: 'Lucas "Wolfy" Frank', factions: ['Vagos'] },
     ],
     TheDondi: [
         { name: 'Arthur Hammond', nicknames: ['The "Doctor"'] },
