@@ -615,6 +615,9 @@ export const npCharacters: NpCharacters = {
     Capped: [
         { name: 'Capped Tarranova', factions: ['Street Team', 'Chang Gang'], nicknames: ['Pigeon', 'Terranova', 'Nova'], displayName: 0 },
     ],
+    Capshion: [
+        { name: 'Pauli Maglioni', factions: ['SOS'], displayName: 0 },
+    ],
     capsure: [
         { name: 'Dimitri Nekola', factions: ['Pegasus'] },
     ],
@@ -1059,6 +1062,9 @@ export const npCharacters: NpCharacters = {
     eHulzy: [
         { name: 'Carmine Mosca', factions: ['Italian Mafia'], displayName: 0 },
     ],
+    EiSEU: [
+        { name: 'Jonathan Hoig', factions: ['SOS'], displayName: 0 },
+    ],
     either: [
         { name: 'Jaden Christopher' },
     ],
@@ -1385,6 +1391,9 @@ export const npCharacters: NpCharacters = {
     hidaruma: [
         { name: 'Nico Kanto', factions: ['HOA'] },
     ],
+    himadi: [
+        { name: 'Madi Badi', factions: ['SOS'], displayName: 0 },
+    ],
     HiredGunRP: [
         { name: '[Deputy] Colt Shepherd', factions: ['Police'] },
     ],
@@ -1516,12 +1525,18 @@ export const npCharacters: NpCharacters = {
     Intelleqt: [
         { name: 'Donovan "DK" King', factions: ['GSF'] },
     ],
+    iqkev: [
+        { name: 'Kev In', factions: ['SOS'], displayName: 0 },
+    ],
     ironmonkeytv: [
         { name: 'Winston Bolt', factions: ['Mandem'] },
         { name: 'Dragon' },
     ],
     itmeJP: [
         { name: 'Wilbur Higgins' },
+    ],
+    itsfragss: [
+        { name: 'Maxwell Connorth', factions: ['SOS'], nicknames: ['Max'], displayName: 1 },
     ],
     ItsHighsky: [
         { name: 'Sky Parks', factions: ['Royal Mafia'], displayName: 0 },
@@ -2600,6 +2615,9 @@ export const npCharacters: NpCharacters = {
     nnsLUL: [
         { name: '[Development] nns', factions: ['Development'], assumeChar: true },
     ],
+    nobeljt: [
+        { name: 'Lucas Spade', factions: ['SOS'], displayName: 0 },
+    ],
     NoElusionz: [
         { name: 'Bobby Schmiguel', factions: ['GSF'], nicknames: ['Bobby Beats'], displayName: 3 },
     ],
@@ -3326,6 +3344,9 @@ export const npCharacters: NpCharacters = {
     SoMuchOregano: [
         { name: 'Vincent Genovese', factions: ['Rooster'], displayName: 0 },
     ],
+    Soniic808: [
+        { name: 'Jack Stone', factions: ['SOS'], displayName: 0 },
+    ],
     SonKnuck: [
         { name: 'Patrick Desseault', factions: ['Rooster'], displayName: 0 },
     ],
@@ -3359,6 +3380,9 @@ export const npCharacters: NpCharacters = {
     ],
     SpitfireQG: [
         { name: 'Billy Walker', factions: ['Wastelanders'], displayName: 0 },
+    ],
+    spoty09: [
+        { name: 'Staniel Raymond', factions: ['SOS'], nicknames: ['Elfie', 'Alfie'], displayName: 0 },
     ],
     Sput: [
         { name: 'Garry Smod', factions: ['DoC'], displayName: 0 },
@@ -3420,6 +3444,9 @@ export const npCharacters: NpCharacters = {
     ],
     Stork1e: [
         { name: '[Officer] Luis Montoya', factions: ['Police'], displayName: 2 },
+    ],
+    StrawHatlol: [
+        { name: 'Angel Jiménez', factions: ['SOS'], nicknames: ['Jimenez'], displayName: 0 },
     ],
     Striking_Fast: [
         { name: 'Gerard "Dewey" Hawthorne', nicknames: ['Dewie'], factions: ['Rooster'] },
@@ -3643,6 +3670,9 @@ export const npCharacters: NpCharacters = {
     TheHexagonist: [
         { name: '[Peacekeeper] Vincent Glass', factions: ['Police'], displayName: 2 },
         { name: 'Denis Blatovich', factions: ['CBPD'], nicknames: ['Boris'], displayName: 0 },
+    ],
+    Thekegs: [
+        { name: 'Charles Raymond', factions: ['SOS'], displayName: 0 },
     ],
     TheKozak_: [
         { name: '[EMS] Chad Chaddington III', factions: ['Medical'] },

@@ -51,6 +51,7 @@ export const npFactionsReal = { // map: removed spaces + converted to lower case
     lunatix: 'Lunatix',
     marabunta: 'Marabunta',
     bsk: 'BSK',
+    sos: 'SOS',
     rust: 'RUST',
     cbpd: 'CBPD',
     royalmafia: 'Royal Mafia',
