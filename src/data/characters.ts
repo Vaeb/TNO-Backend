@@ -3813,6 +3813,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Toh Biggles Fitzcharles', displayName: 0, nicknames: ['Yaes'] },
     ],
     uhhMort: [
+        { name: 'Morty Shaw', factions: ['Independent'], assumeServer: 'whitelist' },
         { name: 'Morty Shaw', factions: ['Gulag Gang'], assumeServer: 'public' },
     ],
     uhLuvi: [
