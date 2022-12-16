@@ -3382,7 +3382,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Billy Walker', factions: ['Wastelanders'], displayName: 0 },
     ],
     spoty09: [
-        { name: 'Staniel Raymond', factions: ['SOS'], nicknames: ['Elfie', 'Alfie'], displayName: 0 },
+        { name: 'Staniel Raymond', factions: ['SOS'], nicknames: ['Elfie', 'Alfie'], displayName: 3 },
     ],
     Sput: [
         { name: 'Garry Smod', factions: ['DoC'], displayName: 0 },
