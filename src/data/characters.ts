@@ -1862,7 +1862,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Jupiter Adams', factions: ['Tuner Shop'], displayName: 0 },
     ],
     KevinRamm: [
-        { name: 'Kevin Ram', displayName: 0 },
+        { name: 'Kevin Ram', factions: ['Gulag Gang'], displayName: 0 },
     ],
     KezieEve: [
         { name: 'Ghost Storm', factions: ['GSF'] },
