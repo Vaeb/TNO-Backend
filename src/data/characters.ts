@@ -3973,7 +3973,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Lola Sunshine', displayName: 1 },
     ],
     Wizop: [
-        { name: 'Dreyvon Cartier', factions: ['Gulag Gang'], nicknames: ['Drip'], displayName: 3 },
+        { name: 'Dreyvon Cartier', factions: ['Gulag Gang'], nicknames: ['Drip'], displayName: 3, assume: 'assumeOther' },
     ],
     WLVSx: [
         { name: 'Wolfe McCreedy', nicknames: ['Wolfie'], displayName: 3 },
