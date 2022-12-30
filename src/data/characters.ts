@@ -2763,8 +2763,8 @@ export const npCharacters: NpCharacters = {
         { name: 'Kenneth "Ken-sama" Foreman', factions: ['Burger Shot'] },
     ],
     PENTA: [
-        { name: '[Peacekeeper] Randy Wrangler', factions: ['Police'], nicknames: [reg(/\bwrang/), 'Court'] },
-        { name: '[Deputy] John Copperton', factions: ['Police'], nicknames: ['John Cop'], displayName: 2 },
+        { name: '[Peacekeeper] Randy Wrangler', factions: ['Police'], nicknames: [reg(/\bwrang/), 'Court', 'CPD'] },
+        { name: '[Deputy] John Copperton', factions: ['Police'], nicknames: ['John Cop', 'SDSO'], displayName: 2 },
         { name: 'Jordan Steele', displayName: 0, nicknames: ['"Parking" God', 'Phoenix Messiah'] },
         { name: 'Ricky Robins' },
         { name: 'Bully Maguire', displayName: 0 },
