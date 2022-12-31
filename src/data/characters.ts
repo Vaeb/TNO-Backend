@@ -1498,7 +1498,7 @@ export const npCharacters: NpCharacters = {
     IJuanAWin: [
         { name: 'Machete Cortez', factions: ['Marabunta'] },
     ],
-    ikittyyyy: [
+    ikitty: [
         { name: 'Kitty Dream', factions: ['Britney Gang', 'Burger Shot', 'Rooster'] },
     ],
     ilenol: [
