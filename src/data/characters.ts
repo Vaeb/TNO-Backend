@@ -3733,7 +3733,7 @@ export const npCharacters: NpCharacters = {
     ],
     TinySpark: [
         { name: '[Peacekeeper] Daisy Dukakis', factions: ['Police'] },
-        { name: 'Kassandra Kage' },
+        { name: 'Kassandra Kage', factions: ['Seaside'] },
     ],
     TinyStunt: [
         { name: '[EMS] Bailey Jade', factions: ['Medical'] },
