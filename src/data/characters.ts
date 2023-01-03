@@ -3568,7 +3568,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Milena' },
     ],
     TashiRP: [
-        { name: 'Zelda Johansson', factions: ['SSB'], displayName: 0 },
+        { name: 'Zelda Johansson', displayName: 0 },
     ],
     TastyMintsNA: [
         { name: '[Peacekeeper] Eric Wong', factions: ['Police'] },
