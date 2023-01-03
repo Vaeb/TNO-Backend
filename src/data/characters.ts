@@ -38,7 +38,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Development] Stewart', factions: ['Development'], nicknames: ['Handling', 'Fixes', 'Fixing', 'Tuning', reg(/\bnew\s+\w+\s*stuff/)] },
     ],
     '4HEAD': [
-        { name: 'Aubrey "4HEAD" Webster', factions: ['Gulag Gang'] },
+        { name: 'Aubrey "4HEAD" Webster', factions: ['Gulag Gang', 'SSB'] },
     ],
     '52chains': [
         { name: '[Officer] Carmine Costello', factions: ['Police'], nicknames: ['Mouse'], displayName: 1 },
@@ -449,7 +449,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Dominic "Lil D" Chester', nicknames: ['Sabado de Sol'] },
     ],
     biggwoo: [
-        { name: 'Future Cortair', factions: ['Gulag Gang'] },
+        { name: 'Future Cortair', factions: ['Gulag Gang', 'SSB'] },
     ],
     BigRichardRP: [
         { name: "Richard O'Conner", factions: ['Gulag Gang'], nicknames: ['Richie'], displayName: 1 },
@@ -1976,7 +1976,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Karl "KJ" Johnny Black', factions: ['Seaside'] },
     ],
     Kookie: [
-        { name: 'Kookie Louw', factions: ['Gulag Gang'] },
+        { name: 'Kookie Louw', factions: ['Gulag Gang', 'SSB'] },
     ],
     KriptedAUS: [
         { name: 'Antonio Rodrigues', factions: ['BBMC'], displayName: 0 },
