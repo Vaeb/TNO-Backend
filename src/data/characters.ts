@@ -1155,6 +1155,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Jane Farmer' },
         { name: 'Steven Hayes', factions: ['Burger Shot'], displayName: 0 },
     ],
+    fatboislimyo: [
+        { name: 'Fin Win', factions: ['SSB'], displayName: 0 },
+    ],
     FeliciaDay: [
         { name: 'Cherryclarie Dinwittie', nicknames: ['CherryClaire'], displayName: 3 },
     ],
@@ -4081,6 +4084,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Oswald Tinkerman', factions: ['Lost MC'], displayName: 1 },
     ],
     ZapremeTV: [
+        { name: 'Kai Alexander', factions: ['SSB'], displayName: 1 },
         { name: 'Jacob Pibb', factions: ['Vagos'], displayName: 0 },
     ],
     Zaquelle: [
