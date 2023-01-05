@@ -3296,6 +3296,9 @@ export const npCharacters: NpCharacters = {
     skxd07: [
         { name: '[Officer] Joshi Drake', factions: ['Police'], assumeServer: 'international' },
     ],
+    sl1meW: [
+        { name: 'Tommy "TicTac" Olliver', factions: ['SSB'], nicknames: ['Tic Tac'] },
+    ],
     Slasher2099: [
         { name: '[Officer] Darrel McCormik', factions: ['Police'] },
         { name: '[K9 Trooper] Fenton', factions: ['Police'], nicknames: ['Fentons'] },
