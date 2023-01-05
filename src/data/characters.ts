@@ -3217,6 +3217,9 @@ export const npCharacters: NpCharacters = {
     ShrykeLP: [
         { name: 'Patrick Shryke', factions: ['Wastelanders'], displayName: 0 },
     ],
+    shush_x3: [
+        { name: 'Devon Shy', factions: ['SSB'], displayName: 1 },
+    ],
     ShutupWave: [
         { name: '[Peacekeeper] Richard Tips', factions: ['Police'], displayName: 2 },
     ],
