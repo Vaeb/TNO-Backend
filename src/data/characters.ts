@@ -58,7 +58,7 @@ export const npCharacters: NpCharacters = {
         { name: 'D "D Rose" Rose', factions: ['SSB'] },
     ],
     a2guapo: [
-        { name: 'Jay Hobbs', nicknames: ['J', 'JHobbs'], displayName: 0 },
+        { name: 'Jay Hobbs', factions: ['Gulag Gang'], nicknames: ['J', 'JHobbs'], displayName: 0 },
     ],
     Aaoki: [
         { name: '[Deputy] Maddison Bancroft', factions: ['Police'], displayName: 2 },
