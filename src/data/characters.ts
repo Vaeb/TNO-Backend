@@ -1981,7 +1981,7 @@ export const npCharacters: NpCharacters = {
     Kookie: [
         { name: 'Kookie Louw', factions: ['Gulag Gang'] },
     ],
-    KriptedAUS: [
+    Kripted: [
         { name: 'Antonio Rodrigues', factions: ['BBMC'], displayName: 0 },
     ],
     KristoferYee: [
