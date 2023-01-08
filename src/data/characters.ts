@@ -1230,7 +1230,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Dizzy Bluffins', factions: ['SSB'], displayName: 1 },
     ],
     frogbound: [
-        { name: 'Edward Nygma' },
+        { name: '[Officer] Edward Nygma', factions: ['Police'] },
         { name: 'Alexander Egorov' },
     ],
     Frshnesss: [
@@ -3979,7 +3979,7 @@ export const npCharacters: NpCharacters = {
     ],
     WithExtraSauce: [
         { name: '[Deputy] Budweiser Malarky', factions: ['Police'], nicknames: ['Bud'], displayName: 2 },
-        { name: 'Jeffy Coldiron', displayName: 2 },
+        { name: '[Dr.] Jeffy Coldiron', factions: ['Medical'], displayName: 2 },
     ],
     withoutSunshine: [
         { name: 'Lola Sunshine', displayName: 1 },
@@ -4066,7 +4066,7 @@ export const npCharacters: NpCharacters = {
     ],
     YoinksOG: [
         { name: '[Development] YoinksOG', factions: ['Development'], nicknames: ['3D', 'Clothes', 'Clothing'] },
-        { name: 'Doug Canada' },
+        { name: 'Doug Canada', factions: ['ASRR'] },
     ],
     YoMarty: [
         { name: 'Lil Marty', factions: ['SSB'], displayName: 0, assumeServer: 'public' },
