@@ -2779,6 +2779,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Robert Penta', factions: ['Self Insert'], displayName: 0 },
         { name: 'Jane Obama', displayName: 0 },
     ],
+    perqe: [
+        { name: 'Peter Percocet', factions: ['BBMC'], nicknames: ['PP'] },
+    ],
     peruze: [
         { name: 'Ronald "Scuffed Tony" Legarski', factions: ['ASRR'], nicknames: ['Tony', 'Ron', 'Block'] },
         { name: '[Peacekeeper] Anthony Beans', factions: ['Police'], displayName: 2 },
