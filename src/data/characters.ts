@@ -2371,7 +2371,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Ratlord', nicknames: ['Raccoon', 'Racoon', 'Rat Lord'] },
     ],
     MikeTheBard: [
-        { name: 'Hubcap Jones', factions: ['BBMC'], displayName: 0, assumeServer: 'whitelist' },
+        { name: 'Hubcap Jones', factions: ['Lost MC'], displayName: 0, assumeServer: 'whitelist' },
         { name: 'Jack Nova', displayName: 0 },
         { name: '[Ranger] Manny Multchbottom', factions: ['Police'], displayName: 0, assumeServer: 'public' },
     ],
