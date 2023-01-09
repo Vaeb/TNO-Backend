@@ -905,7 +905,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Albert Intelligence', factions: ['CBPD', 'Rooster'], nicknames: ['A.I.'] },
     ],
     DEFAC3D: [
-        { name: 'Denzel Wallace', displayName: 0 },
+        { name: 'Denzel Wallace', factions: ['Mandem'], displayName: 0 },
     ],
     Dehxter: [
         { name: 'Mark Jango', factions: ['Clean Cartel'], displayName: 0 },
