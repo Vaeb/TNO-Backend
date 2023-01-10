@@ -144,7 +144,7 @@ export const npCharacters: NpCharacters = {
     AfricanSnowball: [
         { name: '[Trooper] Dwayne Carter IV', factions: ['Police'], nicknames: [reg(/good [a*][s*]+ day/)], displayName: 2 },
         { name: 'Buck Stanton', displayName: 2 },
-        { name: 'Leland "LJ" Jones', factions: ['GSF', 'Pegasus'] },
+        { name: 'Leland "LJ" Jones', factions: ['RUST', 'Pegasus'] },
         { name: 'Taylor Africansnowball', factions: ['Self Insert'], displayName: 0 },
     ],
     Afro: [
@@ -789,7 +789,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Scott Ridley', factions: ['Police'] },
     ],
     CraigySmith: [
-        { name: 'Frank Junior-Smith', factions: ['Vagos'], nicknames: ['Frank Jr Smith', 'Franky', 'Scottish'], displayName: 3 },
+        { name: 'Frank Junior-Smith', factions: ['RUST'], nicknames: ['Frank Jr Smith', 'Franky', 'Scottish'], displayName: 3 },
     ],
     CrayonPonyfish: [
         { name: '[Officer] Wynona Fontaine', factions: ['Police'], displayName: 2 },
@@ -3329,7 +3329,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Duke Wiggles', displayName: 0 },
     ],
     smo_och: [
-        { name: 'Mike Smoore', displayName: 0 },
+        { name: 'Mike Smoore', factions: ['RUST'], displayName: 0 },
     ],
     SmokySloth: [
         { name: 'Bovice Wilkinson', factions: ['Prison'] },
@@ -3337,6 +3337,9 @@ export const npCharacters: NpCharacters = {
     ],
     SnekoGebiko: [
         { name: '[Deputy] Perry Willis', factions: ['Police'], displayName: 1, assumeServer: 'public' },
+    ],
+    SniperNamedG: [
+        { name: 'G Baby', factions: ['RUST'], displayName: 0 },
     ],
     so_sneaky: [
         { name: 'Jessie Dagger', factions: ['Wastelanders'], displayName: 0 },
@@ -3573,7 +3576,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Mya ?' },
     ],
     tara_: [
-        { name: 'Sarah Ableton' },
+        { name: 'Sarah Ableton', factions: ['RUST'] },
     ],
     Tasara22: [
         { name: 'Tuesday Phillips' },
