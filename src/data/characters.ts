@@ -3950,7 +3950,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Bowser' },
     ],
     WeCameAsBecca: [
-        { name: '[Dr.] Kennedy Adams', factions: ['Medical'], displayName: 0 },
+        { name: 'Kennedy Adams', factions: ['RUST'], displayName: 0 },
     ],
     Wehtuns: [
         { name: '[Lawyer] Lawrence Splainer', factions: ['DoJ'], displayName: 2 },
