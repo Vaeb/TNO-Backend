@@ -67,7 +67,7 @@ const ASTATES = {
 } as const;
 
 const game = '32982' as const;
-const languages: string[] = ['en', 'hi', 'no', 'pt']; // https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
+const languages: string[] = ['en', 'hi', 'no', 'pt', 'es']; // https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
 const streamType: HelixStreamType = 'live';
 const fetchLimit = 100 as const;
 const fetchLimitClips = 100 as const;
