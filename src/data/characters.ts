@@ -258,7 +258,6 @@ export const npCharacters: NpCharacters = {
     appyturk: [
         { name: 'Appie Turk', factions: ['Gulag Gang'], displayName: 2, assumeServer: 'whitelist' },
         { name: 'Appie Turk', factions: ['Gulag Gang'], displayName: 2, assumeServer: 'public' },
-        { name: 'Appie Turk', displayName: 2, assumeServer: 'international' },
     ],
     ArboYT: [
         { name: 'Jimmy Sprinkle', factions: ['DoC'], displayName: 0 },
@@ -1591,7 +1590,6 @@ export const npCharacters: NpCharacters = {
     ],
     Jack: [
         { name: 'Jack Cortair', factions: ['Gulag Gang'], nicknames: ['Cookie', 'Galleta'], assumeServer: 'whitelist' },
-        { name: 'Jack Cortair', nicknames: ['Cookie'], assumeServer: 'international' },
         { name: '[Deputy] Dez Wright', factions: ['Police'], nicknames: ['Doofy', reg(/\bdez/)], displayName: 2 },
     ],
     Jackhuddo: [
@@ -2409,7 +2407,6 @@ export const npCharacters: NpCharacters = {
         { name: 'Ming Jingtai', factions: ['Gulag Gang'], leader: true, assumeServer: 'public' },
         { name: 'Boon Bundy', displayName: 0, assumeServer: 'public' },
         { name: '[Officer] Jing Mingtai', factions: ['Police'], displayName: 1, assumeServer: 'public' },
-        { name: 'Ming Jingtai', assumeServer: 'international' },
     ],
     miniminter: [
         { name: 'Peter Shufflebottom', displayName: 0, assume: 'assumeOther' },
@@ -2709,7 +2706,6 @@ export const npCharacters: NpCharacters = {
         { name: 'Marty Banks', factions: ['Gulag Gang'], leader: true, assumeServer: 'whitelist' },
         { name: '[Deputy] Sharty Banks', factions: ['Police'], displayName: 1 },
         { name: 'Marty Shanks', factions: ['Gulag Gang', 'Burger Shot'], nicknames: [reg(/\bburger/)], assumeServer: 'public' },
-        { name: 'Marty Banks', assumeServer: 'international' },
         { name: '[Officer] Sharty Manks', factions: ['Police'], displayName: 1, assumeServer: 'public' },
     ],
     onebaw: [
