@@ -2686,6 +2686,10 @@ export const npCharacters: NpCharacters = {
         { name: 'Charles "Taco" Prince', factions: ['Chang Gang'], assumeServer: 'whitelist', facebook: true },
         { name: 'Charles "Taco" Prince', factions: ['Gulag Gang'], assumeServer: 'public' },
     ],
+    offlinezaceed: [
+        { name: 'Zaceed Skengerton', factions: ['Gulag Gang'], nicknames: [reg(/\b[zs]a[skc]+[ei]*y?d/)], displayName: 1, assumeServer: 'whitelist' },
+        { name: '[Officer] Zacood Skengerson', factions: ['Police'], displayName: 1, assumeServer: 'public' },
+    ],
     OG_Tyger: [
         { name: '[Officer] Peter Frost', factions: ['Police'] },
     ],
