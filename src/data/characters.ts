@@ -3226,6 +3226,9 @@ export const npCharacters: NpCharacters = {
     ShutupWave: [
         { name: '[Peacekeeper] Richard Tips', factions: ['Police'], displayName: 2 },
     ],
+    Shxcky: [
+        { name: 'Jay Breezy', factions: ['Seaside'], displayName: 0 },
+    ],
     Sidefxmayinclde: [
         { name: 'Kerm Henson', factions: ['Burger Shot', 'Rooster'], displayName: 0 },
     ],
