@@ -42,7 +42,7 @@ export const regNpPublic = addPublicCounties(mergeRegex([
 export const regNpInternational = addOtherCountries(mergeRegex([
     /(?:no[\s\-_.]*pixel|\bn[\s\-_.]*p(?=\b|\d))(?:[\s\-_.]*(?:rp|\d+\.?\d*))?[\W_]*india\b(?!\W+(?:later|after))/i,
     /|(\bindia[\W_]*(?:no[\s\-_.]*pixel|\bn[\s\-_.]*p(?=\b|\d)))/i,
-    /|(?<=(?:\bon|playing|gta[\s\-_.]*[5v]?|rp|roleplay)\W+)(?:india)/i,
+    /|(?<=(?:\bon|\bin|goes\sto|playing|gta[\s\-_.]*[5v]?|rp|roleplay)\W+)(?:india)/i,
     /|\bindia[\W_]*(?:india|server|county|city|country|universe|timeline|queue|for\b|roleplay|rp\b|stuff\b|shenanigans)/i,
     /|[^\w\s]\s*india\s*[^\w\s]/i,
     /|\bindia$/i,
