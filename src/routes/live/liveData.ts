@@ -67,7 +67,12 @@ const ASTATES = {
 } as const;
 
 const game = '32982' as const;
-const languages: string[] = ['en', 'hi', 'no', 'pt', 'es']; // https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
+const languages = ['en', 'hi', 'no', 'pt', 'es']; // https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
+// eslint-disable-next-line no-sequences
+const interLangs: { [K in typeof languages[number]]: true } = Object.assign(
+    {},
+    ...['pt', 'hi', 'es'].map(lang => ({ [lang]: true }))
+);
 const streamType: HelixStreamType = 'live';
 const fetchLimit = 100 as const;
 const fetchLimitClips = 100 as const;
@@ -599,6 +604,9 @@ export const getFbStreams = async (): Promise<FbStreamDetails[]> => {
     return fbStreams;
 };
 
+const isHelixStream = (stream: HelixStream | FbStreamDetails): stream is HelixStream =>
+    (stream as HelixStream).language != null;
+
 type FilterFactions = [FactionMini, string, boolean, number][];
 
 export interface LiveOptions {
@@ -768,6 +776,7 @@ export const getNpLive = async (baseOptions = {}, override = false, endpoint = '
                 const factionCount: FactionCount = mapObj(npFactions, () => 0);
                 gtaStreams.forEach((helixStream) => {
                     const { userDisplayName: channelName, title, viewers } = helixStream;
+                    const language = isHelixStream(helixStream) ? helixStream.language : 'en';
 
                     const baseStream: BaseStream = {
                         channelName,
@@ -928,7 +937,7 @@ export const getNpLive = async (baseOptions = {}, override = false, endpoint = '
                     const onWorldwideIndex = title.indexOfRegex(regNpInternational, 0);
                     let onServerDetected = false;
 
-                    if (onWorldwideIndex !== -1) {
+                    if (onWorldwideIndex !== -1 || interLangs[language]) {
                         onServer = 'international';
                         onServerDetected = true;
                     } else if (onPublicIndex < onWhitelistIndex) {

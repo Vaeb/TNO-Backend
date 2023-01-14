@@ -75,6 +75,7 @@ module.exports = {
         'no-plusplus': 'off',
         'no-prototype-builtins': 'off',
         'no-restricted-syntax': 'off',
+        'no-return-assign': 'off',
         'no-underscore-dangle': 'off',
         'no-useless-escape': 'off',
         // '@typescript-eslint/no-unused-vars': [
