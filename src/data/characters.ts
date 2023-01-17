@@ -1971,7 +1971,8 @@ export const npCharacters: NpCharacters = {
         { name: 'Ray Ray', factions: ['ASRR'], displayName: 0 },
     ],
     kojoXD: [
-        { name: 'Kojo ?', factions: ['Gulag Gang'], assumeServer: 'public', assumeChar: true },
+        { name: 'Kojo ?', factions: ['Gulag Gang'], assumeServer: 'international', assumeChar: true },
+        { name: 'Kojo ?', factions: ['Gulag Gang'], assumeServer: 'public' },
     ],
     Kongfue: [
         { name: 'Karl "KJ" Johnny Black', factions: ['Seaside'] },
