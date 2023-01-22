@@ -560,7 +560,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Kevin Kona', factions: ['Police'] },
     ],
     BucketSt: [
-        { name: 'Gheto Kaiba', displayName: 2 },
+        { name: 'Gheto Kaiba', factions: ['BBMC'], displayName: 2 },
     ],
     Bundie: [
         { name: 'Tane Mahuta', factions: ['RUST'], nicknames: ['Kiwi'], displayName: 3 },
@@ -2910,7 +2910,7 @@ export const npCharacters: NpCharacters = {
     ],
     Raided: [
         { name: '[Officer] Gage Draider', factions: ['Police'] },
-        { name: 'Wren Draider', factions: ['RUST'], displayName: 1 },
+        { name: 'Wren Draider', displayName: 1 },
         { name: '[Development] Raided', factions: ['Development'] },
     ],
     raine: [
