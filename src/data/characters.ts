@@ -553,7 +553,14 @@ export const npCharacters: NpCharacters = {
         { name: 'Broxh Kava', displayName: 1 },
     ],
     buddha: [
-        { name: 'Lang Buddha', factions: ['Cleanbois', 'Clean Cartel', 'Rooster'], leader: true, nicknames: ['Circle Andy', 'Timelord'], assumeChar: true, assumeServer: 'whitelist' },
+        {
+            name: '[Mayor] Lang Buddha',
+            factions: ['Cleanbois', 'DoJ', 'Clean Cartel', 'Rooster'],
+            leader: true,
+            nicknames: ['Circle Andy', 'Timelord'],
+            assumeChar: true,
+            assumeServer: 'whitelist',
+        },
         { name: '[Trooper] LeBron James', factions: ['Police'], nicknames: ['623'], displayName: 1 },
         { name: '[Ranger] Lang Buddha', factions: ['Police'], displayName: 1, assumeServer: 'public' },
         { name: 'Esteban Julio-Ricardo-Montoya-De-La-Rosa Ramirez', factions: ['Police'] },
@@ -1547,7 +1554,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Sky Parks', factions: ['Royal Mafia'], displayName: 0 },
     ],
     itsjustasummerjob: [
-        { name: '[Mayor] Sabith "Bunny" Cohen', factions: ['DoJ', 'Stable'] },
+        { name: 'Sabith "Bunny" Cohen', factions: ['Stable'] },
     ],
     ItsJustJosh: [
         { name: 'Levi Dawson', factions: ['SSB'] },
