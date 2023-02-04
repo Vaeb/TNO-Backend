@@ -492,7 +492,7 @@ export const getClips = async (endpoint = '<no-endpoint>'): Promise<[ClipGroups,
 
                     clips.push({
                         id: clip.id,
-                        title: clip.title,
+                        title: clip.title.replace(/"/g, '&quot;'),
                         channelName,
                         clipperName: clip.creatorDisplayName,
                         viewers: clip.views,
@@ -780,7 +780,7 @@ export const getNpLive = async (baseOptions = {}, override = false, endpoint = '
 
                     const baseStream: BaseStream = {
                         channelName,
-                        title,
+                        title: title.replace(/"/g, '&quot;'),
                         // tagIds: helixStream.tagIds,
                         viewers,
                         profileUrl: (helixStream as FbStreamDetails).profileUrlOverride || knownPfps[(helixStream as HelixStream).userId],
