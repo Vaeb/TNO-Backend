@@ -3009,6 +3009,9 @@ export const npCharacters: NpCharacters = {
     RhiTexxy: [
         { name: 'Brook Lexi', factions: ['Lost MC'] },
     ],
+    richyrevolver: [
+        { name: 'Axel Drake', factions: ['Seaside'] },
+    ],
     RickMongoLIVE: [
         { name: '[D.A.] Rick Mongo', factions: ['DoJ'], assume: 'assumeOther' },
     ],
