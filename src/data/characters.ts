@@ -2419,6 +2419,9 @@ export const npCharacters: NpCharacters = {
     miniminter: [
         { name: 'Peter Shufflebottom', displayName: 0, assume: 'assumeOther' },
     ],
+    Minky: [
+        { name: 'Zoey Marie', displayName: 0 },
+    ],
     MinusFive: [
         { name: '[Officer] Jason Bidwell', factions: ['Police'] },
     ],
