@@ -1029,6 +1029,7 @@ export const getNpLive = async (baseOptions = {}, override = false, endpoint = '
 
                     if (nowCharacter && onServerDetected === false) {
                         ({ assumeServer } = nowCharacter);
+                        if (channelNameLower === 'sparkykne' && title.includes('🟢')) onServer = 'whitelist';
                         onServer = assumeServer;
                     }
 
