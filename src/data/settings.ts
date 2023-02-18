@@ -63,6 +63,7 @@ export const regOthers = [
     { name: 'LegacyRP', reg: /\blegacy[\s\-_.]*(?:rp\b|roleplay)/i, include: 1 },
     { name: 'District 10', reg: /\bdistrict[\s\-_.]*(?:10|ten)\b|\bd10\b/i, include: 1 },
     { name: 'EchoRP', reg: /\becho[\s\-_.]*(?:rp\b|roleplay)/i, include: 1 },
+    { name: '5City', reg: /\b5city|\bfivecity/i, include: 1 },
     { name: 'NewDayRP', reg: /\bnewday(?:rp|roleplay)?\b|\b(?:new\s+day|nd)\s*(?:rp|roleplay)\b/i, include: 1 },
     { name: 'TheSquadRP', reg: /(?:the[\s\-]*|\b)squad[\s\-]*(?:roleplay|rp\b)|\bts[\s\-]*rp\b/i, include: 1 },
     { name: 'NewHopeRP', reg: /\bnew[\s\-_.]*hope[\s\-_.]*(?:rp\b|roleplay)|\bnhrp\b/i, include: 1 },
