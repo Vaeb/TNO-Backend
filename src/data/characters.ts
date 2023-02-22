@@ -447,9 +447,6 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Jamal Ferreira', factions: ['Police'], assumeServer: 'public' },
         { name: 'Dominic "Lil D" Chester', nicknames: ['Sabado de Sol'] },
     ],
-    biggwoo: [
-        { name: 'Future Cortair', factions: ['Gulag Gang'] },
-    ],
     BigRichardRP: [
         { name: "Richard O'Conner", factions: ['Gulag Gang'], nicknames: ['Richie'], displayName: 1 },
         { name: "[Officer] Rupert O'Copper", factions: ['Police'], displayName: 1 },
@@ -1010,6 +1007,9 @@ export const npCharacters: NpCharacters = {
     ],
     Dragecia: [
         { name: 'Bunnie Bunsworth', factions: ['HOA'] },
+    ],
+    Dripp: [
+        { name: 'Future Cortair', factions: ['Gulag Gang'] },
     ],
     DROwSeph420: [
         { name: 'John "Geno" Collins', factions: ['GSF'] },
