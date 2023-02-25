@@ -1011,6 +1011,7 @@ export const npCharacters: NpCharacters = {
     ],
     Dripp: [
         { name: 'Future Cortair', factions: ['Gulag Gang'] },
+        { name: '[Officer] Jamarius Quangle', factions: ['Police'], nicknames: ['Jamar'], displayName: 1 },
     ],
     DROwSeph420: [
         { name: 'John "Geno" Collins', factions: ['GSF'] },
