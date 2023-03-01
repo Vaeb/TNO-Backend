@@ -2157,6 +2157,9 @@ export const npCharacters: NpCharacters = {
     Loserfruit: [
         { name: '[EMS] Lizzie Bien', factions: ['Medical'], assume: 'assumeOther' },
     ],
+    Louuis: [
+        { name: 'Sparky Kane', factions: ['Mandem'], displayName: 1 },
+    ],
     loveANG3L: [
         { name: 'Kendra Davis', factions: ['Vagos'] },
     ],
@@ -2462,7 +2465,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Mitch Moonmoon', factions: ['Self Insert'], nicknames: [reg(/\witch\.tv\/moonmoon\b/)], displayName: 0 },
         { name: 'Maximilian "Yung Dab" Thoroughbred', nicknames: ['The "Gnome"', 'Yung', 'Dab', 'Max'], displayName: 0 },
     ],
-    Moose_Taffy: [
+    MooseTaffy: [
         { name: 'Patar Bellosh', factions: ['Mandem'] },
         { name: '[Ride Along] Mantar Mellosh', factions: ['Police'] },
     ],
@@ -3401,9 +3404,6 @@ export const npCharacters: NpCharacters = {
         { name: 'Adrian Block', factions: ['ASRR'], displayName: 0 },
         { name: '[Deputy] Patrick Downing', factions: ['Police'], nicknames: ['Pat'] },
         { name: 'Casey Boyd', nicknames: ['Caseboy', 'L8PD'], displayName: 0 },
-    ],
-    SparkyKNE: [
-        { name: 'Sparky Kane', factions: ['Mandem'], displayName: 1 },
     ],
     SpekCypher: [
         { name: 'Luis Fernandez', factions: ['HOA'], displayName: 0 },
