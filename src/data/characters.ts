@@ -2876,7 +2876,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Kareem Lyon', factions: ['Police'], displayName: 1 },
     ],
     PROD: [
-        { name: 'Prod Ween', nicknames: ['P', 'Rod'], displayName: 1 },
+        { name: 'Prod Ween', factions: ['Gulag Gang'], nicknames: ['P', 'Rod'], displayName: 1 },
     ],
     Protay10: [
         { name: 'James Thompson', factions: ['Hydra Gang', 'Harmony'], nicknames: ['James "Phantom" Thompson', 'Phantom'], displayName: 4 },
