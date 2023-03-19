@@ -724,6 +724,7 @@ export const npCharacters: NpCharacters = {
     ],
     Chelb: [
         { name: 'Alan Kyles', factions: ['Hydra Gang'], displayName: 0 },
+        { name: '[Officer] Josh Kade', factions: ['Police'], displayName: 2 },
     ],
     ChelbMyster: [
         { name: 'Alan Kyles', factions: ['Hydra Gang'], displayName: 0, facebook: true },
