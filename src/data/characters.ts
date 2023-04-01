@@ -3980,7 +3980,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Lawyer] Lawrence Splainer', factions: ['DoJ'], displayName: 2 },
     ],
     Whippy: [
-        { name: 'Irwin Dundee', nicknames: [reg(/\b(?:dundee|irwin)|(?:dundee|irwin)\b/)], displayName: 2, leader: true },
+        { name: 'Irwin Dundee', nicknames: [reg(/\b(?:dundee|irwin)|(?:dundee|irwin)\b/)], displayName: 2 },
         { name: '[Officer] Crocodile "Croc" Steve', factions: ['Police'], nicknames: ['Cop', reg(/\bcroc|croc\b/)] },
         { name: 'James Tinklebottom' },
     ],
