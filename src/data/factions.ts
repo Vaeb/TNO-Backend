@@ -269,7 +269,6 @@ const filterOrderTop: FactionMiniArr = [
     'gangton',
     'cleanbois',
     'police',
-    'doj',
     'changgang',
     'rust',
     'seaside',
@@ -307,7 +306,7 @@ const filterOrderTop: FactionMiniArr = [
     'medical',
 ];
 
-const filterOrderAfterHasColor: FactionMiniArr = ['doc', 'development'];
+const filterOrderAfterHasColor: FactionMiniArr = ['doj', 'doc', 'development'];
 
 const filterOrderAfterNoColor: FactionMiniArr = ['limelight', 'larpers', 'pegasus', 'whitelistnp', 'guessed', 'podcast', 'watchparty', 'other'];
 
