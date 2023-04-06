@@ -326,6 +326,7 @@ const filterRename: { [key in FactionMini]?: string } = {
     international: 'NoPixel International',
     hoa: 'Home Owners Association',
     hydragang: 'Hydra Gang',
+    gangton: 'Gangton Courts',
     bcg: 'Bowl Cut Gang (BCG)',
     asrr: 'Alta Street Ruff Rydaz',
     nbc: 'Natural Born Crackheads',

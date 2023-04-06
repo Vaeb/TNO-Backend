@@ -220,6 +220,7 @@ for (const [streamer, characters] of Object.entries(npCharacters)) {
         } else {
             char.factionUse = 'independent';
         }
+        if (char.displayName === 'Jack') console.log(char, primaryFaction, isFactionColor(primaryFaction));
 
         if (charOld.assume !== undefined) foundOthers[charOld.assume] = true;
 
