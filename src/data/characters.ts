@@ -1602,7 +1602,7 @@ export const npCharacters: NpCharacters = {
     ],
     Jack: [
         { name: 'Jack Cortair', factions: ['Gulag Gang'], nicknames: ['Cookie', 'Galleta'], assumeServer: 'whitelist' },
-        { name: 'Jack Cortair', factions: ['Gangton Courts'], nicknames: ['2.0'] },
+        { name: 'Jack Cortair', factions: ['Gangton Courts'], nicknames: ['2.0', reg(/\bpimp|pimp\b/)] },
         { name: '[Deputy] Dez Wright', factions: ['Police'], nicknames: ['Doofy', reg(/\bdez/)], displayName: 2 },
     ],
     Jackhuddo: [

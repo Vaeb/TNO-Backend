@@ -958,8 +958,9 @@ export const getNpLive = async (baseOptions = {}, override = false, endpoint = '
                             const resSize = numResults > 0 ? matchPositions[0][0].length : -1; // Could use all matches, but more expensive
                             const devFactionWeight = char.factions[0] === 'development' ? 2e4 : 0;
                             const serverMatchWeight = (onServerDetected && char.assumeServer !== onServer && realAssumes.includes(char.assumeServer)) ? 1e4 : 0;
-                            const lowIndex = numResults ? matchPositions[0].index! + serverMatchWeight + devFactionWeight : -1;
-                            if (lowIndex > -1 && (
+                            const serverTwoWeight = char.nicknames && char.nicknames.includes('2.0') ? -1e3 : 0;
+                            const lowIndex = numResults ? matchPositions[0].index! + serverTwoWeight + serverMatchWeight + devFactionWeight : -Infinity;
+                            if (lowIndex > -Infinity && (
                                 lowIndex < lowestPos
                                 || (lowIndex === lowestPos && numResults > maxResults)
                                 || (lowIndex === lowestPos && numResults === maxResults && resSize > maxSize)
