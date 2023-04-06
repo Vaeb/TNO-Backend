@@ -4,6 +4,7 @@ export const npFactionsReal = { // map: removed spaces + converted to lower case
     lostmc: 'Lost MC',
     changgang: 'Chang Gang',
     hydragang: 'Hydra Gang',
+    gangton: 'Gangton Courts',
     chaos: 'Chaos',
     vagos: 'Vagos',
     gsf: 'GSF',

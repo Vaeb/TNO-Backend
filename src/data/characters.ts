@@ -825,6 +825,7 @@ export const npCharacters: NpCharacters = {
     ],
     CurtisRyan: [
         { name: 'Curtis Swoleroid', nicknames: ['"Demon" of Lean Street', 'Curt', 'Citrus'], factions: ['Chang Gang', 'Chaos'], assumeServer: 'whitelist' },
+        { name: 'Curtis Swoleroid', factions: ['Gangton Courts'], nicknames: ['2.0'], leader: true },
         { name: 'Curtis Swoleroid', nicknames: ['"Demon" of Lean Street', 'Curt', 'Citrus'], factions: ['Gulag Gang'], assumeServer: 'public' },
         { name: '[Officer] Stephen McClane', factions: ['Police'] },
         { name: 'Cornelius "Cornbread" Scott', factions: ['GSF'] },
@@ -1524,6 +1525,7 @@ export const npCharacters: NpCharacters = {
     ],
     ilyjordi: [
         { name: 'Ralphie Ralphs', factions: ['Gulag Gang'], displayName: 1 },
+        { name: 'Ralphie Ralphs', factions: ['Gangton Courts'], nicknames: ['2.0'] },
     ],
     ImFluffinJiggly: [
         { name: '[Deputy] ? Wilkons', factions: ['Police'], assumeServer: 'public' },
@@ -1600,6 +1602,7 @@ export const npCharacters: NpCharacters = {
     ],
     Jack: [
         { name: 'Jack Cortair', factions: ['Gulag Gang'], nicknames: ['Cookie', 'Galleta'], assumeServer: 'whitelist' },
+        { name: 'Jack Cortair', factions: ['Gangton Courts'], nicknames: ['2.0'] },
         { name: '[Deputy] Dez Wright', factions: ['Police'], nicknames: ['Doofy', reg(/\bdez/)], displayName: 2 },
     ],
     Jackhuddo: [
@@ -1681,6 +1684,7 @@ export const npCharacters: NpCharacters = {
     ],
     jimmytulip: [
         { name: 'Wayne Biggaz', factions: ['Street Team', 'Chang Gang'], nicknames: [reg(/\bwe+y+n/), reg(/\bwayne/)], leader: true },
+        { name: 'Wayne Biggaz', factions: ['Gangton Courts'], nicknames: ['2.0'] },
     ],
     JinxerTTY: [
         { name: 'Brandon Bowers', nicknames: [String.fromCharCode(68, 117, 109, 98, 102, 117, 99, 107)], displayName: 3 }, // -_-
@@ -2017,6 +2021,7 @@ export const npCharacters: NpCharacters = {
     ],
     Kurupt: [
         { name: 'Tyreke Knox', factions: ['Gulag Gang'], displayName: 0 },
+        { name: 'Arthur Itis', factions: ['Gangton Courts'], nicknames: ['2.0'] },
     ],
     Kydos___: [
         { name: "Baby O'Conner", factions: ['Wastelanders'], displayName: 0 },
@@ -2419,6 +2424,7 @@ export const npCharacters: NpCharacters = {
     ],
     Ming: [
         { name: 'Ming Jingtai', factions: ['Gulag Gang'], assumeServer: 'whitelist' },
+        { name: 'Ming Jingtai', factions: ['Gangton Courts'], nicknames: ['2.0'] },
         { name: 'Ming Jingtai', factions: ['Gulag Gang'], leader: true, assumeServer: 'public' },
         { name: 'Boon Bundy', displayName: 0, assumeServer: 'public' },
         { name: '[Officer] Jing Mingtai', factions: ['Police'], displayName: 1, assumeServer: 'public' },
@@ -2726,6 +2732,7 @@ export const npCharacters: NpCharacters = {
     ],
     omie: [
         { name: 'Marty Banks', factions: ['Gulag Gang'], leader: true, assumeServer: 'whitelist' },
+        { name: 'Marty Banks', factions: ['Gangton Courts'], nicknames: ['2.0'] },
         { name: '[Deputy] Sharty Banks', factions: ['Police'], displayName: 1 },
         { name: 'Marty Shanks', factions: ['Gulag Gang', 'Burger Shot'], nicknames: [reg(/\bburger/)], assumeServer: 'public' },
         { name: '[Officer] Sharty Manks', factions: ['Police'], displayName: 1, assumeServer: 'public' },
@@ -2950,6 +2957,7 @@ export const npCharacters: NpCharacters = {
     ],
     RatedEpicz: [
         { name: 'Randy Bullet', factions: ['Chang Gang'], nicknames: ['Lazy-Eye', 'Shankz'], assumeServer: 'whitelist', facebook: true },
+        { name: 'Randy Bullet', factions: ['Gangton Courts'], nicknames: ['2.0'] },
         { name: 'Roundy Buffet', factions: ['Gulag Gang'], nicknames: ['Randy', 'Bullet'], assumeServer: 'public' },
         { name: '[Trooper] AJ Hunter', factions: ['Police'], nicknames: ['207'] },
     ],
@@ -3810,6 +3818,7 @@ export const npCharacters: NpCharacters = {
     travpiper: [
         { name: '[Peacekeeper] William Gunner', factions: ['Police'], nicknames: ['Willy'], displayName: 2 },
         { name: 'Carlos "Cheddar" Sanchez', factions: ['HOA'] },
+        { name: 'Carlos "Cheddar" Sanchez', factions: ['Gangton Courts'], nicknames: ['2.0'] },
         { name: '[Deputy] Jason Hannah', factions: ['Police'], displayName: 1 },
         { name: 'Warren Wallace' },
         { name: '[Watch Party] travpiper', factions: ['Watch Party'], nicknames: ['monday night sports'] },
@@ -3978,6 +3987,9 @@ export const npCharacters: NpCharacters = {
     ],
     Wehtuns: [
         { name: '[Lawyer] Lawrence Splainer', factions: ['DoJ'], displayName: 2 },
+    ],
+    weStern: [
+        { name: 'Marcel ?', factions: ['Gangton Courts'], nicknames: ['2.0'] },
     ],
     Whippy: [
         { name: 'Irwin Dundee', nicknames: [reg(/\b(?:dundee|irwin)|(?:dundee|irwin)\b/)], displayName: 2 },
