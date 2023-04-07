@@ -2769,6 +2769,10 @@ export const npCharacters: NpCharacters = {
     palin999: [
         { name: '[Peacekeeper] Chad Gable', factions: ['Police'] },
     ],
+    Pancakehumper: [
+        { name: 'Deacon Frost' },
+        { name: 'Deacon Frost', factions: ['Gangton'] },
+    ],
     panpawn1: [
         { name: '[Officer] Adam Swanson', factions: ['Police'], assumeServer: 'public' },
     ],
