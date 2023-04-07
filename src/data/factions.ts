@@ -142,6 +142,10 @@ npFactionsRealMini.forEach((faction) => {
     }
 });
 
+export const serverTwoFactions: { [key in FactionRealMini]?: true } = {
+    gangton: true,
+};
+
 // export type NoFactionColorsMini = 'alltwitch' | 'allnopixel' | 'darkweb' | 'news' | 'russians' | 'mayhemmc' | 'mersions' | 'lunatix' | 'marabunta';
 // type FactionColorsMini = Exclude<FactionMini, NoFactionColorsMini>;
 // : { [key in FactionColorsMini]: string }
