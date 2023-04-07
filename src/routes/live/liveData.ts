@@ -391,6 +391,8 @@ const hasCycled: { [key in ClipGroupNames]: boolean } = { '24h': false, '7d': fa
 // Would need to do something to account for 4 clipGroupsTemp fulls vs 1 streamerDataTemp (should be in sync)
 const streamerData: MixedStreamerData = {};
 
+const serverTwoCheck = /(?:l|\b)2.0\b/i;
+
 // Can run less frequently
 // Make it so that each run it gets the next searchNumClipsDefault clips after `after[group.name]` or reset `after` if it's been 3 hours
 export const getClips = async (endpoint = '<no-endpoint>'): Promise<[ClipGroups, MixedStreamerData]> => {
@@ -959,7 +961,7 @@ export const getNpLive = async (baseOptions = {}, override = false, endpoint = '
                             const resSize = numResults > 0 ? matchPositions[0][0].length : -1; // Could use all matches, but more expensive
                             const devFactionWeight = char.factions[0] === 'development' ? 2e4 : 0;
                             const serverMatchWeight = (onServerDetected && char.assumeServer !== onServer && realAssumes.includes(char.assumeServer)) ? 1e4 : 0;
-                            const serverTwoWeight = char.nicknames && char.nicknames.includes('2.0') ? -1e3 : 0;
+                            const serverTwoWeight = char.nicknames && char.nicknames.includes('2.0') && serverTwoCheck.test(title) ? -1e3 : 0;
                             const lowIndex = numResults ? matchPositions[0].index! + serverTwoWeight + serverMatchWeight + devFactionWeight : -Infinity;
                             if (lowIndex > -Infinity && (
                                 lowIndex < lowestPos
