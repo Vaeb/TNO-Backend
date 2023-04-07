@@ -56,7 +56,7 @@ export const npFactionsRegex = {
     watchparty: noLater(noFormer(/\b(?<!!)watch[\s\-_.]*part/i)),
     gulaggang: noLater(noFormer(/\bgulag[\s\-_.]*gang|(?:[^\w\s.]\s*|^\s*|\.\s+)\bgg\b|\bgg[\s\-_.]*(?:st|z|a|b)\b/i)),
     gangton: noLater(noFormer(/\bgang?[\s\-_.]*t.n|\bgc\b/i)),
-    z3: noLater(noFormer(/\bz[\s\-_.]*[34]\b|zone[\s\-_.]*(?:[34]|three|four)/i)),
+    zone3: noLater(noFormer(/\bz[\s\-_.]*[34]\b|zone[\s\-_.]*(?:[34]|three|four)/i)),
     dons: noLater(noFormer(/\bdons\b/i)),
     mayhemmc: noLater(noFormer(/\bmayhem|\bcmc\b/i)),
     news: noFormer(/(?<!(?:good|big|great|amazing|bad|some)\s*)\bnews\b|\blsbn\b|weazel[\s\-_.]*news/i),
@@ -145,7 +145,7 @@ npFactionsRealMini.forEach((faction) => {
 
 export const serverTwoFactions: { [key in FactionRealMini]?: true } = {
     gangton: true,
-    z3: true,
+    zone3: true,
 };
 
 // export type NoFactionColorsMini = 'alltwitch' | 'allnopixel' | 'darkweb' | 'news' | 'russians' | 'mayhemmc' | 'mersions' | 'lunatix' | 'marabunta';
@@ -170,7 +170,7 @@ export const useColorsDark = { // #ff77ff #FAA0A0 #FA0B42
     hoa: '#a6033a',
     gulaggang: '#F6EE6D',
     gangton: '#FAA0A0',
-    z3: '#9AFA99',
+    zone3: '#9AFA99',
     doj: '#00a032',
     asrr: '#a35231',
     angels: '#ff9ff3',
@@ -223,7 +223,7 @@ export const useColorsLight: { [key in FactionColorsMini]: string } = {
     hoa: '#a6033a',
     gulaggang: '#CDC14C',
     gangton: '#FC9090',
-    z3: '#6FBA7D',
+    zone3: '#6FBA7D',
     doj: '#00a032',
     asrr: '#a35231',
     angels: '#e192d7',
@@ -275,7 +275,7 @@ const filterOrderTop: FactionMiniArr = [
     'gangton',
     'cleanbois',
     'police',
-    'z3',
+    'zone3',
     'changgang',
     'rust',
     'seaside',
@@ -333,7 +333,7 @@ const filterRename: { [key in FactionMini]?: string } = {
     hoa: 'Home Owners Association',
     hydragang: 'Hydra Gang',
     gangton: 'Gangton Courts',
-    z3: 'Zone 3',
+    zone3: 'Zone 3',
     bcg: 'Bowl Cut Gang (BCG)',
     asrr: 'Alta Street Ruff Rydaz',
     nbc: 'Natural Born Crackheads',
