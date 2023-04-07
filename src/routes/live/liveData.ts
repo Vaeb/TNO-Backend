@@ -402,7 +402,7 @@ const hasCycled: { [key in ClipGroupNames]: boolean } = { '24h': false, '7d': fa
 // Would need to do something to account for 4 clipGroupsTemp fulls vs 1 streamerDataTemp (should be in sync)
 const streamerData: MixedStreamerData = {};
 
-const serverTwoCheck = /(?:[lp]|\b)2.0\b|\bclassic/i;
+const serverTwoCheck = /(?:[lp]|\b)2\.0\b|\bclassic/i;
 
 // Can run less frequently
 // Make it so that each run it gets the next searchNumClipsDefault clips after `after[group.name]` or reset `after` if it's been 3 hours
