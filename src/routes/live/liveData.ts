@@ -36,6 +36,7 @@ interface Character extends Omit<CharacterOld, 'factions' | 'displayName' | 'ass
     assumeServer: AssumeServer;
     wlBias: WlBias;
     serverTwo?: boolean;
+    serverTwoFactionRegex?: RegExp;
 }
 
 type NpCharacter = Character[] & { assumeChar?: Character; assumeServer: AssumeServer; wlBias: WlBias; assumeOther: number; };
@@ -177,6 +178,7 @@ for (const [streamer, characters] of Object.entries(npCharacters)) {
             if (serverTwoFactions[miniFaction]) {
                 if (!char.nicknames) char.nicknames = [];
                 char.nicknames.push('2.0');
+                char.serverTwoFactionRegex = npFactionsRegex[miniFaction as keyof typeof npFactionsRegex];
             }
             return miniFaction;
         });
@@ -970,7 +972,7 @@ export const getNpLive = async (baseOptions = {}, override = false, endpoint = '
                             const resSize = numResults > 0 ? matchPositions[0][0].length : -1; // Could use all matches, but more expensive
                             const devFactionWeight = char.factions[0] === 'development' ? 2e4 : 0;
                             const serverMatchWeight = (onServerDetected && char.assumeServer !== onServer && realAssumes.includes(char.assumeServer)) ? 1e4 : 0;
-                            const serverTwoWeight = char.serverTwo && serverTwoCheck.test(title) ? -1e3 : 0;
+                            const serverTwoWeight = char.serverTwo && (serverTwoCheck.test(title) || char?.serverTwoFactionRegex?.test(title)) ? -1e3 : 0;
                             const lowIndex = numResults ? matchPositions[0].index! + serverTwoWeight + serverMatchWeight + devFactionWeight : -Infinity;
                             if (lowIndex > -Infinity && (
                                 lowIndex < lowestPos
