@@ -1776,7 +1776,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Shane Jones', factions: ['DoC'] },
     ],
     Julian: [
-        { name: 'Julian Santorno', factions: ['Hydra Gang'], assumeServer: 'whitelist' },
+        { name: 'Julian Santorno', factions: ['Gulag Gang'], assumeServer: 'whitelist' },
         { name: '[Officer] Octavius Scarpetta', factions: ['Police'], nicknames: ['Octo', 'Scar', 'Oct'], displayName: 3 },
         { name: 'Julian Santorno', factions: ['Gulag Gang'], assumeServer: 'public' },
         { name: '[Officer] Jules Scarpetta', factions: ['Police'], nicknames: [reg(/\bscar/)], displayName: 1, assumeServer: 'public' },
