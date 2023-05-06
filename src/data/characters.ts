@@ -2960,7 +2960,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Mary Livingston', displayName: 0 },
     ],
     RatedEpicz: [
-        { name: 'Randy Bullet', factions: ['Chang Gang'], nicknames: ['Lazy-Eye', 'Shankz'], assumeServer: 'whitelist', facebook: true },
+        { name: 'Randy Bullet', factions: ['Chang Gang'], nicknames: ['Lazy-Eye', 'Shankz'], assumeServer: 'whitelist', facebook: true, assume: 'assumeOther' },
         { name: 'Randy Bullet', factions: ['Gangton'], nicknames: ['2.0'] },
         { name: 'Roundy Buffet', factions: ['Gulag Gang'], nicknames: ['Randy', 'Bullet'], assumeServer: 'public' },
         { name: '[Trooper] AJ Hunter', factions: ['Police'], nicknames: ['207'] },
