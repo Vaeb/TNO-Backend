@@ -1392,6 +1392,9 @@ export const npCharacters: NpCharacters = {
     HasanAbi: [
         { name: 'Humberto Antonio Donato Pecorino', factions: ['Cleanbois', 'Rooster'], nicknames: ['Don', 'Donnie', reg(/\bOva[h']? here\b/)], displayName: 5 },
     ],
+    HayeDel: [
+        { name: 'Del Boy', factions: ['Ghost'], nicknames: ['DB'], displayName: 0 },
+    ],
     Hedisaurus: [
         { name: '[Ranger] Ramona Celeste', factions: ['Police'], displayName: 1, assumeServer: 'public' },
         { name: '[EMS] Hedi Saurus', factions: ['Medical'], assume: 'assumeNpNoOther', assumeServer: 'whitelist' },
@@ -3919,6 +3922,9 @@ export const npCharacters: NpCharacters = {
     ],
     vanyaa_3D: [
         { name: '[Development] Vanya', factions: ['Development'], nicknames: ['clothes', 'clothing'], assumeChar: true },
+    ],
+    varsts: [
+        { name: 'Danny Cox', factions: ['Ghost'], displayName: 0 },
     ],
     vee_v: [
         { name: 'Antonio Chorizo', factions: ['Seaside'], displayName: 0 },
