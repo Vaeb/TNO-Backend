@@ -335,7 +335,7 @@ const filterRename: { [key in FactionMini]?: string } = {
     hydragang: 'Hydra Gang',
     gangton: 'Gangton Courts',
     zone3: 'Zone 3',
-    ghost: 'Ghost Gang',
+    ghost: 'Ghost',
     bcg: 'Bowl Cut Gang (BCG)',
     asrr: 'Alta Street Ruff Rydaz',
     nbc: 'Natural Born Crackheads',
