@@ -1700,7 +1700,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Jay Jarvis', factions: ['Hydra Gang', 'Harmony', 'Pegasus'], nicknames: ['JJ', 'MG'], displayName: 0 }, // facebook
     ],
     JoblessGarrett: [
-        { name: 'Garrett Jobless', factions: ['Chang Gang'], facebook: true },
+        { name: 'Garrett Jobless', factions: ['Chang Gang'] },
         { name: '[Officer] Garry Berry', factions: ['Police'] },
     ],
     Joeeigel: [
@@ -2153,8 +2153,8 @@ export const npCharacters: NpCharacters = {
     LordJasta: [
         { name: 'Chris McGrawl' },
     ],
-    LordKebun: [
-        { name: 'Mr. K', factions: ['Chang Gang'], leader: true, displayName: 0, nicknames: ['Chang', 'The "Dragon"'], facebook: true },
+    Lord_Kebun: [
+        { name: 'Mr. K', factions: ['Chang Gang'], leader: true, displayName: 0, nicknames: ['Chang', 'The "Dragon"'] },
         { name: '[Deputy] Richard Richardson', factions: ['Police'], nicknames: ['585'] },
     ],
     LordNetloc: [
