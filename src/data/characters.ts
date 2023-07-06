@@ -4148,6 +4148,9 @@ export const npCharacters: NpCharacters = {
     ZayTyree: [
         { name: 'Renato Ortiz', factions: ['Vagos'], displayName: 0 },
     ],
+    zeco1: [
+        { name: 'Kole Selaw', factions: ['RUST'], displayName: 0 },
+    ],
     Zee_RP: [
         { name: 'Zee Carbone', factions: ['Dons'], displayName: 1 },
     ],
