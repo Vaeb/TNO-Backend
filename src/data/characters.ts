@@ -1349,6 +1349,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Bobby Brown', factions: ['Chang Gang'] },
         { name: '[Officer] James Brown', factions: ['Police'], displayName: 2 },
     ],
+    GrimzyFFG: [
+        { name: 'Sly Santana', factions: ['PB'] },
+    ],
     GTAWiseGuy: [
         { name: 'Eddie Marshall', factions: ['Tuner Shop'] },
         { name: '[Deputy] Jim Underwood', factions: ['Police'], nicknames: ['337', reg(/\w+wood\b/)] },
