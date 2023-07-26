@@ -58,7 +58,7 @@ export const npCharacters: NpCharacters = {
         { name: 'D "D Rose" Rose', factions: ['SSB'] },
     ],
     a2guapo: [
-        { name: 'Jay Hobbs', factions: ['Gulag Gang'], nicknames: ['J', 'JHobbs'], displayName: 0 },
+        { name: 'Jay Hobbs', factions: ['Gulag Gang'], nicknames: ['J', 'JHobbs'], displayName: 0, assume: 'assumeOther' },
     ],
     Aaoki: [
         { name: '[Deputy] Maddison Bancroft', factions: ['Police'], displayName: 2 },
@@ -452,7 +452,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Dominic "Lil D" Chester', nicknames: ['Sabado de Sol'] },
     ],
     BigRichardRP: [
-        { name: "Richard O'Conner", factions: ['Gulag Gang'], nicknames: ['Richie'], displayName: 1 },
+        { name: "Richard O'Conner", factions: ['Gulag Gang'], nicknames: ['Richie'], displayName: 1, assume: 'assumeOther' },
         { name: "[Officer] Rupert O'Copper", factions: ['Police'], displayName: 1 },
     ],
     BigSkenger: [
@@ -1833,6 +1833,9 @@ export const npCharacters: NpCharacters = {
     ],
     Kainalo: [
         { name: 'Risto Suolamies' },
+    ],
+    KamEU: [
+        { name: 'Jack Bates', factions: ['Gulag Gang'], nicknames: ['Billy'], displayName: 3 },
     ],
     Kangaro0: [
         { name: '[Peacekeeper] Jimmy Frost', factions: ['Police'] },
