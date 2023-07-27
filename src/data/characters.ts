@@ -2474,9 +2474,6 @@ export const npCharacters: NpCharacters = {
     MissBombastic: [
         { name: '[Deputy] Ruby York', factions: ['Police'] },
     ],
-    MistorThio: [
-        { name: 'Kirk Jerkems', factions: ['Stable', 'Rooster'], displayName: 0 },
-    ],
     Moboking: [
         { name: '[Officer] Ellis Pinzon', factions: ['Police'], nicknames: ['Ronaldo'], assumeServer: 'whitelist' },
         { name: 'Aleksander Bogorov', factions: ['Hydra Gang'], nicknames: ['Aleks', 'Bogo'], displayName: 3, assumeServer: 'whitelist' },
@@ -3805,6 +3802,9 @@ export const npCharacters: NpCharacters = {
     ],
     thicbootyconspiracyshorty: [
         { name: 'Karli Marx', factions: ['BBMC'], displayName: 0, assumeServer: 'public' },
+    ],
+    Thio: [
+        { name: 'Kirk Jerkems', factions: ['Stable', 'Rooster'], displayName: 0 },
     ],
     Thirteen9N: [
         { name: 'Arya Shah', factions: ['Street Team'], displayName: 1 },
