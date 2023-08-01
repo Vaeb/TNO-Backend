@@ -3230,7 +3230,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Jenny Ondamic', factions: ['BSK'], nicknames: ['BSQueen'], displayName: 0 },
     ],
     shafabeats: [
-        { name: 'Lance "Shafa" Edwards', factions: ['PB'] },
+        { name: 'Lance "Shafa" Edwards', factions: ['Gulag Gang', 'PB'] },
     ],
     shaggy_steve: [
         { name: '[Deputy] Jimmy Gordon', factions: ['Police'] },
