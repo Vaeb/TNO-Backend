@@ -890,7 +890,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Rudi Rinsen', factions: ['Lost MC'], leader: true },
     ],
     dasMEHDI: [
-        { name: '[Officer] Brian Knight', factions: ['Police'], nicknames: ['495'], facebook: true },
+        { name: '[Officer] Brian Knight', factions: ['Police'], nicknames: ['495'] },
         { name: 'Nino Chavez', factions: ['Cleanbois', 'Pegasus', 'Rooster'] },
         { name: 'Ryan Kindle', factions: ['HOA'] },
         { name: 'Reema', nicknames: ['The "Whorelord"'] },
