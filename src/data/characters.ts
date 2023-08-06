@@ -2976,7 +2976,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Ezekiel "Zeke" Stahl', factions: ['Prison'], displayName: 0 },
     ],
     Raided: [
-        { name: '[Officer] Gage Draider', factions: ['Police'] },
+        { name: '[Officer] Gage Draider', factions: ['Police'], nicknames: ['Dev', 'Developer', 'Development'] },
         { name: 'Wren Draider', displayName: 1 },
         { name: '[Development] Raided', factions: ['Development'] },
     ],
@@ -3991,7 +3991,7 @@ export const npCharacters: NpCharacters = {
             displayName: 0,
         },
     ],
-    VindiceLIVE: [
+    Vindichee: [
         { name: '[Peacekeeper] Oliver Fury', factions: ['Police'] },
     ],
     VinterPhoenix: [
