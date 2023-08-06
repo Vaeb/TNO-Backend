@@ -1779,8 +1779,8 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Ricardo Perez', factions: ['Police', 'Burger Shot'], displayName: 1 },
     ],
     Judd: [
+        { name: 'Judd Lincoln', factions: ['Chang Gang'] },
         { name: '[Judge] Coyote Russell', factions: ['DoJ'], displayName: 1, assumeServer: 'whitelist' },
-        { name: 'Judd Lincoln' },
         { name: '[Officer] Judd Lincoln', factions: ['Police'], displayName: 1, assumeServer: 'public' },
         { name: 'Reverend I.M. Voland', factions: ['Dark Web'] },
     ],
