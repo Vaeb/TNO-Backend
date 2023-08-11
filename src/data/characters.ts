@@ -2057,7 +2057,7 @@ export const npCharacters: NpCharacters = {
         { name: "Baby O'Conner", factions: ['Wastelanders'], displayName: 0 },
     ],
     Kyle: [
-        { name: '[Grand Marshall] Kyle Pred', factions: ['Police'], leader: true, assumeServer: 'whitelist' },
+        { name: 'Kyle Pred', assumeServer: 'whitelist' },
         { name: '[Officer] James Hanna', factions: ['Police'] },
         { name: '[Officer] Kyle Pred', factions: ['Police'], assumeServer: 'public' },
         { name: 'Dominic Toretti', displayName: 0 },
@@ -3387,7 +3387,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Joshi Drake', factions: ['Police'], assumeServer: 'international' },
     ],
     sl1meW: [
-        { name: 'Tommy "TicTac" Olliver', factions: ['SSB'], nicknames: ['Tic Tac'] },
+        { name: 'Tommy "TicTac" Olliver', nicknames: ['Tic Tac'] },
     ],
     Slasher2099: [
         { name: '[Officer] Darrel McCormik', factions: ['Police'] },
