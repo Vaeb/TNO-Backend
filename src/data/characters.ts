@@ -3511,7 +3511,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Chip Green', factions: ['BCG'], nicknames: ['Tails'], displayName: 3 },
     ],
     STE_Eire: [
-        { name: 'Stephen Joyce', factions: ['Mandem'], nicknames: ['STE', 'STD'], displayName: 3 },
+        { name: 'Stephen Joyce', nicknames: ['STE', 'STD'], displayName: 3 },
     ],
     steamcharlie: [
         { name: '[Deputy] Sydney Bearmont', factions: ['Police'], displayName: 1 },
