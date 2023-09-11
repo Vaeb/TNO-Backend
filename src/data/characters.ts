@@ -3340,7 +3340,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Reggie Might', factions: ['Police'], assumeServer: 'public' },
     ],
     SimplessR6: [
-        { name: 'Andino Vidal', factions: ['PB'], displayName: 1 },
+        { name: 'Andino Vidal', factions: ['Gulag Gang', 'PB'], displayName: 1 },
     ],
     Simplyje2ns: [
         { name: 'Jean Steele', displayName: 0 },
@@ -3394,7 +3394,7 @@ export const npCharacters: NpCharacters = {
         { name: '[K9 Trooper] Fenton', factions: ['Police'], nicknames: ['Fentons'] },
     ],
     SlightlyPoetic: [
-        { name: 'Poe Dempsey', factions: ['PB'] },
+        { name: 'Poe Dempsey', factions: ['Gulag Gang', 'PB'] },
     ],
     SlixGamingTV: [
         { name: 'Nico August', factions: ['GSF'] },
