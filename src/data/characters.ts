@@ -226,6 +226,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Lil Erf', factions: ['Chang Gang'], displayName: 0 },
         { name: 'Carmen Amuso' },
     ],
+    AngelKnivez: [
+        { name: 'GiGi Costello', factions: ['Lang Gang'] },
+    ],
     Angrysquirlz: [
         { name: 'Lizard Block', factions: ['ASRR'] },
     ],
