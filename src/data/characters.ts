@@ -1073,7 +1073,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Lulu ?', displayName: 1 },
     ],
     EagleAye: [
-        { name: 'Eve Summers', factions: ['LARPers', 'Rooster'] },
+        { name: 'Eve Summers', factions: ['Lang Gang', 'LARPers', 'Rooster'] },
     ],
     eaJParkOfficial: [
         { name: 'Park Parker', factions: ['Rooster'], nicknames: ['Santa'], displayName: 0, assumeChar: true },
