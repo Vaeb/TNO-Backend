@@ -133,7 +133,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Aaron Melarky', factions: ['Mayhem MC'], displayName: 0 },
     ],
     Adzzstarr: [
-        { name: '[Lawyer] Adam Prince', factions: ['DoJ'] },
+        { name: 'Adam Prince', factions: ['Saints'], displayName: 0 },
         { name: '[Dr.] Valentine', factions: ['Medical'] },
     ],
     aezke: [
@@ -221,6 +221,9 @@ export const npCharacters: NpCharacters = {
     ],
     AnarchoSyn: [
         { name: 'Hess Blade', factions: ['CBPD', 'Rooster'] },
+    ],
+    Anchoras: [
+        { name: 'Eethan Gaine-Prince', factions: ['Saints'], nicknames: ['EGP', 'Erebos'] },
     ],
     AndyMilonakis: [
         { name: 'Lil Erf', factions: ['Chang Gang'], displayName: 0 },
@@ -864,6 +867,9 @@ export const npCharacters: NpCharacters = {
     D4N1ELLE: [
         { name: 'Quimbley Hayabusa', factions: ['CBPD', 'Rooster'], nicknames: ['Q'], displayName: 3 },
     ],
+    dabsorlabs: [
+        { name: 'Pablo Cortez', factions: ['Saints'], displayName: 0 },
+    ],
     DadDoesDrag: [
         { name: 'Kray-Tor Skullfondler', factions: ['HOA'], facebook: true },
     ],
@@ -875,6 +881,9 @@ export const npCharacters: NpCharacters = {
     ],
     daisykiss: [
         { name: 'Molly Rollin', displayName: 0, assume: 'assumeNpNoOther' },
+    ],
+    dandorac: [
+        { name: 'Dan Mclean', factions: ['Saints'], displayName: 0 },
     ],
     DanGheesling: [
         { name: 'Tanner Buttermaker', displayName: 1 },
@@ -907,6 +916,9 @@ export const npCharacters: NpCharacters = {
     Daxxtr: [
         { name: '[Peacekeeper] Vincent Cannoli', factions: ['Police'], nicknames: ['V'], assumeServer: 'whitelist' },
         { name: '[Officer] Vincent Cannoli', factions: ['Police'], nicknames: ['V'], assumeServer: 'public' },
+    ],
+    dcozmo: [
+        { name: 'Spiro Cozmopolidis', factions: ['Saints'] },
     ],
     DDPeter: [
         { name: '[Officer] Benjamin Peppers', factions: ['Police'], assumeServer: 'public' },
@@ -1030,6 +1042,9 @@ export const npCharacters: NpCharacters = {
     DROwSeph420: [
         { name: 'John "Geno" Collins', factions: ['GSF'] },
     ],
+    Drwz: [
+        { name: 'George Cartier', factions: ['Saints'], displayName: 0 },
+    ],
     DTalmer: [
         { name: 'Jackson Wilson', factions: ['Harmony'], nicknames: ['Blacksteel'], displayName: 0 },
     ],
@@ -1081,6 +1096,9 @@ export const npCharacters: NpCharacters = {
     edisonparklive: [
         { name: 'Michael Hawkins', factions: ['Royal Mafia'], displayName: 0 },
     ],
+    Edonxd: [
+        { name: 'Jordan Elmore', factions: ['Saints'], displayName: 0 },
+    ],
     eebern: [
         { name: 'Huck Guthrie', factions: ['HOA'], nicknames: ['Huckleberry'] },
     ],
@@ -1110,6 +1128,9 @@ export const npCharacters: NpCharacters = {
     ],
     EmmyWithLove: [
         { name: 'Peaches Hayabusa', factions: ['NBC', 'Burger Shot'] },
+    ],
+    Enanoot: [
+        { name: 'Evan Deckard', factions: ['Saints'], displayName: 0 },
     ],
     erickeK: [
         { name: 'Frederick Dutton', factions: ['Lost MC'], displayName: 1 },
@@ -1307,6 +1328,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Daniel Hopper', displayName: 0 },
         { name: '[Officer] Bennett Calhoun', factions: ['Police'] },
     ],
+    ghost_medic: [
+        { name: 'Luke Riley', factions: ['Saints'], displayName: 0 },
+    ],
     gibbs_gg: [
         { name: 'Walter Franks', factions: ['Mayhem MC'], displayName: 0 },
     ],
@@ -1315,6 +1339,9 @@ export const npCharacters: NpCharacters = {
     ],
     gingersnap___: [
         { name: 'Sophie Sanders', displayName: 0 },
+    ],
+    gnaw: [
+        { name: 'Maverick Adler', factions: ['Saints'] },
     ],
     Gnomey_au: [
         { name: 'Max Moody', factions: ['Wastelanders'], displayName: 0 },
@@ -1412,6 +1439,9 @@ export const npCharacters: NpCharacters = {
     ],
     HayeDel: [
         { name: 'Del Boy', nicknames: ['DB'], displayName: 0 },
+    ],
+    HaydenLeBFN: [
+        { name: 'Hayden Smith', factions: ['Saints'], displayName: 1 },
     ],
     Hedisaurus: [
         { name: '[Ranger] Ramona Celeste', factions: ['Police'], displayName: 1, assumeServer: 'public' },
@@ -1616,6 +1646,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Abe Moe', displayName: 0, assumeServer: 'public' },
         { name: 'Abraham Mohammed' },
     ],
+    IzaEleonora: [
+        { name: 'Ylva Sjögren', factions: ['Saints'], nicknames: ['Sjogren'], displayName: 1 },
+    ],
     izzidizzy: [
         { name: '[Deputy] Ruby Hope', factions: ['Police'], displayName: 2 },
     ],
@@ -1662,6 +1695,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Alex "Lil Cap" Söderberg', factions: ['BBMC'], nicknames: ['Soderberg', 'Cap'], displayName: 0, assumeServer: 'whitelist' },
         { name: '[Deputy] Roger S', factions: ['Police'], nicknames: ['546'], displayName: 1 },
         { name: 'Lil Strap', displayName: 0, assumeServer: 'public' },
+    ],
+    JayAye: [
+        { name: "James O'Neil", factions: ['Saints'], nicknames: ['Jay'], displayName: 0 },
     ],
     Jayce: [
         { name: 'Lil Loco', factions: ['Vagos'], displayName: 0 },
@@ -1994,6 +2030,9 @@ export const npCharacters: NpCharacters = {
     Klutch: [
         { name: 'Eli Porter', factions: ['Mandem'], nicknames: ['Elz'], displayName: 0 },
     ],
+    Kmils_: [
+        { name: 'Kristian Mils', factions: ['Saints'], displayName: 0 },
+    ],
     Knight_Xero: [
         { name: 'Kai B. Knight', factions: ['DoC'], displayName: 0 },
     ],
@@ -2101,8 +2140,8 @@ export const npCharacters: NpCharacters = {
         { name: 'Isabella "Izzy" Carrington', factions: ['Harmony'] },
     ],
     LadyLynxx: [
+        { name: 'Jaed Smith', factions: ['Saints'], displayName: 0 },
         { name: '[Officer] Saphira Sinclair', factions: ['Police'], nicknames: ['Saph', '597'] },
-        { name: 'Jaed Smith' },
     ],
     LAGTVMaximusBlack: [
         { name: 'Outto-Tune "OTT" Tyrone', factions: ['BSK'], nicknames: [reg(/\b[O0]\S?TT/)], leader: true, assumeServer: 'whitelist' },
@@ -2342,7 +2381,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Misa Price', factions: ['Police'] },
     ],
     MartinCreek: [
-        { name: 'Bertha Clark' },
+        { name: 'Bertha Clark', factions: ['Saints'] },
     ],
     MasonShortland: [
         { name: 'Clark "Flash" Mason', factions: ['Lang Gang'] },
@@ -2678,6 +2717,9 @@ export const npCharacters: NpCharacters = {
     nnsLUL: [
         { name: '[Development] nns', factions: ['Development'], assumeChar: true },
     ],
+    No_Atonement: [
+        { name: 'Mack Lando', factions: ['Saints'], displayName: 0 },
+    ],
     nobeljt: [
         { name: 'Lucas Spade', factions: ['SOS'], displayName: 0 },
     ],
@@ -2993,6 +3035,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Ramee El-Rahman', factions: ['Chang Gang', 'BCG', 'Tuner Shop'], nicknames: ['The "Warlord"', 'The "Vulture"', 'SBS Patient-0'], facebook: true },
         { name: '[Ranger] Conan Clarkson', factions: ['Police'] },
     ],
+    Randeep10: [
+        { name: 'Cain Bridges', factions: ['Saints'], displayName: 0 },
+    ],
     Randolph: [
         { name: 'Don Dolph', displayName: 0 },
     ],
@@ -3104,6 +3149,9 @@ export const npCharacters: NpCharacters = {
     ],
     roflgator: [
         { name: 'Robert Spowylamywanowski', factions: ['Burger Shot'], nicknames: ['Rob', 'Polish', 'Night Manager'], displayName: 3 },
+    ],
+    ronladd: [
+        { name: 'Vince Cuzzo', factions: ['Saints'], nicknames: ['Jeffrey', 'Paint'], displayName: 0 },
     ],
     RookTM: [
         { name: '[Peacekeeper] Deacon Frye', factions: ['Police'], nicknames: ['564'] },
@@ -3348,6 +3396,9 @@ export const npCharacters: NpCharacters = {
     Simplyje2ns: [
         { name: 'Jean Steele', displayName: 0 },
     ],
+    SINCLVIR: [
+        { name: 'Saint Clair', factions: ['Saints'], displayName: 0 },
+    ],
     sips_: [
         { name: 'Tito Higgins' },
     ],
@@ -3457,6 +3508,9 @@ export const npCharacters: NpCharacters = {
     ],
     SonKnuck: [
         { name: 'Patrick Desseault', factions: ['Rooster'], displayName: 0 },
+    ],
+    soysavy: [
+        { name: 'Marissa Manicure', factions: ['Saints'], displayName: 1 },
     ],
     Sp00nerism: [
         { name: 'Harry Phartz', displayName: 0 },
@@ -3906,6 +3960,9 @@ export const npCharacters: NpCharacters = {
     Turtlenumber13: [
         { name: 'Chance Zero', factions: ['Wastelanders'], displayName: 0 },
     ],
+    twiggycow: [
+        { name: 'Viola Ends', factions: ['Saints'], displayName: 1 },
+    ],
     TwistedBones: [
         { name: 'Mark White', displayName: 0 },
         { name: 'Hank Marston', factions: ['Mayhem MC'], leader: true, displayName: 0 },
@@ -4003,6 +4060,9 @@ export const npCharacters: NpCharacters = {
     ],
     VioletCutie: [
         { name: 'Maisie Hart', factions: ['Britney Gang', 'Rooster', 'Tuner Shop'], displayName: 0 },
+    ],
+    viscosepower: [
+        { name: 'Joshua "JB" Berretta', factions: ['Saints'], displayName: 1 },
     ],
     Viviana: [
         { name: 'Griselda Ambrose', nicknames: ['Granny'] },
@@ -4115,6 +4175,9 @@ export const npCharacters: NpCharacters = {
     wvngie: [
         { name: 'Le Wang', factions: ['Vagos'], nicknames: [reg(/\bwang/)], displayName: 0 },
     ],
+    xD_Ghost_Recon_xD: [
+        { name: 'Simon Riley', factions: ['Saints'], displayName: 0 },
+    ],
     XenVers: [
         { name: 'Xen Verse', factions: ['Pink Gang'], displayName: 0 },
     ],
@@ -4188,6 +4251,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Oakley Stallion', factions: ['Angels'], displayName: 1 },
         { name: '[Officer] Lukas Lavender', factions: ['Police'], displayName: 2 },
     ],
+    zackattackatk: [
+        { name: 'Xalvedor Lorenhart', factions: ['Saints'], nicknames: ['Xav'], displayName: 1 },
+    ],
     Zaitohro: [
         { name: '[Deputy] Cameran Shaw', factions: ['Police'], nicknames: ['Cam'], displayName: 2 },
         { name: 'Damien Tinkerman', factions: ['BBMC'], displayName: 0 },
@@ -4239,6 +4305,9 @@ export const npCharacters: NpCharacters = {
     zirnrp: [
         { name: 'Malcador Sigilite', factions: ['DoJ'] },
         { name: 'Solomon Seerson' },
+    ],
+    Zixtah: [
+        { name: 'DJ Cooper', factions: ['Saints'], displayName: 0 },
     ],
     Zoil: [
         { name: 'Skunkz Wallace' },

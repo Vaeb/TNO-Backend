@@ -9,6 +9,7 @@ export const npFactionsReal = { // map: removed spaces + converted to lower case
     vagos: 'Vagos',
     gsf: 'GSF',
     ssb: 'SSB',
+    saints: 'Saints',
     pegasus: 'Pegasus',
     hoa: 'HOA',
     pinkgang: 'Pink Gang',
