@@ -69,7 +69,7 @@ const ASTATES = {
 } as const;
 
 const game = '32982' as const;
-const languages = ['en', 'hi', 'no', 'pt', 'es']; // https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
+const languages = ['en', 'no']; // https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
 // eslint-disable-next-line no-sequences
 const interLangs: { [K in typeof languages[number]]: true } = Object.assign(
     {},
