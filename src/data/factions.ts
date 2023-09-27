@@ -55,7 +55,7 @@ export const npFactionsRegex = {
     stable: noLater(noFormer(/\bstable(?:hand)?\b/i)),
     podcast: noLater(noFormer(/\b(?<!!)podcast\b/i)),
     watchparty: noLater(noFormer(/\b(?<!!)watch[\s\-_.]*part/i)),
-    gulaggang: noLater(noFormer(/\bgulag[\s\-_.]*gang|(?:[^\w\s.]\s*|^\s*|\.\s+)\bgg\b|\bgg[\s\-_.]*(?:st|z|a|b)\b/i)),
+    gulaggang: noLater(noFormer(/\bgulag[\s\-_.]*gang|(?:[^\w\s.]\s*|^\s*|\.\s+)(?<!!)\bgg\b|\bgg[\s\-_.]*(?:st|z|a|b)\b/i)),
     gangton: noLater(noFormer(/\bgang?[\s\-_.]*t.n|\bgc\b/i)),
     zone3: noLater(noFormer(/\bz[\s\-_.]*[34]\b|zone[\s\-_.]*(?:[34]|three|four)/i)),
     pb: noLater(noFormer(/\bpb\b|pi[sz]+[\s\-_.]*bab(?:ie|y)/i)),
