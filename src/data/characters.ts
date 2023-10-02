@@ -1716,7 +1716,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Jake LaMotta', displayName: 0 },
     ],
     jeimiru: [
-        { name: 'David Jackson', factions: ['RUST', 'Harmony'], nicknames: ['Benz'], displayName: 3 },
+        { name: 'David Jackson', factions: ['Hydra Gang', 'Harmony'], nicknames: ['Benz'], displayName: 3 },
     ],
     Jellypeanut: [
         { name: 'Rai "Juuls" Cumberwoood' },
