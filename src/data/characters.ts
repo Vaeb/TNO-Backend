@@ -325,7 +325,7 @@ export const npCharacters: NpCharacters = {
     ],
     Aus24: [
         { name: '[Officer] Jack Davenport', factions: ['Police'] },
-        { name: 'Jordan Walker', factions: ['Harmony'] },
+        { name: 'Jordan Walker', factions: ['Hydra Gang', 'Harmony'] },
         { name: 'Braxton Walker', nicknames: ['Brax'], displayName: 0 },
     ],
     Austin_Bean: [
