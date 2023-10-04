@@ -1341,7 +1341,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Sophie Sanders', displayName: 0 },
     ],
     Giosooo: [
-        { name: 'Gioso ?', factions: ['GSF'], nicknames: ['Gio'], displayName: 3 },
+        { name: 'Gioso King', factions: ['GSF'], nicknames: ['Gio'], displayName: 3 },
     ],
     gnaw: [
         { name: 'Maverick Adler', factions: ['Saints'] },
