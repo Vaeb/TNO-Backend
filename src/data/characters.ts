@@ -1340,6 +1340,9 @@ export const npCharacters: NpCharacters = {
     gingersnap___: [
         { name: 'Sophie Sanders', displayName: 0 },
     ],
+    Giosooo: [
+        { name: 'Gioso ?', factions: ['GSF'], nicknames: ['Gio'], displayName: 3 },
+    ],
     gnaw: [
         { name: 'Maverick Adler', factions: ['Saints'] },
     ],
