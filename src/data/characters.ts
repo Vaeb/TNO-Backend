@@ -2733,7 +2733,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Lucas Spade', factions: ['SOS'], displayName: 0 },
     ],
     NoElusionz: [
-        { name: 'Bobby Schmiguel', factions: ['GSF'], nicknames: ['Bobby Beats'], displayName: 3 },
+        { name: 'Tank Tames', factions: ['GSF'], displayName: 1 },
     ],
     noKingu: [
         { name: '[Peacekeeper] Henri King', factions: ['Police'] },
