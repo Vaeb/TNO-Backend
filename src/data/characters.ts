@@ -619,6 +619,9 @@ export const npCharacters: NpCharacters = {
         { name: '[Peacekeeper] Sexton Hardcastle', factions: ['Police'], displayName: 2 },
         { name: 'Wade Willson', factions: ['HOA'] },
     ],
+    C0smiik: [
+        { name: 'Stolly ?', factions: ['GSF'] },
+    ],
     CallMeGrub: [
         { name: '[Deputy] Isaac Richardson', factions: ['Police'] },
     ],
