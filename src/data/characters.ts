@@ -2811,6 +2811,9 @@ export const npCharacters: NpCharacters = {
     ogk3nz: [
         { name: 'Marko Russetto', factions: ['Marabunta'], displayName: 0, leader: true },
     ],
+    OhJayzzy: [
+        { name: '? "JJ" ?', factions: ['RUST'] },
+    ],
     OhMadOne: [
         { name: '[Lawyer] Ginzu Okada', factions: ['DoJ'] },
     ],
