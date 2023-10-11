@@ -1458,9 +1458,9 @@ export const npCharacters: NpCharacters = {
     heyimzed: [
         { name: 'Edbert Ropeburn', factions: ['BBMC'] },
     ],
-    heymuuni: [
-        { name: 'Muuni Luna', factions: ['Gulag Gang'] },
-    ],
+    // heymuuni: [
+    //     { name: 'Muuni Luna', factions: ['Gulag Gang'] },
+    // ],
     HeyOrbz: [
         { name: '[Officer] Casey Valentine', factions: ['Police'] },
         { name: 'Richie Mersion', factions: ['Mersions'], displayName: 0 },
