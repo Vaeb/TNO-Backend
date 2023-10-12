@@ -1040,7 +1040,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Bunnie Bunsworth', factions: ['HOA'] },
     ],
     Dripp: [
-        { name: 'Future Cortair', factions: ['Gulag Gang'] },
+        { name: 'Future Cortair', factions: ['Hydra Gang'] },
         { name: '[Officer] Jamarius Quangle', factions: ['Police'], nicknames: ['Jamar'], displayName: 1 },
     ],
     DROwSeph420: [
