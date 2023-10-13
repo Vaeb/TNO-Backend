@@ -1505,7 +1505,7 @@ export const npCharacters: NpCharacters = {
     ],
     Hotted89: [
         { name: '[Peacekeeper] Matthew Espinoz', factions: ['Police'], nicknames: ['Airspinoz', 'Air 1 Andy'] },
-        { name: 'Joaquin "JJ" Jimenes', factions: ['Seaside'] },
+        { name: 'Joaquin "JJ" Jimenes' },
         { name: 'Allen Widemann', factions: ['Chang Gang', 'Tuner Shop'] },
     ],
     HPD007: [
@@ -3905,7 +3905,7 @@ export const npCharacters: NpCharacters = {
     ],
     TinySpark: [
         { name: '[Peacekeeper] Daisy Dukakis', factions: ['Police'] },
-        { name: 'Kassandra Kage', factions: ['Seaside'] },
+        { name: 'Kassandra Kage', nicknames: ['Kass'] },
     ],
     TinyStunt: [
         { name: '[EMS] Bailey Jade', factions: ['Medical'] },
