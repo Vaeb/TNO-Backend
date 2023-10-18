@@ -3123,7 +3123,7 @@ export const npCharacters: NpCharacters = {
         { name: "Happy D'Klown" },
     ],
     Rexsair: [
-        { name: 'Rexarius Bracchimus', nicknames: ['Rex'], displayName: 3 },
+        { name: 'Rexarius Bracchimus', factions: ['Hydra Gang'], nicknames: ['Rex'], displayName: 3 },
     ],
     Reychel: [
         { name: 'Aubrey Adams', factions: ['BBMC'] },
@@ -3464,7 +3464,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Poe Dempsey', factions: ['Gulag Gang'] },
     ],
     SlixGamingTV: [
-        { name: 'Nico August', factions: ['GSF'] },
+        { name: 'Nico August', factions: ['RUST'] },
     ],
     SlummpyJ: [
         { name: 'Javier Diaz', factions: ['Seaside'], nicknames: ['Javi'] },
