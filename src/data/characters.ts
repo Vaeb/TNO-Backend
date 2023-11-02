@@ -2742,7 +2742,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Big K', factions: ['Self Insert'], displayName: 0 },
     ],
     NoraExplorer: [
-        { name: 'Nunu El Nene', displayName: 1 },
+        { name: 'Nunu El Nene', factions: ['Mandem'], displayName: 1 },
     ],
     notmerrick: [
         { name: 'Levi Rotti', factions: ['Gulag Gang'], displayName: 1 },
