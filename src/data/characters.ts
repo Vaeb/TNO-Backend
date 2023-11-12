@@ -3141,7 +3141,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Bubbles Smith', factions: ['Royal Mafia'] },
     ],
     ripoozi: [
-        { name: 'Larry Knox', factions: ['Gulag Gang'], displayName: 0 },
+        { name: 'Larry Knox', factions: ['Gulag Gang'], displayName: 1 },
     ],
     Riseblap: [
         { name: 'Saleem Shakib', factions: ['RUST'] },
