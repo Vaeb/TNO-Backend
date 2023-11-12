@@ -632,7 +632,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Tee ?', factions: ['SSB'], assumeServer: 'public' },
     ],
     Capped: [
-        { name: 'Capped Tarranova', factions: ['Street Team', 'Chang Gang'], nicknames: ['Pigeon', 'Terranova', 'Nova'], displayName: 0 },
+        { name: 'Capped Tarranova', factions: ['Street Team', 'Chang Gang'], nicknames: ['Pigeon', 'Terranova', 'Nova'], displayName: 3 },
     ],
     Capshion: [
         { name: 'Pauli Maglioni', factions: ['SOS'], displayName: 0 },
