@@ -3045,7 +3045,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Armando Hernandez', factions: ['Tuner Shop'] },
     ],
     Ramee: [
-        { name: 'Ramee El-Rahman', factions: ['Chang Gang', 'BCG', 'Tuner Shop'], nicknames: ['The "Warlord"', 'The "Vulture"', 'SBS Patient-0'], facebook: true },
+        { name: 'Ramee El-Rahman', factions: ['Chang Gang', 'BCG', 'Tuner Shop'], nicknames: ['The "Warlord"', 'The "Vulture"', 'SBS Patient-0'] },
         { name: '[Ranger] Conan Clarkson', factions: ['Police'] },
     ],
     Randeep10: [
