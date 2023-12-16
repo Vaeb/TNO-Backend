@@ -3545,7 +3545,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Scarlett Winters', factions: ['Police'] },
     ],
     spicybackpain: [
-        { name: 'Kray-Tor Skullfondler', factions: ['HOA'], facebook: true },
+        { name: 'Kray-Tor Skullfondler', factions: ['HOA'] },
     ],
     SpiderPigEthan: [
         { name: 'Marvin Chunder', factions: ['HOA'], nicknames: ['Hades'], displayName: 3 },
