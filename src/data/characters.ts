@@ -1198,6 +1198,9 @@ export const npCharacters: NpCharacters = {
         { name: '[Dr.] Jayce Petra', factions: ['Medical'], displayName: 0 },
         { name: 'Taran Raid', factions: ['Lost MC'], displayName: 0 },
     ],
+    fanfan: [
+        { name: 'Emily Fan' },
+    ],
     Farmhouse78: [
         { name: 'Jane Farmer' },
         { name: 'Steven Hayes', factions: ['Burger Shot'], displayName: 0 },
