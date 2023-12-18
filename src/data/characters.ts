@@ -1199,7 +1199,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Taran Raid', factions: ['Lost MC'], displayName: 0 },
     ],
     fanfan: [
-        { name: 'Emily Fan' },
+        { name: 'Fan "Fanny" Fan' },
     ],
     Farmhouse78: [
         { name: 'Jane Farmer' },
