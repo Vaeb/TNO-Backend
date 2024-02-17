@@ -1230,6 +1230,9 @@ export const npCharacters: NpCharacters = {
         { name: '[Trooper Chief] Tony Andrews', factions: ['Police'], highCommand: true, leader: true },
         { name: 'Rhode Block', factions: ['ASRR'], displayName: 0 },
     ],
+    FiveMArena: [
+        { name: 'FiveM Arena', factions: ['Watch Party'], displayName: 1 },
+    ],
     fleureo: [
         { name: 'Quinn Naiper', factions: ['DoC'], displayName: 0 },
     ],
