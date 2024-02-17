@@ -1231,7 +1231,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Rhode Block', factions: ['ASRR'], displayName: 0 },
     ],
     FiveMArena: [
-        { name: 'FiveM Arena', factions: ['Watch Party'], displayName: 1 },
+        { name: 'FiveM "Arena Tournament" Arena', factions: ['Watch Party'], displayName: 2 },
     ],
     fleureo: [
         { name: 'Quinn Naiper', factions: ['DoC'], displayName: 0 },
