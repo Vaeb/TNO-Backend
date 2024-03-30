@@ -1439,6 +1439,9 @@ export const npCharacters: NpCharacters = {
     Harbinger2183: [
         { name: '[Peacekeeper] Ethan Maxwell', factions: ['Police'], nicknames: ['505'], displayName: 2 },
     ],
+    Harmless_: [
+        { name: 'Maynard "Idiot" Schmidt', factions: ['Besties'] },
+    ],
     HARMSwahy: [
         { name: 'Blaine Burke', factions: ['Angels'] },
         { name: '[Officer] Wilson Burke', factions: ['Police'] },
@@ -2510,6 +2513,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Merlin Edmondstoune' },
         { name: 'William "Bill Ding" Ding', nicknames: ['Bill'] },
     ],
+    MiN1Moo: [
+        { name: 'Wong Hung', factions: ['Besties'], displayName: 1 },
+    ],
     Minakorocket: [
         { name: 'Mina Rocket', factions: ['Rooster'], displayName: 0 },
     ],
@@ -3467,7 +3473,7 @@ export const npCharacters: NpCharacters = {
         { name: '[K9 Trooper] Fenton', factions: ['Police'], nicknames: ['Fentons'] },
     ],
     SlightlyPoetic: [
-        { name: 'Poe Dempsey', factions: ['Independent'] },
+        { name: 'Poe Dempsey', factions: ['Besties'] },
     ],
     SlixGamingTV: [
         { name: 'Nico August', factions: ['RUST'] },
