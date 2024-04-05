@@ -643,6 +643,9 @@ export const npCharacters: NpCharacters = {
     CaptainBarb: [
         { name: 'Mattias Nilson', factions: ['Mayhem MC'], displayName: 0 },
     ],
+    Caramel: [
+        { name: 'Lovemore Dlamini', factions: ['Besties'], displayName: 1 },
+    ],
     Carbonoid: [
         { name: 'Han Machiavelli', factions: ['BSK'], displayName: 0 },
     ],
@@ -3825,9 +3828,6 @@ export const npCharacters: NpCharacters = {
     ],
     TheBigXH: [
         { name: 'Jose Rodriguez', factions: ['Vagos'], nicknames: ['Lil Ese'], displayName: 3 },
-    ],
-    TheCaramelGamer: [
-        { name: 'Lovemore Dlamini', factions: ['Besties'], displayName: 1 },
     ],
     TheChief1114: [
         { name: '[Deputy] Fingle Dan', factions: ['Police', 'Dans'], displayName: 1 },
