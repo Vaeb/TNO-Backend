@@ -2517,7 +2517,7 @@ export const npCharacters: NpCharacters = {
         { name: 'William "Bill Ding" Ding', nicknames: ['Bill'] },
     ],
     MiN1Moo: [
-        { name: 'Wong Hung', factions: ['Besties'], displayName: 1 },
+        { name: 'Wong Hung', displayName: 1 },
     ],
     Minakorocket: [
         { name: 'Mina Rocket', factions: ['Rooster'], displayName: 0 },
