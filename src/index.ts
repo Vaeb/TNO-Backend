@@ -20,7 +20,8 @@ app.use(cors());
 app.use(express.json());
 
 app.use((req, res, next) => {
-    if (!isProd || req.secure) {
+    const isLocalhost = req.hostname === 'localhost' || req.hostname === '127.0.0.1';
+    if (!isProd || req.secure || isLocalhost) {
         next();
     } else {
         const newUrl = `https://${req.headers.host?.replace(`:${HTTP_PORT}`, `:${HTTPS_PORT}`)}${req.url}`;
