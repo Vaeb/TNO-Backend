@@ -58,7 +58,7 @@ export const npCharacters: NpCharacters = {
         { name: 'D "D Rose" Rose', factions: ['SSB'] },
     ],
     a2guapo: [
-        { name: 'Jay Hobbs', factions: ['Independent'], nicknames: ['J', 'JHobbs'], displayName: 0, assume: 'assumeOther' },
+        { name: 'Jay Hobbs', factions: ['Besties'], nicknames: ['J', 'JHobbs'], displayName: 0, assume: 'assumeOther' },
     ],
     Aaoki: [
         { name: '[Deputy] Maddison Bancroft', factions: ['Police'], displayName: 2 },
@@ -1044,7 +1044,7 @@ export const npCharacters: NpCharacters = {
     ],
     Dripp: [
         { name: 'Future Cortair', factions: ['Besties'] },
-        { name: '[Officer] Jamarius Quangle', factions: ['Police'], nicknames: ['Jamar'], displayName: 1 },
+        { name: '[Officer] Jamarius Quangle', factions: ['Police'], nicknames: ['Jamar'], displayName: 2 },
     ],
     DROwSeph420: [
         { name: 'John "Geno" Collins', factions: ['GSF'] },
@@ -1442,7 +1442,7 @@ export const npCharacters: NpCharacters = {
     Harbinger2183: [
         { name: '[Peacekeeper] Ethan Maxwell', factions: ['Police'], nicknames: ['505'], displayName: 2 },
     ],
-    Harmless_: [
+    Harmless: [
         { name: 'Maynard "Idiot" Schmidt', factions: ['Besties'] },
     ],
     HARMSwahy: [
@@ -2376,6 +2376,9 @@ export const npCharacters: NpCharacters = {
     ],
     malikouthere: [
         { name: 'Tito Conchas', factions: ['Vagos'] },
+    ],
+    manax: [
+        { name: 'Michael "Mike" Manx', factions: ['Besties'] },
     ],
     ManteegoTV: [
         { name: 'Dougie Mane', factions: ['NBC'], displayName: 0 },
