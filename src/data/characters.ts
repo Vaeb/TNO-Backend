@@ -58,7 +58,7 @@ export const npCharacters: NpCharacters = {
         { name: 'D "D Rose" Rose', factions: ['SSB'] },
     ],
     a2guapo: [
-        { name: 'Jay Hobbs', factions: ['Besties'], nicknames: ['J', 'JHobbs'], displayName: 0, assume: 'assumeOther' },
+        { name: 'Jay Hobbs', factions: ['Besties'], nicknames: ['J', 'JHobbs'], displayName: 0 },
     ],
     Aaoki: [
         { name: '[Deputy] Maddison Bancroft', factions: ['Police'], displayName: 2 },
@@ -3575,7 +3575,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Staniel Raymond', factions: ['SOS'], nicknames: ['Elfie', 'Alfie'], displayName: 3 },
     ],
     Sput: [
-        { name: 'Garry Smod', factions: ['DoC'], displayName: 0 },
+        { name: 'Garry Smod', factions: ['DoC'], displayName: 0, assume: "assumeOther" },
     ],
     Ssaab: [
         { name: '[Trooper] Sam Baas', factions: ['Police'], nicknames: ['Samir', 'Baasem'], displayName: 2 },
