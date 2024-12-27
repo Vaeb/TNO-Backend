@@ -58,6 +58,7 @@ export const npFactionsReal = { // map: removed spaces + converted to lower case
     bsk: 'BSK',
     sos: 'SOS',
     rust: 'RUST',
+    hades: 'Hades',
     cbpd: 'CBPD',
     royalmafia: 'Royal Mafia',
     selfinsert: 'Self Insert',
