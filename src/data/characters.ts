@@ -3165,6 +3165,9 @@ export const npCharacters: NpCharacters = {
     Riseblap: [
         { name: 'Saleem Shakib', factions: ['RUST'] },
     ],
+    RissahBear: [
+        { name: 'Rissa Berry', factions: ['Besties'] },
+    ],
     RiZRP: [
         { name: 'Nikita Reznikov', factions: ['Pegasus'] },
     ],
