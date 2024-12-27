@@ -15,6 +15,7 @@ export const npFactionsReal = { // map: removed spaces + converted to lower case
     pinkgang: 'Pink Gang',
     manor: 'Manor',
     northcypress: 'North Cypress',
+    southcypress: 'South Cypress',
     roadmen: 'Roadmen',
     zone3: 'Zone3',
     langgang: 'Lang Gang',
