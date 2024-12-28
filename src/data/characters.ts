@@ -3652,7 +3652,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Poe Dempsey', factions: ['Besties'] },
     ],
     slimeoz: [
-        { name: 'Tommy “TicTac” Oliver', factions: ['Hades'], nicknames: [], displayName: 1 },
+        { name: 'Tommy "TicTac" Oliver', factions: ['Hades'], nicknames: [], displayName: 1 },
     ],
     SlixGamingTV: [
         { name: 'Nico August', factions: ['RUST'] },
