@@ -3067,6 +3067,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Robert Penta', factions: ['Self Insert'], displayName: 0 },
         { name: 'Jane Obama', displayName: 0 },
     ],
+    Peppo: [
+        { name: 'Edgar Del Castillo' },
+    ],
     perqe: [
         { name: 'Peter Percocet', factions: ['BBMC'], nicknames: ['PP'] },
     ],
