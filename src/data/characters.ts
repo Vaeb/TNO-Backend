@@ -522,7 +522,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Ryan Wright', factions: ['Police'] },
     ],
     bledorable: [
-        { name: 'Billy Thorne', factions: ['Hades'], nicknames: [], displayName: 1 },
+        { name: 'Billy Thorne', factions: ['Hades'], nicknames: [], displayName: 0 },
     ],
     BLooD_MoNeY_: [
         { name: '[Lawyer] Griz ?', factions: ['DoJ'], displayName: 1 },
