@@ -309,6 +309,7 @@ const filterExclude: { [key in FactionMini]?: boolean } = {
     podcast: true,
     watchparty: true,
     onelife: true,
+    lunatix: true,
 };
 
 type FactionMiniArr = FactionMini[];
