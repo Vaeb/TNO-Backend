@@ -382,6 +382,7 @@ const filterRename: { [key in FactionMini]?: string } = {
     hoa: 'Home Owners Association',
     langgang: 'Lang Gang',
     hydragang: 'Hydra Gang',
+    mmc: 'Maynard\'s Morning Crew',
     gangton: 'Gangton Courts',
     zone3: 'Zone 3',
     bcg: 'Bowl Cut Gang (BCG)',
