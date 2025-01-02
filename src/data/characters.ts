@@ -41,7 +41,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Kendrick Jones', factions: ['SSB'], displayName: 1 },
     ],
     '4HEAD': [
-        { name: 'Aubrey "4HEAD" Webster', factions: ['Besties'] },
+        { name: 'Aubrey "4HEAD" Webster', factions: ['Besties'], leader: true },
     ],
     '52chains': [
         { name: '[Officer] Carmine Costello', factions: ['Police'], nicknames: ['Mouse'], displayName: 1 },
@@ -2699,7 +2699,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Peacekeeper] Minerva Maat', factions: ['Police'], displayName: 1 },
     ],
     Ming: [
-        { name: 'Ming Jingtai', factions: ['Besties'], assumeServer: 'whitelist' },
+        { name: 'Ming Jingtai', factions: ['Besties'], leader: true, assumeServer: 'whitelist' },
         { name: 'Ming Jingtai', factions: ['Gangton'], nicknames: ['2.0'] },
         { name: 'Ming Jingtai', factions: ['Besties'], leader: true, assumeServer: 'public' },
         { name: 'Boon Bundy', displayName: 0, assumeServer: 'public' },
@@ -2895,7 +2895,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Eyam Job', displayName: 0 },
     ],
     Nidas: [
-        { name: 'Ingevar "AK" Falk', factions: ['Besties'] },
+        { name: 'Ingevar "AK" Falk', factions: ['Besties'], leader: true },
         { name: 'Leslie Lingberg', factions: ['Lang Gang', 'Limelight', 'Cleanbois'], leader: true, nicknames: ['Ling', 'Cerberus'], displayName: 1, assumeServer: 'whitelist' },
         { name: 'Rat Boy', nicknames: ['Ratboy'], displayName: 3 },
         { name: 'Robin ?', nicknames: ['Boy Wonder'] },
