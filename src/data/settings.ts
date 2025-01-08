@@ -58,7 +58,7 @@ export const regOthers = [
     { name: 'TheFamilyRP', reg: /\btf\s?rp/i, include: 1 },
     { name: 'PurpleRP', reg: /\bprp\b|purple\s*(?:rp\b|role\s*play|\d)/i, include: 1 },
     { name: 'ProdigyRP', reg: /\bproi?digy[\s\-_.]*(?:\b|rp\b|roleplay)/i, include: 1 },
-    { name: 'Time2RP', reg: /time[\s\-_.]*(?:2|two|too|to)[\s\-_.]*(?:rp\b|roleplay)|t[\s\-_.]*2[\s\-_.]*(?:rp\b|roleplay)/i, include: 1 },
+    { name: 'Time2RP', reg: /time[\s\-_.]*(?:2|two|too|to)[\s\-_.]*(?:rp\b|roleplay|\b)|t[\s\-_.]*2[\s\-_.]*(?:rp\b|roleplay|\b)/i, include: 1 },
     { name: 'TwitchRP', reg: /twitch[\s\-]*rp|\bt\W*rp/i, include: 1 },
     { name: 'NonStopRP', reg: /\bnon[\s\-]*stop\s*(?:rp\b|roleplay)|\bns\s?rp/i, include: 1 },
     { name: 'Project Homecoming', reg: /project[\s\-_.]*(?:homecoming\d*|\bhc\d*\b)|\bph\d*\b/i, include: 1 },
