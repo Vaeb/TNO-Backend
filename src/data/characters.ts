@@ -43,6 +43,9 @@ export const npCharacters: NpCharacters = {
     '4HEAD': [
         { name: 'Aubrey "4HEAD" Webster', factions: ['Besties'], leader: true },
     ],
+    '4hBunger': [
+        { name: 'Fred ?', displayName: 1 },
+    ],
     '52chains': [
         { name: '[Officer] Carmine Costello', factions: ['Police'], nicknames: ['Mouse'], displayName: 1 },
         { name: 'Fidel Guevara', nicknames: ['Don', 'Cabron'] },
