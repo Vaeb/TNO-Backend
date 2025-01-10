@@ -2828,7 +2828,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Mike Rosoftsam', affiliate: true },
     ],
     Nakkida: [
-        { name: '[Ranger] Tessa Lamb', factions: ['Police'], displayName: 1, assumeServer: 'whitelist' },
+        { name: 'Tessa Lamb', factions: ['Independent'], displayName: 1, assumeServer: 'whitelist' },
         { name: 'Tessa Lamb', factions: ['Independent'], assumeServer: 'public' },
         { name: 'Taylor "Onyx" White', factions: ['Police'] },
         { name: 'Rachel Parker' },
