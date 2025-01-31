@@ -3902,6 +3902,9 @@ export const npCharacters: NpCharacters = {
         { name: 'William "12 Gauge" Glory', factions: ['Besties'] },
         { name: 'Salvatore "Big Pussy" Tamburlini' },
     ],
+    Sukhi_1: [
+        { name: 'Lucky Torkel', factions: ['Besties'] },
+    ],
     SullyRP: [
         { name: 'Jack "Sully" Sullivan' },
     ],
