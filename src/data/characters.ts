@@ -783,7 +783,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Terry Linkston', factions: ['Seaside'] },
     ],
     Chelb: [
-        { name: 'Alan Kyles', factions: ['SOB'], displayName: 1 },
+        { name: 'Alan Kyles', factions: ['Besties'], displayName: 1 },
         { name: '[Officer] Josh Kade', factions: ['Police'], displayName: 2 },
     ],
     ChelbMyster: [
@@ -1822,6 +1822,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Shane Powers', factions: ['Seaside'], nicknames: ['ShaneO', 'ShanO'] },
         { name: 'Hubbo Samson' },
     ],
+    Jaden: [
+        { name: 'Jaden ?', factions: ['Hydra Gang'] },
+    ],
     Jadez: [
         { name: '? "Mother Midnight" ?' },
     ],
@@ -2307,7 +2310,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Moe Litman', displayName: 0, assume: 'assumeOther' },
     ],
     kyrienolife: [
-        { name: 'Coop Torres', factions: ['MMC'], displayName: 1 },
+        { name: 'Coop Torres', factions: [ 'MMC'], displayName: 1 },
     ],
     kytolee: [
         { name: 'Juan Cuervo', factions: ['Vagos'], displayName: 0 },
@@ -2365,7 +2368,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Lawyer] Juno Lemieux', factions: ['DoJ'], displayName: 2 },
     ],
     LillyTenshine: [
-        { name: '[Officer] Lilly Wills', factions: ['Police'], displayName: 2 },
+        { name: '[Officer] Lilly Wills', factions: ['Besties', 'Police'], displayName: 2 },
     ],
     lilypichu: [
         { name: 'Tulip Peach' },
@@ -3960,7 +3963,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Ty Jones', factions: ['SSB'], nicknames: ['xray'], displayName: 0 },
     ],
     SwizzMB: [
-        { name: 'Miguel Almerion', factions: ['SOB'] },
+        { name: 'Miguel Almerion', factions: ['Besties'] },
         { name: '[Officer] Mervin Napoli', factions: ['Police'], nicknames: ['Merv', 'Big Merv', 'Big M', reg(/\bmerv/)], displayName: 1 },
     ],
     Sykkuno: [
