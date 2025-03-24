@@ -1889,7 +1889,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Peachingle Dan', factions: ['Dans'] },
     ],
     jennylouise1997: [
-        { name: '[Deputy] Louise Campbell', factions: ['Police'] },
+        { name: 'Louise Campbell', factions: ['Saints'] },
         { name: 'Jenny Smith', displayName: 0 },
     ],
     JerseysGhost: [
