@@ -549,7 +549,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Viper Rodriguez', assume: 'assumeOther' },
     ],
     boogie: [
-        { name: 'Xavier Valentine', factions: ['Hydra'] },
+        { name: 'Xavier Valentine', factions: ['Hydra Gang'] },
     ],
     BoschMerchant: [
         { name: 'Anto Murphy', factions: ['Chang Gang'] },
