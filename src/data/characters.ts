@@ -779,8 +779,8 @@ export const npCharacters: NpCharacters = {
     Cheever7: [
         { name: 'River Cheever', nicknames: ['River'], factions: ['ASRR'], assumeServer: 'whitelist' },
     ],
-    cheezrp: [
-        { name: 'Terry Linkston', factions: ['Seaside'] },
+    Cheez: [
+        { name: 'Terry Linkston', factions: ['Manor'] },
     ],
     Chelb: [
         { name: 'Alan Kyles', factions: ['Besties'], displayName: 1 },
@@ -1329,6 +1329,9 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Booga "Booba" Ooga', factions: ['Police', 'Burger Shot'], nicknames: ['651'], displayName: 1 },
         { name: 'Jonathan "Magnum" Humes', nicknames: [reg(/\bP\.?\s*I\b/)] },
         { name: 'Boobingle Dan', factions: ['Dans'] },
+    ],
+    Finlay: [
+        { name: 'Mick Amari', factions: ['Manor'], nicknames: ['Mick9'] },
     ],
     Five0AnthO: [
         { name: '[Trooper Chief] Tony Andrews', factions: ['Police'], highCommand: true, leader: true },
