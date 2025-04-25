@@ -248,6 +248,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Lil Erf', factions: ['Chang Gang'], displayName: 0 },
         { name: 'Carmen Amuso' },
     ],
+    angelina: [
+        { name: '[Deputy] Brandi Lynn', factions: ['Police'], displayName: 1 },
+    ],
     AngelKnivez: [
         { name: 'Giavanna "GiGi" Costello', factions: ['Manor'], nicknames: ['Gigi'], displayName: 1 },
     ],
@@ -2318,6 +2321,9 @@ export const npCharacters: NpCharacters = {
     kytolee: [
         { name: 'Juan Cuervo', factions: ['Vagos'], displayName: 0 },
     ],
+    LadyDima: [
+        { name: '[Deputy] Raia Kaine', factions: ['Police'] },
+    ],
     LadyHope: [
         { name: '[Deputy] Lily Pond', factions: ['Police'] },
         { name: 'Isabella "Izzy" Carrington', factions: ['Harmony'] },
@@ -3484,6 +3490,9 @@ export const npCharacters: NpCharacters = {
     Sannmann_: [
         { name: 'Finley Milton', factions: ['BBMC'], displayName: 0 },
     ],
+    Saphirici: [
+        { name: '[Deputy] Rupert Lockridge-Fuller', factions: ['Police'], displayName: 1 },
+    ],
     Sarah_Digitally: [
         { name: 'Anna Jørgensen', factions: ['Harmony'], nicknames: ['Lilac', 'Illac', 'Jorgensen'], displayName: 3 },
     ],
@@ -4085,8 +4094,8 @@ export const npCharacters: NpCharacters = {
         { name: '[Dr.] Meredith Jenkins', factions: ['Medical'], displayName: 1 },
     ],
     TheBigMeech: [
+        { name: '[Deputy] Leonard Cassidy', factions: ['Police'], nicknames: ['Leon'] },
         { name: 'Pilbis Shonly', factions: ['NBC'] },
-        { name: '[Officer] Chris Kross', factions: ['Police'], nicknames: ['Krossy'] },
         { name: 'Tyler Kwando', displayName: 0 },
     ],
     TheBigXH: [
@@ -4642,7 +4651,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Physiotherapist] Leon Marks', factions: ['Medical'] },
     ],
     ZPapz: [
-        { name: '[Officer] Joseph Oxlong', factions: ['Police'] },
+        { name: '[Deputy] Vincent Ventura', factions: ['Police'] },
         { name: 'Liam Law', factions: ['Angels'] },
     ],
     zSillverx: [
