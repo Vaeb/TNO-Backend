@@ -2316,7 +2316,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Moe Litman', displayName: 0, assume: 'assumeOther' },
     ],
     kyrienolife: [
-        { name: 'Coop Torres', factions: [ 'MMC'], displayName: 1 },
+        { name: 'Coop Torres', factions: [ 'Besties'], displayName: 1 },
     ],
     kytolee: [
         { name: 'Juan Cuervo', factions: ['Vagos'], displayName: 0 },
