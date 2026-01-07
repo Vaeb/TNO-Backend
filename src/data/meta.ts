@@ -67,6 +67,7 @@ export const npFactionsReal = { // map: removed spaces + converted to lower case
     hades: 'Hades',
     kc: 'KC',
     cl: 'CL',
+    clowns: 'Clowns',
     merchants: 'Merchants',
     faceless: 'Faceless',
     cbpd: 'CBPD',
