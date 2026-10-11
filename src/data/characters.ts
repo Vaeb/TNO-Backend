@@ -57,9 +57,6 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Carmine Costello', factions: ['Pawn Addicts', 'DoC', 'Gruppe6'], nicknames: ['Mouse'], displayName: 1 },
         { name: 'Fidel Guevara', nicknames: ['Don', 'Cabron'] },
     ],
-    '713stew': [
-        { name: 'Junior Diaz', factions: ['Vagos'], displayName: 0 },
-    ],
     '77_Nights': [
         { name: 'Damian De Santos', factions: ['Vagos'], displayName: 1 },
     ],
@@ -2001,14 +1998,11 @@ export const npCharacters: NpCharacters = {
     itsfragss: [
         { name: 'Maxwell Connorth', factions: ['SOS'], nicknames: ['Max'], displayName: 1 },
     ],
-    itshholmes: [
-        { name: 'Andre Tyson', factions: ['Pawn Addicts', 'Gruppe6'], displayName: 0 },
-    ],
     ItsHighsky: [
         { name: 'Sky Parks', factions: ['Royal Mafia'], displayName: 0 },
     ],
     itsHolmes: [
-        { name: 'Andre Tyson', factions: ['SSB', 'Faceless'], displayName: 1 },
+        { name: 'Andre Tyson', factions: ['Pawn Addicts', 'Gruppe6', 'SSB', 'Faceless'], displayName: 1 },
     ],
     itsjustasummerjob: [
         { name: 'Sabith "Bunny" Cohen', factions: ['Stable'] },
