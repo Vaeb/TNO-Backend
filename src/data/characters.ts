@@ -2567,7 +2567,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Kyle Pred', assumeServer: 'public' },
         { name: 'Dominic Toretti', displayName: 0 },
         { name: 'Jaguar Toretti', displayName: 0 },
-        { name: 'Alabaster Slim', nicknames: ['Pimp'], displayName: 2 },
+        { name: 'Alabaster Slim', factions: ['Slim'], nicknames: ['Pimp'], displayName: 2 },
         { name: 'Kegal Dan' },
         { name: 'Brett Biggledoinks' },
         { name: 'Notta Local', nicknames: ['Balla Gang'], displayName: 3 },
@@ -2582,7 +2582,7 @@ export const npCharacters: NpCharacters = {
         { name: "[Lawyer] Rory O'Banion", displayName: 0 },
         { name: 'Wyatt Derp' },
         { name: 'Pal Gore' },
-        { name: 'Jack Barker' },
+        { name: 'Jack Barker', factions: ['Police'] },
     ],
     KylendOnTwitch: [
         { name: 'Kylend LaCroix', factions: ['GSF'], assumeServer: 'public' },
@@ -4270,7 +4270,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Garry Smod', displayName: 0, assume: 'assumeOther' },
     ],
     Ssaab: [
-        { name: 'Alfonso "Saab" Sebastian', factions: ['Police'], nicknames: ['Al'], displayName: 2 },
+        { name: 'Alfonso "Saab" Sebastian', nicknames: ['Al'], displayName: 2 },
         // { name: '[Trooper] Sam Baas', factions: ['Police'], nicknames: ['Samir', 'Baasem'], displayName: 2 },
         { name: 'Ray Singha', displayName: 0 },
         { name: 'Charles Dawson', factions: ['Police'] },
