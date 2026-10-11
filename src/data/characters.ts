@@ -250,7 +250,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Amelia Frost' },
     ],
     alyssajeanaf: [
-        { name: 'Daphne Malone', factions: ['Brick Bois'] },
+        { name: 'Daphne Malone' },
     ],
     amakingswp: [
         { name: 'Braden Kingz', factions: ['Manor'], nicknames: ['Braden'], displayName: 1 },
@@ -551,7 +551,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Louis Blanc', factions: ['Hades'], nicknames: [], displayName: 1 },
     ],
     bigbam: [
-        { name: 'FlyRone Smith', factions: ['Clowns', 'DoC'] },
+        { name: 'FlyRone Smith', factions: ['DoC'] },
     ],
     bigbussynik: [
         { name: 'Armani Macaroni' },
@@ -747,7 +747,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Devan Almighty', nicknames: ['Bruce', 'Evan'], displayName: 0 },
         { name: 'Bruce "The Dank Knight" Strayne' },
         { name: 'Gordo Ramsay', nicknames: ['Gorden', 'Gordon'], displayName: 0 },
-        { name: 'Thomas Blanc', factions: ['Brick Bois', 'Casino'] },
+        { name: 'Thomas Blanc', factions: ['Casino'] },
     ],
     ButterRoyaleTV: [
         { name: 'Deejay Bartello' },
@@ -777,7 +777,7 @@ export const npCharacters: NpCharacters = {
     Capped: [
         { name: 'Charlie ?', factions: ['Faceless'], displayName: 1, leader: true },
         { name: 'Capped Tarranova', factions: ['Street Team', 'Chang Gang'], nicknames: ['Pigeon', 'Terranova', 'Nova'], displayName: 3 },
-        { name: 'Robert De Souza', factions: ['Brick Bois', 'The 404'] },
+        { name: 'Robert De Souza' },
         { name: 'Anthony Breakwood', factions: ['NEST'] },
     ],
     Capshion: [
@@ -1043,7 +1043,7 @@ export const npCharacters: NpCharacters = {
     Crystalst: [
         { name: '[Deputy] Crystal Clear', factions: ['Police'], nicknames: ['370'], displayName: 1 },
         { name: 'Four "4T" Tee', factions: ['ASRR'], displayName: 0 },
-        { name: 'Swan DeLeur', factions: ['Brick Bois', 'Brick House', 'The 404', 'Sweepers', 'Casino', 'Gruppe6'], displayName: 0 },
+        { name: 'Swan DeLeur', factions: ['Brick House', 'Sweepers', 'Casino', 'Gruppe6'], displayName: 0 },
         { name: 'Amie Rush' },
     ],
     CurtisRyan: [
@@ -2065,7 +2065,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Vincent' },
     ],
     Jack: [
-        { name: 'Jack Cortair', factions: ['Brick Bois', 'Besties'], nicknames: ['Cookie', 'Galleta'], assumeServer: 'whitelist' },
+        { name: 'Jack Cortair', factions: ['Besties'], nicknames: ['Cookie', 'Galleta'], assumeServer: 'whitelist' },
         { name: 'Jack Cortair', factions: ['Gangton'], nicknames: ['2.0', reg(/\bpimp|pimp\b/)] },
         { name: 'Dez Wright', factions: ['Slim', 'Besties'], nicknames: ['Doofy', reg(/\bdez/)], displayName: 1 },
     ],
@@ -2811,7 +2811,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Violet Van Housen', displayName: 1, assumeServer: 'public' },
     ],
     Lysium: [
-        { name: 'Benji Ramos', factions: ['Burger Shot', 'Slim', 'Hades', 'Faceless'], leader: true, nicknames: ['B'] },
+        { name: 'Benji Ramos', factions: ['Burger Shot', 'Hades', 'Faceless'], leader: true, nicknames: ['B'] },
         { name: '[Deputy] Dean Duncan' },
         { name: 'Maxim Pochinki' },
     ],
@@ -3009,7 +3009,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Michael Rodgers', assume: 'assumeNpNoOther' },
     ],
     mikfoolery: [
-        { name: 'Helen Highwater', factions: ['Clowns', 'Gruppe6'] },
+        { name: 'Helen Highwater', factions: ['Gruppe6'] },
         { name: 'Jean Jorts', factions: ['Police'] },
     ],
     MikkisaurusRex: [
@@ -3935,7 +3935,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Olof Gunnarsson' },
     ],
     Sayeed: [
-        { name: 'Arush "Speedy" Patel Santana', factions: ['Brick Bois', 'Brick House', 'Piss Boiz', 'New Babylon'], nicknames: [], displayName: 1 },
+        { name: 'Arush "Speedy" Patel Santana', factions: ['Brick Bois', 'Brick House', 'New Babylon'], nicknames: [], displayName: 1 },
     ],
     SayeedBlack: [
         { name: 'Arush Patel "Speedy" Santana', factions: ['Lang Gang', 'Cleanbois'], leader: true, nicknames: ['El Jefe'] },
@@ -4420,7 +4420,7 @@ export const npCharacters: NpCharacters = {
     Sykkuno: [
         {
             name: 'Yuno Sykk',
-            factions: ['Brick Bois', 'Sweepers', 'Gruppe6', 'New Babylon', 'Cleanbois', 'Clean Cartel', 'Rooster'],
+            factions: ['Sweepers', 'Gruppe6', 'New Babylon', 'Cleanbois', 'Clean Cartel', 'Rooster'],
             displayName: 1,
             assumeServer: 'whitelist',
             assumeChar: true,
@@ -4781,7 +4781,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Treyvon Williams', factions: ['GSF'], nicknames: ['Trey'], assume: 'assumeOther' },
     ],
     UHN: [
-        { name: 'Ekonious Chambers', factions: ['Brick Bois'] },
+        { name: 'Ekonious Chambers' },
     ],
     uhSnow: [
         { name: '[Trooper] Jackie Snow', factions: ['Police'] },
