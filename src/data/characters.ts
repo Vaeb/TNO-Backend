@@ -744,7 +744,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Devan Almighty', nicknames: ['Bruce', 'Evan'], displayName: 0 },
         { name: 'Bruce "The Dank Knight" Strayne' },
         { name: 'Gordo Ramsay', nicknames: ['Gorden', 'Gordon'], displayName: 0 },
-        { name: 'Thomas Blanc', factions: ['Casino'], displayName: 0 },
+        { name: 'Thomas Blanc', factions: ['Locksmiths', 'Casino'], displayName: 0 },
     ],
     ButterRoyaleTV: [
         { name: 'Deejay Bartello' },
@@ -774,7 +774,7 @@ export const npCharacters: NpCharacters = {
     Capped: [
         { name: 'Charlie ?', factions: ['Faceless'], displayName: 1, leader: true },
         { name: 'Capped Tarranova', factions: ['Street Team', 'Chang Gang'], nicknames: ['Pigeon', 'Terranova', 'Nova'], displayName: 3 },
-        { name: 'Robert De Souza', displayName: 0 },
+        { name: 'Robert De Souza', factions: ['Locksmiths'], displayName: 0 },
         { name: 'Anthony Breakwood', factions: ['NEST'], displayName: 0 },
     ],
     Capshion: [
@@ -2458,6 +2458,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Andi Jones', factions: ['New Babylon', 'HOA'], nicknames: ['Ant'], displayName: 1 },
         { name: 'Natalie ?', nicknames: ['not andi', 'not ant'], displayName: 1 },
         { name: 'Navi Gates' },
+        { name: 'Ria Lee', factions: ['Locksmiths'], displayName: 0 },
     ],
     Kiwo: [
         { name: '[Deputy] Lauren Forcer', assumeServer: 'whitelist' },
@@ -4775,7 +4776,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Treyvon Williams', factions: ['GSF'], nicknames: ['Trey'], assume: 'assumeOther' },
     ],
     UHN: [
-        { name: 'Ekonious Chambers', displayName: 0 },
+        { name: 'Ekonious Chambers', factions: ['Locksmiths'], displayName: 0 },
     ],
     uhSnow: [
         { name: '[Trooper] Jackie Snow', factions: ['Police'] },
