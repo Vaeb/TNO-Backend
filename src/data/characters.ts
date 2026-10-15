@@ -3364,6 +3364,9 @@ export const npCharacters: NpCharacters = {
     NurEinDarki: [
         { name: 'Nolan Nicholson', factions: ['Wastelanders'], displayName: 0 },
     ],
+    nutreo: [
+        { name: 'Carla Graziano', factions: ['DoC'], displayName: 0 },
+    ],
     nxsiah: [
         { name: 'Zelaya Fernando', factions: ['Prison'], nicknames: ['Z', 'Laya'] },
     ],
