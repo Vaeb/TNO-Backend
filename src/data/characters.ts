@@ -590,7 +590,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Lawyer] Buford J. Preston' },
     ],
     blau: [
-        { name: 'Mickey Sinclaire', factions: ['DoJ', 'Cleanbois', 'Clean Cartel'], nicknames: ['Michael', 'Downbad', 'Downrat'], assumeServer: 'whitelist' },
+        { name: 'Mickey Sinclaire', factions: ['BPM', 'DoJ', 'Cleanbois', 'Clean Cartel'], nicknames: ['Michael', 'Downbad', 'Downrat'], assumeServer: 'whitelist' },
         { name: '[Deputy] Klay Kona', displayName: 2 },
         { name: 'Michael S.', factions: ['Independent'], assumeServer: 'public' },
     ],
@@ -800,7 +800,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Lovemore Dlamini', factions: ['Besties'], displayName: 1 },
     ],
     carbie: [
-        { name: 'Zephyr Kane', factions: ['Order'], displayName: 0 },
+        { name: 'Zephyr Kane', factions: ['BPM', 'Order'], displayName: 0 },
     ],
     Carbonoid: [
         { name: 'Han Machiavelli', factions: ['BSK'], displayName: 0 },
@@ -1411,6 +1411,9 @@ export const npCharacters: NpCharacters = {
     ],
     EvilShatner: [
         { name: '[Lawyer] Anna Swallows', factions: ['ASRR'], nicknames: ['Law'], displayName: 1, assumeChar: true },
+    ],
+    ewroon: [
+        { name: 'Erwin Knuckles', factions: ['BPM'], displayName: 0 },
     ],
     ExNinja_: [
         { name: '[Deputy] Paul String', assumeServer: 'public' },
@@ -2822,7 +2825,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Violet Van Housen', displayName: 1, assumeServer: 'public' },
     ],
     Lysium: [
-        { name: 'Benji Ramos', factions: ['Sweepers', 'Burger Shot', 'Hades', 'Faceless'], leader: true, nicknames: ['B'] },
+        { name: 'Benji Ramos', factions: ['BPM', 'Sweepers', 'Burger Shot', 'Hades', 'Faceless'], leader: true, nicknames: ['B'] },
         { name: '[Deputy] Dean Duncan' },
         { name: 'Maxim Pochinki' },
     ],
@@ -4937,7 +4940,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Peter Rogers' },
     ],
     WackyTally: [
-        { name: 'Leon Odowd', factions: ['Sweepers'], displayName: 0 },
+        { name: 'Leon Odowd', factions: ['BPM', 'Sweepers'], displayName: 0 },
     ],
     wakewilder: [
         { name: 'Jebediah "Beef" von Wunder', factions: ['DoJ', 'Gruppe6'], displayName: 0 },
@@ -5069,6 +5072,9 @@ export const npCharacters: NpCharacters = {
     ],
     XMOTHATRUCKAX: [
         { name: 'Ronald "Red" Juggler' },
+    ],
+    xn0rth: [
+        { name: 'Albert Speedo', factions: ['BPM'], displayName: 0 },
     ],
     xNittyGritty: [
         { name: 'Donny ?', factions: ['Rooster'] },
