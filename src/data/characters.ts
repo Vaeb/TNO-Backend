@@ -1656,7 +1656,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Percy Perkins', displayName: 0 },
     ],
     gingersnap___: [
-        { name: 'Sophie Sanders', displayName: 0 },
+        { name: 'Sophie Sanders', factions: ['Collective'], displayName: 0 },
         { name: 'Quinn Decker', factions: ['HK Pawn', 'Old Country'], displayName: 0 },
     ],
     Giosooo: [
@@ -2122,7 +2122,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Alex "Lil Cap" Söderberg', factions: ['ADMC'], nicknames: ['Soderberg', 'Cap'], displayName: 0, assumeServer: 'whitelist' },
         { name: '[Deputy] Roger S', nicknames: ['546'], displayName: 1 },
         { name: 'Lil Strap', displayName: 0, assumeServer: 'public' },
-        { name: 'Lil Cap', factions: ['Sinner Pawn', 'Gruppe6'], displayName: 0 },
+        { name: 'Lil Cap', factions: ['Collective', 'Sinner Pawn', 'Gruppe6'], displayName: 0 },
     ],
     JayAye: [
         { name: "James O'Neil", factions: ['Saints'], nicknames: ['Jay'], displayName: 0 },
@@ -2935,7 +2935,7 @@ export const npCharacters: NpCharacters = {
         { name: '[EMS] Rowan Hunter', factions: ['Medical'] },
     ],
     MattEU: [
-        { name: 'Matthew "Matt" Antov', factions: ['Sinner Pawn', 'Manor'], nicknames: ['Matt'], displayName: 0 },
+        { name: 'Matthew "Matt" Antov', factions: ['Collective', 'Sinner Pawn', 'Manor'], nicknames: ['Matt'], displayName: 0 },
         { name: 'Lucas Miller', factions: ['Gruppe6', 'Police'], displayName: 0 },
     ],
     Mattie: [
@@ -4871,7 +4871,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Vivienne Vegas', factions: ['Burger Shot'], displayName: 0 },
     ],
     vanillayoshee: [
-        { name: 'Eliyanna Ali', factions: ['Pawn Addicts', 'Gruppe6'], displayName: 0 },
+        { name: 'Eliyanna Ali', factions: ['Collective', 'Pawn Addicts', 'Gruppe6'], displayName: 0 },
     ],
     vanyaa_3D: [
         { name: '[Development] Vanya', factions: ['Development'], nicknames: ['clothes', 'clothing'], assumeChar: true },

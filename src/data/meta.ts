@@ -44,6 +44,7 @@ export const npFactionsReal = { // map: removed spaces + converted to lower case
     order: 'Order',
     locksmiths: 'Locksmiths',
     bpm: 'BPM',
+    collective: 'Collective',
     faceless: 'Faceless',
     besties: 'Besties',
     podcast: 'Podcast',

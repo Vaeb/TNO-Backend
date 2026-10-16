@@ -51,6 +51,7 @@ export const npFactionsRegex = {
     order: noFormer(/\bthe[\s\-_.]*order\b/i),
     locksmiths: noFormer(/\block[\s\-]*smiths?\b/i),
     bpm: noFormer(/\bbpm\b/i),
+    collective: noFormer(/\bthe[\s\-_.]*collective\b/i),
     kc: noFormer(/\bkc\b|\bkaneshiro/i),
     faceless: noFormer(/\bface[\s\-_.]*less/i),
     podcast: noLater(noFormer(/\b(?<!!)podcast\b/i)),
@@ -128,7 +129,7 @@ npFactionsRealMini.forEach((faction) => {
 // : { [key in FactionColorsMini]: string }
 
 export const useColorsDark = { // #ff77ff #FAA0A0 #FA0B42
-    unused1: '#e74c3c',
+    collective: '#e74c3c',
     unused2: '#bfff00',
     hounds: '#ab5179',
     changgang: '#686de0',
@@ -197,7 +198,7 @@ export type FactionColorsRealMini = FactionRealMini & FactionColorsMini;
 export const isFactionColor = (factionMini: FactionMini): factionMini is FactionMini & FactionColorsMini => factionMini in useColorsDark;
 
 export const useColorsLight: { [key in FactionColorsMini]: string } = {
-    unused1: '#c74c3c',
+    collective: '#c74c3c',
     unused2: '#bfff00',
     hounds: '#ab5179',
     changgang: '#686de0',
@@ -303,6 +304,7 @@ const filterOrderTop: FactionMiniArr = [
     'order',
     'locksmiths',
     'bpm',
+    'collective',
     'faceless',
     'manor',
     'hydragang',
@@ -371,6 +373,7 @@ const filterRename: { [key in FactionMini]?: string } = {
     order: 'The Order',
     locksmiths: 'The Locksmiths',
     bpm: 'BPM',
+    collective: 'The Collective',
     prison: 'Prison Lifers',
     othernp: 'Unknown RPers',
     other: 'Other Servers',
