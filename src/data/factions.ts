@@ -123,9 +123,6 @@ npFactionsRealMini.forEach((faction) => {
     }
 });
 
-export const serverTwoFactions: { [key in FactionRealMini]?: true } = {
-};
-
 // export type NoFactionColorsMini = 'alltwitch' | 'allnopixel' | 'news' | 'mersions' | 'marabunta';
 // type FactionColorsMini = Exclude<FactionMini, NoFactionColorsMini>;
 // : { [key in FactionColorsMini]: string }
