@@ -35,7 +35,6 @@ interface Character extends Omit<CharacterOld, 'factions' | 'displayName' | 'ass
     nameReg: RegExp;
     assumeServer: AssumeServer;
     wlBias: WlBias;
-    serverTwo?: boolean;
 }
 
 type NpCharacter = Character[] & { assumeChar?: Character; assumeServer: AssumeServer; wlBias: WlBias; assumeOther: number; };
@@ -176,7 +175,6 @@ for (const [streamer, characters] of Object.entries(npCharacters)) {
         });
 
         if (charOld.nicknames) {
-            if (charOld.nicknames.includes('2.0')) char.serverTwo = true;
             if (realNames.length === 1) realNames.push(realNames[0]);
             if (displayNameNum !== 0) realNames.push(...charOld.nicknames.filter(nck => typeof nck === 'string'));
             charOld.nicknames.forEach((nck) => {
@@ -393,8 +391,6 @@ const hasCycled: { [key in ClipGroupNames]: boolean } = { '24h': false, '7d': fa
 // This is only useful if you set up a streamerDataTemp equivalent to clipGroupsTemp. Builds up until clipGroupsTemp is full.
 // Would need to do something to account for 4 clipGroupsTemp fulls vs 1 streamerDataTemp (should be in sync)
 const streamerData: MixedStreamerData = {};
-
-const serverTwoCheck = /(?:[lp]|\b)2\.0\b|\bclassic|classic\b/i;
 
 // Can run less frequently
 // Make it so that each run it gets the next searchNumClipsDefault clips after `after[group.name]` or reset `after` if it's been 3 hours
@@ -964,8 +960,7 @@ export const getNpLive = async (baseOptions = {}, override = false, endpoint = '
                             const resSize = numResults > 0 ? matchPositions[0][0].length : -1; // Could use all matches, but more expensive
                             const devFactionWeight = char.factions[0] === 'development' ? 2e4 : 0;
                             const serverMatchWeight = (onServerDetected && char.assumeServer !== onServer && realAssumes.includes(char.assumeServer)) ? 1e4 : 0;
-                            const serverTwoWeight = char.serverTwo && serverTwoCheck.test(title) ? -1e3 : 0;
-                            const lowIndex = numResults ? matchPositions[0].index! + serverTwoWeight + serverMatchWeight + devFactionWeight : -Infinity;
+                            const lowIndex = numResults ? matchPositions[0].index! + serverMatchWeight + devFactionWeight : -Infinity;
                             if (lowIndex > -Infinity && (
                                 lowIndex < lowestPos
                                 || (lowIndex === lowestPos && numResults > maxResults)
