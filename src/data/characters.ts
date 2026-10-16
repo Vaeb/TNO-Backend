@@ -75,29 +75,29 @@ export const npCharacters: NpCharacters = {
     ],
     Aaoki: [
         { name: '[Deputy] Maddison Bancroft', displayName: 2 },
-        { name: 'Shazza Wazza', factions: ['Rooster'], nicknames: ['Shazzam'] },
+        { name: 'Shazza Wazza', nicknames: ['Shazzam'] },
     ],
     aaron_rp: [
         { name: 'Aaron Alexander', factions: ['GSF'], nicknames: ['Double A', reg(/double.?a/)], displayName: 3 },
     ],
     AaronOnAir: [
         { name: '[Deputy] Dan Faily', nicknames: ['485'], facebook: true },
-        { name: 'Sal T. Block', factions: ['ASRR'], displayName: 0 },
+        { name: 'Sal T. Block', displayName: 0 },
     ],
     abbay: [
-        { name: 'Olivia Harvey', factions: ['Rooster'] },
+        { name: 'Olivia Harvey' },
     ],
     abbbz: [
         { name: 'Sanjay Patel' },
     ],
     AbbottJake: [
-        { name: 'Luke Atar', factions: ['Manor', 'MMC'], nicknames: ['Morning Crew Leader'], displayName: 1 },
+        { name: 'Luke Atar', factions: ['Manor'], nicknames: ['Morning Crew Leader'], displayName: 1 },
         { name: 'Nip Smith', displayName: 0 },
         { name: 'Joey Grass', factions: ['Prison'], displayName: 0 },
         { name: 'Tommy Lee', displayName: 0 },
     ],
     abby: [
-        { name: 'Irma Gawd', factions: ['Rooster'], displayName: 0 },
+        { name: 'Irma Gawd', displayName: 0 },
         { name: 'Big Bertha', displayName: 0 },
         { name: 'Ivy Wood' },
     ],
@@ -113,10 +113,10 @@ export const npCharacters: NpCharacters = {
         { name: 'Fahad AlArabi' },
     ],
     Abou_: [
-        { name: 'Modi Janta', factions: ['NBC'] },
+        { name: 'Modi Janta' },
     ],
     abrvxas: [
-        { name: 'Alexei Pavlovich', factions: ['Royal Mafia'], nicknames: ['Chicken Head'], displayName: 3 },
+        { name: 'Alexei Pavlovich', nicknames: ['Chicken Head'], displayName: 3 },
     ],
     Acaibear: [
         { name: '[Deputy] Emily Reinhart' },
@@ -129,10 +129,10 @@ export const npCharacters: NpCharacters = {
         { name: 'Vee Hernandez', factions: ['Pawn Addicts', 'Gruppe6'], displayName: 0 },
     ],
     adamsmiley96: [
-        { name: "Sebastian Von Di'Quad", factions: ['Wastelanders'], displayName: 0 },
+        { name: "Sebastian Von Di'Quad", displayName: 0 },
     ],
     adeptthebest: [
-        { name: 'Mari Posa', factions: ['Chang Gang', 'Hydra Gang', 'Chaos'], nicknames: ['Wari', 'Lari'], displayName: 1, assumeServer: 'whitelist' },
+        { name: 'Mari Posa', factions: ['Chang Gang', 'Hydra Gang'], nicknames: ['Wari', 'Lari'], displayName: 1, assumeServer: 'whitelist' },
         { name: '[Trooper] Selena Mendoza', nicknames: [reg(/\bmendoz/)] },
         { name: 'Hannah Hiltop' },
         { name: 'Maria Poser', factions: ['Independent'], displayName: 0, assumeServer: 'public' },
@@ -147,14 +147,14 @@ export const npCharacters: NpCharacters = {
         { name: 'Ivan Gorbahtjov', assume: 'assumeOther' },
     ],
     adzno: [
-        { name: 'Aaron Melarky', factions: ['Mayhem MC'], displayName: 0 },
+        { name: 'Aaron Melarky', displayName: 0 },
     ],
     Adzzstarr: [
         { name: 'Adam Prince', factions: ['Saints'], displayName: 0 },
         { name: '[Dr.] Valentine', factions: ['Medical'] },
     ],
     aezke: [
-        { name: 'Khalid Hussain', factions: ['Dons'], displayName: 1 },
+        { name: 'Khalid Hussain', displayName: 1 },
     ],
     AFCB78: [
         { name: 'Dick Dudley', displayName: 2 },
@@ -162,17 +162,17 @@ export const npCharacters: NpCharacters = {
     AfricanSnowball: [
         { name: '[Trooper] Dwayne Carter IV', nicknames: [reg(/good [a*][s*]+ day/)], displayName: 2 },
         { name: 'Buck Stanton', displayName: 2 },
-        { name: 'Leland "LJ" Jones', factions: ['RUST', 'Pegasus'] },
-        { name: 'Taylor Africansnowball', factions: ['Self Insert'], displayName: 0 },
+        { name: 'Leland "LJ" Jones' },
+        { name: 'Taylor Africansnowball', displayName: 0 },
     ],
     Afro: [
         { name: 'Dexx Martin', factions: ['GSF'], leader: true },
-        { name: 'Jacob Harth', factions: ['Dark Web'], leader: true },
+        { name: 'Jacob Harth', leader: true },
         { name: 'Chris "CP" Porter' },
         { name: 'Sayid Mitra', nicknames: ['Sayeet'], displayName: 0 },
-        { name: 'David "The Mime" Wonders', nicknames: ['Concrete', 'Mime'], factions: ['ASRR'] },
+        { name: 'David "The Mime" Wonders', nicknames: ['Concrete', 'Mime'] },
         { name: 'Gordon Parks', nicknames: ['DoorLord'] },
-        { name: 'Jay Afro', factions: ['Self Insert'], displayName: 0 },
+        { name: 'Jay Afro', displayName: 0 },
         { name: 'Gary Kebun', factions: ['DoC'], displayName: 0 },
     ],
     Aheeyuh: [
@@ -187,7 +187,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Ginger Ale', factions: ['Burger Shot'], displayName: 0 },
     ],
     aimbotcalvin: [
-        { name: '? ?', factions: ['LARPers', 'Cleanbois'] },
+        { name: '? ?' },
     ],
     aintitadam: [
         { name: 'Scruffy Doodle' },
@@ -198,7 +198,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Unity', nicknames: ['Cat'] },
     ],
     AJumpin: [
-        { name: 'Aziz Shaw', factions: ['MMC'] },
+        { name: 'Aziz Shaw' },
     ],
     akaMONKEY: [
         { name: 'Arturo Ortiz', factions: ['Vagos'], nicknames: [reg(/\bar(?:tu|2)/), reg(/\barchu+r/)] },
@@ -209,9 +209,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Harold "H-Dawg" Bishop', factions: ['Habibis'], nicknames: ["H-Dawg", "Hdawg"], displayName: 0 },
     ],
     aleks: [
-        { name: 'Vasily "V" Sazkaljovich', factions: ['CBPD', 'Rooster'] },
+        { name: 'Vasily "V" Sazkaljovich' },
         { name: '[Officer] Bob Smith', nicknames: ['Bobby', 'Chief'], displayName: 1 },
-        { name: 'Alex Marshall', factions: ['Frat'], displayName: 0 },
+        { name: 'Alex Marshall', displayName: 0 },
         { name: '[FIB Agent] Heath Mercer' },
     ],
     Alex_3MM: [
@@ -221,7 +221,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Liz Anya', displayName: 0 },
     ],
     alexten0909: [
-        { name: 'Alexander Campbell', factions: ['Angels'], nicknames: ['Alex'], displayName: 3, assumeServer: 'whitelist' },
+        { name: 'Alexander Campbell', nicknames: ['Alex'], displayName: 3, assumeServer: 'whitelist' },
         { name: '[Officer] Jeff Boiardi' },
         { name: '[Officer] Alex Campbell', assumeServer: 'public' },
     ],
@@ -229,7 +229,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Alisha Wuornos' },
     ],
     AllHailGoon: [
-        { name: 'Father Dinker', factions: ['ASRR'], nicknames: ['god', 'block'], displayName: 0 },
+        { name: 'Father Dinker', nicknames: ['god', 'block'], displayName: 0 },
     ],
     allium: [
         { name: 'Alice Liddell', factions: ['Police'], displayName: 0 },
@@ -256,10 +256,10 @@ export const npCharacters: NpCharacters = {
         { name: 'Braden Kingz', factions: ['Manor'], nicknames: ['Braden'], displayName: 1 },
     ],
     ambientsurprise: [
-        { name: 'Terry LaBuff', factions: ['BSK'], displayName: 0 },
+        { name: 'Terry LaBuff', displayName: 0 },
     ],
     Ambush: [
-        { name: 'Freya Almerion', factions: ['SOB'], displayName: 1 },
+        { name: 'Freya Almerion', displayName: 1 },
     ],
     americansneakers: [
         { name: 'Cassidy Collins', factions: ['Order'], displayName: 0 },
@@ -268,10 +268,10 @@ export const npCharacters: NpCharacters = {
         { name: 'Amy Rain', nicknames: ['Ammy'], displayName: 0 },
     ],
     amsyz: [
-        { name: 'Zayn Ahmed', factions: ['BSK'], displayName: 0 },
+        { name: 'Zayn Ahmed', displayName: 0 },
     ],
     AnarchoSyn: [
-        { name: 'Hess Blade', factions: ['CBPD', 'Rooster'] },
+        { name: 'Hess Blade' },
     ],
     Anchoras: [
         { name: 'Eethan Gaine-Prince', factions: ['Saints'], nicknames: ['EGP', 'Erebos'] },
@@ -288,7 +288,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Giavanna "GiGi" Costello', factions: ['DoC', 'Casino', 'Gruppe6', 'Manor'], nicknames: ['Gigi'], displayName: 1 },
     ],
     Angrysquirlz: [
-        { name: 'Lizard Block', factions: ['ASRR'] },
+        { name: 'Lizard Block' },
     ],
     AnimatedJF: [
         { name: 'Cameron Dupres' },
@@ -303,7 +303,7 @@ export const npCharacters: NpCharacters = {
     AnthonyZ: [
         {
             name: 'Tony Corleone',
-            factions: ['Brick Bois', 'Brick House', 'New Babylon', 'Cleanbois', 'Clean Cartel', 'Rooster'],
+            factions: ['Brick Bois', 'Brick House'],
             nicknames: ['Tonish', 'Racing'],
             assumeServer: 'whitelist',
         },
@@ -314,12 +314,12 @@ export const npCharacters: NpCharacters = {
         { name: 'Brooklyn "BK" Davis', factions: ['GSF'] },
     ],
     Apitoxin11: [
-        { name: 'Trigger Freebird', factions: ['Harmony'] },
+        { name: 'Trigger Freebird' },
     ],
     APPLESHAMPOO: [
         { name: '[Deputy] Nancy Ree', displayName: 1, assumeServer: 'whitelist' },
         { name: '[EMS] Gioconda "Gio" Coppola', factions: ['Medical'], nicknames: ['T-17'] },
-        { name: 'Apple Schampu', factions: ['Self Insert', 'One Life'], displayName: 0 },
+        { name: 'Apple Schampu', displayName: 0 },
         { name: '[Officer] Gio Coppola', nicknames: ['466'], displayName: 1, assumeServer: 'public' },
         { name: 'Morgan Silver', factions: ['Police'], displayName: 0 },
     ],
@@ -340,40 +340,40 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Beric Johnson' },
     ],
     ArmandMorte: [
-        { name: 'Lucky Cox', factions: ['Mayhem MC'], displayName: 0 },
+        { name: 'Lucky Cox', displayName: 0 },
     ],
     Armeeof1: [
         { name: 'Milton Pointdexter' },
     ],
     Arnie: [
-        { name: 'Vincent Carl', factions: ['Hydra Gang', 'BCG'], nicknames: ['Arnie', reg(/\b(?:vincent|carl)/)], displayName: 3 },
+        { name: 'Vincent Carl', factions: ['Hydra Gang'], nicknames: ['Arnie', reg(/\b(?:vincent|carl)/)], displayName: 3 },
     ],
     arro2k: [
-        { name: 'Rico Barbosa', factions: ['Hades'], nicknames: [], displayName: 1 },
+        { name: 'Rico Barbosa', nicknames: [], displayName: 1 },
         { name: 'Timo Korhonen', factions: ['Pawn Addicts', 'Gruppe6'], displayName: 0 },
     ],
     ArsenaI: [
-        { name: 'James Arsenal', factions: ['NBC'], displayName: 0 },
+        { name: 'James Arsenal', displayName: 0 },
     ],
     ArtByBaha: [
-        { name: 'Cuddles Fish', factions: ['New Babylon'], nicknames: [], displayName: 1 },
+        { name: 'Cuddles Fish', nicknames: [], displayName: 1 },
     ],
     AscensionLive: [
-        { name: 'James Malding', factions: ['Street Team'], displayName: 0 },
+        { name: 'James Malding', displayName: 0 },
     ],
     ash: [
         { name: 'Ash Ketchup', factions: ['Burger Shot', 'Gruppe6', 'Hydra Gang'], displayName: 1, assumeChar: true },
         { name: 'Jenna Mustard', factions: ['Police'], displayName: 0 },
     ],
     Ashaweebaby78: [
-        { name: 'Frankiie Fletcher', factions: ['BSK'], displayName: 0 },
+        { name: 'Frankiie Fletcher', displayName: 0 },
     ],
     Ashi: [
-        { name: 'Fiona Stewart', nicknames: ['Fi-ho-na', 'Fifi'], factions: ['LARPers', 'Cleanbois', 'Rooster'] },
+        { name: 'Fiona Stewart', nicknames: ['Fi-ho-na', 'Fifi'] },
         { name: '[Officer] Annie May', displayName: 2 },
     ],
     ashlynn: [
-        { name: 'Cassie Cupcakes', factions: ['Angels'] },
+        { name: 'Cassie Cupcakes' },
         { name: '[Officer] Brenda Pancake', displayName: 1, nicknames: ['Pancakes'] },
     ],
     Ashurikun: [
@@ -389,7 +389,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Mordell Caldwell', factions: ['SSB'], nicknames: ['MD'], displayName: 1 },
     ],
     AuriEllis: [
-        { name: 'Ursula Leichenberg', factions: ['Royal Mafia', 'News'], displayName: 1 },
+        { name: 'Ursula Leichenberg', factions: ['News'], displayName: 1 },
         { name: 'Gracie ?' },
         { name: 'Drusilla Grant', factions: ['DoJ', 'Brick House', 'Gruppe6'], displayName: 0 },
     ],
@@ -398,7 +398,7 @@ export const npCharacters: NpCharacters = {
     ],
     Aus24: [
         { name: '[Officer] Jack Davenport' },
-        { name: 'Jordan Walker', factions: ['Hydra Gang', 'Harmony'] },
+        { name: 'Jordan Walker', factions: ['Hydra Gang'] },
         { name: 'Braxton Walker', nicknames: ['Brax'], displayName: 0 },
     ],
     Austin_Bean: [
@@ -413,13 +413,13 @@ export const npCharacters: NpCharacters = {
         { name: '[Ranger] May Maple', assumeServer: 'public' },
     ],
     Auxidental: [
-        { name: 'Trey Romano', factions: ['Pegasus', 'Rooster'] },
+        { name: 'Trey Romano' },
     ],
     AvaGG: [
         { name: 'Karen Dahmer', factions: ['Chang Gang'], affiliate: true, nicknames: ['Kawen'] },
     ],
     awildzust: [
-        { name: 'Ryan Miller', factions: ['BCG'], displayName: 0 },
+        { name: 'Ryan Miller', displayName: 0 },
     ],
     awkwardsausesteph: [
         { name: '[Officer] Rebecka Lovejoy', nicknames: ['Beck', 'Becks', '521'] },
@@ -441,13 +441,13 @@ export const npCharacters: NpCharacters = {
         { name: 'Kenneth "Primo" McGriff', factions: ['Brick House', 'The 404'], displayName: 0 },
     ],
     b0wditch: [
-        { name: 'Gene Auber', factions: ['Hades'], nicknames: [], displayName: 1 },
+        { name: 'Gene Auber', nicknames: [], displayName: 1 },
     ],
     Baabeology: [
         { name: 'Lola White', factions: ['ADMC'], displayName: 0, assumeServer: 'public' },
     ],
     Baddy: [
-        { name: 'Liya Farah', factions: ['New Babylon'], nicknames: [], displayName: 1 },
+        { name: 'Liya Farah', nicknames: [], displayName: 1 },
     ],
     badgerClaws_: [
         { name: 'Cassidy Clearwater', displayName: 0 },
@@ -467,11 +467,11 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Ryan Kolinsky', nicknames: ['591'], displayName: 2 },
     ],
     bananabrea: [
-        { name: 'Claire Seducer', factions: ['Angels', 'Tuner Shop'], assumeServer: 'whitelist' },
+        { name: 'Claire Seducer', assumeServer: 'whitelist' },
         { name: '[Officer] Tyme Reducer', assumeServer: 'whitelist' },
         { name: '[Officer] Claire Seducer', displayName: 1, assumeServer: 'public' },
         { name: 'Becky Hopper', displayName: 0 },
-        { name: 'Joann Banana', factions: ['Self Insert'], displayName: 0 },
+        { name: 'Joann Banana', displayName: 0 },
         { name: 'Juanita Carlita Hernandez', nicknames: ['Flippa'] },
     ],
     BananaDuck: [
@@ -486,7 +486,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Nana Banana', factions: ['DoJ'], displayName: 0 },
     ],
     Bananalover115: [
-        { name: 'Mamaita "Mama" Jehmimi', factions: ['Britney Gang'] },
+        { name: 'Mamaita "Mama" Jehmimi' },
     ],
     banditobrown1: [
         { name: "Shankeal O'Neal", nicknames: ['Shank', 'Shankyou'] },
@@ -523,7 +523,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Dang McNabb', factions: ['DoC'], displayName: 0 },
     ],
     beard: [
-        { name: 'Wade Wilson', factions: ['Raiders', 'Faceless'] },
+        { name: 'Wade Wilson', factions: ['Faceless'] },
     ],
     BeardedGuysGaming: [
         { name: 'Jose Pincha' },
@@ -532,7 +532,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Ruger Daniels' },
     ],
     Beerman155: [
-        { name: 'Abner Vaca', factions: ['Stable'] },
+        { name: 'Abner Vaca' },
     ],
     beetle: [
         { name: 'Loki Skylizard', factions: ['Police'], displayName: 0 },
@@ -555,10 +555,10 @@ export const npCharacters: NpCharacters = {
         { name: '[Dr.] Torah Andrews', factions: ['Medical'] },
     ],
     Bgrafix: [
-        { name: 'Billy "Bloodbath" Senora', factions: ['ASRR'], nicknames: ['Bloodbath'], assumeServer: 'whitelist' },
+        { name: 'Billy "Bloodbath" Senora', nicknames: ['Bloodbath'], assumeServer: 'whitelist' },
     ],
     biboskills: [
-        { name: 'Louis Blanc', factions: ['Hades'], nicknames: [], displayName: 1 },
+        { name: 'Louis Blanc', nicknames: [], displayName: 1 },
     ],
     bigbam: [
         { name: 'FlyRone Smith', factions: ['DoC'], displayName: 0 },
@@ -576,7 +576,7 @@ export const npCharacters: NpCharacters = {
         { name: "[Officer] Rupert O'Copper", displayName: 1 },
     ],
     BigSkenger: [
-        { name: 'Zaceed Skengerton', factions: ['Lang Gang', 'Rooster'], nicknames: [reg(/\b[zs]a[skc]+[ei]*y?d/)], displayName: 1, assumeServer: 'whitelist' },
+        { name: 'Zaceed Skengerton', nicknames: [reg(/\b[zs]a[skc]+[ei]*y?d/)], displayName: 1, assumeServer: 'whitelist' },
         { name: '[Officer] Zacood Skengerson', displayName: 1, assumeServer: 'public' },
     ],
     BikeMan: [
@@ -586,23 +586,23 @@ export const npCharacters: NpCharacters = {
         { name: '? "O Dogg" ?', factions: ['SSB'] },
     ],
     Biotoxz_: [
-        { name: 'Lars "Bjorn" Haverford', factions: ['LARPers', 'Cleanbois', 'Clean Cartel', 'Rooster'], nicknames: ['Barbarian'], assumeServer: 'whitelist' },
-        { name: 'Lars "Bjorn" Haverford', factions: ['LARPers'], nicknames: ['Barbarian'], assumeServer: 'public' },
+        { name: 'Lars "Bjorn" Haverford', nicknames: ['Barbarian'], assumeServer: 'whitelist' },
+        { name: 'Lars "Bjorn" Haverford', nicknames: ['Barbarian'], assumeServer: 'public' },
     ],
     BJPofficial: [
         { name: '[Lawyer] Buford J. Preston' },
     ],
     blau: [
-        { name: 'Mickey Sinclaire', factions: ['BPM', 'DoJ', 'Cleanbois', 'Clean Cartel'], nicknames: ['Michael', 'Downbad', 'Downrat'], assumeServer: 'whitelist' },
+        { name: 'Mickey Sinclaire', factions: ['BPM', 'DoJ'], nicknames: ['Michael', 'Downbad', 'Downrat'], assumeServer: 'whitelist' },
         { name: '[Deputy] Klay Kona', displayName: 2 },
         { name: 'Michael S.', factions: ['Independent'], assumeServer: 'public' },
     ],
     bldrs: [
-        { name: 'Kaleb "Kleb" Rush', factions: ['HOA', 'Frat'] },
+        { name: 'Kaleb "Kleb" Rush', factions: ['HOA'] },
         { name: '[Officer] Ryan Wright' },
     ],
     bledorable: [
-        { name: 'Billy Thorne', factions: ['Hades'], nicknames: [], displayName: 0 },
+        { name: 'Billy Thorne', nicknames: [], displayName: 0 },
     ],
     blokeowski: [
         { name: 'Colton Fleetwood', factions: ['Police'], displayName: 0 },
@@ -623,7 +623,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Lee Mockerman', factions: ['Police'], displayName: 0 },
     ],
     blunt_20202020: [
-        { name: 'Dub Blunt', factions: ['Tuner Shop'], displayName: 0 },
+        { name: 'Dub Blunt', displayName: 0 },
     ],
     bmcloughlin22: [
         { name: '[Lawyer] Lachlan Pike' },
@@ -648,10 +648,10 @@ export const npCharacters: NpCharacters = {
         { name: 'Anto Murphy', factions: ['Chang Gang'] },
     ],
     boss_zulu: [
-        { name: 'Zulu Thendani', factions: ['Hades'], nicknames: [], displayName: 1 },
+        { name: 'Zulu Thendani', nicknames: [], displayName: 1 },
     ],
     boxbox: [
-        { name: 'Bo Xbox', factions: ['Rooster'] },
+        { name: 'Bo Xbox' },
     ],
     bozo: [
         { name: 'Angus Oblong II', factions: ['Clowns'], displayName: 0 },
@@ -663,7 +663,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Jeff Arnold' },
     ],
     Braenstus: [
-        { name: '[Lawyer] Adam Nielsen', factions: ['Rooster'], displayName: 1 },
+        { name: '[Lawyer] Adam Nielsen', displayName: 1 },
     ],
     Brakketts: [
         { name: '[Deputy] Tommy Horver' },
@@ -681,7 +681,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Skele Tor', nicknames: ['Skeletor'], displayName: 3 },
     ],
     BRIT: [
-        { name: 'Tori Corleone', factions: ['Britney Gang', 'Rooster'], nicknames: ['Bologna'] },
+        { name: 'Tori Corleone', nicknames: ['Bologna'] },
     ],
     British_Bulldog: [
         { name: 'Jayden Cooper', factions: ['GSF'], displayName: 0 },
@@ -697,13 +697,13 @@ export const npCharacters: NpCharacters = {
         { name: 'Gary Adams', factions: ['Lost MC'] },
     ],
     BrookeAB: [
-        { name: 'Abby Brooks', factions: ['Slim', 'Angels'], displayName: 0 },
+        { name: 'Abby Brooks', factions: ['Slim'], displayName: 0 },
     ],
     broxh_: [
         { name: 'Broxh Kava', displayName: 1 },
     ],
     bubblesrp: [
-        { name: 'Peter Ross', factions: ['SOB'], displayName: 0 },
+        { name: 'Peter Ross', displayName: 0 },
     ],
     BucketSt: [
         { name: 'Gheto Kaiba', factions: ['ADMC'], displayName: 2 },
@@ -711,7 +711,7 @@ export const npCharacters: NpCharacters = {
     buddha: [
         {
             name: 'Lang Buddha',
-            factions: ['Brick Bois', 'Brick House', 'Piss Boiz', 'Casino', 'New Babylon', 'Cleanbois', 'Lang Gang', 'Clean Cartel', 'Rooster'],
+            factions: ['Brick Bois', 'Brick House', 'Piss Boiz', 'Casino'],
             leader: true,
             nicknames: ['Circle Andy', 'Timelord'],
             assumeChar: true,
@@ -726,14 +726,14 @@ export const npCharacters: NpCharacters = {
         { name: 'Britney Sears', factions: ['Police'], displayName: 0 },
     ],
     Bundie: [
-        { name: 'Tane Mahuta', factions: ['RUST'], nicknames: ['Kiwi'], displayName: 3 },
+        { name: 'Tane Mahuta', nicknames: ['Kiwi'], displayName: 3 },
         { name: 'Charles Hendrix', nicknames: ['Charlie'], displayName: 0 },
     ],
     bunicular: [
-        { name: 'Layla Lockhart', factions: ['Wastelanders'], displayName: 0 },
+        { name: 'Layla Lockhart', displayName: 0 },
     ],
     BurgSZN: [
-        { name: 'Tyler Heisanburg', factions: ['Royal Mafia'], nicknames: ['Burg'], displayName: 3 },
+        { name: 'Tyler Heisanburg', nicknames: ['Burg'], displayName: 3 },
     ],
     Burn: [
         { name: 'Johnny Silverhand', displayName: 0 },
@@ -742,7 +742,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Norman "Norm" Yoder' },
         { name: 'Moe Nopoli', displayName: 0 },
         { name: 'Michael Myers', displayName: 0 },
-        { name: 'Mentle Block', factions: ['ASRR'] },
+        { name: 'Mentle Block' },
         { name: 'Sasuke Johnson' },
         { name: 'Jack Napiere', nicknames: ['"Kyle Pred"', 'Sheriff', 'Pred'], displayName: 3 },
         { name: 'Bojack Horseman', displayName: 0 },
@@ -786,18 +786,18 @@ export const npCharacters: NpCharacters = {
     ],
     Capped: [
         { name: 'Charlie ?', factions: ['Faceless'], displayName: 1, leader: true },
-        { name: 'Capped Tarranova', factions: ['Street Team', 'Chang Gang'], nicknames: ['Pigeon', 'Terranova', 'Nova'], displayName: 3 },
+        { name: 'Capped Tarranova', factions: ['Chang Gang'], nicknames: ['Pigeon', 'Terranova', 'Nova'], displayName: 3 },
         { name: 'Robert De Souza', factions: ['Locksmiths'], displayName: 0 },
         { name: 'Anthony Breakwood', factions: ['NEST'], displayName: 0 },
     ],
     Capshion: [
-        { name: 'Pauli Maglioni', factions: ['SOS'], displayName: 0 },
+        { name: 'Pauli Maglioni', displayName: 0 },
     ],
     capsure: [
-        { name: 'Dimitri Nekola', factions: ['Pegasus'] },
+        { name: 'Dimitri Nekola' },
     ],
     CaptainBarb: [
-        { name: 'Mattias Nilson', factions: ['Mayhem MC'], displayName: 0 },
+        { name: 'Mattias Nilson', displayName: 0 },
     ],
     Caramel: [
         { name: 'Lovemore Dlamini', factions: ['Besties'], displayName: 1 },
@@ -806,13 +806,13 @@ export const npCharacters: NpCharacters = {
         { name: 'Zephyr Kane', factions: ['BPM', 'Order'], displayName: 0 },
     ],
     Carbonoid: [
-        { name: 'Han Machiavelli', factions: ['BSK'], displayName: 0 },
+        { name: 'Han Machiavelli', displayName: 0 },
     ],
     carlos: [
         { name: 'Naomi Scott', factions: ['Burger Shot'], displayName: 0 },
     ],
     Carmen: [
-        { name: 'Carmella Corset', factions: ['Casino', 'Rooster'] },
+        { name: 'Carmella Corset', factions: ['Casino'] },
     ],
     Carter: [
         { name: 'Spencer Smith', nicknames: ['Mormon'] },
@@ -827,7 +827,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Cesar Conchas', factions: ['Vagos'], displayName: 0 },
     ],
     casualbaesu: [
-        { name: 'Baesu Heartless', factions: ['Hades'], nicknames: [], displayName: 1 },
+        { name: 'Baesu Heartless', nicknames: [], displayName: 1 },
     ],
     CatherineReel: [
         { name: 'Nancy Oksana', factions: ['Sinner Pawn', 'DoC'], displayName: 0 },
@@ -835,13 +835,13 @@ export const npCharacters: NpCharacters = {
     CathFawr: [
         { name: '[Officer] Lydia Vale' },
         { name: 'Summer Mersion', factions: ['GSF', 'Mersions'], displayName: 0 },
-        { name: 'Natya Block', factions: ['ASRR'], displayName: 0 },
-        { name: 'Catrin Fawr', factions: ['Self Insert', 'One Life'], displayName: 0 },
+        { name: 'Natya Block', displayName: 0 },
+        { name: 'Catrin Fawr', displayName: 0 },
         { name: "[Lawyer] Shannon O'Banion", displayName: 0 },
     ],
     Cathie: [
         { name: '[Deputy] Anita May', displayName: 1 },
-        { name: 'Ninacska Mihkala', factions: ['Russians'], nicknames: ['Nina'], displayName: 3 },
+        { name: 'Ninacska Mihkala', nicknames: ['Nina'], displayName: 3 },
         { name: 'Kaelyn "Kae" East', factions: ['SSB'] },
         { name: 'Jane Winters', factions: ['Pawn Addicts'], displayName: 0 },
     ],
@@ -853,7 +853,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Trooper] Jeffrey Bones', displayName: 2 },
     ],
     CbasRP: [
-        { name: 'Cbas ?', factions: ['Dons'] },
+        { name: 'Cbas ?' },
     ],
     cennah: [
         { name: 'Camila Sulan', factions: ['Manor'], nicknames: ['Cami'], displayName: 1 },
@@ -869,10 +869,10 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Marco Holliday', nicknames: ['683', 'Holiday'] },
     ],
     chandraviperdae: [
-        { name: 'Mari McKay', factions: ['Hades'], nicknames: [], displayName: 1 },
+        { name: 'Mari McKay', nicknames: [], displayName: 1 },
     ],
     Chanpu: [
-        { name: 'Justin "Victor" Bridges', factions: ['Angels'] },
+        { name: 'Justin "Victor" Bridges' },
     ],
     Chap: [
         { name: 'Bryan Chapman', nicknames: ['Chap', 'Orange'], displayName: 0, assumeChar: true },
@@ -894,10 +894,10 @@ export const npCharacters: NpCharacters = {
         { name: 'Chatterbox', factions: ['Burger Shot', 'Clowns'], displayName: 0 },
     ],
     ChavRP: [
-        { name: 'Thai Chav', factions: ['Street Team'], displayName: 2 },
+        { name: 'Thai Chav', displayName: 2 },
     ],
     Cheever7: [
-        { name: 'River Cheever', nicknames: ['River'], factions: ['ASRR'], assumeServer: 'whitelist' },
+        { name: 'River Cheever', nicknames: ['River'], assumeServer: 'whitelist' },
         { name: 'Coral Hale', factions: ['Police'], displayName: 0 },
         { name: 'Marina Hart', factions: ['HK Pawn', 'Gruppe6'], displayName: 0 },
     ],
@@ -912,7 +912,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Alan Kyles', factions: ['Hydra Gang'], displayName: 0, facebook: true },
     ],
     chichjr: [
-        { name: 'Jared Creed', factions: ['Hades'], nicknames: [], displayName: 1 },
+        { name: 'Jared Creed', nicknames: [], displayName: 1 },
     ],
     chidori_senpai: [
         { name: 'Sabrina Tremblay', factions: ['Police'], displayName: 0 },
@@ -921,7 +921,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Baada Ka', factions: ['GSF'], nicknames: ['Chief'], displayName: 3, assume: 'assumeNpNoOther' },
     ],
     Chitman: [
-        { name: 'Jax Fury', factions: ['Wastelanders'], displayName: 0 },
+        { name: 'Jax Fury', displayName: 0 },
     ],
     ChloeLock: [
         { name: 'Chloe Blanc', factions: ['Hydra Gang'], nicknames: ['Chloé'], displayName: 0 },
@@ -957,7 +957,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Derek Monroe', assumeServer: 'public' },
     ],
     clapemupgg: [
-        { name: 'Zee Davis', factions: ['Hades'], nicknames: [], displayName: 1 },
+        { name: 'Zee Davis', nicknames: [], displayName: 1 },
     ],
     ClassyPax: [
         { name: 'Madam Ming', displayName: 0 },
@@ -971,10 +971,10 @@ export const npCharacters: NpCharacters = {
         { name: 'Pete Bourke', factions: ['Prison'], displayName: 0 },
     ],
     cleanstrikes: [
-        { name: 'Alex Fibbler', factions: ['BSK'], displayName: 0 },
+        { name: 'Alex Fibbler', displayName: 0 },
     ],
     Client: [
-        { name: 'Daquan "Peanut" Dumas', factions: ['NBC'] },
+        { name: 'Daquan "Peanut" Dumas' },
         { name: '[Officer] Alejandro Picadillo', nicknames: ['World Wide', 'Worldwide'] },
     ],
     cloakrp: [
@@ -982,7 +982,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Cleo Cloak', factions: ['DoJ'], displayName: 0 },
     ],
     CloudyDL: [
-        { name: 'Scotty Dixon', factions: ['Italian Mafia'], displayName: 0 },
+        { name: 'Scotty Dixon', displayName: 0 },
     ],
     CoconutB: [
         { name: '? ?' },
@@ -1019,10 +1019,10 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Scott Ridley' },
     ],
     cr4mps: [
-        { name: 'Nils Falk', factions: ['MMC'] },
+        { name: 'Nils Falk' },
     ],
     CraigySmith: [
-        { name: 'Frank Junior-Smith', factions: ['Lang Gang'], nicknames: ['Frank Jr Smith', 'Franky', 'Frankie', 'Scottish'], displayName: 4 },
+        { name: 'Frank Junior-Smith', nicknames: ['Frank Jr Smith', 'Franky', 'Frankie', 'Scottish'], displayName: 4 },
     ],
     crayator: [
         { name: 'Craig Burn', factions: ['Sinner Pawn'], displayName: 0 },
@@ -1053,20 +1053,20 @@ export const npCharacters: NpCharacters = {
     ],
     Crystalst: [
         { name: '[Deputy] Crystal Clear', factions: ['Police'], nicknames: ['370'], displayName: 1 },
-        { name: 'Four "4T" Tee', factions: ['ASRR'], displayName: 0 },
+        { name: 'Four "4T" Tee', displayName: 0 },
         { name: 'Swan DeLeur', factions: ['Brick House', 'Sweepers', 'Casino', 'Gruppe6'], displayName: 0 },
         { name: 'Amie Rush' },
     ],
     CurtisRyan: [
-        { name: 'Curtis Swoleroid', nicknames: ['"Demon" of Lean Street', 'Curt', 'Citrus'], factions: ['Chang Gang', 'Chaos'], assumeServer: 'whitelist' },
-        { name: 'Curtis Swoleroid', factions: ['Gangton'], nicknames: ['2.0'], leader: true },
+        { name: 'Curtis Swoleroid', nicknames: ['"Demon" of Lean Street', 'Curt', 'Citrus'], factions: ['Chang Gang'], assumeServer: 'whitelist' },
+        { name: 'Curtis Swoleroid', nicknames: ['2.0'], leader: true },
         { name: 'Curtis Swoleroid', nicknames: ['"Demon" of Lean Street', 'Curt', 'Citrus'], factions: ['Independent'], assumeServer: 'public' },
         { name: '[Officer] Stephen McClane' },
         { name: 'Cornelius "Cornbread" Scott', factions: ['GSF'] },
     ],
     curvyelephant: [
         { name: '[Deputy] Matt Rhodes', factions: ['Police'], nicknames: ['petty'] },
-        { name: 'Brad ?', factions: ['Frat'], nicknames: ['B-Rad'], displayName: 3 },
+        { name: 'Brad ?', nicknames: ['B-Rad'], displayName: 3 },
         { name: 'Ryan Parker', factions: ['Lost MC'] },
         { name: '[Lawyer] Kevin Shaw' },
     ],
@@ -1078,7 +1078,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Rue Minmi', factions: ['Police'], displayName: 0 },
     ],
     CydRose: [
-        { name: 'Cydney Lune', factions: ['Lang Gang'], nicknames: ['Cyd'], displayName: 1 },
+        { name: 'Cydney Lune', nicknames: ['Cyd'], displayName: 1 },
         { name: 'Scarlet Young', factions: ['Pawn Addicts'], displayName: 0 },
         { name: 'Maeve Wolfe', factions: ['Police'], displayName: 0 },
     ],
@@ -1092,13 +1092,13 @@ export const npCharacters: NpCharacters = {
         { name: 'Fred Hurst', nicknames: [reg(/Lim.\s?Bizkif/)] },
     ],
     cyter: [
-        { name: 'Demetrius "Draco" Jones', factions: ['Seaside'], nicknames: ['DJ'] },
+        { name: 'Demetrius "Draco" Jones', nicknames: ['DJ'] },
     ],
     d00dskoot: [
         { name: 'Axel Crow', factions: ['Police'], displayName: 0 },
     ],
     D4N1ELLE: [
-        { name: 'Quimbley Hayabusa', factions: ['CBPD', 'Rooster'], nicknames: ['Q'], displayName: 3 },
+        { name: 'Quimbley Hayabusa', nicknames: ['Q'], displayName: 3 },
     ],
     dabsorlabs: [
         { name: 'Pablo Cortez', factions: ['Saints'], displayName: 0 },
@@ -1128,10 +1128,10 @@ export const npCharacters: NpCharacters = {
         { name: 'Benny Gomez' },
     ],
     Dankdd: [
-        { name: 'Oscar Perez', factions: ['SOB'], nicknames: ['OP'], displayName: 0 },
+        { name: 'Oscar Perez', nicknames: ['OP'], displayName: 0 },
     ],
     Dar_: [
-        { name: 'Deco Murphy', factions: ['Ravens'], displayName: 0 },
+        { name: 'Deco Murphy', displayName: 0 },
     ],
     Dark0verseer: [
         { name: '[Development] Dark0', factions: ['Development'], nicknames: ['3D', 'manor'] },
@@ -1145,12 +1145,12 @@ export const npCharacters: NpCharacters = {
     ],
     dasMEHDI: [
         { name: '[Officer] Brian Knight', nicknames: ['495'] },
-        { name: 'Nino Chavez', factions: ['Sinner Pawn', 'Faceless', 'Cleanbois', 'Pegasus', 'Rooster'] },
+        { name: 'Nino Chavez', factions: ['Sinner Pawn', 'Faceless'] },
         { name: 'Ryan Kindle', factions: ['HOA'] },
         { name: 'Reema', nicknames: ['The "Whorelord"'] },
     ],
     DavidB_NP: [
-        { name: 'Vladimir "Vlad" Ivanov', factions: ['Russians'] },
+        { name: 'Vladimir "Vlad" Ivanov' },
     ],
     dawnnnvt: [
         { name: 'Luna Purpose', factions: ['Pawn Addicts'], displayName: 0 },
@@ -1175,26 +1175,26 @@ export const npCharacters: NpCharacters = {
         // { name: 'Dean Shiesty', factions: ['SSB'], displayName: 0, assumeServer: 'public' },
     ],
     Deejayus: [
-        { name: 'Albert Intelligence', factions: ['CBPD', 'Rooster'], nicknames: ['A.I.'] },
+        { name: 'Albert Intelligence', nicknames: ['A.I.'] },
     ],
     DEFAC3D: [
         { name: 'Denzel Wallace', displayName: 0 },
     ],
     Dehxter: [
-        { name: 'Mark Jango', factions: ['Clean Cartel'], displayName: 0 },
+        { name: 'Mark Jango', displayName: 0 },
     ],
     DeLucaRP: [
-        { name: 'James DeLuca', factions: ['Tuner Shop'], displayName: 0 },
+        { name: 'James DeLuca', displayName: 0 },
     ],
     Denior13: [
         { name: 'Keith "Bulldog" Dooger', factions: ['Lost MC'] },
     ],
     Denis3D: [
         { name: '[Development] Denis3D', factions: ['Development'], nicknames: ['3D'] },
-        { name: 'Bob "Bob the Builder" Carter', factions: ['Seaside'], nicknames: ['The Builder'] },
+        { name: 'Bob "Bob the Builder" Carter', nicknames: ['The Builder'] },
     ],
     deputydangerdan: [
-        { name: "D'Brickashaw King", factions: ['GSF', 'CBPD'], nicknames: ['Brick'], displayName: 3 },
+        { name: "D'Brickashaw King", factions: ['GSF'], nicknames: ['Brick'], displayName: 3 },
         { name: "Robert O'Shay", nicknames: ['Rob'], displayName: 0 },
     ],
     DerpFront: [
@@ -1207,10 +1207,10 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Cassius Kennedy', nicknames: ['Cash'] },
     ],
     dew_ski: [
-        { name: 'Alem Barghouthi', factions: ['NBC'], displayName: 0 },
+        { name: 'Alem Barghouthi', displayName: 0 },
     ],
     DexGod: [
-        { name: 'JJ Bradley', factions: ['BCG'], nicknames: ['Dex'], displayName: 0 },
+        { name: 'JJ Bradley', nicknames: ['Dex'], displayName: 0 },
     ],
     diables: [
         { name: 'Adam Adamczyk', factions: ['Brick House', 'Polish'], displayName: 0 },
@@ -1229,7 +1229,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Maxy Mersion', factions: ['Mersions'], displayName: 0 },
     ],
     DisbeArex: [
-        { name: 'Oki Doki', factions: ['CBPD', 'Burger Shot'], displayName: 0 },
+        { name: 'Oki Doki', factions: ['Burger Shot'], displayName: 0 },
     ],
     DisguisedToast: [
         { name: 'Amon Gus', displayName: 0 },
@@ -1249,16 +1249,16 @@ export const npCharacters: NpCharacters = {
     Dogbert: [
         { name: '[Deputy] Rocko Colombo', nicknames: [reg(/\bcol.mb./)] },
         { name: 'Luther Caine', factions: ['HOA'] },
-        { name: 'Wyatt Mersion', factions: ['Limelight', 'Mersions'] },
+        { name: 'Wyatt Mersion', factions: ['Mersions'] },
     ],
     DoluTattoo: [
         { name: '[Development] Dolu', factions: ['Development'] },
     ],
     DongerDayz: [
-        { name: 'Kelly Camellia', factions: ['Wastelanders'], displayName: 0 },
+        { name: 'Kelly Camellia', displayName: 0 },
     ],
     Donut3venTryMe: [
-        { name: 'Joey Pepperoni', factions: ['Tuner Shop'], displayName: 0 },
+        { name: 'Joey Pepperoni', displayName: 0 },
     ],
     Dorken: [
         { name: 'Valentina Hops' },
@@ -1296,13 +1296,13 @@ export const npCharacters: NpCharacters = {
         { name: 'George Cartier', factions: ['Saints'], displayName: 0 },
     ],
     DTalmer: [
-        { name: 'Jackson Wilson', factions: ['Harmony'], nicknames: ['Blacksteel'], displayName: 0 },
+        { name: 'Jackson Wilson', nicknames: ['Blacksteel'], displayName: 0 },
     ],
     DummyWack: [
-        { name: 'Nathan Peters', factions: ['Dons'], nicknames: ['Nate', 'Turtleneck'] },
+        { name: 'Nathan Peters', nicknames: ['Nate', 'Turtleneck'] },
     ],
     Dunrunnin12: [
-        { name: 'Thomas Dwayne', factions: ['Stable'], nicknames: ['The Narrator'], displayName: 0 },
+        { name: 'Thomas Dwayne', nicknames: ['The Narrator'], displayName: 0 },
         { name: '[Ride Along] Talgar Blootonn', displayName: 1 },
         { name: 'Talgar Goldtooth', displayName: 0 },
         { name: 'Nay "Delamain" Rater' },
@@ -1317,10 +1317,10 @@ export const npCharacters: NpCharacters = {
         { name: 'Cara Lynn', displayName: 0 },
     ],
     dwagonlvl: [
-        { name: 'Dragon Rush', factions: ['Hades'], nicknames: [], displayName: 1 },
+        { name: 'Dragon Rush', nicknames: [], displayName: 1 },
     ],
     dwjft: [
-        { name: 'Dean Watson', factions: ['Limelight', 'Cleanbois', 'Development'], nicknames: ['El Deano', 'El Deano (Dean)', 'Dev stuff'], displayName: 1 },
+        { name: 'Dean Watson', factions: ['Development'], nicknames: ['El Deano', 'El Deano (Dean)', 'Dev stuff'], displayName: 1 },
         { name: '[Senator] D.W.', leader: true, nicknames: ['DW', 'Senate'], displayName: 3 },
         { name: '[Watch Party] dwjft', factions: ['Watch Party'] },
         { name: 'Terminator ?' },
@@ -1343,31 +1343,31 @@ export const npCharacters: NpCharacters = {
         { name: 'Lulu ?', displayName: 1 },
     ],
     e1swrld: [
-        { name: 'Bek Irving', factions: ['SOB'] },
+        { name: 'Bek Irving' },
     ],
     EagleAye: [
-        { name: 'Eve Summers', factions: ['DoJ', 'Lang Gang', 'LARPers', 'Rooster'] },
+        { name: 'Eve Summers', factions: ['DoJ'] },
     ],
     eaJParkOfficial: [
-        { name: 'Park Parker', factions: ['Rooster'], nicknames: ['Santa'], displayName: 0, assumeChar: true },
+        { name: 'Park Parker', nicknames: ['Santa'], displayName: 0, assumeChar: true },
     ],
     edisonparklive: [
-        { name: 'Michael Hawkins', factions: ['Royal Mafia'], displayName: 0 },
+        { name: 'Michael Hawkins', displayName: 0 },
     ],
     Edonxd: [
         { name: 'Jordan Elmore', factions: ['Saints'], displayName: 0 },
     ],
     EdwardVanmanz: [
-        { name: 'Leon Edwards', factions: ['New Babylon'], nicknames: [], displayName: 1 },
+        { name: 'Leon Edwards', nicknames: [], displayName: 1 },
     ],
     eebern: [
         { name: 'Huck Guthrie', factions: ['HOA'], nicknames: ['Huckleberry'] },
     ],
     eHulzy: [
-        { name: 'Carmine Mosca', factions: ['Italian Mafia'], displayName: 0 },
+        { name: 'Carmine Mosca', displayName: 0 },
     ],
     EiSEU: [
-        { name: 'Jonathan Hoig', factions: ['SOS'], displayName: 0 },
+        { name: 'Jonathan Hoig', displayName: 0 },
     ],
     either: [
         { name: 'Jaden Christopher' },
@@ -1379,16 +1379,16 @@ export const npCharacters: NpCharacters = {
         { name: 'Sofia Castellano', displayName: 1 },
     ],
     Elochai: [
-        { name: 'Tao Chen', factions: ['Rooster'], assumeServer: 'whitelist' },
+        { name: 'Tao Chen', assumeServer: 'whitelist' },
         { name: '[Development] Elochai', factions: ['Development'], nicknames: ['finishing', 'working on', reg(/\b(?:cloth\w+|shirt|outfit|pants|helmet|hat)s?\b/)] },
         { name: 'Leyin Jhail', assumeServer: 'public' },
-        { name: 'Damien Grey', factions: ['Mayhem MC'], displayName: 0 },
+        { name: 'Damien Grey', displayName: 0 },
     ],
     ElvisRP: [
         { name: '[Deputy] John Dorian' },
     ],
     EmmyWithLove: [
-        { name: 'Peaches Hayabusa', factions: ['NBC'] },
+        { name: 'Peaches Hayabusa' },
     ],
     Enanoot: [
         { name: 'Evan Deckard', factions: ['Saints'], displayName: 0 },
@@ -1413,7 +1413,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Bree Matthews' },
     ],
     EvilShatner: [
-        { name: '[Lawyer] Anna Swallows', factions: ['ASRR'], nicknames: ['Law'], displayName: 1, assumeChar: true },
+        { name: '[Lawyer] Anna Swallows', nicknames: ['Law'], displayName: 1, assumeChar: true },
     ],
     ewroon: [
         { name: 'Erwin Knuckles', factions: ['BPM'], displayName: 0 },
@@ -1422,7 +1422,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Paul String', assumeServer: 'public' },
     ],
     explicitx_: [
-        { name: 'Jason Sanchez', factions: ['Hades'], nicknames: [], displayName: 1 },
+        { name: 'Jason Sanchez', nicknames: [], displayName: 1 },
     ],
     explodicy: [
         { name: 'Ted Kindly' },
@@ -1432,19 +1432,19 @@ export const npCharacters: NpCharacters = {
         { name: 'Maia Berkeley' },
     ],
     ExtraM1nty: [
-        { name: 'Jason "JT" Teen', factions: ['Hades'], nicknames: [], displayName: 1 },
+        { name: 'Jason "JT" Teen', nicknames: [], displayName: 1 },
     ],
     F3ARzZ: [
         { name: 'Ranjit Raventish' },
     ],
     f3nrirsgaming: [
-        { name: 'Francis Angel Luis', factions: ['Wastelanders'], displayName: 0 },
+        { name: 'Francis Angel Luis', displayName: 0 },
     ],
     Fahrenheit: [
         { name: 'Ilya Karishnikov', nicknames: [], displayName: 1 },
     ],
     Fairlight_Excalibur: [
-        { name: 'Raja Bahadur', factions: ['QuickFix'], leader: true },
+        { name: 'Raja Bahadur', leader: true },
         { name: '[Officer] Alexander "Fox" Fawkes' },
     ],
     Fairzz: [
@@ -1482,19 +1482,19 @@ export const npCharacters: NpCharacters = {
         { name: 'Cherryclarie Dinwittie', nicknames: ['CherryClaire'], displayName: 3 },
     ],
     FelixLeLoup: [
-        { name: 'Felix Volk', factions: ['Tuner Shop'] },
+        { name: 'Felix Volk' },
     ],
     FerretRP: [
         { name: 'Alberto Weaselton', factions: ['Lost MC'], nicknames: ['Al', reg(/\balb/)] },
     ],
     Ferst711: [
-        { name: 'Tom Ryan', factions: ['Wastelanders'], displayName: 0 },
+        { name: 'Tom Ryan', displayName: 0 },
         { name: '[Lawyer] Ferst Temple' },
     ],
     Fiendota: [
         { name: '[Officer] Booga "Booba" Ooga', nicknames: ['651'], displayName: 1 },
         { name: 'Jonathan "Magnum" Humes', nicknames: [reg(/\bP\.?\s*I\b/)] },
-        { name: 'Boobingle Dan', factions: ['Dans'] },
+        { name: 'Boobingle Dan' },
     ],
     Finlay: [
         { name: 'Mick Amari', factions: ['Manor'], nicknames: ['Mick9'] },
@@ -1507,13 +1507,13 @@ export const npCharacters: NpCharacters = {
     ],
     Five0AnthO: [
         { name: '[Trooper Chief] Tony Andrews', highCommand: true },
-        { name: 'Rhode Block', factions: ['ASRR'], displayName: 0 },
+        { name: 'Rhode Block', displayName: 0 },
     ],
     FiveMArena: [
         { name: 'FiveM "Arena Tournament" Arena', factions: ['Watch Party'], displayName: 2 },
     ],
     flakkoflakko: [
-        { name: 'Romeo "Z" Zaharias Cruz', factions: ['SOB'] },
+        { name: 'Romeo "Z" Zaharias Cruz' },
     ],
     fleureo: [
         { name: 'Quinn Naiper', displayName: 0 },
@@ -1543,11 +1543,11 @@ export const npCharacters: NpCharacters = {
         { name: '[EMS] Amoris Pax', factions: ['Medical'] },
     ],
     forsen: [
-        { name: 'Sven Snusberg', factions: ['Cleanbois'] },
+        { name: 'Sven Snusberg' },
         { name: 'Mason Foorhees' },
     ],
     FortyOne: [
-        { name: 'Lucas Ortiz', factions: ['Tuner Shop'] },
+        { name: 'Lucas Ortiz' },
         { name: '[Deputy] John Archer' },
         { name: 'Jose Martin Perez', nicknames: ['JMP'] },
         { name: 'Don Russo', displayName: 0 },
@@ -1555,20 +1555,20 @@ export const npCharacters: NpCharacters = {
         { name: 'Arious "Breezy" Campbell' },
     ],
     FourMilli: [
-        { name: 'Brad Bett', factions: ['NBC'] },
+        { name: 'Brad Bett' },
         { name: '[Deputy] Preston Hale' },
     ],
     fragss: [
         { name: 'Wade Bradford', factions: ['Gruppe6', 'Police'], displayName: 0 },
     ],
     FragZone: [
-        { name: 'Derek Bogart', factions: ['Mayhem MC'], displayName: 0 },
+        { name: 'Derek Bogart', displayName: 0 },
     ],
     frank_ladd: [
-        { name: 'Frank Scaletta', factions: ['Manor', 'MMC'], nicknames: ['Morning Crew 2IC'], displayName: 1 },
+        { name: 'Frank Scaletta', factions: ['Manor'], nicknames: ['Morning Crew 2IC'], displayName: 1 },
     ],
     FredosRP: [
-        { name: 'Fredo Sanchez', factions: ['Seaside'], displayName: 1 },
+        { name: 'Fredo Sanchez', displayName: 1 },
     ],
     frightval: [
         { name: 'Berry ?', displayName: 1, assumeServer: 'public' },
@@ -1588,7 +1588,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Tyrell Fresh', factions: ['Hydra Gang'], nicknames: ['Ty'], displayName: 0 },
     ],
     Frynaut: [
-        { name: 'Kratos Of Sparta', factions: ['Rooster'], nicknames: ['God of War', 'God'] },
+        { name: 'Kratos Of Sparta', nicknames: ['God of War', 'God'] },
     ],
     fuslie: [
         { name: 'April Fooze', factions: ['Chang Gang'], displayName: 1, assumeServer: 'whitelist' },
@@ -1596,14 +1596,14 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Connie Clark', nicknames: ['cop'], displayName: 2, assumeServer: 'public' },
     ],
     Fyzicul: [
-        { name: 'Keith "Lando" Wanderlust', factions: ['LARPers', 'Cleanbois', 'Rooster'], nicknames: ['Stormborn', 'Shaman', 'Mountain Kingdom'], displayName: 0 },
-        { name: 'Fyz', factions: ['Self Insert'], displayName: 1 },
+        { name: 'Keith "Lando" Wanderlust', nicknames: ['Stormborn', 'Shaman', 'Mountain Kingdom'], displayName: 0 },
+        { name: 'Fyz', displayName: 1 },
     ],
     Gabz: [
         { name: '[Development] Gabz', factions: ['Development'], nicknames: ['3D'] },
     ],
     Galackxyz: [
-        { name: 'Annie Quigley', factions: ['Wastelanders'], displayName: 0 },
+        { name: 'Annie Quigley', displayName: 0 },
     ],
     GalacticDPN: [
         { name: 'Roman Shacks', nicknames: ['Professor Galactic', 'The Doctor', 'Professor'], displayName: 0 },
@@ -1612,8 +1612,8 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Peter Johnson' },
     ],
     Garek: [
-        { name: 'Burt "Gloryon" Beans', factions: ['LARPers', 'Cleanbois', 'Rooster'], nicknames: ['Cleric'] },
-        { name: 'Garek', factions: ['Self Insert'], displayName: 1 },
+        { name: 'Burt "Gloryon" Beans', nicknames: ['Cleric'] },
+        { name: 'Garek', displayName: 1 },
     ],
     GattisTV: [
         { name: 'Carlos Guzman', factions: ['Vagos'], displayName: 0 },
@@ -1629,13 +1629,13 @@ export const npCharacters: NpCharacters = {
         { name: 'Misty Bloom', displayName: 0 },
     ],
     gekgemu: [
-        { name: 'Serena Riven', factions: ['Rooster'] },
+        { name: 'Serena Riven' },
     ],
     GeneralEmu: [
         { name: '[Commissioner] Lance Malton' },
     ],
     ggqf: [
-        { name: 'Stanly "Stag" Lessfield', factions: ['LARPers', 'Cleanbois', 'Rooster'], nicknames: ['Stagdancer', 'Gea', 'Paladin'] },
+        { name: 'Stanly "Stag" Lessfield', nicknames: ['Stagdancer', 'Gea', 'Paladin'] },
         { name: 'Garth Gregory Quincy Fafnir', nicknames: ['vlog'], displayName: 1 },
         { name: 'Daniel Hopper', displayName: 0 },
         { name: '[Officer] Bennett Calhoun' },
@@ -1647,7 +1647,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Dixie Dempsey', factions: ['Pawn Addicts'], displayName: 0 },
     ],
     gibbs_gg: [
-        { name: 'Walter Franks', factions: ['Mayhem MC'], displayName: 0 },
+        { name: 'Walter Franks', displayName: 0 },
     ],
     gigiactually: [
         { name: ' Blondie Banks', factions: ['Manor'], nicknames: ['Treasurer'], displayName: 1 },
@@ -1672,7 +1672,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Maverick Adler', factions: ['Saints'] },
     ],
     Gnomey_au: [
-        { name: 'Max Moody', factions: ['Wastelanders'], displayName: 0 },
+        { name: 'Max Moody', displayName: 0 },
     ],
     goldelena: [
         { name: 'August Vakarian' },
@@ -1710,7 +1710,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Gunner Kane', factions: ['Police'], displayName: 0 },
     ],
     GrandPOObear: [
-        { name: 'Mick Jhonson', factions: ['Stable'], displayName: 1 },
+        { name: 'Mick Jhonson', displayName: 1 },
     ],
     Greekgodx: [
         { name: '"Tay Tay" Tyrone', nicknames: ['TayTay'] },
@@ -1727,15 +1727,15 @@ export const npCharacters: NpCharacters = {
         { name: 'Sly Santana' },
     ],
     GTAWiseGuy: [
-        { name: 'Eddie Marshall', factions: ['Tuner Shop'] },
+        { name: 'Eddie Marshall' },
         { name: '[Deputy] Jim Underwood', nicknames: ['337', reg(/\w+wood\b/)] },
         {
             name: '[Development] GTAWiseGuy',
-            factions: ['Development', 'Tuner Shop'],
+            factions: ['Development'],
             nicknames: ['Handling', 'Fixes', 'Fixing', 'Tuning', reg(/\btuners?(?:\s*\w*)*leaks/), reg(/\bnew\s+\w+\s*stuff/)],
         },
         { name: 'Igor Skovacic', nicknames: ['GOR'] },
-        { name: 'Robin Williams', factions: ['Self Insert', 'One Life'], displayName: 0 },
+        { name: 'Robin Williams', displayName: 0 },
         { name: 'Terminator T777', displayName: 0 },
         { name: 'Big M', displayName: 0 },
         { name: 'Earl ?', displayName: 1 },
@@ -1756,16 +1756,16 @@ export const npCharacters: NpCharacters = {
         { name: 'Ha Chu', displayName: 0 },
     ],
     HalifamousNS: [
-        { name: 'Devon Davidson', factions: ['BSK'], nicknames: ['DD'], displayName: 0 },
+        { name: 'Devon Davidson', nicknames: ['DD'], displayName: 0 },
     ],
     hallon156: [
-        { name: 'Hanh Do', factions: ['Seaside'] },
+        { name: 'Hanh Do' },
     ],
     hannerb_naner: [
         { name: '[EMS] Jenny Schildt', factions: ['Medical'] },
     ],
     HannibalSeca: [
-        { name: 'Willy Wong', factions: ['Tuner Shop'], displayName: 0 },
+        { name: 'Willy Wong', displayName: 0 },
     ],
     hansgaming08: [
         { name: '[Chief of Police] M Hans', assumeServer: 'international' },
@@ -1774,19 +1774,19 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Ethan Maxwell', nicknames: ['505'], displayName: 2 },
     ],
     Harmless: [
-        { name: 'Maynard "Idiot" Schmidt', factions: ['Pawn Addicts', 'Burger Shot', 'Besties', 'MMC'] },
+        { name: 'Maynard "Idiot" Schmidt', factions: ['Pawn Addicts', 'Burger Shot', 'Besties'] },
         { name: 'Alvis Pulley', factions: ['Police'], displayName: 0 },
     ],
     HARMSwahy: [
-        { name: 'Blaine Burke', factions: ['Angels'] },
+        { name: 'Blaine Burke' },
         { name: '[Officer] Wilson Burke' },
     ],
     Harry: [
-        { name: 'Harry Brown', factions: ['Piss Boiz', 'Casino', 'New Babylon', 'Cleanbois', 'Lang Gang', 'Limelight', 'Pegasus', 'Rooster'] },
+        { name: 'Harry Brown', factions: ['Piss Boiz', 'Casino'] },
         { name: '[Deputy] Kevin Little', nicknames: ['Lil Kev', 'Kev'], displayName: 2 },
     ],
     HasanAbi: [
-        { name: 'Humberto Antonio Donato Pecorino', factions: ['Cleanbois', 'Rooster'], nicknames: ['Don', 'Donnie', reg(/\bOva[h']? here\b/)], displayName: 5 },
+        { name: 'Humberto Antonio Donato Pecorino', nicknames: ['Don', 'Donnie', reg(/\bOva[h']? here\b/)], displayName: 5 },
     ],
     hauce011: [
         { name: 'Stacey Recht', factions: ['Gruppe6'], displayName: 0 },
@@ -1830,20 +1830,20 @@ export const npCharacters: NpCharacters = {
         { name: 'Murray Falconer', factions: ['DoJ'], displayName: 0 },
     ],
     himadi: [
-        { name: 'Madi Badi', factions: ['SOS'], displayName: 0 },
+        { name: 'Madi Badi', displayName: 0 },
     ],
     HiredGunRP: [
         { name: '[Deputy] Colt Shepherd' },
     ],
     Hirona: [
         { name: '[Trooper] Olivia Copper' },
-        { name: 'Emily Maw', factions: ['Harmony'] },
+        { name: 'Emily Maw' },
         { name: 'Jenny Hawk', displayName: 0 },
-        { name: 'Onya Block', factions: ['ASRR'], displayName: 0 },
+        { name: 'Onya Block', displayName: 0 },
         { name: 'Debbie Hopper', displayName: 0 },
-        { name: 'Kristen Rules', factions: ['Self Insert'], displayName: 0 },
+        { name: 'Kristen Rules', displayName: 0 },
         { name: 'Griselda "Zelda" Harth', factions: ['HOA'] },
-        { name: 'Olga Sazkaljovich', factions: ['Pegasus'], nicknames: ['Olgaa', 'Olgaaa', 'Olgaaaa'] },
+        { name: 'Olga Sazkaljovich', nicknames: ['Olgaa', 'Olgaaa', 'Olgaaaa'] },
     ],
     hobbittrash: [
         { name: '[Deputy] Tracy Martell', nicknames: ['Cop', 'Captain', reg(/\b\w+tell/)] },
@@ -1851,7 +1851,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Jane Obama', nicknames: ['jesus', 'christ'], displayName: 0 },
         { name: 'Aja Monet', displayName: 0 },
         { name: 'Jane Souls', displayName: 0 },
-        { name: 'Rounda Block', factions: ['ASRR'], displayName: 0 },
+        { name: 'Rounda Block', displayName: 0 },
         { name: "Kayden Dell'Anno" },
     ],
     hobosrust: [
@@ -1864,19 +1864,19 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Honathan Yolo' },
     ],
     Hoss: [
-        { name: 'Chip Wheeler', factions: ['ADMC', 'Tuner Shop'], displayName: 0, assumeServer: 'whitelist' },
+        { name: 'Chip Wheeler', factions: ['ADMC'], displayName: 0, assumeServer: 'whitelist' },
         { name: 'Rocky Balboner', displayName: 0, assumeServer: 'public' },
     ],
     Hotted89: [
         { name: '[Deputy] Matthew Espinoz', nicknames: ['Airspinoz', 'Air 1 Andy'] },
         { name: 'Joaquin "JJ" Jimenes', factions: ['KC', 'Faceless'] },
-        { name: 'Allen Widemann', factions: ['Chang Gang', 'Tuner Shop'] },
+        { name: 'Allen Widemann', factions: ['Chang Gang'] },
     ],
     HPD007: [
-        { name: 'Joe Flatley', factions: ['BSK'], nicknames: ['Fat Joe'], displayName: 3 },
+        { name: 'Joe Flatley', nicknames: ['Fat Joe'], displayName: 3 },
     ],
     huddy_nz: [
-        { name: 'Ash Huddy Hudson', factions: ['Lunatix'] },
+        { name: 'Ash Huddy Hudson' },
     ],
     HulzyRP: [
         { name: 'Joseph "Big Joe" Gambini', factions: ['HK Pawn', 'Old Country', 'DoJ'], nicknames: [], displayName: 1 },
@@ -1885,7 +1885,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Freddy Fastfingers', factions: ['HOA'], displayName: 0 },
     ],
     Hurnani: [
-        { name: 'Bruno Brown', factions: ['RUST'], displayName: 1 },
+        { name: 'Bruno Brown', displayName: 1 },
         { name: 'Borat ?' },
         { name: 'James-Kamea Brown', factions: ['Vagos'] },
     ],
@@ -1896,7 +1896,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Hutch Hendrickson' },
     ],
     HydraPlz: [
-        { name: 'Gandalf "Stankyleg" Butters', factions: ['ASRR'] },
+        { name: 'Gandalf "Stankyleg" Butters' },
         { name: '[Deputy] John Hydra', displayName: 2 },
     ],
     iamnxera: [
@@ -1907,7 +1907,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Johnathen Riker' },
     ],
     IanDavis: [
-        { name: 'Reginald Watson', factions: ['Royal Mafia'], nicknames: ['Sir'], displayName: 0 },
+        { name: 'Reginald Watson', nicknames: ['Sir'], displayName: 0 },
     ],
     iballzach: [
         { name: '[EMS] Zachary Kellogg', factions: ['Medical'] },
@@ -1937,27 +1937,27 @@ export const npCharacters: NpCharacters = {
         { name: 'Markuz Jackelson', factions: ['GSF'], nicknames: ['Meatball', 'Meat', 'Meatwad'] },
     ],
     iiMancini: [
-        { name: 'John Mancini', factions: ['NBC'], displayName: 0 },
+        { name: 'John Mancini', displayName: 0 },
     ],
     IJuanAWin: [
         { name: 'Machete Cortez', factions: ['Marabunta'] },
     ],
     ikitty: [
-        { name: 'Kitty Dream', factions: ['Casino', 'Gruppe6', 'Britney Gang', 'Rooster'] },
+        { name: 'Kitty Dream', factions: ['Casino', 'Gruppe6'] },
     ],
     ilenol: [
-        { name: 'Max Larson', factions: ['CBPD', 'Rooster'], displayName: 0 },
+        { name: 'Max Larson', displayName: 0 },
     ],
     illwac: [
         { name: 'Bob Moss', displayName: 0 },
         { name: 'Robyn Banks', factions: ['Police'], displayName: 0 },
     ],
     ILYCappiCat: [
-        { name: 'SunMoon Lee', factions: ['RUST'], displayName: 1 },
+        { name: 'SunMoon Lee', displayName: 1 },
     ],
     ilyjordi: [
         { name: 'Ralphie Ralphs', factions: ['Independent'], displayName: 1 },
-        { name: 'Ralphie Ralphs', factions: ['Gangton'], nicknames: ['2.0'] },
+        { name: 'Ralphie Ralphs', nicknames: ['2.0'] },
     ],
     imaceinhd: [
         { name: 'Jonah Sloe', factions: ['Police'], displayName: 0 },
@@ -1990,7 +1990,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Omar Samir', factions: ['Besties'], nicknames: [], displayName: 1 },
     ],
     iqkev: [
-        { name: 'Kev In', factions: ['SOS'], displayName: 0 },
+        { name: 'Kev In', displayName: 0 },
     ],
     IrishGT: [
         { name: 'Sean McQuillen', factions: ['Hounds', 'Faceless'], nicknames: ['Irish'], displayName: 0 },
@@ -2013,37 +2013,37 @@ export const npCharacters: NpCharacters = {
         { name: 'Adelaide Finch', factions: ['DoJ', 'Order'], displayName: 0 },
     ],
     itsElleCee: [
-        { name: 'Elle Queenie', factions: ['HK Pawn', 'Old Country', 'New Babylon'], nicknames: [], displayName: 1 },
+        { name: 'Elle Queenie', factions: ['HK Pawn', 'Old Country'], nicknames: [], displayName: 1 },
     ],
     itsfragss: [
-        { name: 'Maxwell Connorth', factions: ['SOS'], nicknames: ['Max'], displayName: 1 },
+        { name: 'Maxwell Connorth', nicknames: ['Max'], displayName: 1 },
     ],
     ItsHighsky: [
-        { name: 'Sky Parks', factions: ['Royal Mafia'], displayName: 0 },
+        { name: 'Sky Parks', displayName: 0 },
     ],
     itsHolmes: [
         { name: 'Andre Tyson', factions: ['Pawn Addicts', 'Gruppe6', 'SSB', 'Faceless'], displayName: 1 },
     ],
     itsjustasummerjob: [
-        { name: 'Sabith "Bunny" Cohen', factions: ['Stable'] },
+        { name: 'Sabith "Bunny" Cohen' },
     ],
     ItsJustJosh: [
         { name: 'Levi Dawson', factions: ['SSB'] },
     ],
     ItsLeslie: [
-        { name: 'KyrinChan "Leyla" WeuhBou', factions: ['LARPers', 'Cleanbois', 'Britney Gang', 'Rooster'], nicknames: ['Nightingale', 'Wizard', 'Embervale', reg(/\bley+l+a/)] },
+        { name: 'KyrinChan "Leyla" WeuhBou', nicknames: ['Nightingale', 'Wizard', 'Embervale', reg(/\bley+l+a/)] },
     ],
     ItsLSG: [
         { name: '[Officer] Jack Miller' },
     ],
     itsmedeimo: [
-        { name: 'Damian Greco', factions: ['MMC'], displayName: 0 },
+        { name: 'Damian Greco', displayName: 0 },
     ],
     itsmejjroleplay: [
-        { name: 'Johnny Jacksun', factions: ['BSK'], nicknames: ['JJ'], displayName: 0 },
+        { name: 'Johnny Jacksun', nicknames: ['JJ'], displayName: 0 },
     ],
     ItsNowas: [
-        { name: 'Trequan Jenkins', factions: ['Street Team', 'Chang Gang'], nicknames: ['Ashtray'], displayName: 3 },
+        { name: 'Trequan Jenkins', factions: ['Chang Gang'], nicknames: ['Ashtray'], displayName: 3 },
         { name: '[Deputy] Eli Hawkins' },
     ],
     itspulipa: [
@@ -2071,7 +2071,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Ruby Hope', displayName: 2 },
     ],
     Jaakuvt: [
-        { name: 'Klaus Kane', factions: ['Hades'], nicknames: [], displayName: 1 },
+        { name: 'Klaus Kane', nicknames: [], displayName: 1 },
     ],
     JaboodyShow: [
         { name: 'Jerry Curl', displayName: 0 },
@@ -2080,11 +2080,11 @@ export const npCharacters: NpCharacters = {
     ],
     Jack: [
         { name: 'Jack Cortair', factions: ['Pawn Addicts', 'Besties'], nicknames: ['Cookie', 'Galleta'], assumeServer: 'whitelist' },
-        { name: 'Jack Cortair', factions: ['Gangton'], nicknames: ['2.0', reg(/\bpimp|pimp\b/)] },
+        { name: 'Jack Cortair', nicknames: ['2.0', reg(/\bpimp|pimp\b/)] },
         { name: 'Dez Wright', factions: ['Slim', 'Besties'], nicknames: ['Doofy', reg(/\bdez/)], displayName: 1 },
     ],
     Jackhuddo: [
-        { name: 'Shane Powers', factions: ['Seaside'], nicknames: ['ShaneO', 'ShanO'] },
+        { name: 'Shane Powers', nicknames: ['ShaneO', 'ShanO'] },
         { name: 'Hubbo Samson' },
     ],
     Jaden: [
@@ -2103,10 +2103,10 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Marcus Miller', assumeServer: 'public' },
     ],
     jason_plays_games: [
-        { name: '[Judge] Norman Adams', factions: ['Rooster'], displayName: 2 },
+        { name: '[Judge] Norman Adams', displayName: 2 },
     ],
     jastatank: [
-        { name: 'Larry Jonson', factions: ['Italian Mafia'], displayName: 0 },
+        { name: 'Larry Jonson', displayName: 0 },
     ],
     Javaaaa: [
         { name: 'Joseph Yorinobu', nicknames: ['Majima', 'Goro'], displayName: 3 },
@@ -2139,12 +2139,12 @@ export const npCharacters: NpCharacters = {
     ],
     jdot: [
         { name: 'Andrew "Drew" Jackson', factions: ['GSF'] },
-        { name: 'Miles Landon', factions: ['Pegasus'], assumeServer: 'whitelist' },
+        { name: 'Miles Landon', assumeServer: 'whitelist' },
         { name: 'Miles Landon', nicknames: ['451'], assumeServer: 'public' },
         { name: 'Jake LaMotta', displayName: 0 },
     ],
     jeimiru: [
-        { name: 'David Jackson', factions: ['Hydra Gang', 'Harmony'], nicknames: ['Benz'], displayName: 3 },
+        { name: 'David Jackson', factions: ['Hydra Gang'], nicknames: ['Benz'], displayName: 3 },
     ],
     Jellypeanut: [
         { name: 'Rai "Juuls" Cumberwoood' },
@@ -2152,7 +2152,7 @@ export const npCharacters: NpCharacters = {
     ],
     Jennybeartv: [
         { name: '[Deputy] Peach Chee', factions: ['Police'], displayName: 1 },
-        { name: 'Peachingle Dan', factions: ['Dans'] },
+        { name: 'Peachingle Dan' },
         { name: 'Roxanne Daniels', factions: ['Casino', 'Burger Shot', 'DoC', 'Gruppe6'], displayName: 0 },
     ],
     jennylouise1997: [
@@ -2163,7 +2163,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Donnie McDermott', factions: ['Burger Shot'], displayName: 0 },
     ],
     JerseysGhost: [
-        { name: 'Antonio \'KOLD\' Valentino', factions: ['Hades'], nicknames: [], displayName: 1 },
+        { name: 'Antonio \'KOLD\' Valentino', nicknames: [], displayName: 1 },
     ],
     jess_tation: [
         { name: 'CJ Parker' },
@@ -2172,10 +2172,10 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Jessie Dallas', assumeServer: 'public' },
     ],
     jessimiyaseo: [
-        { name: 'Jessi Adler', factions: ['ASRR'], displayName: 0 },
+        { name: 'Jessi Adler', displayName: 0 },
     ],
     jettskiiee: [
-        { name: 'Xavier "Xay" Sin', factions: ['Independent', 'CBPD', 'Rooster'] },
+        { name: 'Xavier "Xay" Sin', factions: ['Independent'] },
     ],
     jettt: [
         { name: 'Ethan Cross', factions: ['Police'], displayName: 0 },
@@ -2184,25 +2184,25 @@ export const npCharacters: NpCharacters = {
         { name: 'Vince Watson', displayName: 0 },
     ],
     jimmytulip: [
-        { name: 'Wayne Biggaz', factions: ['Street Team', 'Chang Gang'], nicknames: [reg(/\bwe+y+n/), reg(/\bwayne/)] },
-        { name: 'Wayne Biggaz', factions: ['Gangton'], nicknames: ['2.0'] },
+        { name: 'Wayne Biggaz', factions: ['Chang Gang'], nicknames: [reg(/\bwe+y+n/), reg(/\bwayne/)] },
+        { name: 'Wayne Biggaz', nicknames: ['2.0'] },
     ],
     JinxerTTY: [
         { name: 'Brandon Bowers', nicknames: [String.fromCharCode(68, 117, 109, 98, 102, 117, 99, 107)], displayName: 3 }, // -_-
     ],
     JJFried: [
         { name: '[Deputy] Jace Barter' },
-        { name: 'Ace Carter', factions: ['Hydra Gang', 'BCG'] },
+        { name: 'Ace Carter', factions: ['Hydra Gang'] },
     ],
     JJLakee: [
-        { name: 'Jay Jarvis', factions: ['Hydra Gang', 'Harmony', 'Pegasus'], nicknames: ['JJ', 'MG'], displayName: 0 }, // facebook
+        { name: 'Jay Jarvis', factions: ['Hydra Gang'], nicknames: ['JJ', 'MG'], displayName: 0 }, // facebook
     ],
     JoblessGarrett: [
         { name: 'Garrett Jobless', factions: ['Chang Gang'] },
         { name: '[Officer] Garry Berry' },
     ],
     Joeeigel: [
-        { name: '[Officer] Arthur MacNee', factions: ['Rooster'], displayName: 1 },
+        { name: '[Officer] Arthur MacNee', displayName: 1 },
     ],
     JoeSmitty123: [
         { name: '[Officer] Michael Murphy' },
@@ -2222,22 +2222,22 @@ export const npCharacters: NpCharacters = {
         { name: 'Max Brown', factions: ['Manor'], nicknames: ['Stoner'], displayName: 0 },
     ],
     JonnyRotten: [
-        { name: 'Billy Phresh', factions: ['Street Team', 'Chang Gang'], displayName: 0 },
+        { name: 'Billy Phresh', factions: ['Chang Gang'], displayName: 0 },
     ],
     Jonthebroski: [
-        { name: 'Denzel Williams', factions: ['Cleanbois', 'Lang Gang', 'Limelight', 'Pegasus', 'Rooster'], nicknames: ['The "Cleaner"', 'Presidente'] },
+        { name: 'Denzel Williams', nicknames: ['The "Cleaner"', 'Presidente'] },
         { name: '[Deputy] Johnny Divine', displayName: 0 },
-        { name: 'Broskingle Dan', factions: ['Dans'] },
+        { name: 'Broskingle Dan' },
         { name: '[Senator] Sean Davis', leader: true, nicknames: ['Senate'] },
-        { name: 'Dio Ivanov', factions: ['Russians', 'Faceless'] },
-        { name: 'Holden D. Block', factions: ['ASRR'], displayName: 0 },
+        { name: 'Dio Ivanov', factions: ['Faceless'] },
+        { name: 'Holden D. Block', displayName: 0 },
         { name: 'Thomas DeAngelo', factions: ['HK Pawn', 'Old Country'], displayName: 0 },
     ],
     JoshOG: [
         { name: 'Mario Le-Pipe', factions: ['Chang Gang'], affiliate: true, displayName: 0 },
     ],
     JostQQ: [
-        { name: 'Jost Zueger', factions: ['Rooster', 'Tuner Shop'], displayName: 0 },
+        { name: 'Jost Zueger', displayName: 0 },
     ],
     JOVIAN: [
         { name: '[Deputy] Billiam Williams', displayName: 1 },
@@ -2266,13 +2266,13 @@ export const npCharacters: NpCharacters = {
         { name: 'Judd Lincoln', factions: ['Chang Gang'] },
         { name: '[Judge] Coyote Russell', displayName: 1, assumeServer: 'whitelist' },
         { name: '[Officer] Judd Lincoln', displayName: 1, assumeServer: 'public' },
-        { name: 'Reverend I.M. Voland', factions: ['Dark Web'] },
+        { name: 'Reverend I.M. Voland' },
     ],
     juelzzz: [
         { name: 'Maria Estrella Duarte', factions: ['Vagos'], nicknames: [reg(/\be+s+t+r+e+l/)], displayName: 2 },
     ],
     Juggs: [
-        { name: 'Sidwig Crawshank', factions: ['Royal Mafia'], nicknames: [reg(/\bsidwig/)], displayName: 1, leader: true },
+        { name: 'Sidwig Crawshank', nicknames: [reg(/\bsidwig/)], displayName: 1, leader: true },
         { name: 'Lenny Large', nicknames: [reg(/\blenny/)], displayName: 0 },
         { name: 'Traevon Williams', nicknames: ['The Barber'], displayName: 3 },
     ],
@@ -2290,21 +2290,21 @@ export const npCharacters: NpCharacters = {
         { name: 'Mercy Peggers' },
     ],
     JustDurant: [
-        { name: 'Toni Balbani', factions: ['Dons'], displayName: 0 },
+        { name: 'Toni Balbani', displayName: 0 },
     ],
     JustenTymes: [
         { name: 'Blanden Haster', factions: ['HOA'], displayName: 1 },
     ],
     justFritz: [
-        { name: 'Fritz Ericson', factions: ['Mayhem MC'] },
+        { name: 'Fritz Ericson' },
     ],
     JustJambaa: [
-        { name: 'La Flare Davis', factions: ['RUST'], nicknames: ['La Flare'], displayName: 4 },
+        { name: 'La Flare Davis', nicknames: ['La Flare'], displayName: 4 },
     ],
     JustJamie: [
         { name: '[Deputy] George Lawson', nicknames: ['592'] },
-        { name: 'Tommy Cruizer', factions: ['Tuner Shop'] },
-        { name: 'Jamie Bee', factions: ['Self Insert'], displayName: 0 },
+        { name: 'Tommy Cruizer' },
+        { name: 'Jamie Bee', displayName: 0 },
     ],
     JustPenchi: [
         { name: 'Casper Clock', factions: ['Prison'], nicknames: ['Plague Doctor'], displayName: 3 },
@@ -2346,7 +2346,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Rick Tames', factions: ['GSF'], nicknames: ['Microphone'], displayName: 0 },
     ],
     Kari: [
-        { name: 'Karina Dawn', factions: ['Harmony'], nicknames: ['crim', 'criminal', 'robbing', reg(/\bkarina/)] },
+        { name: 'Karina Dawn', nicknames: ['crim', 'criminal', 'robbing', reg(/\bkarina/)] },
         { name: '[Deputy] Mina Price' },
         { name: '[EMS] Khloe Brooks', factions: ['Medical'] },
     ],
@@ -2368,12 +2368,12 @@ export const npCharacters: NpCharacters = {
         { name: 'Elena Sinclair', factions: ['Order'], displayName: 0 },
     ],
     Kate: [
-        { name: 'Nancy Drew', factions: ['Lang Gang', 'Britney Gang'] },
+        { name: 'Nancy Drew' },
         { name: '[Officer] Veronica Mars', nicknames: ['593'] },
         { name: 'Muriel Gallstaff', displayName: 1 },
     ],
     KateC: [
-        { name: 'Kit Archer', factions: ['Hades'], nicknames: [], displayName: 1 },
+        { name: 'Kit Archer', nicknames: [], displayName: 1 },
         { name: 'Daisy Moss', factions: ['Police'], displayName: 0 },
     ],
     KatFires: [
@@ -2406,7 +2406,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Susie Carmichael', nicknames: ['Copmichael'], assumeServer: 'public' },
     ],
     Kennasofly: [
-        { name: 'Jupiter Adams', factions: ['Tuner Shop'], displayName: 0 },
+        { name: 'Jupiter Adams', displayName: 0 },
     ],
     kerazane: [
         { name: 'Bertha Buttons', factions: ['Police'], displayName: 0 },
@@ -2427,7 +2427,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Adam Ababwa', assume: 'assumeOther', displayName: 0 },
     ],
     KielbasaOP: [
-        { name: 'Jayden Dennis', factions: ['Hades'], nicknames: [], displayName: 1 },
+        { name: 'Jayden Dennis', nicknames: [], displayName: 1 },
     ],
     KiingJoee: [
         { name: '? ?', assume: 'neverNp' },
@@ -2444,7 +2444,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Sun Moon', nicknames: [reg(/\bsun/), 'Korean Gang'], displayName: 0 },
     ],
     Kimmykix: [
-        { name: 'April Thompson', factions: ['Pegasus'] },
+        { name: 'April Thompson' },
     ],
     Kinamazing: [
         { name: '[Officer] Emma Dupont', factions: ['Police'], nicknames: ['Dupog'], assumeChar: true },
@@ -2469,7 +2469,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Dispatch] Youjimaru Takimura', displayName: 2 },
     ],
     kioShiMa_ff: [
-        { name: 'Kio Shima', factions: ['SOB'] },
+        { name: 'Kio Shima' },
     ],
     Kitboga: [
         { name: 'Edna Moose' },
@@ -2479,7 +2479,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Rusty Johnson' },
     ],
     Kiva: [
-        { name: 'Andi Jones', factions: ['New Babylon', 'HOA'], nicknames: ['Ant'], displayName: 1 },
+        { name: 'Andi Jones', factions: ['HOA'], nicknames: ['Ant'], displayName: 1 },
         { name: 'Natalie ?', nicknames: ['not andi', 'not ant'], displayName: 1 },
         { name: 'Navi Gates' },
         { name: 'Ria Lee', factions: ['Locksmiths'], displayName: 0 },
@@ -2487,10 +2487,10 @@ export const npCharacters: NpCharacters = {
     Kiwo: [
         { name: '[Deputy] Lauren Forcer', assumeServer: 'whitelist' },
         { name: '[Officer] Maisy Graves', assumeServer: 'public' },
-        { name: 'Mia Mersion', factions: ['Pegasus'] },
+        { name: 'Mia Mersion' },
         { name: 'Trish Baggs', displayName: 1 },
         { name: 'Nah Vee', displayName: 0 },
-        { name: 'Evita "Mother" Nimm', factions: ['Dark Web'] },
+        { name: 'Evita "Mother" Nimm' },
         { name: 'Ava Ridge', nicknames: ['Silence', reg(/darkness/)] },
         { name: 'Marta Volkov' },
         { name: 'Holly Day', factions: ['Burger Shot'], displayName: 0 },
@@ -2514,7 +2514,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Kai B. Knight', displayName: 0 },
     ],
     Knotty: [
-        { name: 'Guy Jones', factions: ['NBC'], displayName: 0 },
+        { name: 'Guy Jones', displayName: 0 },
     ],
     KnuckleheadGaming: [
         { name: 'Marty Holiday', factions: ['Prison'], displayName: 0 },
@@ -2529,18 +2529,18 @@ export const npCharacters: NpCharacters = {
         { name: '[Senator] Steven Barosi', leader: true, nicknames: ['Senate', 'Steve'], displayName: 1 },
         { name: '[Development] Koil', factions: ['Development'], nicknames: ['Code'] },
         { name: 'Saint Jospeh', nicknames: ['Jesus', 'Joseph', 'XUJIA', 'EMC'], displayName: 0 },
-        { name: 'Ray Ray', factions: ['ASRR'], displayName: 0 },
+        { name: 'Ray Ray', displayName: 0 },
     ],
     kojoXD: [
         { name: 'Kojo ?', factions: ['Independent'], assumeServer: 'international', assumeChar: true },
         { name: 'Kojo ?', factions: ['Independent'], assumeServer: 'public' },
     ],
     KokoBananaMan: [
-        { name: 'Tex Graves', factions: ['Lang Gang'] },
+        { name: 'Tex Graves' },
         { name: 'John Carver', factions: ['Pawn Addicts'], displayName: 0 },
     ],
     Kongfue: [
-        { name: 'Karl "KJ" Johnny Black', factions: ['Hades'] },
+        { name: 'Karl "KJ" Johnny Black' },
     ],
     Kookie: [
         { name: 'Kookie Louw', factions: ['Independent'] },
@@ -2553,12 +2553,12 @@ export const npCharacters: NpCharacters = {
         { name: 'Jimmy Peppers', factions: ['Police'], displayName: 0 },
     ],
     KristoferYee: [
-        { name: 'Jay Que', factions: ['Rooster'], displayName: 0 },
+        { name: 'Jay Que', displayName: 0 },
         { name: '[Deputy] Ka Chao', displayName: 2 },
-        { name: 'Kristofer Yee', factions: ['Self Insert'], displayName: 0 },
+        { name: 'Kristofer Yee', displayName: 0 },
     ],
     KrisTWOfer: [
-        { name: 'Jay Que', factions: ['Rooster'], displayName: 0 },
+        { name: 'Jay Que', displayName: 0 },
         { name: '[Deputy] Ka Chao', displayName: 2 },
     ],
     kritacul: [
@@ -2568,17 +2568,17 @@ export const npCharacters: NpCharacters = {
         { name: 'Kriz Khaoz' },
     ],
     Kunaives: [
-        { name: 'Wally Veloce', factions: ['BSK'] },
+        { name: 'Wally Veloce' },
     ],
     KuroKunoichi13: [
         { name: 'Natalia Omar' },
     ],
     Kurupt: [
         { name: 'Tyreke Knox', factions: ['Independent'], displayName: 0 },
-        { name: 'Arthur Itis', factions: ['Gangton'], nicknames: ['2.0'] },
+        { name: 'Arthur Itis', nicknames: ['2.0'] },
     ],
     Kydos___: [
-        { name: "Baby O'Conner", factions: ['Wastelanders'], displayName: 0 },
+        { name: "Baby O'Conner", displayName: 0 },
     ],
     Kyle: [
         { name: 'Kyle Pred', assumeServer: 'whitelist' },
@@ -2608,9 +2608,9 @@ export const npCharacters: NpCharacters = {
     ],
     kyliebitkin: [
         { name: '[Deputy] Brittany Angel', nicknames: ['Angle', 'Captain'] },
-        { name: 'Mary Mushkin', factions: ['KC', 'Tuner Shop'], nicknames: ['Red Devil', 'R3d Devil'], displayName: 1 },
+        { name: 'Mary Mushkin', factions: ['KC'], nicknames: ['Red Devil', 'R3d Devil'], displayName: 1 },
         { name: 'Sarah Reynolds', displayName: 0 },
-        { name: 'Kylie Bitcoin', factions: ['Self Insert'], displayName: 0 },
+        { name: 'Kylie Bitcoin', displayName: 0 },
         { name: 'Valerie Angel', factions: ['Police'], displayName: 0 },
     ],
     KYR_SP33DY: [
@@ -2627,26 +2627,26 @@ export const npCharacters: NpCharacters = {
     ],
     LadyHope: [
         { name: '[Deputy] Lily Pond' },
-        { name: 'Isabella "Izzy" Carrington', factions: ['Harmony'] },
+        { name: 'Isabella "Izzy" Carrington' },
     ],
     LadyLynxx: [
         { name: 'Jaed Smith', factions: ['Saints'], displayName: 0 },
         { name: '[Officer] Saphira Sinclair', nicknames: ['Saph', '597'] },
     ],
     LAGTVMaximusBlack: [
-        { name: 'Outto-Tune "OTT" Tyrone', factions: ['BSK'], nicknames: [reg(/\b[O0]\S?TT/)], leader: true, assumeServer: 'whitelist' },
+        { name: 'Outto-Tune "OTT" Tyrone', nicknames: [reg(/\b[O0]\S?TT/)], leader: true, assumeServer: 'whitelist' },
         { name: '[Deputy] Max Prime', nicknames: ['Twija'], displayName: 2 },
         { name: 'Outto-Tune "OTT" Tyrone', factions: ['Independent'], nicknames: [reg(/\b[O0]\S?TT/)], assumeServer: 'public' },
         { name: '[Officer] Twija Prime', assumeServer: 'public' },
     ],
     Lairdo_: [
-        { name: 'Henry King', factions: ['Rooster'] },
+        { name: 'Henry King' },
     ],
     lancerofficial: [
         { name: 'Lance Silva', factions: ['Habibis'], nicknames: [], displayName: 1 },
     ],
     LargeSalt: [
-        { name: 'Ivan Samarsky', factions: ['Seaside'], displayName: 0 },
+        { name: 'Ivan Samarsky', displayName: 0 },
     ],
     LarryX7: [
         { name: 'Jose "Cousin" Luis Santana', factions: ['Vagos'] },
@@ -2676,7 +2676,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Dr.] Dahlia Fey', factions: ['Medical'] },
     ],
     LeWolfy: [
-        { name: '[Officer] Dante Wolf', factions: ['Stable'] },
+        { name: '[Officer] Dante Wolf' },
     ],
     liamdpt: [
         { name: 'Kai Martin', factions: ['Manor'], nicknames: ['ERP King'], displayName: 1 },
@@ -2697,10 +2697,10 @@ export const npCharacters: NpCharacters = {
         { name: 'Linkle Jones', displayName: 1 },
     ],
     LIRIK: [
-        { name: 'Clayvon Barksdale', factions: ['Cleanbois', 'Rooster'] },
+        { name: 'Clayvon Barksdale' },
         { name: '[Officer] Bayvon Barksdale', nicknames: ['555'], displayName: 2 },
         { name: 'Abe Vaughn', displayName: 0 },
-        { name: 'Avon Barksdale', factions: ['Cleanbois'], leader: true },
+        { name: 'Avon Barksdale', leader: true },
     ],
     lisajfc: [
         { name: 'Opal Pryce', factions: ['Police'], displayName: 0 },
@@ -2717,7 +2717,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Leon Johnson', nicknames: ['LJ'], displayName: 0 },
     ],
     Llikthead: [
-        { name: 'Garion Noble', factions: ['ADMC', 'CBPD', 'Rooster'], displayName: 1 },
+        { name: 'Garion Noble', factions: ['ADMC'], displayName: 1 },
     ],
     lolJukebox: [
         { name: '[Officer] Shane Jones', displayName: 2 },
@@ -2769,7 +2769,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Lilith Ailhart', factions: ['HOA'] },
     ],
     lstrictlylogicl: [
-        { name: 'Ricardo Valdez', factions: ['RUST'] },
+        { name: 'Ricardo Valdez' },
         { name: '[Deputy] John Spartan', displayName: 2 },
     ],
     Lt_Custard: [
@@ -2819,22 +2819,22 @@ export const npCharacters: NpCharacters = {
     ],
     LunaOni: [
         { name: '[Deputy] Claire Everly', displayName: 1 },
-        { name: 'Mayumi Himura', factions: ['HOA', 'Tuner Shop'], nicknames: ['May'] },
-        { name: 'Paige Luna', factions: ['Self Insert'], displayName: 0 },
+        { name: 'Mayumi Himura', factions: ['HOA'], nicknames: ['May'] },
+        { name: 'Paige Luna', displayName: 0 },
     ],
     lunchyrp: [
-        { name: 'Danny Goomba', factions: ['MMC'], displayName: 2 },
+        { name: 'Danny Goomba', displayName: 2 },
     ],
     lycanstory: [
         { name: 'William Hunter', factions: ['Faceless'], displayName: 0 },
     ],
     Lyndi: [
-        { name: 'Violet Van Housen', factions: ['Angels'], assumeServer: 'whitelist' },
+        { name: 'Violet Van Housen', assumeServer: 'whitelist' },
         { name: '[Officer] Willow Wolfhart', displayName: 1 },
         { name: '[Officer] Violet Van Housen', displayName: 1, assumeServer: 'public' },
     ],
     Lysium: [
-        { name: 'Benji Ramos', factions: ['BPM', 'Sweepers', 'Burger Shot', 'Hades', 'Faceless'], leader: true, nicknames: ['B'] },
+        { name: 'Benji Ramos', factions: ['BPM', 'Sweepers', 'Burger Shot', 'Faceless'], leader: true, nicknames: ['B'] },
         { name: '[Deputy] Dean Duncan' },
         { name: 'Maxim Pochinki' },
     ],
@@ -2866,10 +2866,10 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Elizabeth Reed' },
     ],
     MaestroPD: [
-        { name: 'Muten "Roshi" Roushi', factions: ['Clean Cartel'] },
+        { name: 'Muten "Roshi" Roushi' },
     ],
     MagentaTM: [
-        { name: 'Russel Harrington', factions: ['Clean Cartel'], displayName: 0 },
+        { name: 'Russel Harrington', displayName: 0 },
     ],
     Maggna: [
         { name: '[EMS] Mari Jones', factions: ['Medical'], nicknames: ['MJ'], displayName: 3 },
@@ -2878,7 +2878,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Malcolm Nekoda', factions: ['DoJ'], displayName: 0 },
     ],
     MalevolentReisu: [
-        { name: 'Trey Walker', factions: ['Mayhem MC'], displayName: 0 },
+        { name: 'Trey Walker', displayName: 0 },
     ],
     MaliciousRP: [
         { name: 'Jericho Black' },
@@ -2890,12 +2890,12 @@ export const npCharacters: NpCharacters = {
         { name: 'Michael "Mike" Manx', factions: ['Besties'] },
     ],
     ManteegoTV: [
-        { name: 'Dougie Mane', factions: ['NBC'], displayName: 0 },
+        { name: 'Dougie Mane', displayName: 0 },
     ],
     Mantis: [
         { name: '[Sheriff] Domenic Toretti', leader: true },
-        { name: 'Jackson Caldwell', factions: ['Frat'], displayName: 0 },
-        { name: 'Ike Block', factions: ['ASRR'], displayName: 0 },
+        { name: 'Jackson Caldwell', displayName: 0 },
+        { name: 'Ike Block', displayName: 0 },
         { name: '[Lawyer] Jerry Callow', displayName: 1 },
         { name: 'Pepe Silvia' },
     ],
@@ -2906,7 +2906,7 @@ export const npCharacters: NpCharacters = {
         { name: '? ?', assumeServer: 'international' },
     ],
     margothesnail: [
-        { name: 'Margo Escargot', factions: ['MMC'] },
+        { name: 'Margo Escargot' },
         { name: 'Becky Prescott', factions: ['DoC'], displayName: 0 },
     ],
     maribel1998: [
@@ -2925,10 +2925,10 @@ export const npCharacters: NpCharacters = {
         { name: 'Bertha Clark', factions: ['Saints'] },
     ],
     MasonShortland: [
-        { name: 'Clark Mason', factions: ['New Babylon'], nicknames: ['Flash'], displayName: 1 },
+        { name: 'Clark Mason', nicknames: ['Flash'], displayName: 1 },
     ],
     MasterMisuri: [
-        { name: 'Jesus Antonio Lopez Contreras', factions: ['HOA', 'Tuner Shop'] },
+        { name: 'Jesus Antonio Lopez Contreras', factions: ['HOA'] },
         { name: '[Deputy] Jeremias Jimenes' },
     ],
     MatchaSmash: [
@@ -2940,7 +2940,7 @@ export const npCharacters: NpCharacters = {
     ],
     Mattie: [
         { name: '[Dr.] Mikhail Keehl', factions: ['Medical'], displayName: 2 },
-        { name: 'Titus Tsukasa', factions: ['BSK'], displayName: 0 },
+        { name: 'Titus Tsukasa', displayName: 0 },
     ],
     MattRP: [
         { name: '[Trooper] Jack Ripley' },
@@ -2965,7 +2965,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Amber Gold' },
         { name: 'Erin Cox', nicknames: ['c:', 'E R I N', 'C O X'], displayName: 1 },
         { name: 'Ari Tistu', displayName: 0 },
-        { name: 'Amber ?', factions: ['Self Insert'], displayName: 1 },
+        { name: 'Amber ?', displayName: 1 },
         { name: 'Goldie Fisher', factions: ['Piss Boiz', 'Casino'], displayName: 0 },
     ],
     Melly_Mae: [
@@ -2981,10 +2981,10 @@ export const npCharacters: NpCharacters = {
         { name: 'Bella Lux', factions: ['Manor'], nicknames: ['Bez'], displayName: 1 },
     ],
     Merald: [
-        { name: 'Jaylen Carter', factions: ['Street Team', 'Chang Gang'], nicknames: ['LampPost', 'Lamp Post'], displayName: 1 },
+        { name: 'Jaylen Carter', factions: ['Chang Gang'], nicknames: ['LampPost', 'Lamp Post'], displayName: 1 },
     ],
     Merrcy: [
-        { name: 'Cody Palmer', factions: ['CBPD', 'Rooster'], displayName: 0 },
+        { name: 'Cody Palmer', displayName: 0 },
     ],
     Mervin: [
         { name: 'Mervin Potts' },
@@ -2993,7 +2993,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Clarence Williams', displayName: 1 },
     ],
     mfWarlock: [
-        { name: 'Skipper Jones', factions: ['Pawn Addicts', 'New Babylon'], nicknames: [], displayName: 1 },
+        { name: 'Skipper Jones', factions: ['Pawn Addicts'], nicknames: [], displayName: 1 },
     ],
     mg4r: [
         { name: 'Ricardo Venezia', factions: ['Police'], displayName: 0 },
@@ -3040,7 +3040,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Jessica Hilton', factions: ['Medical'] },
     ],
     Milsera: [
-        { name: 'Mono Block', factions: ['ASRR'] },
+        { name: 'Mono Block' },
     ],
     MiltonTPike1: [
         { name: 'Kiki Chanel', assumeServer: 'whitelist' },
@@ -3057,14 +3057,14 @@ export const npCharacters: NpCharacters = {
         { name: 'Wong Hung', displayName: 1 },
     ],
     Minakorocket: [
-        { name: 'Mina Rocket', factions: ['Rooster'], displayName: 0 },
+        { name: 'Mina Rocket', displayName: 0 },
     ],
     MinervaMaat: [
         { name: '[Deputy] Minerva Maat', displayName: 1 },
     ],
     Ming: [
         { name: 'Ming Jingtai', factions: ['Besties'], assumeServer: 'whitelist' },
-        { name: 'Ming Jingtai', factions: ['Gangton'], nicknames: ['2.0'] },
+        { name: 'Ming Jingtai', nicknames: ['2.0'] },
         { name: 'Ming Jingtai', factions: ['Besties'], assumeServer: 'public' },
         { name: 'Boon Bundy', displayName: 0, assumeServer: 'public' },
         { name: '[Officer] Jing Mingtai', displayName: 1, assumeServer: 'public' },
@@ -3094,31 +3094,31 @@ export const npCharacters: NpCharacters = {
         { name: 'Elijiah "Middle E" Parks', factions: ['SSB'] },
     ],
     Moesabai: [
-        { name: 'Mami Ko', factions: ['ASRR'], nicknames: ['Blue Storm'] },
+        { name: 'Mami Ko', nicknames: ['Blue Storm'] },
         { name: 'Aoki Ma', factions: ['Pawn Addicts'], displayName: 0 },
     ],
     moistcr1tikal: [
         { name: 'Charles White', displayName: 0 },
     ],
     mollyrollinxo: [
-        { name: 'Molly Rollin', factions: ['Hades'], nicknames: [], displayName: 1 },
+        { name: 'Molly Rollin', nicknames: [], displayName: 1 },
     ],
     mollyruu: [
-        { name: 'Elizabeth "Lizzie" Byrne', factions: ['ADMC', 'Clean Cartel'], assumeServer: 'whitelist', wlBias: -1 },
+        { name: 'Elizabeth "Lizzie" Byrne', factions: ['ADMC'], assumeServer: 'whitelist', wlBias: -1 },
         { name: '[Deputy] Scarlett Royal', displayName: 2 },
         { name: '[Deputy] Elizabeth Byrne', nicknames: ['Lizzie'], displayName: 3, assumeServer: 'public' },
         { name: 'Aishi Ayano', nicknames: ['Yandere'], displayName: 0 },
     ],
     MOONMOON: [
         { name: '[Officer] Lenny Hawk', nicknames: ['Renegade'], displayName: 1, assume: 'assumeNp' },
-        { name: 'Bernice "Shadowlord" Caldershot', factions: ['LARPers'] },
-        { name: 'Ro Block', factions: ['ASRR'], displayName: 0 },
-        { name: 'Mitch Moonmoon', factions: ['Self Insert'], nicknames: [reg(/\witch\.tv\/moonmoon\b/)], displayName: 0 },
+        { name: 'Bernice "Shadowlord" Caldershot' },
+        { name: 'Ro Block', displayName: 0 },
+        { name: 'Mitch Moonmoon', nicknames: [reg(/\witch\.tv\/moonmoon\b/)], displayName: 0 },
         { name: 'Maximilian "Yung Dab" Thoroughbred', nicknames: ['The "Gnome"', 'Yung', 'Dab', 'Max'], displayName: 0 },
     ],
     Moosebrother: [
         { name: '[Deputy] Louis Bloom' },
-        { name: 'Laura Gapes', factions: ['ASRR'], nicknames: ['Hooker Block', 'Hooker', 'Block'], displayName: 3 },
+        { name: 'Laura Gapes', nicknames: ['Hooker Block', 'Hooker', 'Block'], displayName: 3 },
     ],
     MooseTaffy: [
         { name: 'Patar Bellosh', factions: ['Chang Gang'] },
@@ -3128,7 +3128,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Morgan Jay', factions: ['ADMC'], nicknames: ['Blade'], displayName: 0 },
     ],
     moxier4wr: [
-        { name: 'Mercury Frost', factions: ['Street Team'], displayName: 1 },
+        { name: 'Mercury Frost', displayName: 1 },
     ],
     mr_grimreaper_: [
         { name: '[Officer] Joe Fish', assumeServer: 'public' },
@@ -3137,7 +3137,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Rudolph ?' },
     ],
     MrFestX: [
-        { name: 'Dow Jones', factions: ['BSK'] },
+        { name: 'Dow Jones' },
     ],
     MrMoonsHouse: [
         { name: '[Officer] Freddy Price', displayName: 2 },
@@ -3161,7 +3161,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Rosalie Pierce', factions: ['Police'], displayName: 0 },
     ],
     MsTeamKK: [
-        { name: 'Riley Carter', factions: ['CBPD', 'Britney Gang', 'Rooster'] },
+        { name: 'Riley Carter' },
         { name: '[Officer] Sunny Brooks', nicknames: ['509'] },
     ],
     mungo: [
@@ -3177,17 +3177,17 @@ export const npCharacters: NpCharacters = {
         { name: '[Lawyer] Murphy Braun', factions: ['Chang Gang'], displayName: 1 },
     ],
     mwat_: [
-        { name: 'Storm Creed', factions: ['Wastelanders'], displayName: 0 },
+        { name: 'Storm Creed', displayName: 0 },
     ],
     mycahpittman: [
-        { name: 'Mycah Pittman', factions: ['Pink Gang'], displayName: 0 },
+        { name: 'Mycah Pittman', displayName: 0 },
     ],
     Myladyballs: [
         { name: 'Veronica Garcia', factions: ['Vagos'] },
     ],
     Myles_Away: [
         { name: '[Deputy] Connor Stubble', nicknames: ['514'], displayName: 2 },
-        { name: 'Whitley Booth', factions: ['Rooster'], nicknames: ['Pirate'] },
+        { name: 'Whitley Booth', nicknames: ['Pirate'] },
         { name: 'Jim Littleman', displayName: 0 },
     ],
     Myth: [
@@ -3220,7 +3220,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Jov Diavol', displayName: 0 },
     ],
     Natsumiii: [
-        { name: 'Natalie Sumi', factions: ['Rooster'] },
+        { name: 'Natalie Sumi' },
     ],
     nattfasa_: [
         { name: 'Max Wazowski', factions: ['Independent'], nicknames: ['Maxwell'], displayName: 0 },
@@ -3229,7 +3229,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Clarence Carter' },
     ],
     NebelNiek: [
-        { name: 'Konrad Kraut Dogenschmirz', factions: ['RUST'] },
+        { name: 'Konrad Kraut Dogenschmirz' },
     ],
     neeko: [
         { name: 'Cherry ?' },
@@ -3242,7 +3242,7 @@ export const npCharacters: NpCharacters = {
     ],
     Nerdandi: [
         { name: '[Deputy] Philomena Hawthorne', nicknames: ['Luna', 'Me'] },
-        { name: 'Petunia Susan Brookshire', factions: ['Rooster'] },
+        { name: 'Petunia Susan Brookshire' },
     ],
     Nescoh: [
         { name: '[Dispatch] Tristan C', displayName: 1 },
@@ -3255,7 +3255,7 @@ export const npCharacters: NpCharacters = {
         { name: '[EMS] Nettie Machete', factions: ['Medical'] },
     ],
     neutreN: [
-        { name: 'Octavio Vettel', factions: ['New Babylon'], nicknames: ['Octo', 'Goofy', 'Hypergoof', 'Octane'], displayName: 3 },
+        { name: 'Octavio Vettel', nicknames: ['Octo', 'Goofy', 'Hypergoof', 'Octane'], displayName: 3 },
     ],
     NeveRossa: [
         { name: 'Dawn Hearte', factions: ['Lost MC', 'Medical'] },
@@ -3265,7 +3265,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Davey Doherty' },
     ],
     Nexa9: [
-        { name: 'Meelo Graves', factions: ['RUST', 'Rooster', 'Tuner Shop'], nicknames: ['Nex'], displayName: 1 },
+        { name: 'Meelo Graves', nicknames: ['Nex'], displayName: 1 },
     ],
     Niccorazi: [
         { name: 'Douglas James', nicknames: ['Dougie', 'Fresh', 'Dougie Fresh', 'Bobcat'], displayName: 5 },
@@ -3273,7 +3273,7 @@ export const npCharacters: NpCharacters = {
     ],
     Nidas: [
         { name: 'Ingevar "AK" Falk', factions: ['Besties'] },
-        { name: 'Leslie Lingberg', factions: ['Lang Gang', 'Limelight', 'Cleanbois'], nicknames: ['Ling', 'Cerberus'], displayName: 1, assumeServer: 'whitelist' },
+        { name: 'Leslie Lingberg', nicknames: ['Ling', 'Cerberus'], displayName: 1, assumeServer: 'whitelist' },
         { name: 'Rat Boy', nicknames: ['Ratboy'], displayName: 3 },
         { name: 'Robin ?', nicknames: ['Boy Wonder'] },
         { name: 'Steve "Stiv" Adamescu', assumeServer: 'public' },
@@ -3284,7 +3284,7 @@ export const npCharacters: NpCharacters = {
     Nikez: [
         { name: '[Development] Nikez', factions: ['Development'] },
         { name: '[Deputy] Cody Sharp', nicknames: [reg(/\bpolice\s*m.n/)] },
-        { name: 'Nicholas Simone', factions: ['Seaside'], nicknames: ['Nick', 'Nico', 'Simon'], displayName: 0 },
+        { name: 'Nicholas Simone', nicknames: ['Nick', 'Nico', 'Simon'], displayName: 0 },
         { name: 'Erik Trygg', factions: ['Police'], displayName: 0 },
     ],
     niki_iremia: [
@@ -3297,7 +3297,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Ember Quinn', factions: ['Clowns', 'DoJ'], displayName: 0 },
     ],
     nismodoma: [
-        { name: 'Tony Leung', factions: ['Hades'], nicknames: [], displayName: 1 },
+        { name: 'Tony Leung', nicknames: [], displayName: 1 },
     ],
     nitemare_boba: [
         { name: 'Marilyn Brewer/4.0', factions: ['DoC'], displayName: 0 },
@@ -3318,21 +3318,21 @@ export const npCharacters: NpCharacters = {
         { name: 'Mack Lando', factions: ['Saints'], displayName: 0 },
     ],
     nobeljt: [
-        { name: 'Lucas Spade', factions: ['SOS'], displayName: 0 },
+        { name: 'Lucas Spade', displayName: 0 },
     ],
     NoElusionz: [
         { name: 'Tank Tames', factions: ['GSF'], displayName: 1 },
     ],
     noKingu: [
         { name: '[Deputy] Henri King' },
-        { name: 'DaMarcus Lewis', factions: ['Tuner Shop'] },
-        { name: 'Big K', factions: ['Self Insert'], displayName: 0 },
+        { name: 'DaMarcus Lewis' },
+        { name: 'Big K', displayName: 0 },
     ],
     NoraExplorer: [
         { name: 'Nunu El Nene', displayName: 1 },
     ],
     notGEEGA: [
-        { name: 'Giovanna "Gigi" Gambino', factions: ['New Babylon'], nicknames: [], displayName: 1 },
+        { name: 'Giovanna "Gigi" Gambino', nicknames: [], displayName: 1 },
     ],
     notjoans: [
         { name: 'Avery Daye', factions: ['Sinner Pawn'], displayName: 0 },
@@ -3341,10 +3341,10 @@ export const npCharacters: NpCharacters = {
         { name: 'Levi Rotti', factions: ['Independent'], displayName: 1 },
     ],
     NotoriousNorman: [
-        { name: 'Chips Ahoy', factions: ['Rooster'] },
+        { name: 'Chips Ahoy' },
     ],
     Nottics: [
-        { name: 'Raymundo Ortiz', factions: ['Sinner Pawn', 'Vagos', 'Tuner Shop'], nicknames: [reg(/\br+ay/), reg(/\bmundo/)] },
+        { name: 'Raymundo Ortiz', factions: ['Sinner Pawn', 'Vagos'], nicknames: [reg(/\br+ay/), reg(/\bmundo/)] },
         { name: 'Raul Rodriguez', nicknames: [reg(/\br+au+l/)] },
     ],
     novaaberries: [
@@ -3357,7 +3357,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Dixie Renne', factions: ['Gruppe6'], displayName: 0 },
     ],
     novazfov: [
-        { name: 'Zeek "Apple" Kacem', factions: ['New Babylon'], nicknames: [], displayName: 1 },
+        { name: 'Zeek "Apple" Kacem', nicknames: [], displayName: 1 },
     ],
     NovellusDea: [
         { name: 'Jacyn Todd', nicknames: [], displayName: 1 },
@@ -3369,13 +3369,13 @@ export const npCharacters: NpCharacters = {
         { name: 'Kian Mercer', factions: ['HOA'] },
     ],
     NuFahrenheit: [
-        { name: 'Boris Karishnikov', factions: ['Italian Mafia'], displayName: 0 },
+        { name: 'Boris Karishnikov', displayName: 0 },
     ],
     NunnYaBiznezz: [
         { name: '[Deputy] Hingle McCringleberry', displayName: 1, assumeServer: 'public' },
     ],
     NurEinDarki: [
-        { name: 'Nolan Nicholson', factions: ['Wastelanders'], displayName: 0 },
+        { name: 'Nolan Nicholson', displayName: 0 },
     ],
     nutreo: [
         { name: 'Carla Graziano', factions: ['DoC'], displayName: 0 },
@@ -3400,10 +3400,10 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Jeffrey Bundy', nicknames: ['451'] },
         { name: '[Lawyer] Benjamin Crane', displayName: 0 },
         { name: '[Judge] Ray Montag' },
-        { name: 'Busta Block', factions: ['ASRR'], displayName: 0 },
+        { name: 'Busta Block', displayName: 0 },
     ],
     Octopimp: [
-        { name: 'Chut McMillan', factions: ['LARPers', 'Rooster'], nicknames: ['Chut The Magnificent', 'Sorcerer'] },
+        { name: 'Chut McMillan', nicknames: ['Chut The Magnificent', 'Sorcerer'] },
     ],
     Odablock: [
         { name: 'Lil Baldy', displayName: 0, assume: 'assumeOther' },
@@ -3414,7 +3414,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Charles "Taco" Prince', factions: ['Independent'], assumeServer: 'public' },
     ],
     offlinezaceed: [
-        { name: 'Zaceed Skengerton', factions: ['Lang Gang'], nicknames: [reg(/\b[zs]a[skc]+[ei]*y?d/)], displayName: 1, assumeServer: 'whitelist' },
+        { name: 'Zaceed Skengerton', nicknames: [reg(/\b[zs]a[skc]+[ei]*y?d/)], displayName: 1, assumeServer: 'whitelist' },
         { name: '[Officer] Zacood Skengerson', displayName: 1, assumeServer: 'public' },
     ],
     offlinezeus: [
@@ -3424,7 +3424,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Peter Frost' },
     ],
     ogastrx: [
-        { name: 'Antonio \'Diablo\' Diaz', factions: ['Hades'], nicknames: [], displayName: 1 },
+        { name: 'Antonio \'Diablo\' Diaz', nicknames: [], displayName: 1 },
     ],
     ogk3nz: [
         { name: 'Marko Russetto', factions: ['Marabunta'], displayName: 0, leader: true },
@@ -3433,7 +3433,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Diego Leon', factions: ['Faceless'], nicknames: ['Diego De Leon'] },
     ],
     OhJayzzy: [
-        { name: 'Jay "JJ" Gamble', factions: ['Hades'] },
+        { name: 'Jay "JJ" Gamble' },
     ],
     OhMadOne: [
         { name: '[Lawyer] Ginzu Okada' },
@@ -3446,17 +3446,17 @@ export const npCharacters: NpCharacters = {
         { name: 'Evee Poppins' },
     ],
     omareloff: [
-        { name: 'Omar Dedon', factions: ['Independent', 'Dons'], displayName: 1, facebook: true },
+        { name: 'Omar Dedon', factions: ['Independent'], displayName: 1, facebook: true },
     ],
     omie: [
-        { name: 'Marty Banks', factions: ['Brick Bois', 'Brick House', 'The 404', 'New Babylon'], assumeServer: 'whitelist' },
-        { name: 'Marty Banks', factions: ['Gangton'], nicknames: ['2.0'] },
+        { name: 'Marty Banks', factions: ['Brick Bois', 'Brick House', 'The 404'], assumeServer: 'whitelist' },
+        { name: 'Marty Banks', nicknames: ['2.0'] },
         { name: '[Deputy] Sharty Banks', displayName: 1 },
         { name: 'Marty Shanks', factions: ['Independent'], nicknames: [reg(/\bburger/)], assumeServer: 'public' },
         { name: '[Officer] Sharty Manks', displayName: 1, assumeServer: 'public' },
     ],
     onebaw: [
-        { name: 'Arthur Morgan', factions: ['Mayhem MC'], displayName: 0 },
+        { name: 'Arthur Morgan', displayName: 0 },
     ],
     OneProtectiveFox: [
         { name: 'Hanna Baker', displayName: 0 },
@@ -3469,7 +3469,7 @@ export const npCharacters: NpCharacters = {
         { name: '[EMS] Rory Borealis', factions: ['Medical'], displayName: 1 },
     ],
     OneTapBingus: [
-        { name: 'Bodhi Mack', factions: ['Seaside'] },
+        { name: 'Bodhi Mack' },
     ],
     ooknumber15: [
         { name: 'GGC Dev', factions: ['Independent', 'Development'], nicknames: ['Xmart', 'Mart'], displayName: 0, assumeChar: true },
@@ -3479,13 +3479,13 @@ export const npCharacters: NpCharacters = {
     ],
     OwenSeven: [
         { name: '[Deputy] Owen Svensen' },
-        { name: 'Tyler Dabrowski', factions: ['Frat'], nicknames: ['Bro', 'Brow', 'Brah', 'Broski', 'Browski', 'Brahski'], displayName: 0 },
+        { name: 'Tyler Dabrowski', nicknames: ['Bro', 'Brow', 'Brah', 'Broski', 'Browski', 'Brahski'], displayName: 0 },
     ],
     oyamec: [
         { name: 'Rochelle Shepherd', factions: ['Order'], displayName: 0 },
     ],
     PacifistV: [
-        { name: 'Merry Achi', factions: ['Rooster'], displayName: 0 },
+        { name: 'Merry Achi', displayName: 0 },
     ],
     palin999: [
         { name: '[Deputy] Chad Gable' },
@@ -3495,7 +3495,7 @@ export const npCharacters: NpCharacters = {
     ],
     Pancakehumper: [
         { name: 'Deacon Frost' },
-        { name: 'Deacon Frost', factions: ['Gangton'] },
+        { name: 'Deacon Frost' },
     ],
     panpawn1: [
         { name: '[Officer] Adam Swanson', assumeServer: 'public' },
@@ -3538,10 +3538,10 @@ export const npCharacters: NpCharacters = {
         { name: 'Bully Maguire', displayName: 0 },
         { name: 'Jimmy "El Gambino" Yougman', nicknames: ['Gamba', 'Gambling', 'Turbo', 'Spins', 'Snowball', 'Magic Hands', 'Jackie Snow', 'Jimmy Bricks', 'Plough Man'] },
         { name: 'Bob Smith', factions: ['Vagos'], nicknames: ['B0b Smith', 'B0b'], displayName: 3 },
-        { name: 'Mike Block', factions: ['ASRR'], leader: true, displayName: 0 },
+        { name: 'Mike Block', leader: true, displayName: 0 },
         { name: 'Chase Clouter', displayName: 0 },
         { name: 'Karen Karenly' },
-        { name: 'Robert Penta', factions: ['Self Insert'], displayName: 0 },
+        { name: 'Robert Penta', displayName: 0 },
         { name: 'Jane Obama', displayName: 0 },
     ],
     Peppo: [
@@ -3552,22 +3552,22 @@ export const npCharacters: NpCharacters = {
         { name: 'Peter Percocet', factions: ['ADMC'], nicknames: ['PP'] },
     ],
     peruze: [
-        { name: 'Ronald "Scuffed Tony" Legarski', factions: ['ASRR'], nicknames: ['Tony', 'Ron', 'Block'] },
+        { name: 'Ronald "Scuffed Tony" Legarski', nicknames: ['Tony', 'Ron', 'Block'] },
         { name: '[Deputy] Anthony Beans', displayName: 2 },
         { name: 'John Hobo', displayName: 0 },
     ],
     peterpark: [
-        { name: 'Peener Pogue', factions: ['Hades'], nicknames: [], displayName: 1 },
+        { name: 'Peener Pogue', nicknames: [], displayName: 1 },
     ],
     peterparkTV: [
-        { name: 'Peener Pogue', factions: ['Rooster'] },
+        { name: 'Peener Pogue' },
     ],
     Pezz: [
         { name: '[Officer] Pez Speedwagon', displayName: 1 },
         { name: 'Pezzy Pee' },
     ],
     phantomzz_ow: [
-        { name: 'Connell MacGregor', factions: ['SOB'], displayName: 2 },
+        { name: 'Connell MacGregor', displayName: 2 },
     ],
     Philderbeast: [
         { name: '[Dispatch] Owen Fitz-Gibbon', displayName: 2 },
@@ -3577,23 +3577,23 @@ export const npCharacters: NpCharacters = {
         { name: 'Tiffany Smith', nicknames: [reg(/\btiff/)], displayName: 0 },
         { name: 'Sakura Haruwho', displayName: 1 },
         { name: 'Ash Scuffem', displayName: 0 },
-        { name: 'Ashley Pinktrilobite', factions: ['Self Insert'], displayName: 0 },
+        { name: 'Ashley Pinktrilobite', displayName: 0 },
     ],
     Plashir: [
-        { name: 'Thom Yung', factions: ['Stable'], displayName: 0 },
+        { name: 'Thom Yung', displayName: 0 },
     ],
     PlasticLittle: [
         { name: 'Parson "Frosty" Brown', factions: ['Lost MC'] },
     ],
     PMoney: [
-        { name: 'P Money', factions: ['Chang Gang', 'Chaos'], displayName: 0 },
+        { name: 'P Money', factions: ['Chang Gang'], displayName: 0 },
     ],
     PmsProxy: [
         { name: '[Officer] Kira Light' },
         { name: 'Ella Stone' },
     ],
     pochesVides: [
-        { name: 'Bruno LeMons', factions: ['Rooster'] },
+        { name: 'Bruno LeMons' },
     ],
     pokelawls: [
         { name: 'Bogg Dann', factions: ['Burger Shot'] },
@@ -3601,19 +3601,19 @@ export const npCharacters: NpCharacters = {
         { name: 'Lacari Anemay' },
     ],
     pokeyou5016: [
-        { name: 'Delaney Jane', factions: ['Hades'], nicknames: [], displayName: 1 },
+        { name: 'Delaney Jane', nicknames: [], displayName: 1 },
     ],
     pokimane: [
         { name: 'Jolie Paul', displayName: 0 },
         { name: 'Celine LaCroix' },
     ],
     Polaflex: [
-        { name: 'Lewis Marsden', factions: ['Tuner Shop'], displayName: 0 },
+        { name: 'Lewis Marsden', displayName: 0 },
     ],
     Polen: [
-        { name: 'Adam "AP" Peterson', factions: ['Tuner Shop'], displayName: 0 },
+        { name: 'Adam "AP" Peterson', displayName: 0 },
         { name: '[Deputy] Adrian Pearce', displayName: 2 },
-        { name: 'Martin Polen', factions: ['Self Insert'], displayName: 0 },
+        { name: 'Martin Polen', displayName: 0 },
     ],
     Ponnhub: [
         { name: '[Therapist] Rexford Yeung', factions: ['Medical'], nicknames: ['Rex'], displayName: 3 },
@@ -3644,7 +3644,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Lucian Lullaby', factions: ['Order'], displayName: 0 },
     ],
     Protay10: [
-        { name: 'James Thompson', factions: ['Hydra Gang', 'Harmony'], nicknames: ['James "Phantom" Thompson', 'Phantom'], displayName: 4 },
+        { name: 'James Thompson', factions: ['Hydra Gang'], nicknames: ['James "Phantom" Thompson', 'Phantom'], displayName: 4 },
         { name: '[Deputy] Jacob Specter' },
     ],
     PsiSyn: [
@@ -3665,7 +3665,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Jake Rake', factions: ['Prison'], displayName: 0 },
     ],
     PureToTheSport: [
-        { name: 'Scooter McQueeny', factions: ['Street Team', 'Chang Gang', 'Tuner Shop'], nicknames: ['Sport'], displayName: 3 },
+        { name: 'Scooter McQueeny', factions: ['Chang Gang'], nicknames: ['Sport'], displayName: 3 },
     ],
     Purge9090: [
         { name: 'Jack Frent', displayName: 0 },
@@ -3677,21 +3677,21 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] James Doakes', displayName: 2 },
     ],
     qift: [
-        { name: 'Winter Sison', factions: ['Burger Shot', 'Hades'], nicknames: [], displayName: 1 },
+        { name: 'Winter Sison', factions: ['Burger Shot'], nicknames: [], displayName: 1 },
     ],
     qMARIOx: [
-        { name: 'Fernando "Mario" Reyes', factions: ['Chang Gang', 'Hydra Gang', 'Chaos'], nicknames: ['"Mario" from the Barrio'] },
+        { name: 'Fernando "Mario" Reyes', factions: ['Chang Gang', 'Hydra Gang'], nicknames: ['"Mario" from the Barrio'] },
         { name: '[Officer] Rob Uncle', nicknames: ['Robert'], displayName: 2 },
     ],
     qrowy: [
         { name: 'Elias Winchester', factions: ['Police'], displayName: 0 },
     ],
     questtk: [
-        { name: 'Zizo Silva', factions: ['MMC'], nicknames: ['Zeezo'], displayName: 1 },
+        { name: 'Zizo Silva', nicknames: ['Zeezo'], displayName: 1 },
     ],
     Quru: [
         { name: '[Officer] Vladimir Reznik' },
-        { name: 'Pepe Ramos', factions: ['Seaside'], displayName: 0 },
+        { name: 'Pepe Ramos', displayName: 0 },
     ],
     RafBull: [
         { name: 'Matthew Heisenbell', factions: ['Independent'], displayName: 0, assumeServer: 'public' },
@@ -3707,13 +3707,13 @@ export const npCharacters: NpCharacters = {
         { name: '[Development] Raided', factions: ['Development'] },
     ],
     raine: [
-        { name: 'Penny Farthing', factions: ['Britney Gang', 'Rooster'] },
+        { name: 'Penny Farthing' },
     ],
     RALLY728: [
-        { name: 'Armando Hernandez', factions: ['Tuner Shop'] },
+        { name: 'Armando Hernandez' },
     ],
     Ramee: [
-        { name: 'Ramee El-Rahman', factions: ['Chang Gang', 'BCG', 'Tuner Shop'], nicknames: ['The "Warlord"', 'The "Vulture"', 'SBS Patient-0'] },
+        { name: 'Ramee El-Rahman', factions: ['Chang Gang'], nicknames: ['The "Warlord"', 'The "Vulture"', 'SBS Patient-0'] },
         { name: '[Ranger] Conan Clarkson' },
     ],
     Randeep10: [
@@ -3729,12 +3729,12 @@ export const npCharacters: NpCharacters = {
     ],
     RatedEpicz: [
         { name: 'Randy Bullet', factions: ['Chang Gang'], nicknames: ['Lazy-Eye', 'Shankz'], assumeServer: 'whitelist', facebook: false, assume: 'assumeOther' },
-        { name: 'Randy Bullet', factions: ['Gangton'], nicknames: ['2.0'] },
+        { name: 'Randy Bullet', nicknames: ['2.0'] },
         { name: 'Roundy Buffet', factions: ['Independent'], nicknames: ['Randy', 'Bullet'], assumeServer: 'public' },
         { name: '[Trooper] AJ Hunter', nicknames: ['207'] },
     ],
     Raveesh1: [
-        { name: 'Yahya "Yaya" Ahmed', factions: ['New Babylon'], nicknames: [], displayName: 1 },
+        { name: 'Yahya "Yaya" Ahmed', nicknames: [], displayName: 1 },
     ],
     rawrparty: [
         { name: 'Tig Oconner', factions: ['DoC'], displayName: 0 },
@@ -3742,7 +3742,7 @@ export const npCharacters: NpCharacters = {
     Ray__C: [
         {
             name: 'Raymond "Ray" Romanov',
-            factions: ['Sinner Pawn', 'Habibis', 'Faceless', 'Cleanbois'],
+            factions: ['Sinner Pawn', 'Habibis', 'Faceless'],
             leader: true,
             nicknames: ['Ray', reg(/\brussia/)],
             assumeChar: true,
@@ -3756,7 +3756,7 @@ export const npCharacters: NpCharacters = {
         { name: '[FIB Agent] Lyonel Winchester' },
     ],
     RayvenEyed: [
-        { name: 'Milo King', factions: ['Rooster'], displayName: 0 },
+        { name: 'Milo King', displayName: 0 },
     ],
     razzy: [
         { name: 'Ryo "RJ" Junior', factions: ['Besties'], nicknames: ['Inactive'], displayName: 1 },
@@ -3769,16 +3769,16 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Rudy Romano', assumeServer: 'public' },
     ],
     Reedy: [
-        { name: 'Raul Luis-Blanco', factions: ['SOB'], displayName: 1 },
+        { name: 'Raul Luis-Blanco', displayName: 1 },
     ],
     ReelSalty: [
         { name: '[Deputy] Frank Giuliani', assumeServer: 'public' },
     ],
     Reina: [
-        { name: 'Mona Sanchez', factions: ['Hades'], nicknames: [], displayName: 1 },
+        { name: 'Mona Sanchez', nicknames: [], displayName: 1 },
     ],
     Reklez: [
-        { name: 'Chico Guzman', factions: ['Hades'], nicknames: [], displayName: 1 },
+        { name: 'Chico Guzman', nicknames: [], displayName: 1 },
         { name: 'AJ', factions: ['SSB'] },
     ],
     RemdogG: [
@@ -3789,7 +3789,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Wednesday Mushkin', factions: ['HOA'] },
     ],
     Renegade93TV: [
-        { name: 'Draxon Payne', factions: ['Wastelanders'], displayName: 1 },
+        { name: 'Draxon Payne', displayName: 1 },
     ],
     reno_raines: [
         { name: 'Manny McDaniels', factions: ['HOA'] },
@@ -3802,7 +3802,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Ace Crow' },
     ],
     ReverendCatino: [
-        { name: 'Rocky Topps', factions: ['Stable'], displayName: 1 },
+        { name: 'Rocky Topps', displayName: 1 },
     ],
     RevRoach: [
         { name: "Happy D'Klown", factions: ['Clowns'] },
@@ -3820,25 +3820,25 @@ export const npCharacters: NpCharacters = {
         { name: 'Brook Lexi', factions: ['Lost MC'] },
     ],
     richyrevolver: [
-        { name: 'Axel Drake', factions: ['Seaside'] },
+        { name: 'Axel Drake' },
     ],
     RickMongoLIVE: [
         { name: '[D.A.] Rick Mongo', assume: 'assumeOther' },
     ],
     RileyRP: [
-        { name: 'Bubbles Smith', factions: ['Royal Mafia'] },
+        { name: 'Bubbles Smith' },
     ],
     ripoozi: [
         { name: 'Larry Knox', factions: ['The 404', 'Brick House'], displayName: 1 },
     ],
     Riseblap: [
-        { name: 'Saleem Shakib', factions: ['RUST'] },
+        { name: 'Saleem Shakib' },
     ],
     Rissabear: [
         { name: 'Rissa Berry', factions: ['Besties'] },
     ],
     RiZRP: [
-        { name: 'Nikita Reznikov', factions: ['Pegasus'] },
+        { name: 'Nikita Reznikov' },
     ],
     rlly: [
         { name: '[Officer] Shelly Targaryen Smith', factions: ['Gruppe6'], nicknames: ['Shelleh', 'Queen', '523'], displayName: 1 },
@@ -3877,7 +3877,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Nadia Khan', factions: ['Police'], displayName: 0 },
     ],
     royalbluesmile: [
-        { name: 'Ell LeFant', factions: ['Wastelanders'], displayName: 0 },
+        { name: 'Ell LeFant', displayName: 0 },
     ],
     royalcreates: [
         { name: 'Wendy Thomas', factions: ['Clowns'], displayName: 0 },
@@ -3886,16 +3886,16 @@ export const npCharacters: NpCharacters = {
         { name: 'Tee Veeman' },
     ],
     ruee: [
-        { name: 'Saint Martin', factions: ['SOB'], nicknames: ['Gomez'] },
+        { name: 'Saint Martin', nicknames: ['Gomez'] },
     ],
     Runyon11: [
-        { name: 'Luk Zwiebel', factions: ['Wastelanders'], displayName: 0 },
+        { name: 'Luk Zwiebel', displayName: 0 },
     ],
     rustbingames: [
         { name: 'Barney McClay', factions: ['Police'], displayName: 0 },
     ],
     RyanRV: [
-        { name: 'Jay Jones', factions: ['Rooster'], nicknames: ['JJ'], displayName: 0 },
+        { name: 'Jay Jones', nicknames: ['JJ'], displayName: 0 },
     ],
     RyuRPG: [
         { name: 'Rafael "Raffa" Sanchez', factions: ['Marabunta'] },
@@ -3908,11 +3908,11 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Silas Grimmer' },
         { name: 'James "Apples" Apeller' },
         { name: 'Chadley ?' },
-        { name: 'Ryder S. Block', factions: ['ASRR'], displayName: 0 },
+        { name: 'Ryder S. Block', displayName: 0 },
         { name: 'Ezekiel "Zero" Rogaine' },
     ],
     Saiiren: [
-        { name: 'Ai "Egg" Musori', nicknames: ['Bitch'], factions: ['LARPers', 'Cleanbois', 'Rooster'], displayName: 0 },
+        { name: 'Ai "Egg" Musori', nicknames: ['Bitch'], displayName: 0 },
         { name: '[Deputy] Yuu Gondai', nicknames: ['Yu', 'Yoo', 'Gon Die'] },
     ],
     SAkiller: [
@@ -3926,7 +3926,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Dimitri Barkov' },
     ],
     samtbull23: [
-        { name: 'Sammy B', factions: ['Harmony'], displayName: 0 },
+        { name: 'Sammy B', displayName: 0 },
     ],
     saNhje: [
         { name: '[Development] saNhje', factions: ['Development'], nicknames: ['MLO'] },
@@ -3938,7 +3938,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Rupert Lockridge-Fuller', displayName: 1 },
     ],
     Sarah_Digitally: [
-        { name: 'Anna Jørgensen', factions: ['Harmony'], nicknames: ['Lilac', 'Illac', 'Jorgensen'], displayName: 3 },
+        { name: 'Anna Jørgensen', nicknames: ['Lilac', 'Illac', 'Jorgensen'], displayName: 3 },
     ],
     Sareff: [
         { name: '[Deputy] Ashley Smith' },
@@ -3957,7 +3957,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Enza Zissou' },
     ],
     sateurne: [
-        { name: 'Nori Valentine', factions: ['SOB'], displayName: 1 },
+        { name: 'Nori Valentine', displayName: 1 },
     ],
     saturneighteen: [
         { name: '[Deputy] Juno Sweeney', factions: ['Police'], displayName: 1 },
@@ -3967,24 +3967,24 @@ export const npCharacters: NpCharacters = {
         { name: 'Johnny Cassle' },
     ],
     Sax850: [
-        { name: 'Motya Satovksy', factions: ['Russians'] },
+        { name: 'Motya Satovksy' },
         { name: '[Officer] Olof Gunnarsson' },
     ],
     Sayeed: [
-        { name: 'Arush "Speedy" Patel Santana', factions: ['Brick Bois', 'Brick House', 'New Babylon'], nicknames: [], displayName: 1 },
+        { name: 'Arush "Speedy" Patel Santana', factions: ['Brick Bois', 'Brick House'], nicknames: [], displayName: 1 },
     ],
     SayeedBlack: [
-        { name: 'Arush Patel "Speedy" Santana', factions: ['Lang Gang', 'Cleanbois'], nicknames: ['El Jefe'] },
+        { name: 'Arush Patel "Speedy" Santana', nicknames: ['El Jefe'] },
         { name: '[Deputy] Sayeed White', nicknames: ['Mr. White'], displayName: 2 },
     ],
     scenri: [
-        { name: 'Reno Panic', factions: ['Dons'] },
+        { name: 'Reno Panic' },
     ],
     Sciencegun: [
         { name: 'John "Turbo" Miller' },
     ],
     scotism: [
-        { name: 'Mike Baldwin', factions: ['Tuner Shop'], displayName: 0 },
+        { name: 'Mike Baldwin', displayName: 0 },
     ],
     ScytheX: [
         { name: 'Frankie Lorenzo', factions: ['GSF'], displayName: 0 },
@@ -3997,28 +3997,28 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Jack Sawyer' },
     ],
     SerialKillerRP: [
-        { name: 'Ezio Kafereska', factions: ['Street Team'] },
+        { name: 'Ezio Kafereska' },
     ],
     sether100: [
-        { name: 'Seth Castro', factions: ['SOB'], displayName: 0 },
+        { name: 'Seth Castro', displayName: 0 },
     ],
     Sgt_Apollo: [
-        { name: 'Salem Barghouthi', factions: ['NBC'], facebook: true },
+        { name: 'Salem Barghouthi', facebook: true },
         { name: '[Officer] Aziz Sultan', nicknames: ['Za Nose'], displayName: 1 },
     ],
     SgtApollo: [
-        { name: 'Salem Barghouthi', factions: ['Brick House', 'The 404', 'Gruppe6', 'NBC'] },
+        { name: 'Salem Barghouthi', factions: ['Brick House', 'The 404', 'Gruppe6'] },
         { name: '[Officer] Aziz Sultan', nicknames: ['Za Nose'], displayName: 1 },
         { name: 'Malik Mansori', factions: ['Police'], displayName: 0 },
     ],
     shadiko: [
-        { name: 'Alex Domino', factions: ['LARPers', 'Rooster'], displayName: 0 },
+        { name: 'Alex Domino', displayName: 0 },
     ],
     shadowedkayla: [
-        { name: 'Kayla Rose', factions: ['Royal Mafia'], displayName: 1 },
+        { name: 'Kayla Rose', displayName: 1 },
     ],
     shadowgam3rx: [
-        { name: 'Jenny Ondamic', factions: ['BSK'], nicknames: ['BSQueen'], displayName: 0 },
+        { name: 'Jenny Ondamic', nicknames: ['BSQueen'], displayName: 0 },
     ],
     shafabeats: [
         { name: 'Lance "Shafa" Edwards', factions: ['Independent'] },
@@ -4035,7 +4035,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Garry Roche', displayName: 0 },
     ],
     Shayeno: [
-        { name: 'Ryder James Flint', factions: ['Royal Mafia'], nicknames: ['RJ'], displayName: 4 },
+        { name: 'Ryder James Flint', nicknames: ['RJ'], displayName: 4 },
     ],
     SheepDog59: [
         { name: '[Officer] Mason Kennedy', nicknames: ['545'], displayName: 2 },
@@ -4044,7 +4044,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Shiran Quinn' },
     ],
     Shiki: [
-        { name: 'Vivian Vale', factions: ['CBPD', 'Clean Cartel'], displayName: 0 },
+        { name: 'Vivian Vale', displayName: 0 },
     ],
     Shindur: [
         { name: '[Deputy] Joey Keys' },
@@ -4052,7 +4052,7 @@ export const npCharacters: NpCharacters = {
     shiny: [
         { name: '[Officer] Honey Buns', nicknames: ['D-21'] },
         { name: 'Pebbles ?', nicknames: ['Dog', reg(/\b(?:wee+\s*woo+)+\b/)] },
-        { name: 'Clyde "Meowfurryon" Eastside', factions: ['LARPers', 'Cleanbois', 'Rooster'], nicknames: ['Druid', 'Archdruid', 'Malfurryon'] },
+        { name: 'Clyde "Meowfurryon" Eastside', nicknames: ['Druid', 'Archdruid', 'Malfurryon'] },
     ],
     shlomi: [
         { name: 'Shlomi Specter', factions: ['Manor'], nicknames: ['Shmulik'], displayName: 1 },
@@ -4061,13 +4061,13 @@ export const npCharacters: NpCharacters = {
         { name: 'Keyvon "Key" Cartier', factions: ['SSB'] },
     ],
     shodtwo: [
-        { name: 'Kishawn Baker', factions: ['Street Team', 'Chang Gang'], nicknames: ['Lil Blicky'], displayName: 3 },
+        { name: 'Kishawn Baker', factions: ['Chang Gang'], nicknames: ['Lil Blicky'], displayName: 3 },
     ],
     Shortyyguy: [
         { name: 'Eddie Delish' },
     ],
     Shotz: [
-        { name: 'Vinny Pistone', factions: ['Chang Gang', 'Chaos', 'Tuner Shop'], assumeServer: 'whitelist' },
+        { name: 'Vinny Pistone', factions: ['Chang Gang'], assumeServer: 'whitelist' },
         // { name: 'Vinny Pistone', factions: ['Independent'], assumeServer: 'public' },
         { name: '[Ranger] John Mineo', nicknames: ['Corporal'] },
         { name: 'Mr J', factions: ['Chang Gang'], displayName: 0 },
@@ -4081,7 +4081,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Richard Hard' },
     ],
     ShrykeLP: [
-        { name: 'Patrick Shryke', factions: ['Wastelanders'], displayName: 0 },
+        { name: 'Patrick Shryke', displayName: 0 },
     ],
     shush_x3: [
         { name: 'Devon Shy', factions: ['SSB'], displayName: 1 },
@@ -4090,16 +4090,16 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Richard Tips', displayName: 2 },
     ],
     Shxcky: [
-        { name: 'Jay Breezy', factions: ['Seaside'], displayName: 0 },
+        { name: 'Jay Breezy', displayName: 0 },
     ],
     Sidefxmayinclde: [
-        { name: 'Kerm Henson', factions: ['Rooster'], displayName: 0 },
+        { name: 'Kerm Henson', displayName: 0 },
     ],
     sierraxmyst: [
         { name: 'Lukas Myst', displayName: 0 },
     ],
     SiirToast: [
-        { name: 'Anton Belov', factions: ['Russians'] },
+        { name: 'Anton Belov' },
     ],
     silbullet: [
         { name: 'Shawn Maplethorne', factions: ['Police'], displayName: 0 },
@@ -4107,7 +4107,7 @@ export const npCharacters: NpCharacters = {
     Silent: [
         {
             name: 'Juan Carlos "Flippy" Hernandez',
-            factions: ['Hydra Gang', 'Faceless', 'Chang Gang', 'Chaos'],
+            factions: ['Hydra Gang', 'Faceless', 'Chang Gang'],
             nicknames: [reg(/\bflip/), reg(/\bcrim\w*\b(?!.+\bcop)/), 'not cop', 'trying out crim', reg(/\bclaire'?s?\s*(?:boy|husb)/)],
             leader: true,
         },
@@ -4125,7 +4125,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Po ?', nicknames: ['Uncle Po'], displayName: 3 },
     ],
     Simo: [
-        { name: 'Reggie Might', factions: ['Hades'], displayName: 1, assumeServer: 'whitelist' },
+        { name: 'Reggie Might', displayName: 1, assumeServer: 'whitelist' },
         { name: '[Lawyer] Blake Specter' },
         { name: '[Officer] Rodney Fuel' },
         { name: '[Officer] Reggie Might', assumeServer: 'public' },
@@ -4143,13 +4143,13 @@ export const npCharacters: NpCharacters = {
         { name: 'Tito Higgins' },
     ],
     SirPink: [
-        { name: 'Reginald "Reggie" Bigglesby', factions: ['Rooster'] },
+        { name: 'Reginald "Reggie" Bigglesby' },
     ],
     sirryman: [
-        { name: 'Levi Colton', factions: ['Clean Cartel'], displayName: 0 },
+        { name: 'Levi Colton', displayName: 0 },
     ],
     Skannerz_: [
-        { name: 'Wayne Kerr', factions: ['Tuner Shop'], displayName: 0 },
+        { name: 'Wayne Kerr', displayName: 0 },
         { name: '[Deputy] Pual Greenway', displayName: 2 },
     ],
     skatebeard: [
@@ -4159,7 +4159,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Raymond "Xray" Delprince', factions: ['SSB'], displayName: 0 },
     ],
     Skiliyo: [
-        { name: 'Derek Thomson', factions: ['RUST', 'CBPD', 'Rooster'], displayName: 1 },
+        { name: 'Derek Thomson', displayName: 1 },
     ],
     SkiMask0n: [
         { name: 'Von Westbrook', factions: ['SSB'], nicknames: ['Vonn'], displayName: 0 },
@@ -4184,8 +4184,8 @@ export const npCharacters: NpCharacters = {
         { name: 'Skud Oftr', displayName: 1 },
     ],
     Skushyy: [
-        { name: 'Joey Violento', factions: ['Dons'], displayName: 1 },
-        { name: 'Luka Malarkey', factions: ['Italian Mafia'], displayName: 0 },
+        { name: 'Joey Violento', displayName: 1 },
+        { name: 'Luka Malarkey', displayName: 0 },
     ],
     skxd07: [
         { name: '[Officer] Joshi Drake', assumeServer: 'international' },
@@ -4201,26 +4201,26 @@ export const npCharacters: NpCharacters = {
         { name: 'Poe Dempsey', factions: ['Besties'] },
     ],
     slimeoz: [
-        { name: 'Tommy "TicTac" Oliver', factions: ['New Babylon'], nicknames: [], displayName: 1 },
+        { name: 'Tommy "TicTac" Oliver', nicknames: [], displayName: 1 },
     ],
     SlixGamingTV: [
-        { name: 'Nico August', factions: ['RUST'] },
+        { name: 'Nico August' },
     ],
     SlummpyJ: [
-        { name: 'Javier Diaz', factions: ['Seaside'], nicknames: ['Javi'] },
+        { name: 'Javier Diaz', nicknames: ['Javi'] },
     ],
     Smaczny: [
         { name: 'Conrad Gross', assume: 'assumeOther' },
     ],
     SmithyFPS: [
-        { name: 'Craig Munson', factions: ['NBC'], nicknames: ['Crackhead Craig'], displayName: 3, assume: 'assumeNpNoOther' },
+        { name: 'Craig Munson', nicknames: ['Crackhead Craig'], displayName: 3, assume: 'assumeNpNoOther' },
     ],
     SmithyPlaysUK: [
         { name: 'Reginald Parker' },
         { name: 'Duke Wiggles', displayName: 0 },
     ],
     smo_och: [
-        { name: 'Mike Smoore', factions: ['RUST'], displayName: 0 },
+        { name: 'Mike Smoore', displayName: 0 },
     ],
     SmokySloth: [
         { name: 'Bovice Wilkinson', factions: ['Prison'] },
@@ -4230,20 +4230,20 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Perry Willis', displayName: 1, assumeServer: 'public' },
     ],
     SniperNamedG: [
-        { name: 'G Baby', factions: ['RUST'], displayName: 0 },
+        { name: 'G Baby', displayName: 0 },
     ],
     so_sneaky: [
-        { name: 'Jessie Dagger', factions: ['Wastelanders'], displayName: 0 },
+        { name: 'Jessie Dagger', displayName: 0 },
     ],
     SoapFPS: [
-        { name: 'Soap ?', factions: ['Royal Mafia'] },
+        { name: 'Soap ?' },
     ],
     sock22: [
         { name: '[Deputy] Richard Dark', factions: ['Police'] },
         { name: 'Napolean Dankleaf', nicknames: ['Napoleon'], displayName: 0 },
     ],
     SodaKite: [
-        { name: 'Ellie Dono', factions: ['Cleanbois', 'Rooster'] },
+        { name: 'Ellie Dono' },
         { name: 'Chell Phish', displayName: 0 },
     ],
     sodapoppin: [
@@ -4257,13 +4257,13 @@ export const npCharacters: NpCharacters = {
         { name: 'Junior Meats', factions: ['ADMC'], displayName: 0 },
     ],
     SoMuchOregano: [
-        { name: 'Vincent Genovese', factions: ['Rooster'], displayName: 0 },
+        { name: 'Vincent Genovese', displayName: 0 },
     ],
     Soniic808: [
-        { name: 'Jack Stone', factions: ['SOS'], displayName: 0 },
+        { name: 'Jack Stone', displayName: 0 },
     ],
     SonKnuck: [
-        { name: 'Patrick Desseault', factions: ['Rooster'], displayName: 0 },
+        { name: 'Patrick Desseault', displayName: 0 },
     ],
     soysavy: [
         { name: 'Marissa Manicure', factions: ['Saints'], displayName: 1 },
@@ -4275,7 +4275,7 @@ export const npCharacters: NpCharacters = {
         { name: 'James Randal', displayName: 0 },
         { name: 'Melbert "Mel" Rickenbacker' },
         { name: 'Joseph "Self Insert" Bobkylecyrmitch', displayName: 0 },
-        { name: 'Adrian Block', factions: ['ASRR'], displayName: 0 },
+        { name: 'Adrian Block', displayName: 0 },
         { name: '[Deputy] Patrick Downing', nicknames: ['Pat'] },
         { name: 'Casey Boyd', nicknames: ['Caseboy', 'L8PD'], displayName: 0 },
     ],
@@ -4297,10 +4297,10 @@ export const npCharacters: NpCharacters = {
         { name: 'Marvin Chunder', factions: ['HOA'], nicknames: ['Hades'], displayName: 3 },
     ],
     SpitfireQG: [
-        { name: 'Billy Walker', factions: ['Wastelanders'], displayName: 0 },
+        { name: 'Billy Walker', displayName: 0 },
     ],
     spoty09: [
-        { name: 'Staniel Raymond', factions: ['SOS'], nicknames: ['Elfie', 'Alfie'], displayName: 3 },
+        { name: 'Staniel Raymond', nicknames: ['Elfie', 'Alfie'], displayName: 3 },
     ],
     Sput: [
         { name: 'Garry Smod', displayName: 0, assume: 'assumeOther' },
@@ -4312,20 +4312,20 @@ export const npCharacters: NpCharacters = {
         { name: 'Charles Dawson', factions: ['Police'], displayName: 0 },
     ],
     SSLLAB: [
-        { name: 'Ant Gaboosh', factions: ['Street Team'], displayName: 1 },
+        { name: 'Ant Gaboosh', displayName: 1 },
     ],
     StalwartNightmare: [
         { name: '[Deputy] Alex Night', nicknames: ['Speedster'], assumeServer: 'public' },
         { name: '[Dispatch] Alex Night', nicknames: ['Delta-39T', 'D-39T'], displayName: 2, assumeServer: 'whitelist' },
     ],
     StankXO: [
-        { name: 'Raccoon ?', factions: ['BCG'], displayName: 1 },
+        { name: 'Raccoon ?', displayName: 1 },
     ],
     stanwilis: [
-        { name: 'Trina Bergström', factions: ['Rooster'], nicknames: ['Bergstrom'], displayName: 0 },
+        { name: 'Trina Bergström', nicknames: ['Bergstrom'], displayName: 0 },
     ],
     Stavy2hotty: [
-        { name: 'Chip Green', factions: ['BCG'], nicknames: ['Tails'], displayName: 3 },
+        { name: 'Chip Green', nicknames: ['Tails'], displayName: 3 },
     ],
     STE_Eire: [
         { name: 'Stephen "STE" O\'Connor', factions: ['Manor'], nicknames: ['STE', 'STD', 'Irish Nightmare'], displayName: 3 },
@@ -4350,13 +4350,13 @@ export const npCharacters: NpCharacters = {
         { name: 'Junior Diaz', factions: ['Brick House', 'The 404', 'Gruppe6'], displayName: 0 },
     ],
     StinkusKrys: [
-        { name: 'Dean Gullberry', factions: ['Italian Mafia'], displayName: 0 },
+        { name: 'Dean Gullberry', displayName: 0 },
     ],
     StinneKay: [
         { name: 'Sassa Raven', factions: ['Lost MC'], displayName: 0 },
     ],
     stitchybird: [
-        { name: 'Daphne Tillamuck Valentino', factions: ['Lunatix'] },
+        { name: 'Daphne Tillamuck Valentino' },
         { name: 'Abigail "Abi" Sharp' },
     ],
     Stoner_Minded: [
@@ -4365,19 +4365,19 @@ export const npCharacters: NpCharacters = {
         { name: 'Frankie Eastwood', displayName: 0, assumeServer: 'public' },
     ],
     StoneYEE: [
-        { name: 'Stone Malone', factions: ['Street Team', 'BCG'], displayName: 1 },
+        { name: 'Stone Malone', displayName: 1 },
     ],
     Stork1e: [
         { name: '[Officer] Luis Montoya', displayName: 2 },
     ],
     stormskii: [
-        { name: 'Storm Skii', factions: ['Besties', 'MMC'], displayName: 1 },
+        { name: 'Storm Skii', factions: ['Besties'], displayName: 1 },
     ],
     StrawHatlol: [
-        { name: 'Angel Jiménez', factions: ['SOS'], nicknames: ['Jimenez'], displayName: 0 },
+        { name: 'Angel Jiménez', nicknames: ['Jimenez'], displayName: 0 },
     ],
     Striking_Fast: [
-        { name: 'Gerard "Dewey" Hawthorne', nicknames: ['Dewie'], factions: ['Rooster'] },
+        { name: 'Gerard "Dewey" Hawthorne', nicknames: ['Dewie'] },
     ],
     StrikingContact: [
         { name: 'Seano "The Chemist" Blackthorne', factions: ['Habibis'], nicknames: ['Chemist'] },
@@ -4393,7 +4393,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Jack "Sully" Sullivan' },
     ],
     summit1g: [
-        { name: 'Charles "Chawa" Johnson', factions: ['Chang Gang', 'Tuner Shop'] },
+        { name: 'Charles "Chawa" Johnson', factions: ['Chang Gang'] },
         { name: '[Deputy] John Charleston', assumeServer: 'whitelist' },
         { name: '[Trooper] Charles Johnson', nicknames: ['Chawa'], assumeServer: 'public' },
     ],
@@ -4401,7 +4401,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Charlotte Greene-Johnson', factions: ['DoJ'], displayName: 0 },
     ],
     Sunni: [
-        { name: 'Hilda Bulking', factions: ['Tuner Shop'] },
+        { name: 'Hilda Bulking' },
     ],
     sunstonefire: [
         { name: 'Etta Hawthorne', factions: ['DoJ', 'Order'], displayName: 0 },
@@ -4415,21 +4415,21 @@ export const npCharacters: NpCharacters = {
         { name: 'Mitch "Dumbass" Bader' },
     ],
     Surefour: [
-        { name: 'Fred "Necrolord" Fredrick', factions: ['LARPers', 'Cleanbois', 'Rooster'], nicknames: ['Necrolord', 'Ranger'] },
-        { name: 'Chute D. Block', factions: ['ASRR'] },
+        { name: 'Fred "Necrolord" Fredrick', nicknames: ['Necrolord', 'Ranger'] },
+        { name: 'Chute D. Block' },
         { name: '[Officer] Kenny Hawk', nicknames: ['Powice'], displayName: 1 },
     ],
     Suspect: [
         { name: 'Marcos Da Silva' },
     ],
     suzster: [
-        { name: 'Michael Kowalski', factions: ['BSK'], displayName: 0 },
+        { name: 'Michael Kowalski', displayName: 0 },
     ],
     suzy_q: [
-        { name: 'Dreah Johnson', factions: ['Britney Gang', 'Rooster'] },
+        { name: 'Dreah Johnson' },
     ],
     Svennoss: [
-        { name: 'Barry Svensson', factions: ['LARPers', 'Cleanbois', 'Rooster'] },
+        { name: 'Barry Svensson' },
     ],
     SwaggerSouls: [
         { name: 'Ace Hull', displayName: 0 },
@@ -4456,7 +4456,7 @@ export const npCharacters: NpCharacters = {
     Sykkuno: [
         {
             name: 'Yuno Sykk',
-            factions: ['Sweepers', 'Gruppe6', 'New Babylon', 'Cleanbois', 'Clean Cartel', 'Rooster'],
+            factions: ['Sweepers', 'Gruppe6'],
             displayName: 1,
             assumeServer: 'whitelist',
             assumeChar: true,
@@ -4481,7 +4481,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Alfredo ?', factions: ['ADMC'], assumeServer: 'public' },
     ],
     SynthHunter: [
-        { name: 'Hunter "Wingman" Skye', factions: ['Rooster'] },
+        { name: 'Hunter "Wingman" Skye' },
     ],
     syph3rau: [
         { name: 'Lyon Martinez' },
@@ -4501,7 +4501,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Mya ?' },
     ],
     tara_: [
-        { name: 'Sarah Ableton', factions: ['RUST'] },
+        { name: 'Sarah Ableton' },
     ],
     Tasara22: [
         { name: 'Tuesday Phillips' },
@@ -4521,11 +4521,11 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] ? "JJ" ?', assumeServer: 'public' },
     ],
     Tehrani: [
-        { name: 'Boris Ivanov', factions: ['Russians'] },
+        { name: 'Boris Ivanov' },
         { name: 'Hector Guzman', factions: ['Vagos'] },
     ],
     tenGreg: [
-        { name: 'Henry Goodman', factions: ['Harmony'], nicknames: ['Dinoco'], displayName: 0 },
+        { name: 'Henry Goodman', nicknames: ['Dinoco'], displayName: 0 },
     ],
     TenguOP: [
         { name: 'Wally Veloce' },
@@ -4538,7 +4538,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Test6' },
     ],
     Tezibtw: [
-        { name: 'Rocco Smith', factions: ['BCG'], nicknames: ['Fury'], displayName: 3 },
+        { name: 'Rocco Smith', nicknames: ['Fury'], displayName: 3 },
     ],
     TezMate: [
         { name: '[Deputy] Nicholas Riggs' },
@@ -4560,17 +4560,17 @@ export const npCharacters: NpCharacters = {
         { name: 'Slappy McGaffey' },
     ],
     Thatblokeryan: [
-        { name: 'Jaxxon Jones', factions: ['CBPD'] },
+        { name: 'Jaxxon Jones' },
     ],
     ThatEmoPunk: [
-        { name: 'Ezreal Kay-Hoss', factions: ['CBPD', 'Rooster'], nicknames: ['EZ', 'E.Z'] },
+        { name: 'Ezreal Kay-Hoss', nicknames: ['EZ', 'E.Z'] },
     ],
     ThatGuyGP: [
         { name: 'Jamal Abdul Jabbar', factions: ['Besties'], displayName: 1 },
-        { name: 'Maz Razi', factions: ['Dons'], nicknames: ['Uncle Tony', 'Uncle T'], displayName: 3 },
+        { name: 'Maz Razi', nicknames: ['Uncle Tony', 'Uncle T'], displayName: 3 },
     ],
     the_halfhand: [
-        { name: 'Jack "Sully" Sullivan', factions: ['Rooster'] },
+        { name: 'Jack "Sully" Sullivan' },
         { name: '[Officer] Oscar Fitzpatrick', nicknames: ['Fitz', 'Patrick'] },
     ],
     TheAaronShaq: [
@@ -4585,7 +4585,7 @@ export const npCharacters: NpCharacters = {
     ],
     TheBigMeech: [
         { name: '[Deputy] Leonard Cassidy', nicknames: ['Leon'] },
-        { name: 'Pilbis Shonly', factions: ['DoC', 'Pawn Addicts', 'Burger Shot', 'NBC'] },
+        { name: 'Pilbis Shonly', factions: ['DoC', 'Pawn Addicts', 'Burger Shot'] },
         { name: 'Tyler Kwando', displayName: 0 },
         { name: 'Jesse Kennedy', factions: ['Police'], displayName: 0 },
     ],
@@ -4593,8 +4593,8 @@ export const npCharacters: NpCharacters = {
         { name: 'Jose Rodriguez', factions: ['Vagos'], nicknames: ['Lil Ese'], displayName: 3 },
     ],
     TheChief1114: [
-        { name: '[Deputy] Fingle Dan', factions: ['Dans'], displayName: 1 },
-        { name: 'Chief', factions: ['Self Insert'], displayName: 1 },
+        { name: '[Deputy] Fingle Dan', displayName: 1 },
+        { name: 'Chief', displayName: 1 },
     ],
     TheDasTony: [
         { name: 'Matteo Salerno', nicknames: [], displayName: 1 },
@@ -4617,7 +4617,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Tyler "Ty" Thompson' },
     ],
     theeYAIR: [
-        { name: 'Yair Lamas', factions: ['Seaside'], displayName: 0 },
+        { name: 'Yair Lamas', displayName: 0 },
     ],
     TheGeekEntry: [
         { name: 'Stacey Doyle', displayName: 1 },
@@ -4627,14 +4627,14 @@ export const npCharacters: NpCharacters = {
         { name: 'Tom Crann Darach', factions: ['DoC', 'Gruppe6'], displayName: 0 },
     ],
     TheGoldenDunsparce: [
-        { name: 'Phueng Madee', factions: ['RUST'], nicknames: ['Bee'] },
+        { name: 'Phueng Madee', nicknames: ['Bee'] },
     ],
     TheHexagonist: [
         { name: '[Deputy] Vincent Glass', displayName: 2 },
-        { name: 'Denis Blatovich', factions: ['CBPD'], nicknames: ['Boris'], displayName: 0 },
+        { name: 'Denis Blatovich', nicknames: ['Boris'], displayName: 0 },
     ],
     Thekegs: [
-        { name: 'Charles Raymond', factions: ['SOS'], displayName: 0 },
+        { name: 'Charles Raymond', displayName: 0 },
     ],
     TheKozak_: [
         { name: '[EMS] Chad Chaddington III', factions: ['Medical'] },
@@ -4648,7 +4648,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Roland Nelson', assumeServer: 'public' },
     ],
     TheMLGenies: [
-        { name: 'Shivananand "Shivvy" Sunandrankumar', factions: ['Royal Mafia'] },
+        { name: 'Shivananand "Shivvy" Sunandrankumar' },
         { name: 'Sinbad Thoor', displayName: 0 },
     ],
     TheMrKatMar: [
@@ -4658,7 +4658,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Arcadia Grayson', factions: ['DoJ'], displayName: 0 },
     ],
     TheOnlyWendigo: [
-        { name: 'Alexandru Vasquez', factions: ['Rooster'] },
+        { name: 'Alexandru Vasquez' },
     ],
     TheRonineh: [
         { name: '[Officer] Ash Anderson', assumeServer: 'international' },
@@ -4667,16 +4667,16 @@ export const npCharacters: NpCharacters = {
         { name: 'Felix Klein', displayName: 0 },
     ],
     TheStarRoom: [
-        { name: 'Tommy Puff', factions: ['Hades'], nicknames: [], displayName: 1 },
+        { name: 'Tommy Puff', nicknames: [], displayName: 1 },
     ],
     thicbootyconspiracyshorty: [
         { name: 'Karli Marx', factions: ['ADMC'], displayName: 0, assumeServer: 'public' },
     ],
     Thio: [
-        { name: 'Kirk Jerkems', factions: ['Clowns', 'Police', 'Stable', 'Rooster'], displayName: 0 },
+        { name: 'Kirk Jerkems', factions: ['Clowns', 'Police'], displayName: 0 },
     ],
     Thirteen9N: [
-        { name: 'Arya Shah', factions: ['Street Team'], displayName: 1 },
+        { name: 'Arya Shah', displayName: 1 },
     ],
     thisisfinelive: [
         { name: 'Baron VonBoom', factions: ['Burger Shot', 'DoC'], displayName: 0 },
@@ -4688,7 +4688,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Trooper] T.J. Mack', assumeServer: 'public' },
     ],
     timmy: [
-        { name: 'Orlando Jones', factions: ['Seaside'], nicknames: ['OJ'], displayName: 3 },
+        { name: 'Orlando Jones', nicknames: ['OJ'], displayName: 3 },
         { name: 'Chino G' },
         { name: 'Cardell "CJ" Jones', factions: ['SSB'] },
     ],
@@ -4697,7 +4697,7 @@ export const npCharacters: NpCharacters = {
     ],
     Tinker: [
         { name: '[Deputy] Theodore Tinker' },
-        { name: 'Sean Tinker', factions: ['Pegasus'], displayName: 0 },
+        { name: 'Sean Tinker', displayName: 0 },
     ],
     TinySpark: [
         { name: '[Deputy] Daisy Dukakis', factions: ['Police'] },
@@ -4710,17 +4710,17 @@ export const npCharacters: NpCharacters = {
         { name: 'Charli Jones', factions: ['Piss Boiz', 'Casino', 'DoC'], displayName: 0 },
     ],
     tjnv_: [
-        { name: 'Charli "CJ" Jones', factions: ['New Babylon'], nicknames: [], displayName: 1 },
+        { name: 'Charli "CJ" Jones', nicknames: [], displayName: 1 },
     ],
     ToastRP: [
         { name: 'Paulie' },
     ],
     Tobii: [
         { name: '[Development] Tobii', factions: ['Development'], nicknames: [reg(/\bdev\s*(?:stuff|things|fixing|work)/)] },
-        { name: 'Michael Simone', factions: ['Seaside'], nicknames: ['Architect', 'RP'], displayName: 0 },
+        { name: 'Michael Simone', nicknames: ['Architect', 'RP'], displayName: 0 },
     ],
     Tommy5oh: [
-        { name: 'Pablo Santiago', factions: ['NBC'], displayName: 0 },
+        { name: 'Pablo Santiago', displayName: 0 },
     ],
     Tomovids: [
         { name: 'Toe Moh', nicknames: ['Big Toe'], displayName: 3 },
@@ -4739,11 +4739,11 @@ export const npCharacters: NpCharacters = {
         { name: 'Douglas "Doug Buck" Buck', displayName: 0 },
     ],
     TranquilKJ: [
-        { name: 'KJ Taylor', factions: ['Pink Gang'], displayName: 0 },
+        { name: 'KJ Taylor', displayName: 0 },
     ],
     trashedpotatopie: [
         { name: '[Officer] Cherri Blossom', nicknames: ['512'], displayName: 2 },
-        { name: 'Marie Ortiz', factions: ['BPM', 'Stable'], displayName: 0 },
+        { name: 'Marie Ortiz', factions: ['BPM'], displayName: 0 },
     ],
     Traumz: [
         { name: '[Deputy] Edward Thatch', nicknames: ['Captain Moosebeard', 'Moosebeard'], displayName: 2 },
@@ -4755,7 +4755,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Tyler Peters', factions: ['Police'], displayName: 2 },
         { name: '[Deputy] William Gunner', nicknames: ['Willy'], displayName: 2 },
         { name: 'Carlos "Cheddar" Sanchez', factions: ['HOA'] },
-        { name: 'Carlos "Cheddar" Sanchez', factions: ['Gangton'], nicknames: ['2.0'] },
+        { name: 'Carlos "Cheddar" Sanchez', nicknames: ['2.0'] },
         { name: '[Deputy] Jason Hannah', displayName: 1 },
         { name: 'Warren Wallace' },
         { name: '[Watch Party] travpiper', factions: ['Watch Party'], nicknames: ['monday night sports'] },
@@ -4763,23 +4763,23 @@ export const npCharacters: NpCharacters = {
         { name: 'Hazard' },
     ],
     traycee: [
-        { name: 'Lexi Law', factions: ['Angels'] },
+        { name: 'Lexi Law' },
         { name: '[Officer] Aspen Gray', nicknames: [reg(/a[s$]pen\b/)] },
     ],
     TTV_CaptMcGee1818: [
         { name: 'Leroy Smith', factions: ['SSB'], displayName: 1, assumeServer: 'public' },
     ],
     Turkaderk: [
-        { name: 'Benji Carter', factions: ['BSK'], displayName: 0 },
+        { name: 'Benji Carter', displayName: 0 },
     ],
     TurtleActually: [
         { name: 'Jordan Lee', factions: ['ADMC'], displayName: 0 },
     ],
     Turtledoves: [
-        { name: 'Hung Jae-Min', factions: ['Rooster'], displayName: 0 },
+        { name: 'Hung Jae-Min', displayName: 0 },
     ],
     Turtlenumber13: [
-        { name: 'Chance Zero', factions: ['Wastelanders'], displayName: 0 },
+        { name: 'Chance Zero', displayName: 0 },
     ],
     twiggycow: [
         { name: 'Viola Ends', factions: ['Saints'], displayName: 1 },
@@ -4789,11 +4789,11 @@ export const npCharacters: NpCharacters = {
     ],
     TwistedBones: [
         { name: 'Mark White', displayName: 0 },
-        { name: 'Hank Marston', factions: ['Mayhem MC'], leader: true, displayName: 0 },
+        { name: 'Hank Marston', leader: true, displayName: 0 },
         { name: 'Marcus Black', factions: ['GSF'], displayName: 0 },
     ],
     TwistedManifest: [
-        { name: 'Jack Valentino', factions: ['Lunatix'] },
+        { name: 'Jack Valentino' },
     ],
     TwitchUser: [
         { name: 'Dang McNabb', displayName: 0 },
@@ -4802,10 +4802,10 @@ export const npCharacters: NpCharacters = {
         { name: 'Taylor Lott', factions: ['Manor'], nicknames: ['TayTay'], displayName: 1 },
     ],
     Tyger: [
-        { name: "Chase O'Dell", factions: ['Street Team', 'Chang Gang'], nicknames: ['Lil Bleach', 'Bleach'], displayName: 3 },
+        { name: "Chase O'Dell", factions: ['Chang Gang'], nicknames: ['Lil Bleach', 'Bleach'], displayName: 3 },
     ],
     TylerNotNamed: [
-        { name: 'Beau Bummer', factions: ['New Babylon'], nicknames: [], displayName: 1 },
+        { name: 'Beau Bummer', nicknames: [], displayName: 1 },
     ],
     UberHaxorNova: [
         { name: 'Siz Fulker', factions: ['HOA'], leader: true, nicknames: ['Zis', 'Ziz', 'uhnSuffer', 'mechanic', reg(/\bloans?\b/), reg(/\bsiz/)] },
@@ -4839,13 +4839,13 @@ export const npCharacters: NpCharacters = {
     ],
     Vader: [
         { name: 'Eugene Zuckerberg', factions: ['Chang Gang'], nicknames: ['Old Man'] },
-        { name: 'Nacho Block', factions: ['ASRR'], displayName: 0 },
+        { name: 'Nacho Block', displayName: 0 },
         { name: '[Deputy] Rob Banks' },
         { name: 'Tuong Ru Kim' },
     ],
     VaderLive: [
         { name: 'Eugene Zuckerberg', factions: ['Chang Gang'], nicknames: ['Old Man'], facebook: true },
-        { name: 'Nacho Block', factions: ['ASRR'], displayName: 0 },
+        { name: 'Nacho Block', displayName: 0 },
         { name: '[Deputy] Rob Banks' },
         { name: 'Tuong Ru Kim' },
     ],
@@ -4887,13 +4887,13 @@ export const npCharacters: NpCharacters = {
         { name: 'Ved Jiggyjoglue' },
     ],
     vee_v: [
-        { name: 'Antonio Chorizo', factions: ['Seaside'], displayName: 0 },
+        { name: 'Antonio Chorizo', displayName: 0 },
     ],
     vei: [
         { name: 'Molly Poppins', factions: ['Casino'], displayName: 0 },
     ],
     Venomfly: [
-        { name: 'Babe Calloway', factions: ['Rooster'], displayName: 0 },
+        { name: 'Babe Calloway', displayName: 0 },
         { name: 'Carolina Reaper' },
     ],
     veriomonen_: [
@@ -4906,7 +4906,6 @@ export const npCharacters: NpCharacters = {
         { name: 'Vingle Dan', factions: ['Besties'], nicknames: [], displayName: 1 },
         {
             name: 'Kayn "Yager" Larp',
-            factions: ['LARPers', 'Cleanbois', 'Rooster', 'Tuner Shop'],
             nicknames: ['Warlock', 'Fighter', 'Yager', 'Demonblood', 'Demon'],
             displayName: 0,
         },
@@ -4918,7 +4917,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Raymond Frost', factions: ['Vagos'], displayName: 0 },
     ],
     VioletCutie: [
-        { name: 'Maisie Hart', factions: ['Britney Gang', 'Rooster', 'Tuner Shop'], displayName: 0 },
+        { name: 'Maisie Hart', displayName: 0 },
     ],
     viscosepower: [
         { name: 'Joshua "JB" Berretta', factions: ['Saints'], displayName: 1 },
@@ -4940,10 +4939,10 @@ export const npCharacters: NpCharacters = {
         { name: '? "Wolfbiter" ?' },
     ],
     vonderweisz: [
-        { name: 'Lucian Weisz', factions: ['Hades'], nicknames: [], displayName: 1 },
+        { name: 'Lucian Weisz', nicknames: [], displayName: 1 },
     ],
     Vondill: [
-        { name: 'Samantha Snake', factions: ['BSK'], nicknames: ['Sammy', 'Sammy Snake'], displayName: 4 },
+        { name: 'Samantha Snake', nicknames: ['Sammy', 'Sammy Snake'], displayName: 4 },
         { name: 'Otis Campbell', displayName: 0 },
     ],
     vsperance: [
@@ -4974,7 +4973,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Zayn Hunter', nicknames: [], displayName: 1 },
     ],
     WaterGotHim: [
-        { name: 'Alessio "AJ" Jilani', factions: ['Clean Cartel'] },
+        { name: 'Alessio "AJ" Jilani' },
     ],
     WaveTF: [
         { name: 'Mumbles Fumbles', factions: ['Clowns'], displayName: 0 },
@@ -4987,13 +4986,13 @@ export const npCharacters: NpCharacters = {
         { name: 'Bowser' },
     ],
     WeCameAsBecca: [
-        { name: 'Kennedy Adams', factions: ['RUST'], displayName: 0 },
+        { name: 'Kennedy Adams', displayName: 0 },
     ],
     Wehtuns: [
         { name: '[Lawyer] Lawrence Splainer', displayName: 2 },
     ],
     weStern: [
-        { name: 'Marcel ?', factions: ['Gangton'], nicknames: ['2.0'] },
+        { name: 'Marcel ?', nicknames: ['2.0'] },
     ],
     wetbow: [
         { name: 'Party Hardy', factions: ['Clowns'], displayName: 0 },
@@ -5059,7 +5058,7 @@ export const npCharacters: NpCharacters = {
     ],
     wtfmoses: [
         { name: '[Officer] Derek McNulty' },
-        { name: 'Smooth Williams', factions: ['Stable'] },
+        { name: 'Smooth Williams' },
     ],
     WuPingNOTEggRoll: [
         { name: 'Wu "Egg Roll" Ping' },
@@ -5068,13 +5067,13 @@ export const npCharacters: NpCharacters = {
         { name: 'Le Wang', factions: ['Vagos'], nicknames: [reg(/\bwang/)], displayName: 0 },
     ],
     xcrayg: [
-        { name: 'Sauce Williams', factions: ['Hades'], nicknames: [], displayName: 1 },
+        { name: 'Sauce Williams', nicknames: [], displayName: 1 },
     ],
     xD_Ghost_Recon_xD: [
         { name: 'Simon Riley', factions: ['Saints'], displayName: 0 },
     ],
     XenVers: [
-        { name: 'Xen Verse', factions: ['Pink Gang'], displayName: 0 },
+        { name: 'Xen Verse', displayName: 0 },
     ],
     xholty: [
         { name: 'Kenny Hopkins', factions: ['Manor'], nicknames: ['Kenneh'], displayName: 1 },
@@ -5093,15 +5092,15 @@ export const npCharacters: NpCharacters = {
         { name: 'Albert Speedo', factions: ['BPM'], displayName: 0 },
     ],
     xNittyGritty: [
-        { name: 'Donny ?', factions: ['Rooster'] },
+        { name: 'Donny ?' },
     ],
     xPytu: [
-        { name: 'Mario Hernandez', factions: ['Street Team', 'Chang Gang'], nicknames: ['Hernández', 'PandaHoe'], displayName: 0 },
+        { name: 'Mario Hernandez', factions: ['Chang Gang'], nicknames: ['Hernández', 'PandaHoe'], displayName: 0 },
     ],
     xQc: [
         {
             name: 'Jean "X" Paul',
-            factions: ['Brick Bois', 'Brick House', 'Independent', 'Cleanbois'],
+            factions: ['Brick Bois', 'Brick House', 'Independent'],
             nicknames: ['Ghost Rider', 'Rider', 'Casino', 'News'],
             displayName: 0,
             assumeServer: 'whitelist',
@@ -5133,11 +5132,11 @@ export const npCharacters: NpCharacters = {
         { name: 'James Oxley', factions: ['News'], displayName: 0 },
     ],
     yickster: [
-        { name: 'Alexandra Yang', factions: ['CBPD', 'Rooster'], nicknames: ['Alex'], displayName: 0 },
+        { name: 'Alexandra Yang', nicknames: ['Alex'], displayName: 0 },
     ],
     YoinksOG: [
         { name: '[Development] YoinksOG', factions: ['Development'], nicknames: ['3D', 'Clothes', 'Clothing'] },
-        { name: 'Doug Canada', factions: ['ASRR'] },
+        { name: 'Doug Canada' },
     ],
     YoMarty: [
         { name: 'Lil Marty', factions: ['SSB'], displayName: 0, assumeServer: 'public' },
@@ -5155,7 +5154,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Antonio Carter Jr', factions: ['SSB'], nicknames: ['AJ'], displayName: 4 },
     ],
     yuukidav: [
-        { name: 'Oakley Stallion', factions: ['Angels'], displayName: 1 },
+        { name: 'Oakley Stallion', displayName: 1 },
         { name: '[Officer] Lukas Lavender', displayName: 2 },
     ],
     zackattackatk: [
@@ -5167,7 +5166,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Oswald Tinkerman', factions: ['Lost MC'], displayName: 1 },
     ],
     zandr400: [
-        { name: 'Vance Vixen', factions: ['Hades'], nicknames: [], displayName: 1 },
+        { name: 'Vance Vixen', nicknames: [], displayName: 1 },
     ],
     ZapremeTV: [
         { name: 'Kai Alexander', factions: ['SSB'], displayName: 1 },
@@ -5181,32 +5180,32 @@ export const npCharacters: NpCharacters = {
         { name: 'Moose Knuckles', factions: ['Clowns'], displayName: 0 },
     ],
     ZayTyree: [
-        { name: 'Renato "Bubbles" Ortiz', factions: ['Brick House', 'The 404', 'Gruppe6', 'New Babylon'], nicknames: [], displayName: 1 },
+        { name: 'Renato "Bubbles" Ortiz', factions: ['Brick House', 'The 404', 'Gruppe6'], nicknames: [], displayName: 1 },
     ],
     zeco1: [
-        { name: 'Kole Selaw', factions: ['RUST'], displayName: 0 },
+        { name: 'Kole Selaw', displayName: 0 },
     ],
     Zee_RP: [
-        { name: 'Zee Carbone', factions: ['Dons'], displayName: 1 },
+        { name: 'Zee Carbone', displayName: 1 },
     ],
     zerhxy: [
         { name: 'Prince Tate', factions: ['Marabunta'], nicknames: ['Sicario'], displayName: 1 },
     ],
     Zerkaa: [
         { name: 'Tommy Tate', nicknames: ['Tommy T'], displayName: 3 },
-        { name: 'Josh Zerker', factions: ['Self Insert', 'One Life'], displayName: 0 },
+        { name: 'Josh Zerker', displayName: 0 },
     ],
     Zetark: [
-        { name: 'Luciano DiCenzo', factions: ['HK Pawn', 'Old Country', 'New Babylon'], nicknames: [], displayName: 1 },
+        { name: 'Luciano DiCenzo', factions: ['HK Pawn', 'Old Country'], nicknames: [], displayName: 1 },
     ],
     Zettafrag: [
-        { name: 'Kimberly Daniels', factions: ['Mayhem MC'], displayName: 0 },
+        { name: 'Kimberly Daniels', displayName: 0 },
     ],
     ZeusLair: [
         { name: 'Teller West', factions: ['HK Pawn'], displayName: 0 },
     ],
     zhifven: [
-        { name: 'Kai Pond', factions: ['Rooster'], displayName: 0 },
+        { name: 'Kai Pond', displayName: 0 },
     ],
     Zidsy: [
         { name: 'Zane Jackson', nicknames: ['Rat'], displayName: 3 },
@@ -5230,14 +5229,14 @@ export const npCharacters: NpCharacters = {
         { name: 'Skunkz Wallace' },
     ],
     Zoomaa: [
-        { name: 'Tomassi Paparatto', factions: ['Royal Mafia'], displayName: 1, assume: 'assumeOther' },
+        { name: 'Tomassi Paparatto', displayName: 1, assume: 'assumeOther' },
     ],
     Zotbot: [
         { name: '[Physiotherapist] Leon Marks', factions: ['Medical'] },
     ],
     ZPapz: [
         { name: '[Deputy] Vincent Ventura' },
-        { name: 'Liam Law', factions: ['Angels'] },
+        { name: 'Liam Law' },
     ],
     zSillverx: [
         { name: '[Deputy] Shawn Richards' },

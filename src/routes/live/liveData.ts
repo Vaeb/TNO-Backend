@@ -50,9 +50,7 @@ const fullFactionMap: { [key in FactionMini]?: FactionFull } = {}; // Factions w
 const displayNameDefault: { [key in FactionMini]?: number } = {
     police: 2,
     doj: 2,
-    asrr: 0,
     mersions: 0,
-    dans: 0,
 } as const;
 
 const FSTATES = {
