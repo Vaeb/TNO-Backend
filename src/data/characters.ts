@@ -800,7 +800,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Mattias Nilson', displayName: 0 },
     ],
     Caramel: [
-        { name: 'Lovemore Dlamini', factions: ['Besties'], displayName: 1 },
+        { name: 'Lovemore Dlamini', factions: ['Collective', 'Besties'], displayName: 1 },
     ],
     carbie: [
         { name: 'Zephyr Kane', factions: ['BPM', 'Order'], displayName: 0 },
@@ -2751,7 +2751,7 @@ export const npCharacters: NpCharacters = {
         { name: '[EMS] Lizzie Bien', factions: ['Medical'], assume: 'assumeOther' },
     ],
     Louuis: [
-        { name: 'Sparky "SK" Kane', factions: ['Faceless'], displayName: 1 },
+        { name: 'Sparky "SK" Kane', factions: ['Collective', 'Faceless'], displayName: 1 },
     ],
     loveANG3L: [
         { name: 'Kendra Davis', factions: ['Vagos'] },
@@ -3835,7 +3835,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Saleem Shakib' },
     ],
     Rissabear: [
-        { name: 'Rissa Berry', factions: ['Besties'] },
+        { name: 'Rissa Berry', factions: ['Collective', 'Besties'] },
     ],
     RiZRP: [
         { name: 'Nikita Reznikov' },
@@ -4328,7 +4328,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Chip Green', nicknames: ['Tails'], displayName: 3 },
     ],
     STE_Eire: [
-        { name: 'Stephen "STE" O\'Connor', factions: ['Manor'], nicknames: ['STE', 'STD', 'Irish Nightmare'], displayName: 3 },
+        { name: 'Stephen "STE" O\'Connor', factions: ['Collective', 'Manor'], nicknames: ['STE', 'STD', 'Irish Nightmare'], displayName: 3 },
     ],
     steamcharlie: [
         { name: '[Deputy] Sydney Bearmont', displayName: 1 },
@@ -4613,7 +4613,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Quinton Quantum', factions: ['DoC', 'DoJ'], displayName: 0 },
     ],
     TheEazyLife: [
-        { name: 'Brandon Valentino', factions: ['Faceless'], displayName: 0 },
+        { name: 'Brandon Valentino', factions: ['Collective', 'Faceless'], displayName: 0 },
         { name: 'Tyler "Ty" Thompson' },
     ],
     theeYAIR: [
