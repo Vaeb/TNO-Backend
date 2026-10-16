@@ -2808,9 +2808,6 @@ export const npCharacters: NpCharacters = {
         { name: '[EMS] Lizzie Bien', factions: ['Medical'], assume: 'assumeOther' },
     ],
     louu: [
-        { name: 'Sparky Kane', factions: ['Sinner Pawn', 'Collective'], displayName: 0 },
-    ],
-    Louuis: [
         { name: 'Sparky "SK" Kane', factions: ['Sinner Pawn', 'Collective', 'Faceless'], displayName: 1 },
     ],
     loveANG3L: [
