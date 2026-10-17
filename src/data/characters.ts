@@ -48,7 +48,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Joe Mathers', factions: ['Police'], displayName: 0 },
     ],
     '4HEAD': [
-        { name: 'Aubrey "4HEAD" Webster', factions: ['Pawn Addicts', 'Besties'], leader: true },
+        { name: 'Aubrey "4HEAD" Webster', factions: ['6Chambers', 'Pawn Addicts', 'Besties'], leader: true },
     ],
     '4hBunger': [
         { name: 'Fred ?', displayName: 1 },
@@ -360,7 +360,7 @@ export const npCharacters: NpCharacters = {
     ],
     arro2k: [
         { name: 'Rico Barbosa', nicknames: [], displayName: 1 },
-        { name: 'Timo Korhonen', factions: ['Pawn Addicts', 'Gruppe6'], displayName: 0 },
+        { name: 'Timo Korhonen', factions: ['6Chambers', 'Pawn Addicts', 'Gruppe6'], displayName: 0 },
     ],
     ArsenaI: [
         { name: 'James Arsenal', displayName: 0 },
@@ -1452,7 +1452,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Lawyer] Anna Swallows', nicknames: ['Law'], displayName: 1, assumeChar: true },
     ],
     ewanruss: [
-        { name: 'Alfredo Bonucci', factions: ['Pawn Addicts'], displayName: 0 },
+        { name: 'Alfredo Bonucci', factions: ['6Chambers', 'Pawn Addicts'], displayName: 0 },
     ],
     ewroon: [
         { name: 'Erwin Knuckles', factions: ['BPM'], displayName: 0 },
@@ -1508,7 +1508,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Taran Raid', factions: ['Lost MC'], displayName: 0 },
     ],
     fanfan: [
-        { name: 'Fan "Fanny" Fan', factions: ['DoC', 'Pawn Addicts', 'Besties'] },
+        { name: 'Fan "Fanny" Fan', factions: ['6Chambers', 'DoC', 'Pawn Addicts', 'Besties'] },
     ],
     Farmhouse78: [
         { name: 'Jane Farmer' },
@@ -1683,7 +1683,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Luke Riley', factions: ['Saints'], displayName: 0 },
     ],
     ghotties: [
-        { name: 'Dixie Dempsey', factions: ['Pawn Addicts'], displayName: 0 },
+        { name: 'Dixie Dempsey', factions: ['6Chambers', 'Pawn Addicts'], displayName: 0 },
     ],
     gibbs_gg: [
         { name: 'Walter Franks', displayName: 0 },
@@ -1813,7 +1813,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Ethan Maxwell', nicknames: ['505'], displayName: 2 },
     ],
     Harmless: [
-        { name: 'Maynard "Idiot" Schmidt', factions: ['Pawn Addicts', 'Burger Shot', 'Besties'] },
+        { name: 'Maynard "Idiot" Schmidt', factions: ['6Chambers', 'Pawn Addicts', 'Burger Shot', 'Besties'] },
         { name: 'Alvis Pulley', factions: ['Police'], displayName: 0 },
     ],
     HARMSwahy: [
@@ -2067,7 +2067,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Sky Parks', displayName: 0 },
     ],
     itsHolmes: [
-        { name: 'Andre Tyson', factions: ['Pawn Addicts', 'Gruppe6', 'SSB', 'Faceless'], displayName: 1 },
+        { name: 'Andre Tyson', factions: ['6Chambers', 'Pawn Addicts', 'Gruppe6', 'SSB', 'Faceless'], displayName: 1 },
     ],
     itsjustasummerjob: [
         { name: 'Sabith "Bunny" Cohen' },
@@ -2127,7 +2127,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Vincent' },
     ],
     Jack: [
-        { name: 'Jack Cortair', factions: ['Pawn Addicts', 'Besties'], nicknames: ['Cookie', 'Galleta'], assumeServer: 'whitelist' },
+        { name: 'Jack Cortair', factions: ['6Chambers', 'Pawn Addicts', 'Besties'], nicknames: ['Cookie', 'Galleta'], assumeServer: 'whitelist' },
         { name: 'Jack Cortair', nicknames: [reg(/\bpimp|pimp\b/)] },
         { name: 'Dez Wright', factions: ['Slim', 'Besties'], nicknames: ['Doofy', reg(/\bdez/)], displayName: 1 },
     ],
@@ -3064,7 +3064,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Clarence Williams', displayName: 1 },
     ],
     mfWarlock: [
-        { name: 'Skipper Jones', factions: ['Pawn Addicts'], nicknames: [], displayName: 1 },
+        { name: 'Skipper Jones', factions: ['6Chambers', 'Pawn Addicts'], nicknames: [], displayName: 1 },
     ],
     mg4r: [
         { name: 'Ricardo Venezia', factions: ['Police'], displayName: 0 },
@@ -3166,7 +3166,7 @@ export const npCharacters: NpCharacters = {
     ],
     Moesabai: [
         { name: 'Mami Ko', nicknames: ['Blue Storm'] },
-        { name: 'Aoki Ma', factions: ['Pawn Addicts'], displayName: 0 },
+        { name: 'Aoki Ma', factions: ['6Chambers', 'Pawn Addicts'], displayName: 0 },
     ],
     moistcr1tikal: [
         { name: 'Charles White', displayName: 0 },
@@ -4855,7 +4855,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Watch Party] travpiper', factions: ['Watch Party'], nicknames: ['monday night sports'] },
         { name: 'Charlie Colcord' },
         { name: 'Hazard' },
-        { name: 'Cockington Webster', factions: ['Pawn Addicts'], displayName: 0 },
+        { name: 'Cockington Webster', factions: ['6Chambers', 'Pawn Addicts'], displayName: 0 },
     ],
     traycee: [
         { name: 'Lexi Law' },
