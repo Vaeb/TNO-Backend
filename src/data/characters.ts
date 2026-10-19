@@ -4875,7 +4875,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Gord Ronson', factions: ['DoC'], displayName: 0 },
     ],
     travpiper: [
-        { name: 'Dhead Webster', factions: ['Besties'], nicknames: [reg(/head\b/)] },
+        { name: 'Cockington "Dhead" Webster', factions: ['6Chambers', 'Pawn Addicts', 'Besties'], nicknames: [reg(/head\b/)] },
         { name: '[Deputy] Tyler Peters', factions: ['Police'], displayName: 2 },
         { name: '[Deputy] William Gunner', nicknames: ['Willy'], displayName: 2 },
         { name: 'Carlos "Cheddar" Sanchez', factions: ['HOA'] },
@@ -4885,7 +4885,6 @@ export const npCharacters: NpCharacters = {
         { name: '[Watch Party] travpiper', factions: ['Watch Party'], nicknames: ['monday night sports'] },
         { name: 'Charlie Colcord' },
         { name: 'Hazard' },
-        { name: 'Cockington Webster', factions: ['6Chambers', 'Pawn Addicts'], displayName: 0 },
     ],
     traycee: [
         { name: 'Lexi Law' },
