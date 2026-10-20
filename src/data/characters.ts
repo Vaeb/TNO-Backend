@@ -4498,6 +4498,7 @@ export const npCharacters: NpCharacters = {
     ],
     StrikingContact: [
         { name: 'Seano "The Chemist" Blackthorne', factions: ['Habibis'], nicknames: ['Chemist'] },
+        { name: 'Jason Breakaway', factions: ['Police'], displayName: 0 },
     ],
     Stuply: [
         { name: 'William "12 Gauge" Glory', factions: ['Besties'] },
