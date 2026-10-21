@@ -2647,7 +2647,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Kriz Khaoz' },
     ],
     ksinz: [
-        { name: 'Keiji Imori', factions: ['Sweepers', 'BPM'], displayName: 0 },
+        { name: 'Keiji Imori', factions: ['Sweepers'], displayName: 0 },
     ],
     Kunaives: [
         { name: 'Wally Veloce' },
