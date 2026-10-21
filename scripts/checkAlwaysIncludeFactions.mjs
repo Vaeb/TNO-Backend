@@ -14,6 +14,7 @@ const helixStreams = [
     { userId: '2', userDisplayName: '52chains', title: 'Aubrey on ProdigyRP today', viewers: 800, language: 'en' },
     { userId: '3', userDisplayName: 'mollyruu', title: 'Aubrey on ProdigyRP today', viewers: 750, language: 'en' },
     { userId: '4', userDisplayName: '4HEAD', title: 'NoPixel | Aubrey', viewers: 700, language: 'en' },
+    { userId: '5', userDisplayName: 'AndyMilonakis', title: 'Lil Erf on ProdigyRP today', viewers: 650, language: 'en' },
 ];
 
 const { apiClient } = await import('../dist/twitchSetup.js');
@@ -28,7 +29,7 @@ const pick = ({ channelName, title, rpServer, characterName, faction, factions, 
 });
 const multiWatchKeeps = s => (s.noOthersInclude && s.noPublicInclude && s.noInternationalInclude) || s.wlOverride;
 
-for (const factionName of ['allnopixel', 'besties', '6chambers']) {
+for (const factionName of ['allnopixel', 'besties', '6chambers', 'changgang']) {
     const live = await getNpLive({ factionName }, true);
     console.log(`\n===== factionName=${factionName} =====`);
     for (const stream of live.streams) console.log(JSON.stringify({ ...pick(stream), multiWatchKeeps: multiWatchKeeps(stream) }, null, 2));
