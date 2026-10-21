@@ -66,7 +66,7 @@ const ASTATES = {
 } as const;
 
 // Streamers with a character in these factions are kept (as their NP character) even when the title names another server
-const alwaysIncludeFactions: FactionRealMini[] = ['besties', '6chambers', 'changgang', 'hydragang', 'manor'];
+const alwaysIncludeFactions: FactionRealMini[] = ['besties', '6chambers', 'changgang', 'hydragang', 'manor', 'brickbois'];
 
 const game = '32982' as const;
 const languages = ['en', 'no']; // https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
