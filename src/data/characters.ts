@@ -3291,7 +3291,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Mike Rosoftsam', affiliate: true },
     ],
     Nakkida: [
-        { name: 'Tessa Lamb', factions: ['Clowns', 'Independent'], displayName: 1, assumeServer: 'whitelist' },
+        { name: 'Tessa Lamb', factions: ['Clowns'], displayName: 1, assumeServer: 'whitelist' },
         { name: 'Tessa Lamb', factions: ['Independent'], assumeServer: 'public' },
         { name: 'Taylor "Onyx" White' },
         { name: 'Rachel Parker' },
@@ -3304,7 +3304,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Nate "Sneaky" Karama', factions: ['Clowns', 'Faceless'] },
     ],
     Natettvrp: [
-        { name: 'Carlos "Carlitos" Loco', factions: ['Slim', 'Independent'] },
+        { name: 'Carlos "Carlitos" Loco', factions: ['Slim'] },
     ],
     nathankb_: [
         { name: '[Chief Judge] Alan Crane', displayName: 2 },
@@ -5238,13 +5238,13 @@ export const npCharacters: NpCharacters = {
     xQc: [
         {
             name: 'Jean "X" Paul',
-            factions: ['Brick Bois', 'Brick House', 'Independent'],
+            factions: ['Brick Bois', 'Brick House'],
             nicknames: ['Ghost Rider', 'Rider', 'Casino', 'News'],
             displayName: 0,
             assumeServer: 'whitelist',
             leader: true,
         },
-        { name: 'Jean "X" Paul', factions: ['Brick Bois', 'Brick House', 'Independent'], nicknames: ['Ghost Rider', 'Rider'], displayName: 0, assumeServer: 'public' },
+        { name: 'Jean "X" Paul', factions: ['Brick Bois', 'Brick House'], nicknames: ['Ghost Rider', 'Rider'], displayName: 0, assumeServer: 'public' },
         { name: '[Deputy] Pierre "PP" Paul', factions: ['Police'], displayName: 0, assumeServer: 'whitelist' },
         { name: 'Jean Pierre', displayName: 0 },
     ],
