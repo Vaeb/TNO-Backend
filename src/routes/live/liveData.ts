@@ -65,6 +65,9 @@ const ASTATES = {
     neverNp: 2,
 } as const;
 
+// Streamers with a character in these factions are kept (as their NP character) even when the title names another server
+const alwaysIncludeFactions: FactionRealMini[] = ['besties', '6chambers'];
+
 const game = '32982' as const;
 const languages = ['en', 'no']; // https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
 // eslint-disable-next-line no-sequences
@@ -835,13 +838,16 @@ export const getNpLive = async (baseOptions = {}, override = false, endpoint = '
                     const keepNp = characters && characters.assumeOther == ASTATES.assumeNpNoOther;
                     const onMainOther = !onNp && mainsOther;
                     const npStreamer = onNp || characters;
+                    const alwaysInclude = onOther && !!characters?.some(char => char.factions.some(faction => alwaysIncludeFactions.includes(faction)));
 
                     const nowFilterEnabled = filterEnabled && factionName !== 'alltwitch';
 
                     // log(title, '>>>', onNp);
 
                     let streamState; // remove, mark-np, mark-other
-                    if (nowFilterEnabled) {
+                    if (alwaysInclude) {
+                        streamState = FSTATES.nopixel;
+                    } else if (nowFilterEnabled) {
                         // If filtering streams is enabled
                         if ((npStreamer && !mainsOther && !keepNp && onOther)) {
                             // If is-including-others and streamer on another server, or it's an NP streamer playing another server
@@ -1038,9 +1044,9 @@ export const getNpLive = async (baseOptions = {}, override = false, endpoint = '
                         onServer = assumeServer;
                     }
 
-                    const onNpWhitelist = onServer === 'whitelist';
-                    const onNpPublic = onServer === 'public';
-                    const onNpInternational = onServer === 'international';
+                    const onNpWhitelist = !alwaysInclude && onServer === 'whitelist';
+                    const onNpPublic = !alwaysInclude && onServer === 'public';
+                    const onNpInternational = !alwaysInclude && onServer === 'international';
 
                     // log(nowCharacter);
 
@@ -1126,6 +1132,8 @@ export const getNpLive = async (baseOptions = {}, override = false, endpoint = '
                         tagFaction = 'othernp';
                         tagText = `${serverName}`;
                     }
+
+                    if (alwaysInclude) tagText = `::${serverName}::`;
 
                     if (newCharFactionSpotted) activeFactions.push('guessed');
                     if (onNpWhitelist) activeFactions.push('whitelistnp');
