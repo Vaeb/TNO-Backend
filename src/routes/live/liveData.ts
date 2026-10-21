@@ -11,7 +11,7 @@ import settingsParsed from '../../data/settingsParsed';
 import factionsParsed from '../../data/factionsParsed';
 import { NpFactions, npFactions } from '../../data/meta';
 import { npCharacters as npCharactersOld } from '../../data/characters';
-import { isFactionColor, lesserFactions, greaterFactions, npFactionsRegex, npFactionsSubRegex, filterFactionsBase } from '../../data/factions';
+import { isFactionColor, getTopFaction, lesserFactions, greaterFactions, npFactionsRegex, npFactionsSubRegex, filterFactionsBase } from '../../data/factions';
 
 import type { RecordGen } from '../../utils';
 import type { FactionMini, FactionFull, FactionRealMini, FactionRealFull } from '../../data/meta';
@@ -30,6 +30,7 @@ const includedData = Object.assign(
 interface Character extends Omit<CharacterOld, 'factions' | 'displayName' | 'assumeServer' | 'wlBias'> {
     factions: FactionRealMini[];
     factionsObj: { [key in FactionRealMini]?: true };
+    factionTop: FactionRealMini;
     factionUse: FactionColorsRealMini;
     displayName: string;
     nameReg: RegExp;
@@ -216,8 +217,10 @@ for (const [streamer, characters] of Object.entries(npCharacters)) {
         }
         char.nameReg = new RegExp(nameRegAll.join('|'), nameRegAll.length > 1 ? 'ig' : 'g');
 
-        if (primaryFaction != null) {
-            char.factionUse = isFactionColor(primaryFaction) ? primaryFaction : 'otherfaction';
+        const topFaction = getTopFaction(char.factions);
+        char.factionTop = topFaction as FactionRealMini;
+        if (topFaction != null) {
+            char.factionUse = isFactionColor(topFaction) ? topFaction : 'otherfaction';
         } else {
             char.factionUse = 'independent';
         }
@@ -1095,11 +1098,13 @@ export const getNpLive = async (baseOptions = {}, override = false, endpoint = '
 
                     // let keepCase = false;
                     let activeFactions: FactionMini[];
+                    let primaryFaction: FactionMini | undefined;
                     let tagFaction: FactionColorsMini;
                     let tagText;
 
                     if (nowCharacter) {
                         activeFactions = [...nowCharacter.factions];
+                        primaryFaction = nowCharacter.factionTop;
                         tagFaction = nowCharacter.factionUse;
                         tagText = nowCharacter.displayName;
                     } else if (hasFactions) {
@@ -1112,6 +1117,7 @@ export const getNpLive = async (baseOptions = {}, override = false, endpoint = '
                         }
                     } else if (possibleCharacter) {
                         activeFactions = [...possibleCharacter.factions, 'guessed'];
+                        primaryFaction = possibleCharacter.factionTop;
                         tagFaction = possibleCharacter.factionUse;
                         tagText = `? ${possibleCharacter.displayName} ?`;
                     } else {
@@ -1130,7 +1136,7 @@ export const getNpLive = async (baseOptions = {}, override = false, endpoint = '
                         rpServer: serverName,
                         characterName: possibleCharacter?.name ?? null,
                         nicknameLookup: possibleCharacter?.nicknames ? possibleCharacter.nicknames.map(nick => parseLookup(nick)).join(' _-_ ') : null,
-                        faction: activeFactions[0],
+                        faction: primaryFaction ?? activeFactions[0],
                         factions: activeFactions,
                         factionsMap: Object.assign({}, ...activeFactions.map(faction => ({ [faction]: true }))),
                         tagText,

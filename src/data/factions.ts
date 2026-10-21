@@ -277,7 +277,7 @@ const filterExclude: { [key in FactionMini]?: boolean } = {
 
 type FactionMiniArr = FactionMini[];
 
-const filterOrderTop: FactionMiniArr = [
+export const filterOrderTop: FactionMiniArr = [
     'allnopixel',
     'alltwitch',
     'publicnp',
@@ -326,6 +326,21 @@ const filterOrderTop: FactionMiniArr = [
     'marabunta',
     'prison',
 ];
+
+// Factions not in filterOrderTop rank after listed ones, keeping their original relative order
+export const getTopFaction = <T extends FactionMini>(factions: T[]): T | undefined => {
+    let top: T | undefined;
+    let topRank = Infinity;
+    for (const faction of factions) {
+        const index = filterOrderTop.indexOf(faction);
+        const rank = index === -1 ? filterOrderTop.length : index;
+        if (top === undefined || rank < topRank) {
+            top = faction;
+            topRank = rank;
+        }
+    }
+    return top;
+};
 
 const filterOrderAfterHasColor: FactionMiniArr = ['development'];
 
