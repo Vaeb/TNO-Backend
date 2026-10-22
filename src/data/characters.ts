@@ -177,7 +177,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Gary Kebun', factions: ['DoC'], displayName: 0 },
     ],
     Aheeyuh: [
-        { name: 'Normie Reece', factions: ['Brick House', 'The 404'], displayName: 0 },
+        { name: 'Normie Reece', factions: ['Brick House'], displayName: 0 },
     ],
     AidenNortha: [
         { name: '[Deputy] Kevin Keyte', displayName: 1, assumeServer: 'whitelist' },
