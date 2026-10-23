@@ -42,7 +42,7 @@ export const npFactionsRegex = {
     oldcountry: noFormer(/\bold[\s\-_.]*country\b/i),
     the404: noFormer(/\bthe[\s\-_.]*404\b|\b404[\s\-_.]*(?:gang|crew)\b/i),
     sweepers: noFormer(/\bstreet[\s\-_.]*sweepers?\b/i),
-    degens: noFormer(/\b(?:los[\s\-_.]*[s$]antos[\s\-_.]*)?degens\b/i),
+    degens: noFormer(/\b(?:los[\s\-_.]*[s$]antos[\s\-_.]*)?degens\b|(?<![\w$])l\$d(?![\w$])/i),
     casino: noFormer(/\bpixel[\s\-_.]*casino\b|(?<!pixel[\s\-_.]*)\bcasino\b/i),
     polish: noFormer(/\bpolish[\s\-_.]*folks?\b/i),
     nest: noFormer(/\bnest\b/i),
