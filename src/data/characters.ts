@@ -3230,7 +3230,7 @@ export const npCharacters: NpCharacters = {
     ],
     MrMoonsHouse: [
         { name: '[Officer] Freddy Price', displayName: 2 },
-        { name: 'Tommy Roach', factions: ['Degens', 'Casino'], displayName: 0 },
+        { name: 'Tommy Roach', factions: ['Casino'], displayName: 0 },
     ],
     MrMouton: [
         { name: 'Chuck Mouton', displayName: 0 },
