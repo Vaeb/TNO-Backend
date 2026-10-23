@@ -610,7 +610,7 @@ export const npCharacters: NpCharacters = {
         { name: '? "O Dogg" ?', factions: ['SSB'] },
     ],
     biotox: [
-        { name: 'Lars Haverford', factions: ['Brick House', 'Piss Boiz'], displayName: 0 },
+        { name: 'Lars Haverford', factions: ['Brick House', 'Degens'], displayName: 0 },
     ],
     Biotoxz_: [
         { name: 'Lars "Bjorn" Haverford', nicknames: ['Barbarian'], assumeServer: 'whitelist' },
@@ -738,14 +738,14 @@ export const npCharacters: NpCharacters = {
     buddha: [
         {
             name: 'Lang Buddha',
-            factions: ['Brick Bois', 'Brick House', 'Piss Boiz', 'Casino'],
+            factions: ['Brick Bois', 'Brick House', 'Degens', 'Casino'],
             leader: true,
             nicknames: ['Circle Andy', 'Timelord'],
             assumeChar: true,
             assumeServer: 'whitelist',
         },
         { name: '[Trooper] LeBron James', nicknames: ['623'], displayName: 1 },
-        { name: '[Ranger] Lang Buddha', factions: ['Brick Bois', 'Brick House', 'Piss Boiz', 'Casino'], displayName: 1, assumeServer: 'public' },
+        { name: '[Ranger] Lang Buddha', factions: ['Brick Bois', 'Brick House', 'Degens', 'Casino'], displayName: 1, assumeServer: 'public' },
         { name: 'Esteban Julio-Ricardo-Montoya-De-La-Rosa Ramirez' },
         { name: '[Deputy] Kevin Kona' },
     ],
@@ -1661,7 +1661,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Peter Johnson' },
     ],
     Garek: [
-        { name: 'Burt "Gloryon" Beans', factions: ['Sinner Pawn', 'Piss Boiz', 'Casino'], nicknames: ['Cleric'] },
+        { name: 'Burt "Gloryon" Beans', factions: ['Sinner Pawn', 'Degens', 'Casino'], nicknames: ['Cleric'] },
         { name: 'Garek', displayName: 1 },
     ],
     GattisTV: [
@@ -1831,7 +1831,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Wilson Burke' },
     ],
     Harry: [
-        { name: 'Harry Brown', factions: ['Brick House', 'Piss Boiz', 'Casino'] },
+        { name: 'Harry Brown', factions: ['Brick House', 'Degens', 'Casino'] },
         { name: '[Deputy] Kevin Little', nicknames: ['Lil Kev', 'Kev'], displayName: 2 },
     ],
     HasanAbi: [
@@ -3055,7 +3055,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Erin Cox', nicknames: ['c:', 'E R I N', 'C O X'], displayName: 1 },
         { name: 'Ari Tistu', displayName: 0 },
         { name: 'Amber ?', displayName: 1 },
-        { name: 'Goldie Fisher', factions: ['Piss Boiz', 'Casino'], displayName: 0 },
+        { name: 'Goldie Fisher', factions: ['Degens', 'Casino'], displayName: 0 },
     ],
     Melly_Mae: [
         { name: '[Dispatch] Jessica Easton' },
@@ -3230,7 +3230,7 @@ export const npCharacters: NpCharacters = {
     ],
     MrMoonsHouse: [
         { name: '[Officer] Freddy Price', displayName: 2 },
-        { name: 'Tommy Roach', factions: ['Piss Boiz', 'Casino'], displayName: 0 },
+        { name: 'Tommy Roach', factions: ['Degens', 'Casino'], displayName: 0 },
     ],
     MrMouton: [
         { name: 'Chuck Mouton', displayName: 0 },
@@ -3257,7 +3257,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Sunny Brooks', nicknames: ['509'] },
     ],
     mungo: [
-        { name: 'Dominic Moreno', factions: ['Piss Boiz'], displayName: 0 },
+        { name: 'Dominic Moreno', factions: ['Degens'], displayName: 0 },
         { name: 'Deek Magnum', factions: ['Police'], displayName: 0 },
     ],
     MurderCrumpet: [
@@ -3595,7 +3595,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Chad Gable' },
     ],
     palsean: [
-        { name: 'Delver Lee', factions: ['Piss Boiz'], displayName: 0 },
+        { name: 'Delver Lee', factions: ['Degens'], displayName: 0 },
     ],
     Pancakehumper: [
         { name: 'Deacon Frost' },
@@ -4832,7 +4832,7 @@ export const npCharacters: NpCharacters = {
         { name: '[EMS] Bailey Jade', factions: ['Medical'] },
     ],
     tjnv: [
-        { name: 'Charli Jones', factions: ['Piss Boiz', 'Casino', 'DoC'], displayName: 0 },
+        { name: 'Charli Jones', factions: ['Degens', 'Casino', 'DoC'], displayName: 0 },
     ],
     tjnv_: [
         { name: 'Charli "CJ" Jones', nicknames: [], displayName: 1 },
