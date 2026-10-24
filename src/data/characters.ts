@@ -254,7 +254,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Amelia Frost' },
     ],
     alyssajeanaf: [
-        { name: 'Daphne Malone', displayName: 0 },
+        { name: 'Daphne Malone', factions: ['Brick Bois'], displayName: 0 },
     ],
     amakingswp: [
         { name: 'Braden Kingz', factions: ['Manor'], nicknames: ['Braden'], displayName: 1 },
@@ -457,7 +457,7 @@ export const npCharacters: NpCharacters = {
     b_hoopla: [
         { name: '[Deputy] Bryan Davids', displayName: 2 },
         { name: 'Ramello Porter', factions: ['Police'], displayName: 0 },
-        { name: 'Kenneth "Primo" McGriff', factions: ['Brick House', 'The 404'], displayName: 0 },
+        { name: 'Kenneth "Primo" McGriff', factions: ['The 404'], displayName: 0 },
     ],
     b0wditch: [
         { name: 'Gene Auber', nicknames: [], displayName: 1 },
@@ -585,7 +585,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Louis Blanc', nicknames: [], displayName: 1 },
     ],
     bigbam: [
-        { name: 'FlyRone Smith', factions: ['DoC'], displayName: 0 },
+        { name: 'FlyRone Smith', factions: ['Clowns', 'DoC'], displayName: 0 },
     ],
     bigbussynik: [
         { name: 'Armani Macaroni' },
@@ -817,7 +817,7 @@ export const npCharacters: NpCharacters = {
     Capped: [
         { name: 'Charlie ?', factions: ['Faceless'], displayName: 1, leader: true },
         { name: 'Capped Tarranova', factions: ['Chang Gang'], nicknames: ['Pigeon', 'Terranova', 'Nova'], displayName: 3 },
-        { name: 'Robert De Souza', factions: ['Locksmiths'], displayName: 0 },
+        { name: 'Robert De Souza', factions: ['Brick Bois', 'Locksmiths'], displayName: 0 },
         { name: 'Anthony Breakwood', factions: ['NEST'], displayName: 0 },
     ],
     Capshion: [
@@ -908,7 +908,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Bryan Chapman', nicknames: ['Chap', 'Orange'], displayName: 0, assumeChar: true },
     ],
     charli: [
-        { name: 'Dee Mented', factions: ['Pawn Addicts', 'Burger Shot'], displayName: 0 },
+        { name: 'Dee Mented', factions: ['Clowns', 'Pawn Addicts', 'Burger Shot'], displayName: 0 },
     ],
     charlieblossom: [
         { name: 'Georgina "Windsong" Williams' },
@@ -1097,7 +1097,7 @@ export const npCharacters: NpCharacters = {
     Crystalst: [
         { name: '[Deputy] Crystal Clear', factions: ['Police'], nicknames: ['370'], displayName: 1 },
         { name: 'Four "4T" Tee', displayName: 0 },
-        { name: 'Swan DeLeur', factions: ['Brick House', 'Sweepers', 'Casino', 'Gruppe6'], displayName: 0 },
+        { name: 'Swan DeLeur', factions: ['Brick Bois', 'Brick House', 'Sweepers', 'Casino', 'Gruppe6'], displayName: 0 },
         { name: 'Amie Rush' },
     ],
     CurtisRyan: [
@@ -1175,6 +1175,9 @@ export const npCharacters: NpCharacters = {
     ],
     Dar_: [
         { name: 'Deco Murphy', displayName: 0 },
+    ],
+    dariqueen: [
+        { name: 'Maddie Trejo', factions: ['Collective'], displayName: 0 },
     ],
     Dark0verseer: [
         { name: '[Development] Dark0', factions: ['Development'], nicknames: ['3D', 'manor'] },
@@ -1671,7 +1674,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Gavin Holliday' },
     ],
     geega: [
-        { name: 'Giovanna Gambino', factions: ['Sinner Pawn', 'Casino'], displayName: 0 },
+        { name: 'Giovanna Gambino', factions: ['Casino'], displayName: 0 },
         { name: 'Maya Peanits', factions: ['Police'], displayName: 0 },
     ],
     geenelly: [
@@ -2464,7 +2467,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Eleanor West', displayName: 1 },
     ],
     kaysan: [
-        { name: 'John Dub', factions: ['Police'], displayName: 0 },
+        { name: 'John Dub', displayName: 0 },
     ],
     Keeno: [
         { name: 'Kyle Brovloski', displayName: 0, assume: 'assumeOther' },
@@ -3405,7 +3408,7 @@ export const npCharacters: NpCharacters = {
     ],
     Nmplol: [
         { name: 'Buddy Black' },
-        { name: 'Jason Polam', factions: ['Sinner Pawn', 'DoC', 'Gruppe6'], displayName: 0 },
+        { name: 'Jason Polam', factions: ['Brick Bois', 'Sinner Pawn', 'DoC', 'Gruppe6'], displayName: 0 },
     ],
     nnsLUL: [
         { name: '[Development] nns', factions: ['Development'], assumeChar: true },
@@ -3428,10 +3431,10 @@ export const npCharacters: NpCharacters = {
         { name: 'Nunu El Nene', displayName: 1 },
     ],
     Nostroscythe: [
-        { name: 'Hazel Havgreaves', factions: ['Brick House'], displayName: 0 },
+        { name: 'Hazel Havgreaves', factions: ['Brick Bois', 'Brick House'], displayName: 0 },
     ],
     notGEEGA: [
-        { name: 'Giovanna "Gigi" Gambino', factions: ['Sinner Pawn', 'Casino'], nicknames: [], displayName: 1 },
+        { name: 'Giovanna "Gigi" Gambino', factions: ['Casino'], nicknames: [], displayName: 1 },
         { name: 'Maya Peanits', factions: ['Police'], displayName: 0 },
     ],
     notjoans: [
@@ -4749,7 +4752,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Jenn Bordeaux', nicknames: ['Frenchie', 'French'] },
     ],
     TheGeneralSmokey: [
-        { name: 'Tom Crann Darach', factions: ['DoC', 'Gruppe6'], displayName: 0 },
+        { name: 'Tom Crann Darach', factions: ['Collective', 'DoC', 'Gruppe6'], displayName: 0 },
     ],
     TheGoldenDunsparce: [
         { name: 'Phueng Madee', nicknames: ['Bee'] },
@@ -4945,7 +4948,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Treyvon Williams', factions: ['GSF'], nicknames: ['Trey'], assume: 'assumeOther' },
     ],
     UHN: [
-        { name: 'Ekonious Chambers', factions: ['Locksmiths'], displayName: 0 },
+        { name: 'Ekonious Chambers', factions: ['Brick Bois', 'Locksmiths'], displayName: 0 },
     ],
     uhSnow: [
         { name: '[Trooper] Jackie Snow', factions: ['Police'] },
@@ -5135,6 +5138,7 @@ export const npCharacters: NpCharacters = {
     ],
     whiskeymate: [
         { name: 'James Johnson', factions: ['Police'], displayName: 0 },
+        { name: 'Ren Bellucci', factions: ['Brick Bois'], displayName: 0 },
     ],
     whosremz: [
         { name: 'Remy Brown', displayName: 1 },
