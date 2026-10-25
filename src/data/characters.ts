@@ -659,7 +659,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Bobby Gray', factions: ['Police'], displayName: 0 },
     ],
     Bodoc_: [
-        { name: 'Marley', factions: ['Clowns'], displayName: 0 },
+        { name: 'Marley', factions: ['Burger Shot', 'Clowns'], displayName: 0 },
     ],
     Bomaah: [
         { name: 'Viper Rodriguez', assume: 'assumeOther' },
@@ -1449,7 +1449,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Ricky Borby', factions: ['Slim'], displayName: 0 },
     ],
     EsfandTV: [
-        { name: '[Deputy] Cletus Cornwood' },
+        { name: '[Deputy] Cletus Cornwood', factions: ['Police'] },
         { name: 'Ali Farmand', displayName: 0 },
     ],
     Evee: [
@@ -1931,7 +1931,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Ash Huddy Hudson' },
     ],
     HulzyRP: [
-        { name: 'Joseph "Big Joe" Gambini', factions: ['HK Pawn', 'Old Country', 'DoJ'], nicknames: [], displayName: 1 },
+        { name: 'Joseph "Big Joe" Gambini', factions: ['HK Pawn', 'Old Country'], nicknames: [], displayName: 1 },
     ],
     Huntag: [
         { name: 'Freddy Fastfingers', factions: ['HOA'], displayName: 0 },
@@ -2491,7 +2491,7 @@ export const npCharacters: NpCharacters = {
     ],
     kerazane: [
         { name: 'Bertha Buttons', factions: ['Police'], displayName: 0 },
-        { name: 'Kol Cascade', factions: ['Sinner Pawn'], displayName: 0 },
+        { name: 'Kol Cascade', factions: ['Collective', 'Sinner Pawn'], displayName: 0 },
     ],
     KevinRamm: [
         { name: 'Kevin Ram', factions: ['Besties'], displayName: 0 },
@@ -2568,7 +2568,7 @@ export const npCharacters: NpCharacters = {
     Kiwo: [
         { name: '[Deputy] Lauren Forcer', assumeServer: 'whitelist' },
         { name: '[Officer] Maisy Graves', assumeServer: 'public' },
-        { name: 'Mia Mersion', factions: ['Pawn Addicts'] },
+        { name: 'Mia Mersion', factions: ['Collective', 'Pawn Addicts'] },
         { name: 'Trish Baggs', displayName: 1 },
         { name: 'Nah Vee', displayName: 0 },
         { name: 'Evita "Mother" Nimm' },
@@ -3784,7 +3784,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] James Doakes', displayName: 2 },
     ],
     qift: [
-        { name: 'Winter Sison', factions: ['Burger Shot'], nicknames: [], displayName: 1 },
+        { name: 'Winter Sison', factions: ['BPM', 'Burger Shot'], nicknames: [], displayName: 1 },
     ],
     qMARIOx: [
         { name: 'Fernando "Mario" Reyes', factions: ['Chang Gang', 'Hydra Gang'], nicknames: ['"Mario" from the Barrio'] },
