@@ -1734,6 +1734,9 @@ export const npCharacters: NpCharacters = {
     Golden_Laurel: [
         { name: 'Gillea Taylor', factions: ['HOA'] },
     ],
+    goldenlaurel: [
+        { name: 'Gillea Taylor', factions: ['BPM'], displayName: 0 },
+    ],
     GoldGlove: [
         { name: 'Marvin King', nicknames: ['Marv'], displayName: 3 },
     ],
@@ -2632,7 +2635,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Jack Vos', factions: ['Police'], displayName: 0 },
     ],
     Kripted: [
-        { name: 'Antonio Rodrigues', factions: ['Pawn Addicts', 'ADMC'], displayName: 0 },
+        { name: 'Antonio Rodrigues', factions: ['Collective', 'Pawn Addicts', 'ADMC'], displayName: 0 },
         { name: 'Jimmy Peppers', factions: ['Police'], displayName: 0 },
     ],
     KristoferYee: [
@@ -3850,7 +3853,7 @@ export const npCharacters: NpCharacters = {
     Ray__C: [
         {
             name: 'Raymond "Ray" Romanov',
-            factions: ['Sinner Pawn', 'Habibis', 'Faceless'],
+            factions: ['BPM', 'Sinner Pawn', 'Habibis', 'Faceless'],
             leader: true,
             nicknames: ['Ray', reg(/\brussia/)],
             assumeChar: true,
@@ -5140,7 +5143,7 @@ export const npCharacters: NpCharacters = {
     ],
     whiskeymate: [
         { name: 'James Johnson', factions: ['Police'], displayName: 0 },
-        { name: 'Ren Bellucci', factions: ['Brick Bois'], displayName: 0 },
+        { name: 'Ren Bellucci', factions: ['Old Country', 'Brick Bois'], displayName: 0 },
     ],
     whosremz: [
         { name: 'Remy Brown', displayName: 1 },
