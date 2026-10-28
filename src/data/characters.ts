@@ -207,7 +207,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Timoteo "TT" Bushnell', nicknames: ['Rasta'] },
     ],
     aKartt: [
-        { name: 'Harold "H-Dawg" Bishop', factions: ['Habibis'], nicknames: ["H-Dawg", "Hdawg"], displayName: 0 },
+        { name: 'Harold "H-Dawg" Bishop', factions: ['Habibis'], nicknames: ['H-Dawg', 'Hdawg'], displayName: 0 },
     ],
     aleks: [
         { name: 'Vasily "V" Sazkaljovich' },
@@ -2707,7 +2707,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Moe Litman', displayName: 0, assume: 'assumeOther' },
     ],
     kyrienolife: [
-        { name: 'Coop Torres', factions: [ 'Besties'], displayName: 1 },
+        { name: 'Coop Torres', factions: ['Besties'], displayName: 1 },
     ],
     kytolee: [
         { name: 'Juan Cuervo', factions: ['Vagos'], displayName: 0 },
