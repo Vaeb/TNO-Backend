@@ -503,7 +503,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Ravi Ravson', displayName: 0 },
     ],
     bananahead_og: [
-        { name: 'Nana Banana', factions: ['HK Pawn', 'DoJ'], displayName: 0 },
+        { name: 'Nana Banana', factions: ['HK Pawn'], displayName: 0 },
     ],
     Bananalover115: [
         { name: 'Mamaita "Mama" Jehmimi' },
@@ -1867,7 +1867,7 @@ export const npCharacters: NpCharacters = {
     ],
     heyimzed: [
         { name: 'Edbert Ropeburn', factions: ['ADMC', 'Faceless'] },
-        { name: 'Jason Krieger', factions: ['Sinner Pawn'], displayName: 0 },
+        { name: 'Jason Krieger', factions: ['Brick Bois', 'Sinner Pawn'], displayName: 0 },
     ],
     // heymuuni: [
     //     { name: 'Muuni Luna', factions: ['Independent'] },
@@ -2472,7 +2472,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Eleanor West', displayName: 1 },
     ],
     kaysan: [
-        { name: 'John Dub', factions: ['BNE'], displayName: 0 },
+        { name: 'John Dub', displayName: 0 },
     ],
     Keeno: [
         { name: 'Kyle Brovloski', displayName: 0, assume: 'assumeOther' },
@@ -3465,7 +3465,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Dixie Renne', factions: ['DoC', 'Gruppe6'], displayName: 0 },
     ],
     novazfov: [
-        { name: 'Zeek "Apple" Kacem', factions: ['Brick House'], nicknames: [], displayName: 1 },
+        { name: 'Zeek "Apple" Kacem', factions: ['Brick Bois', 'Brick House'], nicknames: [], displayName: 1 },
     ],
     NovellusDea: [
         { name: 'Jacyn Todd', factions: ['Sinner Pawn'], nicknames: [], displayName: 1 },
