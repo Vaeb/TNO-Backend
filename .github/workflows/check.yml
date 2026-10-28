@@ -1,0 +1,23 @@
+name: Check
+
+on:
+    push:
+        branches: [master]
+    pull_request:
+
+permissions:
+    contents: read
+
+jobs:
+    check:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+            - uses: actions/setup-node@v4
+              with:
+                  # `yarn start` relies on --experimental-specifier-resolution, which Node 19+ removed
+                  node-version: 16
+                  cache: yarn
+            - run: yarn install --frozen-lockfile
+            - run: npm run typecheck
+            - run: npm run lint

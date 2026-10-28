@@ -10,7 +10,9 @@
         "start": "node --trace-deprecation --experimental-specifier-resolution=node dist/index.js",
         "dev": "nodemon --trace-deprecation --experimental-specifier-resolution=node dist/index.js",
         "watch": "tsc -w",
-        "hook": "node --trace-deprecation --experimental-specifier-resolution=node src/webhooks.js"
+        "hook": "node --trace-deprecation --experimental-specifier-resolution=node src/webhooks.js",
+        "lint": "eslint src --ext .ts",
+        "typecheck": "tsc --noEmit -p tsconfig.json"
     },
     "dependencies": {
         "@twurple/api": "^5.2.7",
