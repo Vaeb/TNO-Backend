@@ -1867,7 +1867,7 @@ export const npCharacters: NpCharacters = {
     ],
     heyimzed: [
         { name: 'Edbert Ropeburn', factions: ['ADMC', 'Faceless'] },
-        { name: 'Jason Krieger', factions: ['Brick Bois', 'Sinner Pawn'], displayName: 0 },
+        { name: 'Jason Krieger', factions: ['Sinner Pawn'], displayName: 0 },
     ],
     // heymuuni: [
     //     { name: 'Muuni Luna', factions: ['Independent'] },
@@ -2000,7 +2000,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Machete Cortez', factions: ['Marabunta'] },
     ],
     ikitty: [
-        { name: 'Kitty Dream', factions: ['Casino', 'Gruppe6'] },
+        { name: 'Kitty Dream', factions: ['DoJ', 'Casino', 'Gruppe6'] },
     ],
     ilenol: [
         { name: 'Max Larson', displayName: 0 },
