@@ -503,7 +503,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Ravi Ravson', displayName: 0 },
     ],
     bananahead_og: [
-        { name: 'Nana Banana', factions: ['HK Pawn'], displayName: 0 },
+        { name: 'Nana Banana', factions: ['Collective', 'HK Pawn'], displayName: 0 },
     ],
     Bananalover115: [
         { name: 'Mamaita "Mama" Jehmimi' },
@@ -2754,6 +2754,9 @@ export const npCharacters: NpCharacters = {
     leahstoo: [
         { name: 'Princess Felicity', factions: ['Sinner Pawn'], displayName: 0 },
     ],
+    learning_pr0cess: [
+        { name: 'Ben Sillysigh', factions: ['Los Limones'], displayName: 0 },
+    ],
     leelithato: [
         { name: 'Lilly Dubois', factions: ['DoC', 'Gruppe6'], displayName: 0 },
     ],
@@ -3968,7 +3971,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Jacob Slate', displayName: 0 },
     ],
     roflgator: [
-        { name: 'Robert Spowylamywanowski', factions: ['Burger Shot'], nicknames: ['Rob', 'Polish', 'Night Manager'], displayName: 3 },
+        { name: 'Robert Spowylamywanowski', factions: ['Brick Bois', 'Burger Shot'], nicknames: ['Rob', 'Polish', 'Night Manager'], displayName: 3 },
     ],
     ronladd: [
         { name: 'Vince Cuzzo', factions: ['Saints'], nicknames: ['Jeffrey', 'Paint'], displayName: 0 },
@@ -4897,7 +4900,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Hazard' },
     ],
     traycee: [
-        { name: 'Lexi Law' },
+        { name: 'Lexi Law', factions: ['Brick Bois', 'Brick House'] },
         { name: '[Officer] Aspen Gray', nicknames: [reg(/a[s$]pen\b/)] },
     ],
     TTV_CaptMcGee1818: [
