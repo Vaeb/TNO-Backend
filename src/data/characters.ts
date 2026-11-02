@@ -127,7 +127,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Achez Perez', factions: ['Habibis'], nicknames: ['Ace'], displayName: 2 },
     ],
     acie: [
-        { name: 'Vee Hernandez', factions: ['Pawn Addicts', 'Gruppe6'], displayName: 0 },
+        { name: 'Vee Hernandez', factions: ['6Chambers', 'Pawn Addicts', 'Gruppe6'], displayName: 0 },
     ],
     adamsmiley96: [
         { name: "Sebastian Von Di'Quad", displayName: 0 },
@@ -241,6 +241,7 @@ export const npCharacters: NpCharacters = {
     Alonelyhawk: [
         { name: '[Deputy] Allison Thomas', factions: ['DoJ'] },
         { name: '[Lawyer] Claudia Gartner', displayName: 1 },
+        { name: 'Claudia LaBarre', factions: ['DoJ'], displayName: 0 },
     ],
     alpacagurl92: [
         { name: 'April Fooze', factions: ['Chang Gang'], displayName: 1, assumeServer: 'whitelist' },
@@ -318,7 +319,7 @@ export const npCharacters: NpCharacters = {
             assumeServer: 'whitelist',
         },
         { name: '[Deputy] Anthony Copleone', nicknames: ['reporting for duty'] },
-        { name: 'Tonish Corleone', factions: ['Brick Bois', 'Brick House'], assumeServer: 'public' },
+        { name: 'Tonish Corleone', assumeServer: 'public' },
     ],
     Anv1Ltv: [
         { name: 'Brooklyn "BK" Davis', factions: ['GSF'] },
@@ -512,7 +513,7 @@ export const npCharacters: NpCharacters = {
         { name: "Shankeal O'Neal", nicknames: ['Shank', 'Shankyou'] },
     ],
     BarbTheKiwi: [
-        { name: 'Cohen Ryker', factions: ['Police'], displayName: 0 },
+        { name: 'Cohen Ryker', displayName: 0 },
     ],
     barky: [
         { name: 'Shang Liu', factions: ['Sinner Pawn'], displayName: 0 },
@@ -1838,7 +1839,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Wilson Burke' },
     ],
     Harry: [
-        { name: 'Harry Brown', factions: ['Brick Bois', 'Brick House', 'Degens', 'Casino'] },
+        { name: 'Harry Brown', factions: ['Brick House', 'Degens', 'Casino'] },
         { name: '[Deputy] Kevin Little', nicknames: ['Lil Kev', 'Kev'], displayName: 2 },
     ],
     HasanAbi: [
@@ -1855,7 +1856,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Del Boy', nicknames: ['DB'], displayName: 0 },
     ],
     hazan: [
-        { name: 'Zahn Zias', factions: ['Brick Bois', 'BNE', 'Brick House', 'Gruppe6'], displayName: 0 },
+        { name: 'Zahn Zias', factions: ['BNE', 'Brick House', 'Gruppe6'], displayName: 0 },
     ],
     hdjaws: [
         { name: 'Idris Kingsley', factions: ['Collective'], displayName: 0 },
@@ -3066,7 +3067,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Erin Cox', nicknames: ['c:', 'E R I N', 'C O X'], displayName: 1 },
         { name: 'Ari Tistu', displayName: 0 },
         { name: 'Amber ?', displayName: 1 },
-        { name: 'Goldie Fisher', factions: ['Brick Bois', 'Brick House', 'Degens', 'Casino'], displayName: 0 },
+        { name: 'Goldie Fisher', factions: ['Brick House', 'Degens', 'Casino'], displayName: 0 },
     ],
     Melly_Mae: [
         { name: '[Dispatch] Jessica Easton' },
@@ -3439,7 +3440,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Nunu El Nene', displayName: 1 },
     ],
     Nostroscythe: [
-        { name: 'Hazel Havgreaves', factions: ['BNE', 'Brick House'], displayName: 0 },
+        { name: 'Hazel Havgreaves', factions: ['Brick House'], displayName: 0 },
     ],
     notGEEGA: [
         { name: 'Giovanna "Gigi" Gambino', factions: ['BNE', 'Casino'], nicknames: [], displayName: 1 },
@@ -4586,7 +4587,7 @@ export const npCharacters: NpCharacters = {
     Sykkuno: [
         {
             name: 'Yuno Sykk',
-            factions: ['Gruppe6'],
+            factions: ['DoC', 'Gruppe6'],
             displayName: 1,
             assumeServer: 'whitelist',
             assumeChar: true,
@@ -5394,7 +5395,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Shawn Richards' },
     ],
     zuck: [
-        { name: 'Zuck Cuc', factions: ['Brick Bois', 'BNE', 'Brick House', 'Gruppe6', 'Besties'] },
+        { name: 'Zuck Cuc', factions: ['BNE', 'Brick House', 'Gruppe6', 'Besties'] },
     ],
     Zumapwn: [
         { name: 'James Laughton', nicknames: ['Fall Guy'], factions: ['Independent'], displayName: 3, assumeServer: 'public' },
