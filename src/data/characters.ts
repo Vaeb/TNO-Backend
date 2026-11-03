@@ -185,7 +185,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Jase Dawson', displayName: 0 },
     ],
     aikobliss: [
-        { name: 'Ginger Ale', factions: ['Brick Bois', 'Brick House', 'Burger Shot'], displayName: 0 },
+        { name: 'Ginger Ale', factions: ['Brick House', 'Burger Shot'], displayName: 0 },
     ],
     aimbotcalvin: [
         { name: '? ?' },
@@ -861,7 +861,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Baesu Heartless', nicknames: [], displayName: 1 },
     ],
     CatherineReel: [
-        { name: 'Nancy Oksana', factions: ['Brick Bois', 'Sinner Pawn'], displayName: 0 },
+        { name: 'Nancy Oksana', factions: ['Sinner Pawn'], displayName: 0 },
     ],
     CathFawr: [
         { name: '[Officer] Lydia Vale' },
@@ -1324,7 +1324,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Jason Sharpe', displayName: 0 },
     ],
     downbaddavo: [
-        { name: 'Davo Gumtree', factions: ['Pawn Addicts'], displayName: 0 },
+        { name: 'Davo Gumtree', factions: ['Collective', 'Pawn Addicts'], displayName: 0 },
     ],
     DozaRP: [
         { name: 'Edgar Mendoza', displayName: 1 },
@@ -1666,7 +1666,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Peter Johnson' },
     ],
     Garek: [
-        { name: 'Burt "Gloryon" Beans', factions: ['Brick Bois', 'Sinner Pawn', 'Degens', 'Casino'], nicknames: ['Cleric'] },
+        { name: 'Burt "Gloryon" Beans', factions: ['Sinner Pawn', 'Degens', 'Casino'], nicknames: ['Cleric'] },
         { name: 'Garek', displayName: 1 },
     ],
     GattisTV: [
@@ -2018,7 +2018,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Ralphie Ralphs' },
     ],
     imaceinhd: [
-        { name: 'Jonah Sloe', factions: ['Police'], displayName: 0 },
+        { name: 'Jonah Sloe', displayName: 0 },
     ],
     imblade: [
         { name: 'Jeremy Justice', factions: ['Police'], displayName: 0 },
@@ -2151,7 +2151,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Dez Wright', factions: ['Slim', 'Besties'], nicknames: ['Doofy', reg(/\bdez/)], displayName: 1 },
     ],
     Jackhuddo: [
-        { name: 'Shane Powers', factions: ['Pawn Addicts'], nicknames: ['ShaneO', 'ShanO'] },
+        { name: 'Shane Powers', factions: ['Collective', 'Pawn Addicts'], nicknames: ['ShaneO', 'ShanO'] },
         { name: 'Hubbo Samson' },
     ],
     Jaden: [
@@ -2988,7 +2988,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Tito Conchas', factions: ['Vagos'] },
     ],
     manax: [
-        { name: 'Michael "Mike" Manx', factions: ['Besties'] },
+        { name: 'Michael "Mike" Manx', factions: ['6Chambers', 'Besties'] },
     ],
     ManteegoTV: [
         { name: 'Dougie Mane', displayName: 0 },
@@ -4473,7 +4473,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Eddie Baker', factions: ['Prison'], displayName: 0 },
     ],
     stevie_jay305: [
-        { name: 'Lucian Knight', factions: ['Police'], displayName: 0 },
+        { name: 'Lucian Knight', displayName: 0 },
     ],
     stewvrt: [
         { name: 'Junior Diaz', factions: ['BNE', 'Brick House', 'Gruppe6'], displayName: 0 },
@@ -4962,7 +4962,7 @@ export const npCharacters: NpCharacters = {
     ],
     uhSnow: [
         { name: '[Trooper] Jackie Snow', factions: ['Police'] },
-        { name: 'Mikey Mersion', factions: ['Pawn Addicts'], displayName: 0 },
+        { name: 'Mikey Mersion', factions: ['Collective', 'Pawn Addicts'], displayName: 0 },
     ],
     Umadbrahlive: [
         { name: 'Sergio Lopez', factions: ['Marabunta'] },
