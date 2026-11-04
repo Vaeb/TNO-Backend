@@ -36,6 +36,7 @@ export const npFactionsReal = { // map: removed spaces + converted to lower case
     bne: 'BNE',
     loslimones: 'Los Limones',
     degens: 'Degens',
+    '6gang': '6 Gang',
     casino: 'Casino',
     polish: 'Polish',
     nest: 'NEST',
