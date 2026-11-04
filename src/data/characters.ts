@@ -185,7 +185,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Jase Dawson', displayName: 0 },
     ],
     aikobliss: [
-        { name: 'Ginger Ale', factions: ['Brick House', 'Burger Shot'], displayName: 0 },
+        { name: 'Ginger Ale', factions: ['Brick Bois', 'Brick House', 'Burger Shot'], displayName: 0 },
     ],
     aimbotcalvin: [
         { name: '? ?' },
@@ -2534,7 +2534,7 @@ export const npCharacters: NpCharacters = {
         { name: 'April Thompson' },
     ],
     Kinamazing: [
-        { name: '[Officer] Emma Dupont', factions: ['Police'], nicknames: ['Dupog'], assumeChar: true },
+        { name: '[Officer] Emma Dupont', nicknames: ['Dupog'], assumeChar: true },
     ],
     kindagloomy: [
         { name: 'Vera Tea', factions: ['Vagos'] },
@@ -3262,7 +3262,7 @@ export const npCharacters: NpCharacters = {
     ms_star: [
         { name: 'Cora Star', factions: ['Pawn Addicts'], displayName: 0 },
         { name: '[Deputy] Skye Faye', factions: ['DoJ'], wlBias: -1 },
-        { name: 'Rosalie Pierce', factions: ['Police'], displayName: 0 },
+        { name: 'Rosalie Pierce', displayName: 0 },
     ],
     MsTeamKK: [
         { name: 'Riley Carter' },
@@ -3866,7 +3866,7 @@ export const npCharacters: NpCharacters = {
         },
         { name: '[Officer] Raycardo Flick', displayName: 1, assumeServer: 'whitelist' },
         { name: '[Officer] Raycardo Flick', displayName: 1, assumeServer: 'public' },
-        { name: 'Raymond Romanov', factions: ['Sinner Pawn'], displayName: 0 },
+        { name: 'Raymond Romanov', factions: ['BPM', 'Sinner Pawn'], displayName: 0 },
     ],
     Ray308win: [
         { name: '[Officer] Craig Barrett' },
@@ -4970,7 +4970,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Big E', factions: ['SSB'], nicknames: ['Big L'], displayName: 0 },
     ],
     unicornfrapp: [
-        { name: 'Eloise Burton', factions: ['Police'], displayName: 0 },
+        { name: 'Eloise Burton', displayName: 0 },
     ],
     unmutedshow: [
         { name: 'Johnny Paps', factions: ['Manor'], nicknames: ['Shadow Member'], displayName: 1 },
