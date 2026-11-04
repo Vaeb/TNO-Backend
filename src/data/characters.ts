@@ -127,7 +127,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Achez Perez', factions: ['Habibis'], nicknames: ['Ace'], displayName: 2 },
     ],
     acie: [
-        { name: 'Vee Hernandez', factions: ['6Chambers', 'Pawn Addicts', 'Gruppe6'], displayName: 0 },
+        { name: 'Vee Hernandez', factions: ['6Chambers', 'Pawn Addicts', 'Gruppe6'], displayName: 1 },
     ],
     adamsmiley96: [
         { name: "Sebastian Von Di'Quad", displayName: 0 },
@@ -816,9 +816,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Gabby Brito', factions: ['Burger Shot'], displayName: 0 },
     ],
     Capped: [
+        { name: 'Robert "M1" De Souza', factions: ['Locksmiths'] },
         { name: 'Charlie ?', factions: ['Faceless'], displayName: 1, leader: true },
         { name: 'Capped Tarranova', factions: ['Chang Gang'], nicknames: ['Pigeon', 'Terranova', 'Nova'], displayName: 3 },
-        { name: 'Robert De Souza', factions: ['Brick Bois', 'Locksmiths'], displayName: 0 },
         { name: 'Anthony Breakwood', factions: ['NEST'], displayName: 0 },
     ],
     Capshion: [
@@ -1122,8 +1122,8 @@ export const npCharacters: NpCharacters = {
         { name: 'Rue Minmi', factions: ['Police'], displayName: 0 },
     ],
     CydRose: [
+        { name: 'Scarlet Young', factions: ['Pawn Addicts'], displayName: 1 },
         { name: 'Cydney Lune', nicknames: ['Cyd'], displayName: 1 },
-        { name: 'Scarlet Young', factions: ['Pawn Addicts'], displayName: 0 },
         { name: 'Maeve Wolfe', factions: ['Police'], displayName: 0 },
     ],
     cynbubs: [
