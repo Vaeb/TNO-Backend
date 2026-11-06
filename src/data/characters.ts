@@ -755,7 +755,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Irish McIrish', factions: ['Sinner Pawn'], displayName: 0 },
     ],
     bunbunss_: [
-        { name: 'Britney Sears', factions: ['Police'], displayName: 0 },
+        { name: 'Britney Sears', displayName: 0 },
     ],
     Bundie: [
         { name: 'Tane Mahuta', nicknames: ['Kiwi'], displayName: 3 },
@@ -919,7 +919,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Charlie Cox', assumeServer: 'public' },
     ],
     charlthemisfit: [
-        { name: 'Maeve Gray', factions: ['Pawn Addicts'], displayName: 0 },
+        { name: 'Maeve Gray', factions: ['Polish', 'Pawn Addicts'], displayName: 0 },
     ],
     chaseanddogs: [
         { name: 'Tyler McDaniels', factions: ['DoC'], displayName: 0 },
@@ -1403,6 +1403,9 @@ export const npCharacters: NpCharacters = {
     eaJParkOfficial: [
         { name: 'Park Parker', nicknames: ['Santa'], displayName: 0, assumeChar: true },
     ],
+    edenitoo: [
+        { name: 'Denji Kaito', factions: ['Polish'], displayName: 0 },
+    ],
     edisonparklive: [
         { name: 'Michael Hawkins', displayName: 0 },
     ],
@@ -1423,6 +1426,9 @@ export const npCharacters: NpCharacters = {
     ],
     either: [
         { name: 'Jaden Christopher' },
+    ],
+    eizowsky: [
+        { name: 'Logan Adamczyk', factions: ['Polish'], displayName: 0 },
     ],
     EliotJuun: [
         { name: '[Officer] Douglas Fir', displayName: 1 },
@@ -1555,7 +1561,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Mick Amari', factions: ['Manor'], nicknames: ['Mick9'] },
     ],
     firecrackthat: [
-        { name: 'Stumbles Fumbles', factions: ['Clowns', 'Police'], displayName: 0 },
+        { name: 'Stumbles Fumbles', factions: ['Clowns'], displayName: 0 },
     ],
     firthy: [
         { name: 'Beetlejuice', factions: ['Pawn Addicts', 'Gruppe6'], displayName: 0 },
@@ -1759,7 +1765,7 @@ export const npCharacters: NpCharacters = {
     ],
     Graewan: [
         { name: '[Deputy] Bobbi Russel', displayName: 2 },
-        { name: 'Natascha Russel', factions: ['Police'], displayName: 0 },
+        { name: 'Natascha Russel', displayName: 0 },
     ],
     grammthegibbon: [
         { name: 'Claytone Orwell', factions: ['HK Pawn', 'Old Country', 'Gruppe6'], displayName: 0 },
@@ -2031,7 +2037,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] ? Wilkons', assumeServer: 'public' },
     ],
     indoorscream: [
-        { name: 'Morag Goul', factions: ['DoC'], displayName: 0 },
+        { name: 'Morag Goul', displayName: 0 },
     ],
     indur: [
         { name: '[Deputy] Dea Bane', assumeServer: 'public' },
@@ -3141,6 +3147,9 @@ export const npCharacters: NpCharacters = {
     MikkisaurusRex: [
         { name: 'Jessica Hilton', factions: ['Medical'] },
     ],
+    mil0__o: [
+        { name: 'Niko Adamczyk', factions: ['Polish'], displayName: 0 },
+    ],
     Milsera: [
         { name: 'Mono Block' },
     ],
@@ -3238,6 +3247,9 @@ export const npCharacters: NpCharacters = {
     mrborealislive: [
         { name: 'Rudolph ?' },
     ],
+    MrCreatifee: [
+        { name: 'Józef Adamczyk', factions: ['Polish'], displayName: 0 },
+    ],
     MrFestX: [
         { name: 'Dow Jones' },
     ],
@@ -3261,7 +3273,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Garth Crooks', displayName: 0 },
     ],
     ms_star: [
-        { name: 'Cora Star', factions: ['Pawn Addicts'], displayName: 0 },
+        { name: 'Cora Star', factions: ['Collective', 'Pawn Addicts'], displayName: 0 },
         { name: '[Deputy] Skye Faye', factions: ['DoJ'], wlBias: -1 },
         { name: 'Rosalie Pierce', displayName: 0 },
     ],
@@ -3332,6 +3344,9 @@ export const npCharacters: NpCharacters = {
     ],
     Navajo: [
         { name: 'Clarence Carter' },
+    ],
+    nayaax: [
+        { name: 'Maya Mayewska', factions: ['Polish'], displayName: 0 },
     ],
     NebelNiek: [
         { name: 'Konrad Kraut Dogenschmirz' },
@@ -3418,7 +3433,7 @@ export const npCharacters: NpCharacters = {
     ],
     Nmplol: [
         { name: 'Buddy Black' },
-        { name: 'Jason Polam', factions: ['6 Gang', 'Brick Bois', 'Sinner Pawn', 'DoC', 'Gruppe6'], displayName: 0 },
+        { name: 'Jason Polam', factions: ['6 Gang', 'Sinner Pawn', 'DoC', 'Gruppe6'], displayName: 0 },
     ],
     nnsLUL: [
         { name: '[Development] nns', factions: ['Development'], assumeChar: true },
@@ -4429,6 +4444,9 @@ export const npCharacters: NpCharacters = {
     Sput: [
         { name: 'Garry Smod', factions: ['Police'], displayName: 0, assume: 'assumeOther' },
     ],
+    srokaaa_: [
+        { name: 'Ada Adamczyk', factions: ['Polish'], displayName: 0 },
+    ],
     Ssaab: [
         { name: 'Alfonso "Saab" Sebastian', nicknames: ['Al'], displayName: 2 },
         // { name: '[Trooper] Sam Baas', factions: ['Police'], nicknames: ['Samir', 'Baasem'], displayName: 2 },
@@ -4815,7 +4833,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Karli Marx', factions: ['ADMC'], displayName: 0, assumeServer: 'public' },
     ],
     Thio: [
-        { name: 'Kirk Jerkems', factions: ['Clowns', 'Police'], displayName: 0 },
+        { name: 'Kirk Jerkems', factions: ['Clowns'], displayName: 0 },
     ],
     Thirteen9N: [
         { name: 'Arya Shah', displayName: 1 },
@@ -4907,6 +4925,9 @@ export const npCharacters: NpCharacters = {
     traycee: [
         { name: 'Lexi Law', factions: ['Brick Bois', 'Brick House'] },
         { name: '[Officer] Aspen Gray', nicknames: [reg(/a[s$]pen\b/)] },
+    ],
+    trolikhd: [
+        { name: 'Lincoln Harris', factions: ['Polish'], displayName: 0 },
     ],
     TTV_CaptMcGee1818: [
         { name: 'Leroy Smith', factions: ['SSB'], displayName: 1, assumeServer: 'public' },
@@ -5407,5 +5428,6 @@ export const npCharacters: NpCharacters = {
     ],
     zwierzaaak: [
         { name: 'Jadwiga Adamczyk', factions: ['DoC', 'Polish', 'Gruppe6'], displayName: 0 },
+        { name: 'Janusz Adamczyk', factions: ['Polish'], displayName: 0 },
     ],
 };
