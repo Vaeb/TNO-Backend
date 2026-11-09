@@ -349,7 +349,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Beric Johnson', factions: ['DoJ'], displayName: 0 },
     ],
     arckon_: [
-        { name: '[Deputy] Beric Johnson', factions: ['DoJ'] },
+        { name: '[Deputy] Beric Johnson' },
     ],
     argochris: [
         { name: 'James Macleod', factions: ['Police'], displayName: 0 },
@@ -421,6 +421,7 @@ export const npCharacters: NpCharacters = {
     ],
     Austin_Bean: [
         { name: '[Deputy] ? Bean', factions: ['Police'], displayName: 2, assumeServer: 'public' },
+        { name: "Cillian O'Shea", factions: ['Pawn Addicts'], displayName: 0 },
     ],
     AustinCreed: [
         { name: 'Austin Creed', displayName: 0 },
@@ -1503,6 +1504,7 @@ export const npCharacters: NpCharacters = {
     ],
     Fahrenheit: [
         { name: 'Ilya Karishnikov', nicknames: [], displayName: 1 },
+        { name: 'Mikhail Morozov', factions: ['Sinner Pawn'], displayName: 0 },
     ],
     Fairlight_Excalibur: [
         { name: 'Raja Bahadur', leader: true },
@@ -1743,7 +1745,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Manuela Santos' },
     ],
     Golden_Laurel: [
-        { name: 'Gillea Taylor', factions: ['BPM', 'HOA'] },
+        { name: 'Gillea Taylor', factions: ['HOA'] },
     ],
     goldenlaurel: [
         { name: 'Gillea Taylor', factions: ['BPM'], displayName: 0 },
@@ -2061,10 +2063,10 @@ export const npCharacters: NpCharacters = {
         { name: 'Kev In', displayName: 0 },
     ],
     irish_gt: [
-        { name: 'Sean McQuillen', factions: ['Pawn Addicts'], displayName: 0 },
+        { name: 'Sean McQuillen', displayName: 0 },
     ],
     IrishGT: [
-        { name: 'Sean McQuillen', factions: ['Pawn Addicts', 'Hounds', 'Faceless'], nicknames: ['Irish'], displayName: 0 },
+        { name: 'Sean McQuillen', factions: ['Hounds', 'Faceless'], nicknames: ['Irish'], displayName: 0 },
     ],
     ironmonkeytv: [
         { name: 'Winston Bolt' },
@@ -4147,7 +4149,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Seth Castro', displayName: 0 },
     ],
     Sgt_Apollo: [
-        { name: 'Salem Barghouthi', factions: ['BNE', 'Gruppe6'], facebook: true },
+        { name: 'Salem Barghouthi', facebook: true },
         { name: '[Officer] Aziz Sultan', nicknames: ['Za Nose'], displayName: 1 },
     ],
     SgtApollo: [
@@ -4878,7 +4880,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Charli Jones', factions: ['Brick House', 'Degens'], displayName: 0 },
     ],
     tjnv_: [
-        { name: 'Charli "CJ" Jones', factions: ['Brick House', 'Degens'], nicknames: [], displayName: 1 },
+        { name: 'Charli "CJ" Jones', nicknames: [], displayName: 1 },
     ],
     ToastRP: [
         { name: 'Paulie' },
@@ -5182,7 +5184,7 @@ export const npCharacters: NpCharacters = {
     ],
     whiskeymate: [
         { name: 'James Johnson', displayName: 0 },
-        { name: 'Ren Bellucci', factions: ['Old Country', 'Brick Bois'], displayName: 0 },
+        { name: 'Ren Bellucci', factions: ['Old Country'], displayName: 0 },
     ],
     whosremz: [
         { name: 'Remy Brown', displayName: 1 },
