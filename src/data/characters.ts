@@ -2063,7 +2063,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Kev In', displayName: 0 },
     ],
     irish_gt: [
-        { name: 'Sean McQuillen', displayName: 0 },
+        { name: 'Sean McQuillen', factions: ['Pawn Addicts'], displayName: 0 },
     ],
     IrishGT: [
         { name: 'Sean McQuillen', factions: ['Hounds', 'Faceless'], nicknames: ['Irish'], displayName: 0 },
