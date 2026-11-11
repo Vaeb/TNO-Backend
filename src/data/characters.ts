@@ -420,8 +420,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Braxton Walker', nicknames: ['Brax'], displayName: 0 },
     ],
     Austin_Bean: [
-        { name: '[Deputy] ? Bean', factions: ['Police'], displayName: 2, assumeServer: 'public' },
+        { name: '[Deputy] ? Bean', displayName: 2, assumeServer: 'public' },
         { name: "Cillian O'Shea", factions: ['Pawn Addicts'], displayName: 0 },
+        { name: 'Austin Bean', factions: ['Police'], displayName: 0 },
     ],
     AustinCreed: [
         { name: 'Austin Creed', displayName: 0 },
@@ -649,8 +650,11 @@ export const npCharacters: NpCharacters = {
     bLuE622: [
         { name: 'Boe Jangles', factions: ['Chang Gang'], affiliate: true },
     ],
-    bluebonnetrp: [
+    bluebonnet: [
         { name: 'Lee Mockerman', factions: ['Police'], displayName: 0 },
+    ],
+    bluebonnetrp: [
+        { name: 'Lee Mockerman', displayName: 0 },
     ],
     blunt_20202020: [
         { name: 'Dub Blunt', displayName: 0 },
@@ -2080,7 +2084,7 @@ export const npCharacters: NpCharacters = {
     ],
     ItsCaitlinCarol: [
         { name: 'Kate Barlow', factions: ['DoJ', 'Order'], displayName: 0 },
-        { name: 'Vanessa Rosewood', factions: ['Police'], displayName: 0 },
+        { name: 'Vanessa Rosewood', displayName: 0 },
     ],
     itscrystaleyes: [
         { name: 'Adelaide Finch', factions: ['DoJ', 'Order'], displayName: 0 },
@@ -5184,7 +5188,7 @@ export const npCharacters: NpCharacters = {
     ],
     whiskeymate: [
         { name: 'James Johnson', displayName: 0 },
-        { name: 'Ren Bellucci', factions: ['Old Country'], displayName: 0 },
+        { name: 'Ren Bellucci', factions: ['Brick Bois', 'Old Country'], displayName: 0 },
     ],
     whosremz: [
         { name: 'Remy Brown', displayName: 1 },
@@ -5337,7 +5341,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Hazel Grey', factions: ['Sinner Pawn', 'Clowns', 'Gruppe6'], displayName: 0 },
     ],
     youngmulti: [
-        { name: 'Tony Dripano', factions: ['Polish'], displayName: 0 },
+        { name: 'Tony Dripano', displayName: 0 },
     ],
     YourFriendKermit: [
         { name: 'Leslie Jenkins', factions: ['Independent'], displayName: 0 },
