@@ -349,7 +349,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Beric Johnson', factions: ['DoJ'], displayName: 0 },
     ],
     arckon_: [
-        { name: '[Deputy] Beric Johnson' },
+        { name: '[Deputy] Beric Johnson', factions: ['DoJ'] },
     ],
     argochris: [
         { name: 'James Macleod', factions: ['Police'], displayName: 0 },
@@ -1749,7 +1749,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Manuela Santos' },
     ],
     Golden_Laurel: [
-        { name: 'Gillea Taylor', factions: ['HOA'] },
+        { name: 'Gillea Taylor', factions: ['BPM', 'HOA'] },
     ],
     goldenlaurel: [
         { name: 'Gillea Taylor', factions: ['BPM'], displayName: 0 },
@@ -2070,7 +2070,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Sean McQuillen', factions: ['Pawn Addicts'], displayName: 0 },
     ],
     IrishGT: [
-        { name: 'Sean McQuillen', factions: ['Hounds', 'Faceless'], nicknames: ['Irish'], displayName: 0 },
+        { name: 'Sean McQuillen', factions: ['Pawn Addicts', 'Hounds', 'Faceless'], nicknames: ['Irish'], displayName: 0 },
     ],
     ironmonkeytv: [
         { name: 'Winston Bolt' },
@@ -3464,6 +3464,9 @@ export const npCharacters: NpCharacters = {
     NoraExplorer: [
         { name: 'Nunu El Nene', displayName: 1 },
     ],
+    Nostro: [
+        { name: 'Hazel Havgreaves', factions: ['Brick House'], displayName: 0 },
+    ],
     Nostroscythe: [
         { name: 'Hazel Havgreaves', factions: ['Brick House'], displayName: 0 },
     ],
@@ -4153,8 +4156,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Seth Castro', displayName: 0 },
     ],
     Sgt_Apollo: [
-        { name: 'Salem Barghouthi', facebook: true },
+        { name: 'Salem Barghouthi', factions: ['BNE', 'Gruppe6'], facebook: true },
         { name: '[Officer] Aziz Sultan', nicknames: ['Za Nose'], displayName: 1 },
+        { name: 'Malik Mansori', factions: ['Police'], displayName: 0 },
     ],
     SgtApollo: [
         { name: 'Salem Barghouthi', factions: ['BNE', 'Gruppe6'] },
@@ -4884,7 +4888,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Charli Jones', factions: ['Brick House', 'Degens'], displayName: 0 },
     ],
     tjnv_: [
-        { name: 'Charli "CJ" Jones', nicknames: [], displayName: 1 },
+        { name: 'Charli "CJ" Jones', factions: ['Brick House', 'Degens'], nicknames: [], displayName: 1 },
     ],
     ToastRP: [
         { name: 'Paulie' },
@@ -4937,7 +4941,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Hazard' },
     ],
     traycee: [
-        { name: 'Lexi Law', factions: ['Brick Bois', 'Brick House'] },
+        { name: 'Lexi Law', factions: ['Gruppe6', 'Brick Bois', 'Brick House'] },
         { name: '[Officer] Aspen Gray', factions: ['Police'], nicknames: [reg(/a[s$]pen\b/)] },
     ],
     trolikhd: [
