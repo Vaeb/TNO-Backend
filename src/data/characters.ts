@@ -107,12 +107,13 @@ export const npCharacters: NpCharacters = {
         { name: 'Khrystal Vibez' },
     ],
     AbdulHD: [
-        { name: 'Abdul AlRahim', factions: ['Gruppe6', 'Police'], nicknames: ['Yellow Flash'], displayName: 1, assumeServer: 'whitelist' },
+        { name: 'Abdul AlRahim', nicknames: ['Yellow Flash'], displayName: 1, assumeServer: 'whitelist' },
         { name: '[Officer] Omar Stryker', displayName: 1 },
         { name: '[Judge] Ali Habibi', nicknames: ['Al'] },
         { name: '[Officer] Basha Habibi', assumeServer: 'public' },
         { name: 'Mustafa Habibi' },
         { name: 'Fahad AlArabi' },
+        { name: 'Abdul AlWahim', factions: ['Gruppe6', 'Police'], displayName: 0 },
     ],
     Abou_: [
         { name: 'Modi Janta' },
@@ -349,7 +350,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Beric Johnson', factions: ['DoJ'], displayName: 0 },
     ],
     arckon_: [
-        { name: '[Deputy] Beric Johnson' },
+        { name: '[Deputy] Beric Johnson', factions: ['DoJ'] },
     ],
     argochris: [
         { name: 'James Macleod', factions: ['Police'], displayName: 0 },
@@ -1750,7 +1751,7 @@ export const npCharacters: NpCharacters = {
         { name: '[Deputy] Manuela Santos' },
     ],
     Golden_Laurel: [
-        { name: 'Gillea Taylor', factions: ['HOA'] },
+        { name: 'Gillea Taylor', factions: ['BPM', 'HOA'] },
     ],
     goldenlaurel: [
         { name: 'Gillea Taylor', factions: ['BPM'], displayName: 0 },
@@ -2071,7 +2072,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Sean McQuillen', factions: ['Pawn Addicts'], displayName: 0 },
     ],
     IrishGT: [
-        { name: 'Sean McQuillen', factions: ['Hounds', 'Faceless'], nicknames: ['Irish'], displayName: 0 },
+        { name: 'Sean McQuillen', factions: ['Pawn Addicts', 'Hounds', 'Faceless'], nicknames: ['Irish'], displayName: 0 },
     ],
     ironmonkeytv: [
         { name: 'Winston Bolt' },
@@ -3495,7 +3496,8 @@ export const npCharacters: NpCharacters = {
         { name: '[Officer] Ben Casanova' },
     ],
     novasobored: [
-        { name: 'Dixie Renne', factions: ['Casino', 'DoC', 'Gruppe6'], displayName: 0 },
+        { name: 'Dixie Renne', displayName: 0 },
+        { name: 'Dixie Renee', factions: ['Casino', 'DoC', 'Gruppe6'], displayName: 0 },
     ],
     novazfov: [
         { name: 'Zeek "Apple" Kacem', factions: ['Brick Bois', 'Brick House'], nicknames: [], displayName: 1 },
@@ -3728,6 +3730,7 @@ export const npCharacters: NpCharacters = {
     ],
     Plashir: [
         { name: 'Thom Yung', displayName: 0 },
+        { name: 'Eizen Zhang', factions: ['HK Pawn', 'Old Country'], displayName: 0 },
     ],
     PlasticLittle: [
         { name: 'Parson "Frosty" Brown', factions: ['Lost MC'] },
@@ -4157,9 +4160,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Seth Castro', displayName: 0 },
     ],
     Sgt_Apollo: [
-        { name: 'Salem Barghouthi', facebook: true },
+        { name: 'Salem Barghouthi', factions: ['BNE', 'Gruppe6'], facebook: true },
         { name: '[Officer] Aziz Sultan', nicknames: ['Za Nose'], displayName: 1 },
-        { name: 'Malik Mansori', displayName: 0 },
+        { name: 'Malik Mansori', factions: ['Police'], displayName: 0 },
     ],
     SgtApollo: [
         { name: 'Salem Barghouthi', factions: ['BNE', 'Gruppe6'] },
@@ -4760,9 +4763,10 @@ export const npCharacters: NpCharacters = {
     ],
     TheBigMeech: [
         { name: '[Deputy] Leonard Cassidy', nicknames: ['Leon'] },
-        { name: 'Pilbis Shonly', factions: ['DoC', 'Pawn Addicts', 'Burger Shot'] },
+        { name: 'Pilbis Shonly' },
         { name: 'Tyler Kwando', displayName: 0 },
         { name: 'Jesse Kennedy', factions: ['Police'], displayName: 0 },
+        { name: 'Pilbis Shonley', factions: ['Pawn Addicts', 'Burger Shot', 'DoC'], displayName: 0 },
     ],
     TheBigXH: [
         { name: 'Jose Rodriguez', factions: ['Vagos'], nicknames: ['Lil Ese'], displayName: 3 },
@@ -4889,7 +4893,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Charli Jones', factions: ['Brick House', 'Degens'], displayName: 0 },
     ],
     tjnv_: [
-        { name: 'Charli "CJ" Jones', nicknames: [], displayName: 1 },
+        { name: 'Charli "CJ" Jones', factions: ['Brick House', 'Degens'], nicknames: [], displayName: 1 },
     ],
     ToastRP: [
         { name: 'Paulie' },
