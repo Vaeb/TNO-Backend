@@ -4781,6 +4781,9 @@ export const npCharacters: NpCharacters = {
     thedeluxe4: [
         { name: 'Cooper Hart', factions: ['DoC'], displayName: 0 },
     ],
+    thedlinquent: [
+        { name: 'Dee Linq', factions: ['Police'], displayName: 0 },
+    ],
     TheDogfather82: [
         { name: 'Lucas "Wolfy" Frank', factions: ['Vagos'] },
     ],
@@ -5320,6 +5323,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Tiffany Valentine', displayName: 0 },
         { name: '[Dispatch] Shyrell Larson', nicknames: ['D-17'], displayName: 1 },
         { name: 'Naomi Kent' },
+    ],
+    yaboidr3w: [
+        { name: 'Michael Hemsworth', factions: ['Police'], displayName: 0 },
     ],
     yaboiSavageG: [
         { name: 'Salvaje "Savage" Mendoza', factions: ['Vagos'] },
