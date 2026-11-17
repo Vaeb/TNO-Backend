@@ -1057,11 +1057,14 @@ export const npCharacters: NpCharacters = {
         { name: 'John Gray', factions: ['Manor'], nicknames: ['John'], displayName: 1 },
     ],
     Cosmic: [
-        { name: '[Officer] Alex Casterman', nicknames: [reg(/as+terman\b/)] },
+        { name: '[Officer] Alex Casterman', factions: ['Police'], nicknames: [reg(/as+terman\b/)] },
         { name: 'Finlay' },
     ],
     CowsMooingNSuch: [
         { name: '[Clerk] Sophia McMoo', displayName: 1 },
+    ],
+    coxybaws: [
+        { name: 'Fredrick Castle', factions: ['Police'], displayName: 0 },
     ],
     CptCheeto: [
         { name: '[Deputy] Ridley Adams' },
@@ -3959,7 +3962,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Diego Montoya', factions: ['Gruppe6', 'Order'], displayName: 0 },
     ],
     RevRoach: [
-        { name: "Happy D'Klown", factions: ['Clowns'] },
+        { name: "Happy D'Klown", factions: ['Burger Shot', 'Clowns'] },
     ],
     rexs: [
         { name: 'Ricky Dallas', factions: ['Police'], displayName: 0 },
@@ -4400,7 +4403,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Soap ?' },
     ],
     sock22: [
-        { name: '[Deputy] Richard Dark', factions: ['Police'] },
+        { name: '[Deputy] Richard Dark' },
         { name: 'Napolean Dankleaf', nicknames: ['Napoleon'], displayName: 0 },
     ],
     SodaKite: [
