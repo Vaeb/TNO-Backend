@@ -178,6 +178,9 @@ export const npCharacters: NpCharacters = {
         { name: 'Jay Afro', displayName: 0 },
         { name: 'Gary Kebun', factions: ['DoC'], displayName: 0 },
     ],
+    agingercoin: [
+        { name: 'Robby Dasher', factions: ['Police'], displayName: 0 },
+    ],
     Aheeyuh: [
         { name: 'Normie Reece', displayName: 0 },
     ],
@@ -219,6 +222,7 @@ export const npCharacters: NpCharacters = {
     ],
     Alex_3MM: [
         { name: 'Leo Sparks', displayName: 0 },
+        { name: 'Alfie Bates', factions: ['Sinner Pawn'], displayName: 0 },
     ],
     alexhasg2g: [
         { name: 'Liz Anya', displayName: 0 },
@@ -2247,7 +2251,7 @@ export const npCharacters: NpCharacters = {
         { name: 'David Gilkenly', factions: ['BPM'], displayName: 0 },
     ],
     jennaembers: [
-        { name: 'Jordan Miles', factions: ['Old Country', 'HK Pawn'], displayName: 0 },
+        { name: 'Jordan Miles', factions: ['HK Pawn'], displayName: 0 },
     ],
     Jennybeartv: [
         { name: '[Deputy] Peach Chee', factions: ['Police'], displayName: 1 },
@@ -2723,7 +2727,7 @@ export const npCharacters: NpCharacters = {
         { name: 'Mary Mushkin', factions: ['KC'], nicknames: ['Red Devil', 'R3d Devil'], displayName: 1 },
         { name: 'Sarah Reynolds', displayName: 0 },
         { name: 'Kylie Bitcoin', displayName: 0 },
-        { name: 'Valerie Angel', displayName: 0 },
+        { name: 'Valerie Angel', factions: ['Police'], displayName: 0 },
     ],
     KYR_SP33DY: [
         { name: 'Moe Litman', displayName: 0, assume: 'assumeOther' },
